@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Friends from the forest",
+            "heading_size": "h0"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "Woxna, we’ve been lucky to connect with some incredible people who share our passion for the outdoors, craftsmanship, and timeless tools. These friends of Woxna inspire us with their creativity, knowledge, and love for life among the trees. Here, we’d like to introduce you to a few of them – individ- uals who live and breathe the outdoor spirit and help bring our saws to life in their adventures.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "custom_css": [
+        "h2 {text-wrap: balance;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan250-sawing-topview.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_PjD7cq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wYUdYt": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.influencer_name_and_image.value.handle_name.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "caption_4hNdEP": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ page.metafields.custom.influencer_name_and_image.value.name.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wYUdYt",
+        "caption_4hNdEP"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.influencer_name_and_image.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_PD4aN4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6CjxGx": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.instagram.value }}",
+          "settings": {
+            "image": "{{ block.repeater.images.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KJdNfD": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9bgxYV": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XNeHPb": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RCPhy8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XhWzm8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4bfUn8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6CjxGx",
+        "column_KJdNfD",
+        "column_9bgxYV",
+        "column_XNeHPb",
+        "column_RCPhy8",
+        "column_XhWzm8",
+        "column_4bfUn8"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_qgMp3c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wPRVwr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Questions",
+            "heading_size": "h1"
+          }
+        },
+        "text_wFjDkP": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.questions_influencers | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wPRVwr",
+        "text_wFjDkP"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_ikL8KB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WyDTtD": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.instagram_text.value }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WyDTtD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_ezGC89": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".ikon-container {display: flex; justify-content: center; gap: 10px; align-items: center; flex-flow: row wrap;}",
+        ".icon {width: 60px; /* Anpassa storleken på ikonerna */ height: 60px; color: #5a493a;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"ikon-container\">\n    <i class=\"icon\">\n      <a href=\"https://www.instagram.com/woxna_outdoors/\" class=\"link\">\n        <svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-instagram\" viewBox=\"0 0 20 20\">\n          <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z\" clip-rule=\"evenodd\"></path>\n        </svg>\n      <span class=\"visually-hidden\">Instagram</span>\n    </a>\n    </i>\n\n    <i class=\"icon\">\n      <a href=\"https://www.facebook.com/Woxna/\" class=\"link\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-facebook\" viewBox=\"0 0 20 20\">\n        <path fill=\"currentColor\" d=\"M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z\"></path>\n      </svg>\n      <span class=\"visually-hidden\">Facebook</span>\n      </a>\n    </i>\n\n   \n</div>",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_9E4k3h": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".ikon-container {display: flex; justify-content: center; gap: 10px; align-items: center; flex-flow: row wrap;}",
+        ".icon {width: 60px; /* Anpassa storleken på ikonerna */ height: 60px; color: #5a493a;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"ikon-container\">\n    <i class=\"icon\">\n    {%  if page.metafields.custom.instagram_link.value and page.metafields.custom.social_icon.value %}\n  <a href=\"{{ page.metafields.custom.instagram_link.value.url }}\" target=\"_blank\">\n  <img src=\"{{ page.metafields.custom.social_icon.value| image_url: width: 50}}\" alt=\"\" />\n  </a>\n  \n{% endif %}\n    </i>",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "padding_top": 0,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "image_with_text_PjD7cq",
+    "main",
+    "multicolumn_PD4aN4",
+    "rich_text_qgMp3c",
+    "rich_text_ikL8KB",
+    "custom_liquid_ezGC89",
+    "custom_liquid_9E4k3h"
+  ]
+}

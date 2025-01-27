@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "custom_css": [
+        ".banner__content {margin-block-end: 30px;}"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ul {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_8tFpFD": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% style %} div.image-with-text__text.rte.body {\n  display: inline-block;\n  position: relative;\n}\ndiv.image-with-text__text.rte.body:after {\n  clear: both;\n  content: \"\";\n  display: block;\n  position: absolute;\n  content: \"\";\n  border-bottom: 5px solid #f2e4c4;\n  width: 70%;\n  transform: translateX(-50%);\n  bottom: -30px;\n  left: 50%;\n}\ndiv.image-with-text__text.rte.body:before {\n  clear: both;\n  content: \"\";\n  display: block;\n  position: absolute;\n  content: \"\";\n  border-bottom: 5px solid #f2e4c4;\n  width: 70%;\n  transform: translateX(-50%);\n  top: -30px;\n  left: 50%;\n} {% endstyle %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "main",
+    "custom_liquid_8tFpFD"
+  ]
+}

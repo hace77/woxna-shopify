@@ -1,0 +1,1105 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_k7EFPc": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#custom-nav {display: flex; align-items: center; padding: 20px 50px; width: fit-content; margin: auto;}",
+        "#custom-nav li {list-style: none; display: inline-block;}",
+        "ul.horizontal li a {display: inline-block; color: black; text-align: center; padding: 14px 16px; text-decoration: none;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--23309663863127__multirow_LzMMke\">Features</a></li>\n  <li><a href=\"#Banner-template--23309663863127__image_banner_DLKP7F\">Tech specs</a></li>\n  <li><a href=\"#shopify-section-template--23309663863127__video_BCbL4d\">Video</a></li>\n</ul>\n</div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_ajHV6U": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_C7z8Le": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.preamble.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_rBXVdh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.preamble.value.single_line_ingress.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_C7z8Le",
+        "text_rBXVdh"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.preamble.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_tqyCxz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RcAN3m": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.blade_material.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_bb84ap": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_ffLMpw": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RcAN3m",
+        "text_bb84ap",
+        "button_ffLMpw"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_qF3gHc": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_XRz4Ek": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.about_steel.value.title.value }}",
+            "icon": "none",
+            "row_content": "<h4>{{ product.metafields.custom.about_steel.value.ingress.value }}</h4><p>{{ product.metafields.custom.about_steel.value.text | metafield_tag }}</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_XRz4Ek"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "hxxl",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "scheme-5",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_KMfkxH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mKwPqb": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.tpi.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_4W6aek": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.tpi.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_WBDBXb": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mKwPqb",
+        "text_4W6aek",
+        "button_WBDBXb"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.tpi.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_khWpzV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JYTVpp": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.grind.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_CBAyN9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.grind.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_77FVtY": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JYTVpp",
+        "text_CBAyN9",
+        "button_77FVtY"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.grind.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_RzkRHW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yKMnwV": {
+          "type": "heading",
+          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
+          "settings": {
+            "heading": "{{ product.metafields.custom.profile_or_setting.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_rVMxjf": {
+          "type": "text",
+          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_iB6jMK": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKMnwV",
+        "text_rVMxjf",
+        "button_iB6jMK"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_zGRdRF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mEhdkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"Best saw ever\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_n3W6pk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Review from someone</p>"
+          }
+        },
+        "button_yA4XrT": {
+          "type": "button",
+          "settings": {
+            "button_label": "More reviews",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEhdkL",
+        "text_n3W6pk",
+        "button_yA4XrT"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_JLf43q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_F9zFHC": {
+          "type": "heading",
+          "source": "{{ product.metafields.custom.transport.value }}",
+          "settings": {
+            "heading": "{{ product.metafields.custom.transport.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_YcJy3D": {
+          "type": "text",
+          "source": "{{ product.metafields.custom.packaging.value }}",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_F9zFHC",
+        "text_YcJy3D"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.transport.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_khyK4k": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cAD7JP": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_1.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jTwAyD": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_2.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_M64mw7": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_3.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cAD7JP",
+        "slide_jTwAyD",
+        "slide_M64mw7"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_J4ppHw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LFcadc": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.handles.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_4CCNhj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LFcadc",
+        "text_4CCNhj"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_WwtiGJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YQyT46": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.story.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_PwPdeV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.story.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_rfrV8p": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YQyT46",
+        "text_PwPdeV",
+        "button_rfrV8p"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.story.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_wm6hdw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_bGgX4h": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_REjKkX": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image_2.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_KRAgzz": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image_3.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bGgX4h",
+        "slide_REjKkX",
+        "slide_KRAgzz"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_cb6emk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KnR9NP": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.packaging.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_CBqpGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KnR9NP",
+        "text_CBqpGQ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_7GmfxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XzRK9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.feature.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "button_dVbPng": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_crzTjK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>{{ product.metafields.custom.feature1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_10 | metafield_tag }}</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzRK9B",
+        "button_dVbPng",
+        "text_crzTjK"
+      ],
+      "custom_css": [
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_zL8t7g": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_K7chGp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tech specs",
+            "heading_size": "h0"
+          }
+        },
+        "text_QaVm7H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Grind: {{ product.metafields.custom.grind_.value }} TPI<br/>Saw direction: {{ product.metafields.custom.saw_direction.value }}</p><h2>Measurements</h2><p>Length unfolded: mm / \"<br/>Length folded: mm / \"<br/>Blade length: mm / \"<br/>Weight: g / oz</p><p></p>{{ product.metafields.custom.tech_spec_list | metafield_tag: field: 'title' }}{{ product.metafields.custom.tech_spec_list | metafield_tag: field: 'function' }}"
+          }
+        },
+        "button_yRnixM": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_K7chGp",
+        "text_QaVm7H",
+        "button_yRnixM"
+      ],
+      "custom_css": [
+        "h2,li,p {text-align: left;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_8zaQaf": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_paPnxR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product size image",
+            "heading_size": "h1"
+          }
+        },
+        "text_XLRz8T": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_dRLaYe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_paPnxR",
+        "text_XLRz8T",
+        "buttons_dRLaYe"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collapsible_content_gEpGHP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_WRMnDt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Choose model",
+            "icon": "star",
+            "row_content": "<p>Our two foldable saws Ljusnan and Hian are all based on the same design, the big differences between them are in the choice of materials. </p><p>Ljusnan has a stainless<br/>steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who<br/>rather spend their time in the woods instead of on gear maintenance.</p><p>Hian has a<br/>traditional high carbon steel blade with an anti-corrosion coating and a robust<br/>Oak handle. The carbon steel has better sharpness, edge retention properties<br/>and ductility, making them a great choice for more frequent and heavy usage.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JiRKKg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Choose size",
+            "icon": "ruler",
+            "row_content": "<p>Our foldable saws<br/>are available in two sizes, ensuring you have the right tool for every task. </p><p><strong>180 mm - Compact and Convenient</strong></p><p>The 180 mm saw<br/>is perfect for those who need a portable and efficient tool. It easily fits in<br/>your backpack or even in a large trouser pocket, making it ideal for quick,<br/>on-the-go tasks. This size can effortlessly cut branches and stems up to 50 mm (2 inches) in diameter.<br/>In a pinch, it can handle larger branches and stems up to 75 mm (3 inches) in<br/>diameter.</p><p><strong>250 mm - Larger and More Efficient</strong></p><p>The 250 mm saw offers greater efficiency for more<br/>extensive cutting tasks, while still being compact enough to fit in most<br/>backpacks. This larger saw is designed for tackling bigger </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Qh76JD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Care and maintanance",
+            "icon": "clipboard",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_WRMnDt",
+        "collapsible_row_JiRKKg",
+        "collapsible_row_Qh76JD"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ji3RVR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gnc8NC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact / Support",
+            "heading_size": "h1"
+          }
+        },
+        "text_Kqm3hA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_cXrCX8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gnc8NC",
+        "text_Kqm3hA",
+        "button_cXrCX8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_mhWMPT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ktaxcU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reviews",
+            "heading_size": "h1"
+          }
+        },
+        "text_T7K6Pk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_pQY4AF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ktaxcU",
+        "text_T7K6Pk",
+        "button_pQY4AF"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_YKCcji": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YDHpmx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability",
+            "heading_size": "h1"
+          }
+        },
+        "text_WnGi7J": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YPwkBR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YDHpmx",
+        "text_WnGi7J",
+        "button_YPwkBR"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_j83Eef": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zwyMCT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made in Sweden",
+            "heading_size": "h1"
+          }
+        },
+        "text_gMpi8E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are very happy and proud to be able to produce our saws in Hälsingland, Sweden. This is a rural region in the middle of the country where you’ll find a long tradition of tools manufacturing. We have chosen Sweden not just because it’s our home but because we know that here we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tCkADX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zwyMCT",
+        "text_gMpi8E",
+        "button_tCkADX"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BCbL4d",
+    "custom_liquid_k7EFPc",
+    "image_banner_ajHV6U",
+    "image_with_text_tqyCxz",
+    "collapsible_content_qF3gHc",
+    "image_with_text_KMfkxH",
+    "image_with_text_khWpzV",
+    "image_with_text_RzkRHW",
+    "rich_text_zGRdRF",
+    "image_with_text_JLf43q",
+    "slideshow_khyK4k",
+    "rich_text_J4ppHw",
+    "image_with_text_WwtiGJ",
+    "slideshow_wm6hdw",
+    "rich_text_cb6emk",
+    "rich_text_7GmfxC",
+    "rich_text_zL8t7g",
+    "image_banner_8zaQaf",
+    "collapsible_content_gEpGHP",
+    "rich_text_ji3RVR",
+    "rich_text_mhWMPT",
+    "image_with_text_YKCcji",
+    "image_with_text_j83Eef",
+    "related-products"
+  ]
+}

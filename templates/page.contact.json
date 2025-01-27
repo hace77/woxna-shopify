@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_b8rUwC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WM97QN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Message Us",
+            "heading_size": "h1"
+          }
+        },
+        "text_hGQemf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Try our messaging app in the bottom right corner to get in touch with us. If we're not online a chatbot will try to help you, or you can send us a message.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WM97QN",
+        "text_hGQemf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 76
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "contact_form_inYQXL": {
+      "type": "contact-form",
+      "custom_css": [
+        "h2 {text-align: center; padding-block-start: 50px;}",
+        ".contact__button {display: flex; justify-content: center;}"
+      ],
+      "settings": {
+        "heading": "E-mail",
+        "heading_size": "h1",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_E7QnfQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_G4ct8j": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_DwAVNB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are a small company and do not have the resources to run a 24/7 customer service. But we really want to hear from you, so please don’t hesitate to reach out, and we’ll do our best to respond as quickly as possible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_G4ct8j",
+        "text_DwAVNB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_DABXdP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jE9a8T": {
+          "type": "heading",
+          "settings": {
+            "heading": "Social",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jE9a8T"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 20
+      }
+    },
+    "custom_liquid_Yx8HVq": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".ikon-container {display: flex; justify-content: center; gap: 10px; align-items: center; flex-flow: row wrap;}",
+        ".icon {width: 60px; /* Anpassa storleken på ikonerna */ height: 60px; color: #5a493a;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"ikon-container\">\n    <i class=\"icon\">\n      <a href=\"https://www.instagram.com/woxna_outdoors/\" class=\"link\">\n        <svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-instagram\" viewBox=\"0 0 20 20\">\n          <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z\" clip-rule=\"evenodd\"></path>\n        </svg>\n      <span class=\"visually-hidden\">Instagram</span>\n    </a>\n    </i>\n\n    <i class=\"icon\">\n      <a href=\"https://www.facebook.com/Woxna/\" class=\"link\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-facebook\" viewBox=\"0 0 20 20\">\n        <path fill=\"currentColor\" d=\"M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z\"></path>\n      </svg>\n      <span class=\"visually-hidden\">Facebook</span>\n      </a>\n    </i>\n\n   \n</div>",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "padding_top": 28,
+        "padding_bottom": 92
+      }
+    },
+    "rich_text_YHDxx3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_am3XdB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Returns",
+            "heading_size": "h1"
+          }
+        },
+        "text_FpWBA4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you want to send a return, please continue reading at our returns page.</p>"
+          }
+        },
+        "button_7Mby7C": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about Returns",
+            "button_link": "shopify://pages/support",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://policies/refund-policy",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_am3XdB",
+        "text_FpWBA4",
+        "button_7Mby7C"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_yQHUM4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_L3TD4M": {
+          "type": "heading",
+          "settings": {
+            "heading": "Address",
+            "heading_size": "h1"
+          }
+        },
+        "text_TJrX6V": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Woxna Skogsting AB<br/>Viksjöforsvägen 20<br/>828 94 Edsbyn, Sweden<br/><br/>We’re usually not staffed to receive any spontaneous visitors to our offices, so if you want to meet us, please start by contacting us at <a href=\"mailto:hello@woxna.com\">hello@woxna.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_L3TD4M",
+        "text_TJrX6V"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 92
+      }
+    },
+    "rich_text_mpcUBA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_R7Jg9q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Additional info",
+            "heading_size": "h1"
+          }
+        },
+        "text_gxMVih": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Some niche stuff that might be useful.</p><p><strong>Full legal name of company</strong><br/>Woxna Skogsting AB</p><p><strong>VAT number</strong><br/>SE559471273801</p><p><strong>Trade number</strong><br/>559471-2738</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_R7Jg9q",
+        "text_gxMVih"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 84
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "rich_text_b8rUwC",
+    "main",
+    "contact_form_inYQXL",
+    "rich_text_E7QnfQ",
+    "rich_text_DABXdP",
+    "custom_liquid_Yx8HVq",
+    "rich_text_YHDxx3",
+    "rich_text_yQHUM4",
+    "rich_text_mpcUBA"
+  ]
+}

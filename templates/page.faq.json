@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_dPXkn4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_UfxCjQ": {
+          "type": "collapsible_row",
+          "repeater": "{{ page.metafields.custom.collapsible.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.heading.value }}",
+            "icon": "box",
+            "row_content": "{{ block.repeater.row_content | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_UfxCjQ"
+      ],
+      "custom_css": [
+        "h3 {font-size: 30px;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "hxxl",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "main",
+    "collapsible_content_dPXkn4"
+  ]
+}

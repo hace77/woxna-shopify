@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_Ee8qUG": {
+      "type": "multirow",
+      "blocks": {
+        "row_JAQhKf": {
+          "type": "row",
+          "repeater": "{{ page.metafields.custom.image_with_text.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "caption": "",
+            "heading": "{{ block.repeater.header.value }}",
+            "text": "<p>{{ block.repeater.text | metafield_tag }}</p><p></p>",
+            "button_label": "{{ block.repeater.button_label.value }}",
+            "button_link": "{{ block.repeater.buttonlink.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "row_JAQhKf"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "hxl",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-4398ba47-7be6-4ef0-9719-469d444b9ee4",
+        "mobile_content_alignment": "center",
+        "padding_top": 68,
+        "padding_bottom": 84
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "main",
+    "multirow_Ee8qUG"
+  ]
+}

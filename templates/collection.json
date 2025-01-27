@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_dbVHAH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dipqiz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet our Foldable Saws",
+            "heading_size": "h1"
+          }
+        },
+        "text_FkKbKK": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_d4cWYV": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dipqiz",
+        "text_FkKbKK",
+        "button_d4cWYV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+      ],
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 2,
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text_dbVHAH",
+    "banner",
+    "product-grid"
+  ]
+}

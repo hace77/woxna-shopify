@@ -1,0 +1,613 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Saws - Made in Sweden",
+            "heading_size": "h0"
+          }
+        },
+        "text_eRbp9f": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<strong>Crafted for the Outdoor Spirit</strong>",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_eRbp9f",
+        "button"
+      ],
+      "custom_css": [
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Folding-Saw.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_fbgFhP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VrX83K": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Our Foldable Saws",
+            "heading_size": "h1"
+          }
+        },
+        "text_wYYamC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have just launched our first saw - Hälsing, and very soon we will be adding Ljusnan as well. <br/>Check them out below.</p>"
+          }
+        },
+        "button_EpzAqy": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VrX83K",
+        "text_wYYamC",
+        "button_EpzAqy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
+        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "all",
+        "products_to_show": 5,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 44
+      }
+    },
+    "1730798874462ed86d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_ge8YUn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_ge8YUn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_banner_iTfWWc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EG7mK3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Black Week Saws",
+            "heading_size": "h1"
+          }
+        },
+        "text_mPAetM": {
+          "type": "text",
+          "settings": {
+            "text": "For Black week, we’re offering a very limited batch of Hälsing Saws with minor quirks—like mismatched wooden handles halves or logotypes that didn’t burn perfectly. You still get the same quality as with all our other saws and you help us to be more sustainable by reducing our waste.",
+            "text_style": "body"
+          }
+        },
+        "buttons_UJawnD": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore our black week deals",
+            "button_link_1": "shopify://pages/black-week-2024",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EG7mK3",
+        "text_mPAetM",
+        "buttons_UJawnD"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Black-Week-Woxna-saw-header.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "featured_collection_mnYkfA": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Black Week Saws",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "black-week",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_eicndk": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_tpNg9x": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Woxna community!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_9biQaF": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up for our newsletter to be the first to know when our black week saws drop here in our web shop.</p>"
+          }
+        },
+        "email_form_HMdDpn": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_tpNg9x",
+        "paragraph_9biQaF",
+        "email_form_HMdDpn"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_83f7j8": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_KNARhM": {
+          "type": "caption",
+          "settings": {
+            "caption": "Woxna - Crafted for the Outdoor Spirit",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "heading_iXwHGf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our story",
+            "heading_size": "h0"
+          }
+        },
+        "text_nALBMy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Woxna was founded in Sweden by the shores of the Voxna River. Here we make premium outdoor gear, with a sustainable heart and a Scandinavian soul.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_iczwYK": {
+          "type": "button",
+          "settings": {
+            "button_label": "More about us",
+            "button_link": "shopify://pages/our-story",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_KNARhM",
+        "heading_iXwHGf",
+        "text_nALBMy",
+        "button_iczwYK"
+      ],
+      "custom_css": [
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7betFC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FFFJQd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thank you for your support during our first year",
+            "heading_size": "h1"
+          }
+        },
+        "text_cVN7XX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The first year of Woxna has been an incredible journey—full of challenges and triumphs. The support from the outdoor community has been nothing short of amazing, and it’s made every moment worthwhile. We can’t thank you enough for being part of this journey; your support means the world to us.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_NMrzW6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more on our blog",
+            "button_link": "shopify://blogs/the-woxna-journal",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FFFJQd",
+        "text_cVN7XX",
+        "button_NMrzW6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Elma_blog-square.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_CPbRdx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ceinLh": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_X6YaCd": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_Cjbdik": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ceinLh",
+        "text_X6YaCd",
+        "buttons_Cjbdik"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_DQHCeD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9BzK4m": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made in Sweden with Quality and Tradition",
+            "heading_size": "h2"
+          }
+        },
+        "text_fnwHBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud to produce our saws in Hälsingland, Sweden. This rural region has a long-standing tradition of toolmaking, and we are fortunate to work with a factory that’s been in our co-founder’s family for generations. Here we can craft high-quality goods with the utmost care for both people and the environment.</p>"
+          }
+        },
+        "button_xQEffw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Proudly Made in Sweden",
+            "button_link": "shopify://pages/made-in-sweden",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9BzK4m",
+        "text_fnwHBb",
+        "button_xQEffw"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_DpDWFK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_REMJ4i": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability First",
+            "heading_size": "h1"
+          }
+        },
+        "text_ry3ayq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_xqqVKL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our green intentions",
+            "button_link": "shopify://pages/sustainablilty",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_REMJ4i",
+        "text_ry3ayq",
+        "button_xqqVKL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan250-in-hand.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_FVdRqr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J3fDmm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability First",
+            "heading_size": "h1"
+          }
+        },
+        "text_TKf9Lk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
+          }
+        },
+        "button_NcpnAk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our green intentions",
+            "button_link": "shopify://pages/sustainablilty",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_J3fDmm",
+        "text_TKf9Lk",
+        "button_NcpnAk"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter_H4rQNJ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_j9JrMi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Woxna community!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_BwKYAV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to get news and access to product launches and get a 10% discount on your first order.</p>"
+          }
+        },
+        "email_form_CQ69PJ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_j9JrMi",
+        "paragraph_BwKYAV",
+        "email_form_CQ69PJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_fbgFhP",
+    "featured_collection",
+    "1730798874462ed86d",
+    "image_banner_iTfWWc",
+    "featured_collection_mnYkfA",
+    "newsletter_eicndk",
+    "image_with_text_83f7j8",
+    "image_with_text_7betFC",
+    "image_banner_CPbRdx",
+    "rich_text_DQHCeD",
+    "image_with_text_DpDWFK",
+    "rich_text_FVdRqr",
+    "newsletter_H4rQNJ"
+  ]
+}

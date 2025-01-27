@@ -1,0 +1,829 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [
+    {
+      "key": "second_header_collection",
+      "namespace": "custom",
+      "name": "Second_header_collection",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [
+    {
+      "key": "hero",
+      "namespace": "custom",
+      "name": "hero",
+      "description": "the hero of the page",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text",
+      "namespace": "custom",
+      "name": "image with text",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "collapsible",
+      "namespace": "custom",
+      "name": "Collapsible",
+      "description": "a collapsible row",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "influencer_name_and_image",
+      "namespace": "custom",
+      "name": "Influencer name and image",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "instagram",
+      "namespace": "custom",
+      "name": "Instagram",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "questions_influencers",
+      "namespace": "custom",
+      "name": "questions influencers",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "instagram_text",
+      "namespace": "custom",
+      "name": "instagram text",
+      "description": "Texten ovanför länken  till instagram",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "instagram_link",
+      "namespace": "custom",
+      "name": "instagram link",
+      "description": "",
+      "type": {
+        "name": "link",
+        "category": "LINK"
+      }
+    },
+    {
+      "key": "social_icon",
+      "namespace": "custom",
+      "name": "social_icon",
+      "description": "The social media icon of choice",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "influencer_linkblock",
+      "namespace": "custom",
+      "name": "influencer_linkblock",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "material",
+      "namespace": "shopify",
+      "name": "Material",
+      "description": "Defines a product's primary material, such as cotton or wool",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "pitch_teeth_",
+      "namespace": "custom",
+      "name": "Pitch teeth:",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "preamble",
+      "namespace": "custom",
+      "name": "Preamble",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_care",
+      "namespace": "custom",
+      "name": "Product care",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tech_specs",
+      "namespace": "custom",
+      "name": "Tech specs",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "feature",
+      "namespace": "custom",
+      "name": "Features",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "packaging",
+      "namespace": "custom",
+      "name": "Packaging",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "story",
+      "namespace": "custom",
+      "name": "Story",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "handles",
+      "namespace": "custom",
+      "name": "handles",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "transport",
+      "namespace": "custom",
+      "name": "Transport",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "profile_or_setting",
+      "namespace": "custom",
+      "name": "Profile or setting",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tpi",
+      "namespace": "custom",
+      "name": "TPI",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "grind",
+      "namespace": "custom",
+      "name": "Grind",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "about_steel",
+      "namespace": "custom",
+      "name": "About Steel",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "blade_material",
+      "namespace": "custom",
+      "name": "Blade material",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "video",
+      "namespace": "custom",
+      "name": "video",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "feature1",
+      "namespace": "custom",
+      "name": "Feature 1",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature2",
+      "namespace": "custom",
+      "name": "Feature 2",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature3",
+      "namespace": "custom",
+      "name": "feature 3",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature4",
+      "namespace": "custom",
+      "name": "Feature 4",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature5",
+      "namespace": "custom",
+      "name": "Feature 5",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_6",
+      "namespace": "custom",
+      "name": "Feature 6",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_7",
+      "namespace": "custom",
+      "name": "Feature 7",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_8",
+      "namespace": "custom",
+      "name": "Feature 8",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_9",
+      "namespace": "custom",
+      "name": "Feature 9",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_10",
+      "namespace": "custom",
+      "name": "Feature 10",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "variant_images_grouping_list",
+      "namespace": "custom",
+      "name": "Variant Images Grouping List",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "grind_",
+      "namespace": "custom",
+      "name": "Grind (TPI)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "saw_direction",
+      "namespace": "custom",
+      "name": "saw direction",
+      "description": "PP - tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "tech_spec_list",
+      "namespace": "custom",
+      "name": "Tech spec list",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "blade_material_tech_spec_",
+      "namespace": "custom",
+      "name": "Blade material (tech spec)",
+      "description": "PP - tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "handle_material",
+      "namespace": "custom",
+      "name": "Handle material",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "blade_thickness",
+      "namespace": "custom",
+      "name": "Blade thickness (mm)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "blade_profile",
+      "namespace": "custom",
+      "name": "Blade profile",
+      "description": "PP - tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "teeth_setting",
+      "namespace": "custom",
+      "name": "Teeth setting",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_care_text",
+      "namespace": "custom",
+      "name": "Product care text",
+      "description": "Text till care and maintenance drop down menu",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "weight_g_",
+      "namespace": "custom",
+      "name": "Weight (g)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "weight",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "weight_oz_",
+      "namespace": "custom",
+      "name": "Weight (oz)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "weight",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "hardening",
+      "namespace": "custom",
+      "name": "Hardening",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "length_inch_",
+      "namespace": "custom",
+      "name": "Length (inch)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "length_folded_mm_",
+      "namespace": "custom",
+      "name": "Length Folded (mm)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "blade_length_mm_",
+      "namespace": "custom",
+      "name": "Blade Length (mm)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "blade_length_inch_",
+      "namespace": "custom",
+      "name": "Blade Length (inch)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "length_folded_inch_",
+      "namespace": "custom",
+      "name": "Length Folded (inch)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "length_mm_",
+      "namespace": "custom",
+      "name": "Length (mm)",
+      "description": "PP - Tech spec data",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "measurement_illustration",
+      "namespace": "custom",
+      "name": "Measurement illustration",
+      "description": "PP - product size illustration",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "review",
+      "namespace": "custom",
+      "name": "Review",
+      "description": "review",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    }
+  ],
+  "variant": [
+    {
+      "key": "custom_label_4",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 4",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_3",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 3",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_2",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 2",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_1",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 1",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_0",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 0",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_system",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size System",
+      "description": "The country of the size system used by your product.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_type",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size Type",
+      "description": "Your apparel product’s cut.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mpn",
+      "namespace": "mm-google-shopping",
+      "name": "Google: MPN",
+      "description": "Your product’s Manufacturer Part Number (MPN).",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "gender",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Gender",
+      "description": "The gender for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "condition",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Condition",
+      "description": "The condition of your product at time of sale.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "age_group",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Age Group",
+      "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "weight_oz_",
+      "namespace": "custom",
+      "name": "Weight (oz)",
+      "description": "The oz weight of the variant",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "weight_g_",
+      "namespace": "custom",
+      "name": "Weight (g)",
+      "description": "PP Variant - Tech spec data",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "blade_length_inch_",
+      "namespace": "custom",
+      "name": "Blade length (inch)",
+      "description": "PP Variant - Tech spec data ",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "blade_length_mm_",
+      "namespace": "custom",
+      "name": "Blade length (mm)",
+      "description": "PP Variant - Tech spec data",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "length_folded_inch_",
+      "namespace": "custom",
+      "name": "Length folded (inch)",
+      "description": "PP Variant- Tech spec data",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "length_folded_mm_",
+      "namespace": "custom",
+      "name": "Length folded (mm)",
+      "description": "PP Variant- Tech spec data",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "length_inch_",
+      "namespace": "custom",
+      "name": "Length (inch)",
+      "description": "PP Variant- Tech spec data",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "length_mm_",
+      "namespace": "custom",
+      "name": "Length (mm)",
+      "description": "PP Variant- Tech spec data",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    }
+  ],
+  "shop": []
+}
