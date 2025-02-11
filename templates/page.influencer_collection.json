@@ -36,7 +36,7 @@
       ],
       "settings": {
         "image": "{{ page.metafields.custom.hero.value.image.value }}",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -70,8 +70,8 @@
             "image": "{{ block.repeater.image.value }}",
             "video": "{{ block.repeater.video.value }}",
             "title": "{{ block.repeater.header.value }}",
-            "text": "<p>{{ block.repeater.header.value }}</p>",
-            "link_label": "test",
+            "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
+            "link_label": "Read more",
             "link": "{{ block.repeater.link_to_page.value }}"
           }
         }
@@ -83,7 +83,7 @@
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
