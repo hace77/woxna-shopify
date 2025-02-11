@@ -22,7 +22,7 @@
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "Woxna, we’ve been lucky to connect with some incredible people who share our passion for the outdoors, craftsmanship, and timeless tools. These friends of Woxna inspire us with their creativity, knowledge, and love for life among the trees. Here, we’d like to introduce you to a few of them – individ- uals who live and breathe the outdoor spirit and help bring our saws to life in their adventures.",
+            "text": "",
             "text_style": "subtitle"
           }
         }
@@ -36,7 +36,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Ljusnan250-sawing-topview.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -65,38 +65,70 @@
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
+        },
+        "text_TMnWtj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.custom.influencer_name_and_image.value.introtext | metafield_tag }}</p>",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "heading_wYUdYt",
-        "caption_4hNdEP"
+        "caption_4hNdEP",
+        "text_TMnWtj"
       ],
+      "custom_css": [],
       "settings": {
         "image": "{{ page.metafields.custom.influencer_name_and_image.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "small",
+        "height": "medium",
+        "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 48
       }
     },
     "main": {
       "type": "main-page",
       "custom_css": [
         "h1 {display: none;}",
-        "p:first-of-type {padding-top: 30px;}",
+        "p:first-of-type {padding-top: 5px;}",
         "ol {list-style-position: outside;}"
       ],
       "settings": {
-        "padding_top": 56,
+        "padding_top": 44,
         "padding_bottom": 28
+      }
+    },
+    "rich_text_JKRLzW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RAWJJP": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.instagram_image_header.value }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RAWJJP"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "multicolumn_PD4aN4": {
@@ -107,60 +139,7 @@
           "repeater": "{{ page.metafields.custom.instagram.value }}",
           "settings": {
             "image": "{{ block.repeater.images.value }}",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KJdNfD": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9bgxYV": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XNeHPb": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RCPhy8": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XhWzm8": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_4bfUn8": {
-          "type": "column",
-          "settings": {
+            "video": "{{ block.repeater.images.value }}",
             "title": "",
             "text": "",
             "link_label": "",
@@ -169,13 +148,7 @@
         }
       },
       "block_order": [
-        "column_6CjxGx",
-        "column_KJdNfD",
-        "column_9bgxYV",
-        "column_XNeHPb",
-        "column_RCPhy8",
-        "column_XhWzm8",
-        "column_4bfUn8"
+        "column_6CjxGx"
       ],
       "settings": {
         "title": "",
@@ -197,13 +170,6 @@
     "rich_text_qgMp3c": {
       "type": "rich-text",
       "blocks": {
-        "heading_wPRVwr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Questions",
-            "heading_size": "h1"
-          }
-        },
         "text_wFjDkP": {
           "type": "text",
           "settings": {
@@ -212,36 +178,12 @@
         }
       },
       "block_order": [
-        "heading_wPRVwr",
         "text_wFjDkP"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_ikL8KB": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WyDTtD": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ page.metafields.custom.instagram_text.value }}",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WyDTtD"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -261,16 +203,56 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_addfUx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QRE468": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.instagram_block_2.value }}",
+          "settings": {
+            "image": "{{ block.repeater.images.value }}",
+            "video": "{{ block.repeater.video.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QRE468"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_9E4k3h": {
       "type": "custom-liquid",
       "custom_css": [
-        ".ikon-container {display: flex; justify-content: center; gap: 10px; align-items: center; flex-flow: row wrap;}",
-        ".icon {width: 60px; /* Anpassa storleken på ikonerna */ height: 60px; color: #5a493a;}"
+        ".ikon-container {display: flex; justify-content: center; gap: 5px 50px; align-items: center; flex-flow: row wrap; width: 50%; margin: auto; max-width: 700px;}",
+        ".ikon-container > * {text-align: center; color: #ffffff;}",
+        ".icon {flex: 2; padding: 10px;}",
+        ".social_image {border-radius: 50%; border: 7px solid #ffff; width: 250px; height: 250px; overflow: hidden; }",
+        ".social_image img {width: 100%; height: auto; }",
+        "@media all and (max-width: 600px) {.ikon-container {/* On small screens, we are no longer using row direction but column */ flex-direction: column; width: 90%; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"ikon-container\">\n    <i class=\"icon\">\n    {%  if page.metafields.custom.instagram_link.value and page.metafields.custom.social_icon.value %}\n  <a href=\"{{ page.metafields.custom.instagram_link.value.url }}\" target=\"_blank\">\n  <img src=\"{{ page.metafields.custom.social_icon.value| image_url: width: 50}}\" alt=\"\" />\n  </a>\n  \n{% endif %}\n    </i>",
-        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
-        "padding_top": 0,
+        "custom_liquid": "<div class=\"ikon-container\">\n<div class=\"insta_image\">\n<div class=\"social_image\" >\n <img src=\"{{ page.metafields.custom.social_link_image.value| image_url: width: 200}}\" alt=\"\" />\n </div>    \n </div>    \n<div class=\"icon\">\n    {%  if page.metafields.custom.instagram_link.value and page.metafields.custom.social_icon.value %}\n\n<h2>{{page.metafields.custom.instagram_text.value}}</h2>\n  <a href=\"{{ page.metafields.custom.instagram_link.value.url }}\" target=\"_blank\">\n  <img style=\"\n    width: 70px;\"\n src=\"{{ page.metafields.custom.social_icon.value| image_url: width: 50}}\" alt=\"\" />\n\n  </a>\n</div>\n\n{% endif %}\n\n    \n</div>",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "padding_top": 44,
         "padding_bottom": 44
       }
     }
@@ -279,10 +261,11 @@
     "image_banner_ExBjAj",
     "image_with_text_PjD7cq",
     "main",
+    "rich_text_JKRLzW",
     "multicolumn_PD4aN4",
     "rich_text_qgMp3c",
-    "rich_text_ikL8KB",
     "custom_liquid_ezGC89",
+    "multicolumn_addfUx",
     "custom_liquid_9E4k3h"
   ]
 }
