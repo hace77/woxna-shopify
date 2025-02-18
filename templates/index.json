@@ -51,7 +51,7 @@
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-and-Halsing-foldable-bushcraft-saws.jpg",
+        "image": "shopify://shop_images/Woxna-foldable-saws-Halsing-Ljusnan.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
