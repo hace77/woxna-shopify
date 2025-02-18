@@ -77,7 +77,7 @@
         "text_wYYamC": {
           "type": "text",
           "settings": {
-            "text": "<p>We have just launched our first saws Hälsing Ljusnan.  <br/>Check them out below.</p>"
+            "text": "<p>Our saws are versatile, sharp and ready for your next outdoor adventure.<br/>Check them out below.</p>"
           }
         },
         "button_EpzAqy": {
@@ -142,21 +142,60 @@
         "padding_bottom": 44
       }
     },
-    "1730798874462ed86d": {
-      "type": "apps",
+    "image_with_text_7betFC": {
+      "type": "image-with-text",
       "blocks": {
-        "judge_me_reviews_featured_carousel_ge8YUn": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "caption_EWYaLV": {
+          "type": "caption",
           "settings": {
-            "maxwidth": 1080
+            "caption": "Introducing Ljusnan",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_FFFJQd": {
+          "type": "heading",
+          "settings": {
+            "heading": "No More Rusty Blades",
+            "heading_size": "h1"
+          }
+        },
+        "text_cVN7XX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We started Woxna with a vision: to create the best folding saw, a saw that not only works flawlessly in the field but also captured the timeless look and feel of Scandinavian tool traditions. Now it’s finally here, we hope you love it as much as we do.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_NMrzW6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more on our blog",
+            "button_link": "shopify://blogs/the-woxna-journal/the-best-folding-saw-and-the-first-saw-of-its-kind-with-a-stainless-steel-blade",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_ge8YUn"
+        "caption_EWYaLV",
+        "heading_FFFJQd",
+        "text_cVN7XX",
+        "button_NMrzW6"
       ],
       "settings": {
-        "include_margins": true
+        "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_banner_iTfWWc": {
@@ -271,6 +310,56 @@
         "padding_bottom": 52
       }
     },
+    "newsletter_H4rQNJ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_j9JrMi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% of on Your First Order",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_BwKYAV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our newsletter and be the first to hear about new products, exclusive launches, and updates. Plus, enjoy 10% off your first purchase as a welcome gift.</p>"
+          }
+        },
+        "email_form_CQ69PJ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_j9JrMi",
+        "paragraph_BwKYAV",
+        "email_form_CQ69PJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1730798874462ed86d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_ge8YUn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_ge8YUn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "image_with_text_83f7j8": {
       "type": "image-with-text",
       "blocks": {
@@ -327,62 +416,6 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_7betFC": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_EWYaLV": {
-          "type": "caption",
-          "settings": {
-            "caption": "Introducing Ljusnan",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_FFFJQd": {
-          "type": "heading",
-          "settings": {
-            "heading": "No More Rusty Blades",
-            "heading_size": "h1"
-          }
-        },
-        "text_cVN7XX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We started Woxna with a vision: to create the best folding saw, a saw that not only works flawlessly in the field but also captured the timeless look and feel of Scandinavian tool traditions. Now it’s finally here, we hope you love it as much as we do.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_NMrzW6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more on our blog",
-            "button_link": "shopify://blogs/the-woxna-journal/the-best-folding-saw-and-the-first-saw-of-its-kind-with-a-stainless-steel-blade",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_EWYaLV",
-        "heading_FFFJQd",
-        "text_cVN7XX",
-        "button_NMrzW6"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 36,
@@ -564,39 +597,6 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "newsletter_H4rQNJ": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_j9JrMi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% of on Your First Purchase",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_BwKYAV": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>SIgn up for our news letter! Be the first to get news and access to product launches and get a 10% discount on your first order.</p>"
-          }
-        },
-        "email_form_CQ69PJ": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_j9JrMi",
-        "paragraph_BwKYAV",
-        "email_form_CQ69PJ"
-      ],
-      "settings": {
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
