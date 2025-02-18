@@ -9,6 +9,53 @@
  */
 {
   "sections": {
+    "video_banner_ah8YRc": {
+      "type": "video-banner",
+      "blocks": {
+        "heading_7mNJp8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_JaFnfA": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_67Jkf6": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7mNJp8",
+        "text_JaFnfA",
+        "buttons_67Jkf6"
+      ],
+      "settings": {
+        "video": "shopify://files/videos/Halsing 16-9.mp4",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -18,6 +65,7 @@
     }
   },
   "order": [
+    "video_banner_ah8YRc",
     "main"
   ]
 }
