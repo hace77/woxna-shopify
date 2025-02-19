@@ -48,12 +48,11 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {display: none;}",
-        "p:first-of-type {padding-top: 30px;}"
+        "h1 {display: none;}"
       ],
       "settings": {
-        "padding_top": 56,
-        "padding_bottom": 28
+        "padding_top": 16,
+        "padding_bottom": 0
       }
     },
     "173997263555ac11f3": {
