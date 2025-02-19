@@ -280,9 +280,9 @@
           "settings": {
             "form_id": "{{ page.metafields.custom.form_id.value }}",
             "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#ffffff",
-            "links_color": "#1878b9",
+            "button_background_color": "#5c694d",
+            "button_label_color": "#f2e4c4",
+            "links_color": "#5c694d",
             "errors_color": "#e02229",
             "text_alignment": "center",
             "form_alignment": "center",
