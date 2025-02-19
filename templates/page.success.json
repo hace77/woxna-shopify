@@ -50,7 +50,6 @@
     },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p:first-of-type {padding-top: 30px;}",
