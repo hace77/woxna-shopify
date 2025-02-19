@@ -1,0 +1,98 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "custom_css": [
+        "h2 {text-wrap: balance;}"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "173995359549754196": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_kz9e3z": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "{{ page.metafields.custom.form_id.value }}",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 25,
+            "padding_bottom": 25,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_kz9e3z"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "main",
+    "173995359549754196"
+  ]
+}
