@@ -51,11 +51,13 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {display: none;}"
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 40px;}",
+        "p:last-of-type {padding-bottom: 40px;}"
       ],
       "settings": {
-        "padding_top": 68,
-        "padding_bottom": 44
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
