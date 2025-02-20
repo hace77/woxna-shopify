@@ -22,7 +22,7 @@
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text": "",
             "text_style": "subtitle"
           }
         }
@@ -37,7 +37,7 @@
       "settings": {
         "image": "{{ page.metafields.custom.hero.value.image.value }}",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -46,6 +46,28 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "rich_text_6yFYam": {
+      "type": "rich-text",
+      "blocks": {
+        "text_a3JbrG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.custom.hero.value.herotext.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_a3JbrG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "main": {
@@ -127,6 +149,7 @@
   },
   "order": [
     "image_banner_ExBjAj",
+    "rich_text_6yFYam",
     "main",
     "multicolumn_RWQdcT",
     "featured_collection_4YWUDf"
