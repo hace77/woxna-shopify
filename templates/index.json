@@ -395,12 +395,7 @@
         "text_nALBMy",
         "button_iczwYK"
       ],
-      "custom_css": [
-        ".button {border-radius: 10px; border: none;}",
-        ".button:before {box-shadow: unset !important;}",
-        ".button:after {box-shadow: unset !important;}",
-        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
         "height": "adapt",
