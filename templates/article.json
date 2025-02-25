@@ -42,6 +42,9 @@
         "share",
         "content"
       ],
+      "custom_css": [
+        ".button {border: none; background-color: #445f45;}"
+      ],
       "settings": {}
     },
     "featured_product_trHeXN": {
