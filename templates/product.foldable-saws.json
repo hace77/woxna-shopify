@@ -111,7 +111,7 @@
         ".horizontal li a:hover {text-decoration: underline;}"
       ],
       "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_7GmfxC\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
         "color_scheme": "scheme-2",
         "padding_top": 12,
         "padding_bottom": 12
