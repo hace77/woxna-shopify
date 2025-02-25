@@ -13,7 +13,7 @@
       "type": "main-cart-items",
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
-        ".button {border-radius: 10px; border: none;}",
+        ".button {border: none;}",
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
