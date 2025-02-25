@@ -44,12 +44,7 @@
         "text_eRbp9f",
         "button"
       ],
-      "custom_css": [
-        ".button {border-radius: 10px; border: none;}",
-        ".button:before {box-shadow: unset !important;}",
-        ".button:after {box-shadow: unset !important;}",
-        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/Woxna-foldable-saws-Halsing-Ljusnan.jpg",
         "image_overlay_opacity": 0,
@@ -109,8 +104,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
-        ".button {border-radius: 10px; border: none;}",
+        ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
+        ".button {border: none;}",
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
