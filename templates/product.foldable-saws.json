@@ -103,7 +103,6 @@
     },
     "custom_liquid_k7EFPc": {
       "type": "custom-liquid",
-      "disabled": true,
       "custom_css": [
         "#custom-nav {margin: auto; width: 90%;}",
         "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
@@ -112,7 +111,7 @@
         ".horizontal li a:hover {text-decoration: underline;}"
       ],
       "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#ImageWithText--template--23569246454103__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--23569246454103__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#shopify-section-template--23569246454103__rich_text_mhWMPT\">Reviews</a></li>\n</ul>\n</div>",
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24698522992983__rich_text_7GmfxC\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24698522992983__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
         "color_scheme": "scheme-2",
         "padding_top": 12,
         "padding_bottom": 12
