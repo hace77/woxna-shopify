@@ -1,6 +1,38 @@
 {
-  "article": [],
-  "blog": [],
+  "article": [
+    {
+      "key": "product_blog_post",
+      "namespace": "custom",
+      "name": "Product blog post",
+      "description": "Product at the end of a blog post",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "collection_blog_post",
+      "namespace": "custom",
+      "name": "Collection blog post",
+      "description": "",
+      "type": {
+        "name": "collection_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "blog": [
+    {
+      "key": "blog_internal_linkblock",
+      "namespace": "custom",
+      "name": "blog internal linkblock",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "brand": [],
   "collection": [
     {
@@ -11,6 +43,16 @@
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "collections_second_text",
+      "namespace": "custom",
+      "name": "Collections second text",
+      "description": "the textblock under the products to further describe the collection",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
       }
     }
   ],
@@ -118,6 +160,66 @@
       "type": {
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "social_link_image",
+      "namespace": "custom",
+      "name": "Social link image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "instagram_block_2",
+      "namespace": "custom",
+      "name": "instagram block 2",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "instagram_block_3",
+      "namespace": "custom",
+      "name": "instagram block 3",
+      "description": "",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "instagram_image_header",
+      "namespace": "custom",
+      "name": "Instagram image header",
+      "description": "The header above  the instagram feed",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "linkblock_internal",
+      "namespace": "custom",
+      "name": "linkblock internal",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "form_id",
+      "namespace": "custom",
+      "name": "Form ID",
+      "description": "the ID of a form",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
       }
     }
   ],
