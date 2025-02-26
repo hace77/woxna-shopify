@@ -114,12 +114,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_q4bA3M": {
+      "type": "rich-text",
+      "blocks": {
+        "text_UdkziW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>"
+          }
+        },
+        "button_effggk": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_UdkziW",
+        "button_effggk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner_dLVAWX",
     "rich_text_dbVHAH",
     "banner",
-    "product-grid"
+    "product-grid",
+    "rich_text_q4bA3M"
   ]
 }
