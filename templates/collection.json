@@ -9,6 +9,34 @@
  */
 {
   "sections": {
+    "image_banner_dLVAWX": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4QmWJi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Timeless tools for modern adventurers",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4QmWJi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "rich_text_dbVHAH": {
       "type": "rich-text",
       "blocks": {
@@ -89,6 +117,7 @@
     }
   },
   "order": [
+    "image_banner_dLVAWX",
     "rich_text_dbVHAH",
     "banner",
     "product-grid"
