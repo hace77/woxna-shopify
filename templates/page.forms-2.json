@@ -48,6 +48,18 @@
         "show_text_below": false
       }
     },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
     "1740648088ca3de18f": {
       "type": "apps",
       "blocks": {
@@ -56,7 +68,7 @@
           "settings": {
             "form_id": "350794",
             "text_color": "#202020",
-            "button_background_color": "#202020",
+            "button_background_color": "#5c694d",
             "button_label_color": "#FFFFFF",
             "links_color": "#1878B9",
             "errors_color": "#E02229",
@@ -73,26 +85,13 @@
         "forms_inline_CEeejw"
       ],
       "settings": {
-        "include_margins": true
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "custom_css": [
-        "h1 {display: none;}",
-        "p:first-of-type {padding-top: 30px;}",
-        "ol {list-style-position: outside;}"
-      ],
-      "settings": {
-        "padding_top": 56,
-        "padding_bottom": 28
+        "include_margins": false
       }
     }
   },
   "order": [
     "image_banner_ExBjAj",
-    "1740648088ca3de18f",
-    "main"
+    "main",
+    "1740648088ca3de18f"
   ]
 }
