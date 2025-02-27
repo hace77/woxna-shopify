@@ -85,7 +85,7 @@
         "forms_inline_CEeejw"
       ],
       "settings": {
-        "include_margins": false
+        "include_margins": true
       }
     }
   },
