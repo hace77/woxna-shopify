@@ -67,7 +67,7 @@
         "forms_inline_kz9e3z": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "form_id": "{{ page.metafields.custom.form_id.value }}",
+            "form_id": "350794",
             "text_color": "#202020",
             "button_background_color": "#202020",
             "button_label_color": "#ffffff",
