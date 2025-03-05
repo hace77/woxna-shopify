@@ -57,6 +57,37 @@
         "padding_bottom": 28
       }
     },
+    "collapsible_content_UPUCyz": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MpwwJh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "More information about the images",
+            "icon": "none",
+            "row_content": "<p>Below you will find links so you can download zip-files of our images.</p><p>We have a few different sets of images to choose from, for example clean studio images with white backgrunds or outdoor photos showing the saws in use out in the forest. They also come in two different sizes:</p><h4>Large images - optimized for print</h4><p>Tiff-files</p><p>Approximate size: ???? x ???? pixels</p><p>AdobeRgb colour profile for best possible colour depth.</p><h4>Medium images - optimized for digital</h4><p>Jpg-files</p><p>Approximate size: ???? x ???? pixels</p><p>sRGB color profile, ensuring they look their best on digital screens. </p><p>Scroll down and chose the images you want.</p><h2></h2>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MpwwJh"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Choose Images and Download",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "richtext_with_image_mKh7Vp": {
       "type": "richtext_with_image",
       "blocks": {
@@ -71,12 +102,6 @@
           "type": "image",
           "settings": {
             "image_select": "shopify://shop_images/Download-image-packages.jpg"
-          }
-        },
-        "text_8ppXqf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_FKCxUg": {
@@ -105,7 +130,6 @@
       "block_order": [
         "heading_Tpze8i",
         "image_LYKzPg",
-        "text_8ppXqf",
         "button_FKCxUg",
         "button_73pmHn"
       ],
@@ -134,12 +158,6 @@
             "image_select": "shopify://shop_images/Download-image-packages3.jpg"
           }
         },
-        "text_Yri8rW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
         "button_a9gAGL": {
           "type": "button",
           "settings": {
@@ -166,7 +184,6 @@
       "block_order": [
         "heading_TwrcwR",
         "image_44kcV7",
-        "text_Yri8rW",
         "button_a9gAGL",
         "button_7Lie7A"
       ],
@@ -353,6 +370,7 @@
   "order": [
     "image_banner_ExBjAj",
     "main",
+    "collapsible_content_UPUCyz",
     "richtext_with_image_mKh7Vp",
     "richtext_with_image_F7pH9D",
     "richtext_with_image_mheWbJ",
