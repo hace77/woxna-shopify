@@ -56,6 +56,60 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_dMb6gM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NkUfLQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Studio images with white backgrounds",
+            "heading_size": "h1"
+          }
+        },
+        "text_KVdJCK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_E4Q9jw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Studio images - Large",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Woxna%20Images%20Mar%203%202025.zip",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_RaQjVy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Outdoor images - Medium",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NkUfLQ",
+        "text_KVdJCK",
+        "button_E4Q9jw",
+        "button_RaQjVy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_eJ3Mw3": {
       "type": "featured-collection",
       "settings": {
@@ -119,55 +173,39 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_dMb6gM": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NkUfLQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Studio images with white backgrounds",
-            "heading_size": "h1"
-          }
-        },
-        "text_KVdJCK": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_E4Q9jw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Download Studio images - Large",
-            "button_link": "https://WoxnaCDN.b-cdn.net/Woxna%20Images%20Mar%203%202025.zip",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_NkUfLQ",
-        "text_KVdJCK",
-        "button_E4Q9jw"
-      ],
+    "custom_liquid_A7MYdn": {
+      "type": "custom-liquid",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
+        "custom_liquid": "",
+        "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "image_banner_CGr7GX": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Download-image-packages.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "image_banner_ExBjAj",
     "main",
+    "image_banner_CGr7GX",
+    "rich_text_dMb6gM",
     "featured_collection_eJ3Mw3",
     "multicolumn_HkjXga",
-    "rich_text_dMb6gM"
+    "custom_liquid_A7MYdn"
   ]
 }
