@@ -47,6 +47,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p:first-of-type {padding-top: 30px;}"
@@ -69,7 +70,7 @@
         "image_LYKzPg": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages4.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages.jpg"
           }
         },
         "text_8ppXqf": {
@@ -130,7 +131,7 @@
         "image_44kcV7": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages4.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages3.jpg"
           }
         },
         "text_Yri8rW": {
@@ -142,7 +143,18 @@
         "button_a9gAGL": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Download Outdoor images - Large",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_7Lie7A": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Outdoor images - Medium",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -155,7 +167,8 @@
         "heading_TwrcwR",
         "image_44kcV7",
         "text_Yri8rW",
-        "button_a9gAGL"
+        "button_a9gAGL",
+        "button_7Lie7A"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -191,7 +204,7 @@
         "button_haAqJx": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Download Logos, measurements & packaging",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -228,7 +241,7 @@
         "image_cCAbJD": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages4.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages2.jpg"
           }
         },
         "text_GQPmqe": {
@@ -240,7 +253,7 @@
         "button_dRJBCz": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Download Press Kit",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
