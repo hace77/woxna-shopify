@@ -1,0 +1,65 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .image_container{
+    width: 100%
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .image_container .image{
+    width: 100%;
+  }
+{%- endstyle -%}
+<div class="page-width">
+
+
+    <div class="image_container">
+        {% if section.settings.image != blank %}
+          <img 
+            class="image"
+            src="{{ section.settings.image | image_url }}" 
+            loading="lazy" 
+             height="{{ section.settings.image.height }}" 
+            width="{{ section.settings.image.width }}"
+          />
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Custom image",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-with-text.settings.image.label"
+      },
+   
+  ],
+  "presets": [
+    {
+      "name": "custom image"
+    }
+  ]
+}
+{% endschema %}
