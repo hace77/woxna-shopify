@@ -57,6 +57,36 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_yHJEzK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X7gb4N": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choose images and download",
+            "heading_size": "h1"
+          }
+        },
+        "text_cj9JAB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Below you will find links so you can download zip-files of our images</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X7gb4N",
+        "text_cj9JAB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "collapsible_content_UPUCyz": {
       "type": "collapsible-content",
       "blocks": {
@@ -74,8 +104,8 @@
         "collapsible_row_MpwwJh"
       ],
       "settings": {
-        "caption": "",
-        "heading": "Choose Images and Download",
+        "caption": ".",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -84,7 +114,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -370,6 +400,7 @@
   "order": [
     "image_banner_ExBjAj",
     "main",
+    "rich_text_yHJEzK",
     "collapsible_content_UPUCyz",
     "richtext_with_image_mKh7Vp",
     "richtext_with_image_F7pH9D",
