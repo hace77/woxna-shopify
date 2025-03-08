@@ -70,7 +70,7 @@
         "text_cj9JAB": {
           "type": "text",
           "settings": {
-            "text": "<p>Below you will find links so you can download zip-files of our images</p>"
+            "text": "<p>Below you will find links so you can download zip-files of our images. We have a few different sets of images to choose from, for example clean studio images with white backgrunds or outdoor photos showing the saws in use out in the forest.</p>"
           }
         }
       },
@@ -93,9 +93,9 @@
         "collapsible_row_MpwwJh": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "More information about the images",
+            "heading": "Image Guide: Download Options",
             "icon": "none",
-            "row_content": "<p>We have a few different sets of images to choose from, for example clean studio images with white backgrunds or outdoor photos showing the saws in use out in the forest. They also come in two different sizes:</p><h4>Large images - optimized for print</h4><p>Tiff-files</p><p>Approximate size: ???? x ???? pixels</p><p>AdobeRgb colour profile for best possible colour depth.</p><h4>Medium images - optimized for digital</h4><p>Jpg-files</p><p>Approximate size: ???? x ???? pixels</p><p>sRGB color profile, ensuring they look their best on digital screens. </p><p>Scroll down and chose the images you want.</p><h2></h2>",
+            "row_content": "<p>Some of our image sets come in two different versions with different sizes, file types and color profiles:</p><h4>Large images - optimized for print</h4><ul><li>Tiff-files</li><li>Approximate size: ???? x ???? pixels</li><li>AdobeRgb colour profile for best possible colour depth.</li></ul><h4>Medium images - optimized for digital</h4><ul><li>Jpg-files</li><li>Approximate size: ???? x ???? pixels</li><li>sRGB color profile, ensuring they look their best on digital screens. </li></ul><p>Scroll down and chose the images you want.</p><h2></h2>",
             "page": ""
           }
         }
