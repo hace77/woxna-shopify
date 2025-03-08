@@ -134,10 +134,16 @@
             "image_select": "shopify://shop_images/Download-image-packages.jpg"
           }
         },
+        "text_QiNJkE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clean product images with white backgrounds - also contains images without shadows.</p>"
+          }
+        },
         "button_FKCxUg": {
           "type": "button",
           "settings": {
-            "button_label": "Download Studio images - Large",
+            "button_label": "Download Studio images - Large Size",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -148,7 +154,7 @@
         "button_73pmHn": {
           "type": "button",
           "settings": {
-            "button_label": "Download Outdoor images - Medium",
+            "button_label": "Download Outdoor images - Medium Size",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -160,6 +166,7 @@
       "block_order": [
         "heading_Tpze8i",
         "image_LYKzPg",
+        "text_QiNJkE",
         "button_FKCxUg",
         "button_73pmHn"
       ],
@@ -188,10 +195,16 @@
             "image_select": "shopify://shop_images/Download-image-packages3.jpg"
           }
         },
+        "text_KHPCHd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This image set contains images of our saws in use out in nature.</p>"
+          }
+        },
         "button_a9gAGL": {
           "type": "button",
           "settings": {
-            "button_label": "Download Outdoor images - Large",
+            "button_label": "Download Outdoor images - Large Size",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -202,7 +215,7 @@
         "button_7Lie7A": {
           "type": "button",
           "settings": {
-            "button_label": "Download Outdoor images - Medium",
+            "button_label": "Download Outdoor images - Medium Size",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -214,6 +227,7 @@
       "block_order": [
         "heading_TwrcwR",
         "image_44kcV7",
+        "text_KHPCHd",
         "button_a9gAGL",
         "button_7Lie7A"
       ],
