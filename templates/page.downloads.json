@@ -153,6 +153,7 @@
         },
         "button_73pmHn": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Download Outdoor images - Medium Size",
             "button_link": "",
