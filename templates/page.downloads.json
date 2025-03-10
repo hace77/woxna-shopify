@@ -204,11 +204,11 @@
         "button_a9gAGL": {
           "type": "button",
           "settings": {
-            "button_label": "Download Outdoor images - Large Size",
-            "button_link": "",
+            "button_label": "Download Hälsing and Ljusnan - Large",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20and%20Ljusnan%20-%20Large.zip",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Download Ljusnan  - Large",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Ljusnan%20-%20Large.zip",
             "button_style_secondary_2": false
           }
         },
@@ -216,7 +216,7 @@
           "type": "button",
           "settings": {
             "button_label": "Download Outdoor images - Medium Size",
-            "button_link": "",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Ljusnan%20-%20Large.zip",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -315,7 +315,7 @@
           "type": "button",
           "settings": {
             "button_label": "Download Press Kit",
-            "button_link": "",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Woxna%20-%20Press%20kit.zip",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
