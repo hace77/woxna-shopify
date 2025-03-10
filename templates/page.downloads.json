@@ -95,7 +95,7 @@
           "settings": {
             "heading": "Image Guide: Download Options",
             "icon": "none",
-            "row_content": "<p>Some of our image sets come in two different versions with different sizes, file types and color profiles:</p><h4>Large images - optimized for print</h4><ul><li>Tiff-files</li><li>Approximate size: ???? x ???? pixels</li><li>AdobeRgb colour profile for best possible colour depth.</li></ul><h4>Medium images - optimized for digital</h4><ul><li>Jpg-files</li><li>Approximate size: ???? x ???? pixels</li><li>sRGB color profile, ensuring they look their best on digital screens. </li></ul><p>Scroll down and chose the images you want.</p><h2></h2>",
+            "row_content": "<p>Some of our image sets come in two different versions with different sizes, file types and color profiles:</p><h4>Large images - optimized for print</h4><ul><li>Tiff-files</li><li>Approximate size: 5000 x 3500 pixels</li><li>AdobeRgb colour profile for best possible colour depth.</li></ul><h4>Medium images - optimized for digital</h4><ul><li>Jpg-files</li><li>Approximate size: 3000 x 2000 pixels (1200 x 1200 for studio images)</li><li>sRGB color profile, ensuring they look their best on digital screens. </li></ul><p>Scroll down and chose the images you want.</p><h2></h2>",
             "page": ""
           }
         }
@@ -199,7 +199,7 @@
         "text_KHPCHd": {
           "type": "text",
           "settings": {
-            "text": "<p>This image set contains images of our saws in use out in nature.</p>"
+            "text": "<p>These image sets contains images of our saws in use out in nature. The first file \"Hälsing and Ljusnan\" feature both models in the same images, the next two contains images with just one saw model in each image. And the last one contain medium size images of all models.</p>"
           }
         },
         "button_a9gAGL": {
