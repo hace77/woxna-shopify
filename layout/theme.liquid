@@ -297,6 +297,15 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    {% if template contains 'search' %}
+      <meta name="robots" content="noindex">
+      {% endif %}
+
+      {% if handle contains 'downloads' %}
+        <meta name="robots" content="noindex">
+        {% endif %}
+        
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
