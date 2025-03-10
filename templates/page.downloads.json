@@ -144,10 +144,10 @@
           "type": "button",
           "settings": {
             "button_label": "Download Studio images - Large Size",
-            "button_link": "",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Studio%20Large.zip",
             "button_style_secondary": false,
-            "button_label_2": "Download???",
-            "button_link_2": "",
+            "button_label_2": "Download Studio images - Medium Size",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Studio%20Medium.zip",
             "button_style_secondary_2": false
           }
         },
@@ -218,7 +218,7 @@
             "button_label": "Download Hälsing - Large Size",
             "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20-%20Large.zip",
             "button_style_secondary": false,
-            "button_label_2": "Download outdoor Lifestyle  Medium Size",
+            "button_label_2": "Download outdoor Lifestyle - Medium Size",
             "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20Lifestyle-Medium.zip",
             "button_style_secondary_2": false
           }
