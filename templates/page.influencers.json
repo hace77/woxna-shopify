@@ -214,6 +214,14 @@
     "rich_text_qgMp3c": {
       "type": "rich-text",
       "blocks": {
+        "heading_VFCepk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
         "text_wFjDkP": {
           "type": "text",
           "settings": {
@@ -222,6 +230,7 @@
         }
       },
       "block_order": [
+        "heading_VFCepk",
         "text_wFjDkP"
       ],
       "settings": {
