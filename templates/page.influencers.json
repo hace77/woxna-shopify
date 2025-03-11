@@ -159,7 +159,7 @@
           "type": "heading",
           "settings": {
             "heading": "{{ page.metafields.custom.instagram_image_header.value }}",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         }
       },
