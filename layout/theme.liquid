@@ -305,6 +305,18 @@
       {% if handle contains 'downloads' %}
         <meta name="robots" content="noindex">
         {% endif %}
+
+        {% if template contains "kickstarter" %}
+          <style>
+            .header-wrapper{
+                display: none !important;
+            }
+            
+            footer.footer{
+                display: none !important;
+            }
+            </style>
+          {% endif %}
         
   </head>
 

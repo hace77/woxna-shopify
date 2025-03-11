@@ -221,6 +221,26 @@
         "name": "number_integer",
         "category": "NUMBER"
       }
+    },
+    {
+      "key": "influencer_intro",
+      "namespace": "custom",
+      "name": "Influencer intro",
+      "description": "The introtext under the header",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "quote",
+      "namespace": "custom",
+      "name": "Quote",
+      "description": "A quote on a page",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "product": [
