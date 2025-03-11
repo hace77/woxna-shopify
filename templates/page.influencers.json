@@ -256,6 +256,28 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_B9KJEx": {
+      "type": "rich-text",
+      "blocks": {
+        "text_nHjhL9": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.quote | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_nHjhL9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn_addfUx": {
       "type": "multicolumn",
       "blocks": {
@@ -319,6 +341,7 @@
     "multicolumn_PD4aN4",
     "rich_text_qgMp3c",
     "custom_liquid_ezGC89",
+    "rich_text_B9KJEx",
     "multicolumn_addfUx",
     "custom_liquid_9E4k3h"
   ]
