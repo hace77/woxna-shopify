@@ -62,7 +62,7 @@
         "text_HKibAN": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "{{ page.metafields.custom.influencer_intro | metafield_tag }}"
           }
         },
         "button_wqL7QE": {
