@@ -48,6 +48,50 @@
         "show_text_below": true
       }
     },
+    "rich_text_NnqWGf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TVHytk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_HKibAN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_wqL7QE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TVHytk",
+        "text_HKibAN",
+        "button_wqL7QE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_PjD7cq": {
       "type": "image-with-text",
       "blocks": {
@@ -245,8 +289,8 @@
         ".ikon-container {display: flex; justify-content: center; gap: 5px 50px; align-items: center; flex-flow: row wrap; width: 50%; margin: auto; max-width: 700px;}",
         ".ikon-container > * {text-align: center; color: #ffffff;}",
         ".icon {flex: 2; padding: 10px;}",
-        ".social_image {border-radius: 50%; border: 7px solid #ffff; width: 250px; height: 250px; overflow: hidden; }",
-        ".social_image img {width: 100%; height: auto; }",
+        ".social_image {border-radius: 50%; border: 7px solid #ffff; width: 250px; height: 250px; overflow: hidden;}",
+        ".social_image img {width: 100%; height: auto;}",
         "@media all and (max-width: 600px) {.ikon-container {/* On small screens, we are no longer using row direction but column */ flex-direction: column; width: 90%; }}"
       ],
       "settings": {
@@ -259,6 +303,7 @@
   },
   "order": [
     "image_banner_ExBjAj",
+    "rich_text_NnqWGf",
     "image_with_text_PjD7cq",
     "main",
     "rich_text_JKRLzW",
