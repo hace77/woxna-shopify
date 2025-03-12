@@ -32,7 +32,7 @@
         "text_KW7Vgx"
       ],
       "settings": {
-        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
