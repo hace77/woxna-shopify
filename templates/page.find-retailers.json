@@ -94,6 +94,48 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_DTpKTM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gEV83L": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a retailer!",
+            "heading_size": "h1"
+          }
+        },
+        "text_bKPddL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Follow the link below to fill out our retailer form and we will contact you</p>"
+          }
+        },
+        "button_QqezEe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Become a retailer",
+            "button_link": "shopify://pages/for-retailers-and-distributors",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gEV83L",
+        "text_bKPddL",
+        "button_QqezEe"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "173997263555ac11f3": {
       "type": "apps",
       "blocks": {
@@ -190,6 +232,7 @@
     "image_banner_ExBjAj",
     "main",
     "multicolumn_aE6DqU",
+    "rich_text_DTpKTM",
     "173997263555ac11f3",
     "featured_collection_eJ3Mw3",
     "multicolumn_HkjXga"
