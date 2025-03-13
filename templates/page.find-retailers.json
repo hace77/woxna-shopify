@@ -65,7 +65,7 @@
             "image": "{{ block.repeater.logo.value }}",
             "title": "{{ block.repeater.name.value }}",
             "text": "<p>{{ block.repeater.country.value }}</p>",
-            "link_label": "Read more",
+            "link_label": "{{ block.repeater.link_label.value }}",
             "link": "{{ block.repeater.store_url.value }}"
           }
         }
