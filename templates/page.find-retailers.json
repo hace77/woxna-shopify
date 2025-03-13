@@ -163,20 +163,10 @@
             "link_label": "Read more",
             "link": "{{ block.repeater.link.value }}"
           }
-        },
-        "column_qbTBJh": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "column_XGRL6R",
-        "column_qbTBJh"
+        "column_XGRL6R"
       ],
       "settings": {
         "title": "",
