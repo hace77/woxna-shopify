@@ -191,81 +191,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "rich_text_xqgqL3": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_8yeFMU": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_pEQVN8": {
-          "type": "text",
-          "settings": {
-            "text": "{{ page.metafields.custom.retailer_list | metafield_tag: field: 'name' }}"
-          }
-        },
-        "button_MwQPDm": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_8yeFMU",
-        "text_pEQVN8",
-        "button_MwQPDm"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "collapsible_content_QUgBe8": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_nFqna6": {
-          "type": "collapsible_row",
-          "repeater": "{{ page.metafields.custom.retailer_list.value }}",
-          "settings": {
-            "heading": "{{ block.repeater.country.value }}",
-            "icon": "apple",
-            "row_content": "<p>{{ block.repeater.name.value }}</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_nFqna6"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -274,8 +199,6 @@
     "multicolumn_aE6DqU",
     "173997263555ac11f3",
     "featured_collection_eJ3Mw3",
-    "multicolumn_HkjXga",
-    "rich_text_xqgqL3",
-    "collapsible_content_QUgBe8"
+    "multicolumn_HkjXga"
   ]
 }
