@@ -64,8 +64,8 @@
           "repeater": "{{ page.metafields.custom.retailer_list.value }}",
           "settings": {
             "image": "{{ block.repeater.logo.value }}",
-            "title": "{{ block.repeater.name.value }}",
-            "text": "<p>{{ block.repeater.country.value }}</p>",
+            "title": "{{ block.repeater.country.value }}",
+            "text": "<p>{{ block.repeater.name.value }}</p>",
             "link_label": "{{ block.repeater.link_label.value }}",
             "link": "{{ block.repeater.store_url.value }}"
           }
