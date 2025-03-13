@@ -74,6 +74,9 @@
       "block_order": [
         "column_y9EaBP"
       ],
+      "custom_css": [
+        ".multicolumn-card__info {border-bottom: solid #f2e4c4 thin;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -84,7 +87,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
