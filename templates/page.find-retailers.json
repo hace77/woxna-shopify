@@ -55,6 +55,41 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_aE6DqU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_y9EaBP": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.retailer_list.value }}",
+          "settings": {
+            "image": "{{ block.repeater.logo.value }}",
+            "title": "{{ block.repeater.name.value }}",
+            "text": "<p>{{ block.repeater.country.value }}</p>",
+            "link_label": "Read more",
+            "link": "{{ block.repeater.store_url.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_y9EaBP"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "173997263555ac11f3": {
       "type": "apps",
       "blocks": {
@@ -124,10 +159,20 @@
             "link_label": "Read more",
             "link": "{{ block.repeater.link.value }}"
           }
+        },
+        "column_qbTBJh": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_XGRL6R"
+        "column_XGRL6R",
+        "column_qbTBJh"
       ],
       "settings": {
         "title": "",
@@ -145,13 +190,91 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_xqgqL3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8yeFMU": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_pEQVN8": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.retailer_list | metafield_tag: field: 'name' }}"
+          }
+        },
+        "button_MwQPDm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8yeFMU",
+        "text_pEQVN8",
+        "button_MwQPDm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_QUgBe8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_nFqna6": {
+          "type": "collapsible_row",
+          "repeater": "{{ page.metafields.custom.retailer_list.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.country.value }}",
+            "icon": "apple",
+            "row_content": "<p>{{ block.repeater.name.value }}</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_nFqna6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_ExBjAj",
     "main",
+    "multicolumn_aE6DqU",
     "173997263555ac11f3",
     "featured_collection_eJ3Mw3",
-    "multicolumn_HkjXga"
+    "multicolumn_HkjXga",
+    "rich_text_xqgqL3",
+    "collapsible_content_QUgBe8"
   ]
 }
