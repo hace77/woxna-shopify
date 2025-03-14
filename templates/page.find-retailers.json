@@ -59,6 +59,15 @@
     "multicolumn_aE6DqU": {
       "type": "multicolumn",
       "blocks": {
+        "column_Phb3Ek": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_y9EaBP": {
           "type": "column",
           "repeater": "{{ page.metafields.custom.retailer_list.value }}",
@@ -72,10 +81,11 @@
         }
       },
       "block_order": [
+        "column_Phb3Ek",
         "column_y9EaBP"
       ],
       "custom_css": [
-        ".multicolumn-card__info {border-bottom: solid #f2e4c4 thin;}"
+        ".multicolumn-card__info {border: solid #f2e4c4 thin;}"
       ],
       "settings": {
         "title": "",
