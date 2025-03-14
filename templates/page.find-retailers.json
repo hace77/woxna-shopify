@@ -47,13 +47,12 @@
     },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "custom_css": [
         "h1 {display: none;}"
       ],
       "settings": {
         "padding_top": 16,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "multicolumn_aE6DqU": {
