@@ -75,7 +75,7 @@
         "column_y9EaBP"
       ],
       "custom_css": [
-        ".multicolumn-card__info {border: solid #f2e4c4 thin; padding-top: 20px;}"
+        ".multicolumn-card__info {border: solid #f2e4c4 thin; padding: 20px;}"
       ],
       "settings": {
         "title": "",
