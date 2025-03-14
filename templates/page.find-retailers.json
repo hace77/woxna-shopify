@@ -45,8 +45,40 @@
         "show_text_below": false
       }
     },
+    "rich_text_4iHcrX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3H4T6X": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_w3cCtW": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.introtext | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3H4T6X",
+        "text_w3cCtW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p {padding-top: 40px;}"
@@ -230,6 +262,7 @@
   },
   "order": [
     "image_banner_ExBjAj",
+    "rich_text_4iHcrX",
     "main",
     "multicolumn_aE6DqU",
     "rich_text_DTpKTM",
