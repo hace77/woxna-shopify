@@ -23,6 +23,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "judge_me_reviews_preview_badge_VG7pPA": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -39,10 +43,6 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -58,9 +58,9 @@
       "block_order": [
         "title",
         "buy_buttons",
+        "price",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
-        "price",
         "variant_picker",
         "description"
       ],
