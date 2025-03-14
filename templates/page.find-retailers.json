@@ -48,10 +48,11 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {display: none;}"
+        "h1 {display: none;}",
+        "p {padding-top: 20px; }"
       ],
       "settings": {
-        "padding_top": 16,
+        "padding_top": 44,
         "padding_bottom": 48
       }
     },
