@@ -48,7 +48,7 @@
     "custom_liquid_UMYp93": {
       "type": "custom-liquid",
       "custom_css": [
-        "#flex-wrapper {align-content: center; width: 1200px;}",
+        "#flex-wrapper {align-content: center; width: 90%; margin: auto;}",
         "#second-section-text,#product-component-1741773229816 {display: flex; justify-content: center; align-items: center; gap: 10px;}"
       ],
       "settings": {
