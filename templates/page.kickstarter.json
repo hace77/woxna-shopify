@@ -72,6 +72,69 @@
         "padding_bottom": 28
       }
     },
+    "collage_McyGdf": {
+      "type": "collage",
+      "blocks": {
+        "image_p6grag": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg"
+          }
+        },
+        "image_CmzHgw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-18.jpg"
+          }
+        },
+        "image_yA7nNN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_p6grag",
+        "image_CmzHgw",
+        "image_yA7nNN"
+      ],
+      "settings": {
+        "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before\"</strong>",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_gE8Qzf": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8aatQy": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. </li><li><strong>7 TPI Pull-Cut Teeth</strong> – Cuts effortlessly through <strong>hardwood and softwood</strong> </li><li><strong>Foldable & Compact</strong> – Designed for <strong>easy carrying and adventure-ready portability.</strong> </li><li><strong>Handcrafted Walnut/Oak Handle</strong> – Premium grip, natural beauty, and timeless craftsmanship. </li><li><strong>Tested & Endorsed by Experts</strong> – Trusted by bushcrafters, survivalists, and outdoor professionals. </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_8aatQy"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "173997263555ac11f3": {
       "type": "apps",
       "blocks": {
@@ -107,9 +170,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "caption": "",
+            "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before\"</strong>",
+            "text": "<ul><li><strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. </li><li><strong>7 TPI Pull-Cut Teeth</strong> – Cuts effortlessly through <strong>hardwood and softwood</strong> </li><li><strong>Foldable & Compact</strong> – Designed for <strong>easy carrying and adventure-ready portability.</strong> </li><li><strong>Handcrafted Walnut/Oak Handle</strong> – Premium grip, natural beauty, and timeless craftsmanship. </li><li><strong>Tested & Endorsed by Experts</strong> – Trusted by bushcrafters, survivalists, and outdoor professionals. </li></ul>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -142,6 +205,9 @@
         "row_qYi7b6",
         "row_WKNhmV"
       ],
+      "custom_css": [
+        "ul {list-style-position: outside;}"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -163,6 +229,8 @@
     "image_banner_ExBjAj",
     "custom_liquid_UMYp93",
     "main",
+    "collage_McyGdf",
+    "rich_text_gE8Qzf",
     "173997263555ac11f3",
     "multirow_A7VaDm"
   ]
