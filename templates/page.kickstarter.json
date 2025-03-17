@@ -50,7 +50,7 @@
       "custom_css": [
         ".shopify-buy__quantity-container {display: none !important;}",
         "#flex-wrapper {justify-content: center; width: 50%; margin: auto; gap: 20px;}",
-        "#second-section-text,#product-component-1741773229816 {display: flex; align-items: center; gap: 10px; width: 60%}",
+        "#second-section-text,#product-component-1741773229816 {display: flex; align-items: center; gap: 10px; width: 60%;}",
         "#product-component-1741773229816 {min-width: 400px;}",
         "@media (max-width: 800px) {#flex-wrapper {flex-direction: column; } #second-section-text, #product-component-1741773229816 {width: 100%; text-align: center; }}"
       ],
@@ -100,46 +100,62 @@
         "include_margins": true
       }
     },
-    "rich_text_7kEyFR": {
-      "type": "rich-text",
+    "multirow_A7VaDm": {
+      "type": "multirow",
       "blocks": {
-        "heading_c4N7LW": {
-          "type": "heading",
+        "row_BgerRV": {
+          "type": "row",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_GGmjUX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_iTwNhG": {
-          "type": "button",
-          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_link": ""
+          }
+        },
+        "row_qYi7b6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-11.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_WKNhmV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_c4N7LW",
-        "text_GGmjUX",
-        "button_iTwNhG"
+        "row_BgerRV",
+        "row_qYi7b6",
+        "row_WKNhmV"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -148,6 +164,6 @@
     "custom_liquid_UMYp93",
     "main",
     "173997263555ac11f3",
-    "rich_text_7kEyFR"
+    "multirow_A7VaDm"
   ]
 }
