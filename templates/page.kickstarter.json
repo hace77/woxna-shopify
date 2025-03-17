@@ -48,6 +48,7 @@
     "custom_liquid_UMYp93": {
       "type": "custom-liquid",
       "custom_css": [
+        ".shopify-buy__btn-and-quantity .shopify-buy__quantity-container {display: none !important;}",
         "#flex-wrapper {justify-content: center; width: 70%; margin: auto; gap: 40px;}",
         "#second-section-text,#product-component-1741773229816 {display: flex; align-items: center; gap: 10px;}",
         "#product-component-1741773229816 {min-width: 300px;}",
