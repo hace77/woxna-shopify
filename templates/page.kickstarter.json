@@ -35,7 +35,7 @@
         "image": "shopify://shop_images/Woxna-Dmascus-8.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
