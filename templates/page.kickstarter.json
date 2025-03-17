@@ -51,7 +51,6 @@
         ".shopify-buy__quantity-container {display: none !important;}",
         "#flex-wrapper {justify-content: center; width: 50%; margin: auto; gap: 20px;}",
         "#second-section-text,#product-component-1741773229816 {display: flex; align-items: center; gap: 10px; width: 60%;}",
-        "#second-section-text h2 {font-size: 25px;}",
         "#product-component-1741773229816 {min-width: 400px;}",
         "@media (max-width: 800px) {#flex-wrapper {flex-direction: column; } #second-section-text, #product-component-1741773229816 {width: 100%; text-align: center; }}"
       ],
