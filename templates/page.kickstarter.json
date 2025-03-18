@@ -99,7 +99,7 @@
         "image_yA7nNN"
       ],
       "settings": {
-        "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before\"</strong>",
+        "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before</strong>",
         "heading_size": "h1",
         "desktop_layout": "right",
         "mobile_layout": "column",
@@ -128,7 +128,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
