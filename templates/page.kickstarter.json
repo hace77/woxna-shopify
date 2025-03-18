@@ -62,6 +62,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p:first-of-type {padding-top: 30px;}"
@@ -180,9 +181,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-11.jpg",
-            "caption": "Caption",
+            "caption": "",
             "heading": "<strong>A Tool for Every Outdoor Enthusiast\"</strong>",
-            "text": "<p><strong>Bushcrafters & Survivalists</strong> – A trusted tool for firewood, shelter-building, and crafting.✔️<strong>Hikers & Campers</strong> – Lightweight and compact for all outdoor adventures.</p>",
+            "text": "<p>✔️<strong>Bushcrafters & Survivalists</strong> – A trusted tool for firewood, shelter-building, and crafting.</p><p>✔️<strong>Hikers & Campers</strong> – Lightweight and compact for all outdoor adventures.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -338,7 +339,7 @@
         "auto_rotate": true,
         "change_slides_speed": 3,
         "image_behavior": "ambient",
-        "show_text_below": true,
+        "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
     }
