@@ -274,23 +274,43 @@
         "slide_HdxCGz": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/Woxna-Dmascus-17.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
+        "slide_Xyaxqq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_mt7yCR": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-18_2ecb16ac-bb2b-4fc3-b2d9-9f0e1c75ae5d.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -308,6 +328,7 @@
       },
       "block_order": [
         "slide_HdxCGz",
+        "slide_Xyaxqq",
         "slide_mt7yCR"
       ],
       "settings": {
