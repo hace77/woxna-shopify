@@ -42,7 +42,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "custom_liquid_UMYp93": {
@@ -172,7 +172,7 @@
             "caption": "",
             "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before\"</strong>",
             "text": "<ul><li><strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. </li><li><strong>7 TPI Pull-Cut Teeth</strong> – Cuts effortlessly through <strong>hardwood and softwood</strong> </li><li><strong>Foldable & Compact</strong> – Designed for <strong>easy carrying and adventure-ready portability.</strong> </li><li><strong>Handcrafted Walnut/Oak Handle</strong> – Premium grip, natural beauty, and timeless craftsmanship. </li><li><strong>Tested & Endorsed by Experts</strong> – Trusted by bushcrafters, survivalists, and outdoor professionals. </li></ul>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -181,28 +181,16 @@
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-11.jpg",
             "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_WKNhmV": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "heading": "<strong>A Tool for Every Outdoor Enthusiast\"</strong>",
+            "text": "<p><strong>Bushcrafters & Survivalists</strong> – A trusted tool for firewood, shelter-building, and crafting.✔️<strong>Hikers & Campers</strong> – Lightweight and compact for all outdoor adventures.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
         "row_BgerRV",
-        "row_qYi7b6",
-        "row_WKNhmV"
+        "row_qYi7b6"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}"
@@ -221,6 +209,36 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_Y3hHHd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RqfhNE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Limited Kickstarter Edition – Get Early Access! Get an Extra Discount!</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_7WM3YV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>By signing up, you'll get the biggest discount available and be the first to know when we launch!\"</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RqfhNE",
+        "text_7WM3YV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "slideshow_LKKPW9": {
@@ -285,6 +303,7 @@
     "rich_text_gE8Qzf",
     "173997263555ac11f3",
     "multirow_A7VaDm",
+    "rich_text_Y3hHHd",
     "slideshow_LKKPW9"
   ]
 }
