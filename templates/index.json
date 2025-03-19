@@ -43,11 +43,64 @@
         "text_eRbp9f",
         "button"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner {display: none !important; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "image_banner_nECKWc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_rziPRM": {
+          "type": "heading",
+          "settings": {
+            "heading": "No rust - just sharpness",
+            "heading_size": "h0"
+          }
+        },
+        "text_yinUYU": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Meet Ljusnan 180 mm - A compact foldable saw with a stainless steel blade</strong>",
+            "text_style": "body"
+          }
+        },
+        "buttons_gCxJxg": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy it now",
+            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rziPRM",
+        "text_yinUYU",
+        "buttons_gCxJxg"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none;}}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw_mobile.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "left",
@@ -594,6 +647,7 @@
   },
   "order": [
     "image_banner",
+    "image_banner_nECKWc",
     "rich_text_fbgFhP",
     "featured_collection",
     "image_with_text_7betFC",
