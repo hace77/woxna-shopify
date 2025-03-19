@@ -168,6 +168,7 @@
       "blocks": {
         "row_BgerRV": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
             "caption": "",
