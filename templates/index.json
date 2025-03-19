@@ -15,23 +15,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Premium Saws - Made in Sweden",
+            "heading": "No rust - just sharpness",
             "heading_size": "h0"
           }
         },
         "text_eRbp9f": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<strong>Crafted for the Outdoor Spirit</strong>",
-            "text_style": "caption-with-letter-spacing"
+            "text": "<strong>Meet Ljusnan 180 mm - A compact foldable saw with a stainless steel blade</strong>",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Buy it now",
+            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -46,15 +45,15 @@
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/Woxna-foldable-saws-Halsing-Ljusnan.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw.jpg",
+        "image_overlay_opacity": 10,
         "image_height": "large",
-        "desktop_content_position": "middle-left",
+        "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
@@ -65,7 +64,7 @@
         "heading_VrX83K": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Our Foldable Saws",
+            "heading": "Discover more Foldable Saws",
             "heading_size": "h1"
           }
         },
