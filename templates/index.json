@@ -47,9 +47,9 @@
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: start; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw.jpg",
+        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-desktop.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "left",
