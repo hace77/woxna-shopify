@@ -44,7 +44,8 @@
         "button"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 768px) {p {font-size: 2rem; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-desktop.jpg",
