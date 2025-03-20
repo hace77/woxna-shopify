@@ -32,7 +32,7 @@
         "text_RRhx3f"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {align-items: start; } }"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {align-items: start !important; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Woxna-Dmascus-8.jpg",
