@@ -416,7 +416,7 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.slideshow, .slideshow__controls {display: none; }}",
-        "@media (max-width: 749px) {.slideshow {height: 650px; } }"
+        "@media (max-width: 749px) {.slideshow {padding-bottom: 177.77777777777777%; }}"
       ],
       "settings": {
         "layout": "grid",
