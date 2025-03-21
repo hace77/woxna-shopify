@@ -322,18 +322,18 @@
         "slide_HdxCGz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-17.jpg",
-            "heading": "",
+            "image": "shopify://shop_images/Woxna-Dmascus-18_2ecb16ac-bb2b-4fc3-b2d9-9f0e1c75ae5d.jpg",
+            "heading": "<strong>Damascus Steel Blade</strong>",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": "<strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. ",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
+            "box_align": "top-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
         },
@@ -341,35 +341,70 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
-            "heading": "",
+            "heading": "<strong>7 TPI Pull-Cut Teeth</strong>",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": " – Cuts effortlessly through <strong>hardwood and softwood</strong> ",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
+            "box_align": "top-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
         },
         "slide_mt7yCR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-18_2ecb16ac-bb2b-4fc3-b2d9-9f0e1c75ae5d.jpg",
-            "heading": "",
+            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
+            "heading": "<strong>Foldable & Compact</strong>",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": " – Designed for <strong>easy carrying and adventure-ready portability.</strong> ",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
+            "box_align": "bottom-right",
             "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_TYKVA9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
+            "heading": "<strong>Handcrafted Walnut/Oak Handle</strong> –",
+            "heading_size": "h1",
+            "subheading": "Premium grip, natural beauty, and timeless craftsmanship. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_fNC6bc": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         }
@@ -377,13 +412,15 @@
       "block_order": [
         "slide_HdxCGz",
         "slide_Xyaxqq",
-        "slide_mt7yCR"
+        "slide_mt7yCR",
+        "slide_TYKVA9",
+        "slide_fNC6bc"
       ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "counter",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 3,
         "image_behavior": "ambient",
         "show_text_below": false,
