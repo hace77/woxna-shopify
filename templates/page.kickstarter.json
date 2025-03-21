@@ -255,7 +255,7 @@
         "slide_fNC6bc"
       ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": true,
