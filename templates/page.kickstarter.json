@@ -311,6 +311,118 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "slideshow_d9M3xf": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_YBh4Jq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-mobile.jpg",
+            "heading": "<strong>Damascus Steel Blade</strong>",
+            "heading_size": "h1",
+            "subheading": "<strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_KVdXAn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
+            "heading": "<strong>7 TPI Pull-Cut Teeth</strong>",
+            "heading_size": "h1",
+            "subheading": " – Cuts effortlessly through <strong>hardwood and softwood</strong> ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_B48QLA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
+            "heading": "<strong>Foldable & Compact</strong>",
+            "heading_size": "h1",
+            "subheading": " – Designed for <strong>easy carrying and adventure-ready portability.</strong> ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_N7wJHV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
+            "heading": "<strong>Handcrafted Walnut/Oak Handle</strong> –",
+            "heading_size": "h1",
+            "subheading": "Premium grip, natural beauty, and timeless craftsmanship. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_QKnDTX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
+            "heading": "<strong>Tested & Endorsed by Experts</strong>",
+            "heading_size": "h1",
+            "subheading": " – Trusted by bushcrafters, survivalists, and outdoor professionals. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YBh4Jq",
+        "slide_KVdXAn",
+        "slide_B48QLA",
+        "slide_N7wJHV",
+        "slide_QKnDTX"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "rich_text_gE8Qzf": {
       "type": "rich-text",
       "blocks": {
@@ -484,6 +596,7 @@
     "collage_McyGdf",
     "rich_text_AePfr6",
     "slideshow_LKKPW9",
+    "slideshow_d9M3xf",
     "rich_text_gE8Qzf",
     "173997263555ac11f3",
     "multirow_A7VaDm",
