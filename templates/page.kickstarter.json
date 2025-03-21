@@ -414,6 +414,9 @@
         "slide_N7wJHV",
         "slide_QKnDTX"
       ],
+      "custom_css": [
+        "@media (min-width: 768px) {.slideshow, .slideshow__controls {display: none; }}"
+      ],
       "settings": {
         "layout": "grid",
         "slide_height": "large",
