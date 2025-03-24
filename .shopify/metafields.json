@@ -241,6 +241,26 @@
         "name": "rich_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "retailer_list",
+      "namespace": "custom",
+      "name": "Retailer list",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "introtext",
+      "namespace": "custom",
+      "name": "introtext",
+      "description": "The text directly under the header",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "product": [
