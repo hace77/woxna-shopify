@@ -55,7 +55,7 @@
           "type": "heading",
           "settings": {
             "heading": "The World’s First Damascus Steel Foldable Saw",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_KW7Vgx": {
@@ -72,10 +72,10 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start !important; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: end !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Woxna-Dmascus-28.jpg",
+        "image": "shopify://shop_images/Damascus-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
