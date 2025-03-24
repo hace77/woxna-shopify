@@ -303,7 +303,7 @@
         "@media (max-width: 749px) {.slideshow, .slideshow__controls {display: none !important; }}"
       ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": true,
