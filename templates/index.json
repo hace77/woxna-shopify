@@ -15,22 +15,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "No rust - just sharpness",
+            "heading": "Premium Saws - Made in Sweden",
             "heading_size": "h0"
           }
         },
         "text_eRbp9f": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<strong>Meet Ljusnan 180 mm - A compact foldable saw with a stainless steel blade</strong>",
-            "text_style": "body"
+            "text": "<strong>Crafted for the Outdoor Spirit</strong>",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Buy it now",
-            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,66 +45,16 @@
         "button"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
-        "@media (min-width: 768px) {p {font-size: 2rem; }}"
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-desktop.jpg",
-        "image_overlay_opacity": 10,
+        "image": "shopify://shop_images/Woxna-Folding-Saw.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "image_banner_nECKWc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_rziPRM": {
-          "type": "heading",
-          "settings": {
-            "heading": "No rust - just sharpness",
-            "heading_size": "h0"
-          }
-        },
-        "text_yinUYU": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Meet Ljusnan 180 mm - A compact foldable saw with a stainless steel blade</strong>",
-            "text_style": "body"
-          }
-        },
-        "buttons_gCxJxg": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Buy it now",
-            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_rziPRM",
-        "text_yinUYU",
-        "buttons_gCxJxg"
-      ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-mobile.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
@@ -119,14 +70,14 @@
         "heading_VrX83K": {
           "type": "heading",
           "settings": {
-            "heading": "Discover More Foldable Saws",
+            "heading": "Meet Our Foldable Saws",
             "heading_size": "h1"
           }
         },
         "text_wYYamC": {
           "type": "text",
           "settings": {
-            "text": "<p>Our saws are versatile, sharp and ready for your next outdoor adventure.<br/>Check them out below.</p>"
+            "text": "<p>We have just launched our first saw - Hälsing, and very soon we will be adding Ljusnan as well. <br/>Check them out below.</p>"
           }
         },
         "button_EpzAqy": {
@@ -158,8 +109,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
-        ".button {border: none;}",
+        ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
+        ".button {border-radius: 10px; border: none;}",
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
@@ -184,67 +135,28 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 20,
         "padding_bottom": 44
       }
     },
-    "image_with_text_7betFC": {
-      "type": "image-with-text",
+    "1730798874462ed86d": {
+      "type": "apps",
       "blocks": {
-        "caption_EWYaLV": {
-          "type": "caption",
+        "judge_me_reviews_featured_carousel_ge8YUn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "caption": "Introducing Ljusnan",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_FFFJQd": {
-          "type": "heading",
-          "settings": {
-            "heading": "No More Rusty Blades",
-            "heading_size": "h1"
-          }
-        },
-        "text_cVN7XX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We started Woxna with a vision: to create the best folding saw, a saw that not only works flawlessly in the field but also captured the timeless look and feel of Scandinavian tool traditions. Now it’s finally here, we hope you love it as much as we do.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_NMrzW6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more on our blog",
-            "button_link": "shopify://blogs/the-woxna-journal/the-best-folding-saw-and-the-first-saw-of-its-kind-with-a-stainless-steel-blade",
-            "button_style_secondary": false
+            "maxwidth": 1080
           }
         }
       },
       "block_order": [
-        "caption_EWYaLV",
-        "heading_FFFJQd",
-        "text_cVN7XX",
-        "button_NMrzW6"
+        "judge_me_reviews_featured_carousel_ge8YUn"
       ],
       "settings": {
-        "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
     "image_banner_iTfWWc": {
@@ -359,56 +271,6 @@
         "padding_bottom": 52
       }
     },
-    "newsletter_H4rQNJ": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_j9JrMi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% of on Your First Order",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_BwKYAV": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Join our newsletter and be the first to hear about new products, exclusive launches, and updates. Plus, enjoy 10% off your first purchase as a welcome gift.</p>"
-          }
-        },
-        "email_form_CQ69PJ": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_j9JrMi",
-        "paragraph_BwKYAV",
-        "email_form_CQ69PJ"
-      ],
-      "settings": {
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "1730798874462ed86d": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_ge8YUn": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_ge8YUn"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "image_with_text_83f7j8": {
       "type": "image-with-text",
       "blocks": {
@@ -423,7 +285,7 @@
         "heading_iXwHGf": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "Our story",
             "heading_size": "h0"
           }
         },
@@ -449,7 +311,12 @@
         "text_nALBMy",
         "button_iczwYK"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".button {border-radius: 10px; border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
         "height": "adapt",
@@ -460,6 +327,53 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7betFC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FFFJQd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thank you for your support during our first year",
+            "heading_size": "h1"
+          }
+        },
+        "text_cVN7XX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The first year of Woxna has been an incredible journey—full of challenges and triumphs. The support from the outdoor community has been nothing short of amazing, and it’s made every moment worthwhile. We can’t thank you enough for being part of this journey; your support means the world to us.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_NMrzW6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more on our blog",
+            "button_link": "shopify://blogs/the-woxna-journal",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FFFJQd",
+        "text_cVN7XX",
+        "button_NMrzW6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Elma_blog-square.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 36,
@@ -588,7 +502,7 @@
         "button_xqqVKL"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
+        "image": "shopify://shop_images/Ljusnan250-in-hand.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -645,23 +559,132 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "newsletter_H4rQNJ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_j9JrMi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Woxna community!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_BwKYAV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to get news and access to product launches and get a 10% discount on your first order.</p>"
+          }
+        },
+        "email_form_CQ69PJ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_j9JrMi",
+        "paragraph_BwKYAV",
+        "email_form_CQ69PJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collage_aVXgXp": {
+      "type": "collage",
+      "blocks": {
+        "image_JnXCPp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Halsing250-closeup.jpg"
+          }
+        },
+        "image_BneTTH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Halsing250-closeup-button.jpg"
+          }
+        },
+        "image_Mcry4p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_JnXCPp",
+        "image_BneTTH",
+        "image_Mcry4p"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_CNJG9d": {
+      "type": "collage",
+      "blocks": {
+        "image_DDGKY6": {
+          "type": "image",
+          "settings": {}
+        },
+        "product_jdWcjg": {
+          "type": "product",
+          "settings": {
+            "product": "halsing-foldable-saw-180-mm-oak-hcs",
+            "second_image": false
+          }
+        },
+        "collection_AdQwkp": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_DDGKY6",
+        "product_jdWcjg",
+        "collection_AdQwkp"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "image_banner_nECKWc",
     "rich_text_fbgFhP",
     "featured_collection",
-    "image_with_text_7betFC",
+    "1730798874462ed86d",
     "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
     "newsletter_eicndk",
-    "newsletter_H4rQNJ",
-    "1730798874462ed86d",
     "image_with_text_83f7j8",
+    "image_with_text_7betFC",
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr"
+    "rich_text_FVdRqr",
+    "newsletter_H4rQNJ",
+    "collage_aVXgXp",
+    "collage_CNJG9d"
   ]
 }
