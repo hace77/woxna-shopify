@@ -22,7 +22,7 @@
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
             "text_style": "subtitle"
           }
         }
@@ -31,97 +31,62 @@
         "heading_ArRxbY",
         "text_KW7Vgx"
       ],
-      "custom_css": [
-        "h2 {text-wrap: balance;}"
-      ],
       "settings": {
         "image": "{{ page.metafields.custom.hero.value.image.value }}",
-        "image_overlay_opacity": 40,
-        "image_height": "medium",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "rich_text_6yFYam": {
-      "type": "rich-text",
-      "blocks": {
-        "text_a3JbrG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ page.metafields.custom.hero.value.herotext.value }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_a3JbrG"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "show_text_below": true
       }
     },
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {display: none;}",
-        "p:first-of-type {padding-top: 30px;}",
-        "ol {list-style-position: outside;}"
+        "h1 {display: none;}"
       ],
       "settings": {
-        "padding_top": 56,
-        "padding_bottom": 28
+        "padding_top": 16,
+        "padding_bottom": 0
       }
     },
-    "multicolumn_RWQdcT": {
-      "type": "multicolumn",
+    "173997263555ac11f3": {
+      "type": "apps",
       "blocks": {
-        "column_R96qpr": {
-          "type": "column",
-          "repeater": "{{ page.metafields.custom.influencer_linkblock.value }}",
+        "forms_inline_BzfGJq": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "image": "{{ block.repeater.image.value }}",
-            "video": "{{ block.repeater.video.value }}",
-            "title": "{{ block.repeater.header.value }}",
-            "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
-            "link_label": "Read more",
-            "link": "{{ block.repeater.link_to_page.value }}"
+            "form_id": "{{ page.metafields.custom.form_id.value }}",
+            "text_color": "#202020",
+            "button_background_color": "#5c694d",
+            "button_label_color": "#f2e4c4",
+            "links_color": "#5c694d",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 34,
+            "padding_bottom": 38,
+            "padding_right": 0,
+            "padding_left": 0
           }
         }
       },
       "block_order": [
-        "column_R96qpr"
+        "forms_inline_BzfGJq"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
-    "featured_collection_4YWUDf": {
+    "featured_collection_eJ3Mw3": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop our saws",
+        "title": "Shop our foldable saws",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -145,13 +110,48 @@
         "padding_top": 36,
         "padding_bottom": 76
       }
+    },
+    "multicolumn_HkjXga": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XGRL6R": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.linkblock_internal.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.header.value }}",
+            "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
+            "link_label": "Read more",
+            "link": "{{ block.repeater.link.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_XGRL6R"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_ExBjAj",
-    "rich_text_6yFYam",
     "main",
-    "multicolumn_RWQdcT",
-    "featured_collection_4YWUDf"
+    "173997263555ac11f3",
+    "featured_collection_eJ3Mw3",
+    "multicolumn_HkjXga"
   ]
 }

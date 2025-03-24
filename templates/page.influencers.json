@@ -45,7 +45,51 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
+      }
+    },
+    "rich_text_NnqWGf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TVHytk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_HKibAN": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.influencer_intro | metafield_tag }}"
+          }
+        },
+        "button_wqL7QE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TVHytk",
+        "text_HKibAN",
+        "button_wqL7QE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_with_text_PjD7cq": {
@@ -93,7 +137,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 48
+        "padding_bottom": 8
       }
     },
     "main": {
@@ -115,7 +159,7 @@
           "type": "heading",
           "settings": {
             "heading": "{{ page.metafields.custom.instagram_image_header.value }}",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         }
       },
@@ -170,6 +214,14 @@
     "rich_text_qgMp3c": {
       "type": "rich-text",
       "blocks": {
+        "heading_VFCepk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
         "text_wFjDkP": {
           "type": "text",
           "settings": {
@@ -178,6 +230,7 @@
         }
       },
       "block_order": [
+        "heading_VFCepk",
         "text_wFjDkP"
       ],
       "settings": {
@@ -201,6 +254,28 @@
         "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "rich_text_B9KJEx": {
+      "type": "rich-text",
+      "blocks": {
+        "text_nHjhL9": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.quote | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_nHjhL9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "multicolumn_addfUx": {
@@ -245,8 +320,8 @@
         ".ikon-container {display: flex; justify-content: center; gap: 5px 50px; align-items: center; flex-flow: row wrap; width: 50%; margin: auto; max-width: 700px;}",
         ".ikon-container > * {text-align: center; color: #ffffff;}",
         ".icon {flex: 2; padding: 10px;}",
-        ".social_image {border-radius: 50%; border: 7px solid #ffff; width: 250px; height: 250px; overflow: hidden; }",
-        ".social_image img {width: 100%; height: auto; }",
+        ".social_image {border-radius: 50%; border: 7px solid #ffff; width: 250px; height: 250px; overflow: hidden;}",
+        ".social_image img {width: 100%; height: auto;}",
         "@media all and (max-width: 600px) {.ikon-container {/* On small screens, we are no longer using row direction but column */ flex-direction: column; width: 90%; }}"
       ],
       "settings": {
@@ -259,12 +334,14 @@
   },
   "order": [
     "image_banner_ExBjAj",
+    "rich_text_NnqWGf",
     "image_with_text_PjD7cq",
     "main",
     "rich_text_JKRLzW",
     "multicolumn_PD4aN4",
     "rich_text_qgMp3c",
     "custom_liquid_ezGC89",
+    "rich_text_B9KJEx",
     "multicolumn_addfUx",
     "custom_liquid_9E4k3h"
   ]

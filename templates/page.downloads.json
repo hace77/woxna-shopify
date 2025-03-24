@@ -1,0 +1,428 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_yHJEzK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X7gb4N": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choose images and download",
+            "heading_size": "h1"
+          }
+        },
+        "text_cj9JAB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Below you will find links so you can download zip-files of our images. We have a few different sets of images to choose from, for example clean studio images with white backgrunds or outdoor photos showing the saws in use out in the forest.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X7gb4N",
+        "text_cj9JAB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_UPUCyz": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MpwwJh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Image Guide: Download Options",
+            "icon": "none",
+            "row_content": "<p>Some of our image sets come in two different versions with different sizes, file types and color profiles:</p><h4>Large images - optimized for print</h4><ul><li>Tiff-files</li><li>Approximate size: 5000 x 3500 pixels</li><li>AdobeRgb colour profile for best possible colour depth.</li></ul><h4>Medium images - optimized for digital</h4><ul><li>Jpg-files</li><li>Approximate size: 3000 x 2000 pixels (1200 x 1200 for studio images)</li><li>sRGB color profile, ensuring they look their best on digital screens. </li></ul><p>Scroll down and chose the images you want.</p><h2></h2>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MpwwJh"
+      ],
+      "settings": {
+        "caption": ".",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "richtext_with_image_mKh7Vp": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_Tpze8i": {
+          "type": "heading",
+          "settings": {
+            "heading": "Studio images with white backgrounds",
+            "heading_size": "h1"
+          }
+        },
+        "image_LYKzPg": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Download-image-packages.jpg"
+          }
+        },
+        "text_QiNJkE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clean product images with white backgrounds - also contains images without shadows.</p>"
+          }
+        },
+        "button_FKCxUg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Studio images - Large Size",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Studio%20Large.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download Studio images - Medium Size",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Studio%20Medium.zip",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_73pmHn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Download Outdoor images - Medium Size",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tpze8i",
+        "image_LYKzPg",
+        "text_QiNJkE",
+        "button_FKCxUg",
+        "button_73pmHn"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_F7pH9D": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_TwrcwR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Outdoor / Action / Lifestyle images",
+            "heading_size": "h1"
+          }
+        },
+        "image_44kcV7": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Download-image-packages3.jpg"
+          }
+        },
+        "text_KHPCHd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These image sets contains images of our saws in use out in nature. The first file \"Hälsing and Ljusnan\" feature both models in the same images, the next two contains images with just one saw model in each image. And the last one contain medium size images of all models.</p>"
+          }
+        },
+        "button_a9gAGL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Hälsing and Ljusnan - Large Size",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20and%20Ljusnan%20-%20Large.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download Ljusnan  - Large Size",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Ljusnan%20-%20Large.zip",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_7Lie7A": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Hälsing - Large Size",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20-%20Large.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download outdoor Lifestyle - Medium Size",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20Lifestyle-Medium.zip",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TwrcwR",
+        "image_44kcV7",
+        "text_KHPCHd",
+        "button_a9gAGL",
+        "button_7Lie7A"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_mheWbJ": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_Bdmmbm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Logos, Packaging, Measurements & People",
+            "heading_size": "h1"
+          }
+        },
+        "image_ncpkHy": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Download-image-packages4.jpg"
+          }
+        },
+        "text_jdzqx4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This file contains a few different versions of our logotype, our measurement drawings and some images of our packaging and the people behind Woxna.</p>"
+          }
+        },
+        "button_haAqJx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Logos and measurements",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Logos%20and%20measurements.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download people and packaging",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/People%20and%20Packaging.zip",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Bdmmbm",
+        "image_ncpkHy",
+        "text_jdzqx4",
+        "button_haAqJx"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_TniCiz": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_F8CMhA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Press kit",
+            "heading_size": "h1"
+          }
+        },
+        "image_cCAbJD": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Download-image-packages2.jpg"
+          }
+        },
+        "text_GQPmqe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A smaller collection of mixed images and a Press Release for those who just want one simple download.</p>"
+          }
+        },
+        "button_dRJBCz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Press Kit",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Woxna%20-%20Press%20kit.zip",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_F8CMhA",
+        "image_cCAbJD",
+        "text_GQPmqe",
+        "button_dRJBCz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_eJ3Mw3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop our foldable saws",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "foldable-saws",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "multicolumn_HkjXga": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XGRL6R": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.linkblock_internal.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.header.value }}",
+            "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
+            "link_label": "Read more",
+            "link": "{{ block.repeater.link.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_XGRL6R"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_A7MYdn": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "main",
+    "rich_text_yHJEzK",
+    "collapsible_content_UPUCyz",
+    "richtext_with_image_mKh7Vp",
+    "richtext_with_image_F7pH9D",
+    "richtext_with_image_mheWbJ",
+    "richtext_with_image_TniCiz",
+    "featured_collection_eJ3Mw3",
+    "multicolumn_HkjXga",
+    "custom_liquid_A7MYdn"
+  ]
+}

@@ -16,6 +16,17 @@
           "type": "title",
           "settings": {}
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "judge_me_reviews_preview_badge_VG7pPA": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -32,22 +43,11 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
           }
         },
         "description": {
@@ -57,11 +57,11 @@
       },
       "block_order": [
         "title",
+        "buy_buttons",
+        "price",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
-        "price",
         "variant_picker",
-        "buy_buttons",
         "description"
       ],
       "custom_css": [
@@ -111,7 +111,7 @@
         ".horizontal li a:hover {text-decoration: underline;}"
       ],
       "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677249220951__rich_text_7GmfxC\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677249220951__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
         "color_scheme": "scheme-2",
         "padding_top": 12,
         "padding_bottom": 12

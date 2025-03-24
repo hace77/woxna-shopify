@@ -1,0 +1,273 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.hero.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_4iHcrX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3H4T6X": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_w3cCtW": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.introtext | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3H4T6X",
+        "text_w3cCtW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p {padding-top: 40px;}"
+      ],
+      "settings": {
+        "padding_top": 68,
+        "padding_bottom": 32
+      }
+    },
+    "multicolumn_aE6DqU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_y9EaBP": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.retailer_list.value }}",
+          "settings": {
+            "image": "{{ block.repeater.logo.value }}",
+            "title": "{{ block.repeater.country.value }}",
+            "text": "<p>{{ block.repeater.name.value }}</p>",
+            "link_label": "{{ block.repeater.link_label.value }}",
+            "link": "{{ block.repeater.store_url.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_y9EaBP"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {border: solid #f2e4c4 thin; padding: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_DTpKTM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gEV83L": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a retailer!",
+            "heading_size": "h1"
+          }
+        },
+        "text_bKPddL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please complete our retailer form via the link below, and we will contact you shortly.</p>"
+          }
+        },
+        "button_QqezEe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Become a retailer",
+            "button_link": "shopify://pages/for-retailers-and-distributors",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gEV83L",
+        "text_bKPddL",
+        "button_QqezEe"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173997263555ac11f3": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_BzfGJq": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "{{ page.metafields.custom.form_id.value }}",
+            "text_color": "#202020",
+            "button_background_color": "#5c694d",
+            "button_label_color": "#f2e4c4",
+            "links_color": "#5c694d",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 34,
+            "padding_bottom": 38,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_BzfGJq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_eJ3Mw3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop our foldable saws",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "foldable-saws",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
+    },
+    "multicolumn_HkjXga": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XGRL6R": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.linkblock_internal.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.header.value }}",
+            "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
+            "link_label": "Read more",
+            "link": "{{ block.repeater.link.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_XGRL6R"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_ExBjAj",
+    "rich_text_4iHcrX",
+    "main",
+    "multicolumn_aE6DqU",
+    "rich_text_DTpKTM",
+    "173997263555ac11f3",
+    "featured_collection_eJ3Mw3",
+    "multicolumn_HkjXga"
+  ]
+}
