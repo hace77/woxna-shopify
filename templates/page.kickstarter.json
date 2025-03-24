@@ -91,8 +91,8 @@
     "custom_liquid_UMYp93": {
       "type": "custom-liquid",
       "custom_css": [
-        "#flex-wrapper {justify-content: center; width: calc(100% - 4rem / var(--font-body-scale)); margin: auto; gap: 20px; max-width: 100rem; flex-direction: column; text-align: center;}",
-        "#second-section-text,{display: flex; align-items: center; gap: 10px; width: 100%; text-align: center;}",
+        "#flex-wrapper {justify-content: center; width: calc(100% - 4rem / var(--font-body-scale)); margin: auto; gap: 20px; max-width: 100rem; flex-direction: column; align-items: center}",
+        "#second-section-text {display: flex; align-items: center; gap: 10px; width: 100%; text-align: center;}",
         "#product-component-1741773229816 {min-width: 400px;}",
         "@media (max-width: 750px) {#flex-wrapper {width: 90%; } #second-section-text, #product-component-1741773229816 {width: 100%; text-align: center; } .shopify-buy-frame--product {max-width: 100% !important; }}"
       ],
