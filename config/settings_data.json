@@ -533,7 +533,7 @@
       "@media only screen and (min-width: 750px) {h2, .h2 {font-size: calc(var(--font-heading-scale) * 4rem); }}",
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
       "html {scroll-behavior: smooth;}",
-      "button.chat-toggle.chat-toggle--icon-button {display: none;}"
+      "button.chat-toggle.chat-toggle--icon-button {align-items: center; display: none; justify-content: center;}"
     ]
   }
 }
