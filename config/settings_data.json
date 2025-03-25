@@ -21,7 +21,7 @@
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "none",
+    "animations_hover_elements": "default",
     "buttons_border_thickness": 0,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -532,7 +532,8 @@
       ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
       "@media only screen and (min-width: 750px) {h2, .h2 {font-size: calc(var(--font-heading-scale) * 4rem); }}",
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
-      "html {scroll-behavior: smooth;}"
+      "html {scroll-behavior: smooth;}",
+      "button.chat-toggle.chat-toggle--icon-button {display: none;}"
     ]
   }
 }
