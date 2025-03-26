@@ -172,11 +172,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Hi! \nMessage us with any question you might have, we are a small team but either Elma or Daniel will try to answer you as quickly as possible!"
         }
-      },
-      "16216491870256628967": {
-        "type": "shopify://apps/bss-labels-badges/blocks/bss-pl-config-data/91bfe765-b604-49a1-805e-3599fa600b24",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
