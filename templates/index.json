@@ -61,28 +61,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_yN9HkD": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9EKWxN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9EKWxN"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
     "image_banner_nECKWc": {
       "type": "image-banner",
       "blocks": {
@@ -133,6 +111,28 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "rich_text_yN9HkD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9EKWxN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9EKWxN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "1730798874462ed86d": {
@@ -671,8 +671,8 @@
   },
   "order": [
     "image_banner",
-    "rich_text_yN9HkD",
     "image_banner_nECKWc",
+    "rich_text_yN9HkD",
     "1730798874462ed86d",
     "rich_text_fbgFhP",
     "featured_collection",
