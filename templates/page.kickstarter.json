@@ -586,12 +586,88 @@
       "block_order": [
         "button_VPJMdf"
       ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
         "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_k4HKWh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LV3cGM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>What’s a Kickstarter?</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_RnAWmP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kickstarter is one of the world’s leading crowdfunding platforms where people can support the development of new products before they launch. Since Kickstarter launched in 2009, it has helped bring over 250,000 projects to life, raising more than $7 billion from millions of backers.</p><ul><li>You back a project by pledging to buy a product.</li><li>If the project reaches its funding goal, it goes into production—if not, you’re not charged.</li><li>Backing early helps us make this saw a reality!</li><li>To succeed, we need as many backers as possible, as early as possible. That’s why we’re offering an exclusive discount for those who reserve their spot before the Kickstarter even begins.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LV3cGM",
+        "text_RnAWmP"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_wtXxEr": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "image_QfLiER": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Woxna-Dmascus-23.jpg"
+          }
+        },
+        "heading_xpYkYb": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Join us on our damascus adventure and reserv your discount now!</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "button_HGQUqe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discount please",
+            "button_link": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "image_QfLiER",
+        "heading_xpYkYb",
+        "button_HGQUqe"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
         "padding_bottom": 52
       }
     }
@@ -609,6 +685,8 @@
     "173997263555ac11f3",
     "multirow_A7VaDm",
     "rich_text_Y3hHHd",
-    "rich_text_64xHNN"
+    "rich_text_64xHNN",
+    "rich_text_k4HKWh",
+    "richtext_with_image_wtXxEr"
   ]
 }
