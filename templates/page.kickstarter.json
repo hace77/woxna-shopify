@@ -547,7 +547,7 @@
         "text_7WM3YV": {
           "type": "text",
           "settings": {
-            "text": "<p>By signing up, you'll get the biggest discount available. The long saw will sell for 600 USD and the short for 550 USD, but if you reserv your deal right now you will get a 40% discount on that.</p><ul><li><strong>Step 1:</strong> Pay just <strong>$1</strong> today to <strong>lock in your exclusive discount</strong>. </li><li><strong>Step 2:</strong> Receive an email that showed you reserved your spot </li><li><strong>Step 3:</strong> Receive a <strong>private link</strong> when we launch with <strong>a special Kickstarter backer discount</strong>. </li><li><strong>Step 4:</strong> Be among the <strong>first to get the Damascus Steel Foldable Saw at the lowest price available!</strong> </li></ul><p></p>"
+            "text": "<p>By signing up, you'll get the biggest discount available. The long saw will sell for 600 USD and the short for 550 USD, but if you reserv your deal right now you will get a 40% discount on that.</p><ul><li><strong>Step 1:</strong> Pay just <strong>$1</strong> today to <strong>lock in your exclusive discount</strong>. </li><li><strong>Step 2:</strong> You will receive a reciept via email that showes you reserved the best possible price.</li><li><strong>Step 3:</strong> Once our kickstarter goes live you’ll get a private link via emial that gives you access to your exclusive deal.</li><li><strong>Step 4:</strong> If the kickstarter is successful you will be among the first to get the Damascus Steel Foldable Saw at the lowest price available!</li></ul><p></p>"
           }
         }
       },
@@ -557,7 +557,7 @@
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
-        "li {list-style:none;}"
+        "li {list-style: none;}"
       ],
       "settings": {
         "desktop_content_position": "center",
