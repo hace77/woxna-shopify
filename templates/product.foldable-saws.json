@@ -704,7 +704,7 @@
         "text_crzTjK": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_10 | metafield_tag }}</li></ul>"
+            "text": "{{ product.metafields.custom.feature.value.text | metafield_tag }}"
           }
         }
       },
