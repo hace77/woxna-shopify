@@ -338,7 +338,7 @@
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.header.value }}",
             "text": "<p>{{ block.repeater.ingress | metafield_tag }}</p>",
-            "link_label": "Read more",
+            "link_label": "{{ block.repeater.link_label.value }}",
             "link": "{{ block.repeater.link.value }}"
           }
         }
