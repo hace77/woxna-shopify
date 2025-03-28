@@ -713,7 +713,6 @@
         "button_dVbPng",
         "text_crzTjK"
       ],
-      "disabled": true,
       "custom_css": [
         "ul {list-style-position: outside;}",
         "h2,li {text-align: left;}",
