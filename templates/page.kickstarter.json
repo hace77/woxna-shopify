@@ -15,14 +15,14 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>The worlds first Damsteel saw</strong>",
+            "heading": "<strong>The worlds first Damasteel saw</strong>",
             "heading_size": "h0"
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "Strength, precision, and craftsmanship in one compact tool.",
+            "text": "Strength, beauty and craftsmanship in one compact tool.",
             "text_style": "subtitle"
           }
         }
@@ -278,9 +278,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
-            "heading": "<strong>Walnut Handles</strong>",
+            "heading": "<strong>Damaskus steel in three dimensions  </strong>",
             "heading_size": "h1",
-            "subheading": "American walnut handles give you that solid, natural grip that you only get from real wood.",
+            "subheading": "The uniqueness of using damaskus for saws is that you get to see the blade from more than one angle - this is pure damaskus beauty!",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -504,7 +504,7 @@
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-11.jpg",
             "caption": "",
-            "heading": "<strong>A Tool for Every Outdoor Enthusiast</strong>",
+            "heading": "<strong>Unique Saw For the Tool Enthusiast</strong>",
             "text": "<p><strong>Bushcrafters & Survivalists</strong> – A trusted tool for firewood, shelter-building, and crafting.</p><p><strong>Hikers & Campers</strong> – Lightweight and compact for all outdoor adventures.</p>",
             "button_label": "",
             "button_link": ""
@@ -609,7 +609,7 @@
         "text_RnAWmP": {
           "type": "text",
           "settings": {
-            "text": "<p>Kickstarter is one of the world’s leading crowdfunding platforms where people can support the development of new products before they launch. Since Kickstarter launched in 2009, it has helped bring over 250,000 projects to life, raising more than $7 billion from millions of backers.</p><ul><li>You back a project by pledging to buy a product.</li><li>If the project reaches its funding goal, it goes into production—if not, you’re not charged.</li><li>Backing early helps us make this saw a reality!</li><li>To succeed, we need as many backers as possible, as early as possible. That’s why we’re offering an exclusive discount for those who reserve their spot before the Kickstarter even begins.</li></ul>"
+            "text": "<p>Kickstarter is one of the world’s leading crowdfunding platforms where people can support the development of new products before they even launch. </p><p>We have chosen to have this product launch on Kickstarter due to the high purchase cost of the Damasteel steel and to meet the minimum order quantities needed to go into production of this unique saw.    </p><ul><li>You back us by pledging to buy a product.</li><li>If the project reaches its funding goal, it goes into production - if not, you’re not charged.</li><li>Backing early helps us make this saw a reality!</li><li>To succeed with the marketing reach, we need as many backers as possible, as early as possible. That’s why we’re offering an exclusive discount for those who reserve their spot before the Kickstarter even begins.</li></ul>"
           }
         }
       },
@@ -641,7 +641,7 @@
         "heading_xpYkYb": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Join us on our damascus adventure and reserv your discount now!</strong>",
+            "heading": "<strong>Be amoung the first to ever hold and own a damaskus saw </strong>",
             "heading_size": "h1"
           }
         },
