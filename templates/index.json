@@ -123,20 +123,64 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_yN9HkD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9EKWxN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9EKWxN"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "1730798874462ed86d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_ge8YUn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_ge8YUn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "rich_text_fbgFhP": {
       "type": "rich-text",
       "blocks": {
         "heading_VrX83K": {
           "type": "heading",
           "settings": {
-            "heading": "Meet Our Foldable Saws",
+
+            "heading": "Best Folding Saw for Bushcraft, Camping & Garden Use? We have models that got you covered!",
+
             "heading_size": "h1"
           }
         },
         "text_wYYamC": {
           "type": "text",
           "settings": {
-            "text": "<p>We have just launched our first saw - Hälsing, and very soon we will be adding Ljusnan as well. <br/>Check them out below.</p>"
+
+            "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
+
           }
         },
         "button_EpzAqy": {
@@ -332,6 +376,41 @@
         "padding_bottom": 52
       }
     },
+
+    "newsletter_H4rQNJ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_j9JrMi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% of on Your First Order",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_BwKYAV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our newsletter and be the first to hear about new products, exclusive launches, and updates. Plus, enjoy 10% off your first purchase as a welcome gift.</p>"
+          }
+        },
+        "email_form_CQ69PJ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_j9JrMi",
+        "paragraph_BwKYAV",
+        "email_form_CQ69PJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+
     "image_with_text_83f7j8": {
       "type": "image-with-text",
       "blocks": {
@@ -732,13 +811,18 @@
   },
   "order": [
     "image_banner",
-    "collage_text_link_nt9KdH",
+    "image_banner_nECKWc",
+    "rich_text_yN9HkD",
+    "1730798874462ed86d",
+
     "rich_text_fbgFhP",
     "featured_collection",
     "1730798874462ed86d",
     "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
     "newsletter_eicndk",
+
+    "newsletter_H4rQNJ",
     "image_with_text_83f7j8",
     "image_with_text_7betFC",
     "image_banner_CPbRdx",
