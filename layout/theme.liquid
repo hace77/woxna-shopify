@@ -308,6 +308,22 @@
         <meta name="robots" content="noindex">
         {% endif %}
 
+        {% if template contains "kickstarter" %}
+          <style>
+            .header-wrapper{
+                display: none !important;
+            }
+            footer.footer{
+                display: none !important;
+            }
+            .announcement-bar {
+                display: none !important;
+            }
+            #shopify-chat {
+              display:none !important;
+            }
+            </style>
+          {% endif %}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
