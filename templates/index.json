@@ -64,6 +64,65 @@
         "show_text_below": false
       }
     },
+    "collage_text_link_nt9KdH": {
+      "type": "collage-text-link",
+      "blocks": {
+        "image_xUXmUn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Halsing-blade-closeup.jpg",
+            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "show_text_overlay": true,
+            "heading": "Hälsing 180 mm",
+            "heading_size": "large",
+            "text_position": "top-right",
+            "text_alignment": "right",
+            "description": "Add a description"
+          }
+        },
+        "image_QqfYXM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan250-blade.jpg",
+            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "show_text_overlay": true,
+            "heading": "Ljusnan 250 mm",
+            "heading_size": "medium",
+            "text_position": "top-left",
+            "text_alignment": "center",
+            "description": "Add a description"
+          }
+        },
+        "image_BdbTBn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Halsing180-handle.jpg",
+            "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
+            "show_text_overlay": true,
+            "heading": "Häsing 250 mm",
+            "heading_size": "small",
+            "text_position": "top-right",
+            "text_alignment": "center",
+            "description": "Add a description"
+          }
+        }
+      },
+      "block_order": [
+        "image_xUXmUn",
+        "image_QqfYXM",
+        "image_BdbTBn"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_fbgFhP": {
       "type": "rich-text",
       "blocks": {
@@ -671,6 +730,7 @@
   },
   "order": [
     "image_banner",
+    "collage_text_link_nt9KdH",
     "rich_text_fbgFhP",
     "featured_collection",
     "1730798874462ed86d",
