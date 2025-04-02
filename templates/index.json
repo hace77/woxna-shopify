@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Premium Saws - Made in Sweden",
+            "heading": "No rust - just sharpness",
             "heading_size": "h0"
           }
         },
@@ -156,6 +156,7 @@
         "text_wYYamC",
         "button_EpzAqy"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -167,6 +168,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
         ".button {border-radius: 10px; border: none;}",
