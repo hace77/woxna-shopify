@@ -172,6 +172,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Hi! \nMessage us with any question you might have, we are a small team but either Elma or Daniel will try to answer you as quickly as possible!"
         }
+      },
+      "83409832482615070000": {
+        "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
