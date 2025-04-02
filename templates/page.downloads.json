@@ -318,8 +318,8 @@
             "button_label": "Download Press Kit",
             "button_link": "https://WoxnaCDN.b-cdn.net/Woxna%20-%20Press%20kit.zip",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Download Damascus Press Kit",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/damascus.zip",
             "button_style_secondary_2": false
           }
         }
