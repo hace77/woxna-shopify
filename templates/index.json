@@ -48,7 +48,8 @@
         ".button {border: none;}",
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
-        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
+        "#Banner-template--24677250236759__image_banner {margin-bottom: 8px}"
       ],
       "settings": {
         "image": "shopify://shop_images/Woxna-Folding-Saw.jpg",
@@ -278,7 +279,6 @@
         "buttons_UJawnD"
       ],
       "settings": {
-        "image": "shopify://shop_images/black-week-banner.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
