@@ -118,10 +118,16 @@
     "collage_McyGdf": {
       "type": "collage",
       "blocks": {
+        "image_yA7nNN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-23.jpg"
+          }
+        },
         "image_p6grag": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg"
+            "image": "shopify://shop_images/Woxna-Dmascus-7.jpg"
           }
         },
         "image_CmzHgw": {
@@ -129,18 +135,12 @@
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-18.jpg"
           }
-        },
-        "image_yA7nNN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-9.jpg"
-          }
         }
       },
       "block_order": [
+        "image_yA7nNN",
         "image_p6grag",
-        "image_CmzHgw",
-        "image_yA7nNN"
+        "image_CmzHgw"
       ],
       "settings": {
         "heading": "<strong>Forged in Tradition, Crafted for Adventure – The Damascus Steel Saw</strong>",
@@ -389,6 +389,40 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_wXmVCT": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_tqGpnq": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_QKnDTX": {
           "type": "slide",
           "settings": {
@@ -413,6 +447,8 @@
         "slide_KVdXAn",
         "slide_B48QLA",
         "slide_N7wJHV",
+        "slide_wXmVCT",
+        "slide_tqGpnq",
         "slide_QKnDTX"
       ],
       "custom_css": [
