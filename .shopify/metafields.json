@@ -325,6 +325,16 @@
       }
     },
     {
+      "key": "tech_specs",
+      "namespace": "custom",
+      "name": "Tech specs",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
       "key": "feature",
       "namespace": "custom",
       "name": "Features",
@@ -435,6 +445,116 @@
       }
     },
     {
+      "key": "feature1",
+      "namespace": "custom",
+      "name": "Feature 1",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature2",
+      "namespace": "custom",
+      "name": "Feature 2",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature3",
+      "namespace": "custom",
+      "name": "feature 3",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature4",
+      "namespace": "custom",
+      "name": "Feature 4",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature5",
+      "namespace": "custom",
+      "name": "Feature 5",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_6",
+      "namespace": "custom",
+      "name": "Feature 6",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_7",
+      "namespace": "custom",
+      "name": "Feature 7",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_8",
+      "namespace": "custom",
+      "name": "Feature 8",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_9",
+      "namespace": "custom",
+      "name": "Feature 9",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "feature_10",
+      "namespace": "custom",
+      "name": "Feature 10",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "variant_images_grouping_list",
+      "namespace": "custom",
+      "name": "Variant Images Grouping List",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
       "key": "grind_",
       "namespace": "custom",
       "name": "Grind (TPI)",
@@ -511,6 +631,16 @@
       "description": "PP - Tech spec data",
       "type": {
         "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_care_text",
+      "namespace": "custom",
+      "name": "Product care text",
+      "description": "Text till care and maintenance drop down menu",
+      "type": {
+        "name": "multi_line_text_field",
         "category": "TEXT"
       }
     },
@@ -642,96 +772,6 @@
       "type": {
         "name": "number_integer",
         "category": "NUMBER"
-      }
-    },
-    {
-      "key": "feature_1",
-      "namespace": "custom",
-      "name": "Feature 1",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_2",
-      "namespace": "custom",
-      "name": "feature 2",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_3",
-      "namespace": "custom",
-      "name": "feature 3",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_4",
-      "namespace": "custom",
-      "name": "Feature 4",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_5",
-      "namespace": "custom",
-      "name": "feature 5",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_6",
-      "namespace": "custom",
-      "name": "Feature 6",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_7",
-      "namespace": "custom",
-      "name": "Feature 7",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_8",
-      "namespace": "custom",
-      "name": "Feature 8",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "feature_9",
-      "namespace": "custom",
-      "name": "Feature 9",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
       }
     }
   ],
