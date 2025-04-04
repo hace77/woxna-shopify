@@ -1,0 +1,57 @@
+.sticky-add-to-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--gradient-background);
+  padding: 1rem;
+  z-index: 100;
+  display: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sticky-add-to-cart .form {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .sticky-add-to-cart {
+    padding: 1.5rem;
+  }
+}
+
+.sticky-add-to-cart .product-form__submit {
+  margin: 0;
+  width: 100%;
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0 3rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #445F45;
+  border-radius: var(--buttons-radius-outset);
+  position: relative;
+}
+
+.sticky-add-to-cart .product-form__submit:hover {
+  background-color: #3a4f3a;
+}
+
+.sticky-add-to-cart .product-form__submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+} 
