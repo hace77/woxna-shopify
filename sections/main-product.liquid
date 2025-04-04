@@ -15,15 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-
-  {% unless product.has_only_default_variant %}
-    {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
-    {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
-    {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
-  {% endunless %}
-  {%- if product.quantity_price_breaks_configured? -%}
-    {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
+  {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -41,10 +33,13 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'sticky-add-to-cart.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
+
+  {% render 'sticky-add-to-cart-button' %}
 
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>

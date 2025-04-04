@@ -1,0 +1,50 @@
+.sticky-add-to-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20%);
+  padding: 1rem;
+  display: none;
+  z-index: 9999;
+  margin: 0;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+.sticky-add-to-cart .page-width {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sticky-add-to-cart .product-form__submit {
+  background-color: #445F45;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sticky-add-to-cart .product-form__submit:hover {
+  background-color: #3a4f3a;
+}
+
+.sticky-add-to-cart .product-form__submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 750px) {
+  .sticky-add-to-cart {
+    padding: 1.5rem;
+  }
+} 
