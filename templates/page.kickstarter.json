@@ -118,10 +118,16 @@
     "collage_McyGdf": {
       "type": "collage",
       "blocks": {
+        "image_yA7nNN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Dmascus-23.jpg"
+          }
+        },
         "image_p6grag": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg"
+            "image": "shopify://shop_images/Woxna-Dmascus-7.jpg"
           }
         },
         "image_CmzHgw": {
@@ -129,18 +135,12 @@
           "settings": {
             "image": "shopify://shop_images/Woxna-Dmascus-18.jpg"
           }
-        },
-        "image_yA7nNN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-9.jpg"
-          }
         }
       },
       "block_order": [
+        "image_yA7nNN",
         "image_p6grag",
-        "image_CmzHgw",
-        "image_yA7nNN"
+        "image_CmzHgw"
       ],
       "settings": {
         "heading": "<strong>Forged in Tradition, Crafted for Adventure – The Damascus Steel Saw</strong>",
