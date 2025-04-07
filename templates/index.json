@@ -124,12 +124,13 @@
             "show_text_overlay": true,
             "heading": "Ljusnan 250 mm",
             "text_position": "top-left",
-            "mobile_text_position": "center",
+            "mobile_text_position": "bottom-center",
             "text_alignment": "center",
             "mobile_text_alignment": "center",
-            "heading_size": "large",
-            "mobile_heading_size": "medium",
-            "description": "Oak & High Carbon Steel"
+            "heading_size": "h0",
+            "mobile_heading_size": "h1",
+            "description": "Oak & High Carbon Steel",
+            "description_style": "body"
           }
         },
         "image_HLUfzw": {
@@ -137,15 +138,16 @@
           "settings": {
             "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
             "img_link": "",
-            "show_text_overlay": false,
-            "heading": "Add a heading",
-            "text_position": "center",
-            "mobile_text_position": "center",
+            "show_text_overlay": true,
+            "heading": "Hälsing 250 mm",
+            "text_position": "bottom-center",
+            "mobile_text_position": "bottom-center",
             "text_alignment": "center",
             "mobile_text_alignment": "center",
-            "heading_size": "medium",
-            "mobile_heading_size": "medium",
-            "description": "Add a description"
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "description": "Foldable Saw - Oak & High Carbon Steel",
+            "description_style": "body"
           }
         },
         "image_tpzF9D": {
@@ -153,15 +155,16 @@
           "settings": {
             "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
             "img_link": "",
-            "show_text_overlay": false,
-            "heading": "Add a heading",
-            "text_position": "center",
-            "mobile_text_position": "center",
+            "show_text_overlay": true,
+            "heading": "Hälsing 180 mm",
+            "text_position": "bottom-center",
+            "mobile_text_position": "bottom-center",
             "text_alignment": "center",
             "mobile_text_alignment": "center",
-            "heading_size": "medium",
+            "heading_size": "h1",
             "mobile_heading_size": "medium",
-            "description": "Add a description"
+            "description": "Add a description",
+            "description_style": "body"
           }
         }
       },
