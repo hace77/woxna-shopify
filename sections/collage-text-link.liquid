@@ -129,18 +129,18 @@
 
     /* Mobile heading sizes */
     .image-overlay__heading--mobile-large {
-      font-size: 2.5rem !important;
-      line-height: 1.2 !important;
+      font-size: 3.5rem;
+      line-height: 1.1;
     }
 
     .image-overlay__heading--mobile-medium {
-      font-size: 2rem !important;
-      line-height: 1.3 !important;
+      font-size: 2.8rem;
+      line-height: 1.2;
     }
 
     .image-overlay__heading--mobile-small {
-      font-size: 1.5rem !important;
-      line-height: 1.4 !important;
+      font-size: 2rem;
+      line-height: 1.3;
     }
   }
 
@@ -213,22 +213,42 @@
   }
 
   .image-overlay__heading--large {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+
+  .image-overlay__heading--medium {
     font-size: 3.5rem;
     line-height: 1.2;
   }
 
-  .image-overlay__heading--medium {
+  .image-overlay__heading--small {
     font-size: 2.5rem;
     line-height: 1.3;
   }
 
-  .image-overlay__heading--small {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  }
-
   .image-overlay__description {
     font-size: 1.2rem;
+  }
+
+  /* Text style options */
+  .image-overlay__description.body {
+    font-size: 1.6rem;
+    line-height: calc(1 + 0.5 / var(--font-body-scale));
+  }
+
+  .image-overlay__description.subtitle {
+    font-size: 1.8rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    letter-spacing: 0.06rem;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  .image-overlay__description.caption-with-letter-spacing {
+    font-size: 1rem;
+    letter-spacing: 0.13rem;
+    line-height: calc(1 + 0.2 / var(--font-body-scale));
+    text-transform: uppercase;
   }
 
   .collage-card {
@@ -277,10 +297,10 @@
                     {%- if block.settings.show_text_overlay -%}
                       <div class="image-overlay image-overlay--{{ block.settings.text_position }} image-overlay--text-{{ block.settings.text_alignment }} image-overlay--mobile-{{ block.settings.mobile_text_position }} image-overlay--mobile-text-{{ block.settings.mobile_text_alignment }}">
                         {%- if block.settings.heading != blank -%}
-                          <h3 class="image-overlay__text image-overlay__heading image-overlay__heading--{{ block.settings.heading_size }} image-overlay__heading--mobile-{{ block.settings.mobile_heading_size }}">{{ block.settings.heading }}</h3>
+                          <h3 class="image-overlay__text {{ block.settings.heading_size }}">{{ block.settings.heading }}</h3>
                         {%- endif -%}
                         {%- if block.settings.description != blank -%}
-                          <p class="image-overlay__text image-overlay__description">{{ block.settings.description }}</p>
+                          <p class="image-overlay__text image-overlay__description {{ block.settings.description_style }}">{{ block.settings.description }}</p>
                         {%- endif -%}
                       </div>
                     {%- endif -%}
@@ -472,27 +492,27 @@
       "options": [
         {
           "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
+          "label": "Small"
         },
         {
           "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
+          "label": "Medium"
         },
         {
           "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
+          "label": "Large"
         },
         {
           "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
+          "label": "Extra Large"
         },
         {
           "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
+          "label": "Extra Extra Large"
         }
       ],
       "default": "h1",
-      "label": "t:sections.all.heading_size.label"
+      "label": "Heading size"
     },
     {
       "type": "select",
@@ -736,19 +756,27 @@
           "label": "Heading size (Desktop)",
           "options": [
             {
-              "value": "large",
-              "label": "Large"
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "medium",
-              "label": "Medium"
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "small",
-              "label": "Small"
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
-          "default": "medium"
+          "default": "h1"
         },
         {
           "type": "select",
@@ -756,25 +784,53 @@
           "label": "Heading size (Mobile)",
           "options": [
             {
-              "value": "large",
-              "label": "Large"
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "medium",
-              "label": "Medium"
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "small",
-              "label": "Small"
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
-          "default": "medium"
+          "default": "h1"
         },
         {
           "type": "textarea",
           "id": "description",
           "label": "Description",
           "default": "Add a description"
+        },
+        {
+          "type": "select",
+          "id": "description_style",
+          "label": "Description style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "Caption with letter spacing"
+            }
+          ],
+          "default": "body"
         }
       ]
     },
