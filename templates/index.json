@@ -22,7 +22,7 @@
         "text_eRbp9f": {
           "type": "text",
           "settings": {
-            "text": "<strong>Compact. Precise. Walnut & Steel.</strong>",
+            "text": "Compact. Precise. Walnut & Steel.",
             "text_style": "body"
           }
         },
@@ -124,7 +124,7 @@
             "show_text_overlay": true,
             "heading": "Ljusnan 250",
             "vertical_position": "top",
-            "mobile_vertical_position": "center",
+            "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "center",
             "heading_size": "h0",
@@ -142,17 +142,17 @@
             "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
-            "heading": "Hälsing 250 mm",
-            "vertical_position": "center",
-            "mobile_vertical_position": "center",
-            "text_alignment": "center",
+            "heading": "Hälsing 250",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "right",
             "mobile_text_alignment": "center",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
-            "description": "Oak & High Carbon Steel",
+            "description": "Power, Tradition, Full Length.",
             "description_style": "body",
             "button_label": "Shop now",
-            "button_link": "",
+            "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "button_style_secondary": false
           }
         },
@@ -162,17 +162,17 @@
             "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
-            "heading": "Hälsing 180 mm",
-            "vertical_position": "center",
-            "mobile_vertical_position": "center",
-            "text_alignment": "center",
+            "heading": "Hälsing 180",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "right",
             "mobile_text_alignment": "center",
             "heading_size": "h1",
             "mobile_heading_size": "medium",
-            "description": "Oak & High Carbon Steel",
+            "description": "Grit in Oak and Carbon Steel.",
             "description_style": "body",
             "button_label": "Shop now",
-            "button_link": "",
+            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
         }
