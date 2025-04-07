@@ -29,7 +29,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Buy it now",
+            "button_label_1": "Shop now",
             "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
             "button_style_secondary_1": false,
             "button_label_2": "",
