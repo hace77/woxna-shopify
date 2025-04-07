@@ -4,47 +4,37 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: var(--gradient-background);
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20%);
   padding: 1rem;
-  z-index: 100;
   display: none;
+  z-index: 9999;
+
   margin: 0;
   box-sizing: border-box;
 }
 
-.sticky-add-to-cart .form {
+
+.sticky-add-to-cart .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-@media screen and (min-width: 750px) {
-  .sticky-add-to-cart {
-    padding: 1.5rem;
-  }
-}
-
 .sticky-add-to-cart .product-form__submit {
-  margin: 0;
-  width: 100%;
-  min-width: calc(12rem + var(--buttons-border-width) * 2);
-  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  padding: 0 3rem;
-  cursor: pointer;
-  font: inherit;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #ffffff;
-  transition: background-color 0.2s ease;
-  -webkit-appearance: none;
-  appearance: none;
   background-color: #445F45;
-  border-radius: var(--buttons-radius-outset);
-  position: relative;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+>>>>>>> main
 }
 
 .sticky-add-to-cart .product-form__submit:hover {
@@ -54,4 +44,14 @@
 .sticky-add-to-cart .product-form__submit:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
+<<<<<<< HEAD
 } 
+=======
+}
+
+@media screen and (min-width: 750px) {
+  .sticky-add-to-cart {
+    padding: 1.5rem;
+  }
+} 
+>>>>>>> main
