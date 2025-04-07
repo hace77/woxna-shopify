@@ -555,6 +555,7 @@
         "heading_RqfhNE",
         "text_7WM3YV"
       ],
+      "disabled": true,
       "custom_css": [
         "ul {list-style-position: outside;}",
         "li {list-style: none;}"
@@ -586,6 +587,7 @@
       "block_order": [
         "button_VPJMdf"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
@@ -617,6 +619,7 @@
         "heading_LV3cGM",
         "text_RnAWmP"
       ],
+      "disabled": true,
       "custom_css": [
         "ul {list-style-position: outside;}"
       ],
@@ -641,8 +644,14 @@
         "heading_xpYkYb": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Be amoung the first to ever hold and own a damaskus saw </strong>",
+            "heading": "Not ready to spend 1 USD",
             "heading_size": "h1"
+          }
+        },
+        "text_CxhL3A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- sign up for our normal newsletter to get information about when the kickstarter launches</p>"
           }
         },
         "button_HGQUqe": {
@@ -660,6 +669,7 @@
       "block_order": [
         "image_QfLiER",
         "heading_xpYkYb",
+        "text_CxhL3A",
         "button_HGQUqe"
       ],
       "settings": {
@@ -669,6 +679,23 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "17440409412d37765a": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_bf3r36": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_bf3r36"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -687,6 +714,7 @@
     "rich_text_Y3hHHd",
     "rich_text_64xHNN",
     "rich_text_k4HKWh",
-    "richtext_with_image_wtXxEr"
+    "richtext_with_image_wtXxEr",
+    "17440409412d37765a"
   ]
 }
