@@ -49,7 +49,7 @@
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        "#Banner-template--24677250236759__image_banner {margin-bottom: 8px}"
+        "#Banner-template--24677250236759__image_banner {margin-bottom: 8px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Woxna-Folding-Saw.jpg",
@@ -209,7 +209,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #f2e4c4;}",
         ".button {border-radius: 10px; border: none;}",
@@ -244,56 +243,8 @@
         "padding_bottom": 44
       }
     },
-    "image_banner_iTfWWc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_EG7mK3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Black Week Saws",
-            "heading_size": "h1"
-          }
-        },
-        "text_mPAetM": {
-          "type": "text",
-          "settings": {
-            "text": "For Black week, we're offering a very limited batch of Hälsing Saws with minor quirks—like mismatched wooden handles halves or logotypes that didn't burn perfectly. You still get the same quality as with all our other saws and you help us to be more sustainable by reducing our waste.",
-            "text_style": "body"
-          }
-        },
-        "buttons_UJawnD": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Explore our black week deals",
-            "button_link_1": "shopify://pages/black-week-2024",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_EG7mK3",
-        "text_mPAetM",
-        "buttons_UJawnD"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "featured_collection_mnYkfA": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Black Week Saws",
         "heading_size": "h1",
@@ -362,7 +313,6 @@
     "judge_me_reviews",
     "rich_text_fbgFhP",
     "featured_collection",
-    "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
     "newsletter_eicndk"
   ]
