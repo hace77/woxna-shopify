@@ -113,6 +113,75 @@
         "show_text_below": false
       }
     },
+    "collage_text_link_9Nc9UV": {
+      "type": "collage-text-link",
+      "blocks": {
+        "image_jNgX44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan250-sawing-birch.jpg",
+            "img_link": "",
+            "show_text_overlay": true,
+            "heading": "Ljusnan 250 mm",
+            "text_position": "top-left",
+            "mobile_text_position": "center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "heading_size": "large",
+            "mobile_heading_size": "medium",
+            "description": "Oak & High Carbon Steel"
+          }
+        },
+        "image_HLUfzw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
+            "img_link": "",
+            "show_text_overlay": false,
+            "heading": "Add a heading",
+            "text_position": "center",
+            "mobile_text_position": "center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "heading_size": "medium",
+            "mobile_heading_size": "medium",
+            "description": "Add a description"
+          }
+        },
+        "image_tpzF9D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
+            "img_link": "",
+            "show_text_overlay": false,
+            "heading": "Add a heading",
+            "text_position": "center",
+            "mobile_text_position": "center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "heading_size": "medium",
+            "mobile_heading_size": "medium",
+            "description": "Add a description"
+          }
+        }
+      },
+      "block_order": [
+        "image_jNgX44",
+        "image_HLUfzw",
+        "image_tpzF9D"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_yN9HkD": {
       "type": "rich-text",
       "blocks": {
@@ -673,6 +742,7 @@
   "order": [
     "image_banner",
     "image_banner_nECKWc",
+    "collage_text_link_9Nc9UV",
     "rich_text_yN9HkD",
     "1730798874462ed86d",
     "rich_text_fbgFhP",
