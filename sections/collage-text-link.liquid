@@ -1,4 +1,4 @@
-{{ 'collage.css' | asset_url | stylesheet_tag }}
+{{ 'collage-text-link.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-modal-video.css' | asset_url | stylesheet_tag }}
@@ -31,9 +31,12 @@
       margin: 0 !important;
     }
     
-    .collage {
-      padding-left: 0;
-      padding-right: 0;
+    #shopify-section-{{ section.id }} .collage {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      padding-top: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
+      padding-bottom: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
+      grid-row-gap: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
     }
   }
   
@@ -48,10 +51,25 @@
   }
 
   /* customaising the clickable image*/
-  .clickable_image_link img{
+  .media-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .clickable_image_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .clickable_image_link img {
     object-fit: cover;
     width: 100%;
-    height: 100%
+    height: 100%;
+    display: block;
   }
 
   /* Text overlay styles */
@@ -61,143 +79,37 @@
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid !important;
+    grid-template-rows: 1fr;
+    align-items: stretch;
     padding: 2rem;
-    z-index: 1;
+    z-index: 2;
+    pointer-events: none;
   }
 
-  /* Mobile text positioning */
-  @media screen and (max-width: 749px) {
-    .image-overlay--mobile-top-left {
-      justify-content: flex-start !important;
-      align-items: flex-start !important;
-    }
-
-    .image-overlay--mobile-top-center {
-      justify-content: flex-start !important;
-      align-items: center !important;
-    }
-
-    .image-overlay--mobile-top-right {
-      justify-content: flex-start !important;
-      align-items: flex-end !important;
-    }
-
-    .image-overlay--mobile-center-left {
-      justify-content: center !important;
-      align-items: flex-start !important;
-    }
-
-    .image-overlay--mobile-center {
-      justify-content: center !important;
-      align-items: center !important;
-    }
-
-    .image-overlay--mobile-center-right {
-      justify-content: center !important;
-      align-items: flex-end !important;
-    }
-
-    .image-overlay--mobile-bottom-left {
-      justify-content: flex-end !important;
-      align-items: flex-start !important;
-    }
-
-    .image-overlay--mobile-bottom-center {
-      justify-content: flex-end !important;
-      align-items: center !important;
-    }
-
-    .image-overlay--mobile-bottom-right {
-      justify-content: flex-end !important;
-      align-items: flex-end !important;
-    }
-
-    /* Mobile text alignment */
-    .image-overlay--mobile-text-left {
-      text-align: left !important;
-    }
-
-    .image-overlay--mobile-text-center {
-      text-align: center !important;
-    }
-
-    .image-overlay--mobile-text-right {
-      text-align: right !important;
-    }
-
-    /* Mobile heading sizes */
-    .image-overlay__heading--mobile-h2 {
-      font-size: 2rem !important;
-      line-height: 1.3 !important;
-    }
-
-    .image-overlay__heading--mobile-h1 {
-      font-size: 2.8rem !important;
-      line-height: 1.2 !important;
-    }
-
-    .image-overlay__heading--mobile-h0 {
-      font-size: 3.5rem !important;
-      line-height: 1.1 !important;
-    }
-
-    .image-overlay__heading--mobile-hxl {
-      font-size: 4.2rem !important;
-      line-height: 1.1 !important;
-    }
-
-    .image-overlay__heading--mobile-hxxl {
-      font-size: 5rem !important;
-      line-height: 1.1 !important;
-    }
+  .image-overlay__text {
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+    display: grid !important;
+    pointer-events: auto;
   }
 
-  /* Position classes */
-  .image-overlay--top-left {
-    justify-content: flex-start;
-    align-items: flex-start;
+  .image-overlay__buttons {
+    pointer-events: auto;
   }
 
-  .image-overlay--top-center {
-    justify-content: flex-start;
-    align-items: center;
+  /* Vertical position classes */
+  .image-overlay--top .image-overlay__text {
+    align-self: start;
   }
 
-  .image-overlay--top-right {
-    justify-content: flex-start;
-    align-items: flex-end;
+  .image-overlay--center .image-overlay__text {
+    align-self: center;
   }
 
-  .image-overlay--center-left {
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .image-overlay--center {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image-overlay--center-right {
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .image-overlay--bottom-left {
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-
-  .image-overlay--bottom-center {
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .image-overlay--bottom-right {
-    justify-content: flex-end;
-    align-items: flex-end;
+  .image-overlay--bottom .image-overlay__text {
+    align-self: end;
   }
 
   /* Text alignment classes */
@@ -213,13 +125,9 @@
     text-align: right;
   }
 
-  .image-overlay__text {
-    color: #ffffff;
-    margin: 0;
-  }
-
   .image-overlay__heading {
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .image-overlay__heading--large {
@@ -238,10 +146,9 @@
   }
 
   .image-overlay__description {
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
-  /* Text style options */
   .image-overlay__description.body {
     font-size: 1.6rem;
     line-height: calc(1 + 0.5 / var(--font-body-scale));
@@ -251,7 +158,6 @@
     font-size: 1.8rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
     letter-spacing: 0.06rem;
-    color: rgba(var(--color-foreground), 0.7);
   }
 
   .image-overlay__description.caption-with-letter-spacing {
@@ -261,13 +167,87 @@
     text-transform: uppercase;
   }
 
-  .collage-card {
-    position: relative;
+  /* Text alignment classes */
+  .image-overlay--text-left .image-overlay__buttons {
+    justify-content: flex-start;
   }
-  
-  .collage {
-    padding-top: {{ settings.spacing_grid_horizontal | round: 0 }}px;
-    padding-bottom: {{ settings.spacing_grid_horizontal | round: 0 }}px;
+
+  .image-overlay--text-center .image-overlay__buttons {
+    justify-content: center;
+  }
+
+  .image-overlay--text-right .image-overlay__buttons {
+    justify-content: flex-end;
+  }
+
+  /* Mobile text positioning */
+  @media screen and (max-width: 749px) {
+    .image-overlay--mobile-top .image-overlay__text {
+      align-self: start !important;
+    }
+
+    .image-overlay--mobile-center .image-overlay__text {
+      align-self: center !important;
+    }
+
+    .image-overlay--mobile-bottom .image-overlay__text {
+      align-self: end !important;
+    }
+
+    .image-overlay__buttons {
+      margin-top: 0;
+    }
+
+    .image-overlay__heading.mobile-h2 {
+      font-size: 2.5rem;
+      line-height: 1.3;
+    }
+
+    .image-overlay__heading.mobile-h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+
+    .image-overlay__heading.mobile-h0 {
+      font-size: 4.5rem;
+      line-height: 1.1;
+    }
+
+    .image-overlay__heading.mobile-hxl {
+      font-size: 5.5rem;
+      line-height: 1.1;
+    }
+
+    .image-overlay__heading.mobile-hxxl {
+      font-size: 6.5rem;
+      line-height: 1.1;
+    }
+
+    /* Mobile text alignment */
+    .image-overlay--mobile-text-left {
+      text-align: left !important;
+    }
+
+    .image-overlay--mobile-text-center {
+      text-align: center !important;
+    }
+
+    .image-overlay--mobile-text-right {
+      text-align: right !important;
+    }
+
+    /* Mobile button alignment */
+    .image-overlay--mobile-text-left .image-overlay__buttons {
+      justify-content: flex-start !important;
+    }
+
+    .image-overlay--mobile-text-center .image-overlay__buttons {
+      justify-content: center !important;
+    }
+
+    .image-overlay--mobile-text-right .image-overlay__buttons {
+      justify-content: flex-end !important;
+    }
   }
 {%- endstyle -%}
 
@@ -301,57 +281,65 @@
                    style="--ratio-percent: 100%"
                   {% endif %}
                 >
-               
                   {%- if block.settings.image != blank -%}
-                    <a class="clickable_image_link" href="{{ block.settings.img_link }}">
-                    {%- if block.settings.show_text_overlay -%}
-                      <div class="image-overlay image-overlay--{{ block.settings.text_position }} image-overlay--text-{{ block.settings.text_alignment }} image-overlay--mobile-{{ block.settings.mobile_text_position }} image-overlay--mobile-text-{{ block.settings.mobile_text_alignment }}">
+                    <div class="media-wrapper">
+                      <a class="clickable_image_link" href="{{ block.settings.img_link }}">
+                        {%- liquid
+                          if section.settings.desktop_layout == 'left'
+                            assign large_block = forloop.first
+                          else
+                            assign large_block = forloop.last
+                          endif
+
+                          assign grid_space_desktop = settings.spacing_grid_horizontal | divided_by: 2 | append: 'px'
+                          assign grid_space_mobile = settings.spacing_grid_horizontal | divided_by: 4 | append: 'px'
+                        -%}
+                        {%- if large_block -%}
+                          {%- capture sizes -%}
+                            {% if section.blocks.size == 1 -%}(min-width: {{ settings.page_width }}px) calc({{ settings.page_width }}px - 100px){% else %}(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+                            {% if section.blocks.size == 1 -%}(min-width: 750px) calc(100vw - 100px){% else %}(min-width: 750px) calc((100vw - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+                            {% if section.blocks.size == 2 and section.settings.mobile_layout == 'collage' -%}calc((100vw - 30px) / 2){% else %}calc(100vw - 30px){% endif %}
+                          {%- endcapture -%}
+                          {{
+                            block.settings.image
+                            | image_url: width: 3200
+                            | image_tag:
+                              sizes: sizes,
+                              widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+                          }}
+                        {%- else -%}
+                          {%- capture sizes -%}
+                            (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 1 / 3 - {{ grid_space_desktop }}),
+                            (min-width: 750px) calc((100vw - 100px) * 1 / 3 - {{ grid_space_desktop }}),
+                            {% if section.settings.mobile_layout == 'collage' %}calc((100vw - 30px) / 2 - {{ grid_space_mobile }}){% else %}calc(100vw - 30px){% endif %}
+                          {%- endcapture -%}
+                          {{
+                            block.settings.image
+                            | image_url: width: 3200
+                            | image_tag:
+                              sizes: sizes,
+                              widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+                          }}
+                        {%- endif -%}
+                      </a>
+                    </div>
+                    <div class="image-overlay image-overlay--{{ block.settings.vertical_position }} image-overlay--mobile-{{ block.settings.mobile_vertical_position }} image-overlay--text-{{ block.settings.text_alignment }} image-overlay--mobile-text-{{ block.settings.mobile_text_alignment }}">
+                      <div class="image-overlay__text">
                         {%- if block.settings.heading != blank -%}
-                          <h3 class="image-overlay__text {{ block.settings.heading_size }} image-overlay__heading--mobile-{{ block.settings.mobile_heading_size }}">{{ block.settings.heading }}</h3>
+                          <h2 class="image-overlay__heading {{ block.settings.heading_size }} mobile-{{ block.settings.mobile_heading_size }}">{{ block.settings.heading }}</h2>
                         {%- endif -%}
                         {%- if block.settings.description != blank -%}
-                          <p class="image-overlay__text image-overlay__description {{ block.settings.description_style }}">{{ block.settings.description }}</p>
+                          <div class="image-overlay__description {{ block.settings.description_style }}">{{ block.settings.description }}</div>
+                        {%- endif -%}
+                        {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
+                          <div class="image-overlay__buttons">
+                            <a href="{{ block.settings.button_link }}" class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
+                              {{ block.settings.button_label | escape }}
+                            </a>
+                          </div>
                         {%- endif -%}
                       </div>
-                    {%- endif -%}
-                    {%- liquid
-                      if section.settings.desktop_layout == 'left'
-                        assign large_block = forloop.first
-                      else
-                        assign large_block = forloop.last
-                      endif
-
-                      assign grid_space_desktop = settings.spacing_grid_horizontal | divided_by: 2 | append: 'px'
-                      assign grid_space_mobile = settings.spacing_grid_horizontal | divided_by: 4 | append: 'px'
-                    -%}
-                    {%- if large_block -%}
-                      {%- capture sizes -%}
-                        {% if section.blocks.size == 1 -%}(min-width: {{ settings.page_width }}px) calc({{ settings.page_width }}px - 100px){% else %}(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
-                        {% if section.blocks.size == 1 -%}(min-width: 750px) calc(100vw - 100px){% else %}(min-width: 750px) calc((100vw - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
-                        {% if section.blocks.size == 2 and section.settings.mobile_layout == 'collage' -%}calc((100vw - 30px) / 2){% else %}calc(100vw - 30px){% endif %}
-                        {%- endcapture -%}
-                      {{
-                        block.settings.image
-                        | image_url: width: 3200
-                        | image_tag:
-                          sizes: sizes,
-                          widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
-                      }}
-                    {%- else -%}
-                      {%- capture sizes -%}
-                           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 1 / 3 - {{ grid_space_desktop }}),
-                           (min-width: 750px) calc((100vw - 100px) * 1 / 3 - {{ grid_space_desktop }}),
-                           {% if section.settings.mobile_layout == 'collage' %}calc((100vw - 30px) / 2 - {{ grid_space_mobile }}){% else %}calc(100vw - 30px){% endif %}
-                        {%- endcapture -%}
-                      {{
-                        block.settings.image
-                        | image_url: width: 3200
-                        | image_tag:
-                          sizes: sizes,
-                          widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
-                      }}
-                    {%- endif -%}
-                  </a>
+                    </div>
                   {%- else -%}
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
@@ -634,88 +622,40 @@
         },
         {
           "type": "select",
-          "id": "text_position",
-          "label": "Text position (Desktop)",
+          "id": "vertical_position",
+          "label": "Vertical position (Desktop)",
           "options": [
             {
-              "value": "top-left",
-              "label": "Top left"
-            },
-            {
-              "value": "top-center",
-              "label": "Top center"
-            },
-            {
-              "value": "top-right",
-              "label": "Top right"
-            },
-            {
-              "value": "center-left",
-              "label": "Center left"
+              "value": "top",
+              "label": "Top"
             },
             {
               "value": "center",
               "label": "Center"
             },
             {
-              "value": "center-right",
-              "label": "Center right"
-            },
-            {
-              "value": "bottom-left",
-              "label": "Bottom left"
-            },
-            {
-              "value": "bottom-center",
-              "label": "Bottom center"
-            },
-            {
-              "value": "bottom-right",
-              "label": "Bottom right"
+              "value": "bottom",
+              "label": "Bottom"
             }
           ],
           "default": "center"
         },
         {
           "type": "select",
-          "id": "mobile_text_position",
-          "label": "Text position (Mobile)",
+          "id": "mobile_vertical_position",
+          "label": "Vertical position (Mobile)",
           "options": [
             {
-              "value": "top-left",
-              "label": "Top left"
-            },
-            {
-              "value": "top-center",
-              "label": "Top center"
-            },
-            {
-              "value": "top-right",
-              "label": "Top right"
-            },
-            {
-              "value": "center-left",
-              "label": "Center left"
+              "value": "top",
+              "label": "Top"
             },
             {
               "value": "center",
               "label": "Center"
             },
             {
-              "value": "center-right",
-              "label": "Center right"
-            },
-            {
-              "value": "bottom-left",
-              "label": "Bottom left"
-            },
-            {
-              "value": "bottom-center",
-              "label": "Bottom center"
-            },
-            {
-              "value": "bottom-right",
-              "label": "Bottom right"
+              "value": "bottom",
+              "label": "Bottom"
             }
           ],
           "default": "center"
@@ -723,7 +663,7 @@
         {
           "type": "select",
           "id": "text_alignment",
-          "label": "Text alignment (Desktop)",
+          "label": "Text alignment",
           "options": [
             {
               "value": "left",
@@ -841,6 +781,23 @@
             }
           ],
           "default": "body"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Use outline button style"
         }
       ]
     },
