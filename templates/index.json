@@ -120,7 +120,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ljusnan250-sawing-birch.jpg",
-            "img_link": "",
+            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
             "heading": "Ljusnan 250 mm",
             "text_position": "top-left",
@@ -137,7 +137,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
-            "img_link": "",
+            "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 250 mm",
             "text_position": "bottom-center",
@@ -154,7 +154,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
-            "img_link": "",
+            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 180 mm",
             "text_position": "bottom-center",
