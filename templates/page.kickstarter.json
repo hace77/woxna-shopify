@@ -35,7 +35,7 @@
         "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Woxna-Dmascus-8.jpg",
+        "image": "shopify://shop_images/Damascus_4.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "top-left",
@@ -91,6 +91,13 @@
     "rich_text_t3x9VR": {
       "type": "rich-text",
       "blocks": {
+        "heading_XwtDAH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why This Saw is Revolutionary",
+            "heading_size": "h1"
+          }
+        },
         "text_mJD6kb": {
           "type": "text",
           "settings": {
@@ -99,6 +106,7 @@
         }
       },
       "block_order": [
+        "heading_XwtDAH",
         "text_mJD6kb"
       ],
       "custom_css": [
@@ -639,7 +647,7 @@
         "image_QfLiER": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Woxna-Dmascus-23.jpg"
+            "image_select": "shopify://shop_images/Damascus_58.jpg"
           }
         },
         "heading_xpYkYb": {
@@ -686,6 +694,34 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "17441041288c99b0cf": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_ybkPVQ": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "412729",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_ybkPVQ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -704,6 +740,7 @@
     "rich_text_64xHNN",
     "rich_text_k4HKWh",
     "richtext_with_image_wtXxEr",
-    "1744103415254dc915"
+    "1744103415254dc915",
+    "17441041288c99b0cf"
   ]
 }
