@@ -469,20 +469,20 @@
         "heading_UEMHHf": {
           "type": "heading",
           "settings": {
-            "heading": "Visit our Kickstarter page",
+            "heading": "Follow us on Kickstarter",
             "heading_size": "h1"
           }
         },
         "text_YtG38W": {
           "type": "text",
           "settings": {
-            "text": "<p>Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below</p>"
+            "text": "<p>For the lastest updates about the campaign visit our kickstarter page</p>"
           }
         },
         "button_UM3Gb9": {
           "type": "button",
           "settings": {
-            "button_label": "Kickstarter",
+            "button_label": "Woxna Kickstarter ",
             "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
             "button_style_secondary": false,
             "button_label_2": "",
