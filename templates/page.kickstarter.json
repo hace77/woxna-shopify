@@ -136,6 +136,42 @@
         "padding_bottom": 32
       }
     },
+    "image_banner_7iC6VT": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UwbATT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not ready to spend 1 USD?",
+            "heading_size": "h1"
+          }
+        },
+        "text_DhGHdY": {
+          "type": "text",
+          "settings": {
+            "text": "- sign up for our normal newsletter to get information about when the kickstarter launches",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UwbATT",
+        "text_DhGHdY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Damascus_58.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -146,442 +182,6 @@
       "settings": {
         "padding_top": 56,
         "padding_bottom": 28
-      }
-    },
-    "collage_McyGdf": {
-      "type": "collage",
-      "blocks": {
-        "image_yA7nNN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-23.jpg"
-          }
-        },
-        "image_p6grag": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-7.jpg"
-          }
-        },
-        "image_CmzHgw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-18.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_yA7nNN",
-        "image_p6grag",
-        "image_CmzHgw"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "<strong>Forged in Tradition, Crafted for Adventure – The Damascus Steel Saw</strong>",
-        "heading_size": "h1",
-        "desktop_layout": "right",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "scheme-1",
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "slideshow_LKKPW9": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_HdxCGz": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-18_2ecb16ac-bb2b-4fc3-b2d9-9f0e1c75ae5d.jpg",
-            "heading": "<strong>Proven Quality from Damasteel</strong>",
-            "heading_size": "h1",
-            "subheading": "A sharp and durable blade from Damasteel, the renowned Swedish masters of Damascus.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_Xyaxqq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
-            "heading": "<strong>Stainless Peace of Mind</strong>",
-            "heading_size": "h1",
-            "subheading": "Relax and enjoy the great outdoors without the worries of rust.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_fNC6bc": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
-            "heading": "<strong>Compact and Foldable</strong>",
-            "heading_size": "h1",
-            "subheading": "Designed for easy carrying and adventure-ready portability",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_mt7yCR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
-            "heading": "<strong>Two Sizes</strong>",
-            "heading_size": "h1",
-            "subheading": "Comes with a 7 or a 10 inch blade.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_TYKVA9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
-            "heading": "<strong>Damaskus steel in three dimensions  </strong>",
-            "heading_size": "h1",
-            "subheading": "The uniqueness of using damaskus for saws is that you get to see the blade from more than one angle - this is pure damaskus beauty!",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_HdxCGz",
-        "slide_Xyaxqq",
-        "slide_fNC6bc",
-        "slide_mt7yCR",
-        "slide_TYKVA9"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media (max-width: 749px) {.slideshow, .slideshow__controls {display: none !important; }}"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "large",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "slideshow_d9M3xf": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_YBh4Jq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-mobile.jpg",
-            "heading": "<strong>Damascus Steel Blade</strong>",
-            "heading_size": "h1",
-            "subheading": "<strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_KVdXAn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
-            "heading": "<strong>7 TPI Pull-Cut Teeth</strong>",
-            "heading_size": "h1",
-            "subheading": " – Cuts effortlessly through <strong>hardwood and softwood</strong> ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_B48QLA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
-            "heading": "<strong>Foldable & Compact</strong>",
-            "heading_size": "h1",
-            "subheading": " – Designed for <strong>easy carrying and adventure-ready portability.</strong> ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_N7wJHV": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-14.jpg",
-            "heading": "<strong>Handcrafted Walnut/Oak Handle</strong> –",
-            "heading_size": "h1",
-            "subheading": "Premium grip, natural beauty, and timeless craftsmanship. ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "top-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_QKnDTX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-36.jpg",
-            "heading": "<strong>Tested & Endorsed by Experts</strong>",
-            "heading_size": "h1",
-            "subheading": " – Trusted by bushcrafters, survivalists, and outdoor professionals. ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_YBh4Jq",
-        "slide_KVdXAn",
-        "slide_B48QLA",
-        "slide_N7wJHV",
-        "slide_QKnDTX"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 768px) {.slideshow, .slideshow__controls {display: none; }}",
-        "@media (max-width: 749px) {.slideshow {position: relative; width: 100%; aspect-ratio: 9 / 16; } .slideshow__text-wrapper {align-items: end; }}"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "large",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "rich_text_gE8Qzf": {
-      "type": "rich-text",
-      "blocks": {
-        "text_8aatQy": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li><strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. </li><li><strong>7 TPI Pull-Cut Teeth</strong> – Cuts effortlessly through <strong>hardwood and softwood</strong> </li><li><strong>Foldable & Compact</strong> – Designed for <strong>easy carrying and adventure-ready portability.</strong> </li><li><strong>Handcrafted Walnut/Oak Handle</strong> – Premium grip, natural beauty, and timeless craftsmanship. </li><li><strong>Tested & Endorsed by Experts</strong> – Trusted by bushcrafters, survivalists, and outdoor professionals. </li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "text_8aatQy"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "ul {list-style-position: outside;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multirow_A7VaDm": {
-      "type": "multirow",
-      "blocks": {
-        "row_BgerRV": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-24.jpg",
-            "caption": "",
-            "heading": "<strong>Why This Saw is Unlike Anything You've Seen Before</strong>",
-            "text": "<ul><li><strong>Damascus Steel Blade</strong> – Unmatched strength, durability, and a razor-sharp edge. </li><li><strong>7 TPI Pull-Cut Teeth</strong> – Cuts effortlessly through <strong>hardwood and softwood</strong> </li><li><strong>Foldable & Compact</strong> – Designed for <strong>easy carrying and adventure-ready portability.</strong> </li><li><strong>Handcrafted Walnut/Oak Handle</strong> – Premium grip, natural beauty, and timeless craftsmanship. </li><li><strong>Tested & Endorsed by Experts</strong> – Trusted by bushcrafters, survivalists, and outdoor professionals. </li></ul>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_qYi7b6": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Dmascus-11.jpg",
-            "caption": "",
-            "heading": "<strong>Unique Saw For the Tool Enthusiast</strong>",
-            "text": "<p><strong>Bushcrafters & Survivalists</strong> – A trusted tool for firewood, shelter-building, and crafting.</p><p><strong>Hikers & Campers</strong> – Lightweight and compact for all outdoor adventures.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_BgerRV",
-        "row_qYi7b6"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "ul {list-style-position: outside;}"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_64xHNN": {
-      "type": "rich-text",
-      "blocks": {
-        "button_VPJMdf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Reserve yout spot today!",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "button_VPJMdf"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_k4HKWh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LV3cGM": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>What’s a Kickstarter?</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_RnAWmP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Kickstarter is one of the world’s leading crowdfunding platforms where people can support the development of new products before they even launch. </p><p>We have chosen to have this product launch on Kickstarter due to the high purchase cost of the Damasteel steel and to meet the minimum order quantities needed to go into production of this unique saw.    </p><ul><li>You back us by pledging to buy a product.</li><li>If the project reaches its funding goal, it goes into production - if not, you’re not charged.</li><li>Backing early helps us make this saw a reality!</li><li>To succeed with the marketing reach, we need as many backers as possible, as early as possible. That’s why we’re offering an exclusive discount for those who reserve their spot before the Kickstarter even begins.</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LV3cGM",
-        "text_RnAWmP"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "ul {list-style-position: outside;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "collage_iUMiXA": {
-      "type": "collage",
-      "blocks": {
-        "image_Ndc6eR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Damascus_58.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_Ndc6eR"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
       }
     },
     "richtext_with_image_wtXxEr": {
@@ -605,6 +205,7 @@
         "heading_xpYkYb",
         "text_CxhL3A"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -645,7 +246,7 @@
             "errors_color": "#E02229",
             "text_alignment": "center",
             "form_alignment": "center",
-            "padding_top": 0,
+            "padding_top": 25,
             "padding_bottom": 0,
             "padding_right": 0,
             "padding_left": 0
@@ -655,6 +256,7 @@
       "block_order": [
         "forms_inline_ybkPVQ"
       ],
+      "custom_css": [],
       "settings": {
         "include_margins": true
       }
@@ -665,8 +267,8 @@
         "heading_nc7TAc": {
           "type": "heading",
           "settings": {
-            "heading": "Visit us at our kickstarter page",
-            "heading_size": "h0"
+            "heading": "Visit our kickstarter page",
+            "heading_size": "h2"
           }
         },
         "button_XdRKf3": {
@@ -686,15 +288,15 @@
       "settings": {
         "image": "shopify://shop_images/Damascus_19.jpg",
         "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "text_first",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 36
       }
@@ -705,15 +307,8 @@
     "image_banner_ExBjAj",
     "rich_text_t3x9VR",
     "custom_liquid_UMYp93",
+    "image_banner_7iC6VT",
     "main",
-    "collage_McyGdf",
-    "slideshow_LKKPW9",
-    "slideshow_d9M3xf",
-    "rich_text_gE8Qzf",
-    "multirow_A7VaDm",
-    "rich_text_64xHNN",
-    "rich_text_k4HKWh",
-    "collage_iUMiXA",
     "richtext_with_image_wtXxEr",
     "1744103415254dc915",
     "17441041288c99b0cf",
