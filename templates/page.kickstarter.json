@@ -159,44 +159,6 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_7iC6VT": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_UwbATT": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Not ready to spend 1 USD?",
-            "heading_size": "h1"
-          }
-        },
-        "text_DhGHdY": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "- sign up for our normal newsletter to get information about when the kickstarter launches",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_UwbATT",
-        "text_DhGHdY"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Damascus_19.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -207,58 +169,6 @@
       "settings": {
         "padding_top": 56,
         "padding_bottom": 28
-      }
-    },
-    "image_banner_byeQPA": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_6aJdQP": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Visit our Kickstarter page",
-            "heading_size": "h1"
-          }
-        },
-        "text_4PdcWP": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below",
-            "text_style": "body"
-          }
-        },
-        "buttons_nfLfDQ": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Visit kickstarter",
-            "button_link_1": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_6aJdQP",
-        "text_4PdcWP",
-        "buttons_nfLfDQ"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Damascus_58.jpg",
-        "image_2": "shopify://shop_images/Damascus_11.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
       }
     },
     "richtext_with_image_wtXxEr": {
@@ -544,7 +454,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "full_width": true,
         "padding_top": 12,
         "padding_bottom": 32
@@ -557,9 +467,7 @@
     "rich_text_RtFBF4",
     "custom_liquid_UMYp93",
     "rich_text_t3x9VR",
-    "image_banner_7iC6VT",
     "main",
-    "image_banner_byeQPA",
     "richtext_with_image_wtXxEr",
     "1744103415254dc915",
     "17441041288c99b0cf",
