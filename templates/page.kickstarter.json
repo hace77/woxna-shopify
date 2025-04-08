@@ -88,6 +88,31 @@
         "show_text_below": false
       }
     },
+    "rich_text_t3x9VR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_mJD6kb": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>First-of-Its-Kind Damascus Blade</strong> – No two are alike, featuring a mesmerizing 3D pattern</li><li><strong>Premium Swedish Craftsmanship</strong> – Made with <strong>Damasteel®</strong>, one of the world’s best damascus steel manufacturers</li><li><strong>Foldable & Adventure-Ready</strong> – Compact, lightweight, and built for the wild</li><li><strong>Unmatched Performance</strong> – Exceptional edge retention, corrosion resistance & precision cutting</li><li><strong>Exclusive Kickstarter Access</strong> – Be among the first to own this game-changing tool</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_mJD6kb"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_UMYp93": {
       "type": "custom-liquid",
       "custom_css": [
@@ -142,6 +167,7 @@
         "image_p6grag",
         "image_CmzHgw"
       ],
+      "disabled": true,
       "settings": {
         "heading": "<strong>Forged in Tradition, Crafted for Adventure – The Damascus Steel Saw</strong>",
         "heading_size": "h1",
@@ -300,6 +326,7 @@
         "slide_mt7yCR",
         "slide_TYKVA9"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.slideshow, .slideshow__controls {display: none !important; }}"
       ],
@@ -415,6 +442,7 @@
         "slide_N7wJHV",
         "slide_QKnDTX"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.slideshow, .slideshow__controls {display: none; }}",
         "@media (max-width: 749px) {.slideshow {position: relative; width: 100%; aspect-ratio: 9 / 16; } .slideshow__text-wrapper {align-items: end; }}"
@@ -515,6 +543,7 @@
         "row_BgerRV",
         "row_qYi7b6"
       ],
+      "disabled": true,
       "custom_css": [
         "ul {list-style-position: outside;}"
       ],
@@ -644,7 +673,7 @@
         "heading_xpYkYb": {
           "type": "heading",
           "settings": {
-            "heading": "Not ready to spend 1 USD",
+            "heading": "Not ready to spend 1 USD?",
             "heading_size": "h1"
           }
         },
@@ -702,6 +731,7 @@
   "order": [
     "image_banner_hcbVmA",
     "image_banner_ExBjAj",
+    "rich_text_t3x9VR",
     "custom_liquid_UMYp93",
     "main",
     "collage_McyGdf",
