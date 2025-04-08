@@ -75,7 +75,7 @@
         "@media (max-width: 749px) {.banner__content {align-items: start !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus_4.png",
+        "image": "shopify://shop_images/Damascus_4_f66a07bb-9fd4-42a1-824f-1f8d7d8c5dca.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -471,10 +471,10 @@
     }
   },
   "order": [
+    "custom_liquid_UMYp93",
     "image_banner_hcbVmA",
     "image_banner_ExBjAj",
     "rich_text_RtFBF4",
-    "custom_liquid_UMYp93",
     "rich_text_t3x9VR",
     "main",
     "image_banner_g3zYxV",
