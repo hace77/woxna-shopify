@@ -682,24 +682,12 @@
           "settings": {
             "text": "<p>- sign up for our normal newsletter to get information about when the kickstarter launches</p>"
           }
-        },
-        "button_HGQUqe": {
-          "type": "button",
-          "settings": {
-            "button_label": "Discount please",
-            "button_link": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "image_QfLiER",
         "heading_xpYkYb",
-        "text_CxhL3A",
-        "button_HGQUqe"
+        "text_CxhL3A"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -716,7 +704,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_bf3r36": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": ""
+            "formId": "W8kJSM"
           }
         }
       },
