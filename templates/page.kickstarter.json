@@ -393,7 +393,7 @@
         "buttons_j4zjHB"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Damascus_27.jpg",
