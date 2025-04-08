@@ -48,29 +48,6 @@
         "show_text_below": true
       }
     },
-    "rich_text_RtFBF4": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AxDfBr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign up and pay $1 today to secure an exclusive discount before the kickstarter launches",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AxDfBr"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "image_banner_ExBjAj": {
       "type": "image-banner",
       "blocks": {
@@ -109,6 +86,29 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
+      }
+    },
+    "rich_text_RtFBF4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AxDfBr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up and pay $1 today to secure an exclusive discount before the kickstarter launches",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AxDfBr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "custom_liquid_UMYp93": {
@@ -553,8 +553,8 @@
   },
   "order": [
     "image_banner_hcbVmA",
-    "rich_text_RtFBF4",
     "image_banner_ExBjAj",
+    "rich_text_RtFBF4",
     "custom_liquid_UMYp93",
     "rich_text_t3x9VR",
     "image_banner_7iC6VT",
