@@ -75,7 +75,7 @@
         "@media (max-width: 749px) {.banner__content {align-items: start !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus_4_f66a07bb-9fd4-42a1-824f-1f8d7d8c5dca.png",
+        "image": "shopify://shop_images/Damascus_4_12c7ff92-4ca7-46f3-9630-b33fec6d29da.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -107,7 +107,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "full_width": true,
-        "padding_top": 12,
+        "padding_top": 24,
         "padding_bottom": 0
       }
     },
