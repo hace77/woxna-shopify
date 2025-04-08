@@ -35,7 +35,7 @@
         "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus_4.jpg",
+        "image": "shopify://shop_images/Damascus_4.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "top-left",
@@ -72,10 +72,10 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end !important; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: start !important; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus-3.jpg",
+        "image": "shopify://shop_images/Damascus_4.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -662,24 +662,24 @@
     "image_with_text_tKWdJf": {
       "type": "image-with-text",
       "blocks": {
-        "text_jrNNfX": {
-          "type": "text",
+        "heading_nc7TAc": {
+          "type": "heading",
           "settings": {
-            "text": "<p>Visit us at our pre-launch kickstarter page</p>",
-            "text_style": "body"
+            "heading": "Visit us at our pre-launch kickstarter page",
+            "heading_size": "h1"
           }
         },
         "button_XdRKf3": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Go!",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "text_jrNNfX",
+        "heading_nc7TAc",
         "button_XdRKf3"
       ],
       "settings": {
