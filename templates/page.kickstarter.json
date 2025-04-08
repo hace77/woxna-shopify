@@ -457,11 +457,12 @@
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "full_width": true,
         "padding_top": 12,
-        "padding_bottom": 32
+        "padding_bottom": 12
       }
     },
     "custom_liquid_YywVBp": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "",
