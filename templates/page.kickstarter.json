@@ -88,6 +88,29 @@
         "show_text_below": false
       }
     },
+    "rich_text_RtFBF4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AxDfBr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up for $1 and Secure VIP Access and Discount",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AxDfBr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
     "custom_liquid_UMYp93": {
       "type": "custom-liquid",
       "custom_css": [
@@ -101,29 +124,6 @@
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "padding_top": 0,
         "padding_bottom": 32
-      }
-    },
-    "rich_text_RtFBF4": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AxDfBr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign up and pay $1 today to secure an exclusive discount before the kickstarter launches",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AxDfBr"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "rich_text_t3x9VR": {
@@ -473,8 +473,8 @@
   "order": [
     "image_banner_hcbVmA",
     "image_banner_ExBjAj",
-    "custom_liquid_UMYp93",
     "rich_text_RtFBF4",
+    "custom_liquid_UMYp93",
     "rich_text_t3x9VR",
     "main",
     "image_banner_g3zYxV",
