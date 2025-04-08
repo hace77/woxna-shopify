@@ -446,6 +446,9 @@
         "text_7gNQGf",
         "buttons_DC6zfx"
       ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Damascus_8.jpg",
         "image_overlay_opacity": 0,
