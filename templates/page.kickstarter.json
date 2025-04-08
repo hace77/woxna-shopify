@@ -141,6 +141,7 @@
       "blocks": {
         "heading_UwbATT": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Not ready to spend 1 USD?",
             "heading_size": "h1"
@@ -148,6 +149,7 @@
         },
         "text_DhGHdY": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "- sign up for our normal newsletter to get information about when the kickstarter launches",
             "text_style": "body"
@@ -159,7 +161,7 @@
         "text_DhGHdY"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus_58.jpg",
+        "image": "shopify://shop_images/Damascus_19.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -205,7 +207,6 @@
         "heading_xpYkYb",
         "text_CxhL3A"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -337,7 +338,7 @@
         "buttons_j4zjHB"
       ],
       "settings": {
-        "image": "shopify://shop_images/Damascus_19.jpg",
+        "image": "shopify://shop_images/Damascus_58.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -348,6 +349,48 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
+      }
+    },
+    "rich_text_gE33QB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UEMHHf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit our Kickstarter page",
+            "heading_size": "h1"
+          }
+        },
+        "text_YtG38W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below</p>"
+          }
+        },
+        "button_UM3Gb9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UEMHHf",
+        "text_YtG38W",
+        "button_UM3Gb9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -362,6 +405,7 @@
     "1744103415254dc915",
     "17441041288c99b0cf",
     "image_with_text_tKWdJf",
-    "image_banner_W7HeyJ"
+    "image_banner_W7HeyJ",
+    "rich_text_gE33QB"
   ]
 }
