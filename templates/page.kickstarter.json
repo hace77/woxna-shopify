@@ -527,6 +527,28 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_dVAhQi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_MVkPtB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://www.woxna.com\" title=\"https://www.woxna.com\">www.woxna.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_MVkPtB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -544,6 +566,7 @@
     "image_with_text_tKWdJf",
     "image_banner_W7HeyJ",
     "image_banner_ENY6Ri",
-    "rich_text_gE33QB"
+    "rich_text_gE33QB",
+    "rich_text_dVAhQi"
   ]
 }
