@@ -187,52 +187,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_AePfr6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Q8cz6A": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_NfyJ8U": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_Dqggpt": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Q8cz6A",
-        "text_NfyJ8U",
-        "button_Dqggpt"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "slideshow_LKKPW9": {
       "type": "slideshow",
       "blocks": {
@@ -543,41 +497,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_Y3hHHd": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_RqfhNE": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Get Early Access! Get an Extra Discount!</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_7WM3YV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>By signing up, you'll get the biggest discount available. The long saw will sell for 600 USD and the short for 550 USD, but if you reserv your deal right now you will get a 40% discount on that.</p><ul><li><strong>Step 1:</strong> Pay just <strong>$1</strong> today to <strong>lock in your exclusive discount</strong>. </li><li><strong>Step 2:</strong> You will receive a reciept via email that showes you reserved the best possible price.</li><li><strong>Step 3:</strong> Once our kickstarter goes live you’ll get a private link via emial that gives you access to your exclusive deal.</li><li><strong>Step 4:</strong> If the kickstarter is successful you will be among the first to get the Damascus Steel Foldable Saw at the lowest price available!</li></ul><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RqfhNE",
-        "text_7WM3YV"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "ul {list-style-position: outside;}",
-        "li {list-style: none;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-5",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_64xHNN": {
       "type": "rich-text",
       "blocks": {
@@ -641,15 +560,33 @@
         "padding_bottom": 52
       }
     },
+    "collage_iUMiXA": {
+      "type": "collage",
+      "blocks": {
+        "image_Ndc6eR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Damascus_58.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ndc6eR"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "richtext_with_image_wtXxEr": {
       "type": "richtext_with_image",
       "blocks": {
-        "image_QfLiER": {
-          "type": "image",
-          "settings": {
-            "image_select": "shopify://shop_images/Damascus_58.jpg"
-          }
-        },
         "heading_xpYkYb": {
           "type": "heading",
           "settings": {
@@ -665,7 +602,6 @@
         }
       },
       "block_order": [
-        "image_QfLiER",
         "heading_xpYkYb",
         "text_CxhL3A"
       ],
@@ -674,8 +610,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 32,
+        "padding_bottom": 12
       }
     },
     "1744103415254dc915": {
@@ -707,7 +643,7 @@
             "button_label_color": "#FFFFFF",
             "links_color": "#1878B9",
             "errors_color": "#E02229",
-            "text_alignment": "center",
+            "text_alignment": "right",
             "form_alignment": "center",
             "padding_top": 0,
             "padding_bottom": 0,
@@ -722,6 +658,45 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "image_with_text_tKWdJf": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_jrNNfX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit us at our pre-launch kickstarter page</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XdRKf3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "text_jrNNfX",
+        "button_XdRKf3"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Damascus_19.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -731,16 +706,16 @@
     "custom_liquid_UMYp93",
     "main",
     "collage_McyGdf",
-    "rich_text_AePfr6",
     "slideshow_LKKPW9",
     "slideshow_d9M3xf",
     "rich_text_gE8Qzf",
     "multirow_A7VaDm",
-    "rich_text_Y3hHHd",
     "rich_text_64xHNN",
     "rich_text_k4HKWh",
+    "collage_iUMiXA",
     "richtext_with_image_wtXxEr",
     "1744103415254dc915",
-    "17441041288c99b0cf"
+    "17441041288c99b0cf",
+    "image_with_text_tKWdJf"
   ]
 }
