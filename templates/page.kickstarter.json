@@ -247,7 +247,7 @@
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 25,
-            "padding_bottom": 0,
+            "padding_bottom": 32,
             "padding_right": 0,
             "padding_left": 0
           }
@@ -285,6 +285,7 @@
         "heading_nc7TAc",
         "button_XdRKf3"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Damascus_19.jpg",
         "height": "adapt",
@@ -300,6 +301,54 @@
         "padding_top": 60,
         "padding_bottom": 36
       }
+    },
+    "image_banner_W7HeyJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Ri7gjU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit our Kickstarter page",
+            "heading_size": "h1"
+          }
+        },
+        "text_yGrqFm": {
+          "type": "text",
+          "settings": {
+            "text": "Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below",
+            "text_style": "body"
+          }
+        },
+        "buttons_j4zjHB": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Visit kickstarter",
+            "button_link_1": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ri7gjU",
+        "text_yGrqFm",
+        "buttons_j4zjHB"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Damascus_19.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -312,6 +361,7 @@
     "richtext_with_image_wtXxEr",
     "1744103415254dc915",
     "17441041288c99b0cf",
-    "image_with_text_tKWdJf"
+    "image_with_text_tKWdJf",
+    "image_banner_W7HeyJ"
   ]
 }
