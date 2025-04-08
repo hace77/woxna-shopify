@@ -460,12 +460,13 @@
         "padding_bottom": 12
       }
     },
-    "custom_liquid_YywVBp": {
-      "type": "custom-liquid",
-      "disabled": true,
+    "rich_text_eDhBFC": {
+      "type": "rich-text",
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -486,6 +487,6 @@
     "image_banner_ENY6Ri",
     "rich_text_gE33QB",
     "rich_text_dVAhQi",
-    "custom_liquid_YywVBp"
+    "rich_text_eDhBFC"
   ]
 }
