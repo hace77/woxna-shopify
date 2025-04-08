@@ -459,6 +459,15 @@
         "padding_top": 12,
         "padding_bottom": 32
       }
+    },
+    "custom_liquid_YywVBp": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -475,6 +484,7 @@
     "image_banner_W7HeyJ",
     "image_banner_ENY6Ri",
     "rich_text_gE33QB",
-    "rich_text_dVAhQi"
+    "rich_text_dVAhQi",
+    "custom_liquid_YywVBp"
   ]
 }
