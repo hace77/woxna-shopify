@@ -72,7 +72,7 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start !important; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: start !important; } p {text-wrap-style: balance; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Damascus_4_9fb28f9e-b0a6-47d4-b614-b33c27ad6732.png",
