@@ -446,12 +446,15 @@
         "text_MVkPtB": {
           "type": "text",
           "settings": {
-            "text": "<p>www.woxna.com</p>"
+            "text": "<p>You can also visti us at <a href=\"https://woxna.com\" title=\"https://woxna.com\">www.woxna.com</a></p>"
           }
         }
       },
       "block_order": [
         "text_MVkPtB"
+      ],
+      "custom_css": [
+        "a {color: white;}"
       ],
       "settings": {
         "desktop_content_position": "center",
