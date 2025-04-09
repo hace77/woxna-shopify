@@ -102,6 +102,9 @@
       "block_order": [
         "heading_AxDfBr"
       ],
+      "custom_css": [
+        "h2 {text-wrap: pretty;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
