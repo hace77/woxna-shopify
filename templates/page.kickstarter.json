@@ -278,6 +278,7 @@
       "block_order": [
         "forms_inline_ybkPVQ"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "include_margins": true
