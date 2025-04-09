@@ -103,7 +103,7 @@
         "heading_AxDfBr"
       ],
       "custom_css": [
-        "h2 {text-wrap: pretty;}"
+        "h2 {text-wrap-style: balance;}"
       ],
       "settings": {
         "desktop_content_position": "center",
