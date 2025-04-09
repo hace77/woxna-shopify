@@ -210,14 +210,14 @@
         "heading_xpYkYb": {
           "type": "heading",
           "settings": {
-            "heading": "Not ready to spend 1 USD?",
+            "heading": "Not ready to spend $1?",
             "heading_size": "h1"
           }
         },
         "text_CxhL3A": {
           "type": "text",
           "settings": {
-            "text": "<p>- sign up for our normal newsletter to get information about when the kickstarter launches</p>"
+            "text": "<p>Sign up for our normal Woxna newsletter to get information about when the kickstarter launches</p>"
           }
         }
       },
@@ -407,7 +407,7 @@
         "text_YtG38W": {
           "type": "text",
           "settings": {
-            "text": "<p>For the lastest updates about the campaign visit our kickstarter page</p>"
+            "text": "<p>For the lastest updates about the campaign, visit our kickstarter page</p>"
           }
         },
         "button_UM3Gb9": {
