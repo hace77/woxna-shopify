@@ -15,7 +15,7 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "Introducing: The World's First Damascus Foldable Saw\"",
+            "heading": "Introducing: The World's First Damascus Foldable Saw",
             "heading_size": "h0"
           }
         },
@@ -94,7 +94,7 @@
         "heading_AxDfBr": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up for $1 and Secure VIP Access and Discount",
+            "heading": "Sign up for $1 to Secure VIP Access for our Kickstarter",
             "heading_size": "h1"
           }
         }
@@ -139,7 +139,7 @@
         "text_mJD6kb": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>One-of-a-kind Damascus blade with unique 3D pattern</li><li>Made in Sweden with steel from world leading supplier Damasteel</li><li>Foldable, lightweight, made for the wild</li><li>Extreme sharpness, durability, and rust resistance</li><li>Kickstarter exclusive - be the first to own it!</li></ul>"
+            "text": "<ul><li><strong>One-of-a-kind Damascus blade</strong> with unique 3D pattern</li><li><strong>Made in Sweden</strong> with steel from  <strong>Damasteel</strong></li><li>Foldable, lightweight, made for the wild</li><li>Extreme sharpness, durability, and rust resistance</li><li>Kickstarter exclusive - <strong>Be the first to own it!</strong></li></ul>"
           }
         }
       },
