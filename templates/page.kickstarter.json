@@ -414,10 +414,10 @@
         "column_dkQRxi": {
           "type": "column",
           "settings": {
-            "title": "Read the blog",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "The development",
+            "text": "<p>Curios about the development of the first ever Damasteel saw?</p>",
+            "link_label": "Read the blog here",
+            "link": "shopify://blogs/the-woxna-journal/why-we-built-the-damascus-steel-foldable-saw"
           }
         }
       },
@@ -425,7 +425,9 @@
         "column_WnhQqh",
         "column_dkQRxi"
       ],
-      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 30px;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -436,7 +438,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -476,6 +478,7 @@
         "text_YtG38W",
         "button_UM3Gb9"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
