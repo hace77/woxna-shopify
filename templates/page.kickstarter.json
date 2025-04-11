@@ -151,7 +151,9 @@
         "text_mJD6kb"
       ],
       "custom_css": [
-        "ul {list-style-position: outside;}"
+        "ul {list-style-position: outside;}",
+        "h2 {text-align: center;}",
+        "@media (min-width: 750px) {ul {padding-left: 70px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
