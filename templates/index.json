@@ -325,21 +325,21 @@
         "heading_pJNzmd": {
           "type": "heading",
           "settings": {
-            "heading": "The first of its kind ",
+            "heading": "The First Ever Damascus Folding Saw",
             "heading_size": "h1"
           }
         },
         "text_ViBBqG": {
           "type": "text",
           "settings": {
-            "text": "<p>We made this one for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the folding saw as we’ve always imagined it -  and we’re proud to finally share it with you.</p>",
+            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>",
             "text_style": "body"
           }
         },
         "button_3e6N7G": {
           "type": "button",
           "settings": {
-            "button_label": "Click for information about our Kickstarter",
+            "button_label": "More information About Our Kickstarter",
             "button_link": "shopify://pages/kickstarter-preorder",
             "button_style_secondary": false
           }
