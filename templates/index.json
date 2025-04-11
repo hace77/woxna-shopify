@@ -314,44 +314,54 @@
     "image_with_text_KxgYb7": {
       "type": "image-with-text",
       "blocks": {
+        "caption_R9jtBC": {
+          "type": "caption",
+          "settings": {
+            "caption": "AIntroducing Damaskus",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_pJNzmd": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "The first of its kind ",
             "heading_size": "h1"
           }
         },
         "text_ViBBqG": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>We made this one for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the folding saw as we’ve always imagined it -  and we’re proud to finally share it with you.</p>",
             "text_style": "body"
           }
         },
         "button_3e6N7G": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Click for information about our Kickstarter",
+            "button_link": "shopify://pages/kickstarter-preorder",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "caption_R9jtBC",
         "heading_pJNzmd",
         "text_ViBBqG",
         "button_3e6N7G"
       ],
       "disabled": true,
       "settings": {
+        "image": "shopify://shop_images/Damascus_4_6510ba46-4474-422c-82ac-893705886430.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
