@@ -427,7 +427,7 @@
       ],
       "custom_css": [
         "h3 {font-size: 30px;}",
-        "@media screen and (max-width: 749px) {p, h3 {text-align:center}}"
+        "@media screen and (max-width: 749px) {.multicolumn-list {text-align: center; }}"
       ],
       "settings": {
         "title": "",
