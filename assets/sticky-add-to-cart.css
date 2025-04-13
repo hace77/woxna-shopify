@@ -19,7 +19,7 @@
 }
 
 .sticky-add-to-cart .product-form__submit {
-  background-color: #445F45;
+  background-color: #E67300;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -29,17 +29,37 @@
   transition: background-color 0.2s ease;
   font-size: 1.6rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .sticky-add-to-cart .product-form__submit:hover {
-  background-color: #3a4f3a;
+  background-color: #cc6600;
 }
 
 .sticky-add-to-cart .product-form__submit:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
+}
+
+.sticky-add-to-cart__button {
+  background-color: #E67300;
+  color: #ffffff;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.4rem;
+}
+
+.sticky-add-to-cart__button:hover {
+  background-color: #cc6600;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 750px) {
