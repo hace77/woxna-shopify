@@ -115,7 +115,8 @@ product-info {
 }
 
 .shopify-payment-button__button--unbranded,
-#shopify-section-template--25045229404503__main .product-form__submit {
+.product-form__submit,
+.sticky-add-to-cart .product-form__submit {
   background-color: #E67300 !important;
   color: #ffffff !important;
   border: none;
@@ -137,7 +138,8 @@ product-info {
 }
 
 .shopify-payment-button__button--unbranded:hover,
-#shopify-section-template--25045229404503__main .product-form__submit:hover {
+.product-form__submit:hover,
+.sticky-add-to-cart .product-form__submit:hover {
   background-color: #cc6600 !important;
   color: #ffffff !important;
 }
