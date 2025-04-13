@@ -117,7 +117,7 @@ product-info {
 .shopify-payment-button__button--unbranded,
 .product-form__submit,
 .sticky-add-to-cart .product-form__submit {
-  background-color: #E67300 !important;
+  background-color: black !important;
   color: #ffffff !important;
   border: none;
   padding: 1.2rem 2.4rem;
@@ -140,7 +140,7 @@ product-info {
 .shopify-payment-button__button--unbranded:hover,
 .product-form__submit:hover,
 .sticky-add-to-cart .product-form__submit:hover {
-  background-color: #cc6600 !important;
+  background-color: black !important;
   color: #ffffff !important;
 }
 
