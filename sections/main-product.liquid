@@ -30,6 +30,11 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+
+    .custom-label {
+      background-color: #445F45;
+      color: white; 
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -74,7 +79,7 @@
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
         {%- if product.metafields.custom.label != blank -%}
-          <div class="product-label">{{ product.metafields.custom.label }}</div>
+          <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
         {%- endif -%}
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
