@@ -1,3 +1,5 @@
+{%- assign button_text = sticky_button_alt_text | default: 'Add to cart' -%}
+
 {%- if product.available -%}
   <div class="sticky-add-to-cart">
     <div class="page-width">
@@ -45,7 +47,7 @@
           >
             <span>
               {%- if product.selected_or_first_available_variant.available -%}
-                {{ 'products.product.add_to_cart' | t }}
+                {{ button_text }}
               {%- else -%}
                 {{ 'products.product.sold_out' | t }}
               {%- endif -%}

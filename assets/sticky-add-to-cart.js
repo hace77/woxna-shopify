@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const stickyForm = document.querySelector('#sticky-product-form');
   const originalForm = document.querySelector('product-form form');
   const originalButton = originalForm.querySelector('[type="submit"]');
+  const stickySubmitButton = stickyForm.querySelector('[type="submit"]');
   const cartDrawer = document.querySelector('cart-drawer');
 
   if (!productInfo || !stickyButton || !stickyForm || !originalForm || !originalButton || !cartDrawer) return;

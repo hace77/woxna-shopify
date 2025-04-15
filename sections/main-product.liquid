@@ -45,7 +45,11 @@
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
-  {% render 'sticky-add-to-cart-button' %}
+  {%- render 'sticky-add-to-cart-button',
+    product: product,
+    section: section,
+    sticky_button_alt_text: product.metafields.custom.sticky_button_alt_text
+  -%}
 
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
