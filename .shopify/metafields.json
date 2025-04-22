@@ -743,6 +743,16 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "sticky_button_alt_text",
+      "namespace": "custom",
+      "name": "Sticky button alt text",
+      "description": "If you want a seperate text on your sticky button",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
