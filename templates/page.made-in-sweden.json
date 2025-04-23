@@ -107,6 +107,21 @@
         "padding_bottom": 36
       }
     },
+    "video_CPJNcq": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Ulf Factory 16-9.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_8tFpFD": {
       "type": "custom-liquid",
       "settings": {
@@ -185,6 +200,7 @@
     "main",
     "video_bXKUxb",
     "image_with_text_qHFK9w",
+    "video_CPJNcq",
     "custom_liquid_8tFpFD",
     "featured_collection_3JQPPn",
     "multicolumn_LatT9t"
