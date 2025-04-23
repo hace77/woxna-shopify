@@ -59,6 +59,21 @@
         "padding_bottom": 28
       }
     },
+    "video_bXKUxb": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Proudly made in Sweden.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_qHFK9w": {
       "type": "image-with-text",
       "blocks": {
@@ -168,6 +183,7 @@
   "order": [
     "image_banner_ExBjAj",
     "main",
+    "video_bXKUxb",
     "image_with_text_qHFK9w",
     "custom_liquid_8tFpFD",
     "featured_collection_3JQPPn",
