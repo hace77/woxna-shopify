@@ -9,6 +9,56 @@
  */
 {
   "sections": {
+    "video_banner_yt_yWG9Ex": {
+      "type": "video-bannerYT",
+      "blocks": {
+        "heading_NUNcr4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Ljusnan 180</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_FrJi3W": {
+          "type": "text",
+          "settings": {
+            "text": "Compact. Precise. Walnut & Steel.",
+            "text_style": "body"
+          }
+        },
+        "buttons_76y76T": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NUNcr4",
+        "text_FrJi3W",
+        "buttons_76y76T"
+      ],
+      "name": "Video Banner YT",
+      "settings": {
+        "video": "shopify://files/videos/Ljusnan-folding-saw-180mm.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 0,
+        "enable_video_looping": false,
+        "image_height": "large",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "right",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -43,6 +93,7 @@
         "text_eRbp9f",
         "button"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
         "@media (min-width: 768px) {p {font-size: 2rem; }}"
@@ -95,6 +146,7 @@
         "text_yinUYU",
         "buttons_gCxJxg"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
@@ -807,6 +859,7 @@
     }
   },
   "order": [
+    "video_banner_yt_yWG9Ex",
     "image_banner",
     "image_banner_nECKWc",
     "collage_text_link_9Nc9UV",
