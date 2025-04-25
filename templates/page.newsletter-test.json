@@ -9,6 +9,36 @@
  */
 {
   "sections": {
+    "video_banner_yt_qcEqta": {
+      "type": "video-bannerYT",
+      "blocks": {
+        "heading_hDVMXc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Testing Video banner",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hDVMXc"
+      ],
+      "name": "Video Banner YT",
+      "settings": {
+        "video": "shopify://files/videos/Ulf Factory 16-9.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 20,
+        "enable_video_looping": false,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "17441064473dcda666": {
       "type": "apps",
       "blocks": {
@@ -51,94 +81,26 @@
             "heading": "Talk about your brand",
             "heading_size": "h1"
           }
-        },
-        "text_dTnbYA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_yANwLj": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "heading_8kFmaJ",
-        "text_dTnbYA",
-        "button_yANwLj"
+        "heading_8kFmaJ"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "video_banner_xHTdea": {
-      "type": "video-banner",
-      "blocks": {
-        "heading_yXFGRj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_jRKj9X": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_xmQett": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_yXFGRj",
-        "text_jRKj9X",
-        "buttons_xmQett"
-      ],
-      "name": "Video banner",
-      "settings": {
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "image_overlay_opacity": 0,
-        "enable_video_looping": false,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
+    "video_banner_yt_qcEqta",
     "17441064473dcda666",
     "main",
     "custom_liquid_BWATym",
-    "rich_text_i8F9ip",
-    "video_banner_xHTdea"
+    "rich_text_i8F9ip"
   ]
 }
