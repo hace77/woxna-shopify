@@ -83,12 +83,63 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "video_banner_xHTdea": {
+      "type": "video-banner",
+      "blocks": {
+        "heading_yXFGRj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_jRKj9X": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_xmQett": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yXFGRj",
+        "text_jRKj9X",
+        "buttons_xmQett"
+      ],
+      "name": "Video banner",
+      "settings": {
+        "video": "shopify://files/videos/Proudly made in Sweden.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 0,
+        "enable_video_looping": false,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "17441064473dcda666",
     "main",
     "custom_liquid_BWATym",
-    "rich_text_i8F9ip"
+    "rich_text_i8F9ip",
+    "video_banner_xHTdea"
   ]
 }
