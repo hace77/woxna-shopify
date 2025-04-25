@@ -120,7 +120,6 @@
       ],
       "name": "Video banner",
       "settings": {
-        "video": "shopify://files/videos/Proudly made in Sweden.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
