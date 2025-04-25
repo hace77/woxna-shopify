@@ -25,7 +25,7 @@
       ],
       "name": "Video Banner YT",
       "settings": {
-        "video": "shopify://files/videos/Ulf Factory 16-9.mp4",
+        "video": "shopify://files/videos/Ljusnan-folding-saw-250mm.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 20,
         "enable_video_looping": false,
