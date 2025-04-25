@@ -682,53 +682,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_7GmfxC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_XzRK9B": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.feature.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "button_dVbPng": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "text_crzTjK": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_10 | metafield_tag }}</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XzRK9B",
-        "button_dVbPng",
-        "text_crzTjK"
-      ],
-      "custom_css": [
-        "ul {list-style-position: outside;}",
-        "h2,li {text-align: left;}",
-        "li:empty {list-style: none;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "rich_text_zL8t7g": {
       "type": "rich-text",
       "blocks": {
@@ -1063,7 +1016,6 @@
     "rich_text_J4ppHw",
     "slideshow_wm6hdw",
     "rich_text_cb6emk",
-    "rich_text_7GmfxC",
     "rich_text_zL8t7g",
     "image_banner_8zaQaf",
     "collapsible_content_gEpGHP",
