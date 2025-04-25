@@ -43,6 +43,9 @@
         "text_FrJi3W",
         "buttons_76y76T"
       ],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+      ],
       "name": "Video Banner YT",
       "settings": {
         "video": "shopify://files/videos/Ljusnan-folding-saw-180mm.mp4",
