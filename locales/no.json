@@ -278,7 +278,8 @@
         "calculating": "Beregner…",
         "shipping_default_value": "Beregnet i neste trinn",
         "shipping_discount_title": "Frakrabatt",
-        "shipping_pending_message": "Ikke tilgjengelig ennå"
+        "shipping_pending_message": "Ikke tilgjengelig ennå",
+        "alternative_payment_currency_total": "Belastet som %{amount_due}"
       },
       "payment_errors": {
         "development_store_with_order_limit": "For å legge inn en testbestilling må du bruke en testbetalingsgateway. Finn ut mer om %{development_store_order_testing_docs_link}.",
@@ -1387,6 +1388,155 @@
         "manual_payment_gateway_label": "Håndbok",
         "billing_address_title": "Faktureringsadresse",
         "free_label": "Gratis"
+      },
+      "shipping": {
+        "title": "Frakt",
+        "delivery_title": "Leveranse",
+        "shipping_method_title": "Fraktmetode",
+        "shipping_method_one_time_purchase_group_title": "Engangskjøp",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Første forsendelse",
+          "other": "Første forsendelser"
+        },
+        "shipping_method_subscription_group_title": "Abonnement",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Gjentakende forsendelse",
+          "other": "Gjentakende forsendelser"
+        },
+        "subscription_shipping": "Abonnementsfrakt",
+        "subscription_local_delivery": "Abonnement lokal levering",
+        "subscription_pickup": "Henting av abonnement",
+        "waiting_on_rate_notice": "Henter tilgjengelige fraktpriser …",
+        "waiting_on_pickup_location_notice": "Få tilgjengelige hentesteder …",
+        "no_rates_for_cart_or_destination_notice": "Det finnes ingen tilgjengelige fraktmetoder for handlekurven eller adressen din",
+        "no_pickup_location_notice": "Minst ett av produktene dine er ikke tilgjengelig for henting",
+        "no_rates_for_country_notice": "Ingen fraktpriser funnet for denne adressen.",
+        "no_rates_contact_notice": "Kontakt oss for mer informasjon",
+        "free_rate_label": "Gratis",
+        "cheapest_rate_label": "Billigst",
+        "please_enter_your_shipping_information_notice": "Vennligst skriv inn leveringsinformasjonen din.",
+        "estimated_delivery_date": {
+          "one": "%{count} virkedag",
+          "other": "%{count} virkedager"
+        },
+        "estimated_delivery_date_range": "%{minimum} til %{maximum} virkedager",
+        "delivery_date_range": "%{min_tid}–%{maks_tid}",
+        "estimated_delivery_time": "Estimert levering %{time}",
+        "estimated_delivery_time_range": "Estimert levering %{min_time}–%{max_time}",
+        "delivery_today": "Levering samme dag %{time}",
+        "delivery_tomorrow": "Levering neste dag %{time}",
+        "two_day_delivery": "2-dagers levering %{time}",
+        "delivery": "Levering %{tid}",
+        "arrives_time": "Ankommer %{time}",
+        "arrives_time_range": "Ankommer %{min_time}–%{max_time}",
+        "estimated_time": "Estimert %{tid}",
+        "estimated_time_range": "Estimert %{min_time}–%{max_time}",
+        "default_description": "Sendes innen 1 virkedag",
+        "shipping_line_phone_label": "Mobilnummer (obligatorisk)",
+        "shipping_line_phone": "Budtjenesten din kan bruke dette nummeret til å kontakte deg.",
+        "shipping_line_delivery_phone_label": "Mobilnummer",
+        "shipping_line_delivery_phone": "Du kan bli kontaktet med oppdateringer om leveransen din.",
+        "optional_shipping_line_delivery_instructions_label": "Leveringsinstruksjoner (valgfritt)",
+        "shipping_line_delivery_instructions": "Skriv inn nødvendig informasjon som dørkoder eller leveringsinstruksjoner.",
+        "other_method": {
+          "zero": "Ingen andre metoder tilgjengelig",
+          "one": "%{count} annen metode tilgjengelig på",
+          "other": "%{count} andre metoder tilgjengelig fra"
+        },
+        "shipping_rate_discounted_amount": "Var: %{original_amount}. Nå: %{amount}",
+        "local_delivery": "Lokal levering",
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "Gratis frakt for %{count} mer levering",
+            "other": "Gratis frakt for %{count} flere leveranser"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Gratis frakt ved levering i %{count} tilfeller",
+            "other": "Gratis frakt for %{count} leveranser"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Gratis frakt ved %{count} mer levering enn %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for %{count} flere leveranser, deretter %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Gratis frakt ved levering på %{count}, deretter %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for %{count} leveranser, deretter %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{count} mer levering for %{shipping_price}",
+            "other": "%{count} flere leveranser for %{shipping_price} per stykk"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} levering for %{shipping_price}",
+            "other": "%{count} flere leveranser for %{shipping_price} per stykk"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Gratis frakt for den første %{cycle}, etterfulgt av %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for den første %{cycle}, etterfulgt av %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} for %{count} mer levering",
+            "other": "%{shipping_price} for %{count} flere leveranser (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} for %{count} levering",
+            "other": "%{shipping_price} for %{count} leveranser (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} for %{count} mer levering, etterfulgt av %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} for %{count} flere leveranser (%{per_delivery_cost}), etterfulgt av %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} for %{count} levering, etterfulgt av %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} for %{count} leveranser (%{per_delivery_cost}), etterfulgt av %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "Gratis frakt %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "for %{count} levering",
+            "other": "for %{count} leveranser"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "hver dag",
+              "other": "hver %{count} dager"
+            },
+            "week": {
+              "one": "hver uke",
+              "other": "hver %{count} uke"
+            },
+            "month": {
+              "one": "hver måned",
+              "other": "hver %{count} måneder"
+            },
+            "year": {
+              "one": "hvert år",
+              "other": "hvert %{count} år"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per levering",
+          "prepaid_shipping_price_label": "%{shipping_price} per levering x %{delivery_interval_count}",
+          "initial_order_discounted": "Først fraktkostnad %{discounted_shipping_cost}, deretter %{frequency_description}",
+          "prepaid_initial_order_discounted": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Først fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}, deretter %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Først fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), deretter %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Inkludert",
+          "recurring_order_shipping_price": "etterfulgt av %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Første bestilling inkludert, etterfulgt av %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per levering), etterfulgt av %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Første bestilling gratis",
+            "other": "De første %{count} bestillingene er gratis"
+          },
+          "free_for_first_n_order": {
+            "one": "For første bestilling",
+            "other": "For de første %{count} bestillingene"
+          }
+        },
+        "one_time_purchase_shipping": "Engangsfrakt",
+        "duties_and_taxes_title": "Avgifter og skatter",
+        "shipping_information_required_notice": "Fraktinformasjon er påkrevd. {{link}}",
+        "shipping_information_redirect_link": "Skriv inn informasjonen din her"
       }
     },
     "notices": {
