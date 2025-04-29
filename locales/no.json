@@ -827,7 +827,102 @@
     "log_in": "Logg inn",
     "log_out": "Logg ut",
     "login_page": {
-      "cancel": "Kansellere"
+      "cancel": "Kansellere",
+      "create_account": "Opprett konto",
+      "email": "E-post",
+      "forgot_password": "Glemt passordet ditt?",
+      "guest_continue": "Fortsette",
+      "guest_title": "Fortsett som gjest",
+      "password": "Passord",
+      "title": "Logg inn",
+      "sign_in": "Logg inn",
+      "submit": "Send inn",
+      "alternate_provider_separator": "eller"
+    },
+    "order": {
+      "title": "Bestilling {{ name }}",
+      "date_html": "Plassert den {{ date }}",
+      "cancelled_html": "Ordre kansellert den {{ date }}",
+      "cancelled_reason": "Årsak: {{ reason }}",
+      "billing_address": "Faktureringsadresse",
+      "payment_status": "Betalingsstatus",
+      "shipping_address": "Leveringsadresse",
+      "fulfillment_status": "Oppfyllelsesstatus",
+      "discount": "Rabatt",
+      "shipping": "Frakt",
+      "tax": "Avgift",
+      "product": "Produkt",
+      "price": "Pris",
+      "quantity": "Mengde",
+      "total_refunded": "Refundert",
+      "fulfilled_at_html": "Oppfylt {{ date }}",
+      "track_shipment": "Spor forsendelse",
+      "tracking_url": "Sporingslenke",
+      "tracking_company": "Transportør",
+      "tracking_number": "Sporingsnummer",
+      "subtotal": "Delsum",
+      "total_duties": "Plikter"
+    },
+    "orders": {
+      "title": "Ordrehistorikk",
+      "order_number": "Bestille",
+      "order_number_link": "Ordrenummer {{ number }}",
+      "date": "Dato",
+      "payment_status": "Betalingsstatus",
+      "fulfillment_status": "Oppfyllelsesstatus",
+      "none": "Du har ikke lagt inn noen bestillinger ennå."
+    },
+    "recover_password": {
+      "title": "Tilbakestill passordet ditt",
+      "subtext": "Vi sender deg en e-post for å tilbakestille passordet ditt",
+      "success": "Vi har sendt deg en e-post med en lenke for å oppdatere passordet ditt."
+    },
+    "register": {
+      "title": "Opprett konto",
+      "first_name": "Fornavn",
+      "last_name": "Etternavn",
+      "email": "E-post",
+      "password": "Passord",
+      "submit": "Skape"
+    },
+    "reset_password": {
+      "title": "Tilbakestill kontopassord",
+      "subtext": "Skriv inn et nytt passord",
+      "password": "Passord",
+      "password_confirm": "Bekreft passord",
+      "submit": "Tilbakestill passord"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "Bruk gavekortkoden på nett eller QR-koden i butikken",
+      "title": "Her er saldoen på gavekortet ditt på {{ value }} for {{ shop }} !",
+      "subtext": "Gavekortet ditt",
+      "gift_card_code": "Gavekortkode",
+      "shop_link": "Besøk nettbutikken",
+      "add_to_apple_wallet": "Legg til i Apple Wallet",
+      "qr_image_alt": "QR-kode – skann for å løse inn gavekort",
+      "copy_code": "Kopier gavekortkode",
+      "expiration_date": "Utløper {{ expires_on }}",
+      "copy_code_success": "Koden er kopiert",
+      "expired": "Utløpt"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Jeg vil sende dette som en gave",
+      "expanded": "Skjema for gavekortmottaker utvidet",
+      "collapsed": "Skjema for gavekortmottaker skjult",
+      "email_label": "Mottakerens e-postadresse",
+      "email_label_optional_for_no_js_behavior": "Mottakerens e-postadresse (valgfritt)",
+      "email": "E-post",
+      "name_label": "Mottakernavn (valgfritt)",
+      "name": "Navn",
+      "message_label": "Melding (valgfritt)",
+      "message": "Beskjed",
+      "max_characters": "Maksimalt {{ max_chars }} tegn",
+      "send_on": "ÅÅÅÅ-MM-DD",
+      "send_on_label": "Send videre (valgfritt)"
     }
   }
 }
