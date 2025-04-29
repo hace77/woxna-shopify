@@ -414,8 +414,274 @@
         "title": "Takk for kjøpet!",
         "confirmation_email_sent_text": "En bekreftelses-e-post er sendt til %{email}",
         "return_to_store_link_label": "Fortsett å handle",
-        "print_link_label": "Skriv ut kvittering"
+        "print_link_label": "Skriv ut kvittering",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Etter at du har fullført betalingen, vil du motta en bekreftelses-e-post. Spor bestillingen din ved hjelp av Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "Etter at du har fullført betalingen, vil du motta en bekreftelses-e-post. Spor bestillingen din ved hjelp av Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Etter at du har fullført betalingen, vil du motta en bekreftelses-e-post. Spor bestillingen din ved hjelp av Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Etter at du har fullført betalingen, vil du motta en bekreftelses-e-post. Spor bestillingen din ved hjelp av Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "Etter at du har fullført betalingen, vil du motta en bekreftelses-SMS. Spor bestillingen din med Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Etter at du har fullført betalingen, vil du motta en bekreftelses-SMS. Spor bestillingen din med Shop-appen.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Etter at du har fullført betalingen, vil du motta en bekreftelses-SMS. Spor bestillingen din med Shop-appen.",
+        "order_status_payments_app_failed_pending_payment": "Du ble ikke belastet for bestillingen din. Gå tilbake til handlekurven for å se gjennom bestillingen og betal på nytt.",
+        "order_status_payments_app_failed_pending_payment_payment": "Du ble ikke belastet for bestillingen din. Gå tilbake til handlekurven for å se gjennom bestillingen og betal på nytt.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "Du ble ikke belastet for bestillingen din. Gå tilbake til handlekurven for å se gjennom bestillingen og betal på nytt.",
+        "order_status_confirmed_order_local": "Vi gjør bestillingen din klar for levering.",
+        "order_status_confirmed_order_local_pick_up": "Vi gjør bestillingen din klar.",
+        "order_status_confirmed_order_local_payment": "Vi gjør bestillingen din klar.",
+        "order_status_updates_with_email": "Du vil motta oppdateringer om frakt og levering på e-post.",
+        "order_status_updates_with_phone": "Du kan motta oppdateringer om frakt og levering via SMS.",
+        "order_status_updates_with_email_and_phone": "Du vil motta oppdateringer om frakt og levering på e-post.",
+        "order_status_updates_with_missing": "Velg hvordan du vil motta fraktoppdateringer.",
+        "order_status_confirmed_with_installments_payment_return": "Vennligst vend oppmerksomheten tilbake til selgeren.",
+        "order_status_confirmed_with_installments_payment_confirm": "Du vil snart motta en bekreftelses-e-post med ordrenummeret ditt og detaljer om avbetalingsplanen din.",
+        "confirmed_title": "Bestillingen din er bekreftet",
+        "confirmed_description": "Vi har godtatt bestillingen din, og vi gjør den klar. Kom tilbake til denne siden for oppdateringer om forsendelsesstatusen din.",
+        "ready_for_pickup_title": "Bestillingen din er klar for henting",
+        "ready_for_pickup_description": "Bestillingen din er klar til henting. Vennligst ta med ordrebekreftelsen når du henter bestillingen.",
+        "ready_for_delivery_title": "Bestillingen din er klar til levering",
+        "ready_for_delivery_description": "Vi har forberedt bestillingen din.",
+        "order_updates_title": "Ordreoppdateringer",
+        "shop_phone_description": "Du vil motta en tekstmelding med en lenke til Shop-appen som hjelper deg med å spore bestillingen din.",
+        "order_updates_description_html": "Oppdateringer vil bli sendt til %{customer_contact}",
+        "order_updates_current_step_prefix": "Nåværende trinn: ",
+        "order_updates_past_step_prefix": "Tidligere trinn: ",
+        "order_updates_upcoming_step_prefix": "Kommende trinn: ",
+        "in_transit": "På vei",
+        "in_transit_title": "Bestillingen din er på vei",
+        "in_transit_description": "Du vil motta oppdateringer om fremdriften.",
+        "in_transit_description_days": "Du bør motta bestillingen din innen de neste %{number} dagene.",
+        "in_transit_description_today": "Du bør motta bestillingen din i dag.",
+        "in_transit_description_tomorrow": "Du bør motta bestillingen din i løpet av neste dag.",
+        "no_tracking_number": "Det finnes ikke noe sporingsnummer for denne bestillingen.",
+        "out_for_delivery": "Ute for levering",
+        "out_for_delivery_title": "Bestillingen din er ute til levering",
+        "out_for_delivery_description_html": "Bestillingen din er på vei og skal ankomme i dag. Hvis den ikke leveres innen de neste to dagene, %{contact_us}.",
+        "out_for_delivery_local_title": "Bestillingen din er ute til levering",
+        "out_for_delivery_local_description_html": "Bestillingen din kommer snart.",
+        "attempted_delivery": "Forsøkt levering",
+        "attempted_delivery_title": "Det ble gjort et forsøk på å levere bestillingen din",
+        "attempted_delivery_description_html": "Det ble gjort et forsøk på å levere bestillingen din, men det mislyktes. %{contact_us} for å avtale et nytt leveringsforsøk.",
+        "attempted_delivery_local_title": "Mistet levering",
+        "attempted_delivery_local_description_html": "Vi kunne ikke levere bestillingen din. For å avtale en ny levering, %{contact_us}.",
+        "delivered": "Levert",
+        "delivered_title": "Bestillingen din er levert",
+        "delivered_description_html": "Bestillingen din er levert til adressen du oppga. Hvis du ikke har mottatt den, eller hvis du har andre problemer, kan du %{contact_us}.",
+        "delivered_local_title": "Bestillingen din er levert",
+        "delivered_local_description_html": "Har du ikke mottatt bestillingen din? %{let_us_know}.",
+        "choose_payment_method_later": "Velg betalingsmåte senere",
+        "picked_up_title": "Bestillingen din er hentet",
+        "picked_up_description_html": "Bestillingen din ble hentet på %{location_name} den %{date}.",
+        "contact_us": "Kontakt oss",
+        "contact_us_lowercase": "kontakt oss",
+        "contact_us_html": "Trenger du hjelp? %{kontakt_oss}",
+        "updated_time": "Oppdatert for %{time_ago} siden",
+        "failure": "Ikke levert",
+        "failed_title": "Bestillingen din kunne ikke leveres",
+        "failed_contact_merchant": "Kontakt %{company} for å avtale levering.",
+        "failed_contact_merchant_no_company": "Kontakt oss for å avtale levering.",
+        "non_shippable_title": "Bestillingen din er fullført",
+        "let_us_know": "Gi oss beskjed",
+        "login_title": "Logg inn for å se alle bestillingsdetaljer",
+        "login_description": "Du finner ordrenummeret ditt i kvitteringen du mottok på e-post.",
+        "login_description_phone": "Du finner ordrenummeret ditt i kvitteringen du mottok via tekstmelding.",
+        "login_not_customer_html": "Ikke %{name}? Du kan %{link}",
+        "login_reorder_link_text": {
+          "one": "kjøp dette produktet også",
+          "other": "kjøp disse produktene også"
+        },
+        "customer_information_hidden_fields_message": "Logg inn for å se all kundeinformasjon.",
+        "cancelled_title": "Bestillingen din er kansellert",
+        "cancelled_description": "Bestillingen din ble kansellert %{date}. Kontakt oss hvis du har spørsmål.",
+        "order_number_label": "Ordrenummer",
+        "customer_validation_error": "Skriv inn en gyldig e-postadresse eller ordrenummer.",
+        "customer_validation_error_phone": "Skriv inn et gyldig telefon- eller bestillingsnummer.",
+        "login": "Logg inn",
+        "unfulfilled_items_title": "Forberedelse til frakt",
+        "unfulfilled_items_description": "Vi forbereder disse varene for forsendelse nå.",
+        "marker": {
+          "current": "Nåværende leveringssted",
+          "shipping": "Leveringsadresse"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Nåværende leveringssted",
+          "shipping": "Hentested"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Varer i denne forsendelsen",
+          "unfulfilled_table_title": "Varer klargjøres for forsendelse",
+          "product_image_label": "Produktbilde",
+          "description_label": "Beskrivelse",
+          "quantity_label": "Mengde"
+        },
+        "order_updates_description_missing": "Du mottar ikke oppdateringer om frakt.",
+        "order_updates_subscribe_to_email_notifications": "Få oppdateringer om levering på e-post",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Få leveringsoppdateringer via e-post eller tekstmelding",
+        "order_updates_subscribe_to_phone_notifications": "Få fraktoppdateringer via tekstmelding",
+        "order_updates_submit_subscription": "Send inn",
+        "track_shipment": "Spor forsendelse",
+        "other_options": "Andre alternativer",
+        "delivery_information_label": "Leveringsinformasjon:",
+        "gift_card_sent_confirmation": "Gavekort sendt",
+        "qr_code": {
+          "send_link_to_phone": "Eller send en lenke til telefonen din"
+        }
       }
+    },
+    "notices": {
+      "order": {
+        "transaction_status": {
+          "error": "Feil"
+        },
+        "cancel_reason": {
+          "declined": "Betaling avvist",
+          "inventory": "Elementer utilgjengelige",
+          "fraud": "Svindelordre",
+          "customer": "Kunden endret/kansellerte bestillingen",
+          "staff": "Personalfeil",
+          "other": "Annen"
+        },
+        "cash_on_delivery": "Oppkrav ved levering (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "Du kan bare legge %{count} %{name} til i handlekurven.",
+        "too_many_items_in_cart": "Du kan ikke legge til flere %{name} i handlekurven.",
+        "only_one_added_to_cart": "Bare én vare ble lagt til i handlekurven din på grunn av tilgjengelighet.",
+        "only_n_added_to_cart": "Bare %{quantity} varer ble lagt til i handlekurven din på grunn av tilgjengelighet.",
+        "maximum_available_quantity_reached": "Maksimumsmengden av denne varen er allerede i handlekurven din.",
+        "less_than_minimum": "Denne varen har et minimum på %{min}.",
+        "more_than_maximum": "Denne varen har et maksimum på %{max}.",
+        "not_respect_step": "Du kan bare legge til dette elementet i trinn på %{step}.",
+        "all_items_in_cart": "Alle %{count} %{name} er i handlekurven din.",
+        "empty_update": "kan ikke oppdatere tom handlekurv",
+        "missing_parameters": "ingen gyldig ID eller linjeparameter",
+        "generic_error": "Handlekurvfeil",
+        "invalid_input": "Parameteren %{parameter} er ugyldig.",
+        "product_not_available": "Produktet er ikke tilgjengelig",
+        "too_many_line_items_error": "Handlekurven din kan ikke inneholde mer enn %{max} varer.",
+        "link_expired": "Lenken er utløpt",
+        "link_no_longer_exists": "Lenken finnes ikke lenger.",
+        "stock_problems_html": "Én eller flere varer er ikke lenger tilgjengelige. Vi har lagt til en <a href=\"%{link}\">oppdatert handlekurv</a> .",
+        "changed": "Handlekurven er endret",
+        "items_changed": "Ett eller flere elementer har endret seg.",
+        "product_sold_out": "Produktet '%{name}' er allerede utsolgt.",
+        "variant_not_found": "Finner ikke varianten",
+        "variant_requires_selling_plan": "Variant kan bare kjøpes med en salgsplan.",
+        "selling_plan_not_available_for_company_locations": "Kun engangskjøp er tilgjengelig for B2B-bestillinger",
+        "digital_product_not_available_for_company_locations": "Denne varen kan ikke legges til i en B2B-bestilling",
+        "buyer_cannot_purchase_for_company_locations": "Du kan ikke kjøpe for denne lokasjonen",
+        "selling_plan_not_applicable": "Kan ikke bruke salgsplanen på varianten",
+        "shipping_address_not_required": "Denne handlekurven krever ikke frakt",
+        "shipping_address_invalid": "Det oppsto et problem med å beregne fraktprisene dine. Fortsett til kassen for å velge en fraktpris før du fullfører bestillingen.",
+        "bundle_requires_components": "Pakkeproduktet '%{name}' kan ikke legges til i handlekurven.",
+        "gift_card_with_components_not_supported": "Pakkeproduktet '%{name}' kan ikke legges til i handlekurven.",
+        "gift_card_price_must_be_greater_than_zero": "Pakkeproduktet '%{name}' kan ikke legges til i handlekurven.",
+        "gift_card_recipient_validation_error": "Den angitte gavekortmottakeren er ugyldig",
+        "view_lines_limit_reached": "Linjene må være mindre enn %{limit}",
+        "cart_too_large": "Handlekurven er for stor.",
+        "cart_attributes_error": "Handlekurvattributtene inneholder ugyldige data.",
+        "merchandise_line_transformers": {
+          "run_error": "Det oppsto en feil i handlekurven din."
+        }
+      },
+      "storefront": {
+        "invalid_password": "Passordet er feil, prøv på nytt."
+      },
+      "tags": {
+        "add_articles": "Avgrens søket til artikler som også har taggen %{tag}",
+        "add_products": "Begrens utvalget til produkter som samsvarer med taggen %{tag}",
+        "remove_articles": "Utvid søket til artikler som ikke er merket med %{tag}",
+        "remove_products": "Fjern taggen %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Takk for at du abonnerer på e-postlisten vår.",
+        "disclaimer": "Du kan når som helst melde deg av.",
+        "unsubscribe": "Avslutt abonnementet"
+      },
+      "unsubscribed": {
+        "confirmation": "Du har avsluttet abonnementet på e-postlisten vår.",
+        "disclaimer": "Du vil ikke motta flere markedsføringsoppdateringer fra oss. Du kan abonnere igjen når som helst.",
+        "preview": "Du forhåndsviser hva kundene vil se når de avslutter abonnementet."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Du har valgt å spore åpningstider via e-post.</b>",
+          "visibility": "Åpningsrater for e-poster rapporteres anonymt. Vi ser bare om du har åpnet en e-post som en del av en samlet åpningsrate for e-poster.",
+          "opt_out_html": "Du kan <a style=\"text-decoration:underline;\" href=\"%{link}\">velge bort</a> sporing av e-poståpning hvis du ikke ønsker å dele denne informasjonen.",
+          "preview_bar": "Du forhåndsviser hva kundene vil se når de velger å spore åpningsannonser via e-post."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Du har valgt bort sporing av åpning av e-post.</b>",
+          "visibility": "Vi vil ikke se om du har åpnet e-postene våre.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Registrer deg</a> for sporing av åpninger via e-post.",
+          "preview_bar": "Du forhåndsviser hva kundene vil se når de velger bort sporing av e-poståpninger."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Vi sporer ikke lenger åpninger av e-poster.</b>",
+          "privacy_policy": "Etter at denne e-posten ble sendt, har vi oppdatert personvernerklæringen vår, og vi sporer ikke lenger åpninger."
+        },
+        "track": {
+          "status_html": "<b>Sporing av åpning av e-post rapporteres.</b>",
+          "visibility": "Vi ser bare om du har åpnet e-posten, som en del av den totale åpningsraten for e-posten."
+        },
+        "updated_policy": {
+          "status_html": "<b>Sporing av åpning av e-post rapporteres.</b>",
+          "visibility": "Vi har oppdatert retningslinjene våre, og sporer nå åpninger av e-poster. Åpningsrater for e-poster rapporteres anonymt. Vi ser bare om du har åpnet en e-post som en del av den totale åpningsraten for e-poster.",
+          "opt_out_html": "Hvis du ikke ønsker å dele denne informasjonen, kan du <a style=\"text-decoration:underline;\" href=\"%{link}\">melde deg av.</a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "På lager",
+          "out_of_stock": "Utsolgt"
+        }
+      },
+      "boolean": {
+        "true_label": "Ja",
+        "false_label": "Ingen"
+      }
+    },
+    "search": {
+      "error": "Det oppsto et problem da søkeresultatene dine skulle lastes inn. Oppdater siden eller prøv på nytt senere.",
+      "sorting": {
+        "relevance": "Relevans",
+        "price_ascending": "Pris, lav til høy",
+        "price_descending": "Pris, høy til lav"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Feil - %{tittel}",
+      "products": "Produkter",
+      "shopping_cart": "Handlekurven din",
+      "account": "Konto",
+      "create_account": "Opprett konto",
+      "reset_account": "Tilbakestill konto",
+      "addresses": "Adresser",
+      "order": "Ordre %{navn}",
+      "search": "Søk",
+      "search_results": {
+        "one": "Søk: %{count} resultat funnet for «%{terms}»",
+        "other": "Søk: %{count} resultater funnet for «%{terms}»"
+      },
+      "collections": "Samlinger",
+      "not_found": "404 Ikke funnet",
+      "challenge": "Utfordring",
+      "checkpoint": "Kontrollpunkt"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} rabatter er trukket fra"
+    },
+    "challenge": {
+      "message": "For å fortsette, gi oss beskjed om at du ikke er en robot.",
+      "error": "Svaret ditt var ikke riktig. Prøv igjen.",
+      "submit_button_text": "Send inn"
+    },
+    "checkpoint": {
+      "message": "Løs Captcha for å fortsette",
+      "error": "Captcha-validering mislyktes"
     }
   }
 }
