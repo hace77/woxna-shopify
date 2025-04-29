@@ -15,7 +15,7 @@
         "heading_NUNcr4": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Ljusnan 180</strong>",
+            "heading": "Ljusnan 180",
             "heading_size": "h0"
           }
         },
@@ -68,7 +68,7 @@
         "heading_dtUCPi": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Ljusnan 180</strong>",
+            "heading": "Ljusnan 180",
             "heading_size": "h0"
           }
         },
