@@ -2702,8 +2702,55 @@
             "title": "Betalt",
             "title_with_date": "Betalt {{date}}",
             "description": "Bestillingen din er fullt betalt."
-          }
+          },
+          "refund": {
+            "title": "Refundert",
+            "title_with_date": "Refundert {{date}}",
+            "description_full_refund": "Du mottok full refusjon for denne bestillingen.",
+            "description_single_refund": "Du mottok en delvis refusjon for denne bestillingen.",
+            "description_multiple_refunds": "Du mottok delvise refusjoner for denne bestillingen."
+          },
+          "canceled": {
+            "title": "Betaling kansellert",
+            "description": "Du ble ikke siktet."
+          },
+          "pay_now": "Betal nå",
+          "pay_now_accessibility_label": "Betal nå for bestillingen {{orderName}}",
+          "title": "Betalingsstatus"
+        },
+        "order_timeline": {
+          "expand_events_label": "Vis detaljer",
+          "expand_events_accessibility_label": "Vis detaljer om utkastordre",
+          "hide_events_label": "Skjul detaljer",
+          "hide_events_accessibility_label": "Skjul detaljer om utkastordre"
+        },
+        "subtitle": "Innsendt {{date}}",
+        "title": "Bestilling {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Denne betalingsmåten vil ikke lenger være tilgjengelig for fremtidige kjøp fra denne lokasjonen.",
+          "description_with_replacement": "Hvis du sletter denne betalingsmåten, vil det påvirke forhåndsgodkjente betalinger for denne lokasjonen. Erstatt den med en alternativ betalingsmåte for å fortsette å motta kommende bestillinger."
+        },
+        "payment_details": {
+          "order_label": "Bestilling {{name}}",
+          "draft_label": "Utkast til ordre {{name}}"
         }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Legg til PO-nummer",
+        "add_modal_title": "Legg til PO-nummer",
+        "cancel": "Kansellere",
+        "close_modal_accessibility_label": "Lukk PO-nummer modal",
+        "discard": "Kast",
+        "discard_changes_modal_title": "Forkaste endringer?",
+        "edit_accessibility_label": "Rediger innkjøpsordrenummer",
+        "edit_modal_title": "Rediger innkjøpsordrenummer",
+        "empty_state": "Ingen PO-nummer",
+        "modal_po_number_input_label": "PO-nummer",
+        "modal_po_number_input_max_length_error": "PO-numre kan ha maksimalt {{maxLength}} tegn.",
+        "save": "Spare",
+        "title": "PO # {{poNumber}}"
       }
     },
     "payment_methods": {
@@ -2712,7 +2759,11 @@
           "events": {
             "payment_returned": "Betaling returnert",
             "order_cancellation": "Avbestilling av ordre",
-            "tax_finalization": "Avslutning av skatteavtale"
+            "tax_finalization": "Avslutning av skatteavtale",
+            "adjustment": "Innstilling",
+            "order_payment": "Bestillingsbetaling",
+            "order_refund": "Refusjon av ordre",
+            "payment_failure": "Betalingsfeil"
           },
           "expirable_balance_info": "Noe av saldoen din utløper på et senere tidspunkt",
           "expirable_amount_label": "Totalt utløpsbeløp",
@@ -2722,8 +2773,18 @@
           "pagination": {
             "load_more_label": "Last inn mer",
             "load_more_accessibility_label": "Last inn flere utløpsbeløp"
-          }
-        }
+          },
+          "title": "Utløpbar butikkreditt",
+          "balance_label": "Balansere",
+          "expiration_date_label": "Utløpsdato",
+          "amount_label": "Beløp",
+          "date_label": "Dato",
+          "event_label": "Hendelse"
+        },
+        "label": "Butikkkreditt",
+        "accesibility_label": "Butikkkreditt - {{formattedBalance}}",
+        "expirable_amounts_button": "Se utløpsbeløp",
+        "expirable_amounts_label": "Utløpbare beløp"
       },
       "payment_details": {
         "title": "Detaljer om betalingsmåte",
@@ -2825,12 +2886,107 @@
       },
       "three_d_secure": {
         "title": "3D-sikkerhet"
+      },
+      "title": "Betalingsmetoder",
+      "add_payment_method_button": "Legg til betalingsmåte",
+      "add_payment_method_banner": "Legg til betalingsmåte for raskere betaling eller forhåndsgodkjente tjenester",
+      "no_payment_methods_banner": "Ingen betalingsmåter lagt til",
+      "edit_payment_method_button_accessibility_label": "Rediger {{paymentMethodName}} som slutter på {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Rediger {{paymentMethodName}}",
+      "delete_payment_method_button": "Slett",
+      "delete_payment_method_button_accessibility_label": "Slett {{paymentMethodName}}",
+      "back_button": "Tilbake",
+      "back_button_accessibility_label": "Tilbake til {{paymentMethodStepTitle}}",
+      "default": "Misligholde",
+      "generic_card": "Kort",
+      "expiration_warning_button_accessibility_label": "Vis utløpsvarsel for {{paymentMethodName}} som slutter på {{lastDigits}}",
+      "expires_soon": "Dette kortet utløper snart",
+      "expired": "Dette kortet er utløpt",
+      "card_update_consent": "Denne betalingsmåten vil bli lagret for fremtidige kjøp.",
+      "card_update_consent_subscriptions": "Denne betalingsmåten lagres for fremtidige kjøp og kan brukes til ethvert gjentakende eller utsatt kjøp.",
+      "digital_wallet_title": "Digital lommebok",
+      "credit_or_debit_card_title": "Kreditt- eller debetkort",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Legg til Google Pay-betalingsmåte",
+        "loading_accessibility_message": "Laster inn Google Pay",
+        "loading": "Laster inn Google Pay",
+        "errors": {
+          "generic": "Det oppsto et problem med Google Pay. Prøv på nytt, eller bruk en annen betalingsmåte.",
+          "missing_billing_address": "Google Pay krever en faktureringsadresse. Legg til en på kontoen din."
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "Legg til PayPal-betalingsmåte",
+        "loading_accessibility_message": "Laster PayPal"
+      },
+      "apple_pay": {
+        "loading": "Laster inn Apple Pay",
+        "errors": {
+          "generic": "Det oppsto et problem med Apple Pay. Prøv på nytt, eller bruk en annen betalingsmåte.",
+          "not_available": "Apple Pay er ikke tilgjengelig på denne enheten.",
+          "missing_billing_address": "Apple Pay krever en faktureringsadresse. Legg til en på kontoen din."
+        }
       }
     },
     "payment_method_brands": {
       "visa": "Visum",
       "discover": "Oppdage",
       "forbrugsforeningen": "Forbruksforeningen"
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Det oppsto et problem da denne adressen skulle slettes. Prøv på nytt, eller oppdater siden."
+      },
+      "addresses_loading_issue": {
+        "description": "Tilkoblingsfeil. Sjekk internettforbindelsen din og prøv på nytt."
+      },
+      "banner_title": {
+        "one": "Det er en feil på {{count}}",
+        "other": "Det er {{count}} feil"
+      },
+      "failed_address_creation": {
+        "description": "Det oppsto et problem da adressen din skulle opprettes. Prøv å oppdatere denne siden eller sjekke internettforbindelsen din."
+      },
+      "failed_address_update": {
+        "description": "Det oppsto et problem da adressen din skulle oppdateres. Prøv å oppdatere denne siden eller sjekk internettforbindelsen din."
+      },
+      "load_orders_error": {
+        "title": "Kan ikke laste inn bestillinger",
+        "description": "Prøv på nytt eller kom tilbake senere.",
+        "retry_button": "Prøv på nytt"
+      },
+      "load_paypal_error": {
+        "description": "Det er et problem med å laste inn PayPal. Prøv på nytt."
+      },
+      "logout_everywhere": {
+        "description": "Noe gikk galt under utloggingen. Prøv på nytt."
+      },
+      "no_access_to_locations": {
+        "description": "Du har ikke tilgang til noen steder"
+      },
+      "not_found": {
+        "description": "Sjekk nettadressen eller prøv på nytt om noen minutter.",
+        "title": "Det er et problem med å laste inn denne siden"
+      },
+      "order_not_found": {
+        "description": "Denne bestillingen finnes ikke, eller du har ikke tillatelse til å se den.",
+        "title": "Ordren ble ikke funnet"
+      },
+      "profile_update_error": {
+        "description": "Det oppsto et problem da profilen din skulle oppdateres. Prøv å oppdatere denne siden eller sjekk internettforbindelsen din."
+      },
+      "retry_action_label": "Prøv på nytt",
+      "load_extension_error": {
+        "title": "Feil",
+        "description": "Oppdater denne siden eller prøv igjen om noen minutter.",
+        "refresh_button": "Oppdater siden"
+      }
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "For mange forsøk",
+        "description": "Prøv igjen om noen minutter"
+      }
     }
   },
   "general": {
