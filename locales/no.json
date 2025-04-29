@@ -697,6 +697,152 @@
             "price_change": "Prisene på noen varer har endret seg. Lukk {{walletName}} for å se gjennom bestillingen din og prøv på nytt."
           }
         }
+      },
+      "payment": {
+        "pending_payment": {
+          "multibanco": {
+            "entity": "Enhet",
+            "reference": "Referanse",
+            "amount": "Beløp",
+            "find_nearest_atm": "Finn nærmeste minibank"
+          }
+        },
+        "update_payment_method": "Oppdater betalingsmåte",
+        "order_covered_by_store_credit_notice": "Bestillingen din er dekket av butikkreditten din.",
+        "order_covered_by_redeemables_notice": "Bestillingen din er dekket.",
+        "store_credit": {
+          "label": "Butikkkreditt",
+          "apply_label": "Bruk butikkreditt",
+          "add_label": "Legg til butikkreditt",
+          "manage_label": "Administrer butikkkreditt",
+          "buying_gift_card": "Du kan ikke bruke butikkreditt til å kjøpe et gavekort",
+          "no_fixed_selling_plans": "Du kan ikke bruke butikkreditt med utsatt kjøpsalternativer"
+        },
+        "clear": "Klar",
+        "billing_must_match_shipping_notice": "Faktureringsadressen for betalingsmetoden din må samsvare med leveringsadressen.",
+        "same_billing_address_checkbox_label": "Bruk leveringsadresse som faktureringsadresse",
+        "location_billing_address_label": "Faktureringsadresse for sted",
+        "fact_billing_address_label": "Faktureringsadresse",
+        "location_shipping_address_label": "Leveringsadresse for sted",
+        "use_order_billing_address_label": "Bruk faktureringsadressen for bestillingen",
+        "use_location_billing_address_label": "Bruk faktureringsadressen for stedet",
+        "use_location_shipping_address_label": "Bruk leveringsadressen for stedet",
+        "no_working_method_error": "Denne butikken kan ikke godta betalinger akkurat nå. Oppdater denne siden eller kom tilbake senere.",
+        "brand_not_available": "Denne butikken godtar ikke {{brand}} . Vennligst bruk et annet kort for å betale.",
+        "shipping_rate_updated": "Tilgjengelige fraktmetoder er oppdatert. Bekreft valget ditt før du betaler.",
+        "billing_address_invalid_phone": "Oppdater telefonnummeret i faktureringsadressen din for at {{label}} {{last_digits}} skal kunne fortsette.",
+        "billing_address_invalid_phone_no_card": "Oppdater telefonnummeret i faktureringsadressen din for å fortsette.",
+        "preview_not_available": {
+          "title": "Forhåndsvisning er ikke tilgjengelig",
+          "content": "Ikke bekymre deg, denne ekspresskassen fungerer for kundene dine.",
+          "button": "OK"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Skriv inn en gyldig utstedelsesdato",
+              "issue_number": "Skriv inn et gyldig utstedelsesnummer"
+            },
+            "invalid": {
+              "verification_value": "Skriv inn en gyldig CVV- eller sikkerhetskode"
+            }
+          }
+        },
+        "simulated_checkout": "Forhåndsvisning kommer snart",
+        "simulated_express_checkout": "Lommebøker er ikke tilgjengelige i forhåndsvisningen av redigeringsprogrammet på grunn av regionen eller nettleseren din",
+        "vaulting_agreement_label": "Lagre betalingsinformasjonen min hos %{company} for raskere betaling.",
+        "business_customer_vaulting_payment_label": "Lagre dette kortet ved betaling og gi %{company} tillatelse til å belaste det for fremtidige kjøp for denne lokasjonen. Alle kontakter som er tilordnet denne lokasjonen, kan bruke kortet.",
+        "purchase_options_and_vaulting_agreement_label": "Én eller flere varer i handlekurven din er et utsatt kjøp eller et abonnementskjøp. Ved å fortsette betalingen godtar du at betalingsmåten din automatisk belastes med prisen og frekvensen som er oppført på denne siden, inntil den avsluttes eller du kansellerer. Alle kanselleringer er underlagt %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "avbestillingsregler",
+        "use_different_credit_card_label": "Bruk et annet kort",
+        "saved_credit_card": "Ditt lagrede kredittkort",
+        "saved_credit_card_info": "De fire siste sifrene",
+        "saved_credit_card_cvv_verification": "For bekreftelsesformål, vennligst skriv inn sikkerhetskoden til kortet ditt.",
+        "saved_credit_card_actions": {
+          "edit": "Redigere",
+          "delete": "Slett"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Se alle lagrede kort",
+          "done": "Ferdig",
+          "cancel": "Kansellere"
+        },
+        "add_credit_card_modal": {
+          "title": "Legg til kort",
+          "save": "Spare",
+          "cancel": "Kansellere"
+        },
+        "delete_credit_card_modal": {
+          "title": "Slett kort",
+          "confirmation": "Er du sikker på at du vil slette {{brandName}} som slutter på {{lastDigits}} ?",
+          "cancel": "Kansellere",
+          "delete": "Slett"
+        },
+        "edit_credit_card_modal": {
+          "title": "Rediger kort",
+          "done": "Ferdig",
+          "cancel": "Kansellere",
+          "description": "Du kan bare endre faktureringsadressen til kortet ditt.",
+          "fields": {
+            "default": "Angi som standard",
+            "card_number": "Kortnummer",
+            "expiry": "Utløpsdato",
+            "security_code": "Sikkerhetskode",
+            "name": "Navn på kort",
+            "billing": "Fakturer til"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Det er %{count} utløpt kort, som du kan se og redigere i kontoen din.",
+          "other": "Det finnes %{count} utløpte kort som du kan se og redigere i kontoen din."
+        },
+        "local_payment_method_receiver_notice": "Etter at du har lagt inn bestillingen din, vil du motta betalingsinformasjon. Betal i en minibank eller på nett innen {{dueDays}} dager.",
+        "order_edit_banner_title": "Betaling av {{amount_owed}} er nødvendig",
+        "order_edit_banner_subtitle": "Bestillingen din {{order_number}} ble oppdatert. Se gjennom disse endringene, og betal deretter for å bekrefte bestillingen.",
+        "order_edit_banner_items_added": {
+          "one": "Lagt til",
+          "other": "Lagt til %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Fjernet",
+          "with_quantities": "Fjernet {{delta}} av {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Returnerte {{quantity}}",
+          "with_quantities": "Returnerte {{delta}} av {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Fjernet fra retur",
+          "with_quantities": "Fjernet {{delta}} fra returen"
+        },
+        "order_edit_banner_single_item_added": "Lagt til",
+        "order_edit_banner_multiple_items_added": "Lagt til {{amount}}",
+        "order_edit_banner_single_item_removed": "Fjernet",
+        "order_edit_banner_multiple_items_removed": "Fjernet {{amount}}",
+        "order_edit_banner_single_item_returned": "Returnert",
+        "order_edit_banner_multiple_items_returned": "Returnerte {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Fjernet fra retur",
+        "order_edit_banner_multiple_items_return_line_item_removed": "Fjernet {{amount}} fra returen",
+        "order_edit_banner_updated_order_label": "Oppdatert bestilling",
+        "gift_card_wrapper": {
+          "heading": "Gavekort",
+          "apply_gift_card_label": "Bruk et gavekort",
+          "apply_another_gift_card_label": "Bruk et annet gavekort",
+          "gift_card_label": "Gavekort %{identifikator}",
+          "payment_tag": "Gavekort",
+          "add_label": "Legg til et gavekort",
+          "manage_label": "Administrer gavekort"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Legg til et gavekort eller en butikkreditt",
+          "manage_label": "Administrer gavekort eller butikkreditt"
+        },
+        "gift_card_checkbox_label": "Bruk gavekort",
+        "custom_onsite_payment_method_modal": {
+          "title": "Tilpasset bekreftelse av betaling på stedet"
+        },
+        "markets_pro_disclaimer_label": "Ved å klikke nedenfor og fullføre bestillingen din, godtar du å kjøpe varen(e) din(e) fra Global-e som registrert selger for denne transaksjonen, i henhold til Global-es %{markets_pro_terms} og %{privacy_policy}. Global-e er en internasjonal leverandør av oppfyllingstjenester for %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Vilkår og betingelser"
       }
     },
     "notices": {
@@ -1095,6 +1241,158 @@
       "max_characters": "Maksimalt {{ max_chars }} tegn",
       "send_on": "ÅÅÅÅ-MM-DD",
       "send_on_label": "Send videre (valgfritt)"
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivered_title": "Forsendelsen din er levert",
+        "delivered_description_digital": {
+          "one": "Denne varen er komplett.",
+          "other": "Disse elementene er komplette."
+        },
+        "delivered_description_gift_card": {
+          "one": "Gavekortet ble sendt på e-post.",
+          "other": "Gavekort ble sendt på e-post."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Gavekortet ble sendt via tekstmelding.",
+          "other": "Gavekort ble sendt via tekstmelding."
+        },
+        "gift_card_label": {
+          "one": "Gavekort",
+          "other": "Gavekort"
+        },
+        "gift_card_resend_button": {
+          "one": "Send gavekort på nytt",
+          "other": "Send gavekort på nytt"
+        },
+        "gift_resend_success": {
+          "one": "Gavekort sendt på nytt",
+          "other": "Gavekort sendt på nytt"
+        },
+        "gift_resend_failure": {
+          "one": "Det oppsto et problem da gavekortet ditt skulle sendes på nytt. Prøv på nytt, eller kontakt oss.",
+          "other": "Det oppsto et problem da gavekortene dine skulle sendes på nytt. Prøv på nytt, eller kontakt oss."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Gavekortet vil bli sendt i en separat e-post.",
+          "other": "Hvert gavekort vil bli sendt i en separat e-post."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Gavekortet sendes i en separat tekstmelding.",
+          "other": "Hvert gavekort sendes i en separat tekstmelding."
+        },
+        "status_timestamp": "Oppdatert {{date}}",
+        "estimated_delivery": "Forventet {{date}}",
+        "delivered": "Ankom {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Amazon Kjøp med Prime-logo",
+        "in_review_description": "Vi gir deg beskjed hvis vi trenger mer informasjon eller når bestillingen din er bekreftet.",
+        "in_review_label": "Under gjennomgang",
+        "in_review_title": "Bestillingen din blir vurdert",
+        "last_updated": "Sist oppdatert {{date}}",
+        "multiple_shipments_label": "Flere forsendelser",
+        "multiple_statuses_label": "Flere ordrestatuser",
+        "no_tracking_number": "Det finnes ikke noe sporingsnummer for denne forsendelsen.",
+        "tracking_number": {
+          "one": "Sporingsnummer",
+          "other": "Sporingsnumre"
+        },
+        "on_its_way_label": "På vei",
+        "on_its_way_title": "Forsendelsen din er på vei",
+        "out_for_delivery_label": "Ute for levering",
+        "out_for_delivery_title": "Forsendelsen din er ute til levering",
+        "resume_tracking": "Gjenoppta sporing",
+        "submitted_label": "Innsendt",
+        "submitted_description": "Gjennomgå bestillings- og betalingsdetaljer.",
+        "there_was_a_problem_label": "Det oppsto et problem",
+        "track_shipment": "Spor forsendelse",
+        "request_return": "Be om retur",
+        "view_order_for_details": "Se bestillingen for detaljer",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Administrer på Amazon"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Administrer med Amazon",
+            "new_window_disclaimer": "(åpner et nytt vindu)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Levering garantert av",
+            "external_promise_brand_label": "Levering innen",
+            "not_delivered_by_label": "Levert etter {{date}}",
+            "delivery_guarantee_expired_label": "Leveringsgarantien er utløpt",
+            "modal_accessibility_button_label": "Detaljer om leveringsløftet",
+            "download_shop_app_button_label": "Last ned Butikk for å spore",
+            "track_with_shop_button_label": "Spor med butikk",
+            "claim_shop_cash_button_label": "Krev kontanter i butikken"
+          },
+          "details_modal": {
+            "title": "Leveringsgaranti",
+            "active_delivery_guarantee_label": "Levering innen {{date}}",
+            "expired_delivery_guarantee_description": "30-dagers Shop Promise-garantien for denne bestillingen er utløpt.",
+            "expired_badge_label": "Utløpt",
+            "order_includes_guarantees_label": "Bestillingen din inkluderer {{deliveryAgreementsCount}} garantier",
+            "order_includes_guarantees_description": "Shop Promise garanterer rask og pålitelig levering. Få Shop Cash hvis bestillingen din ankommer etter {{date}} .",
+            "delivered_after_label": "Levert etter {{date}}",
+            "delivered_after_description": "Fordi bestillingen din ankom sent, er du kvalifisert til å kreve {{amount}} Shop Cash.",
+            "claimed_shop_cash_description": "Fordi denne bestillingen kom sent, krevde du {{amount}} Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "Fordi bestillingen din ankom sent, er du kvalifisert til å kreve {{amount}} Shop Cash.",
+            "learn_more_button_label": "Lær mer",
+            "claim_shop_cash_button_label": "Krev kontanter i butikken",
+            "view_balance_in_shop_button_label": "Se saldo i butikken",
+            "scan_to_claim_shop_cash_label": "Skann for å kreve {{amount}} Shop Cash"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Levering støttet av",
+            "mixed_brands_label": "Levering garantert",
+            "not_delivered_by_label": "Ikke levert innen {{date}}",
+            "modal_accessibility_button_label": "Detaljer om leveringsløftet"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Krev butikkkontanter",
+            "no_shop_app_label": "{{appDownloadLink}} for å kreve Shop Cash",
+            "download_shop_app_label": "Last ned butikk"
+          },
+          "details_modal": {
+            "title": "Levering støttet av",
+            "modal_accessiblity_label": "Detaljer om leveringsløftet",
+            "delivery_guarantee_label": "Leveringsgaranti",
+            "delivery_by_label": "Levering innen {{date}}",
+            "delivery_guaranteed_by_label": "Levering garantert innen {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise garanterer rask og pålitelig levering. Få Shop Cash hvis bestillingen din kommer for sent.",
+              "may_be_eligible_not_authorized_label": "Du kan være kvalifisert til å kreve Shop Cash fordi denne bestillingen ankom sent. Logg inn for å se detaljer.",
+              "redeemed_label": "Du har allerede gjort krav på Shop Cash fordi denne bestillingen kom for sent.",
+              "expired_label": "Denne bestillingen er ikke kvalifisert for et krav om forsinket levering fordi 30-dagers garantien er utløpt.",
+              "no_shop_cash_label": "Denne bestillingen er ikke kvalifisert for et krav om forsinket levering fordi den ikke ble betalt med ShopPay.",
+              "no_longer_guaranteed_label": "Disse varene er ikke lenger dekket av en leveringsgaranti.",
+              "claim_shop_cash_title": "Skann for å kreve inn {{amount}} i Shop Cash",
+              "claim_shop_cash_description": "Du kan bruke Shop Cash på fremtidige kjøp i Shop-appen."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "Merk som levert",
+      "fulfillment_status_title": "Oppfyllelsesstatus: {{status}}",
+      "buy_again": "Kjøp igjen",
+      "buy_again_accessibility_label": "Kjøp igjen for bestilling {{orderId}}",
+      "manage": "Administrer",
+      "manage_accessiblity_label": "Administrer bestilling {{orderId}}"
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Vis detaljer",
+        "expand_events_accessibility_label": "Vis detaljer om bestillingsforsendelse",
+        "hide_events_label": "Skjul detaljer",
+        "hide_events_accessibility_label": "Skjul detaljer om bestillingsforsendelse"
+      },
+      "addresses_section_title": "Fakturering og frakt",
+      "order_details": "Ordredetaljer"
     }
   }
 }
