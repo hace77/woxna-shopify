@@ -203,6 +203,7 @@
         "text_yinUYU",
         "buttons_gCxJxg"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
