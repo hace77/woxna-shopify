@@ -48,7 +48,7 @@
       ],
       "name": "Video Banner YT",
       "settings": {
-        "video": "shopify://files/videos/Ljusnan 180 16-9_1.mp4",
+        "video": "shopify://files/videos/Ljusnan-folding-saw-180mm.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
