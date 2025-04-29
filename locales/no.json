@@ -278,125 +278,7 @@
         "calculating": "Beregner…",
         "shipping_default_value": "Beregnet i neste trinn",
         "shipping_discount_title": "Frakrabatt",
-        "shipping_pending_message": "Ikke tilgjengelig ennå",
-        "shipping_policy_link": "Fraktkostnader",
-        "taxes_label": "Skatter",
-        "estimated_taxes_label": "Estimerte skatter",
-        "information_estimated_taxes_label": "Skatter (estimert)",
-        "estimated_taxes_finalization_tooltip_content": "Den endelige avgiften og totalbeløpet vil bli bekreftet via e-post eller SMS etter at du har lagt inn bestillingen.",
-        "order_total_label": "Totalt antall bestillinger",
-        "price_before_discount_aria_text": "Opprinnelig pris",
-        "price_after_discount_aria_text": "Rabattert pris",
-        "discount_code_aria_text": "Rabattkode",
-        "total_savings": "Totale besparelser",
-        "total_outstanding_label": "Beløp å betale",
-        "deposit_label": "Innskudd",
-        "total_due_today_label": "Totalt forfaller i dag",
-        "total_due_later_label": "Totalt forfaller senere",
-        "free_total_label": "Gratis",
-        "free_shipping_total_label": "Gratis",
-        "paid_label": "Betalt",
-        "payment_due_label": "Forfaller",
-        "vat_label_html": "Inkludert %{amount} i skatt",
-        "duties_included_label": "Totalt inkluderer skatter og avgifter. Ingen ekstra kostnader ved levering.",
-        "discount_and_gift_card_savings_notice": "Etter %{discount_amount} i rabatter og %{gift_card_amount} i gavekort",
-        "discount_savings_notice": "Etter %{discount_amount} i rabatter",
-        "gift_card_savings_notice": "Etter %{gift_card_amount} i gavekort",
-        "cost_table_title": "Kostnadssammendrag",
-        "cost_table_item_column_header": "Punkt",
-        "cost_table_value_column_header": "Verdi",
-        "description_label": "Beskrivelse",
-        "price_label": "Pris",
-        "price_per_item": {
-          "accessibility_label": "%{pris} per vare",
-          "label": "%{pris}/stk"
-        },
-        "quantity_label": "Mengde",
-        "product_change_label": "Endre",
-        "product_image_label": "Produktbilde",
-        "product_image_quantity_label": "Mengde",
-        "scroll_order_summary": "Bla for flere elementer",
-        "expand_order_summary_short": "Vise",
-        "collapse_order_summary_short": "Gjemme",
-        "expand_order_summary": "Vis bestillingssammendrag",
-        "collapse_order_summary": "Skjul bestillingssammendraget",
-        "original_price": "Opprinnelig pris",
-        "sale_price": "Salgspris",
-        "total_updated_label": "Oppdatert totalpris:",
-        "order_total_updated_label": "Oppdatert totalsum",
-        "total_already_paid_label": "Betalt",
-        "unit_price": {
-          "per_item": {
-            "single": "%{pris} per stk",
-            "one": "%{price} per %{count} vare",
-            "other": "%{price} per %{count} varer"
-          },
-          "per_unit": {
-            "single": "%{pris}/%{enhet}",
-            "plural": "%{pris}/%{antall}%{enhet}"
-          }
-        },
-        "gift_card_ending": "Gavekort som slutter på %{last_characters}",
-        "estimated_tax_label": "Beregnet skatt",
-        "multiple_shipping_lines_label": "Total frakt",
-        "recurring_subtotal_label": "Gjentakende delsum",
-        "recurring_total_label": "Gjentakende total",
-        "recurring_total_tooltip": "Inkluderer ikke frakt, skatt, avgifter eller andre gjeldende rabatter.",
-        "confirmation_number_label": "Bekreftelse #%{bekreftelsesnummer}",
-        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> kunne ikke brukes med dine eksisterende rabatter.",
-        "percent_off_shipping": "%{percent}% rabatt på frakt",
-        "amount_off_shipping": "%{amount} rabatt på frakt",
-        "deferred_payment_info": {
-          "title": "Betaling av %{amount_due} forfaller den %{due_at}",
-          "description_html": "Hvis du har spørsmål om bestillingen din, kan du %{contact_us}.",
-          "paid_today": "Totalt betalt i dag",
-          "due_on_fulfillment_title": "Betaling av %{amount_due} forfaller ved oppfyllelse",
-          "due_on_receipt_title": "Betaling av %{amount_due} forfaller ved mottak"
-        },
-        "deferred_balance_info": {
-          "title": "Restbeløpet på {{amount_due}} forfaller den {{due_at}}",
-          "due_on_fulfillment_title": "Restbeløpet på {{amount_due}} forfaller ved oppfylling"
-        },
-        "payment_terms_totals": {
-          "due_today": "Totalt forfaller i dag",
-          "due_later": "Totalt forfalt %{due_at}",
-          "due_on_fulfillment": "Totalt forfalt ved oppfyllelse",
-          "due_on_receipt": "Totalt forfaller ved mottak",
-          "due_later_checkout_to_draft": "Totalt forfaller senere",
-          "total_paid": "Totalt betalt"
-        },
-        "maximum_discount_code_limit_reached": "Du har nådd det maksimale antallet rabattkoder. Fjern en eksisterende kode for å bruke <strong style=\"text-transform:uppercase\">%{code}</strong> .",
-        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> fungerer ikke akkurat nå. Kontakt oss for hjelp.",
-        "due_on_fulfillment": "Forfaller ved oppfyllelse",
-        "gift_card_masked": "•••• %{siste_tegn}",
-        "subscriptions": "Abonnementer",
-        "duties_label": "Plikter",
-        "duties_and_taxes_label": "Avgifter og skatter",
-        "error_duties_tooltip": "Denne bestillingen sendes fra et annet land, så det kan påløpe toll og avgifter ved levering.",
-        "may_be_charged_on_delivery": "Kan bli belastet ved levering",
-        "total_updated_label_with_price": "Oppdatert totalpris: %{totalPrice}",
-        "updated_shipping_method": "Oppdatert fraktmetode: %{shipping_method}",
-        "recurring_payments": "Gjentakende betalinger",
-        "recurring_total_multiple_label": "Denne bestillingen har en gjentakende kostnad for flere varer.",
-        "deferred_total_due_date_label": "Totalt forfalt {{date}}",
-        "full_price": "Full pris: %{pris}",
-        "custom_discount": "Tilpasset rabatt",
-        "expand_component_information": {
-          "one": "Vis %{count} element",
-          "other": "Vis %{count} elementer"
-        },
-        "collapse_component_information": {
-          "one": "Skjul %{count} element",
-          "other": "Skjul %{count} elementer"
-        },
-        "component_quantity_title": "%{mengde} × %{produkttittel}",
-        "discount_discovery": {
-          "add_code": "Legg til rabatt",
-          "merchandise_quantity_label": {
-            "one": "%{count} element",
-            "other": "%{count} elementer"
-          }
-        }
+        "shipping_pending_message": "Ikke tilgjengelig ennå"
       },
       "payment_errors": {
         "development_store_with_order_limit": "For å legge inn en testbestilling må du bruke en testbetalingsgateway. Finn ut mer om %{development_store_order_testing_docs_link}.",
@@ -1221,7 +1103,25 @@
           "error_authorizing": "Feil ved godkjenning av betaling"
         },
         "account_connected": "Konto tilkoblet.",
-        "mor_disclaimer_html": "Ved å klikke nedenfor og fullføre bestillingen din, godtar du å kjøpe varen(e) din(e) fra Global-e som registrert selger\n for denne transaksjonen, i henhold til Global-es <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">vilkår og betingelser</a>\n og <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">personvernregler</a> . Global-e er en internasjonal\n leverandør av oppfyllingstjenester til %{shop_name}\n"
+        "mor_disclaimer_html": "Ved å klikke nedenfor og fullføre bestillingen din, godtar du å kjøpe varen(e) din(e) fra Global-e som registrert selger\n for denne transaksjonen, i henhold til Global-es <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">vilkår og betingelser</a>\n og <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">personvernregler</a> . Global-e er en internasjonal\n leverandør av oppfyllingstjenester til %{shop_name}\n",
+        "markets_pro_disclaimer_privacy_policy": "Personvernerklæring",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Vilkår og betingelser for salg av registrerte selskaper",
+        "markets_pro_disclaimer_privacy_policy_title": "Personvernerklæring for selgere av registrerte varer",
+        "purchase_order_number": {
+          "title": "PO-nummer",
+          "label": "PO-nummer (valgfritt)"
+        },
+        "alternative_payment_currency_total_notice": "Merk: Du vil bli belastet %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Merk: konvertert totalbeløp er %{amount_due}.",
+        "waiting_on_taxes_message": "Hvis skatten din ikke beregnes innen de neste sekundene, kan du oppdatere siden.",
+        "waiting_on_taxes_notice": "Beregning av skatt",
+        "payment_method": "Betalingsmåte",
+        "expired_payment_method": "Valgt betalingsmåte er utløpt",
+        "payment_method_update_failed": "Oppdatering av betalingsmåte mislyktes.",
+        "proposed_gateway_unavailable": "Den foreslåtte betalingsporten er ikke tilgjengelig",
+        "pay_in_installments_split_pay_short": "4 betalinger på %{amount}",
+        "gift_cards_unavailable": "Gavekortet ditt kan ikke lenger brukes på denne bestillingen og er fjernet",
+        "payment_flexibility_terms_id_mismatch": "Avvik i ID-vilkår for betalingsfleksibilitet"
       },
       "note": {
         "length_exceeds_maximum": "Reduser størrelsen på notatet til 5000 eller færre tegn."
@@ -1286,7 +1186,72 @@
         "sms_marketing_phone_invalid": "Skriv inn et gyldig telefonnummer",
         "address_suggestion_did_you_mean_html": "Mente du %{html}?",
         "split_cart_international_shipping_not_supported": "Alle varer må bruke samme leveringsmetode ved internasjonal frakt. Oppdater leveringsmetoden eller opprett flere bestillinger.",
-        "invalid_delivery_address_reference_handle": "Leveringsadressens referansehåndtak kunne ikke samsvare med noen tilgjengelige leveringsadresser."
+        "invalid_delivery_address_reference_handle": "Leveringsadressens referansehåndtak kunne ikke samsvare med noen tilgjengelige leveringsadresser.",
+        "handle_phone_invalid": "Skriv inn et gyldig telefonnummer",
+        "handle_email_invalid": "Skriv inn en gyldig e-postadresse",
+        "email_invalid": "Skriv inn en gyldig e-postadresse",
+        "email_or_phone_blank": "Skriv inn en e-postadresse eller et telefonnummer",
+        "email_or_phone_invalid": "Skriv inn en gyldig e-postadresse eller et mobilnummer",
+        "address_first_name_blank": "Skriv inn et fornavn",
+        "address_first_name_too_long": "Fornavnet er for langt (maksimalt 255 tegn)",
+        "address_first_name_contains_emojis": "Fornavn kan ikke inneholde emojier",
+        "address_first_name_contains_html_tags": "Fornavn kan ikke inneholde HTML-koder.",
+        "address_first_name_contains_url": "Fornavn kan ikke inneholde en URL",
+        "address_first_name_contains_mathematical_symbols": "Fornavn kan ikke inneholde matematiske symboler",
+        "address_last_name_blank": "Skriv inn et etternavn",
+        "address_last_name_too_long": "Etternavnet er for langt (maksimalt 255 tegn)",
+        "address_last_name_contains_emojis": "Etternavn kan ikke inneholde emojier",
+        "address_last_name_contains_html_tags": "Etternavn kan ikke inneholde HTML-koder.",
+        "address_last_name_contains_url": "Etternavn kan ikke inneholde en URL",
+        "address_last_name_contains_mathematical_symbols": "Etternavn kan ikke inneholde matematiske symboler",
+        "address_address1_blank": "Skriv inn en adresse",
+        "address_address1_too_long": "Den første adresselinjen er for lang (maksimum 255 tegn)",
+        "address_address1_contains_emojis": "Adresse1 kan ikke inneholde emojier",
+        "address_address1_contains_html_tags": "Adresse1 kan ikke inneholde HTML-koder.",
+        "address_address1_contains_mathematical_symbols": "Den første adresselinjen kan ikke inneholde matematiske symboler",
+        "address_address2_blank": "Gå inn i en leilighet, suite osv.",
+        "address_address2_too_long": "Den andre adresselinjen er for lang (maksimum 255 tegn)",
+        "address_address2_contains_emojis": "Adresse2 kan ikke inneholde emojier",
+        "address_address2_contains_html_tags": "Adresse2 kan ikke inneholde HTML-koder.",
+        "address_address2_contains_mathematical_symbols": "Den andre adresselinjen kan ikke inneholde matematiske symboler",
+        "address_city_blank": "Skriv inn en by",
+        "address_city_too_long": "Byen er for lang (maksimalt 255 tegn)",
+        "address_city_contains_emojis": "Byen kan ikke inneholde emojier",
+        "address_city_contains_html_tags": "Byen kan ikke inneholde HTML-koder.",
+        "address_city_contains_mathematical_symbols": "Byen kan ikke inneholde matematiske symboler",
+        "address_country_blank": "Velg et land/region",
+        "address_country_not_supported": "Vi sender ikke til dette landet eller denne regionen. Skriv inn en ny leveringsadresse og prøv på nytt.",
+        "address_province_blank": "Velg en stat/provins",
+        "address_province_invalid": "Velg en gyldig stat/provins",
+        "address_company_blank": "Skriv inn et firmanavn",
+        "address_company_too_long": "Firmanavnet er for langt (maksimalt 255 tegn)",
+        "address_company_contains_emojis": "Selskapet kan ikke inneholde emojier",
+        "address_company_contains_html_tags": "Selskapet kan ikke inneholde HTML-koder.",
+        "address_company_contains_mathematical_symbols": "Selskapet kan ikke inneholde matematiske symboler",
+        "address_phone_blank": "Skriv inn et gyldig telefonnummer",
+        "address_phone_contains_emojis": "Telefonnummeret kan ikke inneholde emojier",
+        "address_phone_invalid": "Skriv inn et gyldig telefonnummer",
+        "address_zip_blank": "Skriv inn et postnummer",
+        "address_zip_blocked_address": "Denne plasseringen støttes ikke",
+        "address_zip_too_long": "Postnummeret er for langt (maksimalt 255 tegn)",
+        "address_zip_not_supported": "Denne plasseringen støttes ikke",
+        "address_zip_invalid_for_country": "Skriv inn et gyldig postnummer for %{country}",
+        "address_zip_invalid_for_province": "Skriv inn et gyldig postnummer for %{province}",
+        "address_zip_invalid_for_country_and_province": "Skriv inn et gyldig postnummer for %{province}, %{country}",
+        "address_zip_contains_emojis": "Postnummer kan ikke inneholde emojier",
+        "address_zip_contains_mathematical_symbols": "Postnummer kan ikke inneholde matematiske symboler",
+        "address_generic_blank": "Obligatorisk felt",
+        "address_generic_invalid": "Ugyldig oppføring",
+        "address_generic_error": "Feltfeil",
+        "credit_card_name_blank": "Skriv inn navnet ditt nøyaktig slik det står på kortet ditt",
+        "credit_card_name_invalid": "Skriv inn navnet ditt nøyaktig slik det står på kortet ditt",
+        "credit_card_number_invalid": "Skriv inn et gyldig kortnummer",
+        "credit_card_expiry_invalid": "Skriv inn en gyldig utløpsdato",
+        "credit_card_month_invalid": "Angi en gyldig utløpsmåned",
+        "credit_card_year_invalid": "Skriv inn et gyldig utløpsår",
+        "credit_card_start_invalid": "Skriv inn en gyldig startdato for kortet",
+        "credit_card_start_month_invalid": "Oppgi en gyldig startmåned for kortet",
+        "credit_card_start_year_invalid": "Oppgi et gyldig startår for kortet"
       },
       "store_credit_errors": {
         "generic_error": "Det oppsto et problem med butikkreditten din. Prøv på nytt, eller last inn siden på nytt."
@@ -1395,6 +1360,33 @@
       },
       "notifications": {
         "title": "Varsler"
+      },
+      "billing": {
+        "billing_address_title": "Fakturer til",
+        "same_as_shipping": "Samme som leveringsadresse",
+        "add_address": "Bruk en annen adresse",
+        "edit": "Redigere",
+        "delete": "Slett",
+        "address_more": "Flere handlinger for denne adressen",
+        "address_edit": "Rediger adresse",
+        "address_delete": "Slett adresse",
+        "address_confirm": "Er du sikker på at du vil slette denne adressen fra kontoen din?",
+        "address_form": {
+          "add_address": "Legg til adresse",
+          "save": "Spare",
+          "cancel": "Kansellere"
+        }
+      },
+      "company_location": {
+        "location_title": "Sted"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Nåværende saldo %{beløp}",
+        "credit_card_expires_on_notice": "Utløper %{month}/%{year}",
+        "express_payment_gateway_label": "Uttrykke",
+        "manual_payment_gateway_label": "Håndbok",
+        "billing_address_title": "Faktureringsadresse",
+        "free_label": "Gratis"
       }
     },
     "notices": {
