@@ -48,11 +48,11 @@
       ],
       "name": "Video Banner YT",
       "settings": {
-        "video": "shopify://files/videos/Ljusnan-folding-saw-180mm.mp4",
+        "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "right",
