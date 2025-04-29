@@ -2160,14 +2160,147 @@
               "claim_shop_cash_description": "Du kan bruke Shop Cash på fremtidige kjøp i Shop-appen."
             }
           }
-        }
+        },
+        "attempted_delivery_label": "Forsøkt levering",
+        "attempted_delivery_description": "Leveringsforsøket var mislykket.",
+        "attempted_to_deliver_label": "Forsøkte å levere",
+        "confirmed_description": "Vi har mottatt bestillingen din.",
+        "on_its_way_description": "Denne forsendelsen er på vei.",
+        "out_for_delivery_description": "Denne forsendelsen er ute til levering.",
+        "preparing_for_shipping_label": "Forberedelse til frakt",
+        "preparing_for_shipping_description": "Disse varene klargjøres for forsendelse.",
+        "ready_for_pickup_label": "Klar for henting",
+        "ready_for_pickup_description": "Disse varene er klare for henting. Vennligst ta med ordrebekreftelsen når du henter bestillingen.",
+        "ready_for_pickup_location": "Bestillingen din er klar for henting på stedet",
+        "picked_up_label": "Hentet",
+        "picked_up_description": "Disse varene har blitt hentet.",
+        "canceled_description": "Bestillingen din ble kansellert den {{date}} .",
+        "canceled_label": "Avlyst",
+        "canceled_title": "Bestillingen din er kansellert",
+        "come_back": "Kom tilbake til denne siden for oppdateringer om forsendelsesstatusen din.",
+        "company_tracking_number": "Sporingsnummer {{company}} :",
+        "confirmed_label": "Bekreftet",
+        "confirmed_title": "Bestillingen din er bekreftet",
+        "confirmed_description_pickup": "Du vil motta en e-post når bestillingen din er klar til henting.",
+        "confirmed_description_digital": "Du vil motta en e-post når bestillingen din er klar.",
+        "confirmed_description_gift_card_text": "Du vil motta en tekstmelding når bestillingen din er klar.",
+        "delivered_description": "Denne forsendelsen er levert.",
+        "complete_label": "Fullstendig",
+        "delivered_label": "Levert"
       },
       "status_mark_as_delivered": "Merk som levert",
       "fulfillment_status_title": "Oppfyllelsesstatus: {{status}}",
       "buy_again": "Kjøp igjen",
       "buy_again_accessibility_label": "Kjøp igjen for bestilling {{orderId}}",
       "manage": "Administrer",
-      "manage_accessiblity_label": "Administrer bestilling {{orderId}}"
+      "manage_accessiblity_label": "Administrer bestilling {{orderId}}",
+      "order_list": {
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} produkter",
+        "carousel": {
+          "one_products_accessibility_label": "Ordren inkluderer antall {{lineItemName1}} {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Ordren inkluderer antall {{lineItemName1}} { {{lineItemQuantity1}} , antall {{lineItemName2}} {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Ordren inkluderer antall {{lineItemName1}} { {{lineItemQuantity1}} , antall {{ {{lineItemName2}} { {{lineItemQuantity2}} , antall {{lineItemName3}} {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Ordren inkluderer antall {{lineItemName1}} { {{lineItemQuantity1}} , antall {{lineItemQuantity2}} {{lineItemName2}} {{lineItemName3}} lineItemQuantity2}}, antall {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Ordren inkluderer {{lineItemName1}} antall {{lineItemQuantity1}} , {{lineItemName2}} antall {{lineItemQuantity2}} , {{lineItemName3}} antall {{lineItemQuantity3}} , {{lineItemName4}} antall {{lineItemQuantity4}} , {{lineItemName5}} antall {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Ordren inkluderer {{lineItemName1}} antall {{lineItemQuantity1}} , {{lineItemName2}} antall {{lineItemQuantity2}} , {{lineItemName3}} antall {{lineItemQuantity3}} , {{lineItemName4}} antall {{lineItemQuantity4}} , {{lineItemName5}} antall {{lineItemQuantity5}} , {{lineItemName6}} antall {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Bestillingen inkluderer {{lineItemName1}} antall {{lineItemQuantity1}} , {{lineItemName2}} antall {{lineItemQuantity2}} , {{lineItemName3}} antall {{lineItemQuantity3}} , {{lineItemName4}} antall {{lineItemQuantity4}} , {{lineItemName5}} antall {{lineItemQuantity5}} , {{lineItemName6}} antall {{lineItemQuantity6}} og mer.",
+          "view_order_details": "Se bestillingsdetaljer",
+          "previous": "Tidligere",
+          "next": "Neste"
+        },
+        "items": {
+          "one": "{{count}} vare",
+          "other": "{{count}} elementer"
+        },
+        "list_view": "Vis listevisning",
+        "no_filtered_results_description": "Fjern eller juster filtre for å se bestillingene dine",
+        "no_filtered_results_title": "Ingen filtrerte resultater",
+        "order_link": "Vis bestilling {{name}}",
+        "order_number": "Bestilling {{name}}",
+        "orders_title": "Bekreftet",
+        "pagination": {
+          "nav_accessibility_label": "Navigasjonsknapper for bestillinger",
+          "next": "Neste",
+          "next_accessibility_label": "Neste bestillinger",
+          "previous": "Forrige",
+          "previous_accessibility_label": "Tidligere bestillinger",
+          "load_more": "Last inn mer",
+          "load_more_accessibility_label": "Last inn flere bestillinger"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Se bestillingen for detaljer",
+            "estimated_delivery": "Forventet {{date}}",
+            "last_updated": "Sist oppdatert {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Forventet levering {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Betaling forfalt",
+            "due": "Forfallsdato {{date}}",
+            "due_today": "Betaling forfaller i dag",
+            "due_without_date": "Forfaller",
+            "due_on_fulfillment": "Betaling forfaller ved oppfyllelse",
+            "pay_to_confirm": "Betal for å bekrefte",
+            "payment_not_due": "Betaling ikke forfalt ennå"
+          },
+          "table_view": {
+            "overdue": "Forsinket",
+            "due": "Forfallsdato {{date}}",
+            "due_today": "Forfaller i dag",
+            "paid": "Betalt",
+            "due_without_date": "Forfaller",
+            "due_on_fulfillment": "Forfaller ved oppfyllelse",
+            "pay_to_confirm": "Betal for å bekrefte",
+            "payment_not_due": "Ikke forfalt ennå"
+          }
+        },
+        "sort_by": "Sorter etter: {{option}}",
+        "sort_hide_options_accessibility_label": "Skjul sorteringsalternativer for bekreftede bestillinger.",
+        "sort_show_options_accessibility_label": "Vis sorteringsalternativer for bekreftede bestillinger.",
+        "sort_currently_sorted_by_accessibility_label": "For øyeblikket sortert etter: {{option}}",
+        "sort_title": "Sortere",
+        "sort": {
+          "date": {
+            "newest": "Nyeste til eldste",
+            "oldest": "Eldste til nyeste"
+          },
+          "location": {
+            "ascending": "Sted (AZ)",
+            "descending": "Sted (ZA)"
+          },
+          "order_number": {
+            "ascending": "Ordrenummer (lavt til høyt)",
+            "descending": "Ordrenummer (høy til lav)"
+          },
+          "order_total": {
+            "ascending": "Totalbeløp (lav til høy)",
+            "descending": "Totalbeløp (høy til lav)"
+          }
+        },
+        "filter": {
+          "clear_section": "Tøm seksjon",
+          "clear_all": "Fjern alle",
+          "apply": "Søke",
+          "date": {
+            "start_date": "Startdato",
+            "end_date": "Sluttdato",
+            "title": "Bestillingsdato",
+            "today": "I dag",
+            "last_7_days": "Siste 7 dager",
+            "last_30_days": "Siste 30 dager",
+            "last_90_days": "Siste 90 dager",
+            "last_365_days": "Siste 12 måneder",
+            "custom": "Skikk"
+          }
+        },
+        "table_view": "Vis tabellvisning",
+        "show_order_actions_accessibility_label": "Vis bestillingshandlinger for bestilling {{name}}"
+      }
     },
     "order_details": {
       "shipment_timeline": {
