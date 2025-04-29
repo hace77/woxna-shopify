@@ -1392,7 +1392,10 @@
     "notices": {
       "order": {
         "transaction_status": {
-          "error": "Feil"
+          "error": "Feil",
+          "success": "Suksess",
+          "pending": "I påvente av",
+          "failure": "Feil"
         },
         "cancel_reason": {
           "declined": "Betaling avvist",
@@ -1402,7 +1405,26 @@
           "staff": "Personalfeil",
           "other": "Annen"
         },
-        "cash_on_delivery": "Oppkrav ved levering (COD)"
+        "cash_on_delivery": "Oppkrav ved levering (COD)",
+        "not_available": "Denne bestillingen er ikke tilgjengelig",
+        "financial_status": {
+          "authorized": "Autorisert",
+          "pending": "I påvente av",
+          "paid": "Betalt",
+          "unpaid": "Ubetalt",
+          "voided": "Ugyldiggjort",
+          "partially_paid": "Delvis betalt",
+          "partially_refunded": "Delvis refundert",
+          "refunded": "Refundert",
+          "expired": "Utløpt"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Oppfylt",
+          "complete": "Fullstendig",
+          "partial": "Delvis",
+          "unfulfilled": "Uoppfylt",
+          "restocked": "Påfyll"
+        }
       },
       "cart": {
         "only_n_items_available": "Du kan bare legge %{count} %{name} til i handlekurven.",
@@ -1453,6 +1475,32 @@
         "add_products": "Begrens utvalget til produkter som samsvarer med taggen %{tag}",
         "remove_articles": "Utvid søket til artikler som ikke er merket med %{tag}",
         "remove_products": "Fjern taggen %{tag}"
+      },
+      "customer": {
+        "password_reset_error": "Feil ved tilbakestilling av passord",
+        "subscribe_error": "Abonnementsfeil",
+        "unsubscribe_error": "Feil ved avmelding",
+        "no_account_found": "Ingen konto funnet med den e-postadressen.",
+        "invalid_credentials": "Feil e-post eller passord.",
+        "denylisted_reset_password": "Kontoen din var ikke tilgjengelig fordi det nåværende passordet ikke er sikkert. Du vil motta en e-post for å oppdatere passordet ditt.",
+        "signup_disabled": "Oppretting av kundekonto er deaktivert."
+      },
+      "address": {
+        "updated": "Adressen er oppdatert.",
+        "error_updating": "Feil ved oppdatering av adresse",
+        "created": "Adressen er opprettet",
+        "error_creating": "Feil ved oppretting av adresse.",
+        "deleted": "Adressen er slettet",
+        "error_deleting": "Feil ved sletting av adresse."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Lagt til %{delta}",
+          "increment_item": "Lagt til %{delta}",
+          "decrement_item": "Fjernet %{delta} av %{total}",
+          "decrement_fulfilled_line_item": "Returnerte %{delta} av %{total}",
+          "decrement_return_line_item": "Fjernet %{delta} fra returverdien"
+        }
       }
     },
     "email_marketing": {
@@ -1591,7 +1639,89 @@
     },
     "errors": {
       "blank": "kan ikke være tomt",
-      "blocked_address": "Denne plasseringen støttes ikke"
+      "blocked_address": "Denne plasseringen støttes ikke",
+      "credit_card_session_expired": "Kredittkortautorisasjonen er utløpt. Vennligst skriv inn betalingsinformasjonen din på nytt. Kortet ditt er ikke belastet.",
+      "empty": "kan ikke være tom",
+      "invalid_email": "må være en gyldig e-postadresse",
+      "discount_disabled": "Denne rabatten er deaktivert",
+      "discount_expired": "Denne rabatten er ikke lenger gyldig",
+      "discount_limit_reached": "Denne rabatten har nådd bruksgrensen",
+      "discount_not_found": "Finner ikke en gyldig rabatt som samsvarer med den angitte koden",
+      "customer_already_used_once_per_customer_discount_notice": "Denne rabatten har nådd bruksgrensen",
+      "gift_card_already_applied": "Koden er allerede brukt i kassen din",
+      "gift_card_code_invalid": "Koden er ugyldig",
+      "gift_card_currency_mismatch": "Gavekortet ditt er i %{gift_card_currency}. Kontakt oss for å få det utstedt på nytt i %{checkout_currency}.",
+      "gift_card_depleted": "Det er ingen penger igjen på dette gavekortet",
+      "gift_card_disabled": "Gavekortet er deaktivert",
+      "gift_card_expired": "Gavekortet er utløpt",
+      "invalid": "er ugyldig",
+      "bad_domain": "inneholder et ugyldig domenenavn",
+      "taken": "har allerede blitt tatt",
+      "contains_html_tags": "kan ikke inneholde HTML-koder",
+      "too_short": "er for kort (minimum er %{count} tegn)",
+      "too_long": "er for langt (maksimum er %{count} tegn)",
+      "password_mismatch": "må samsvare med det oppgitte passordet",
+      "contains_spaces": "starter eller slutter med mellomrom.",
+      "email_domain_invalid": "leverandøren støttes ikke",
+      "invalid_for_country": "er ikke gyldig for %{country}",
+      "invalid_for_country_and_province": "er ikke gyldig for %{province} og %{country}",
+      "invalid_province_in_country": "er ikke en gyldig provins i %{country}",
+      "invalid_state_in_country": "er ikke en gyldig stat i %{country}",
+      "invalid_region_in_country": "er ikke en gyldig region i %{country}",
+      "less_than_or_equal_to": "må være mindre enn eller lik %{count}",
+      "not_supported": "støttes ikke",
+      "full_name_required": "Skriv inn et fornavn og et etternavn",
+      "invalid_for_card_type": "er ikke gyldig",
+      "invalid_type": "Beklager, vi aksepterer ikke kort av denne typen",
+      "invalid_format": "formatet er ikke gyldig",
+      "expired": "har utløpt",
+      "invalid_start_date_or_issue_number_for_debit": "en gyldig startdato eller et utstedelsesnummer er påkrevd",
+      "invalid_expiry_year": "er ikke et gyldig utløpsår",
+      "reset_password_html": "Denne e-postadressen er allerede knyttet til en konto. Hvis denne kontoen er din, kan du <a href=\"/account/login#recover\">tilbakestille passordet ditt.</a>",
+      "verify_email": "Vi har sendt en e-post til %{customer_email}. Klikk på lenken som er inkludert for å bekrefte e-postadressen din.",
+      "product_not_available": "Produktet er ikke publisert for denne kunden.",
+      "shop_404": {
+        "title": "Lag et nettsted for e-handel og selg på nett! E-handelsprogramvare fra Shopify",
+        "heros": {
+          "store_unavailable": "Beklager, denne butikken er ikke tilgjengelig for øyeblikket.",
+          "store_not_exist": "Denne butikken finnes ikke.",
+          "no_storefront": "Denne butikken har ikke en nettside ennå."
+        },
+        "links": {
+          "explore_other_stores": "Utforsk andre butikker",
+          "start_free_trial": "Start en gratis prøveperiode"
+        },
+        "owner_ctas": {
+          "header": "Er du butikkeieren?",
+          "fix_domain": "Fullfør oppsettet av den nye nettadressen din, gå til %{domain_settings_link}. Klikk på «Koble til domene» og skriv inn: %{domain}.<br> Hvis du har problemer med å komme inn i butikken din, kan du prøve %{forgot_your_store_link}-siden.",
+          "fix_domain_link_text": "domeneinnstillingene dine",
+          "forgot_your_store_link_text": "glemte butikken din",
+          "add_storefront": "Du kan sette opp nettstedet ditt ved å legge til nettbutikkkanalen i %{admin_link}. Hvis du har problemer med å komme inn i butikken din, kan du prøve %{forgot_your_store_link}-siden.",
+          "admin_link_text": "administrator"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Selg personlig",
+            "caption": "Få funksjonene du trenger for å drive butikken din, enten du er nystartet eller skalerer opp.",
+            "link_text": "Start gratis prøveperiode"
+          },
+          "open_a_store": {
+            "header": "Åpne en ny Shopify-butikk",
+            "caption": "Start en 3-dagers gratis prøveperiode, og fortsett deretter for 1 dollar per måned de neste 3 månedene.",
+            "link_text": "Registrer deg nå"
+          },
+          "editions": {
+            "header": "Sjekk ut Shopify-utgavene",
+            "caption": "Med over 100 produktoppdateringer kan du bli mer produktiv, kreativ og sterk innen handel enn du noen gang hadde forestilt deg.",
+            "link_text": "Utforsk de nyeste utgavene"
+          },
+          "store_owner": {
+            "header": "Er du butikkeieren?",
+            "caption": "Har du problemer med å komme inn i butikken din? Prøv %{forgot_your_store_link}-funksjonen. Hvis du vil aktivere butikken din på nytt, kan du kontakte %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify-støtte"
+          }
+        }
+      }
     }
   },
   "products": {
