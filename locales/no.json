@@ -130,13 +130,15 @@
       "stock": {
         "unshippable_product": {
           "header": {
-            "other": "Ingen levering tilgjengelig for %{count} varer"
+            "other": "Ingen levering tilgjengelig for %{count} varer",
+            "one": "Ingen levering tilgjengelig for %{count} vare"
           },
           "message": {
             "one": "Denne varen vil bli fjernet fra handlekurven din fordi det ikke finnes noen leveringsmetoder tilgjengelig for adressen din.",
             "other": "Disse varene vil bli fjernet fra handlekurven din fordi det ikke finnes noen leveringsmetoder tilgjengelig for adressen din."
           },
-          "status_column_header": "Ingen levering"
+          "status_column_header": "Ingen levering",
+          "title": "Ingen levering tilgjengelig"
         },
         "price_update": {
           "title": "Prisoppdatering",
@@ -149,6 +151,55 @@
         "out_of_stock": {
           "description": "Disse varene er ikke lenger tilgjengelige og har blitt fjernet fra handlekurven din.",
           "items_unavailable": "Noen varer er ikke lenger tilgjengelige og har blitt fjernet fra handlekurven din."
+        },
+        "page_title": "Lagerproblemer",
+        "title": "Utsolgt",
+        "items_unavailable_notice": "Noen varer er ikke lenger tilgjengelige.",
+        "product_column_header": "Produkter",
+        "quantity_column_header": "Mengde",
+        "price_column_header": "Pris",
+        "removed_from_cart_notice": "Fjernet fra handlekurven",
+        "sold_out_label": "Utsolgt",
+        "reduced_label": "Redusert",
+        "reduced_with_quantity_label": "Kun %{quantity_available} igjen",
+        "remove_from_cart_button_label": "Fjern fra handlekurven",
+        "continue_shopping_button_label": "Fortsette",
+        "go_back_to_cart_button_label": "Gå tilbake til handlekurven min",
+        "remove": "Fjerne",
+        "return_to_store_label": "Gå tilbake til butikken",
+        "continue_cta_label": "Fortsett betalingen",
+        "item_label": {
+          "one": "{{count}} vare",
+          "other": "{{count}} elementer"
+        },
+        "empty_cart_label": "Handlekurven din er tom",
+        "quantity_update": {
+          "page_title": "Mengdeoppdatering",
+          "title": "Mengdeoppdatering",
+          "description": "Tilgjengelige mengder for disse varene har endret seg og er oppdatert i handlekurven din."
+        },
+        "unpurchasable_product": {
+          "title": "Produkt som ikke kan kjøpes",
+          "header": "Noen varer ble fjernet fra handlekurven din",
+          "message": "Disse varene er ikke tilgjengelige for B2B-bestillinger.",
+          "status_column_header": "Ikke tilgjengelig"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Produkt som ikke kan kjøpes",
+          "header": "Noen varer ble fjernet fra handlekurven din",
+          "message": "Disse varene er ikke tilgjengelige.",
+          "status_column_header": "Ikke tilgjengelig"
+        },
+        "unfulfillable_product": {
+          "title": "Levering ikke tilgjengelig",
+          "message": {
+            "one": "%{delivery_method} er ikke lenger tilgjengelig for denne varen.",
+            "other": "%{delivery_method} er ikke lenger tilgjengelig for disse varene."
+          },
+          "default_message": {
+            "one": "Den valgte leveringsmetoden er ikke lenger tilgjengelig for denne varen.",
+            "other": "Den valgte leveringsmetoden er ikke lenger tilgjengelig for disse varene."
+          }
         }
       },
       "contextual_availability": {
@@ -1537,6 +1588,75 @@
         "duties_and_taxes_title": "Avgifter og skatter",
         "shipping_information_required_notice": "Fraktinformasjon er påkrevd. {{link}}",
         "shipping_information_redirect_link": "Skriv inn informasjonen din her"
+      },
+      "contact": {
+        "emirate_label": "Emiratet",
+        "emirate_placeholder": "Emiratet",
+        "state_and_territory_label": "Stat/territorium",
+        "state_and_territory_placeholder": "Stat/territorium",
+        "phone_label": "Telefon",
+        "optional_phone_label": "Telefon (valgfritt)",
+        "phone_placeholder": "Telefon",
+        "phone_tooltip": "Dersom vi trenger å kontakte deg angående bestillingen din",
+        "zip_code_label": "Postnummer",
+        "optional_zip_code_label": "Postnummer (valgfritt)",
+        "zip_code_placeholder": "Postnummer",
+        "postal_code_label": "Postnummer",
+        "optional_postal_code_label": "Postnummer (valgfritt)",
+        "postal_code_placeholder": "Postnummer",
+        "postcode_label": "Postnummer",
+        "optional_postcode_label": "Postnummer (valgfritt)",
+        "postcode_placeholder": "Postnummer",
+        "pincode_label": "PIN-kode",
+        "optional_pincode_label": "PIN-kode (valgfritt)",
+        "pincode_placeholder": "PIN-kode",
+        "civic_number_warning": "Legg til et husnummer hvis du har et",
+        "optional_last_name_label": "Etternavn (valgfritt)",
+        "different_shipping_address_label": "Send til en annen adresse",
+        "different_shipping_address_text": "Bruk en engangsadresse for denne bestillingen",
+        "change_company_location_link_label": "Endre bedriftens lokasjon",
+        "change_location_link_label": "Endre plassering",
+        "ship_to_company": "Send til {{companyName}}"
+      },
+      "delivery_options": {
+        "free_total_label": "Gratis",
+        "ship": "Skip",
+        "ship_to_address": "Send til adresse",
+        "shipping_address": "Leveringsadresse",
+        "pick_up": "Hent",
+        "pick_up_from_store": "Henting i butikk",
+        "pick_up_locations": "Butikklokasjoner",
+        "pick_up_in_one_hour": "Vanligvis klar innen 1 time",
+        "pick_up_in_two_hours": "Vanligvis klar innen 2 timer",
+        "pick_up_in_four_hours": "Vanligvis klar innen 4 timer",
+        "pick_up_in_twenty_four_hours": "Vanligvis klar innen 24 timer",
+        "pick_up_in_two_to_four_days": "Vanligvis klar innen 2–4 dager",
+        "pick_up_in_five_or_more_days": "Vanligvis klar innen 5+ dager",
+        "pick_up_in_zero_to_two_hours": "Klar for henting om 2 timer",
+        "pick_up_in_two_to_four_hours": "Klar for henting om 4 timer",
+        "pick_up_immediately": "Klar for henting nå",
+        "pick_up_next_day": "Klar for henting neste dag",
+        "pickup_point_method_definition": "Send til hentested",
+        "retail_method_definition": "Detaljhandelsfrakt",
+        "none_method_definition": "Ingen frakt",
+        "subscription_pickup_information": "Denne leveringsmetoden gjelder for alle varer i denne bestillingen og for alle fremtidige bestillinger for dette abonnementet."
+      },
+      "customer_account": {
+        "not_user_label": "Ikke %{first_name}?",
+        "have_an_account_label": "Har du en konto?",
+        "sign_in_link_label": "Logg inn",
+        "sign_out_link_label": "Logg ut",
+        "save_my_information_label": "Lagre denne informasjonen til neste gang",
+        "invalid_address": "Valgt adresse er ugyldig. %{update_address_link} eller velg en annen adresse.",
+        "incomplete_address": "Valgt adresse er ufullstendig. %{update_address_link} eller velg en annen adresse.",
+        "rollup_label": "Konto",
+        "invalid_shipping_method_summary": "Velg en gyldig leveringsadresse for å se tilgjengelige leveringsmetoder",
+        "saved_address_option_description": {
+          "one": "Du har {{count}} lagret adresse.",
+          "other": "Du har {{count}} lagrede adresser."
+        },
+        "saved_address_option_link": "Bruk en lagret adresse",
+        "saved_address_modal_title": "Bruk min lagrede adresse"
       }
     },
     "notices": {
