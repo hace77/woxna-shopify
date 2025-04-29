@@ -1392,7 +1392,141 @@
         "hide_events_accessibility_label": "Skjul detaljer om bestillingsforsendelse"
       },
       "addresses_section_title": "Fakturering og frakt",
-      "order_details": "Ordredetaljer"
+      "order_details": "Ordredetaljer",
+      "order_details_skeleton_accessibility_label": "Logg inn for å se alle bestillingsdetaljer.",
+      "billing_address": "Faktureringsadresse",
+      "card_ending_with": "slutter med {{lastDigits}}",
+      "contact": "Kontakt",
+      "contact_information": "Kontaktinformasjon",
+      "company": "Bedrift",
+      "fully_refunded_label": "REFUNDERT",
+      "group_title_label": "Del av: {{groupTitle}}",
+      "grouped_view_components": {
+        "expand_line_items": "Vis {{count}} elementer",
+        "collapse_line_items": "Skjul {{count}} elementer",
+        "line_item_summary_list_accessibility_label": "Elementer i {{productTitle}} -pakken"
+      },
+      "discount": "Rabatt",
+      "hide_items": "Skjul elementer",
+      "loading": "Laster inn bestillingsdetaljer",
+      "loading_finished_accessibility_message": "Ordredetaljer er lastet inn",
+      "location": "Sted",
+      "image_gallery": {
+        "next": "Vis neste elementer",
+        "previous": "Vis tidligere elementer",
+        "load_more_items": {
+          "one": "Last inn {{count}} flere elementer",
+          "other": "Last inn {{count}} flere elementer"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Vis bestillingssammendrag",
+        "closed": "Skjul bestillingssammendraget"
+      },
+      "no_data": "Ingen",
+      "no_data_provided_accessibility_label": "{{fieldName}} er tom",
+      "not_applicable": "Ikke aktuelt",
+      "paid_amount": "Betalt",
+      "partially_refunded_label": "DELVIS REFUNDERT",
+      "payment": {
+        "status_in_review": "Betaling forfaller etter gjennomgang",
+        "status_unpaid": "{{date}}",
+        "title": "Betaling",
+        "payment_type": {
+          "gift_card": "Gavekort",
+          "store_credit": "Butikkkreditt",
+          "money_order": "Postanvisning",
+          "cash_on_delivery": "Oppkrav ved levering (COD)",
+          "bank_deposit": "Bankinnskudd",
+          "manual": "Håndbok"
+        },
+        "card_payment_details": "slutter med {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "slutter med {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Butikkkreditt – {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Betalt med Shop Pay-avdrag",
+          "view_schedule": "Se timeplanen"
+        },
+        "manual_payment_methods": {
+          "money_order": "Postanvisning - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Oppkrav (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Bankinnskudd – {{formattedTransactionAmount}}",
+          "manual": "Manuell – {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Vis alle",
+          "show_less": "Vis mindre",
+          "details": "Detaljer",
+          "payment_details": "Betalingsdetaljer"
+        },
+        "emv_details": {
+          "auth": "AUT:",
+          "aid": "BISTAND:",
+          "source": "KILDE:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Betalt med Shop Pay-avdrag",
+        "description": "Hold oversikt over betalingsplanen din med påminnelser i Shop-appen.",
+        "payment_reminders_button": "Få betalingspåminnelser",
+        "desktop_qr_code_content": {
+          "title": "Skann etter påminnelser",
+          "description": "Få påminnelser om avdragene dine med Shop."
+        }
+      },
+      "refunded_amount": "Refundert",
+      "request_return_failed": "Det oppsto et problem under behandling av forespørselen din. Prøv på nytt.",
+      "remaining_amount": "Gjenværende",
+      "marketing_section_title": "Nyheter og tilbud",
+      "marketing_description": "Du vil motta markedsførings-e-poster. Du kan når som helst melde deg av.",
+      "marketing_checkbox_label": "Send meg en e-post med nyheter og tilbud",
+      "marketing_checkmark_label": "Du abonnerer på å motta nyheter og tilbud på e-post",
+      "returns": {
+        "expand_events_label": "Vis detaljer",
+        "hide_events_label": "Skjul detaljer",
+        "ineligible_return_message": "Ingen varer i denne bestillingen kan returneres.",
+        "ineligible_return_message_when_returned": "Ingen ytterligere varer i denne bestillingen kan returneres.",
+        "print_shipping_label": "Skriv ut fraktetikett",
+        "return_and_refund_modal_header": "Refusjonspolicy",
+        "tracking_number": "Sporingsnummer:"
+      },
+      "shipping": {
+        "address": "Leveringsadresse",
+        "address_map_marker": "Leveringsadresse",
+        "method": "Fraktmetode",
+        "summary": "Frakt",
+        "free": "Gratis",
+        "free_shipping_discount": "Gratis frakt",
+        "one_time": "Engangsfrakt",
+        "subscription": "Abonnementsfrakt"
+      },
+      "pickup": {
+        "pickup": "Henting",
+        "pickup_location": "Hentested",
+        "pickup_point": "Hentepunkt"
+      },
+      "show_items": "Vis elementer",
+      "show_order_summary": "Vis bestillingssammendrag",
+      "hide_order_summary": "Skjul bestillingssammendraget",
+      "subtitle": "Bekreftet {{date}}",
+      "subtotal": "Delsum",
+      "summary_list_title_accessibility_label": "Bestill varer",
+      "summary_title": "Ordresammendrag",
+      "summary_totals_title_accessibility_label": "Ordretotaler",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Last ned Butikk for å spore pakken",
+        "track_order_with_shop": "Spor bestilling med Shop",
+        "title_header": "Skann med telefonen din",
+        "real_time_delivery_updates": "Butikken vil sende deg leveringsoppdateringer i sanntid når bestillingen din er sendt."
+      },
+      "edit_summary": {
+        "added": "Lagt til",
+        "added_with_quantity": "Lagt {{quantity}}",
+        "removed": "Fjernet",
+        "removed_with_quantity": "Fjernet {{quantity}}",
+        "updated_at": "Bestillingen din ble oppdatert {{date}}",
+        "returned": "Returnert"
+      }
     }
   }
 }
