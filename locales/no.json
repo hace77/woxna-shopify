@@ -1935,6 +1935,141 @@
         "pagination": {
           "load_more": "Last inn mer",
           "load_more_accessibility_label": "Last inn flere steder"
+        },
+        "payment_details_title": "Betalingsdetaljer",
+        "payment_terms": "Betalingsbetingelser",
+        "permissions_label": "Dine tillatelser",
+        "permissions_title": "Tillatelser",
+        "section_title": "Sted",
+        "shipping_address_required": "Legg til en leveringsadresse på denne lokasjonen for å begynne å legge inn bestillinger.",
+        "staff_and_permissions_title": "Ansatte og tillatelser",
+        "tax_details_title": "Skattedetaljer",
+        "tax_id": "Skatte-ID",
+        "tax_exemptions": "Skattefritak",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} flere",
+        "multiple_tax_exemptions_and": "og",
+        "tax_exemptions_modal_close": "Lukke",
+        "taxes_none": "Ingen",
+        "tax_exemption_not_applicable": "Ikke aktuelt",
+        "tax_exemptions_modal_button_accessibility_label": "Se alle skattefritak"
+      },
+      "location_selection": {
+        "continue_to_store": "Fortsett å lagre",
+        "description": "Hvis du allerede har varer i handlekurven, kan endring av lokasjon påvirke priser og antall i handlekurven.",
+        "list_accessibility_label": "Stedsliste",
+        "list_item_without_address_accessibility_label": "{{name}} : Ingen adresse",
+        "list_loading_accessibility_message": "Laster inn liste over steder",
+        "list_loading_address_accessibility_message": "Laster inn adresse for {{locationName}}",
+        "list_loading_finished_accessibility_message": "Listen over steder er lastet inn",
+        "loading_store_accessibility_message": "Skal til butikken",
+        "no_location_title": "Kun personlige bestillinger",
+        "no_location_description": "Du har ikke lenger tillatelse til å legge inn bestillinger for {{company}} . Du kan fortsatt legge inn personlige bestillinger.",
+        "no_locations_found": "Ingen steder funnet",
+        "search": "Søk etter et sted",
+        "search_location_title": "Velg et sted",
+        "selection_cancel_button": "Kansellere",
+        "selection_confirmation_button": "Velg sted",
+        "selection_continue_button": "Fortsette",
+        "title": "Hvilket sted kjøper du til?",
+        "clear_search": "Tøm søk",
+        "try_new_search": "Prøv et nytt søk"
+      },
+      "addresses": {
+        "add_billing_address_button": "Legg til faktureringsadresse",
+        "add_billing_address_section_accessibility_label": "Legg til faktureringsadresse",
+        "add_shipping_address_button": "Legg til leveringsadresse",
+        "add_shipping_address_section_accessibility_label": "Legg til leveringsadresse",
+        "billing_address_card_title": "Faktureringsadresse",
+        "cancel_adding_billing_address_accessibility_label": "Avbryt å legge til faktureringsadresse",
+        "cancel_adding_shipping_address_accessibility_label": "Avbryt å legge til leveringsadresse",
+        "save_new_billing_address_accessibility_label": "Lagre faktureringsadresse",
+        "save_new_shipping_address_accessibility_label": "Lagre leveringsadresse",
+        "shipping_address_card_title": "Leveringsadresse"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Skjul alle",
+          "show_all": "Vis alle",
+          "hide_all_accessibility_label": "Skjul alle bestillinger som er under vurdering",
+          "show_all_accessibility_label": "Vis alle bestillinger under gjennomgang",
+          "show_all_orders_in_review": "Vis alle bestillinger under gjennomgang",
+          "show_less_orders_in_review": "Vis færre bestillinger under vurdering",
+          "title": "I påvente av",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Du har ingen ventende bestillinger",
+            "pending_orders": {
+              "one": "Du har {{count}} ventende bestilling",
+              "other": "Du har {{count}} ventende bestillinger"
+            },
+            "more_than_pagination_length": "Du har mer enn {{count}} ventende bestillinger"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "Navigasjonsknapper for bestillinger under vurdering"
+          }
+        },
+        "order_list_column_headers_location": "Sted",
+        "order_list_column_headers_contact": "Kontakt",
+        "removed_company_contact_tooltip": "Fjernet fra selskapet"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Bekreftet {{date}} fra bestilling {{draftOrderName}}",
+        "loading": "Laster inn bestillingsdetaljer",
+        "loading_finished_accessibility_message": "Ordredetaljer er lastet inn",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Betalingen din er {{count}} dager for sent",
+              "other": "Betalingen din er {{count}} dager for sent"
+            },
+            "banner_due": {
+              "one": "Betalingen din forfaller om {{count}} dag",
+              "other": "Betalingen din forfaller om {{count}} dager"
+            },
+            "banner_due_today": "Betalingen din forfaller i dag",
+            "title": "Forfaller",
+            "title_with_date": "Forfallsdato {{date}}",
+            "title_due_on_receipt": "Betalingen er ikke forfalt ennå",
+            "title_due_on_fulfillment": "Betaling forfaller ved oppfyllelse",
+            "description_overdue": "Betalingen din er forsinket.",
+            "description_partially_paid": "Denne bestillingen ble delvis betalt. Du har en gjenværende saldo.",
+            "description_authorized": "Betalingsmåten din blir belastet på forfallsdatoen, eller du kan betale nå.",
+            "description_waiting_for_manual_payment": "Denne bestillingen har en ventende betaling. Saldoen oppdateres når betalingen er mottatt.",
+            "description_due_on_receipt": "Du vil motta en faktura når betalingen forfaller.",
+            "description_due_on_receipt_partially_paid": "Denne bestillingen ble delvis betalt. Du har en gjenværende saldo. Du vil motta en faktura når betalingen forfaller.",
+            "description_due_on_fulfillment": "Betaling forfaller når alle varene i denne bestillingen er levert.",
+            "description_due_on_fulfillment_partially_paid": "Denne bestillingen ble delvis betalt. Du har en gjenværende saldo. Betaling forfaller når alle varene i denne bestillingen er levert."
+          },
+          "draft": {
+            "description": "Betalingsdetaljer bestemmes når bestillingen er bekreftet.",
+            "title": "Betaling ikke forfalt ennå",
+            "in_review": {
+              "description": "Betalingsdetaljer bestemmes når bestillingen er bekreftet.",
+              "title": "Betaling ikke forfalt ennå"
+            },
+            "submitted": {
+              "description": "Send inn betaling for å bekrefte denne bestillingen.",
+              "title": "Betal for å bekrefte",
+              "deposit": {
+                "title": "Betalingen forfaller",
+                "due_later": "Restbeløpet er på {{translatedName}} -vilkår og forfaller {{dueDate}} .",
+                "due_on_fulfillment": "Restbeløpet forfaller når alle elementene i denne bestillingen er oppfylt.",
+                "due_on_receipt": "Du vil motta en faktura for det resterende beløpet.",
+                "due_on_date": "Restbeløpet forfaller {{dueDate}} ."
+              }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} forfaller når bestillingen din er bekreftet. Restbeløpet vil være på {{translatedName}} vilkår.",
+              "due_on_fulfillment": "{{depositAmount}} forfaller når bestillingen din er bekreftet. Restbeløpet forfaller når bestillingen er fullført.",
+              "due_on_receipt": "{{depositAmount}} forfaller når bestillingen din er bekreftet. Restbeløpet forfaller senere.",
+              "due_on_date": "{{depositAmount}} forfaller når bestillingen din er bekreftet. Restbeløpet forfaller den {{dueDate}} ."
+            }
+          },
+          "paid": {
+            "title": "Betalt",
+            "title_with_date": "Betalt {{date}}",
+            "description": "Bestillingen din er fullt betalt."
+          }
         }
       }
     }
