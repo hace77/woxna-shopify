@@ -1,1 +1,26 @@
-/* Video banner styles will be added here when needed */ 
+/* Video banner styles will be added here when needed */
+
+.banner__media video {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.banner__media video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.banner__media video[poster] {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} 
