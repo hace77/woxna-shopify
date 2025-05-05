@@ -119,6 +119,26 @@
     "collage_text_link_9Nc9UV": {
       "type": "collage-text-link",
       "blocks": {
+        "image_tpzF9D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
+            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "show_text_overlay": true,
+            "heading": "Hälsing 180",
+            "vertical_position": "top",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "h0",
+            "mobile_heading_size": "medium",
+            "description": "Grit in Oak and Carbon Steel.",
+            "description_style": "body",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "button_style_secondary": false
+          }
+        },
         "image_jNgX44": {
           "type": "image",
           "settings": {
@@ -126,11 +146,11 @@
             "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
             "heading": "Ljusnan 250",
-            "vertical_position": "top",
+            "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
+            "text_alignment": "right",
             "mobile_text_alignment": "center",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "mobile_heading_size": "h1",
             "description": "Longer Reach. Same Elegance.",
             "description_style": "body",
@@ -158,32 +178,12 @@
             "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "button_style_secondary": false
           }
-        },
-        "image_tpzF9D": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 180",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "center",
-            "heading_size": "h1",
-            "mobile_heading_size": "medium",
-            "description": "Grit in Oak and Carbon Steel.",
-            "description_style": "body",
-            "button_label": "Shop now",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
+        "image_tpzF9D",
         "image_jNgX44",
-        "image_HLUfzw",
-        "image_tpzF9D"
+        "image_HLUfzw"
       ],
       "settings": {
         "heading": "",
