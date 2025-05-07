@@ -177,6 +177,11 @@
         "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
         "disabled": false,
         "settings": {}
+      },
+      "7313114205116804392": {
+        "type": "shopify://apps/propel-replays-surveys/blocks/app-embed/64fbaaa3-2d4a-49f3-aba7-86e92e44999f",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
