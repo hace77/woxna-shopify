@@ -316,6 +316,7 @@
     },
     "video_ygLEnU": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "Video",
@@ -363,6 +364,7 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
