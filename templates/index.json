@@ -314,6 +314,65 @@
         "padding_bottom": 44
       }
     },
+    "video_ygLEnU": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Damascus Kickstarter 16-9.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xGhP7z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cjjcwA": {
+          "type": "heading",
+          "settings": {
+            "heading": "The First Saw Ever Made with Damasteel",
+            "heading_size": "h1"
+          }
+        },
+        "text_L4Y9np": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>"
+          }
+        },
+        "button_Tw8Kpa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover more on Kickstarter",
+            "button_link": "shopify://pages/kickstarter-preorder",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cjjcwA",
+        "text_L4Y9np",
+        "button_Tw8Kpa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_KxgYb7": {
       "type": "image-with-text",
       "blocks": {
@@ -817,6 +876,8 @@
     "1730798874462ed86d",
     "rich_text_fbgFhP",
     "featured_collection",
+    "video_ygLEnU",
+    "rich_text_xGhP7z",
     "image_with_text_KxgYb7",
     "image_with_text_7betFC",
     "image_banner_iTfWWc",
