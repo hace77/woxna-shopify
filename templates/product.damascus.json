@@ -89,15 +89,15 @@
     },
     "video_BCbL4d": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
+        "video": "shopify://files/videos/Damascus Kickstarter 16-9.mp4",
         "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
         "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
