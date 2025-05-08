@@ -171,20 +171,11 @@
             "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_ffLMpw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our steel",
-            "button_link": "https://woxna.com/pages/steel",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_RcAN3m",
-        "text_bb84ap",
-        "button_ffLMpw"
+        "text_bb84ap"
       ],
       "settings": {
         "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
