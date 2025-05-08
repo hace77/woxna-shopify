@@ -286,6 +286,7 @@
         "column_hxzyCN": {
           "type": "column",
           "settings": {
+            "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
             "title": "Superfat leather",
             "text": "<p>We’ve used a super fat leather for this… Extra fat leather for better fire and water resistance </p><p>It's treated on both sides for improved water repellency, and you can enhance its protection with wax or leather conditioner. This is especially recommended if you plan to use it as a sit pad in damp environments. </p>",
             "link_label": "",
@@ -295,6 +296,7 @@
         "column_eTEahC": {
           "type": "column",
           "settings": {
+            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
             "title": "Using the strap and folding the leather guard",
             "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling - you can also place it on your lap for added protection while wood carving.</p>",
             "link_label": "",
@@ -304,6 +306,7 @@
         "column_yddykD": {
           "type": "column",
           "settings": {
+            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
             "title": "Sustainable leather – Proudly made in Sweden",
             "text": "<p>Made in Sweden using Swedish hides and with the outermost care for the animals and the environment during the production process…</p>",
             "link_label": "",
