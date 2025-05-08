@@ -23,6 +23,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_yPizdx": {
+          "type": "text",
+          "settings": {
+            "text": "This product is available only on our Kickstarter campaign between May 8th-28th",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -58,6 +65,7 @@
       "block_order": [
         "title",
         "buy_buttons",
+        "text_yPizdx",
         "price",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
@@ -106,6 +114,7 @@
     },
     "custom_liquid_k7EFPc": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
         "#custom-nav {margin: auto; width: 90%;}",
         "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
