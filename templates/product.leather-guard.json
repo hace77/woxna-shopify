@@ -111,7 +111,7 @@
         "text_rBXVdh"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.preamble.value.image.value }}",
+        "image": "shopify://shop_images/Woxna-Gnarp-7.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -191,7 +191,7 @@
         "li:empty {list-style: none;}"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.tpi.value.image.value }}",
+        "image": "shopify://shop_images/Woxna-Gnarp-3.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
