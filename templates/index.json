@@ -316,7 +316,6 @@
     },
     "video_ygLEnU": {
       "type": "video",
-      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "Video",
@@ -364,7 +363,6 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
-      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -415,6 +413,7 @@
         "text_ViBBqG",
         "button_3e6N7G"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Damascus_4_6510ba46-4474-422c-82ac-893705886430.png",
         "height": "adapt",
