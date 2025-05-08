@@ -318,7 +318,7 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Damascus Kickstarter 16-9.mp4",
