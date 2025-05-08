@@ -278,6 +278,7 @@
         "text_CBAyN9",
         "button_77FVtY"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.grind.value.image.value }}",
         "height": "adapt",
@@ -327,6 +328,7 @@
         "text_rVMxjf",
         "button_iB6jMK"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
         "height": "adapt",
