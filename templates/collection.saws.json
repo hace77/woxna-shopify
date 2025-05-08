@@ -106,7 +106,8 @@
         ".button {border: none;}",
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
-        ".button:not([disabled]):hover:after {box-shadow: unset !important;}"
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
+        ".badge {display: none; }"
       ],
       "settings": {
         "products_per_page": 8,
