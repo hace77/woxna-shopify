@@ -33,6 +33,7 @@
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "layout": "vertical",
             "icon_1": "box",
@@ -138,53 +139,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_tqyCxz": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_RcAN3m": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.blade_material.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_bb84ap": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_ffLMpw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our steel",
-            "button_link": "https://woxna.com/pages/steel",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_RcAN3m",
-        "text_bb84ap",
-        "button_ffLMpw"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "1730798421bc6bee16": {
       "type": "apps",
       "blocks": {
@@ -206,14 +160,14 @@
         "heading_mKwPqb": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.tpi.value.title.value }}",
+            "heading": "A Multifunctional Companion in the Wilderness ",
             "heading_size": "h1"
           }
         },
         "text_4W6aek": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.tpi.value.text | metafield_tag }}</p>",
+            "text": "<ul><li>Fire-starting aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start and transfer small fires. </li><li>Versatile work surface – Keep tools and gear dry, clean and organized while you work. </li><li>Serving tray - for serving up snacks or sandwiches. </li><li>Sit/Knee pad – Use it as a simple sit pad or a knee pad. </li><li>Whitling guard – put it in your lap for protection while wood carving. </li><li>Wearable chest guard – Distributes pressure and protects your torso when whittling against your chest. </li></ul><p> </p>",
             "text_style": "body"
           }
         },
@@ -230,6 +184,11 @@
         "heading_mKwPqb",
         "text_4W6aek",
         "button_WBDBXb"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
       ],
       "settings": {
         "image": "{{ product.metafields.custom.tpi.value.image.value }}",
@@ -1036,7 +995,6 @@
     "main",
     "image_banner_ajHV6U",
     "video_BCbL4d",
-    "image_with_text_tqyCxz",
     "1730798421bc6bee16",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
