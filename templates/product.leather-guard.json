@@ -87,52 +87,20 @@
         "padding_bottom": 40
       }
     },
-    "video_BCbL4d": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
-        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "custom_liquid_k7EFPc": {
-      "type": "custom-liquid",
-      "custom_css": [
-        "#custom-nav {margin: auto; width: 90%;}",
-        "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
-        "#custom-nav li {list-style: none; display: inline-block;}",
-        ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
-        ".horizontal li a:hover {text-decoration: underline;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
-        "color_scheme": "scheme-2",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
     "image_banner_ajHV6U": {
       "type": "image-banner",
       "blocks": {
         "heading_C7z8Le": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.preamble.value.title.value }}",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "text_rBXVdh": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.preamble.value.single_line_ingress.value }}",
+            "text": "This Leather Multi Guard protects you and your gear in the outdoors. It serves as a stable, sheltered base for starting and transferring a fire, a simple sit or knee pad, and a tray to keep tools or food organized, dry and clean. The included leather strap allows you to wear it as a chest plate while whittling - you can also place it on your lap for added protection while wood carving. ",
             "text_style": "body"
           }
         }
@@ -153,6 +121,21 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_tqyCxz": {
@@ -200,6 +183,21 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "1730798421bc6bee16": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_JqyKyw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_JqyKyw"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "image_with_text_KMfkxH": {
@@ -918,21 +916,6 @@
         "padding_bottom": 52
       }
     },
-    "1730798421bc6bee16": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_JqyKyw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_JqyKyw"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_QkwfpV": {
       "type": "rich-text",
       "blocks": {
@@ -1049,10 +1032,10 @@
   },
   "order": [
     "main",
-    "video_BCbL4d",
-    "custom_liquid_k7EFPc",
     "image_banner_ajHV6U",
+    "video_BCbL4d",
     "image_with_text_tqyCxz",
+    "1730798421bc6bee16",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
     "image_with_text_RzkRHW",
@@ -1068,7 +1051,6 @@
     "image_banner_8zaQaf",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
-    "1730798421bc6bee16",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
     "related-products",
