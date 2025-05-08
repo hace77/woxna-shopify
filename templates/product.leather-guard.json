@@ -70,7 +70,8 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
-        ".product__title h1 {font-size: 24px;}"
+        ".product__title h1 {font-size: 24px;}",
+        ".badge {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -85,7 +86,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 40
+        "padding_bottom": 36
       }
     },
     "image_banner_ajHV6U": {
