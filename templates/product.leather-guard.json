@@ -206,186 +206,6 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_khWpzV": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_JYTVpp": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.grind.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_CBAyN9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.grind.value.text | metafield_tag }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_77FVtY": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_JYTVpp",
-        "text_CBAyN9",
-        "button_77FVtY"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "{{ product.metafields.custom.grind.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_RzkRHW": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_yKMnwV": {
-          "type": "heading",
-          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
-          "settings": {
-            "heading": "{{ product.metafields.custom.profile_or_setting.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_rVMxjf": {
-          "type": "text",
-          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_iB6jMK": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_yKMnwV",
-        "text_rVMxjf",
-        "button_iB6jMK"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 24
-      }
-    },
-    "rich_text_zGRdRF": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mEhdkL": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.review | metafield_text: field: 'quote' }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_n3W6pk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>"
-          }
-        },
-        "button_yA4XrT": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_mEhdkL",
-        "text_n3W6pk",
-        "button_yA4XrT"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_JLf43q": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_F9zFHC": {
-          "type": "heading",
-          "source": "{{ product.metafields.custom.transport.value }}",
-          "settings": {
-            "heading": "{{ product.metafields.custom.transport.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_YcJy3D": {
-          "type": "text",
-          "source": "{{ product.metafields.custom.transport.value }}",
-          "settings": {
-            "text": "{{ product.metafields.custom.transport.value.text | metafield_tag }}",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_F9zFHC",
-        "text_YcJy3D"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.transport.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "slideshow_khyK4k": {
       "type": "slideshow",
       "blocks": {
@@ -460,185 +280,58 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_J4ppHw": {
-      "type": "rich-text",
+    "multicolumn_9EBeAU": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_LFcadc": {
-          "type": "heading",
+        "column_hxzyCN": {
+          "type": "column",
           "settings": {
-            "heading": "{{ product.metafields.custom.handles.value.title.value }}",
-            "heading_size": "h1"
+            "title": "Superfat leather",
+            "text": "<p>We’ve used a super fat leather for this… Extra fat leather for better fire and water resistance </p><p>It's treated on both sides for improved water repellency, and you can enhance its protection with wax or leather conditioner. This is especially recommended if you plan to use it as a sit pad in damp environments. </p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_4CCNhj": {
-          "type": "text",
+        "column_eTEahC": {
+          "type": "column",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+            "title": "Using the strap and folding the leather guard",
+            "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling - you can also place it on your lap for added protection while wood carving.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yddykD": {
+          "type": "column",
+          "settings": {
+            "title": "Sustainable leather – Proudly made in Sweden",
+            "text": "<p>Made in Sweden using Swedish hides and with the outermost care for the animals and the environment during the production process…</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_LFcadc",
-        "text_4CCNhj"
+        "column_hxzyCN",
+        "column_eTEahC",
+        "column_yddykD"
       ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_WwtiGJ": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_YQyT46": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.story.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_PwPdeV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.story.value.text | metafield_tag }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_rfrV8p": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_YQyT46",
-        "text_PwPdeV",
-        "button_rfrV8p"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.story.value.image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "slideshow_wm6hdw": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_bGgX4h": {
-          "type": "slide",
-          "settings": {
-            "image": "{{ product.metafields.custom.packaging.value.image.value }}",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_REjKkX": {
-          "type": "slide",
-          "settings": {
-            "image": "{{ product.metafields.custom.packaging.value.image_2.value }}",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_KRAgzz": {
-          "type": "slide",
-          "settings": {
-            "image": "{{ product.metafields.custom.packaging.value.image_3.value }}",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_bGgX4h",
-        "slide_REjKkX",
-        "slide_KRAgzz"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Images of our packaging"
-      }
-    },
-    "rich_text_cb6emk": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_KnR9NP": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.packaging.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_CBqpGQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_KnR9NP",
-        "text_CBqpGQ"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "rich_text_7GmfxC": {
@@ -686,153 +379,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "rich_text_zL8t7g": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_K7chGp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tech Spec",
-            "heading_size": "h0"
-          }
-        },
-        "text_QaVm7H": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Teeth per inch: {{ product.metafields.custom.grind_.value }} TPI</p><p>Grind: 3-phase grind</p><p>Hardening: {{ product.metafields.custom.hardening.value }}</p><p>Saw direction: {{ product.metafields.custom.saw_direction.value }}</p><p>Blade material: {{ product.metafields.custom.blade_material_tech_spec_.value }}</p><p>Handle material: {{ product.metafields.custom.handle_material.value }}</p><p>Blade thickness: {{ product.metafields.custom.blade_thickness.value }} mm (before concave grind)</p><p>Blade profile: {{ product.metafields.custom.blade_profile.value }}</p><p>Teeth setting: {{ product.metafields.custom.teeth_setting.value }}</p><p></p><p><strong>Measurements</strong></p><p>Blade length: {{ product.metafields.custom.blade_length_mm_ | metafield_tag }} / {{ product.metafields.custom.blade_length_inch_ | metafield_tag }}</p><p>Length, unfolded: {{ product.metafields.custom.length_mm_ | metafield_tag }} / {{ product.metafields.custom.length_inch_ | metafield_tag }}</p><p>Length, folded: {{ product.metafields.custom.length_folded_mm_ | metafield_tag }} / {{ product.metafields.custom.length_folded_inch_ | metafield_tag }}</p><p>Weight: {{ product.metafields.custom.weight_g_ | metafield_tag }} / {{ product.metafields.custom.weight_oz_ | metafield_tag }}</p>"
-          }
-        },
-        "button_yRnixM": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_K7chGp",
-        "text_QaVm7H",
-        "button_yRnixM"
-      ],
-      "custom_css": [
-        "h2,li,p {text-align: left;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_banner_8zaQaf": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_paPnxR": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_XLRz8T": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_dRLaYe": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_paPnxR",
-        "text_XLRz8T",
-        "buttons_dRLaYe"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.measurement_illustration.value }}",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "collapsible_content_gEpGHP": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_JiRKKg": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Choose Size",
-            "icon": "ruler",
-            "row_content": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WRMnDt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Choose Model",
-            "icon": "star",
-            "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Qh76JD": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Care and Maintanance",
-            "icon": "clipboard",
-            "row_content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_JiRKKg",
-        "collapsible_row_WRMnDt",
-        "collapsible_row_Qh76JD"
-      ],
-      "custom_css": [
-        "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 52,
-        "padding_bottom": 60
       }
     },
     "rich_text_ji3RVR": {
@@ -997,19 +543,9 @@
     "video_BCbL4d",
     "1730798421bc6bee16",
     "image_with_text_KMfkxH",
-    "image_with_text_khWpzV",
-    "image_with_text_RzkRHW",
-    "rich_text_zGRdRF",
-    "image_with_text_JLf43q",
     "slideshow_khyK4k",
-    "rich_text_J4ppHw",
-    "image_with_text_WwtiGJ",
-    "slideshow_wm6hdw",
-    "rich_text_cb6emk",
+    "multicolumn_9EBeAU",
     "rich_text_7GmfxC",
-    "rich_text_zL8t7g",
-    "image_banner_8zaQaf",
-    "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
