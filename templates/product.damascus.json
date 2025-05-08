@@ -78,7 +78,8 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
-        ".badge {display: none;}"
+        ".badge {display: none;}",
+        ".product__text {margin-bottom: 0; background: lightgrey; padding: 20px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -93,7 +94,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 20
+        "padding_bottom": 36
       }
     },
     "video_BCbL4d": {
