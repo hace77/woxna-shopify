@@ -351,7 +351,7 @@
           "type": "button",
           "settings": {
             "button_label": "Discover more on Kickstarter",
-            "button_link": "shopify://pages/kickstarter-preorder",
+            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -369,7 +369,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
