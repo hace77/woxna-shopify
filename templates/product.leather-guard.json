@@ -263,12 +263,69 @@
             "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_kXt9Vy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-food-tray.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Serving tray - for serving up snacks or sandwiches.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_FGJyqA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jwcyHa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_M64mw7",
         "slide_cAD7JP",
-        "slide_jTwAyD"
+        "slide_jTwAyD",
+        "slide_kXt9Vy",
+        "slide_FGJyqA",
+        "slide_jwcyHa"
       ],
       "custom_css": [],
       "settings": {
