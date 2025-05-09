@@ -213,7 +213,7 @@
         "slide_M64mw7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Gnarp-3_1b4af5a8-1ed2-45db-bd69-25fb4fa58376.jpg",
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-fire-aid.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "Fire-starting aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start and transfer small fires. ",
@@ -231,7 +231,7 @@
         "slide_cAD7JP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Gnarp-1.jpg",
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-tool-tray.jpg",
             "heading": "",
             "heading_size": "h0",
             "subheading": "Versatile work surface – Keep tools and gear dry, clean and organized while you work. ",
@@ -249,7 +249,7 @@
         "slide_jTwAyD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Gnarp-2.jpg",
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-sit-pad.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "Sit/Knee pad – Use it as a simple sit pad or a knee pad.",
@@ -270,6 +270,7 @@
         "slide_cAD7JP",
         "slide_jTwAyD"
       ],
+      "custom_css": [],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
