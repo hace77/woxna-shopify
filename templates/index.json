@@ -286,7 +286,8 @@
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}"
+        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
+        ".badge {display: none;}"
       ],
       "settings": {
         "title": "",
