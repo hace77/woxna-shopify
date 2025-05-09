@@ -213,7 +213,7 @@
         "slide_cAD7JP": {
           "type": "slide",
           "settings": {
-            "image": "{{ product.metafields.custom.handles.value.image_1.value }}",
+            "image": "shopify://shop_images/Woxna-Gnarp-1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
