@@ -155,58 +155,6 @@
         "include_margins": true
       }
     },
-    "image_with_text_KMfkxH": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_mKwPqb": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Multifunctional Companion in the Wilderness ",
-            "heading_size": "h1"
-          }
-        },
-        "text_4W6aek": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>Fire-starting aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start and transfer small fires. </li><li>Versatile work surface – Keep tools and gear dry, clean and organized while you work. </li><li>Serving tray - for serving up snacks or sandwiches. </li><li>Sit/Knee pad – Use it as a simple sit pad or a knee pad. </li><li>Whitling guard – put it in your lap for protection while wood carving. </li><li>Wearable chest guard – Distributes pressure and protects your torso when whittling against your chest. </li></ul><p> </p>",
-            "text_style": "body"
-          }
-        },
-        "button_WBDBXb": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_mKwPqb",
-        "text_4W6aek",
-        "button_WBDBXb"
-      ],
-      "custom_css": [
-        "ul {list-style-position: outside;}",
-        "h2,li {text-align: left;}",
-        "li:empty {list-style: none;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Woxna-Gnarp-3.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 16,
-        "padding_bottom": 16
-      }
-    },
     "slideshow_khyK4k": {
       "type": "slideshow",
       "blocks": {
@@ -220,7 +168,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "top-left",
+            "box_align": "bottom-left",
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
@@ -238,7 +186,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "bottom-center",
+            "box_align": "bottom-right",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -274,7 +222,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "top-left",
+            "box_align": "bottom-left",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -292,7 +240,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "top-left",
+            "box_align": "bottom-left",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -310,7 +258,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "top-left",
+            "box_align": "bottom-left",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -633,7 +581,6 @@
     "video_BCbL4d",
     "image_banner_ajHV6U",
     "1730798421bc6bee16",
-    "image_with_text_KMfkxH",
     "slideshow_khyK4k",
     "multicolumn_9EBeAU",
     "rich_text_7GmfxC",
