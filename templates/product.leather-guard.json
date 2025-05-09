@@ -89,6 +89,21 @@
         "padding_bottom": 36
       }
     },
+    "video_BCbL4d": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_ajHV6U": {
       "type": "image-banner",
       "blocks": {
@@ -123,21 +138,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "video_BCbL4d": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
-        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "1730798421bc6bee16": {
@@ -572,8 +572,8 @@
   },
   "order": [
     "main",
-    "image_banner_ajHV6U",
     "video_BCbL4d",
+    "image_banner_ajHV6U",
     "1730798421bc6bee16",
     "image_with_text_KMfkxH",
     "slideshow_khyK4k",
