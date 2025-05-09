@@ -210,74 +210,74 @@
     "slideshow_khyK4k": {
       "type": "slideshow",
       "blocks": {
+        "slide_M64mw7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-3_1b4af5a8-1ed2-45db-bd69-25fb4fa58376.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Fire-starting aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start and transfer small fires. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_cAD7JP": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna-Gnarp-1.jpg",
             "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
+            "heading_size": "h0",
+            "subheading": "Versatile work surface – Keep tools and gear dry, clean and organized while you work. ",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
+            "box_align": "bottom-center",
+            "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         },
         "slide_jTwAyD": {
           "type": "slide",
           "settings": {
-            "image": "{{ product.metafields.custom.handles.value.image_2.value }}",
+            "image": "shopify://shop_images/Woxna-Gnarp-2.jpg",
             "heading": "",
             "heading_size": "h1",
-            "subheading": "",
+            "subheading": "Sit/Knee pad – Use it as a simple sit pad or a knee pad.",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_M64mw7": {
-          "type": "slide",
-          "settings": {
-            "image": "{{ product.metafields.custom.handles.value.image_3.value }}",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
+        "slide_M64mw7",
         "slide_cAD7JP",
-        "slide_jTwAyD",
-        "slide_M64mw7"
+        "slide_jTwAyD"
       ],
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "layout": "grid",
+        "slide_height": "medium",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 3,
         "image_behavior": "none",
-        "show_text_below": false,
+        "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
     },
