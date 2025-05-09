@@ -26,7 +26,7 @@
         "text_yPizdx": {
           "type": "text",
           "settings": {
-            "text": "This product is available only on our Kickstarter campaign between May 8th-28th",
+            "text": "<a href=\"https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna\" title=\"https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna\">Visit us on Kickstarter.</a> This product is available only on our Kickstarter campaign between May 8th-28th.",
             "text_style": "body"
           }
         },
