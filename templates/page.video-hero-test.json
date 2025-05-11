@@ -11,39 +11,8 @@
   "sections": {
     "video_banner_ah8YRc": {
       "type": "video-bannerYT",
-      "blocks": {
-        "heading_7mNJp8": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_JaFnfA": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_67Jkf6": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_7mNJp8",
-        "text_JaFnfA",
-        "buttons_67Jkf6"
-      ],
       "settings": {
+        "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
@@ -59,6 +28,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
