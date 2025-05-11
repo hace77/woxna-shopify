@@ -257,7 +257,6 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
-      "disabled": true,
       "name": "Rich text H1",
       "settings": {
         "desktop_content_position": "center",
@@ -289,6 +288,7 @@
         "heading_VrX83K",
         "text_wYYamC"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
