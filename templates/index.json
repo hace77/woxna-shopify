@@ -236,6 +236,38 @@
         "include_margins": true
       }
     },
+    "rich_text_h1_Lere7N": {
+      "type": "rich-text-h1",
+      "blocks": {
+        "heading_MNknGf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Best Folding Saw for Bushcraft, Camping & Garden Use? We have models that got you covered!",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ma9AMz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MNknGf",
+        "text_Ma9AMz"
+      ],
+      "disabled": true,
+      "name": "Rich text H1",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_fbgFhP": {
       "type": "rich-text",
       "blocks": {
@@ -251,23 +283,11 @@
           "settings": {
             "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
           }
-        },
-        "button_EpzAqy": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_VrX83K",
-        "text_wYYamC",
-        "button_EpzAqy"
+        "text_wYYamC"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -876,6 +896,7 @@
     "collage_text_link_9Nc9UV",
     "rich_text_yN9HkD",
     "1730798874462ed86d",
+    "rich_text_h1_Lere7N",
     "rich_text_fbgFhP",
     "featured_collection",
     "video_ygLEnU",
