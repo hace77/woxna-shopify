@@ -833,6 +833,16 @@
         "name": "list.product_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "custom_button",
+      "namespace": "custom",
+      "name": "Custom button",
+      "description": "Adding a custom button to the product",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
