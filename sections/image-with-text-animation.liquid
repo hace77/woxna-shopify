@@ -16,14 +16,20 @@
   /* Animation styles */
   #shopify-section-{{ section.id }} .animate-image {
     opacity: 0;
-    transform: translateX(-120px);
-    transition: all 1.5s ease-out;
+    transform: translateX({% if section.settings.animation_direction == 'left' %}-300px{% else %}300px{% endif %});
+    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
     will-change: transform, opacity;
   }
 
   #shopify-section-{{ section.id }} .animate-image.animate {
     opacity: 1;
     transform: translateX(0);
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .animate-image {
+      transform: translateX({% if section.settings.animation_direction == 'left' %}-400px{% else %}400px{% endif %});
+    }
   }
 {%- endstyle -%}
 
@@ -129,6 +135,22 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "animation_direction",
+      "label": "Animation direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "From left"
+        },
+        {
+          "value": "right",
+          "label": "From right"
+        }
+      ],
+      "default": "left"
+    },
     {
       "type": "image_picker",
       "id": "image",
@@ -510,6 +532,9 @@
     const image = section.querySelector('.animate-image');
     if (!image) return;
     
+    // Force a reflow to ensure the initial state is applied
+    image.offsetHeight;
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -519,10 +544,11 @@
         }
       });
     }, {
-      threshold: 0.75,
-      rootMargin: '0px'
+      threshold: 0.2,
+      rootMargin: '20px'
     });
 
+    // Start observing immediately
     observer.observe(image);
   });
 </script>
