@@ -172,7 +172,7 @@
       "name": "Image with text animation",
       "settings": {
         "animation_direction": "right",
-        "image": "shopify://shop_images/Damscus-250-open-web.jpg",
+        "image": "shopify://shop_images/Damascus-180-folded-web.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
