@@ -229,6 +229,7 @@
         "text_eA4ANa",
         "button_P4DBi7"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
