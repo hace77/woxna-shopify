@@ -416,11 +416,11 @@
         "button_Tw8Kpa": {
           "type": "button",
           "settings": {
-            "button_label": "Discover more on Kickstarter",
-            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna",
+            "button_label": "Söderfors - Damascus Saw 180 mm",
+            "button_link": "shopify://products/damascus-saw-250-mm",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Söderfors - Damascus Saw 250 mm",
+            "button_link_2": "shopify://products/damascus-saw-250-mm",
             "button_style_secondary_2": false
           }
         }
