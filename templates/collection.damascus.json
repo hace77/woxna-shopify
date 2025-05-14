@@ -35,7 +35,7 @@
       "settings": {
         "image": "{{ collection.image }}",
         "image_overlay_opacity": 10,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
