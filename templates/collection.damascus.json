@@ -31,14 +31,12 @@
         "heading_ARea4V",
         "text_9PfYVd"
       ],
-      "custom_css": [
-        "@media only screen and (min-width: 750px) {.banner--content-align-left.banner--desktop-transparent .banner__box, .banner--content-align-right.banner--desktop-transparent .banner__box, .banner--medium.banner--desktop-transparent .banner__box {max-width: 100rem; }"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "{{ collection.image }}",
         "image_overlay_opacity": 10,
         "image_height": "large",
-        "desktop_content_position": "middle-left",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
@@ -107,7 +105,7 @@
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        ".badge {display: none; }"
+        ".badge {display: none;}"
       ],
       "settings": {
         "products_per_page": 8,
