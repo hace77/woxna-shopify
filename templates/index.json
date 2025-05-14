@@ -124,7 +124,7 @@
         "image_tpzF9D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
+            "image": "shopify://shop_images/Halsing-folding-saw-180mm-in-hand.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 180",
@@ -144,14 +144,14 @@
         "image_jNgX44": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ljusnan250-sawing-birch.jpg",
+            "image": "shopify://shop_images/Woxna-Ljusnan-250-in-hand.jpg",
             "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
             "heading": "Ljusnan 250",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "center",
+            "text_alignment": "left",
+            "mobile_text_alignment": "left",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
             "description": "Longer Reach. Same Elegance.",
