@@ -164,14 +164,14 @@
         "image_HLUfzw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
+            "image": "shopify://shop_images/Halsing-folding-saw-250mm-sawing-birch-branch.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 250",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
-            "mobile_text_alignment": "center",
+            "mobile_text_alignment": "right",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
             "description": "Power, Tradition, Full Length.",
