@@ -113,23 +113,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_k7EFPc": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "custom_css": [
-        "#custom-nav {margin: auto; width: 90%;}",
-        "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
-        "#custom-nav li {list-style: none; display: inline-block;}",
-        ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
-        ".horizontal li a:hover {text-decoration: underline;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
-        "color_scheme": "scheme-2",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
     "image_banner_ajHV6U": {
       "type": "image-banner",
       "blocks": {
@@ -188,6 +171,7 @@
         "heading_RcAN3m",
         "text_bb84ap"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
         "height": "adapt",
@@ -202,6 +186,41 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "multirow_RbtUah": {
+      "type": "multirow",
+      "blocks": {
+        "row_6XrR7M": {
+          "type": "row",
+          "settings": {
+            "video": "shopify://files/videos/Woxna film Damasteel saw.mp4",
+            "caption": "",
+            "heading": "{{ product.metafields.custom.blade_material.value.title.value }}",
+            "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6XrR7M"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_KMfkxH": {
@@ -298,53 +317,74 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_RzkRHW": {
-      "type": "image-with-text",
+    "multirow_KDqJ4G": {
+      "type": "multirow",
       "blocks": {
-        "heading_yKMnwV": {
-          "type": "heading",
-          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
+        "row_4tJ3AU": {
+          "type": "row",
           "settings": {
+            "video": "shopify://files/videos/Woxna film Concave blade.mp4",
+            "caption": "",
             "heading": "{{ product.metafields.custom.profile_or_setting.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_rVMxjf": {
-          "type": "text",
-          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
-          "settings": {
             "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_iB6jMK": {
-          "type": "button",
-          "settings": {
             "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_yKMnwV",
-        "text_rVMxjf",
-        "button_iB6jMK"
+        "row_4tJ3AU"
       ],
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
-        "height": "adapt",
+        "image_height": "medium",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "image_layout": "alternate-left",
         "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
+        "row_color_scheme": "",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 24
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_AcgV3V": {
+      "type": "multirow",
+      "blocks": {
+        "row_RgnReD": {
+          "type": "row",
+          "settings": {
+            "video": "shopify://files/videos/Woxna film Size 1.mp4",
+            "caption": "",
+            "heading": "Choose your size",
+            "text": "<p>Just like with our other foldable saws - the damascus saw is available in short and long version depending on your needs and preferences. The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_RgnReD"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_zGRdRF": {
@@ -1041,23 +1081,18 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "1730797907a66336cc": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "video_BCbL4d",
-    "custom_liquid_k7EFPc",
     "image_banner_ajHV6U",
     "image_with_text_tqyCxz",
+    "multirow_RbtUah",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
-    "image_with_text_RzkRHW",
+    "multirow_KDqJ4G",
+    "multirow_AcgV3V",
     "rich_text_zGRdRF",
     "image_with_text_JLf43q",
     "slideshow_khyK4k",
@@ -1073,7 +1108,6 @@
     "1730798421bc6bee16",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
-    "related-products",
-    "1730797907a66336cc"
+    "related-products"
   ]
 }
