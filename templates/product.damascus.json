@@ -113,23 +113,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_k7EFPc": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "custom_css": [
-        "#custom-nav {margin: auto; width: 90%;}",
-        "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
-        "#custom-nav li {list-style: none; display: inline-block;}",
-        ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
-        ".horizontal li a:hover {text-decoration: underline;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
-        "color_scheme": "scheme-2",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
     "image_banner_ajHV6U": {
       "type": "image-banner",
       "blocks": {
@@ -381,6 +364,53 @@
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 24
+      }
+    },
+    "multirow_bgW9yK": {
+      "type": "multirow",
+      "blocks": {
+        "row_e9Ucqc": {
+          "type": "row",
+          "settings": {
+            "video": "shopify://files/videos/Woxna film Concave blade.mp4",
+            "caption": "",
+            "heading": "{{ product.metafields.custom.profile_or_setting.value.title.value }}",
+            "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_QXfqmc": {
+          "type": "row",
+          "settings": {
+            "video": "shopify://files/videos/Woxna film Size 1.mp4",
+            "caption": "",
+            "heading": "Choose your size",
+            "text": "<p>Just like with our other foldable saws - the damascus saw is available in short and long version depending on your needs and preferences. The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_e9Ucqc",
+        "row_QXfqmc"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_zGRdRF": {
@@ -1083,13 +1113,13 @@
   "order": [
     "main",
     "video_BCbL4d",
-    "custom_liquid_k7EFPc",
     "image_banner_ajHV6U",
     "image_with_text_tqyCxz",
     "multirow_q8UiMe",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
     "image_with_text_RzkRHW",
+    "multirow_bgW9yK",
     "rich_text_zGRdRF",
     "image_with_text_JLf43q",
     "slideshow_khyK4k",
