@@ -188,6 +188,7 @@
         "heading_RcAN3m",
         "text_bb84ap"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
         "height": "adapt",
@@ -202,6 +203,41 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "multirow_q8UiMe": {
+      "type": "multirow",
+      "blocks": {
+        "row_EtdAMK": {
+          "type": "row",
+          "settings": {
+            "video": "shopify://files/videos/Woxna film Damasteel saw.mp4",
+            "caption": "",
+            "heading": "{{ product.metafields.custom.blade_material.value.title.value }}",
+            "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_EtdAMK"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_KMfkxH": {
@@ -1042,12 +1078,6 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "1730797907a66336cc": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -1056,6 +1086,7 @@
     "custom_liquid_k7EFPc",
     "image_banner_ajHV6U",
     "image_with_text_tqyCxz",
+    "multirow_q8UiMe",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
     "image_with_text_RzkRHW",
@@ -1074,7 +1105,6 @@
     "1730798421bc6bee16",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
-    "related-products",
-    "1730797907a66336cc"
+    "related-products"
   ]
 }
