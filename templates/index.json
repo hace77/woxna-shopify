@@ -124,7 +124,7 @@
         "image_tpzF9D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Halsing-folding-saw-180mm-in-hand.jpg",
+            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 180",
@@ -136,7 +136,7 @@
             "mobile_heading_size": "medium",
             "description": "Grit in Oak and Carbon Steel.",
             "description_style": "body",
-            "button_label": "Shop now",
+            "button_label": "Discover",
             "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
@@ -144,7 +144,7 @@
         "image_jNgX44": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Ljusnan-250-in-hand.jpg",
+            "image": "shopify://shop_images/Folding-Saw-Ljusnan-in-hand.jpg",
             "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
             "heading": "Ljusnan 250",
@@ -156,7 +156,7 @@
             "mobile_heading_size": "h1",
             "description": "Longer Reach. Same Elegance",
             "description_style": "body",
-            "button_label": "Shop now",
+            "button_label": "Discover",
             "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "button_style_secondary": false
           }
@@ -164,7 +164,7 @@
         "image_HLUfzw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Halsing-folding-saw-250mm-sawing-birch-branch.jpg",
+            "image": "shopify://shop_images/Foldable-saw-Halsing-bushcrafting.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 250",
@@ -176,7 +176,7 @@
             "mobile_heading_size": "h1",
             "description": "Power, Tradition, Full Length",
             "description_style": "body",
-            "button_label": "Shop now",
+            "button_label": "Discover",
             "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "button_style_secondary": false
           }
