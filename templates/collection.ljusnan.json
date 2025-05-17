@@ -15,7 +15,7 @@
         "heading_4QmWJi": {
           "type": "heading",
           "settings": {
-            "heading": "Timeless tools for modern adventurers",
+            "heading": "{{ collection.title }}",
             "heading_size": "hxl"
           }
         }
@@ -42,6 +42,7 @@
       "blocks": {
         "heading_dipqiz": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Meet our Foldable Saws",
             "heading_size": "h1"
@@ -50,7 +51,7 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "<p>Woxna tools are designed for those who value high-quality outdoor equipment that blends traditional craftsmanship with modern functionality. Whether you need a folding saw for bushcraft, a durable cutting tool for hunting, or a compact tool for camping and survival, Woxna delivers reliable performance in the wild.</p>"
+            "text": "{{ collection.description }}"
           }
         },
         "button_d4cWYV": {
@@ -75,7 +76,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 28,
         "padding_bottom": 40
       }
     },
