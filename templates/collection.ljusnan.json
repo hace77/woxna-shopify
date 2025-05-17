@@ -80,7 +80,7 @@
           "type": "heading",
           "settings": {
             "heading": "{{ collection.title }}",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         }
       },
@@ -89,7 +89,7 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: bal }}"
+        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
       ],
       "name": "Video Banner YT",
       "settings": {
