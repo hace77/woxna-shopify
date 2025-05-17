@@ -24,7 +24,7 @@
         "heading_4QmWJi"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
@@ -54,15 +54,54 @@
       "block_order": [
         "heading_rbbNjT"
       ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
         "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "video_banner_yt_iLi8kQ": {
+      "type": "video-bannerYT",
+      "blocks": {
+        "heading_HHjHMH": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HHjHMH"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: bal }}"
+      ],
+      "name": "Video Banner YT",
+      "settings": {
+        "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 0,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -191,6 +230,7 @@
   "order": [
     "image_banner_dLVAWX",
     "image_banner_PBEUQe",
+    "video_banner_yt_iLi8kQ",
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
