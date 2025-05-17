@@ -23,7 +23,9 @@
       "block_order": [
         "heading_4QmWJi"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
         "image_overlay_opacity": 0,
@@ -32,7 +34,35 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_PBEUQe": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_rbbNjT": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rbbNjT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -160,6 +190,7 @@
   },
   "order": [
     "image_banner_dLVAWX",
+    "image_banner_PBEUQe",
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
