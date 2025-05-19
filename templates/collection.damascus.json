@@ -32,13 +32,13 @@
         "text_9PfYVd"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.banner--content-align-left.banner--desktop-transparent .banner__box, .banner--content-align-right.banner--desktop-transparent .banner__box, .banner--medium.banner--desktop-transparent .banner__box {max-width: 100rem; }"
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
         "image": "{{ collection.image }}",
         "image_overlay_opacity": 10,
-        "image_height": "large",
-        "desktop_content_position": "middle-left",
+        "image_height": "adapt",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
@@ -81,7 +81,6 @@
         "text_FkKbKK",
         "button_d4cWYV"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",

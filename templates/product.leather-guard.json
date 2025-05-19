@@ -1,0 +1,594 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "icon_with_text_GbTykW": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "box",
+            "heading_1": "Free Shipping",
+            "icon_2": "star",
+            "heading_2": "Limited Lifetime Warranty",
+            "icon_3": "map_pin",
+            "heading_3": "Proudly Made in Sweden"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "buy_buttons",
+        "price",
+        "judge_me_reviews_preview_badge_VG7pPA",
+        "icon_with_text_GbTykW",
+        "variant_picker",
+        "description"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}",
+        ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
+        ".product__title h1 {font-size: 24px;}",
+        ".badge {display: none;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_ajHV6U": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_C7z8Le": {
+          "type": "heading",
+          "settings": {
+            "heading": "Protects You and Your Gear in the Wilderness",
+            "heading_size": "h2"
+          }
+        },
+        "text_rBXVdh": {
+          "type": "text",
+          "settings": {
+            "text": "This Leather Multi Guard protects you and your gear in the outdoors. It serves as a stable, sheltered base for starting and transferring a fire, a simple sit or knee pad, and a tray to keep tools or food organized, dry and clean. The included leather strap allows you to wear it as a chest plate while whittling - you can also place it on your lap for added protection while wood carving. ",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_C7z8Le",
+        "text_rBXVdh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Gnarp-7.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1730798421bc6bee16": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_JqyKyw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_JqyKyw"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "slideshow_khyK4k": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_M64mw7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-fire-aid.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Fire-starting aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start and transfer small fires. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_cAD7JP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-tool-tray.jpg",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "Versatile work surface – Keep tools and gear dry, clean and organized while you work. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jTwAyD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-sit-pad.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Sit/Knee pad – Use it as a simple sit pad or a knee pad.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_kXt9Vy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-food-tray.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Serving tray - for serving up snacks or sandwiches.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_FGJyqA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Whitling guard – put it in your lap for protection while wood carving.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jwcyHa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Wearable chest guard – Distributes pressure and protects your torso when whittling against your chest.  ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_M64mw7",
+        "slide_cAD7JP",
+        "slide_jTwAyD",
+        "slide_kXt9Vy",
+        "slide_FGJyqA",
+        "slide_jwcyHa"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_9EBeAU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hxzyCN": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
+            "title": "Superfat leather",
+            "text": "<p>We’ve used a super fat leather for this… Extra fat leather for better fire and water resistance </p><p>It's treated on both sides for improved water repellency, and you can enhance its protection with wax or leather conditioner. This is especially recommended if you plan to use it as a sit pad in damp environments. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eTEahC": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+            "title": "Using the strap and folding the leather guard",
+            "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling - you can also place it on your lap for added protection while wood carving.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yddykD": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+            "title": "Sustainable leather – Proudly made in Sweden",
+            "text": "<p>Made in Sweden using Swedish hides and with the outermost care for the animals and the environment during the production process…</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hxzyCN",
+        "column_eTEahC",
+        "column_yddykD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_7GmfxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XzRK9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Features",
+            "heading_size": "h1"
+          }
+        },
+        "button_dVbPng": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_crzTjK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzRK9B",
+        "button_dVbPng",
+        "text_crzTjK"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_U9UCQY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pbJKfm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pbJKfm"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Gnarp-Leather_Guard-Measures.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_ji3RVR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gnc8NC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact and Support",
+            "heading_size": "h1"
+          }
+        },
+        "text_Kqm3hA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
+          }
+        },
+        "button_cXrCX8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Support",
+            "button_link": "shopify://pages/support",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gnc8NC",
+        "text_Kqm3hA",
+        "button_cXrCX8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_QkwfpV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LTX3M7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability First",
+            "heading_size": "h1"
+          }
+        },
+        "text_TdaeQM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
+          }
+        },
+        "button_qxwfAc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our green intentions",
+            "button_link": "shopify://pages/sustainablilty",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LTX3M7",
+        "text_TdaeQM",
+        "button_qxwfAc"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 76
+      }
+    },
+    "image_with_text_j83Eef": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zwyMCT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produced with Quality and Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_gMpi8E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tCkADX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our production",
+            "button_link": "shopify://pages/made-in-sweden",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zwyMCT",
+        "text_gMpi8E",
+        "button_tCkADX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BCbL4d",
+    "image_banner_ajHV6U",
+    "1730798421bc6bee16",
+    "slideshow_khyK4k",
+    "multicolumn_9EBeAU",
+    "rich_text_7GmfxC",
+    "image_banner_U9UCQY",
+    "rich_text_ji3RVR",
+    "rich_text_QkwfpV",
+    "image_with_text_j83Eef",
+    "related-products",
+    "1730797907a66336cc"
+  ]
+}

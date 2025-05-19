@@ -14,23 +14,24 @@
       "blocks": {
         "heading_NUNcr4": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "<strong>Ljusnan 180</strong>",
+            "heading": "Ljusnan 180",
             "heading_size": "h0"
           }
         },
         "text_FrJi3W": {
           "type": "text",
           "settings": {
-            "text": "Compact. Precise. Walnut & Steel.",
+            "text": "Explore our collection of Saws",
             "text_style": "body"
           }
         },
         "buttons_76y76T": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
+            "button_label_1": "Shop our saws now",
+            "button_link_1": "shopify://collections/foldable-saws",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,16 +45,71 @@
         "buttons_76y76T"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "name": "Video Banner YT",
       "settings": {
-        "video": "shopify://files/videos/Ljusnan-folding-saw-180mm.mp4",
+        "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
-        "image_height": "large",
-        "desktop_content_position": "bottom-right",
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "video_banner_yt_fgFqCR": {
+      "type": "video-bannerYT",
+      "blocks": {
+        "heading_dtUCPi": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Ljusnan 180",
+            "heading_size": "h0"
+          }
+        },
+        "text_47ty4L": {
+          "type": "text",
+          "settings": {
+            "text": "Explore our collection of Saws",
+            "text_style": "body"
+          }
+        },
+        "buttons_gzXFeC": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/foldable-saws",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dtUCPi",
+        "text_47ty4L",
+        "buttons_gzXFeC"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Video Banner YT",
+      "settings": {
+        "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 0,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "right",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
@@ -62,131 +118,45 @@
         "show_text_below": false
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Ljusnan 180</strong>",
-            "heading_size": "h0"
-          }
-        },
-        "text_eRbp9f": {
-          "type": "text",
-          "settings": {
-            "text": "Compact. Precise. Walnut & Steel.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_eRbp9f",
-        "button"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
-        "@media (min-width: 768px) {p {font-size: 2rem; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-desktop.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "large",
-        "desktop_content_position": "bottom-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "image_banner_nECKWc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_rziPRM": {
-          "type": "heading",
-          "settings": {
-            "heading": "No rust - just sharpness",
-            "heading_size": "h0"
-          }
-        },
-        "text_yinUYU": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Meet Ljusnan 180 mm - A compact foldable saw with a stainless steel blade</strong>",
-            "text_style": "body"
-          }
-        },
-        "buttons_gCxJxg": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Buy it now",
-            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_rziPRM",
-        "text_yinUYU",
-        "buttons_gCxJxg"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-mobile.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "collage_text_link_9Nc9UV": {
       "type": "collage-text-link",
       "blocks": {
-        "image_jNgX44": {
+        "image_tpzF9D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ljusnan250-sawing-birch.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
+            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
-            "heading": "Ljusnan 250",
+            "heading": "Hälsing 180",
             "vertical_position": "top",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "center",
             "heading_size": "h0",
-            "mobile_heading_size": "h1",
-            "description": "Longer Reach. Same Elegance.",
+            "mobile_heading_size": "medium",
+            "description": "Grit in Oak and Carbon Steel.",
             "description_style": "body",
-            "button_label": "Shop now",
+            "button_label": "Discover",
+            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "button_style_secondary": false
+          }
+        },
+        "image_jNgX44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Folding-Saw-Ljusnan-in-hand.jpg",
+            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "show_text_overlay": true,
+            "heading": "Ljusnan 250",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "left",
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "description": "Longer Reach. Same Elegance",
+            "description_style": "body",
+            "button_label": "Discover",
             "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "button_style_secondary": false
           }
@@ -194,48 +164,28 @@
         "image_HLUfzw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Halsing250-opening-saw.jpg",
+            "image": "shopify://shop_images/Foldable-saw-Halsing-bushcrafting.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 250",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
-            "mobile_text_alignment": "center",
+            "mobile_text_alignment": "right",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
-            "description": "Power, Tradition, Full Length.",
+            "description": "Power, Tradition, Full Length",
             "description_style": "body",
-            "button_label": "Shop now",
+            "button_label": "Discover",
             "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
-            "button_style_secondary": false
-          }
-        },
-        "image_tpzF9D": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Saw-in-hand-Halsing-180.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 180",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "center",
-            "heading_size": "h1",
-            "mobile_heading_size": "medium",
-            "description": "Grit in Oak and Carbon Steel.",
-            "description_style": "body",
-            "button_label": "Shop now",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "image_tpzF9D",
         "image_jNgX44",
-        "image_HLUfzw",
-        "image_tpzF9D"
+        "image_HLUfzw"
       ],
       "settings": {
         "heading": "",
@@ -246,6 +196,50 @@
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_9mh8xK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zdyGU7": {
+          "type": "heading",
+          "settings": {
+            "heading": "No Tariffs for US Customers!",
+            "heading_size": "h1"
+          }
+        },
+        "text_eA4ANa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our products are proudly made in Sweden, which means no Tariffs for US customers.</p>"
+          }
+        },
+        "button_P4DBi7": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zdyGU7",
+        "text_eA4ANa",
+        "button_P4DBi7"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_yN9HkD": {
@@ -288,6 +282,37 @@
         "include_margins": true
       }
     },
+    "rich_text_h1_Lere7N": {
+      "type": "rich-text-h1",
+      "blocks": {
+        "heading_MNknGf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Best Folding Saw for Bushcraft, Camping & Garden Use? We have models that got you covered!",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ma9AMz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MNknGf",
+        "text_Ma9AMz"
+      ],
+      "name": "Rich text H1",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_fbgFhP": {
       "type": "rich-text",
       "blocks": {
@@ -303,24 +328,13 @@
           "settings": {
             "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
           }
-        },
-        "button_EpzAqy": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_VrX83K",
-        "text_wYYamC",
-        "button_EpzAqy"
+        "text_wYYamC"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -338,7 +352,8 @@
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}"
+        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
+        ".badge {display: none;}"
       ],
       "settings": {
         "title": "",
@@ -364,6 +379,65 @@
         "swipe_on_mobile": false,
         "padding_top": 20,
         "padding_bottom": 44
+      }
+    },
+    "video_ygLEnU": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Damascus Kickstarter 16-9.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_xGhP7z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cjjcwA": {
+          "type": "heading",
+          "settings": {
+            "heading": "The First Saw Ever Made with Damasteel",
+            "heading_size": "h1"
+          }
+        },
+        "text_L4Y9np": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>"
+          }
+        },
+        "button_Tw8Kpa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Söderfors - Damascus Saw 180 mm",
+            "button_link": "shopify://products/damascus-saw-250-mm",
+            "button_style_secondary": false,
+            "button_label_2": "Söderfors - Damascus Saw 250 mm",
+            "button_link_2": "shopify://products/damascus-saw-250-mm",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cjjcwA",
+        "text_L4Y9np",
+        "button_Tw8Kpa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_with_text_KxgYb7": {
@@ -406,6 +480,7 @@
         "text_ViBBqG",
         "button_3e6N7G"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Damascus_4_6510ba46-4474-422c-82ac-893705886430.png",
         "height": "adapt",
@@ -629,7 +704,7 @@
         "caption_KNARhM": {
           "type": "caption",
           "settings": {
-            "caption": "Woxna - Crafted for the Outdoor Spirit",
+            "caption": "Our Story",
             "text_style": "caption-with-letter-spacing",
             "text_size": "large"
           }
@@ -637,7 +712,7 @@
         "heading_iXwHGf": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "Crafted for the Outdoor Spirit",
             "heading_size": "h0"
           }
         },
@@ -863,13 +938,16 @@
   },
   "order": [
     "video_banner_yt_yWG9Ex",
-    "image_banner",
-    "image_banner_nECKWc",
+    "video_banner_yt_fgFqCR",
     "collage_text_link_9Nc9UV",
+    "rich_text_9mh8xK",
     "rich_text_yN9HkD",
     "1730798874462ed86d",
+    "rich_text_h1_Lere7N",
     "rich_text_fbgFhP",
     "featured_collection",
+    "video_ygLEnU",
+    "rich_text_xGhP7z",
     "image_with_text_KxgYb7",
     "image_with_text_7betFC",
     "image_banner_iTfWWc",
