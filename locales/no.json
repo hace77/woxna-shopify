@@ -2009,7 +2009,7 @@
       "description": "Beskrivelse",
       "inventory_in_stock": "På lager",
       "inventory_in_stock_show_count": "{{ quantity }} på lager",
-      "inventory_low_stock": "Lavt lager",
+      "inventory_low_stock": "Kun få på lager!",
       "inventory_low_stock_show_count": "Lite lager: {{ quantity }} igjen",
       "inventory_out_of_stock": "Utsolgt",
       "inventory_out_of_stock_continue_selling": "På lager",
