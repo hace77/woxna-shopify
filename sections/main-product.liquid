@@ -31,26 +31,24 @@
       }
     }
 
-    .custom-label {
-      background-color: #445F45;
-      color: white;
-      border-radius: 0;
-      font-size: 12px;
-      font-weight: 500;
-      padding: 5px 10px;
+    .product-label {
       position: absolute;
       top: 10px;
       right: 10px;
       z-index: 2;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .custom-label {
+      background-color: #445F45;
+      color: white;
     }
 
     .stock-label {
       background-color: rgb(255, 0, 0);
-      padding: 5px 10px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 2;
     }
 
     .custom-label + .stock-label {
@@ -110,9 +108,13 @@
         {%- if product.metafields.custom.label != blank -%}
           <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
         {%- endif -%}
-        {%- if product.selected_or_first_available_variant.inventory_quantity > 0 and product.selected_or_first_available_variant.inventory_quantity <= 10 -%}
+        {%- assign total_inventory = 0 -%}
+        {%- for variant in product.variants -%}
+          {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
+        {%- endfor -%}
+        {%- if total_inventory > 0 and total_inventory <= 10 -%}
           <div class="product-label custom-label stock-label">
-            Only {{ product.selected_or_first_available_variant.inventory_quantity }} left in stock
+            {{ 'products.product.low_stock' | t }}
           </div>
         {%- endif -%}
       </div>

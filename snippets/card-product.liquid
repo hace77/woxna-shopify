@@ -132,9 +132,13 @@
           {%- if card_product.metafields.custom.label != blank -%}
             <div class="product-label custom-label">{{ card_product.metafields.custom.label }}</div>
           {%- endif -%}
-          {%- if card_product.selected_or_first_available_variant.inventory_quantity > 0 and card_product.selected_or_first_available_variant.inventory_quantity <= 10 -%}
+          {%- assign total_inventory = 0 -%}
+          {%- for variant in card_product.variants -%}
+            {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
+          {%- endfor -%}
+          {%- if total_inventory > 0 and total_inventory <= 10 -%}
             <div class="product-label custom-label stock-label">
-              Only {{ card_product.selected_or_first_available_variant.inventory_quantity }} left in stock
+              {{ 'products.product.low_stock' | t }}
             </div>
           {%- endif -%}
         {%- endif -%}
