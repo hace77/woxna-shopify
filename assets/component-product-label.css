@@ -3,12 +3,10 @@
   top: 1rem;
   right: 1rem;
   z-index: 2;
-  padding: 0.5rem 1rem;
+  padding: 5px 10px;
   font-size: 1.2rem;
   font-weight: 600;
-  line-height: 1.2;
   text-transform: uppercase;
-  border-radius: 0.4rem;
   background-color: #4CAF50;
   color: #FFFFFF;
   display: inline-block;

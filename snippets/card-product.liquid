@@ -44,6 +44,12 @@
       background-color: #445F45;
       color: white;
     }
+    .stock-label {
+      background-color: rgb(255, 0, 0);
+    }
+    .custom-label + .stock-label {
+      top: 45px;
+    }
   </style>
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
@@ -125,6 +131,15 @@
           </div>
           {%- if card_product.metafields.custom.label != blank -%}
             <div class="product-label custom-label">{{ card_product.metafields.custom.label }}</div>
+          {%- endif -%}
+          {%- assign total_inventory = 0 -%}
+          {%- for variant in card_product.variants -%}
+            {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
+          {%- endfor -%}
+          {%- if total_inventory > 0 and total_inventory <= 10 -%}
+            <div class="product-label custom-label stock-label">
+              {{ 'products.product.inventory_low_stock' | t }}
+            </div>
           {%- endif -%}
         {%- endif -%}
         <div class="card__content">
