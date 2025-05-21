@@ -186,6 +186,7 @@
         "text_bb84ap",
         "button_ffLMpw"
       ],
+      "name": "No more rusty blades",
       "settings": {
         "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
         "height": "adapt",

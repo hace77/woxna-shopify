@@ -47,7 +47,7 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
-      "name": "Video Banner YT",
+      "name": "Top video banner desktop",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -102,7 +102,7 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
-      "name": "Video Banner YT",
+      "name": "Top videobanner mobile",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -268,6 +268,7 @@
         "image_UdTHzh"
       ],
       "disabled": true,
+      "name": "collage Gnarp",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -384,7 +385,7 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
-      "name": "Rich text H1",
+      "name": "Best folding saw",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -436,6 +437,7 @@
         ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
         ".badge {display: none;}"
       ],
+      "name": "Startpage collection",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -454,7 +456,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -464,7 +466,7 @@
     },
     "video_ygLEnU": {
       "type": "video",
-      "name": "t:sections.video.presets.name",
+      "name": "Video damascus",
       "settings": {
         "heading": "",
         "heading_size": "h1",
