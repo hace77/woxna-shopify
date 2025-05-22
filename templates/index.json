@@ -203,6 +203,7 @@
       "blocks": {
         "image_3FYifX": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Gnarp-Leather-Guard-15.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
@@ -267,7 +268,6 @@
         "image_fA3Dgi",
         "image_UdTHzh"
       ],
-      "disabled": true,
       "name": "collage Gnarp",
       "settings": {
         "heading": "",
@@ -620,6 +620,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "name": "No more Rusty blades",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",

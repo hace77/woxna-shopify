@@ -171,6 +171,7 @@
         "button_FKCxUg",
         "button_73pmHn"
       ],
+      "name": "studio images",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -232,6 +233,7 @@
         "button_a9gAGL",
         "button_7Lie7A"
       ],
+      "name": "outdoor images",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -281,6 +283,7 @@
         "text_jdzqx4",
         "button_haAqJx"
       ],
+      "name": "logos",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -330,6 +333,57 @@
         "text_GQPmqe",
         "button_dRJBCz"
       ],
+      "name": "Press kit",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_9kDaP9": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_9NMN8R": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Gnarp Leather Guard - Studio and Outdoor/Lifestyle</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "image_yQmjff": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Download-image-packages2.jpg"
+          }
+        },
+        "text_qEB7Hf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This image collection contains both clean studio images and outdoor images of our Gnarp Leather Guard.</p>"
+          }
+        },
+        "button_H6KxpT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download all Gnarp Images - Large",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Gnarp%20bilder%20Large.tiff.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download all Gnarp Images - Medium",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/damascus.zip",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9NMN8R",
+        "image_yQmjff",
+        "text_qEB7Hf",
+        "button_H6KxpT"
+      ],
+      "name": "Gnarp",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -421,6 +475,7 @@
     "richtext_with_image_F7pH9D",
     "richtext_with_image_mheWbJ",
     "richtext_with_image_TniCiz",
+    "richtext_with_image_9kDaP9",
     "featured_collection_eJ3Mw3",
     "multicolumn_HkjXga",
     "custom_liquid_A7MYdn"
