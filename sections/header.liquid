@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'video-banner.css' | asset_url | stylesheet_tag }}
+{{ 'header-secondary-menu.css' | asset_url | stylesheet_tag }}
 
 <style>
   header-drawer {
@@ -106,7 +109,11 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- if section.settings.sticky_header_type != 'none' -%}
+  <sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}" class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- else -%}
+  <div class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- endif -%}
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -160,15 +167,28 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
-        endif
-      endif
-    %}
+    {%- if section.settings.menu != blank -%}
+      <div class="header__inline-menu-wrapper">
+        {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+          {%- render 'header-dropdown-menu', menu: section.settings.menu -%}
+        {%- elsif section.settings.menu_type_desktop != 'drawer' -%}
+          {%- render 'header-mega-menu', menu: section.settings.menu -%}
+        {%- endif -%}
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'secondary_menu' -%}
+              {%- if block.settings.menu != blank -%}
+                {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                  {%- render 'header-dropdown-menu', menu: block.settings.menu, menu_class: 'secondary-menu' -%}
+                {%- else -%}
+                  {%- render 'header-mega-menu', menu: block.settings.menu, menu_class: 'secondary-menu' -%}
+                {%- endif -%}
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -280,7 +300,11 @@
       </a>
     </div>
   </header>
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+{%- if section.settings.sticky_header_type != 'none' -%}
+</sticky-header>
+{%- else -%}
+</div>
+{%- endif -%}
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
@@ -638,6 +662,19 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "secondary_menu",
+      "name": "Secondary menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "Select a menu to display as the secondary menu"
+        }
+      ]
     }
   ]
 }

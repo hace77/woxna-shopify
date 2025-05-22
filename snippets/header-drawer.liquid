@@ -7,10 +7,7 @@
 
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
-    <summary
-      class="header__icon header__icon--menu header__icon--summary link focus-inset"
-      aria-label="{{ 'sections.header.menu' | t }}"
-    >
+    <summary class="header__icon header__icon--menu header__icon--summary link focus-inset">
       <span>
         {{- 'icon-hamburger.svg' | inline_asset_content -}}
         {{- 'icon-close.svg' | inline_asset_content -}}
@@ -134,6 +131,30 @@
                 </li>
               {%- endfor -%}
             </ul>
+
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'secondary_menu' -%}
+                  {%- if block.settings.menu != blank -%}
+                    <div class="menu-drawer__menu-title">Secondary Menu</div>
+                    <ul class="menu-drawer__menu list-menu secondary-menu" role="list">
+                      {%- for link in block.settings.menu.links -%}
+                        <li>
+                          <a
+                            href="{{ link.url }}"
+                            class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                            {% if link.current %}
+                              aria-current="page"
+                            {% endif %}
+                          >
+                            {{ link.title | escape }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
           </nav>
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
