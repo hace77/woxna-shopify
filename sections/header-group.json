@@ -37,6 +37,17 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "secondary_menu_KJgp8a": {
+          "type": "secondary_menu",
+          "settings": {
+            "menu": "test"
+          }
+        }
+      },
+      "block_order": [
+        "secondary_menu_KJgp8a"
+      ],
       "settings": {
         "logo_position": "top-left",
         "menu": "main-menu",

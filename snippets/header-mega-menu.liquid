@@ -3,11 +3,13 @@
 
   Usage:
   {% render 'header-mega-menu' %}
+  or
+  {% render 'header-mega-menu', menu: linklists['about'], menu_class: 'secondary-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+<nav class="header__inline-menu{% if menu_class %} {{ menu_class }}{% endif %}">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in menu.links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
