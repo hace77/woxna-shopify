@@ -38,15 +38,15 @@
     "header": {
       "type": "header",
       "blocks": {
-        "secondary_menu_KJgp8a": {
+        "secondary_menu_dyRFQr": {
           "type": "secondary_menu",
           "settings": {
-            "menu": "test"
+            "menu": "secondary"
           }
         }
       },
       "block_order": [
-        "secondary_menu_KJgp8a"
+        "secondary_menu_dyRFQr"
       ],
       "settings": {
         "logo_position": "top-left",
