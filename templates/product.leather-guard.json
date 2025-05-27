@@ -406,7 +406,7 @@
         "collapsible_row_k3ejMx": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "A Sustainable Leather",
+            "heading": "Sustainability",
             "icon": "leaf",
             "row_content": "<p>We use a custom-made leather for our Gnarp. It’s made using hides from Swedish cattle and it’s been treated with a natural leather fat to improve its resistance to water and fire. On top of that, it’s been given an additional wax treatment on both the front and back to further enhance its water repellency.</p><p>The leather is vegetable tanned which is a slower more traditional and natural process that results in a higher-quality leather that breathes better, ages beautifully and lasts longer. It is also a far more responsible choice for both people and the environment compared to chrome tanning, which is more commonly used today.</p><p>Our leather supplier is independently reviewed every year through the HIGG Index, and their tanneries are LWG certified. This means their environmental practices meet strict standards — including responsible energy use, proper wastewater treatment, and careful chemical management and testing to ensure the leather is free from harmful substances like chrome and PFAS.</p>",
             "page": ""
@@ -419,8 +419,8 @@
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "caption": "Leather",
-        "heading": "Collapsible content",
+        "caption": "",
+        "heading": "A Durable Leather",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
