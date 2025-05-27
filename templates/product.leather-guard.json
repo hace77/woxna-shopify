@@ -391,6 +391,48 @@
         "padding_bottom": 52
       }
     },
+    "collapsible_content_EM8rA3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_6EAfhX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Taking Care of your Leather",
+            "icon": "leather",
+            "row_content": "<p>As with all leather, if it gets wet, let it dry slowly at room temperature. Avoid placing it on radiators or other direct heat sources.</p><p>If the leather feels stiff after being used in damp or wet conditions, you can treat it with a leather fat or conditioner. This works especially well on thicker leathers designed for tougher use and exposure to the elements. You can also apply a leather wax, which sits on the surface for added water repellency, while the fat penetrates deeper into the material.</p><p>If the leather has dried out more, it’s often best to start with a hydrating leather balm before applying fat.</p><p>Use a dry, lint-free cloth or sponge to work the balm into the leather until the surface, then let it absorb overnight. Follow up with a leather fat: apply an even layer and work it in to the leather.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_k3ejMx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "A Sustainable Leather",
+            "icon": "leaf",
+            "row_content": "<p>We use a custom-made leather for our Gnarp. It’s made using hides from Swedish cattle and it’s been treated with a natural leather fat to improve its resistance to water and fire. On top of that, it’s been given an additional wax treatment on both the front and back to further enhance its water repellency.</p><p>The leather is vegetable tanned which is a slower more traditional and natural process that results in a higher-quality leather that breathes better, ages beautifully and lasts longer. It is also a far more responsible choice for both people and the environment compared to chrome tanning, which is more commonly used today.</p><p>Our leather supplier is independently reviewed every year through the HIGG Index, and their tanneries are LWG certified. This means their environmental practices meet strict standards — including responsible energy use, proper wastewater treatment, and careful chemical management and testing to ensure the leather is free from harmful substances like chrome and PFAS.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_6EAfhX",
+        "collapsible_row_k3ejMx"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "Leather",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_U9UCQY": {
       "type": "image-banner",
       "blocks": {
@@ -584,6 +626,7 @@
     "slideshow_khyK4k",
     "multicolumn_9EBeAU",
     "rich_text_7GmfxC",
+    "collapsible_content_EM8rA3",
     "image_banner_U9UCQY",
     "rich_text_ji3RVR",
     "rich_text_QkwfpV",
