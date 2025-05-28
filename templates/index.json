@@ -47,7 +47,6 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
-      "name": "Video Banner YT",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -102,7 +101,6 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
-      "name": "Video Banner YT",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -232,7 +230,6 @@
         "button_P4DBi7"
       ],
       "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -303,7 +300,6 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
-      "name": "Rich text H1",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -383,7 +379,6 @@
     },
     "video_ygLEnU": {
       "type": "video",
-      "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -430,7 +425,6 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -934,6 +928,44 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "logo_slider_c8Wzn7": {
+      "type": "logo-slider",
+      "blocks": {
+        "logo_X3ndDR": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
+            "logo_link": ""
+          }
+        },
+        "logo_NrRxGM": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
+            "logo_link": ""
+          }
+        },
+        "logo_8bX7VM": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/core77.png",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_X3ndDR",
+        "logo_NrRxGM",
+        "logo_8bX7VM"
+      ],
+      "name": "Logo Slider",
+      "settings": {
+        "heading": "As seen on",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -958,6 +990,7 @@
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr"
+    "rich_text_FVdRqr",
+    "logo_slider_c8Wzn7"
   ]
 }
