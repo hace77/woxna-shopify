@@ -47,7 +47,6 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
-      "name": "Top video banner desktop",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -102,7 +101,6 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
-      "name": "Top videobanner mobile",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -205,7 +203,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-15.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Gnarp",
@@ -269,7 +266,6 @@
         "image_UdTHzh"
       ],
       "disabled": true,
-      "name": "collage Gnarp",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -315,7 +311,6 @@
         "button_P4DBi7"
       ],
       "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -386,7 +381,7 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
-      "name": "Best folding saw",
+      "name": "Best folding saw for bushcraft",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -438,7 +433,6 @@
         ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
         ".badge {display: none;}"
       ],
-      "name": "Startpage collection",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -467,7 +461,6 @@
     },
     "video_ygLEnU": {
       "type": "video",
-      "name": "Video damascus",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -514,7 +507,6 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -621,7 +613,6 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
-      "name": "No more Rusty blades",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",
@@ -1019,6 +1010,44 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "logo_slider_6UYhzg": {
+      "type": "logo-slider",
+      "blocks": {
+        "logo_8fYEg3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
+            "logo_link": ""
+          }
+        },
+        "logo_KgekT3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
+            "logo_link": ""
+          }
+        },
+        "logo_xUJFHg": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/core77.png",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_8fYEg3",
+        "logo_KgekT3",
+        "logo_xUJFHg"
+      ],
+      "name": "Logo Slider",
+      "settings": {
+        "heading": "As seen on",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1044,6 +1073,7 @@
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr"
+    "rich_text_FVdRqr",
+    "logo_slider_6UYhzg"
   ]
 }
