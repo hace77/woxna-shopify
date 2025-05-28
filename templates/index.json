@@ -203,6 +203,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-7.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Gnarp",
@@ -275,72 +276,6 @@
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_9mh8xK": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_zdyGU7": {
-          "type": "heading",
-          "settings": {
-            "heading": "No Tariffs for US Customers!",
-            "heading_size": "h1"
-          }
-        },
-        "text_eA4ANa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our products are proudly made in Sweden, which means no Tariffs for US customers.</p>"
-          }
-        },
-        "button_P4DBi7": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_zdyGU7",
-        "text_eA4ANa",
-        "button_P4DBi7"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_yN9HkD": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9EKWxN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9EKWxN"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 8,
-        "padding_bottom": 8
       }
     },
     "logo_slider_6UYhzg": {
@@ -651,6 +586,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "name": "No more rusty blades",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",
@@ -1055,8 +991,6 @@
     "video_banner_yt_fgFqCR",
     "collage_text_link_9Nc9UV",
     "collage_text_link_xVfca9",
-    "rich_text_9mh8xK",
-    "rich_text_yN9HkD",
     "logo_slider_6UYhzg",
     "1730798874462ed86d",
     "rich_text_h1_Lere7N",
