@@ -343,6 +343,44 @@
         "padding_bottom": 8
       }
     },
+    "logo_slider_6UYhzg": {
+      "type": "logo-slider",
+      "blocks": {
+        "logo_8fYEg3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
+            "logo_link": ""
+          }
+        },
+        "logo_KgekT3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
+            "logo_link": ""
+          }
+        },
+        "logo_xUJFHg": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/core77.png",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_8fYEg3",
+        "logo_KgekT3",
+        "logo_xUJFHg"
+      ],
+      "name": "Logo Slider",
+      "settings": {
+        "heading": "As seen on",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1730798874462ed86d": {
       "type": "apps",
       "blocks": {
@@ -1010,44 +1048,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "logo_slider_6UYhzg": {
-      "type": "logo-slider",
-      "blocks": {
-        "logo_8fYEg3": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
-            "logo_link": ""
-          }
-        },
-        "logo_KgekT3": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
-            "logo_link": ""
-          }
-        },
-        "logo_xUJFHg": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/core77.png",
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_8fYEg3",
-        "logo_KgekT3",
-        "logo_xUJFHg"
-      ],
-      "name": "Logo Slider",
-      "settings": {
-        "heading": "As seen on",
-        "heading_size": "h2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -1057,6 +1057,7 @@
     "collage_text_link_xVfca9",
     "rich_text_9mh8xK",
     "rich_text_yN9HkD",
+    "logo_slider_6UYhzg",
     "1730798874462ed86d",
     "rich_text_h1_Lere7N",
     "rich_text_fbgFhP",
@@ -1073,7 +1074,6 @@
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr",
-    "logo_slider_6UYhzg"
+    "rich_text_FVdRqr"
   ]
 }
