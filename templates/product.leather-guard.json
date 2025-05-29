@@ -575,6 +575,7 @@
         "text_gMpi8E",
         "button_tCkADX"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
         "height": "adapt",
