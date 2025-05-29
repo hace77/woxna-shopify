@@ -95,6 +95,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
+        "video": "shopify://files/videos/Gnarp Features Wide16-9.mp4",
         "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
         "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
         "description": "",
@@ -293,7 +294,7 @@
         "column_hxzyCN": {
           "type": "column",
           "settings": {
-            "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
+            "video": "shopify://files/videos/Gnarp Leather  Web4-5.mp4",
             "title": "Super Fat Leather",
             "text": "<p>Gnarp is made with a super fat leather that gives it an enhanced fire and water resistance.</p>",
             "link_label": "",
@@ -303,7 +304,7 @@
         "column_eTEahC": {
           "type": "column",
           "settings": {
-            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+            "video": "shopify://files/videos/Gnarp Chord Web4-5.mp4",
             "title": "A Multifunctional Chord",
             "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling and much more.</p>",
             "link_label": "",
@@ -313,7 +314,7 @@
         "column_yddykD": {
           "type": "column",
           "settings": {
-            "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+            "video": "shopify://files/videos/Gnarp Sustainability Web4-5.mp4",
             "title": "Proudly made in Sweden",
             "text": "<p>Gnarp is sustainably produced in Sweden using a naturally tanned leather that will develop an honest and genuine patina. </p>",
             "link_label": "",
@@ -326,7 +327,6 @@
         "column_eTEahC",
         "column_yddykD"
       ],
-      "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -417,7 +417,6 @@
         "collapsible_row_6EAfhX",
         "collapsible_row_k3ejMx"
       ],
-      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "heading": "A Durable Leather",
@@ -447,7 +446,6 @@
       "block_order": [
         "heading_pbJKfm"
       ],
-      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
         "image_overlay_opacity": 0,
