@@ -729,12 +729,69 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_6a3Bhn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Aq4bbY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_TdjLk6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-food-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_EbetM4",
         "slide_gdxmLE",
-        "slide_iQCX4y"
+        "slide_iQCX4y",
+        "slide_6a3Bhn",
+        "slide_Aq4bbY",
+        "slide_TdjLk6"
       ],
       "custom_css": [
         "@media (width >= 768px) {slideshow-component {display: none; }}"
