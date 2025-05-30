@@ -47,7 +47,6 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
-      "name": "Top video banner desktop",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -102,7 +101,6 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
-      "name": "Top videobanner mobile",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -205,7 +203,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-15.jpg",
+            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-7.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Gnarp",
@@ -269,7 +267,6 @@
         "image_UdTHzh"
       ],
       "disabled": true,
-      "name": "collage Gnarp",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -281,71 +278,42 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_9mh8xK": {
-      "type": "rich-text",
+    "logo_slider_6UYhzg": {
+      "type": "logo-slider",
       "blocks": {
-        "heading_zdyGU7": {
-          "type": "heading",
+        "logo_8fYEg3": {
+          "type": "logo",
           "settings": {
-            "heading": "No Tariffs for US Customers!",
-            "heading_size": "h1"
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
+            "logo_link": ""
           }
         },
-        "text_eA4ANa": {
-          "type": "text",
+        "logo_KgekT3": {
+          "type": "logo",
           "settings": {
-            "text": "<p>Our products are proudly made in Sweden, which means no Tariffs for US customers.</p>"
+            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
+            "logo_link": ""
           }
         },
-        "button_P4DBi7": {
-          "type": "button",
+        "logo_xUJFHg": {
+          "type": "logo",
           "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "logo_image": "shopify://shop_images/core77.png",
+            "logo_link": ""
           }
         }
       },
       "block_order": [
-        "heading_zdyGU7",
-        "text_eA4ANa",
-        "button_P4DBi7"
+        "logo_8fYEg3",
+        "logo_KgekT3",
+        "logo_xUJFHg"
       ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Logo Slider",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_yN9HkD": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9EKWxN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9EKWxN"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 8,
-        "padding_bottom": 8
+        "heading": "As seen on",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1730798874462ed86d": {
@@ -386,7 +354,7 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
-      "name": "Best folding saw",
+      "name": "Best folding saw for bushcraft",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -438,7 +406,6 @@
         ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
         ".badge {display: none;}"
       ],
-      "name": "Startpage collection",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -467,7 +434,6 @@
     },
     "video_ygLEnU": {
       "type": "video",
-      "name": "Video damascus",
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -514,7 +480,6 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -621,7 +586,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
-      "name": "No more Rusty blades",
+      "name": "No more rusty blades",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",
@@ -824,6 +789,7 @@
         "button_iczwYK"
       ],
       "custom_css": [],
+      "name": "Crafted for the Outdoor Spirit",
       "settings": {
         "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
         "height": "adapt",
@@ -921,6 +887,7 @@
         "text_fnwHBb",
         "button_xQEffw"
       ],
+      "name": "Made in sweden",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -961,6 +928,7 @@
         "text_ry3ayq",
         "button_xqqVKL"
       ],
+      "name": "Sustainability First",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
         "height": "adapt",
@@ -1026,8 +994,7 @@
     "video_banner_yt_fgFqCR",
     "collage_text_link_9Nc9UV",
     "collage_text_link_xVfca9",
-    "rich_text_9mh8xK",
-    "rich_text_yN9HkD",
+    "logo_slider_6UYhzg",
     "1730798874462ed86d",
     "rich_text_h1_Lere7N",
     "rich_text_fbgFhP",
