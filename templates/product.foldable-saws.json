@@ -112,6 +112,7 @@
         ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
         ".horizontal li a:hover {text-decoration: underline;}"
       ],
+      "name": "Custom menu",
       "settings": {
         "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
         "color_scheme": "scheme-2",
@@ -141,6 +142,7 @@
         "heading_C7z8Le",
         "text_rBXVdh"
       ],
+      "name": "Preamble",
       "settings": {
         "image": "{{ product.metafields.custom.preamble.value.image.value }}",
         "image_overlay_opacity": 0,
@@ -234,6 +236,7 @@
         "text_4W6aek",
         "button_WBDBXb"
       ],
+      "name": "TPI",
       "settings": {
         "image": "{{ product.metafields.custom.tpi.value.image.value }}",
         "height": "adapt",
@@ -281,6 +284,7 @@
         "text_CBAyN9",
         "button_77FVtY"
       ],
+      "name": "Grind",
       "settings": {
         "image": "{{ product.metafields.custom.grind.value.image.value }}",
         "height": "adapt",
@@ -330,6 +334,7 @@
         "text_rVMxjf",
         "button_iB6jMK"
       ],
+      "name": "Clean cuts",
       "settings": {
         "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
         "height": "adapt",
@@ -379,6 +384,7 @@
         "text_n3W6pk",
         "button_yA4XrT"
       ],
+      "name": "Review quote",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -412,6 +418,7 @@
         "heading_F9zFHC",
         "text_YcJy3D"
       ],
+      "name": "Transport",
       "settings": {
         "image": "{{ product.metafields.custom.transport.value.image.value }}",
         "height": "adapt",
@@ -523,6 +530,7 @@
         "heading_LFcadc",
         "text_4CCNhj"
       ],
+      "name": "handles",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -563,6 +571,7 @@
         "text_PwPdeV",
         "button_rfrV8p"
       ],
+      "name": "Story",
       "settings": {
         "image": "{{ product.metafields.custom.story.value.image.value }}",
         "height": "adapt",
@@ -674,6 +683,7 @@
         "heading_KnR9NP",
         "text_CBqpGQ"
       ],
+      "name": "Packaging",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -721,6 +731,7 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}"
       ],
+      "name": "Feauters",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -766,6 +777,7 @@
       "custom_css": [
         "h2,li,p {text-align: left;}"
       ],
+      "name": "tech spec",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -809,6 +821,7 @@
         "text_XLRz8T",
         "buttons_dRLaYe"
       ],
+      "name": "measurments",
       "settings": {
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
         "image_overlay_opacity": 0,
@@ -862,6 +875,7 @@
       "custom_css": [
         "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
       ],
+      "name": "Choose",
       "settings": {
         "caption": "",
         "heading": "",
