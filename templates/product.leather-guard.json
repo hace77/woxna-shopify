@@ -594,12 +594,69 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_9UQMLV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NVggpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_wmzUEY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-food.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_KHQeTe",
         "slide_6tejKT",
-        "slide_JJthAJ"
+        "slide_JJthAJ",
+        "slide_9UQMLV",
+        "slide_NVggpn",
+        "slide_wmzUEY"
       ],
       "custom_css": [
         "@media (width <= 768px) {slideshow-component {display: none; }}"
