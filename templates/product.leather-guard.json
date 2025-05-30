@@ -446,6 +446,36 @@
       "block_order": [
         "heading_pbJKfm"
       ],
+      "name": "measurements",
+      "settings": {
+        "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_tiH7aM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_dcBGjm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dcBGjm"
+      ],
+      "name": "measurements mobile",
       "settings": {
         "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
         "image_overlay_opacity": 0,
@@ -702,6 +732,7 @@
     "rich_text_7GmfxC",
     "collapsible_content_EM8rA3",
     "image_banner_U9UCQY",
+    "image_banner_tiH7aM",
     "rich_text_ji3RVR",
     "slideshow_cFTBLq",
     "rich_text_QkwfpV",
