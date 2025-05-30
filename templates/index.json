@@ -117,87 +117,6 @@
         "show_text_below": false
       }
     },
-    "collage_text_link_9Nc9UV": {
-      "type": "collage-text-link",
-      "blocks": {
-        "image_tpzF9D": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 180",
-            "vertical_position": "top",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "center",
-            "heading_size": "h0",
-            "mobile_heading_size": "medium",
-            "description": "Grit in Oak and Carbon Steel.",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "button_style_secondary": false
-          }
-        },
-        "image_jNgX44": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Folding-Saw-Ljusnan-in-hand.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "show_text_overlay": true,
-            "heading": "Ljusnan 250",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "left",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Longer Reach. Same Elegance",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "button_style_secondary": false
-          }
-        },
-        "image_HLUfzw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Foldable-saw-Halsing-bushcrafting.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 250",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "right",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Power, Tradition, Full Length",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "image_tpzF9D",
-        "image_jNgX44",
-        "image_HLUfzw"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
@@ -208,9 +127,9 @@
             "img_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
             "show_text_overlay": true,
             "heading": "Gnarp",
-            "vertical_position": "bottom",
+            "vertical_position": "top",
             "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
+            "text_alignment": "left",
             "mobile_text_alignment": "right",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
@@ -992,7 +911,6 @@
   "order": [
     "video_banner_yt_yWG9Ex",
     "video_banner_yt_fgFqCR",
-    "collage_text_link_9Nc9UV",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
     "rich_text_h1_Lere7N",
