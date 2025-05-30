@@ -680,7 +680,7 @@
         "slide_iQCX4y"
       ],
       "custom_css": [
-        "@media (width >= 768px) {.banner {display: none; }}"
+        "@media (width >= 768px) {slideshow-component {display: none; }}"
       ],
       "name": "Slideshow mobile",
       "settings": {
