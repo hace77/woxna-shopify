@@ -479,7 +479,7 @@
         "heading_dcBGjm"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}"
+        "@media (width >= 768px) {.banner {display: none; }}"
       ],
       "name": "measurements mobile",
       "settings": {
