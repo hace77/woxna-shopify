@@ -602,7 +602,7 @@
         "slide_JJthAJ"
       ],
       "custom_css": [
-        "@media (width <= 767px) {.banner {display: none; }}"
+        "@media (width <= 768px) {slideshow-component {display: none; }}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
