@@ -446,6 +446,9 @@
       "block_order": [
         "heading_pbJKfm"
       ],
+      "custom_css": [
+        "@media (max-width: 767px) {.banner {display: none; }}"
+      ],
       "name": "measurements",
       "settings": {
         "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
