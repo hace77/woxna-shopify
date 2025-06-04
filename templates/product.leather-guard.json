@@ -921,6 +921,33 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "richtext_with_image_WDkeYt": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "image_Kcg9Qw": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Woxna_kotte_logo_yellow_4cfd0094-9722-47fe-b787-b6ac0c896dc6.png",
+            "image_link": "shopify://pages/contest-find-the-golden-pine"
+          }
+        }
+      },
+      "block_order": [
+        "image_Kcg9Qw"
+      ],
+      "custom_css": [
+        "img {width: 20px;}"
+      ],
+      "name": "rich text with image",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
     }
   },
   "order": [
@@ -940,6 +967,7 @@
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
     "related-products",
-    "1730797907a66336cc"
+    "1730797907a66336cc",
+    "richtext_with_image_WDkeYt"
   ]
 }
