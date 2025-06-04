@@ -31,11 +31,40 @@
       "block_order": [
         "heading_icqFn9"
       ],
-      "name": "t:sections.image-banner.presets.name",
+      "name": "Image banner mobile",
       "settings": {
         "image": "shopify://shop_images/golden_pine.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_HNRDGR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xDqkeW": {
+          "type": "heading",
+          "settings": {
+            "heading": "You found it!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xDqkeW"
+      ],
+      "name": "Image banner desktop",
+      "settings": {
+        "image": "shopify://shop_images/golden_pine.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -96,6 +125,7 @@
   "order": [
     "main",
     "image_banner_HJw8iJ",
+    "image_banner_HNRDGR",
     "174903040637956377",
     "featured_collection_hqQDDC"
   ]
