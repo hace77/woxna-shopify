@@ -65,7 +65,7 @@
         "heading_xDqkeW"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important;}}"
+        "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
       "name": "Image banner desktop",
       "settings": {
@@ -80,6 +80,34 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
+      }
+    },
+    "1749031773e86736bc": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_R36w7h": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "495726",
+            "text_color": "#202020",
+            "button_background_color": "#626859",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_R36w7h"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "174903040637956377": {
@@ -133,6 +161,7 @@
     "main",
     "image_banner_HJw8iJ",
     "image_banner_HNRDGR",
+    "1749031773e86736bc",
     "174903040637956377",
     "featured_collection_hqQDDC"
   ]
