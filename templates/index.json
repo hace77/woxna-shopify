@@ -929,7 +929,10 @@
         "heading_wxr7g3",
         "text_dECkqp"
       ],
-      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none;}}",
+        "@media (max-width: 749px) {.banner__content {align-items: end;}}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/golden_pine.png",
@@ -967,7 +970,6 @@
         "heading_98QtjP",
         "text_hD3YNx"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
