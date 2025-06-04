@@ -312,6 +312,10 @@
         <meta name="robots" content="noindex">
         {% endif %}
 
+     {% if handle contains 'contest' %}
+        <meta name="robots" content="noindex">
+        {% endif %}
+
         {% if template contains "kickstarter" %}
           <style>
             .header-wrapper{
