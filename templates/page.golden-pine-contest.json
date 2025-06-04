@@ -69,9 +69,9 @@
       ],
       "name": "Image banner desktop",
       "settings": {
-        "image": "shopify://shop_images/golden_pine.png",
+        "image": "shopify://shop_images/golden_pine_77af6539-198a-4493-9d70-f1114fc538b9.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
