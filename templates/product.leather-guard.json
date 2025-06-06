@@ -937,7 +937,7 @@
         "image_Kcg9Qw"
       ],
       "custom_css": [
-        "img {width: 30px;}"
+        "img {width: 40px;}"
       ],
       "name": "rich text with image",
       "settings": {
