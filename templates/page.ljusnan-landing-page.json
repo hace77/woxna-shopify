@@ -46,7 +46,7 @@
         "buttons_KDphUK"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner__content {align-items: end; } .banner__media {height: 100vh }}"
+        "@media (max-width: 749px) {.banner__content {align-items: end; height: 100vh; } .banner__media {height: 100vh; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
