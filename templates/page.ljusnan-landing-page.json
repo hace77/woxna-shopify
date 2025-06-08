@@ -14,10 +14,9 @@
       "blocks": {
         "heading_rAJwKb": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "heading": "Ljusnan 180 - no more rusty blades",
+            "heading_size": "h0"
           }
         },
         "text_M84BhG": {
@@ -55,10 +54,10 @@
         "image_height": "adapt",
         "desktop_content_position": "top-left",
         "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
