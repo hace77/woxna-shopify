@@ -11,6 +11,7 @@
   "sections": {
     "video_banner_ah8YRc": {
       "type": "video-bannerYT",
+      "disabled": true,
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -76,6 +77,7 @@
         "slide_rjeTcd",
         "slide_mKnQkq"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -124,6 +126,7 @@
         "column_j76jWY",
         "column_eGNCxQ"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Multicolumn",
@@ -173,6 +176,7 @@
         "text_rqFnJb",
         "button_aHnLX7"
       ],
+      "disabled": true,
       "name": "Image with text animation",
       "settings": {
         "animation_direction": "left",
@@ -222,6 +226,7 @@
         "text_Wzrt6E",
         "button_yJHrhF"
       ],
+      "disabled": true,
       "name": "Image with text animation",
       "settings": {
         "animation_direction": "right",
@@ -271,6 +276,7 @@
         "text_y7WWet",
         "button_DG7qxH"
       ],
+      "disabled": true,
       "name": "Image with text animation",
       "settings": {
         "animation_direction": "left",
@@ -294,6 +300,7 @@
       "blocks": {
         "heading_rAJwKb": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1"
@@ -301,6 +308,7 @@
         },
         "text_M84BhG": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -309,11 +317,11 @@
         "buttons_KDphUK": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Read more",
+            "button_link_1": "shopify://products/ljusnan-foldable-saw-180-mm-walnut-stainless-steel",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "buy now",
+            "button_link_2": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "button_style_secondary_2": false
           }
         }
@@ -325,16 +333,17 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Woxna-Ljusnan-Folding-Saw-start-mobile.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "top-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     }
   },
