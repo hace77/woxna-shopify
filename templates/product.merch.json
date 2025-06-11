@@ -91,10 +91,28 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "image_banner_rEAWDe": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "{{ product.metafields.custom.story.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "image_banner_rEAWDe"
   ]
 }
