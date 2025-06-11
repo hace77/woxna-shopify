@@ -20,16 +20,16 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -46,8 +46,8 @@
       "block_order": [
         "title",
         "judge_me_reviews_preview_badge_VG7pPA",
-        "price",
         "variant_picker",
+        "price",
         "buy_buttons",
         "description"
       ],
@@ -127,6 +127,7 @@
         "heading_CQAxVb",
         "text_Lb83EG"
       ],
+      "custom_css": [],
       "name": "Sustainable",
       "settings": {
         "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
@@ -140,6 +141,16 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "custom_liquid_teE7mq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "rich_text_J4ppHw": {
@@ -163,13 +174,14 @@
         "heading_LFcadc",
         "text_4CCNhj"
       ],
+      "name": "Handles",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 32
       }
     },
     "image_with_text_j83Eef": {
@@ -215,7 +227,7 @@
         "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
@@ -249,6 +261,7 @@
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "image_banner_hBMLMA",
+    "custom_liquid_teE7mq",
     "rich_text_J4ppHw",
     "image_with_text_j83Eef",
     "related-products",
