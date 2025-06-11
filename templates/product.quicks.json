@@ -171,48 +171,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_QkwfpV": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LTX3M7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TdaeQM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_qxwfAc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTX3M7",
-        "text_TdaeQM",
-        "button_qxwfAc"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 68,
-        "padding_bottom": 76
-      }
-    },
     "image_with_text_j83Eef": {
       "type": "image-with-text",
       "blocks": {
@@ -291,7 +249,6 @@
     "custom_liquid_k7EFPc",
     "image_banner_hBMLMA",
     "rich_text_J4ppHw",
-    "rich_text_QkwfpV",
     "image_with_text_j83Eef",
     "related-products",
     "1730797907a66336cc"
