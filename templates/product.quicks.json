@@ -111,7 +111,7 @@
         "heading_CQAxVb": {
           "type": "heading",
           "settings": {
-            "heading": "Sustainable.Unique. Limited.",
+            "heading": "Sustainable. Unique. Limited.",
             "heading_size": "h1"
           }
         },
@@ -127,6 +127,7 @@
         "heading_CQAxVb",
         "text_Lb83EG"
       ],
+      "name": "Sustainable",
       "settings": {
         "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
         "image_overlay_opacity": 0,
