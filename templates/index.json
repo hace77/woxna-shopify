@@ -600,85 +600,6 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_nEJcMz": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_wxr7g3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find the Golden pine cone",
-            "heading_size": "h1"
-          }
-        },
-        "text_dECkqp": {
-          "type": "text",
-          "settings": {
-            "text": "Somewhere on this webpage there is a golden version of the pine cone in our logo. Find it and click it to have a chance to win a Ljusnan 180 Folding Saw.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_wxr7g3",
-        "text_dECkqp"
-      ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/golden_pine.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "image_banner_9GLXMf": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_98QtjP": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find the Golden pine cone",
-            "heading_size": "h1"
-          }
-        },
-        "text_hD3YNx": {
-          "type": "text",
-          "settings": {
-            "text": "Somewhere on this webpage there is a golden version of the pine cone in our logo. Find it and click it to have a chance to win a Ljusnan 180 Folding Saw.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_98QtjP",
-        "text_hD3YNx"
-      ],
-      "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Golden_pine_hero-DT.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "newsletter_eicndk": {
       "type": "newsletter",
       "blocks": {
@@ -999,8 +920,6 @@
     "image_with_text_7betFC",
     "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
-    "image_banner_nEJcMz",
-    "image_banner_9GLXMf",
     "newsletter_eicndk",
     "newsletter_H4rQNJ",
     "image_with_text_83f7j8",
