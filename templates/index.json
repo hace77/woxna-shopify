@@ -506,6 +506,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "name": "No more rusty",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",
@@ -708,6 +709,7 @@
         "button_iczwYK"
       ],
       "custom_css": [],
+      "name": "crafted",
       "settings": {
         "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
         "height": "adapt",
