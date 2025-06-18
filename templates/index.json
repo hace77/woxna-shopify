@@ -925,6 +925,30 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_34jE7b": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jzkrgK": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our customers say",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzkrgK"
+      ],
+      "name": "What our customers say",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -932,6 +956,7 @@
     "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
+    "rich_text_34jE7b",
     "1750255072dfdc72a2",
     "rich_text_h1_Lere7N",
     "logo_slider_6UYhzg",
