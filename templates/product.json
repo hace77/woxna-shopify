@@ -92,7 +92,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
-        "cover_image": "shopify://shop_images/J2A9688_1bfd9fe1-dfd2-4045-8f22-5019f1047d63.jpg",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -224,6 +223,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
+            "row_content": "",
             "page": ""
           }
         }
@@ -258,7 +258,9 @@
         },
         "text_UEKDYM": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
         },
         "button_eA8TcW": {
           "type": "button",
@@ -285,6 +287,22 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1750247675cdd549bf": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_all_reviews_wkjCYR": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/all-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_all_reviews_wkjCYR"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -295,6 +313,7 @@
     "image_banner_DLKP7F",
     "multirow_LzMMke",
     "collapsible_content_qF3gHc",
-    "rich_text_3Y98gr"
+    "rich_text_3Y98gr",
+    "1750247675cdd549bf"
   ]
 }
