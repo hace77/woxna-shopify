@@ -209,9 +209,26 @@
       "block_order": [
         "judge_me_reviews_featured_carousel_ge8YUn"
       ],
+      "disabled": true,
       "custom_css": [
         ".preorder-badge-collection {display: none;}"
       ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1750255072dfdc72a2": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_84pWb7": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_84pWb7"
+      ],
+      "name": "Reviews",
       "settings": {
         "include_margins": true
       }
@@ -915,6 +932,7 @@
     "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
+    "1750255072dfdc72a2",
     "rich_text_h1_Lere7N",
     "logo_slider_6UYhzg",
     "rich_text_fbgFhP",
