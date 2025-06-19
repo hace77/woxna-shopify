@@ -92,6 +92,7 @@
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.header.value }}",
             "text": "<p>{{ block.repeater.description | metafield_tag }}</p>",
+            "link_label": "",
             "link": ""
           }
         }
@@ -123,7 +124,7 @@
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "repeater": "{{ page.metafields.custom.prototype_list.value }}",
           "settings": {
-            "form_id": "{{ block.repeater.form.value }}"
+            "form_id": "{{ block.repeater.form_number.value }}"
           }
         }
       },
