@@ -217,6 +217,30 @@
         "include_margins": true
       }
     },
+    "rich_text_34jE7b": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jzkrgK": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our customers say",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzkrgK"
+      ],
+      "name": "What our customers say",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1750255072dfdc72a2": {
       "type": "apps",
       "blocks": {
@@ -540,7 +564,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 0
       }
     },
     "image_banner_iTfWWc": {
@@ -621,40 +645,6 @@
         "padding_bottom": 36
       }
     },
-    "newsletter_eicndk": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_tpNg9x": {
-          "type": "heading",
-          "settings": {
-            "heading": "Join the Woxna community!",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_9biQaF": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Sign up for our newsletter to be the first to know when our black week saws drop here in our web shop.</p>"
-          }
-        },
-        "email_form_HMdDpn": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_tpNg9x",
-        "paragraph_9biQaF",
-        "email_form_HMdDpn"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "newsletter_H4rQNJ": {
       "type": "newsletter",
       "blocks": {
@@ -681,6 +671,7 @@
         "paragraph_BwKYAV",
         "email_form_CQ69PJ"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
@@ -742,7 +733,7 @@
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -925,30 +916,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "rich_text_34jE7b": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jzkrgK": {
-          "type": "heading",
-          "settings": {
-            "heading": "What our customers say",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_jzkrgK"
-      ],
-      "name": "What our customers say",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -968,7 +935,6 @@
     "image_with_text_7betFC",
     "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
-    "newsletter_eicndk",
     "newsletter_H4rQNJ",
     "image_with_text_83f7j8",
     "image_banner_CPbRdx",
