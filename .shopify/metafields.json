@@ -260,6 +260,26 @@
         "name": "rich_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "prototype_list",
+      "namespace": "custom",
+      "name": "prototype-list",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "coming_soon_list",
+      "namespace": "custom",
+      "name": "coming soon list",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "product": [
