@@ -140,13 +140,42 @@
             "padding_right": 0,
             "padding_left": 0
           }
+        },
+        "column_jqyLzA": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "form_id": ""
+          }
+        },
+        "forms_inline_LqyUtc": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
         }
       },
       "block_order": [
         "column_WneTL9",
         "forms_inline_rBGQpH",
         "column_NCcjHF",
-        "forms_inline_VBzJDN"
+        "forms_inline_VBzJDN",
+        "column_jqyLzA",
+        "forms_inline_LqyUtc"
       ],
       "name": "Multicolumn with Form",
       "settings": {
