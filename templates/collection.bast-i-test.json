@@ -321,7 +321,9 @@
         "slide_NCQYPC",
         "slide_MXx4T6"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (width >= 768px) {slideshow-component {display: none; }}"
+      ],
       "name": "Slideshow mobile",
       "settings": {
         "layout": "full_bleed",
@@ -396,6 +398,9 @@
         "slide_dxrVC8",
         "slide_KEAnTQ",
         "slide_jAmkkk"
+      ],
+      "custom_css": [
+        "@media (width <= 768px) {slideshow-component {display: none; }}"
       ],
       "name": "Slideshow DT",
       "settings": {
