@@ -290,17 +290,17 @@
     "logo_slider_6UYhzg": {
       "type": "logo-slider",
       "blocks": {
-        "logo_8fYEg3": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
-            "logo_link": ""
-          }
-        },
         "logo_8aBA6h": {
           "type": "logo",
           "settings": {
             "logo_image": "shopify://shop_images/placeholder.png",
+            "logo_link": ""
+          }
+        },
+        "logo_8fYEg3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
             "logo_link": ""
           }
         },
@@ -320,8 +320,8 @@
         }
       },
       "block_order": [
-        "logo_8fYEg3",
         "logo_8aBA6h",
+        "logo_8fYEg3",
         "logo_KgekT3",
         "logo_xUJFHg"
       ],
