@@ -101,6 +101,7 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
+      "name": "Video Banner YT mobile",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",

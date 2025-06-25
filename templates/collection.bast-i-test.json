@@ -152,6 +152,85 @@
         "padding_bottom": 40
       }
     },
+    "slideshow_qnwtLy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_QcHdM9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw_mobile.jpg",
+            "heading": "Inga fler rostiga sågblad",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NCQYPC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan-saw-teeth-3phase-grind.png",
+            "heading": "Mångsidighet med ett 7 TPI-blad",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_MXx4T6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna_Ljusnan-2.png",
+            "heading": "Tidlös stil med valnötsträ",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QcHdM9",
+        "slide_NCQYPC",
+        "slide_MXx4T6"
+      ],
+      "custom_css": [
+        "@media (width >= 768px) {slideshow-component {display: none; }}",
+        "@media (width <= 749px) {.banner__content {align-items: start; }}"
+      ],
+      "name": "Slideshow mobile",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -258,84 +337,6 @@
         "padding_bottom": 36
       }
     },
-    "slideshow_qnwtLy": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_QcHdM9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw_mobile.jpg",
-            "heading": "Inga fler rostiga sågblad",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_NCQYPC": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Ljusnan-saw-teeth-3phase-grind.png",
-            "heading": "Mångsidighet med ett 7 TPI-blad",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_MXx4T6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Woxna_Ljusnan-2.png",
-            "heading": "Tidlös stil med valnötsträ",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_QcHdM9",
-        "slide_NCQYPC",
-        "slide_MXx4T6"
-      ],
-      "custom_css": [
-        "@media (width >= 768px) {slideshow-component {display: none; }}"
-      ],
-      "name": "Slideshow mobile",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "slideshow_CdUAeF": {
       "type": "slideshow",
       "blocks": {
@@ -399,6 +400,7 @@
         "slide_KEAnTQ",
         "slide_jAmkkk"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (width <= 768px) {slideshow-component {display: none; }}"
       ],
@@ -420,11 +422,11 @@
     "image_banner_PBEUQe",
     "video_banner_yt_iLi8kQ",
     "rich_text_dbVHAH",
+    "slideshow_qnwtLy",
     "banner",
     "product-grid",
     "rich_text_q4bA3M",
     "featured_collection_bn8crz",
-    "slideshow_qnwtLy",
     "slideshow_CdUAeF"
   ]
 }
