@@ -14,6 +14,7 @@
       "blocks": {
         "heading_4QmWJi": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "{{ collection.title }}",
             "heading_size": "hxl"
@@ -27,7 +28,7 @@
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image": "shopify://shop_images/ljusnan_bast-i-test.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-left",
@@ -78,6 +79,7 @@
       "blocks": {
         "heading_HHjHMH": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "{{ collection.title }}",
             "heading_size": "h0"
@@ -93,7 +95,7 @@
       ],
       "name": "Video Banner YT",
       "settings": {
-        "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
+        "video": "shopify://files/videos/Ljusnan-bastitest.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
@@ -213,6 +215,7 @@
         "text_UdkziW",
         "button_effggk"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
         "ul {list-style-position: outside;}"
