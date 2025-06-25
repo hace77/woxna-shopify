@@ -297,6 +297,13 @@
             "logo_link": ""
           }
         },
+        "logo_8aBA6h": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/placeholder.png",
+            "logo_link": ""
+          }
+        },
         "logo_KgekT3": {
           "type": "logo",
           "settings": {
@@ -314,6 +321,7 @@
       },
       "block_order": [
         "logo_8fYEg3",
+        "logo_8aBA6h",
         "logo_KgekT3",
         "logo_xUJFHg"
       ],
