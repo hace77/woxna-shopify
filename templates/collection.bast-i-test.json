@@ -123,7 +123,7 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.description }}"
+            "text": "<p>{{ collection.description }}</p>"
           }
         },
         "button_d4cWYV": {
@@ -312,12 +312,12 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Discover Hälsing Folding saws",
+        "title": "Urforska vårt övriga sortiment",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "halsing-oak-and-high-carbon-steele",
+        "collection": "all",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -331,7 +331,7 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
