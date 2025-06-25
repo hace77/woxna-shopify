@@ -257,6 +257,82 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "slideshow_qnwtLy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_QcHdM9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw_mobile.jpg",
+            "heading": "Inga fler rostiga sågblad",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NCQYPC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan-saw-teeth-3phase-grind.png",
+            "heading": "Mångsidighet med ett 7 TPI-blad",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_MXx4T6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna_Ljusnan-2.png",
+            "heading": "Tidlös stil med valnötsträ",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QcHdM9",
+        "slide_NCQYPC",
+        "slide_MXx4T6"
+      ],
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -267,6 +343,7 @@
     "banner",
     "product-grid",
     "rich_text_q4bA3M",
-    "featured_collection_bn8crz"
+    "featured_collection_bn8crz",
+    "slideshow_qnwtLy"
   ]
 }
