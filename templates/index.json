@@ -120,6 +120,26 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
+        "image_UdTHzh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
+            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "show_text_overlay": true,
+            "heading": "Discover Ljusnan",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "left",
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "description": "Best in test",
+            "description_style": "body",
+            "button_label": "Discover",
+            "button_link": "shopify://collections/ljusnan-bast-i-test",
+            "button_style_secondary": false
+          }
+        },
         "image_3FYifX": {
           "type": "image",
           "settings": {
@@ -159,32 +179,12 @@
             "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
-        },
-        "image_UdTHzh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "show_text_overlay": true,
-            "heading": "Discover Ljusnan",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "left",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Best in test",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://collections/ljusnan-bast-i-test",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
+        "image_UdTHzh",
         "image_3FYifX",
-        "image_fA3Dgi",
-        "image_UdTHzh"
+        "image_fA3Dgi"
       ],
       "settings": {
         "heading": "",
