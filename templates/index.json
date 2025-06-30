@@ -301,6 +301,13 @@
             "logo_link": ""
           }
         },
+        "logo_7M93R9": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/vapentidningen_9b869b04-5436-4671-b8d2-b312a5950b87.png",
+            "logo_link": ""
+          }
+        },
         "logo_8fYEg3": {
           "type": "logo",
           "settings": {
@@ -325,6 +332,7 @@
       },
       "block_order": [
         "logo_8aBA6h",
+        "logo_7M93R9",
         "logo_8fYEg3",
         "logo_KgekT3",
         "logo_xUJFHg"
