@@ -186,6 +186,9 @@
         "image_3FYifX",
         "image_fA3Dgi"
       ],
+      "custom_css": [
+        ".restock-rocket-preorder-badge {display: none;}"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
