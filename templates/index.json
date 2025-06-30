@@ -163,20 +163,20 @@
         "image_UdTHzh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Folding-Saw-Ljusnan-in-hand.jpg",
+            "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
             "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
-            "heading": "Ljusnan 250",
+            "heading": "Discover Ljusnan",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "left",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
-            "description": "Longer Reach. Same Elegance",
+            "description": "Best in test",
             "description_style": "body",
             "button_label": "Discover",
-            "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "button_link": "shopify://collections/ljusnan-bast-i-test",
             "button_style_secondary": false
           }
         }
