@@ -172,8 +172,9 @@
         "column_JjDGh8": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].image.value }}",
+            "title": "{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].heading.value }}",
+            "text": "",
             "link_label": "",
             "link": "",
             "form_id": ""
@@ -199,8 +200,9 @@
         "column_McH7ic": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].image.value }}",
+            "title": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].heading.value }}",
+            "text": "",
             "link_label": "",
             "link": "",
             "form_id": ""
@@ -209,7 +211,7 @@
         "forms_inline_iRKKXW": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "form_id": "",
+            "form_id": "536147",
             "text_color": "#202020",
             "button_background_color": "#202020",
             "button_label_color": "#FFFFFF",
