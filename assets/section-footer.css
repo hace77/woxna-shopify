@@ -18,12 +18,16 @@
 
   .footer-block.grid__item {
     padding: 0;
-    margin: 4rem 0;
+    margin: 2rem 0;
     width: 100%;
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-top: 2rem;
   }
 
   .footer-block.grid__item:first-child {
     margin-top: 0;
+    border-top: none;
+    padding-top: 0;
   }
 
   .footer__content-top {
@@ -504,5 +508,80 @@
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
+  }
+}
+
+/* CSS-Only Dropdown Menu for Footer */
+.footer-block__heading--toggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  color: currentColor;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .footer-block__heading--toggle {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+  }
+}
+
+.footer-block__toggle-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.footer-block__toggle-input {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
+.footer-block__dropdown {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* When checkbox is checked, show the dropdown */
+.footer-block__toggle-input:checked ~ .footer-block__dropdown {
+  display: block;
+}
+
+/* When checkbox is checked, rotate the + to make it an × */
+.footer-block__toggle-input:checked ~ .footer-block__heading--toggle .footer-block__toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* Desktop styles - always show content */
+@media screen and (min-width: 750px) {
+  .footer-block__heading--toggle {
+    cursor: default;
+  }
+  
+  .footer-block__toggle-icon {
+    display: none;
+  }
+  
+  .footer-block__dropdown {
+    display: block !important;
   }
 }
