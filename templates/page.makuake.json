@@ -15,14 +15,14 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "Introducing: The World's First Damascus Foldable Saw",
+            "heading": "世界初のダマスカス折りたたみノコギリをご紹介",
             "heading_size": "h0"
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "Strength, beauty and craftsmanship combined",
+            "text": "強度、美しさ、そして職人技の融合",
             "text_style": "subtitle"
           }
         }
@@ -34,6 +34,7 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
+      "name": "hero",
       "settings": {
         "image": "shopify://shop_images/Damascus_4.jpg",
         "image_overlay_opacity": 0,
@@ -94,7 +95,7 @@
         "heading_XwtDAH": {
           "type": "heading",
           "settings": {
-            "heading": "Why This Saw is Revolutionary",
+            "heading": "なぜこのノコギリは画期的なのか",
             "heading_size": "h1"
           }
         },
