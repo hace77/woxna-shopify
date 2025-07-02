@@ -571,17 +571,29 @@
   transform: rotate(45deg);
 }
 
-/* Desktop styles - always show content */
+/* Desktop styles - keep collapsible functionality */
 @media screen and (min-width: 750px) {
   .footer-block__heading--toggle {
-    cursor: default;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
   }
   
   .footer-block__toggle-icon {
-    display: none;
+    display: inline;
+    margin-left: 0.5rem;
+    font-size: 2.5rem;
   }
   
   .footer-block__dropdown {
-    display: block !important;
+    display: none;
+    text-align: center;
+  }
+  
+  .footer-block.grid__item {
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
