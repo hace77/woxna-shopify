@@ -403,6 +403,12 @@
   .footer-block-image.right {
     justify-content: center;
   }
+  
+  .footer-block__image-wrapper img {
+    max-width: 70% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .footer-block__image-wrapper {
@@ -577,6 +583,9 @@
     cursor: pointer;
     justify-content: center;
     text-align: center;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .footer-block__toggle-icon {
@@ -595,5 +604,8 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
   }
 }
+
+
