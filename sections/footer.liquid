@@ -91,7 +91,7 @@
                         {%- if section.settings.enable_dropdown_menus -%}
                           <input type="checkbox" id="footer-toggle-{{ block.id }}" class="footer-block__toggle-input" hidden />
                           <label for="footer-toggle-{{ block.id }}" class="footer-block__heading footer-block__heading--toggle">
-                            {{- block.settings.heading -}} <span class="footer-block__toggle-icon">+</span>
+                            {{- block.settings.heading -}}<i class="footer-block__toggle-icon fas fa-chevron-down"></i>
                           </label>
                         {%- else -%}
                           <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>

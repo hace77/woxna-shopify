@@ -534,6 +534,7 @@
   border: none;
   background: none;
   padding: 0;
+  position: relative;
 }
 
 @media screen and (min-width: 990px) {
@@ -542,10 +543,15 @@
   }
 }
 
+.footer-block__heading--toggle {
+  position: relative;
+}
+
 .footer-block__toggle-icon {
-  font-size: 2rem;
+  font-size: 1.2rem;
   transition: transform 0.3s ease;
-  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer-block__toggle-input {
@@ -572,9 +578,9 @@
   display: block;
 }
 
-/* When checkbox is checked, rotate the + to make it an × */
+/* When checkbox is checked, rotate the down arrow 180 degrees to point up */
 .footer-block__toggle-input:checked ~ .footer-block__heading--toggle .footer-block__toggle-icon {
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 /* Desktop styles - keep collapsible functionality */
@@ -589,9 +595,10 @@
   }
   
   .footer-block__toggle-icon {
-    display: inline;
+    display: inline-block;
     margin-left: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
   }
   
   .footer-block__dropdown {
