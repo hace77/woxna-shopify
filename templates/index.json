@@ -943,7 +943,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-TKfihV\"></div>"
+            "formId": ""
           }
         }
       },
@@ -952,6 +952,52 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "rich_text_wKwa4B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wnbtNM": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_BkhQxd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_PhaGPf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wnbtNM",
+        "text_BkhQxd",
+        "button_PhaGPf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -978,6 +1024,7 @@
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
     "rich_text_FVdRqr",
-    "1751624034c788284f"
+    "1751624034c788284f",
+    "rich_text_wKwa4B"
   ]
 }
