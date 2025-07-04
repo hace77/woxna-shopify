@@ -878,6 +878,7 @@
         "text_ry3ayq",
         "button_xqqVKL"
       ],
+      "name": "sustain",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
         "height": "adapt",
@@ -891,7 +892,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 56
       }
     },
     "rich_text_FVdRqr": {
