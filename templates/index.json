@@ -14,14 +14,14 @@
       "blocks": {
         "heading_NUNcr4": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Ljusnan 180",
+            "heading": "Explore our collection of Saws",
             "heading_size": "h0"
           }
         },
         "text_FrJi3W": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Explore our collection of Saws",
             "text_style": "body"
@@ -45,7 +45,8 @@
         "buttons_76y76T"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: start; }}"
       ],
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
