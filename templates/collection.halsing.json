@@ -228,6 +228,23 @@
         "padding_bottom": 52
       }
     },
+    "1752140363542f64d8": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_average_rating_NMtjyP": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "halsing-foldable-saw-180-mm-oak-hcs"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_average_rating_NMtjyP"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "collapsible_content_XUdUVV": {
       "type": "collapsible-content",
       "blocks": {
@@ -287,23 +304,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "1752140363542f64d8": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_average_rating_NMtjyP": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_average_rating_NMtjyP"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
