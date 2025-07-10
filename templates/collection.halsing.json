@@ -55,13 +55,12 @@
       "block_order": [
         "heading_rbbNjT"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -88,6 +87,7 @@
       "block_order": [
         "heading_HHjHMH"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
