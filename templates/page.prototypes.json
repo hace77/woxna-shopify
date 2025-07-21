@@ -176,7 +176,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].heading.value }}",
-            "text": "",
+            "text": "<p>{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
