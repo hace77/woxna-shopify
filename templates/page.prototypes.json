@@ -205,7 +205,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].heading.value }}",
-            "text": "<p></p><p></p>",
+            "text": "<p>{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].description | metafield_tag }}</p><p></p>",
             "link_label": "",
             "link": "",
             "form_id": ""
