@@ -183,7 +183,7 @@
         "forms_inline_yDjiPm": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "form_id": "536127",
+            "form_id": "536147",
             "text_color": "#202020",
             "button_background_color": "#202020",
             "button_label_color": "#ffffff",
@@ -211,7 +211,7 @@
         "forms_inline_iRKKXW": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "form_id": "536147",
+            "form_id": "536127",
             "text_color": "#202020",
             "button_background_color": "#202020",
             "button_label_color": "#ffffff",
