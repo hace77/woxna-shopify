@@ -224,6 +224,17 @@
             "padding_right": 0,
             "padding_left": 0
           }
+        },
+        "column_bUWiiG": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].image.value }}",
+            "title": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].heading.value }}",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "form_id": ""
+          }
         }
       },
       "block_order": [
@@ -236,7 +247,8 @@
         "column_JjDGh8",
         "forms_inline_yDjiPm",
         "column_McH7ic",
-        "forms_inline_iRKKXW"
+        "forms_inline_iRKKXW",
+        "column_bUWiiG"
       ],
       "name": "Multicolumn with Form",
       "settings": {
