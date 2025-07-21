@@ -90,7 +90,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"leather-holster\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"leather-holster\"].heading.value }}",
-            "text": "",
+            "text": "<p>{{ metaobjects.coming_soon[\"leather-holster\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
@@ -118,7 +118,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"curly-branch-handle\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"curly-branch-handle\"].heading.value }}",
-            "text": "",
+            "text": "<p>{{ metaobjects.coming_soon[\"curly-branch-handle\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
@@ -143,10 +143,11 @@
         },
         "column_jqyLzA": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"damascus-saw\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"damascus-saw\"].heading.value }}",
-            "text": "",
+            "text": "<p>{{ metaobjects.coming_soon[\"longer-version-of-ljusnan-halsning-around-35-cm-in-blade-length\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
@@ -154,6 +155,7 @@
         },
         "forms_inline_LqyUtc": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": true,
           "settings": {
             "form_id": "536097",
             "text_color": "#202020",
@@ -199,6 +201,7 @@
         },
         "column_McH7ic": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"saws-with-micarta-handles\"].heading.value }}",
@@ -210,6 +213,7 @@
         },
         "forms_inline_iRKKXW": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": true,
           "settings": {
             "form_id": "536127",
             "text_color": "#202020",
@@ -230,7 +234,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].heading.value }}",
-            "text": "",
+            "text": "<p>{{ metaobjects.coming_soon[\"curly-branch-handle\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
