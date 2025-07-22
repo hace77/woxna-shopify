@@ -234,7 +234,7 @@
           "settings": {
             "image": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].image.value }}",
             "title": "{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].heading.value }}",
-            "text": "<p>{{ metaobjects.coming_soon[\"curly-branch-handle\"].description | metafield_tag }}</p>",
+            "text": "<p>{{ metaobjects.coming_soon[\"blade-with-tpi-9-and-11\"].description | metafield_tag }}</p>",
             "link_label": "",
             "link": "",
             "form_id": ""
