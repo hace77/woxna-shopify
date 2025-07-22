@@ -75,20 +75,29 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
+                    {%- if block.settings.heading != blank -%}
+                      <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    {%- endif -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      {%- if block.settings.heading != blank -%}
+                        {%- if section.settings.enable_dropdown_menus -%}
+                          <input type="checkbox" id="footer-toggle-{{ block.id }}" class="footer-block__toggle-input" hidden />
+                          <label for="footer-toggle-{{ block.id }}" class="footer-block__heading footer-block__heading--toggle">
+                            {{- block.settings.heading -}}<i class="footer-block__toggle-icon fas fa-chevron-down"></i>
+                          </label>
+                        {%- else -%}
+                          <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                        {%- endif -%}
+                      {%- endif -%}
+                      <ul class="footer-block__details-content list-unstyled{% if section.settings.enable_dropdown_menus %} footer-block__dropdown{% endif %}">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -102,6 +111,9 @@
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
+                    {%- if settings.brand_headline != blank -%}
+                      <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                    {%- endif -%}
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
@@ -122,9 +134,6 @@
                           }}
                         </div>
                       {%- endif -%}
-                      {%- if settings.brand_headline != blank -%}
-                        <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
-                      {%- endif -%}
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
@@ -133,6 +142,9 @@
                       {%- endif -%}
                     </div>
                   {%- when 'image' -%}
+                    {%- if block.settings.heading != blank -%}
+                      <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    {%- endif -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                       {%- if block.settings.image != blank -%}
                         {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
@@ -516,6 +528,17 @@
       "id": "show_policy",
       "default": true,
       "label": "t:sections.footer.settings.show_policy.label"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Menu Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_dropdown_menus",
+      "default": true,
+      "label": "Enable dropdown menus on mobile",
+      "info": "Menu blocks will be collapsible on mobile devices"
     },
     {
       "type": "header",

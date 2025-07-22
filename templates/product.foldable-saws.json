@@ -29,6 +29,7 @@
         },
         "judge_me_reviews_preview_badge_VG7pPA": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {}
         },
         "icon_with_text_GbTykW": {
@@ -50,6 +51,12 @@
             "swatch_shape": "circle"
           }
         },
+        "klaviyo_reviews_average_rating_ircKrJ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -62,6 +69,7 @@
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",
+        "klaviyo_reviews_average_rating_ircKrJ",
         "description"
       ],
       "custom_css": [
@@ -112,6 +120,7 @@
         ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
         ".horizontal li a:hover {text-decoration: underline;}"
       ],
+      "name": "Custom menu",
       "settings": {
         "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
         "color_scheme": "scheme-2",
@@ -141,6 +150,7 @@
         "heading_C7z8Le",
         "text_rBXVdh"
       ],
+      "name": "Preamble",
       "settings": {
         "image": "{{ product.metafields.custom.preamble.value.image.value }}",
         "image_overlay_opacity": 0,
@@ -186,6 +196,7 @@
         "text_bb84ap",
         "button_ffLMpw"
       ],
+      "name": "No more rusty blades",
       "settings": {
         "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
         "height": "adapt",
@@ -233,6 +244,7 @@
         "text_4W6aek",
         "button_WBDBXb"
       ],
+      "name": "TPI",
       "settings": {
         "image": "{{ product.metafields.custom.tpi.value.image.value }}",
         "height": "adapt",
@@ -280,6 +292,7 @@
         "text_CBAyN9",
         "button_77FVtY"
       ],
+      "name": "Grind",
       "settings": {
         "image": "{{ product.metafields.custom.grind.value.image.value }}",
         "height": "adapt",
@@ -329,6 +342,7 @@
         "text_rVMxjf",
         "button_iB6jMK"
       ],
+      "name": "Clean cuts",
       "settings": {
         "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
         "height": "adapt",
@@ -378,6 +392,7 @@
         "text_n3W6pk",
         "button_yA4XrT"
       ],
+      "name": "Review quote",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -411,6 +426,7 @@
         "heading_F9zFHC",
         "text_YcJy3D"
       ],
+      "name": "Transport",
       "settings": {
         "image": "{{ product.metafields.custom.transport.value.image.value }}",
         "height": "adapt",
@@ -522,6 +538,7 @@
         "heading_LFcadc",
         "text_4CCNhj"
       ],
+      "name": "handles",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -562,6 +579,7 @@
         "text_PwPdeV",
         "button_rfrV8p"
       ],
+      "name": "Story",
       "settings": {
         "image": "{{ product.metafields.custom.story.value.image.value }}",
         "height": "adapt",
@@ -673,6 +691,7 @@
         "heading_KnR9NP",
         "text_CBqpGQ"
       ],
+      "name": "Packaging",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -720,6 +739,7 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}"
       ],
+      "name": "Feauters",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -765,6 +785,7 @@
       "custom_css": [
         "h2,li,p {text-align: left;}"
       ],
+      "name": "tech spec",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -808,6 +829,7 @@
         "text_XLRz8T",
         "buttons_dRLaYe"
       ],
+      "name": "measurments",
       "settings": {
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
         "image_overlay_opacity": 0,
@@ -861,6 +883,7 @@
       "custom_css": [
         "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
       ],
+      "name": "Choose",
       "settings": {
         "caption": "",
         "heading": "",
@@ -909,6 +932,7 @@
         "text_Kqm3hA",
         "button_cXrCX8"
       ],
+      "name": "contact and support",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -928,6 +952,22 @@
       },
       "block_order": [
         "judge_me_reviews_review_widget_JqyKyw"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_WDee4N": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_WDee4N"
       ],
       "settings": {
         "include_margins": true
@@ -966,6 +1006,7 @@
         "text_TdaeQM",
         "button_qxwfAc"
       ],
+      "name": "Sustainability",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -1006,6 +1047,7 @@
         "text_gMpi8E",
         "button_tCkADX"
       ],
+      "name": "quality and tradition",
       "settings": {
         "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
         "height": "adapt",
@@ -1039,12 +1081,6 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "1730797907a66336cc": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -1069,9 +1105,9 @@
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
     "1730798421bc6bee16",
+    "1730797907a66336cc",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
-    "related-products",
-    "1730797907a66336cc"
+    "related-products"
   ]
 }

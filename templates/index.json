@@ -14,14 +14,14 @@
       "blocks": {
         "heading_NUNcr4": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Ljusnan 180",
+            "heading": "Explore our collection of Saws",
             "heading_size": "h0"
           }
         },
         "text_FrJi3W": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Explore our collection of Saws",
             "text_style": "body"
@@ -45,7 +45,8 @@
         "buttons_76y76T"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: start; }}"
       ],
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_new.mp4",
@@ -101,6 +102,7 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
+      "name": "Video Banner YT mobile",
       "settings": {
         "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -116,48 +118,50 @@
         "show_text_below": false
       }
     },
-    "logo_slider_c8Wzn7": {
-      "type": "logo-slider",
-      "blocks": {
-        "logo_X3ndDR": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
-            "logo_link": ""
-          }
-        },
-        "logo_NrRxGM": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
-            "logo_link": ""
-          }
-        },
-        "logo_8bX7VM": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/core77.png",
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_X3ndDR",
-        "logo_NrRxGM",
-        "logo_8bX7VM"
-      ],
-      "name": "Logo Slider",
-      "settings": {
-        "heading": "As seen on",
-        "heading_size": "h2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collage_text_link_9Nc9UV": {
+    "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
-        "image_tpzF9D": {
+        "image_UdTHzh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
+            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "show_text_overlay": true,
+            "heading": "Ljusnan",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "left",
+            "heading_size": "h0",
+            "mobile_heading_size": "h1",
+            "description": "Best in test",
+            "description_style": "body",
+            "button_label": "Discover",
+            "button_link": "shopify://collections/ljusnan-bast-i-test",
+            "button_style_secondary": false
+          }
+        },
+        "image_3FYifX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-7.jpg",
+            "img_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
+            "show_text_overlay": true,
+            "heading": "Gnarp",
+            "vertical_position": "top",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "right",
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "description": "Multi leather guard",
+            "description_style": "body",
+            "button_label": "Discover",
+            "button_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
+            "button_style_secondary": false
+          }
+        },
+        "image_fA3Dgi": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
@@ -168,7 +172,7 @@
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "center",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "mobile_heading_size": "medium",
             "description": "Grit in Oak and Carbon Steel.",
             "description_style": "body",
@@ -176,52 +180,15 @@
             "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
-        },
-        "image_jNgX44": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Folding-Saw-Ljusnan-in-hand.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "show_text_overlay": true,
-            "heading": "Ljusnan 250",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "left",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Longer Reach. Same Elegance",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "button_style_secondary": false
-          }
-        },
-        "image_HLUfzw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Foldable-saw-Halsing-bushcrafting.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 250",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "right",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Power, Tradition, Full Length",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "image_tpzF9D",
-        "image_jNgX44",
-        "image_HLUfzw"
+        "image_UdTHzh",
+        "image_3FYifX",
+        "image_fA3Dgi"
+      ],
+      "custom_css": [
+        ".restock-rocket-preorder-badge {display: none;}"
       ],
       "settings": {
         "heading": "",
@@ -232,72 +199,6 @@
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_9mh8xK": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_zdyGU7": {
-          "type": "heading",
-          "settings": {
-            "heading": "No Tariffs for US Customers!",
-            "heading_size": "h1"
-          }
-        },
-        "text_eA4ANa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our products are proudly made in Sweden, which means no Tariffs for US customers.</p>"
-          }
-        },
-        "button_P4DBi7": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_zdyGU7",
-        "text_eA4ANa",
-        "button_P4DBi7"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_yN9HkD": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9EKWxN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As seen on GearPatrol, Vapentidningen and Prezit - Guns and Survival</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9EKWxN"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 8,
-        "padding_bottom": 8
       }
     },
     "1730798874462ed86d": {
@@ -313,6 +214,50 @@
       "block_order": [
         "judge_me_reviews_featured_carousel_ge8YUn"
       ],
+      "disabled": true,
+      "custom_css": [
+        ".preorder-badge-collection {display: none;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_34jE7b": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jzkrgK": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our customers say",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzkrgK"
+      ],
+      "name": "What our customers say",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1750255072dfdc72a2": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_84pWb7": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_84pWb7"
+      ],
+      "name": "Reviews",
       "settings": {
         "include_margins": true
       }
@@ -345,6 +290,59 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "logo_slider_6UYhzg": {
+      "type": "logo-slider",
+      "blocks": {
+        "logo_8aBA6h": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/placeholder.png",
+            "logo_link": ""
+          }
+        },
+        "logo_7M93R9": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/vapentidningen_9b869b04-5436-4671-b8d2-b312a5950b87.png",
+            "logo_link": ""
+          }
+        },
+        "logo_8fYEg3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/new-atlas-seeklogo_a3bc7c03-e767-4144-bf1f-6f4b8b36a030.png",
+            "logo_link": ""
+          }
+        },
+        "logo_KgekT3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gear_Patrol_Logo.png",
+            "logo_link": ""
+          }
+        },
+        "logo_xUJFHg": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/core77.png",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_8aBA6h",
+        "logo_7M93R9",
+        "logo_8fYEg3",
+        "logo_KgekT3",
+        "logo_xUJFHg"
+      ],
+      "settings": {
+        "heading": "As seen on",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_fbgFhP": {
@@ -407,7 +405,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -463,6 +461,10 @@
         "text_L4Y9np",
         "button_Tw8Kpa"
       ],
+      "custom_css": [
+        ".preorder-badge-collection {display: none;}"
+      ],
+      "name": "damasteel",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -569,6 +571,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "name": "No more rusty",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
         "height": "adapt",
@@ -582,7 +585,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 0
       }
     },
     "image_banner_iTfWWc": {
@@ -663,40 +666,6 @@
         "padding_bottom": 36
       }
     },
-    "newsletter_eicndk": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_tpNg9x": {
-          "type": "heading",
-          "settings": {
-            "heading": "Join the Woxna community!",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_9biQaF": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Sign up for our newsletter to be the first to know when our black week saws drop here in our web shop.</p>"
-          }
-        },
-        "email_form_HMdDpn": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_tpNg9x",
-        "paragraph_9biQaF",
-        "email_form_HMdDpn"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "newsletter_H4rQNJ": {
       "type": "newsletter",
       "blocks": {
@@ -723,6 +692,7 @@
         "paragraph_BwKYAV",
         "email_form_CQ69PJ"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
@@ -771,6 +741,7 @@
         "button_iczwYK"
       ],
       "custom_css": [],
+      "name": "crafted",
       "settings": {
         "image": "shopify://shop_images/The-Woxna-founders-team.jpg",
         "height": "adapt",
@@ -783,7 +754,7 @@
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -908,6 +879,7 @@
         "text_ry3ayq",
         "button_xqqVKL"
       ],
+      "name": "sustain",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
         "height": "adapt",
@@ -921,7 +893,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 56
       }
     },
     "rich_text_FVdRqr": {
@@ -966,17 +938,80 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1751624034c788284f": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-TKfihV\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_wKwa4B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wnbtNM": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_BkhQxd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_PhaGPf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wnbtNM",
+        "text_BkhQxd",
+        "button_PhaGPf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "video_banner_yt_yWG9Ex",
     "video_banner_yt_fgFqCR",
-    "logo_slider_c8Wzn7",
-    "collage_text_link_9Nc9UV",
-    "rich_text_9mh8xK",
-    "rich_text_yN9HkD",
+    "collage_text_link_xVfca9",
     "1730798874462ed86d",
+    "rich_text_34jE7b",
+    "1750255072dfdc72a2",
     "rich_text_h1_Lere7N",
+    "logo_slider_6UYhzg",
     "rich_text_fbgFhP",
     "featured_collection",
     "video_ygLEnU",
@@ -985,12 +1020,13 @@
     "image_with_text_7betFC",
     "image_banner_iTfWWc",
     "featured_collection_mnYkfA",
-    "newsletter_eicndk",
     "newsletter_H4rQNJ",
     "image_with_text_83f7j8",
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr"
+    "rich_text_FVdRqr",
+    "1751624034c788284f",
+    "rich_text_wKwa4B"
   ]
 }

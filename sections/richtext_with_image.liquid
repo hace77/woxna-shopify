@@ -39,11 +39,17 @@
             {% when 'image' %}
             <div class="rich-text-image {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
               <div class="image-rich-text">
+                {% if block.settings.image_link != blank %}
+                  <a href="{{ block.settings.image_link }}">
+                {% endif %}
                 <img 
                     src="{{ block.settings.image_select | image_url }}"
                     width="{{ section.image.width }}"
                     height="{{ section.image.height }}"
                 >
+                {% if block.settings.image_link != blank %}
+                  </a>
+                {% endif %}
               </div>
             </div>
             {%- when 'caption' -%}
@@ -242,6 +248,11 @@
           "id": "image_select",
           "type": "image_picker",
           "label": "Image Select"
+        },
+        {
+          "id": "image_link",
+          "type": "url",
+          "label": "Image Link"
         }
       ]
     },

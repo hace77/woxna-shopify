@@ -1,0 +1,304 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_VG7pPA",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "description"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}",
+        ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
+        ".product__title h1 {font-size: 24px;}",
+        ".price__badge-sold-out {display: none;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_k7EFPc": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "#custom-nav {margin: auto; width: 90%;}",
+        "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
+        "#custom-nav li {list-style: none; display: inline-block;}",
+        ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
+        ".horizontal li a:hover {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#ImageWithText--template--23569246454103__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--23569246454103__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#shopify-section-template--23569246454103__rich_text_mhWMPT\">Reviews</a></li>\n</ul>\n</div>",
+        "color_scheme": "scheme-2",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "image_banner_hBMLMA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_CQAxVb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainable. Unique. Limited.",
+            "heading_size": "h1"
+          }
+        },
+        "text_Lb83EG": {
+          "type": "text",
+          "settings": {
+            "text": "Our quirky batch of saws have some extra character, like mismatched wooden handles halves or logotypes that didn’t burn perfectly.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CQAxVb",
+        "text_Lb83EG"
+      ],
+      "custom_css": [],
+      "name": "Sustainable",
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_teE7mq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_J4ppHw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LFcadc": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.handles.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_4CCNhj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LFcadc",
+        "text_4CCNhj"
+      ],
+      "name": "Handles",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "image_with_text_j83Eef": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zwyMCT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produced with Quality and Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_gMpi8E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tCkADX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our production",
+            "button_link": "shopify://pages/made-in-sweden",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zwyMCT",
+        "text_gMpi8E",
+        "button_tCkADX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_FFPFjd": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "foldable-saws",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BCbL4d",
+    "custom_liquid_k7EFPc",
+    "image_banner_hBMLMA",
+    "custom_liquid_teE7mq",
+    "rich_text_J4ppHw",
+    "image_with_text_j83Eef",
+    "related-products",
+    "1730797907a66336cc",
+    "featured_collection_FFPFjd"
+  ]
+}

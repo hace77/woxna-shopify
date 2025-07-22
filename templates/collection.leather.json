@@ -9,28 +9,40 @@
  */
 {
   "sections": {
-    "image_banner_dLVAWX": {
+    "image_banner_6dhQUz": {
       "type": "image-banner",
       "blocks": {
-        "heading_4QmWJi": {
+        "heading_ARea4V": {
           "type": "heading",
           "settings": {
-            "heading": "Timeless tools for modern adventurers",
-            "heading_size": "hxl"
+            "heading": "{{ collection.title }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_9PfYVd": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_4QmWJi"
+        "heading_ARea4V",
+        "text_9PfYVd"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.banner--content-align-left.banner--desktop-transparent .banner__box, .banner--content-align-right.banner--desktop-transparent .banner__box, .banner--medium.banner--desktop-transparent .banner__box {max-width: 100rem; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
-        "image_overlay_opacity": 0,
+        "image": "{{ collection.image }}",
+        "image_overlay_opacity": 10,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -40,17 +52,17 @@
     "rich_text_dbVHAH": {
       "type": "rich-text",
       "blocks": {
-        "heading_dipqiz": {
+        "heading_RaNAwG": {
           "type": "heading",
           "settings": {
-            "heading": "Meet our Foldable Saws",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "<p>Woxna tools are designed for those who value high-quality outdoor equipment that blends traditional craftsmanship with modern functionality. Whether you need a folding saw for bushcraft, a durable cutting tool for hunting, or a compact tool for camping and survival, Woxna delivers reliable performance in the wild.</p>"
+            "text": "{{ collection.description }}"
           }
         },
         "button_d4cWYV": {
@@ -66,7 +78,7 @@
         }
       },
       "block_order": [
-        "heading_dipqiz",
+        "heading_RaNAwG",
         "text_FkKbKK",
         "button_d4cWYV"
       ],
@@ -76,8 +88,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 16,
+        "padding_bottom": 28
       }
     },
     "banner": {
@@ -100,8 +112,8 @@
         ".badge {display: none;}"
       ],
       "settings": {
-        "products_per_page": 12,
-        "columns_desktop": 3,
+        "products_per_page": 8,
+        "columns_desktop": 2,
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -117,31 +129,18 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_q4bA3M": {
+    "rich_text_caVkbG": {
       "type": "rich-text",
       "blocks": {
-        "text_UdkziW": {
+        "text_6mwJQb": {
           "type": "text",
           "settings": {
-            "text": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>"
-          }
-        },
-        "button_effggk": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "text_UdkziW",
-        "button_effggk"
+        "text_6mwJQb"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
@@ -158,10 +157,10 @@
     }
   },
   "order": [
-    "image_banner_dLVAWX",
+    "image_banner_6dhQUz",
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
-    "rich_text_q4bA3M"
+    "rich_text_caVkbG"
   ]
 }

@@ -1,0 +1,636 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_hcbVmA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_fAAGM8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Woxna 日本初上陸｜スウェーデン製ダマスカス鋼フォールディングソー</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_RRhx3f": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fAAGM8",
+        "text_RRhx3f"
+      ],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner {display: none !important; }}"
+      ],
+      "name": "hero",
+      "settings": {
+        "image": "shopify://shop_images/Damascus_4.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "top-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_ExBjAj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ArRxbY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Woxna 日本初上陸｜スウェーデン製ダマスカス鋼フォールディングソー</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_KW7Vgx": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ArRxbY",
+        "text_KW7Vgx"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: start !important; } p {text-wrap-style: balance; }}"
+      ],
+      "name": "hero mobile",
+      "settings": {
+        "image": "shopify://shop_images/Damascus_4_9fb28f9e-b0a6-47d4-b614-b33c27ad6732.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "top-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_t3x9VR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XwtDAH": {
+          "type": "heading",
+          "settings": {
+            "heading": "北欧のこだわりが詰まった ― 日本初登場の「折りたたみ式ダマスカスソー」",
+            "heading_size": "h1"
+          }
+        },
+        "text_mJD6kb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>世界中のクラフト・アウトドア愛好家が注目する北欧スウェーデンから、特別な道具が日本にやってきます。</p><p><strong>Woxna（ヴォクスナ）は、スウェーデンの森林地帯で生まれたプレミアム・フォールディングソー</strong>（折りたたみ式ノコギリ）ブランドです。今回Makuakeを通じて、日本での初展開を実現します。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XwtDAH",
+        "text_mJD6kb"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2 {text-align: center;}",
+        "@media (min-width: 750px) {ul {padding-left: 70px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_g3zYxV": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Damascus_19.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_zJaqkf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RBDn99": {
+          "type": "heading",
+          "settings": {
+            "heading": "プロダクトの特長",
+            "heading_size": "h1"
+          }
+        },
+        "text_mHN9xg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>ダマスカス鋼製ブレード（Damasteel® 使用）</h3><p>ブレードには、スウェーデンの名門<strong>Damasteel社</strong>が誇る<strong>粉末冶金ダマスカス鋼</strong>を採用。100層以上のステンレスが生み出す波紋模様は、1本ごとに異なる唯一無二の美しさを放ちます。</p><p>耐久性、切れ味、美しさ。そのすべてが詰まった、まさに「一生モノ」のツールです。</p><h3>黒酸化処理仕上げ</h3><p>伝統と革新の融合。ブレード表面は**黒酸化処理（Black Oxide）**を施し、反射を抑えつつ錆にも強いプロフェッショナル仕様。</p><h3>ヨーロピアン・ウォルナット製の天然木ハンドル</h3><p>ハンドルには、落ち着いた色合いと豊かな木目が魅力の**ヨーロピアン・ウォルナット（くるみ材）**を使用。天然オイルで丁寧に仕上げており、手にしっくりと馴染む上質な質感が楽しめます。</p><h3><strong>Bushcraft、林業、DIYにも最適な実用性</strong></h3><p>250mmモデルと180mmモデルの2サイズを用意。Bushcraft、キャンプ、山林作業、さらには工芸・DIY用途まで幅広く対応可能です。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RBDn99",
+        "text_mHN9xg"
+      ],
+      "name": "product features",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_jrXtGH": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Damascus_58.jpg",
+        "image_2": "shopify://shop_images/Damascus_11.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_H7PzUC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_n9mP8p": {
+          "type": "heading",
+          "settings": {
+            "heading": "Woxnaとは？",
+            "heading_size": "h1"
+          }
+        },
+        "text_BwynTF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Woxna（ヴォクスナ）は、スウェーデンの山林地帯に拠点を持つ<strong>小さな独立系クラフトブランド</strong>。グローバルなクラフト愛好家の中で着実に注目を集めています。</p><p>本製品は<strong>私たちの初のダマスカスモデル</strong>であり、今回のMakuakeプロジェクトが日本における<strong>最初の正式展開</strong>となります。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_n9mP8p",
+        "text_BwynTF"
+      ],
+      "name": "what is woxna",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "richtext_with_image_wtXxEr": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_xpYkYb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not ready to spend $1?",
+            "heading_size": "h1"
+          }
+        },
+        "text_CxhL3A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign up for our Woxna newsletter to get information about when the Kickstarter launches</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xpYkYb",
+        "text_CxhL3A"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 12
+      }
+    },
+    "1744103415254dc915": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_AFMKFB": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-W8kJSM\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_AFMKFB"
+      ],
+      "custom_css": [],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17441041288c99b0cf": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_ybkPVQ": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "412729",
+            "text_color": "#202020",
+            "button_background_color": "#445f45",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 25,
+            "padding_bottom": 32,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_ybkPVQ"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_with_text_tKWdJf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nc7TAc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit our kickstarter page",
+            "heading_size": "h2"
+          }
+        },
+        "button_XdRKf3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Go!",
+            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nc7TAc",
+        "button_XdRKf3"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Damascus_19.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_W7HeyJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Ri7gjU": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Visit our Kickstarter page",
+            "heading_size": "h1"
+          }
+        },
+        "text_yGrqFm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below",
+            "text_style": "body"
+          }
+        },
+        "buttons_j4zjHB": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Visit kickstarter",
+            "button_link_1": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ri7gjU",
+        "text_yGrqFm",
+        "buttons_j4zjHB"
+      ],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Damascus_27.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_ENY6Ri": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Damascus_8.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_CMEDrD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dQmz8H": {
+          "type": "heading",
+          "settings": {
+            "heading": "プロジェクト情報",
+            "heading_size": "h1"
+          }
+        },
+        "text_UP8mRX": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>プロジェクト期間：</strong> 2025年7月15日〜8月15日（予定）</li><li><strong>リターン発送開始：</strong> 2025年10月1日より順次発送予定</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dQmz8H",
+        "text_UP8mRX"
+      ],
+      "name": "project information",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_igNxfM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UGKAKg": {
+          "type": "heading",
+          "name": "oppertunity",
+          "settings": {
+            "heading": "この機会に、北欧クラフトの粋と、実用性・美しさを兼ね備えた唯一無二のツールを、あなたの手に。",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UGKAKg"
+      ],
+      "name": "oppertunity",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_3G3NDf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WnhQqh": {
+          "type": "column",
+          "settings": {
+            "title": "Follow us on Kickstarter",
+            "text": "<p>For the lastest updates about the campaign, visit our Kickstarter page</p>",
+            "link_label": "Woxna kickstarter",
+            "link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28"
+          }
+        },
+        "column_dkQRxi": {
+          "type": "column",
+          "settings": {
+            "title": "The development",
+            "text": "<p>Curios about the development of the first ever Damasteel saw?</p>",
+            "link_label": "Read the blog here",
+            "link": "shopify://blogs/the-woxna-journal/why-we-built-the-damascus-steel-foldable-saw"
+          }
+        }
+      },
+      "block_order": [
+        "column_WnhQqh",
+        "column_dkQRxi"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 30px;}",
+        "@media screen and (max-width: 749px) {.multicolumn-list {text-align: center; }}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_gE33QB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UEMHHf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow us on Kickstarter",
+            "heading_size": "h1"
+          }
+        },
+        "text_YtG38W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the lastest updates about the campaign, visit our Kickstarter page</p>"
+          }
+        },
+        "button_UM3Gb9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Woxna Kickstarter ",
+            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UEMHHf",
+        "text_YtG38W",
+        "button_UM3Gb9"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_dVAhQi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_MVkPtB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can also visit us at <a href=\"https://woxna.com\" title=\"https://woxna.com\">www.woxna.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_MVkPtB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a {color: white;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_eDhBFC": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "image_banner_hcbVmA",
+    "image_banner_ExBjAj",
+    "rich_text_t3x9VR",
+    "main",
+    "image_banner_g3zYxV",
+    "rich_text_zJaqkf",
+    "image_banner_jrXtGH",
+    "rich_text_H7PzUC",
+    "richtext_with_image_wtXxEr",
+    "1744103415254dc915",
+    "17441041288c99b0cf",
+    "image_with_text_tKWdJf",
+    "image_banner_W7HeyJ",
+    "image_banner_ENY6Ri",
+    "rich_text_CMEDrD",
+    "rich_text_igNxfM",
+    "multicolumn_3G3NDf",
+    "rich_text_gE33QB",
+    "rich_text_dVAhQi",
+    "rich_text_eDhBFC"
+  ]
+}

@@ -107,7 +107,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_headline": "",
+    "brand_headline": "test",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "https://www.facebook.com/Woxna/",
@@ -144,11 +144,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
       "back-in-stock-restock-alerts-4bb73be2-b7c2-4870-949f-c528145452a3": {
         "type": "shopify://apps/back-in-stock-restock-alerts/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
         "disabled": false,
@@ -180,6 +175,11 @@
       },
       "7313114205116804392": {
         "type": "shopify://apps/propel-replays-surveys/blocks/app-embed/64fbaaa3-2d4a-49f3-aba7-86e92e44999f",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       }
@@ -345,6 +345,17 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#445f45",
+          "button_label": "#ffffff",
+          "secondary_button_label": "rgba(0,0,0,0)",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-08ad3a87-d3dd-479a-8dc1-f17564796785": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#f0ba60",
+          "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "rgba(0,0,0,0)",
           "shadow": "rgba(0,0,0,0)"
@@ -553,7 +564,8 @@
       ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
       "@media only screen and (min-width: 750px) {h2, .h2 {font-size: calc(var(--font-heading-scale) * 4rem); }}",
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
-      "html {scroll-behavior: smooth;}"
+      "html {scroll-behavior: smooth;}",
+      ".footer__content-bottom {display: none;}"
     ]
   }
 }
