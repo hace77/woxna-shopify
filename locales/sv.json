@@ -172,7 +172,7 @@
       "inventory_in_stock": "I lager",
       "inventory_in_stock_show_count": "{{ quantity }} i lager",
       "inventory_low_stock": "Bara några kvar!",
-      "inventory_low_stock_show_count": "Låg lagernivå: {{ quantity }} kvar",
+      "inventory_low_stock_show_count": "Bara {{ quantity }} kvar i lager",
       "inventory_out_of_stock": "Slut i lager",
       "inventory_out_of_stock_continue_selling": "I lager",
       "sku": "Lagerhållningsenhet",
