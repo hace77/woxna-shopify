@@ -566,7 +566,7 @@
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
       "html {scroll-behavior: smooth;}",
       ".footer__content-bottom {display: none;}",
-      ".restock-rocket-preorder-badge {font-size: 12px; line-height: 1; text-transform: uppercase; padding: 10px; /* border-radius: 40px; */ height: auto; border: none; width: auto; z-index: 2; margin: 0; background: 0 0;}"
+      ".restock-rocket-preorder-badge {font-size: 12px; line-height: 1; text-transform: uppercase; padding: 10px; border-radius: 0px; height: auto; border: none; width: auto; z-index: 2; margin: 0; background: 0 0;}"
     ]
   }
 }
