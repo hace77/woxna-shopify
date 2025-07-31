@@ -113,6 +113,7 @@
     },
     "custom_liquid_k7EFPc": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
         "#custom-nav {margin: auto; width: 90%;}",
         "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
