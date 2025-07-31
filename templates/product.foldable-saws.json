@@ -230,20 +230,11 @@
             "text": "<p>{{ product.metafields.custom.tpi.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_WBDBXb": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_mKwPqb",
-        "text_4W6aek",
-        "button_WBDBXb"
+        "text_4W6aek"
       ],
       "name": "TPI",
       "settings": {
@@ -278,20 +269,11 @@
             "text": "<p>{{ product.metafields.custom.grind.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_77FVtY": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_JYTVpp",
-        "text_CBAyN9",
-        "button_77FVtY"
+        "text_CBAyN9"
       ],
       "name": "Grind",
       "settings": {
@@ -328,20 +310,11 @@
             "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_iB6jMK": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_yKMnwV",
-        "text_rVMxjf",
-        "button_iB6jMK"
+        "text_rVMxjf"
       ],
       "name": "Clean cuts",
       "settings": {
@@ -375,23 +348,11 @@
           "settings": {
             "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>"
           }
-        },
-        "button_yA4XrT": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_mEhdkL",
-        "text_n3W6pk",
-        "button_yA4XrT"
+        "text_n3W6pk"
       ],
       "name": "Review quote",
       "settings": {
