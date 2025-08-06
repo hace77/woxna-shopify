@@ -113,6 +113,7 @@
     },
     "custom_liquid_k7EFPc": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
         "#custom-nav {margin: auto; width: 90%;}",
         "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
@@ -229,20 +230,11 @@
             "text": "<p>{{ product.metafields.custom.tpi.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_WBDBXb": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_mKwPqb",
-        "text_4W6aek",
-        "button_WBDBXb"
+        "text_4W6aek"
       ],
       "name": "TPI",
       "settings": {
@@ -277,20 +269,11 @@
             "text": "<p>{{ product.metafields.custom.grind.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_77FVtY": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_JYTVpp",
-        "text_CBAyN9",
-        "button_77FVtY"
+        "text_CBAyN9"
       ],
       "name": "Grind",
       "settings": {
@@ -327,20 +310,11 @@
             "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_iB6jMK": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_yKMnwV",
-        "text_rVMxjf",
-        "button_iB6jMK"
+        "text_rVMxjf"
       ],
       "name": "Clean cuts",
       "settings": {
@@ -374,23 +348,11 @@
           "settings": {
             "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>"
           }
-        },
-        "button_yA4XrT": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_mEhdkL",
-        "text_n3W6pk",
-        "button_yA4XrT"
+        "text_n3W6pk"
       ],
       "name": "Review quote",
       "settings": {
@@ -764,23 +726,11 @@
           "settings": {
             "text": "<p>Teeth per inch: {{ product.metafields.custom.grind_.value }} TPI</p><p>Grind: 3-phase grind</p><p>Hardening: {{ product.metafields.custom.hardening.value }}</p><p>Saw direction: {{ product.metafields.custom.saw_direction.value }}</p><p>Blade material: {{ product.metafields.custom.blade_material_tech_spec_.value }}</p><p>Handle material: {{ product.metafields.custom.handle_material.value }}</p><p>Blade thickness: {{ product.metafields.custom.blade_thickness.value }} mm (before concave grind)</p><p>Blade profile: {{ product.metafields.custom.blade_profile.value }}</p><p>Teeth setting: {{ product.metafields.custom.teeth_setting.value }}</p><p></p><p><strong>Measurements</strong></p><p>Blade length: {{ product.metafields.custom.blade_length_mm_ | metafield_tag }} / {{ product.metafields.custom.blade_length_inch_ | metafield_tag }}</p><p>Length, unfolded: {{ product.metafields.custom.length_mm_ | metafield_tag }} / {{ product.metafields.custom.length_inch_ | metafield_tag }}</p><p>Length, folded: {{ product.metafields.custom.length_folded_mm_ | metafield_tag }} / {{ product.metafields.custom.length_folded_inch_ | metafield_tag }}</p><p>Weight: {{ product.metafields.custom.weight_g_ | metafield_tag }} / {{ product.metafields.custom.weight_oz_ | metafield_tag }}</p>"
           }
-        },
-        "button_yRnixM": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_K7chGp",
-        "text_QaVm7H",
-        "button_yRnixM"
+        "text_QaVm7H"
       ],
       "custom_css": [
         "h2,li,p {text-align: left;}"
