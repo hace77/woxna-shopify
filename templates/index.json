@@ -127,17 +127,37 @@
             "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
             "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
             "show_text_overlay": true,
-            "heading": "Ljusnan",
+            "heading": "Ljusnan 180",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "left",
             "heading_size": "h0",
             "mobile_heading_size": "h1",
-            "description": "Best in test",
+            "description": "Now back in stock!",
+            "description_style": "body",
+            "button_label": "Buy it now",
+            "button_link": "shopify://collections/ljusnan-bast-i-test",
+            "button_style_secondary": false
+          }
+        },
+        "image_fA3Dgi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
+            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "show_text_overlay": true,
+            "heading": "Hälsing 180",
+            "vertical_position": "top",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "h1",
+            "mobile_heading_size": "medium",
+            "description": "Now back in stock!",
             "description_style": "body",
             "button_label": "Discover",
-            "button_link": "shopify://collections/ljusnan-bast-i-test",
+            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
         },
@@ -160,32 +180,12 @@
             "button_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
             "button_style_secondary": false
           }
-        },
-        "image_fA3Dgi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "show_text_overlay": true,
-            "heading": "Hälsing 180",
-            "vertical_position": "top",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "center",
-            "heading_size": "h1",
-            "mobile_heading_size": "medium",
-            "description": "Grit in Oak and Carbon Steel.",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "image_UdTHzh",
-        "image_3FYifX",
-        "image_fA3Dgi"
+        "image_fA3Dgi",
+        "image_3FYifX"
       ],
       "custom_css": [
         ".restock-rocket-preorder-badge {display: none;}"
