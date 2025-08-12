@@ -151,7 +151,7 @@
             "vertical_position": "top",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
-            "mobile_text_alignment": "center",
+            "mobile_text_alignment": "right",
             "heading_size": "h1",
             "mobile_heading_size": "medium",
             "description": "Now back in stock!",
