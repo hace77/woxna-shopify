@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-	<script src="{{ 'pandectes-rules.js' | file_url }}"></script>
+	<script src="{{ 'pandectes-rules.js' | file_url }}" defer></script>
 	
 	
     <meta charset="utf-8">
@@ -358,6 +358,9 @@
 
     <script>
       window.shopUrl = '{{ request.origin }}';
+      window.themeSettings = {
+        cart_type: '{{ settings.cart_type }}'
+      };
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',

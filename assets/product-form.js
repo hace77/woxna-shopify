@@ -8,7 +8,10 @@ if (!customElements.get('product-form')) {
         this.form = this.querySelector('form');
         this.variantIdInput.disabled = false;
         this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
-        this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+        
+        // Initialize cart component asynchronously
+        this.initializeCart();
+        
         this.submitButton = this.querySelector('[type="submit"]');
         this.submitButtonText = this.submitButton.querySelector('span');
 
@@ -17,9 +20,19 @@ if (!customElements.get('product-form')) {
         this.hideErrors = this.dataset.hideErrors === 'true';
       }
 
-      onSubmitHandler(evt) {
+      async initializeCart() {
+        this.cart = await this.findCartComponent();
+        console.log('Cart component initialized:', this.cart);
+      }
+
+      async onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+
+        // Wait for cart to be initialized
+        if (!this.cart) {
+          await this.initializeCart();
+        }
 
         this.handleErrorMessage();
 
@@ -127,6 +140,34 @@ if (!customElements.get('product-form')) {
 
       get variantIdInput() {
         return this.form.querySelector('[name=id]');
+      }
+
+      findCartComponent() {
+        // First try to find cart drawer
+        let cart = document.querySelector('cart-drawer');
+        
+        // If cart drawer is not found, wait a bit and try again
+        if (!cart) {
+          // Check if we should be using cart drawer based on theme settings
+          const cartType = window.themeSettings?.cart_type || 'drawer';
+          if (cartType === 'drawer') {
+            // Wait for cart drawer to be available
+            return new Promise((resolve) => {
+              const checkForCartDrawer = () => {
+                cart = document.querySelector('cart-drawer');
+                if (cart) {
+                  resolve(cart);
+                } else {
+                  setTimeout(checkForCartDrawer, 100);
+                }
+              };
+              checkForCartDrawer();
+            });
+          }
+        }
+        
+        // Fallback to cart notification if cart drawer is not available
+        return cart || document.querySelector('cart-notification');
       }
     }
   );

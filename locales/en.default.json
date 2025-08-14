@@ -320,6 +320,11 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
+      },
+      "upsell": {
+        "title": "You might also like",
+        "add_to_cart": "Add",
+        "view_options": "View options"
       }
     },
     "footer": {

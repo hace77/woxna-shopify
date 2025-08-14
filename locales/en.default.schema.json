@@ -351,6 +351,10 @@
           "collection": {
             "label": "Collection",
             "info": "Visible when cart drawer is empty."
+          },
+          "upsell_product": {
+            "label": "Upsell product",
+            "info": "Product to suggest when cart drawer is open."
           }
         }
       }

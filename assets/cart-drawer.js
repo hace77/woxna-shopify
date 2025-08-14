@@ -1,10 +1,23 @@
 class CartDrawer extends HTMLElement {
   constructor() {
     super();
+    console.log('Cart drawer constructor called');
 
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    this.setupUpsellForms();
+    
+    // Also listen for form submissions at document level as fallback
+    document.addEventListener('submit', (e) => {
+      if (e.target.closest('[data-upsell-form]')) {
+        console.log('Document-level upsell form prevention');
+        e.preventDefault();
+        e.stopPropagation();
+        this.handleUpsellSubmit(e);
+        return false;
+      }
+    }, true);
   }
 
   setHeaderCartIconAccessibility() {
@@ -111,6 +124,93 @@ class CartDrawer extends HTMLElement {
 
   setActiveElement(element) {
     this.activeElement = element;
+  }
+
+  setupUpsellForms() {
+    const upsellForms = this.querySelectorAll('[data-upsell-form]');
+    console.log('Setting up upsell forms, found:', upsellForms.length);
+    upsellForms.forEach((form, index) => {
+      console.log('Setting up form', index, form);
+      // Add event listener with capture to ensure it runs first
+      form.addEventListener('submit', this.handleUpsellSubmit.bind(this), true);
+      // Also add a backup prevention
+      form.addEventListener('submit', (e) => {
+        console.log('Backup submit prevention');
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }, true);
+    });
+  }
+
+  async handleUpsellSubmit(event) {
+    console.log('Upsell form submit handler called!');
+    event.preventDefault();
+    
+    const form = event.target;
+    const button = form.querySelector('[data-upsell-button]');
+    const originalText = button.textContent;
+
+    // Disable button and show loading state
+    button.disabled = true;
+    button.textContent = 'Adding...';
+
+    try {
+      // Use the exact same approach as the working product-form.js
+      const variantId = form.querySelector('input[name="id"]').value;
+      const quantity = form.querySelector('input[name="quantity"]').value;
+      
+      console.log('Adding variant:', variantId, 'quantity:', quantity);
+      
+      // Create the same config that product-form.js uses
+      const formData = new FormData();
+      formData.append('id', variantId);
+      formData.append('quantity', quantity);
+      formData.append('sections', 'cart-drawer,cart-icon-bubble');
+      formData.append('sections_url', window.location.pathname);
+      
+      const config = {
+        method: 'POST',
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest',
+          'Accept': 'application/json'
+        },
+        body: formData
+      };
+      
+      console.log('Using same config as product-form.js');
+      
+      // Use the same fetch approach as product-form.js
+      const response = await fetch(window.routes.cart_add_url, config);
+      const result = await response.json();
+      
+      if (result.status) {
+        // Handle error like product-form.js does
+        console.log('Cart add error:', result);
+        throw new Error(result.description || 'Failed to add to cart');
+      } else {
+        console.log('Cart add successful:', result);
+        // Use the same renderContents approach as product-form.js
+        this.renderContents(result);
+      }
+      
+      // Show success message and update button
+      button.textContent = 'Added!';
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        // The cart drawer should now show the updated contents
+        // and the upsell section should be hidden since the product is now in cart
+      }, 1000);
+      
+    } catch (error) {
+      console.error('Upsell form submission error:', error);
+      button.textContent = 'Error - Try Again';
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+      }, 2000);
+    }
   }
 }
 
