@@ -316,6 +316,13 @@
             "logo_link": ""
           }
         },
+        "logo_MXq4ka": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Survival-magazin.png",
+            "logo_link": ""
+          }
+        },
         "logo_KgekT3": {
           "type": "logo",
           "settings": {
@@ -335,6 +342,7 @@
         "logo_8aBA6h",
         "logo_7M93R9",
         "logo_8fYEg3",
+        "logo_MXq4ka",
         "logo_KgekT3",
         "logo_xUJFHg"
       ],
