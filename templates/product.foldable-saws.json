@@ -16,21 +16,21 @@
           "type": "title",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
@@ -64,9 +64,9 @@
       },
       "block_order": [
         "title",
-        "buy_buttons",
-        "price",
         "judge_me_reviews_preview_badge_VG7pPA",
+        "price",
+        "buy_buttons",
         "icon_with_text_GbTykW",
         "variant_picker",
         "klaviyo_reviews_average_rating_ircKrJ",
