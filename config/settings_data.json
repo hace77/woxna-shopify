@@ -127,6 +127,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "cart_drawer_upsell_product": "gnarp-outdoor-leather-multi-guard",
     "cart_color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
     "sections": {
       "main-password-header": {
