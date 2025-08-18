@@ -529,19 +529,51 @@
       </cart-drawer-items>
       
       <!-- Cart Drawer Upsell Section -->
-      {%- if cart != empty and settings.cart_drawer_upsell_product != blank -%}
-        {%- assign upsell_product = all_products[settings.cart_drawer_upsell_product] -%}
-        {%- assign upsell_already_in_cart = false -%}
+      {%- if cart != empty -%}
+        {%- comment -%} Find the best upsell product based on cart contents {%- endcomment -%}
+        {%- assign upsell_product = blank -%}
+        {%- assign upsell_source = blank -%}
+        
+        {%- comment -%} First, check for product-specific upsells via metafields {%- endcomment -%}
         {%- for item in cart.items -%}
-          {%- if item.product.id == upsell_product.id -%}
-            {%- assign upsell_already_in_cart = true -%}
-            {%- break -%}
+          {%- if item.product.metafields.custom.upsell_product != blank -%}
+            {%- assign potential_upsell = item.product.metafields.custom.upsell_product.value -%}
+            {%- if potential_upsell != blank and potential_upsell.available -%}
+              {%- assign upsell_product = potential_upsell -%}
+              {%- assign upsell_source = item.product -%}
+              {%- break -%}
+            {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
-        {%- if upsell_product != blank and upsell_product.available and upsell_already_in_cart == false -%}
+        
+        {%- comment -%} If no product-specific upsell found, use default {%- endcomment -%}
+        {%- if upsell_product == blank and settings.cart_drawer_upsell_product != blank -%}
+          {%- assign upsell_product = all_products[settings.cart_drawer_upsell_product] -%}
+          {%- assign upsell_source = 'default' -%}
+        {%- endif -%}
+        
+        {%- comment -%} Check if upsell product is available and not already in cart {%- endcomment -%}
+        {%- if upsell_product != blank -%}
+          {%- assign upsell_already_in_cart = false -%}
+          {%- for item in cart.items -%}
+            {%- if item.product.id == upsell_product.id -%}
+              {%- assign upsell_already_in_cart = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          
+          {%- if upsell_already_in_cart or upsell_product.available == false -%}
+            {%- assign upsell_product = blank -%}
+          {%- endif -%}
+        {%- endif -%}
+        
+        {%- if upsell_product != blank -%}
           <div class="cart-drawer__upsell">
             <div class="cart-drawer__upsell-header">
               <h3 class="cart-drawer__upsell-title">{{ 'sections.cart.upsell.title' | t }}</h3>
+              {%- if upsell_source != 'default' and upsell_source != blank -%}
+                <small class="cart-drawer__upsell-source">(Based on {{ upsell_source.title }})</small>
+              {%- endif -%}
             </div>
             <div class="cart-drawer__upsell-product">
               <div class="cart-drawer__upsell-image">

@@ -862,6 +862,16 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "upsell_product",
+      "namespace": "custom",
+      "name": "upsell_product",
+      "description": "roduct to suggest as an upsell when this product is in cart",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
