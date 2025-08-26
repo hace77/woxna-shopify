@@ -19,14 +19,6 @@
             "heading_size": "h0"
           }
         },
-        "text_FrJi3W": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Explore our collection of Saws",
-            "text_style": "body"
-          }
-        },
         "buttons_76y76T": {
           "type": "buttons",
           "settings": {
@@ -41,7 +33,6 @@
       },
       "block_order": [
         "heading_NUNcr4",
-        "text_FrJi3W",
         "buttons_76y76T"
       ],
       "custom_css": [
@@ -73,13 +64,6 @@
             "heading_size": "h0"
           }
         },
-        "text_47ty4L": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
         "buttons_gzXFeC": {
           "type": "buttons",
           "settings": {
@@ -94,7 +78,6 @@
       },
       "block_order": [
         "heading_dtUCPi",
-        "text_47ty4L",
         "buttons_gzXFeC"
       ],
       "custom_css": [
