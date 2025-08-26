@@ -100,7 +100,7 @@
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
       ],
       "name": "Video Banner YT mobile",
       "settings": {
@@ -109,7 +109,7 @@
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "right",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
