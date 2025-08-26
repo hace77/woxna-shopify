@@ -104,7 +104,7 @@
       ],
       "name": "Video Banner YT mobile",
       "settings": {
-        "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
+        "video": "shopify://files/videos/startpage-film-mobile_compressed.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
