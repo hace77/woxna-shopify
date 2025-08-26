@@ -68,16 +68,15 @@
       "blocks": {
         "heading_dtUCPi": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Ljusnan 180",
+            "heading": "<strong>Explore our award-winning saws</strong>",
             "heading_size": "h0"
           }
         },
         "text_47ty4L": {
           "type": "text",
           "settings": {
-            "text": "<strong>Explore our award-winning saws</strong>",
+            "text": "",
             "text_style": "body"
           }
         },
