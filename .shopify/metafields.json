@@ -872,6 +872,36 @@
         "name": "product_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "product_page_upsell_product",
+      "namespace": "custom",
+      "name": "Product Page Upsell Product",
+      "description": "Product to suggest as an upsell on this product page",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_page_upsell_button_text",
+      "namespace": "custom",
+      "name": "Product Page Upsell Button Text",
+      "description": " Custom text for the upsell button (e.g., \"Add Protection Plan\", \"Get Care Kit\")",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_page_upsell_offer_text",
+      "namespace": "custom",
+      "name": "Product Page Upsell Offer Text",
+      "description": "Text to explain the offer above the upsell button (e.g., \"Save 50% when you add this to your order!\")",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [

@@ -172,3 +172,72 @@ if (!customElements.get('product-form')) {
     }
   );
 }
+
+// Product Page Upsell Form Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const upsellForms = document.querySelectorAll('[data-product-page-upsell-form]');
+  
+  upsellForms.forEach(form => {
+    form.addEventListener('submit', handleProductPageUpsellSubmit);
+  });
+});
+
+async function handleProductPageUpsellSubmit(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const button = form.querySelector('[data-product-page-upsell-button]');
+  const originalText = button.textContent;
+
+  // Disable button and show loading state
+  button.disabled = true;
+  button.textContent = 'Adding...';
+
+  try {
+    const variantId = form.querySelector('input[name="id"]').value;
+    const quantity = form.querySelector('input[name="quantity"]').value;
+    
+    // Same approach as your existing cart system
+    const formData = new FormData();
+    formData.append('id', variantId);
+    formData.append('quantity', quantity);
+    formData.append('sections', 'cart-drawer,cart-icon-bubble');
+    formData.append('sections_url', window.location.pathname);
+    
+    const response = await fetch(window.routes.cart_add_url, {
+      method: 'POST',
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'Accept': 'application/json'
+      },
+      body: formData
+    });
+    
+    const result = await response.json();
+    
+    if (result.status) {
+      throw new Error(result.description || 'Failed to add to cart');
+    }
+    
+    // Update cart components (same as your existing system)
+    const cart = document.querySelector('cart-drawer') || document.querySelector('cart-notification');
+    if (cart && cart.renderContents) {
+      cart.renderContents(result);
+    }
+    
+    // Show success message
+    button.textContent = 'Added!';
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+    }, 1000);
+    
+  } catch (error) {
+    console.error('Product page upsell error:', error);
+    button.textContent = 'Error - Try Again';
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+    }, 2000);
+  }
+}

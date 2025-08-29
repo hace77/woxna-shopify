@@ -515,6 +515,65 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+                
+                <!-- Product Page Upsell Section -->
+                
+                {%- if product.metafields.custom.product_page_upsell_product != blank and product.metafields.custom.discount_bundle != blank -%}
+                  {%- assign upsell_product = product.metafields.custom.product_page_upsell_product.value -%}
+                  {%- if upsell_product != blank and upsell_product.available -%}
+                    {%- assign discount_percentage = product.metafields.custom.discount_bundle.value -%}
+                    {%- assign original_price = upsell_product.price -%}
+                    {%- assign discount_multiplier = 100 | minus: discount_percentage | times: 0.01 -%}
+                    {%- assign discounted_price = original_price | times: discount_multiplier -%}
+                    <div class="product-page__upsell" {{ block.shopify_attributes }}>
+                      <div class="product-page__upsell-product">
+                        <div class="product-page__upsell-info">
+                          <h4 class="product-page__upsell-title">
+                            <a href="{{ upsell_product.url }}" class="product-page__upsell-title-link">{{ upsell_product.title }}</a>
+                          </h4>
+                          <div class="product-page__upsell-price">
+                            <span class="product-page__upsell-price--compare">{{ original_price | money }}</span>
+                            <span class="product-page__upsell-price--sale">{{ discounted_price | money }}</span>
+                          </div>
+                          
+                          {%- if product.metafields.custom.product_page_upsell_offer_text != blank -%}
+                            <p class="product-page__upsell-offer">{{ product.metafields.custom.product_page_upsell_offer_text }}</p>
+                          {%- endif -%}
+                          
+                          {%- if upsell_product.variants.size == 1 -%}
+                            <form 
+                              action="{{ routes.cart_add_url }}" 
+                              method="post" 
+                              class="product-page__upsell-form"
+                              data-product-page-upsell-form
+                            >
+                              <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                              <input type="hidden" name="quantity" value="1">
+                                                              <button
+                                  type="submit"
+                                  name="add"
+                                  class="product-page__upsell-button button"
+                                  {% if upsell_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                                  data-product-page-upsell-button
+                                >
+                                {%- if product.metafields.custom.product_page_upsell_button_text != blank -%}
+                                  {{ product.metafields.custom.product_page_upsell_button_text }}
+                                {%- else -%}
+                                  {{ 'products.product.upsell.add_to_cart' | t }}
+                                {%- endif -%}
+                              </button>
+                            </form>
+                          {%- else -%}
+                            <a href="{{ upsell_product.url }}" class="product-page__upsell-button button">
+                              {{ 'products.product.upsell.view_options' | t }}
+                            </a>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+                
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">

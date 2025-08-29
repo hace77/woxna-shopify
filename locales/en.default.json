@@ -187,7 +187,11 @@
       "duties_included": "Duties included",
       "duties_and_taxes_included": "Duties and taxes included",
       "shipping_policy_html": "See our <a href=\"{{ link }}\">shipping policy</a>",
-      "low_stock": "Only a few left"
+      "low_stock": "Only a few left",
+      "upsell": {
+        "add_to_cart": "Add to Cart",
+        "view_options": "View Options"
+      }
     },
     "modal": {
       "label": "Media gallery"
