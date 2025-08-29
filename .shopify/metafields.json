@@ -902,6 +902,16 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "discount_bundle",
+      "namespace": "custom",
+      "name": "Discount Bundle Percentage",
+      "description": "Percentage discount to apply to the upsell product (e.g., 50 for 50% off)",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
     }
   ],
   "variant": [
