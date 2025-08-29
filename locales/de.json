@@ -187,7 +187,11 @@
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
       "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
-      "low_stock": "Nur noch wenige übrig"
+      "low_stock": "Nur noch wenige übrig",
+      "upsell": {
+        "add_to_cart": "In den Warenkorb legen",
+        "view_options": "Optionen anzeigen"
+      }
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -538,6 +542,36 @@
       "send_on_label": "Senden am (optional)",
       "expanded": "Formular für den Empfänger des Geschenkgutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Geschenkgutscheins minimiert"
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell-Produkt",
+            "info": "Produkt, das als Upsell vorgeschlagen wird, wenn dieses Produkt im Warenkorb ist"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Upsell-Produkt auf der Produktseite",
+        "description": "Produkt, das als Upsell auf dieser Produktseite vorgeschlagen wird"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Upsell-Button-Text auf der Produktseite",
+        "description": "Benutzerdefinierter Text für den Upsell-Button (z.B. \"Schutzplan hinzufügen\", \"Pflege-Kit erhalten\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Upsell-Angebotstext auf der Produktseite",
+        "description": "Text, der das Angebot über dem Upsell-Button erklärt (z.B. \"Spare 50%, wenn du dies zu deiner Bestellung hinzufügst!\")"
+      },
+      "discount_bundle": {
+        "label": "Rabattpaket-Prozentsatz",
+        "description": "Prozentualer Rabatt, der auf das Upsell-Produkt angewendet wird (z.B. 50 für 50% Rabatt)"
+      }
     }
   }
 }

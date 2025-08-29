@@ -548,5 +548,35 @@
     "links": {
       "powered_by_shopify": " "
     }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell product",
+            "info": "Product to suggest as an upsell when this product is in cart"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Product Page Upsell Product",
+        "description": "Product to suggest as an upsell on this product page"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Product Page Upsell Button Text",
+        "description": "Custom text for the upsell button (e.g., \"Add Protection Plan\", \"Get Care Kit\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Product Page Upsell Offer Text",
+        "description": "Text to explain the offer above the upsell button (e.g., \"Save 50% when you add this to your order!\")"
+      },
+      "discount_bundle": {
+        "label": "Discount Bundle Percentage",
+        "description": "Percentage discount to apply to the upsell product (e.g., 50 for 50% off)"
+      }
+    }
   }
 }
