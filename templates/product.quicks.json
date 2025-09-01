@@ -60,7 +60,8 @@
         ".product-form__submit {background-color: #9932cc !important; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
         ".price__badge-sold-out {display: none;}",
-        ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}"
+        ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
+        "input[type=\"radio\"].disabled {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
