@@ -16,14 +16,16 @@
           "type": "title",
           "settings": {}
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "klaviyo_reviews_average_rating_EkJjBx": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_shape": "circle"
           }
         },
@@ -45,7 +47,7 @@
       },
       "block_order": [
         "title",
-        "judge_me_reviews_preview_badge_VG7pPA",
+        "klaviyo_reviews_average_rating_EkJjBx",
         "variant_picker",
         "price",
         "buy_buttons",
@@ -57,7 +59,8 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: #9932cc !important; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
-        ".price__badge-sold-out {display: none;}"
+        ".price__badge-sold-out {display: none;}",
+        ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -342,6 +345,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1756739814d98fab10": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_average_rating_FMa3FX": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_average_rating_FMa3FX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -356,6 +376,7 @@
     "image_with_text_j83Eef",
     "related-products",
     "1730797907a66336cc",
-    "featured_collection_FFPFjd"
+    "featured_collection_FFPFjd",
+    "1756739814d98fab10"
   ]
 }
