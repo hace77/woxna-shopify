@@ -566,7 +566,9 @@
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
       "html {scroll-behavior: smooth;}",
       ".footer__content-bottom {display: none;}",
-      ".restock-rocket-preorder-badge {font-size: 12px; line-height: 1; text-transform: uppercase; padding: 10px 13px 10px !important; border-radius: 0px !important; height: auto; border: none; width: auto; z-index: 2; margin: 0; background: 0 0;}"
+      ".restock-rocket-preorder-badge {font-size: 12px; line-height: 1; text-transform: uppercase; padding: 10px 13px 10px !important; border-radius: 0px !important; height: auto; border: none; width: auto; z-index: 2; margin: 0; background: 0 0;}",
+      ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
+      "input[type=\"radio\"].disabled {display: none;}"
     ]
   }
 }
