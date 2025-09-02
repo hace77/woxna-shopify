@@ -369,6 +369,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
         ".button {border: none;}",
