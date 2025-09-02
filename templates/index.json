@@ -837,6 +837,7 @@
         "text_ry3ayq",
         "button_xqqVKL"
       ],
+      "disabled": true,
       "name": "sustain",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
@@ -910,6 +911,7 @@
       "block_order": [
         "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
