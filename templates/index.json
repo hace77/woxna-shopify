@@ -561,6 +561,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "disabled": true,
       "name": "No more rusty",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
