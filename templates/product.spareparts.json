@@ -20,6 +20,12 @@
           "type": "price",
           "settings": {}
         },
+        "klaviyo_reviews_average_rating_iTB8FR": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -53,6 +59,7 @@
       "block_order": [
         "title",
         "price",
+        "klaviyo_reviews_average_rating_iTB8FR",
         "buy_buttons",
         "custom_liquid_MCVtxa",
         "description",
