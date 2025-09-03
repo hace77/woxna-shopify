@@ -31,17 +31,17 @@
           "type": "price",
           "settings": {}
         },
-        "sku_eXnjyD": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_9Km4Ji": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
         "icon_with_text_GbTykW": {
@@ -73,8 +73,8 @@
         "klaviyo_reviews_average_rating_ircKrJ",
         "judge_me_reviews_preview_badge_VG7pPA",
         "price",
-        "sku_eXnjyD",
         "buy_buttons",
+        "custom_liquid_9Km4Ji",
         "icon_with_text_GbTykW",
         "variant_picker",
         "description"
