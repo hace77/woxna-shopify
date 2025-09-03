@@ -894,23 +894,23 @@
       }
     },
     {
-      "key": "product_page_upsell_offer_text",
-      "namespace": "custom",
-      "name": "Product Page Upsell Offer Text",
-      "description": "Text to explain the offer above the upsell button (e.g., \"Save 50% when you add this to your order!\")",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
       "key": "discount_bundle",
       "namespace": "custom",
-      "name": "Discount Bundle Percentage",
-      "description": "Percentage discount to apply to the upsell product (e.g., 50 for 50% off)",
+      "name": "discount bundle",
+      "description": "the precentage off on the product when sold in a bundle",
       "type": {
         "name": "number_integer",
         "category": "NUMBER"
+      }
+    },
+    {
+      "key": "product_page_upsell_offer_text",
+      "namespace": "custom",
+      "name": "Product Page Upsell Offer Text",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
       }
     }
   ],
