@@ -41,6 +41,13 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "custom_liquid_FhKrbx": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+          }
         }
       },
       "block_order": [
@@ -49,7 +56,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "custom_liquid_FhKrbx"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
