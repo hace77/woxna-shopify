@@ -40,6 +40,7 @@
         },
         "custom_liquid_9Km4Ji": {
           "type": "custom_liquid",
+          "name": "SKU number",
           "settings": {
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
