@@ -591,6 +591,7 @@
         "slide_REjKkX",
         "slide_KRAgzz"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -623,6 +624,7 @@
         "heading_KnR9NP",
         "text_CBqpGQ"
       ],
+      "disabled": true,
       "name": "Packaging",
       "settings": {
         "desktop_content_position": "center",
@@ -749,6 +751,7 @@
         "text_XLRz8T",
         "buttons_dRLaYe"
       ],
+      "disabled": true,
       "name": "measurments",
       "settings": {
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
@@ -800,6 +803,7 @@
         "collapsible_row_WRMnDt",
         "collapsible_row_Qh76JD"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
       ],
@@ -852,6 +856,7 @@
         "text_Kqm3hA",
         "button_cXrCX8"
       ],
+      "disabled": true,
       "name": "contact and support",
       "settings": {
         "desktop_content_position": "center",
@@ -929,6 +934,7 @@
         "text_TdaeQM",
         "button_qxwfAc"
       ],
+      "disabled": true,
       "name": "Sustainability",
       "settings": {
         "desktop_content_position": "center",
