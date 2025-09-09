@@ -419,7 +419,7 @@
       "settings": {
         "image": "shopify://shop_images/XT301653.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
