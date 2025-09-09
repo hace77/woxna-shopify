@@ -19,6 +19,17 @@
             "heading_size": "h0"
           }
         },
+        "buttons_Bpf6rp": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "test",
+            "button_link_1": "shopify://collections/halsing-oak-and-high-carbon-steele",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
@@ -29,6 +40,7 @@
       },
       "block_order": [
         "heading_fAAGM8",
+        "buttons_Bpf6rp",
         "text_RRhx3f"
       ],
       "custom_css": [
@@ -43,6 +55,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -84,6 +97,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -133,6 +147,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -150,6 +165,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -265,6 +281,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
