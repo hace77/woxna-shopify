@@ -362,6 +362,9 @@
         "heading_mEhdkL",
         "text_n3W6pk"
       ],
+      "custom_css": [
+        ".rich-text__heading {font-size: 1.3em; font-family: inter;}"
+      ],
       "name": "Review quote",
       "settings": {
         "desktop_content_position": "center",
