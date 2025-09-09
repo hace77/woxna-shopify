@@ -912,6 +912,16 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "usp_collection_page",
+      "namespace": "custom",
+      "name": "USP collection page",
+      "description": "a list of USP:s that are shown on the collection page to help the customer find the right product",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [

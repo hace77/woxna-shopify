@@ -1,0 +1,84 @@
+.sticky-banner-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: auto;
+  padding: 0;
+  display: none;
+  z-index: 9999;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sticky-banner-button .page-width {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-banner-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.sticky-banner-button__link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 0.4rem;
+  min-width: 100px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-banner-button__link--primary {
+  background-color: #445F45;
+  color: #ffffff;
+  border: 2px solid #445F45;
+}
+
+.sticky-banner-button__link--primary:hover {
+  background-color: #3a523a;
+  border-color: #3a523a;
+  color: #ffffff;
+}
+
+.sticky-banner-button__link--secondary {
+  background-color: transparent;
+  color: #445F45;
+  border: 2px solid #445F45;
+}
+
+.sticky-banner-button__link--secondary:hover {
+  background-color: #445F45;
+  color: #ffffff;
+}
+
+.sticky-banner-button__link:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 749px) {
+  .sticky-banner-button {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  
+  .sticky-banner-button__link {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    min-width: 80px;
+  }
+}
