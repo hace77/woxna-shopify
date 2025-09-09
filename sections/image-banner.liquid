@@ -1,4 +1,7 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.enable_sticky_button -%}
+  {{ 'sticky-banner-button.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -143,6 +146,7 @@
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  id="banner-button-1-{{ section.id }}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -155,6 +159,7 @@
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
                   class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  id="banner-button-2-{{ section.id }}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -165,6 +170,50 @@
     </div>
   </div>
 </div>
+
+{%- comment -%} Sticky Button Implementation {%- endcomment -%}
+{%- if section.settings.enable_sticky_button -%}
+  <div class="sticky-banner-button" id="sticky-banner-button-{{ section.id }}">
+    <div class="page-width">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'buttons' -%}
+          <div class="sticky-banner-buttons">
+            {%- if block.settings.button_label_1 != blank -%}
+              <a
+                {% if block.settings.button_link_1 == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link_1 }}"
+                {% endif %}
+                class="sticky-banner-button__link{% if block.settings.button_style_secondary_1 %} sticky-banner-button__link--secondary{% else %} sticky-banner-button__link--primary{% endif %}"
+                data-original-button="banner-button-1-{{ section.id }}"
+              >
+                {{- block.settings.button_label_1 | escape -}}
+              </a>
+            {%- endif -%}
+            {%- if block.settings.button_label_2 != blank -%}
+              <a
+                {% if block.settings.button_link_2 == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link_2 }}"
+                {% endif %}
+                class="sticky-banner-button__link{% if block.settings.button_style_secondary_2 %} sticky-banner-button__link--secondary{% else %} sticky-banner-button__link--primary{% endif %}"
+                data-original-button="banner-button-2-{{ section.id }}"
+              >
+                {{- block.settings.button_label_2 | escape -}}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{%- if section.settings.enable_sticky_button -%}
+  <script src="{{ 'sticky-banner-button.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -295,6 +344,16 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Sticky Button Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_button",
+      "default": false,
+      "label": "Enable sticky button"
     },
     {
       "type": "header",
