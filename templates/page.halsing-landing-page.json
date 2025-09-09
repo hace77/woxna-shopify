@@ -55,7 +55,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
-        "enable_sticky_button": false,
+        "enable_sticky_button": true,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -72,6 +72,17 @@
             "heading_size": "h1"
           }
         },
+        "buttons_c8MYBb": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "test",
+            "button_link_1": "shopify://products/arbra-micarta-folding-saw",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
@@ -82,6 +93,7 @@
       },
       "block_order": [
         "heading_ArRxbY",
+        "buttons_c8MYBb",
         "text_KW7Vgx"
       ],
       "custom_css": [
@@ -97,7 +109,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
-        "enable_sticky_button": false,
+        "enable_sticky_button": true,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
