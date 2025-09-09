@@ -60,7 +60,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
@@ -436,7 +436,7 @@
     "image_banner_jH9FFx": {
       "type": "image-banner",
       "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none;}}"
+        "@media (min-width: 768px) {.banner {display: none; }}"
       ],
       "name": "handles image mobile",
       "settings": {
