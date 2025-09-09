@@ -36,7 +36,7 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/Bild_2048x1492_a7446a3b-26a7-498f-990f-bb2bc542e4ed.jpg",
+        "image": "shopify://shop_images/airal16-9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -77,7 +77,7 @@
       ],
       "name": "Image banner mobile",
       "settings": {
-        "image": "shopify://shop_images/Bild_2048x1492_a7446a3b-26a7-498f-990f-bb2bc542e4ed.png",
+        "image": "shopify://shop_images/airialforest.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -187,7 +187,7 @@
           "type": "column",
           "settings": {
             "title": "High Carbon Steel",
-            "text": "<p>The Hälsing blade is made from a high carbon steel with a black oxidation and a clear coat that reduces the risk of rust. These blades have excellent sharpness and edge retention properties. They also have great ductility, making them a great choice for heavy-duty use.</p>",
+            "text": "<p>The Hälsing blade is made from a high-carbon steel with a black oxidation and a clear coat to prevent rust. It offers excellent sharpness, edge retention, and durability for heavy-duty use.</p>",
             "link_label": "",
             "link": ""
           }
@@ -196,7 +196,7 @@
           "type": "column",
           "settings": {
             "title": "Versatility with a 7 TPI Blade",
-            "text": "<p>With a teeth pitch of 7 TPI (teeth per inch) these saws can handle both green and dry wood, as well as softwood and hardwood. It is a versatile compromise for all your outdoor needs. These saws are also capable of cutting through other materials such as plastic and bone. But do remember that bone is quite abrasive and will wear down any blade more quickly than wood.</p>",
+            "text": "<p>The 7 TPI (teeth per inch) blade is a versatile compromise for all your outdoor needs. It effortlessly handles green and dry wood, softwood and hardwood, and can even cut plastic and bone. Just remember that bone is abrasive and will wear the blade down faster than wood.</p>",
             "link_label": "",
             "link": ""
           }
@@ -205,7 +205,7 @@
           "type": "column",
           "settings": {
             "title": "Ease and Efficiency with a 3-phased Grind",
-            "text": "<p>Our saws feature a 3-phased grind that saw on the pull, i.e. when you pull the saw towards you. This gives you more control, minimizes the risk of buckling and puts less strain on both you and the saw. The teeth are hardened to 62 HRC for a durable sharpness. Our tooth geometry also has more spacious gullets which helps to shed sawdust and mulch efficiently, keeping the cutting path clear and reducing drag.</p>",
+            "text": "<p>Our saws feature a 3-phased grind that cuts on the pull stroke, providing greater control and less strain. The teeth are hardened to 62 HRC for long-lasting sharpness, while spacious gullets efficiently clear sawdust to reduce drag.</p>",
             "link_label": "",
             "link": ""
           }
