@@ -126,7 +126,7 @@
       ],
       "name": "Preamble",
       "settings": {
-        "image": "shopify://shop_images/Halsing250-sawing-birch.jpg",
+        "image": "shopify://shop_images/Google_Gemini_Generated_Image.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -139,9 +139,9 @@
         "show_text_below": true
       }
     },
-    "image_banner_animation_YNwQDN": {
-      "type": "image-banner-animation",
-      "name": "Image banner animation",
+    "image_banner_QfXYxP": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/halsing-i-hand.jpg",
         "image_overlay_opacity": 0,
@@ -320,7 +320,7 @@
     "image_banner_ExBjAj",
     "main",
     "image_banner_KCRmEW",
-    "image_banner_animation_YNwQDN",
+    "image_banner_QfXYxP",
     "image_with_text_tKWdJf",
     "multicolumn_CdWg9z",
     "rich_text_tqTNdT",
