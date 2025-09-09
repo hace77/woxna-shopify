@@ -44,7 +44,7 @@
         "text_RRhx3f"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; }}"
+        "@media (max-width: 749px) {.banner, .sticky-banner-buttons {display: none !important; }}"
       ],
       "name": "Image banner Desktip",
       "settings": {
