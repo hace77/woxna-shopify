@@ -15,14 +15,14 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "Introducing: The World's First Damascus Foldable Saw",
+            "heading": "Från Hälsinglands djupa skogar",
             "heading_size": "h0"
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "Strength, beauty and craftsmanship combined",
+            "text": "Woxna grundades i Sverige vid Voxnanälvens stränder. Här tillverkar vi förstklassiga sågar och utomhusutrustning inspirerade av skandinaviska traditioner, hantverk och natur. Vårt mål är att göra tidlösa, hållbara produkter för alla som älskar livet bland träden och trivs runt lägerelden.",
             "text_style": "subtitle"
           }
         }
@@ -34,13 +34,14 @@
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; }}"
       ],
+      "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/Damascus_4.jpg",
+        "image": "shopify://shop_images/Bild_2048x1492_a7446a3b-26a7-498f-990f-bb2bc542e4ed.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -74,6 +75,7 @@
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: start !important; } p {text-wrap-style: balance; }}"
       ],
+      "name": "Image banner mobile",
       "settings": {
         "image": "shopify://shop_images/Damascus_4_9fb28f9e-b0a6-47d4-b614-b33c27ad6732.png",
         "image_overlay_opacity": 0,
@@ -86,32 +88,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "rich_text_RtFBF4": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AxDfBr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get VIP Kickstarter access for $1",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AxDfBr"
-      ],
-      "custom_css": [
-        "h2 {text-wrap-style: balance;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 0
       }
     },
     "custom_liquid_UMYp93": {
@@ -127,41 +103,6 @@
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "padding_top": 16,
         "padding_bottom": 32
-      }
-    },
-    "rich_text_t3x9VR": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_XwtDAH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Why This Saw is Revolutionary",
-            "heading_size": "h1"
-          }
-        },
-        "text_mJD6kb": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li><strong>One-of-a-kind </strong>Damascus blade with unique 3D pattern</li><li><strong>Made in Sweden</strong> with steel from world leading supplier <strong>Damasteel</strong></li><li>Foldable, lightweight, made for the wild</li><li>Extreme sharpness, durability, and rust resistance</li><li>Kickstarter exclusive - <strong>Be the first to own it!</strong></li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XwtDAH",
-        "text_mJD6kb"
-      ],
-      "custom_css": [
-        "ul {list-style-position: outside;}",
-        "h2 {text-align: center;}",
-        "@media (min-width: 750px) {ul {padding-left: 70px; }}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 28
       }
     },
     "main": {
@@ -531,9 +472,7 @@
   "order": [
     "image_banner_hcbVmA",
     "image_banner_ExBjAj",
-    "rich_text_RtFBF4",
     "custom_liquid_UMYp93",
-    "rich_text_t3x9VR",
     "main",
     "image_banner_g3zYxV",
     "image_banner_jrXtGH",
