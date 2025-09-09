@@ -231,6 +231,9 @@
         "column_AEgkaC",
         "column_d8pzRp"
       ],
+      "custom_css": [
+        ".multicolumn-card.content-container {background-color: #445f45 !important;}"
+      ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
@@ -242,7 +245,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -274,7 +277,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
