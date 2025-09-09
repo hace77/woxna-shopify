@@ -117,115 +117,41 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_g3zYxV": {
+    "image_banner_KCRmEW": {
       "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Damascus_19.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "image_banner_jrXtGH": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Damascus_58.jpg",
-        "image_2": "shopify://shop_images/Damascus_11.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "richtext_with_image_wtXxEr": {
-      "type": "richtext_with_image",
       "blocks": {
-        "heading_xpYkYb": {
+        "heading_QefCCB": {
           "type": "heading",
           "settings": {
-            "heading": "Not ready to spend $1?",
+            "heading": "Discover Hälsing",
             "heading_size": "h1"
           }
         },
-        "text_CxhL3A": {
+        "text_J7mGyb": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for our Woxna newsletter to get information about when the Kickstarter launches</p>"
+            "text": "Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_xpYkYb",
-        "text_CxhL3A"
+        "heading_QefCCB",
+        "text_J7mGyb"
       ],
+      "name": "Preamble",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 12
-      }
-    },
-    "1744103415254dc915": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_AFMKFB": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-W8kJSM\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_AFMKFB"
-      ],
-      "custom_css": [],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "17441041288c99b0cf": {
-      "type": "apps",
-      "blocks": {
-        "forms_inline_ybkPVQ": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "412729",
-            "text_color": "#202020",
-            "button_background_color": "#445f45",
-            "button_label_color": "#ffffff",
-            "links_color": "#1878b9",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 25,
-            "padding_bottom": 32,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_ybkPVQ"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "include_margins": true
+        "image": "shopify://shop_images/Halsing250-sawing-birch.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "image_with_text_tKWdJf": {
@@ -269,203 +195,58 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_W7HeyJ": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_Ri7gjU": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Visit our Kickstarter page",
-            "heading_size": "h1"
-          }
-        },
-        "text_yGrqFm": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Our pre launch kickstarter page is already uo annd running and you can visit it on the lik below",
-            "text_style": "body"
-          }
-        },
-        "buttons_j4zjHB": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Visit kickstarter",
-            "button_link_1": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Ri7gjU",
-        "text_yGrqFm",
-        "buttons_j4zjHB"
-      ],
-      "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Damascus_27.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "image_banner_ENY6Ri": {
-      "type": "image-banner",
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Damascus_8.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "multicolumn_3G3NDf": {
+    "multicolumn_CdWg9z": {
       "type": "multicolumn",
       "blocks": {
-        "column_WnhQqh": {
+        "column_FKcgBg": {
           "type": "column",
           "settings": {
-            "title": "Follow us on Kickstarter",
-            "text": "<p>For the lastest updates about the campaign, visit our Kickstarter page</p>",
-            "link_label": "Woxna kickstarter",
-            "link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28"
+            "title": "High Carbon Steel",
+            "text": "<p>The Hälsing blade is made from a high carbon steel with a black oxidation and a clear coat that reduces the risk of rust. These blades have excellent sharpness and edge retention properties. They also have great ductility, making them a great choice for heavy-duty use.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "column_dkQRxi": {
+        "column_AEgkaC": {
           "type": "column",
           "settings": {
-            "title": "The development",
-            "text": "<p>Curios about the development of the first ever Damasteel saw?</p>",
-            "link_label": "Read the blog here",
-            "link": "shopify://blogs/the-woxna-journal/why-we-built-the-damascus-steel-foldable-saw"
+            "title": "Versatility with a 7 TPI Blade",
+            "text": "<p>With a teeth pitch of 7 TPI (teeth per inch) these saws can handle both green and dry wood, as well as softwood and hardwood. It is a versatile compromise for all your outdoor needs. These saws are also capable of cutting through other materials such as plastic and bone. But do remember that bone is quite abrasive and will wear down any blade more quickly than wood.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_d8pzRp": {
+          "type": "column",
+          "settings": {
+            "title": "Ease and Efficiency with a 3-phased Grind",
+            "text": "<p>Our saws feature a 3-phased grind that saw on the pull, i.e. when you pull the saw towards you. This gives you more control, minimizes the risk of buckling and puts less strain on both you and the saw. The teeth are hardened to 62 HRC for a durable sharpness. Our tooth geometry also has more spacious gullets which helps to shed sawdust and mulch efficiently, keeping the cutting path clear and reducing drag.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "column_WnhQqh",
-        "column_dkQRxi"
+        "column_FKcgBg",
+        "column_AEgkaC",
+        "column_d8pzRp"
       ],
-      "custom_css": [
-        "h3 {font-size: 30px;}",
-        "@media screen and (max-width: 749px) {.multicolumn-list {text-align: center; }}"
-      ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "",
+        "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_gE33QB": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_UEMHHf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Follow us on Kickstarter",
-            "heading_size": "h1"
-          }
-        },
-        "text_YtG38W": {
-          "type": "text",
-          "settings": {
-            "text": "<p>For the lastest updates about the campaign, visit our Kickstarter page</p>"
-          }
-        },
-        "button_UM3Gb9": {
-          "type": "button",
-          "settings": {
-            "button_label": "Woxna Kickstarter ",
-            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_UEMHHf",
-        "text_YtG38W",
-        "button_UM3Gb9"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 40
-      }
-    },
-    "rich_text_dVAhQi": {
-      "type": "rich-text",
-      "blocks": {
-        "text_MVkPtB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>You can also visit us at <a href=\"https://woxna.com\" title=\"https://woxna.com\">www.woxna.com</a></p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_MVkPtB"
-      ],
-      "custom_css": [
-        "a {color: white;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
-    "rich_text_eDhBFC": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 32
       }
     }
   },
@@ -474,17 +255,8 @@
     "image_banner_ExBjAj",
     "custom_liquid_UMYp93",
     "main",
-    "image_banner_g3zYxV",
-    "image_banner_jrXtGH",
-    "richtext_with_image_wtXxEr",
-    "1744103415254dc915",
-    "17441041288c99b0cf",
+    "image_banner_KCRmEW",
     "image_with_text_tKWdJf",
-    "image_banner_W7HeyJ",
-    "image_banner_ENY6Ri",
-    "multicolumn_3G3NDf",
-    "rich_text_gE33QB",
-    "rich_text_dVAhQi",
-    "rich_text_eDhBFC"
+    "multicolumn_CdWg9z"
   ]
 }
