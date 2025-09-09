@@ -347,7 +347,7 @@
         "heading_mEhdkL": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.review | metafield_text: field: 'quote' }}",
+            "heading": "\"{{ product.metafields.custom.review | metafield_text: field: 'quote' }}\"",
             "heading_size": "h1"
           }
         },
@@ -363,7 +363,7 @@
         "text_n3W6pk"
       ],
       "custom_css": [
-        ".rich-text__heading {font-size: 1.3em; font-family: inter;}"
+        ".rich-text__heading {font-size: 1.2em; font-family: var(--font-body-family); font-style: italic;}"
       ],
       "name": "Review quote",
       "settings": {
