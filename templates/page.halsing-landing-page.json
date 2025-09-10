@@ -96,6 +96,7 @@
         "buttons_c8MYBb",
         "text_KW7Vgx"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end !important; } p {text-wrap-style: balance; }}"
