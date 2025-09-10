@@ -15,32 +15,20 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "Från Hälsinglands djupa skogar",
+            "heading": "From the deep forests of Hälsingland",
             "heading_size": "h0"
-          }
-        },
-        "buttons_Bpf6rp": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "test",
-            "button_link_1": "shopify://collections/halsing-oak-and-high-carbon-steele",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "Woxna grundades i Sverige vid Voxnanälvens stränder. Här tillverkar vi förstklassiga sågar och utomhusutrustning inspirerade av skandinaviska traditioner, hantverk och natur. Vårt mål är att göra tidlösa, hållbara produkter för alla som älskar livet bland träden och trivs runt lägerelden.",
+            "text": "At Woxna, we design and manufacture our saws in our own factory in Hälsingland, where forest work has always been part of daily life. Our mission is to give this essential tool the status it deserves by combining heritage and innovation to create saws that last for generations.",
             "text_style": "subtitle"
           }
         }
       },
       "block_order": [
         "heading_fAAGM8",
-        "buttons_Bpf6rp",
         "text_RRhx3f"
       ],
       "custom_css": [
@@ -72,31 +60,18 @@
             "heading_size": "h1"
           }
         },
-        "buttons_c8MYBb": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "test",
-            "button_link_1": "shopify://products/arbra-micarta-folding-saw",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "Woxna was founded in Sweden by the shores of the Voxnan River. Here, we make premium hand saws and outdoor gear inspired by Scandinavian traditions, craftsmanship, and nature. Our aim is to make timeless, sustainable products for everyone who loves life among the trees and thrives around the campfire. ",
+            "text": "At Woxna, we design and manufacture our saws in our own factory in Hälsingland, where forest work has always been part of daily life. Our mission is to give this essential tool the status it deserves by combining heritage and innovation to create saws that last for generations.",
             "text_style": "subtitle"
           }
         }
       },
       "block_order": [
         "heading_ArRxbY",
-        "buttons_c8MYBb",
         "text_KW7Vgx"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end !important; } p {text-wrap-style: balance; }}"
@@ -307,14 +282,14 @@
         "heading_aFj8Fr": {
           "type": "heading",
           "settings": {
-            "heading": "Choose your size",
+            "heading": "Which size is right for you?",
             "heading_size": "h1"
           }
         },
         "text_FWXrFp": {
           "type": "text",
           "settings": {
-            "text": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>"
+            "text": "<p>If keeping your gear as light as possible is the priority, like when heading out on day trips, the <strong>shorter Hälsning (180 mm/7in)</strong> is the best fit.<br/><br/>In most other cases, we recommend the <strong>longer Hälsning (250 mm/10in).</strong> The extra blade length makes every stroke more efficient, so sawing feels smoother and requires less effort.</p>"
           }
         }
       },
@@ -322,7 +297,7 @@
         "heading_aFj8Fr",
         "text_FWXrFp"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Choose size",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
