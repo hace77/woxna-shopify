@@ -36,7 +36,7 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-hero-916-9.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-916-9_darker.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -78,7 +78,7 @@
       ],
       "name": "Image banner mobile",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-hero-9-16.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-9-16._darker.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -207,8 +207,8 @@
         "column_FKcgBg": {
           "type": "column",
           "settings": {
-            "title": "High Carbon Steel",
-            "text": "<p>The Hälsing blade is made from a high-carbon steel with a black oxidation and a clear coat to prevent rust. It offers excellent sharpness, edge retention, and durability for heavy-duty use.</p>",
+            "title": "No More Rusty Blades",
+            "text": "<p>Unlike traditional steel that rusts, our blades are made of durable 10C28Mo2 stainless steel. This gives you a reliable saw that requires less maintenance and is always ready for your outdoor adventures.</p>",
             "link_label": "",
             "link": ""
           }
