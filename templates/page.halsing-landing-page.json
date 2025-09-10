@@ -309,6 +309,15 @@
     },
     "featured_collection_hatmBM": {
       "type": "featured-collection",
+      "custom_css": [
+        ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
+        ".button {border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
+        ".badge {display: none;}",
+        "@media (width <= 749px) {.card__heading {font-size: 1.4rem !important; line-height: 1.4; font-weight: 200; font-family: inter; } .card--card {border: 0 !important; }}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "",
