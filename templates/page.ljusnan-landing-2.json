@@ -117,7 +117,7 @@
         "text_J7mGyb": {
           "type": "text",
           "settings": {
-            "text": "Ljusnan is ideal for bush crafters, campers, hunters and anyone else who needs a compact and reliable folding saw. It features a a high-carbon, stainless steel blade with knife-grade quality, so you won't have to worry about rust or tedious maintenance. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Ljusnan will be dependable companion on your adventures into the great outdoors.",
+            "text": "Ljusnan is built for bushcrafters, campers, hunters, and anyone in need of a compact yet reliable folding saw. Its stainless steel blade offers knife-grade quality, resistant to rust and low on maintenance. Paired with a beautifully crafted walnut handle, it combines rugged performance with timeless design. ",
             "text_style": "body"
           }
         }
@@ -146,7 +146,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/halsing-i-hand.jpg",
+        "image": "shopify://shop_images/Ljusnan-180mm-50.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -262,7 +262,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Halsing-250-and-180-mm.jpg",
+        "image": "shopify://shop_images/ljusnan_both.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
