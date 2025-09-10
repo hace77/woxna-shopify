@@ -36,7 +36,7 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/airal16-9.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-916-9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -78,7 +78,7 @@
       ],
       "name": "Image banner mobile",
       "settings": {
-        "image": "shopify://shop_images/airialforest.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-9-16.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -110,14 +110,14 @@
         "heading_QefCCB": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Hälsing",
+            "heading": "Discover Ljusnan",
             "heading_size": "h1"
           }
         },
         "text_J7mGyb": {
           "type": "text",
           "settings": {
-            "text": "Hälsing is a folding handsaw with a traditional blade made of high-quality carbon steel and an oak handle, designed for frequent and heavy-duty use. It is perfect for anyone who needs a robust yet compact tool for bushcraft, camping, and hunting. Whether you are building a shelter, preparing firewood, clearing paths, or maintaining woodlands, the Hälsing will get the job done. With proper care, this saw will be a reliable companion, wherever your path leads you through the seasons.",
+            "text": "Ljusnan is ideal for bush crafters, campers, hunters and anyone else who needs a compact and reliable folding saw. It features a a high-carbon, stainless steel blade with knife-grade quality, so you won't have to worry about rust or tedious maintenance. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Ljusnan will be dependable companion on your adventures into the great outdoors.",
             "text_style": "body"
           }
         }
@@ -126,9 +126,9 @@
         "heading_QefCCB",
         "text_J7mGyb"
       ],
-      "name": "Preamble",
+      "name": "Discover",
       "settings": {
-        "image": "shopify://shop_images/Black-week-saw-11.jpg",
+        "image": "shopify://shop_images/close-up.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
