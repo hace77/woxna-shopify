@@ -36,14 +36,14 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/airal16-9.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-916-9_darker.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
-        "enable_sticky_button": true,
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -78,7 +78,7 @@
       ],
       "name": "Image banner mobile",
       "settings": {
-        "image": "shopify://shop_images/airialforest.jpg",
+        "image": "shopify://shop_images/Ljusnan-hero-9-16._darker.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -110,14 +110,14 @@
         "heading_QefCCB": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Hälsing",
+            "heading": "Discover Ljusnan",
             "heading_size": "h1"
           }
         },
         "text_J7mGyb": {
           "type": "text",
           "settings": {
-            "text": "Hälsing is a folding handsaw with a traditional blade made of high-quality carbon steel and an oak handle, designed for frequent and heavy-duty use. It is perfect for anyone who needs a robust yet compact tool for bushcraft, camping, and hunting. Whether you are building a shelter, preparing firewood, clearing paths, or maintaining woodlands, the Hälsing will get the job done. With proper care, this saw will be a reliable companion, wherever your path leads you through the seasons.",
+            "text": "Ljusnan is built for bushcrafters, campers, hunters, and anyone in need of a compact yet reliable folding saw. Its stainless steel blade offers knife-grade quality, resistant to rust and low on maintenance. Paired with a beautifully crafted walnut handle, it combines rugged performance with timeless design. ",
             "text_style": "body"
           }
         }
@@ -126,9 +126,9 @@
         "heading_QefCCB",
         "text_J7mGyb"
       ],
-      "name": "Preamble",
+      "name": "Discover",
       "settings": {
-        "image": "shopify://shop_images/Black-week-saw-11.jpg",
+        "image": "shopify://shop_images/close-up.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -146,7 +146,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/halsing-i-hand.jpg",
+        "image": "shopify://shop_images/Ljusnan-180mm-50.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -207,8 +207,8 @@
         "column_FKcgBg": {
           "type": "column",
           "settings": {
-            "title": "High Carbon Steel",
-            "text": "<p>The Hälsing blade is made from a high-carbon steel with a black oxidation and a clear coat to prevent rust. It offers excellent sharpness, edge retention, and durability for heavy-duty use.</p>",
+            "title": "No More Rusty Blades",
+            "text": "<p>Unlike traditional steel that rusts, our blades are made of durable 10C28Mo2 stainless steel. This gives you a reliable saw that requires less maintenance and is always ready for your outdoor adventures.</p>",
             "link_label": "",
             "link": ""
           }
@@ -262,7 +262,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Halsing-250-and-180-mm.jpg",
+        "image": "shopify://shop_images/ljusnan_both.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -289,7 +289,7 @@
         "text_FWXrFp": {
           "type": "text",
           "settings": {
-            "text": "<p>If keeping your gear as light as possible is the priority, like when heading out on day trips, the shorter Hälsning (180 mm/7in) is the best fit.<br/><br/>In most other cases, we recommend the longer Hälsning (250 mm/10in). The extra blade length makes every stroke more efficient, so sawing feels smoother and requires less effort.</p>"
+            "text": "<p>If keeping your gear as light as possible is the priority, like when heading out on day trips, the shorter Ljusnan (180 mm/7in) is the best fit.<br/><br/>In most other cases, we recommend the longer Ljusnan (250 mm/10in). The extra blade length makes every stroke more efficient, so sawing feels smoother and requires less effort.</p>"
           }
         }
       },
@@ -324,7 +324,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "halsing-oak-and-high-carbon-steele",
+        "collection": "ljusnan-foldable-saw",
         "products_to_show": 4,
         "columns_desktop": 2,
         "full_width": false,
@@ -337,7 +337,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "quick_add": "standard",
+        "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
