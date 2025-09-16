@@ -26,21 +26,24 @@
           "type": "link_list",
           "settings": {
             "heading": "About",
-            "menu": "about"
+            "menu": "about",
+            "expanded_by_default": false
           }
         },
         "link_list_ppCkmq": {
           "type": "link_list",
           "settings": {
             "heading": "Support",
-            "menu": "support"
+            "menu": "support",
+            "expanded_by_default": false
           }
         },
         "link_list_3NGMt3": {
           "type": "link_list",
           "settings": {
             "heading": "Retailers",
-            "menu": "retailers"
+            "menu": "retailers",
+            "expanded_by_default": true
           }
         }
       },
