@@ -175,7 +175,9 @@
                     lazy_load: lazy_load,
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    show_view_product_button: section.settings.show_view_product_button,
+                    color_scheme: section.settings.color_scheme
                   %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
@@ -329,6 +331,13 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_product_button",
+      "default": false,
+      "label": "Show view product button",
+      "info": "Display a button that links to the full product page"
     },
     {
       "type": "header",

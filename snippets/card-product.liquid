@@ -16,6 +16,8 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+  - show_view_product_button: {Boolean} Show a "View Product" button. Default: false (optional)
+  - color_scheme: {String} Color scheme to apply to the button. Default: null (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -249,6 +251,13 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            
+            {%- if show_view_product_button -%}
+              <a href="{{ card_product.url }}" class="button button--full-width{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
+                {{ 'products.product.view_product' | t }}
+              </a>
+            {%- endif -%}
+            
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
                 {% liquid
