@@ -54,6 +54,60 @@
         "show_text_below": false
       }
     },
+    "image_banner_z8RLaV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_eFA9R4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Explore our award-winning saws</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_iWWgUB": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Read more",
+            "button_link_1": "shopify://collections/saws",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_wTkGzN": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eFA9R4",
+        "buttons_iWWgUB",
+        "text_wTkGzN"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner MOBILE",
+      "settings": {
+        "image": "shopify://shop_images/start_page_new_9_16.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "video_banner_yt_fgFqCR": {
       "type": "video-bannerYT",
       "blocks": {
@@ -80,6 +134,7 @@
         "heading_dtUCPi",
         "buttons_gzXFeC"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: start; }}"
@@ -624,6 +679,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -761,6 +817,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -922,6 +979,7 @@
   },
   "order": [
     "video_banner_yt_yWG9Ex",
+    "image_banner_z8RLaV",
     "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
