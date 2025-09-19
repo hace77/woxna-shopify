@@ -175,7 +175,16 @@
             "april": "april",
             "may": "mai",
             "june": "juni",
-            "july": "juli"
+            "july": "juli",
+            "february": "februar",
+            "september": "september",
+            "november": "november",
+            "december": "desember"
+          },
+          "weekdays": {
+            "wednesday": "onsdag",
+            "thursday": "torsdag",
+            "saturday": "lørdag"
           }
         },
         "title": "Kasse - {{shopName}}",
@@ -185,7 +194,8 @@
         "autocomplete_powered_by_google": "Drevet av {{brandName}}",
         "dropzone": {
           "invalid_file_type": "Filtypen støttes ikke",
-          "dragged_over": "Slipp filen for å laste den opp"
+          "dragged_over": "Slipp filen for å laste den opp",
+          "add_file": "Legg til fil"
         },
         "submit_for_review_button_label": "Send inn til vurdering",
         "autocomplete_zero_item": "Ingen varer tilgjengelig",
@@ -197,7 +207,9 @@
         },
         "remove_item": "Fjern %{label}",
         "datepicker": {
-          "show_next_month": "Vis neste måned, {{month}} {{year}}"
+          "show_next_month": "Vis neste måned, {{month}} {{year}}",
+          "in_range": "Innenfor rekkevidde",
+          "range_end": "Slutt på rekkevidden"
         },
         "map": {
           "cluster_title": {
@@ -205,7 +217,10 @@
             "other": "Klynge med {{number}} markører"
           }
         },
-        "remove_chip": "Fjern elementet"
+        "remove_chip": "Fjern elementet",
+        "loading": "Laster inn…",
+        "google_map_title": "Google Kart",
+        "remove_tag": "Fjern taggen"
       },
       "stock": {
         "unshippable_product": {
@@ -441,7 +456,9 @@
           "due_on_receipt": "Totalt forfaller ved mottak",
           "due_today": "Totalt forfaller i dag",
           "due_on_fulfillment_next": "Forfaller ved oppfyllelse",
-          "due_later_checkout_to_draft": "Totalt forfaller senere"
+          "due_later_checkout_to_draft": "Totalt forfaller senere",
+          "due_today_next": "Forfaller i dag",
+          "total_paid": "Totalt betalt"
         },
         "gift_card_masked": "•••• %{siste_tegn}",
         "full_price": "Full pris: %{pris}",
@@ -486,7 +503,11 @@
         "unconfirmed_label": "Ubekreftet",
         "total_due_label": "Totalt utestående",
         "total_price_label": "Totalpris",
-        "deferred_total_due_date_label_next": "Forfall %{dato}"
+        "deferred_total_due_date_label_next": "Forfall %{dato}",
+        "total_paid_label": "Totalt betalt",
+        "quantity_label": "Mengde",
+        "product_image_quantity_label": "Mengde",
+        "sale_price": "Salgspris"
       },
       "payment_errors": {
         "development_store_with_order_limit": "For å legge inn en testbestilling må du bruke en testbetalingsgateway. Finn ut mer om %{development_store_order_testing_docs_link}.",
@@ -872,7 +893,11 @@
         "thank_you_title_payments_app_pending_default": "Betalingen din blir behandlet",
         "thank_you_title_payments_app_failed_pending_payment": "Betalingen din kunne ikke behandles",
         "payment_method_not_charged": "Ikke belastet",
-        "confirmed_items_count": "%{confirmed_count} av %{total_count} elementer er bekreftet"
+        "confirmed_items_count": "%{confirmed_count} av %{total_count} elementer er bekreftet",
+        "page_title_no_name": "Takk skal du ha!",
+        "company_location_title": "Sted",
+        "confirmed": "Bekreftet",
+        "gift_card_title": "Gavekort"
       },
       "pickup_point": {
         "pickup_unavailable_banner_title": {
@@ -914,7 +939,8 @@
         "selector_tab_map": "Kart",
         "selector_tab_list": "Liste",
         "selector_tabs": "Velger av hentepunkt",
-        "no_business_hours": "Ingen åpningstider tilgjengelig"
+        "no_business_hours": "Ingen åpningstider tilgjengelig",
+        "open_twenty_four_hours": "Åpent døgnet rundt"
       },
       "error_page": {
         "terminal": {
@@ -950,6 +976,9 @@
         "generic_processing_error": {
           "title": "Det oppsto et problem under behandling av bestillingen din",
           "body": "Du har ikke blitt belastet. Prøv på nytt eller bruk en annen betalingsmåte."
+        },
+        "contact_information": {
+          "email_link": "kontakt oss"
         }
       },
       "marketplaces": {
@@ -1414,7 +1443,11 @@
         "bank_account_choose": "Velg en konto for å fullføre kjøpet på en sikker måte",
         "bank_account_connect_another": "Koble til en annen bankkonto",
         "bank_account_connect": "Koble til bankkonto",
-        "bank_account_missing": "Bankkontoen må være tilkoblet"
+        "bank_account_missing": "Bankkontoen må være tilkoblet",
+        "gift_card_balance_label": "Balansere:",
+        "supported_card_brands_more_label": "og mer…",
+        "card_pay_with": "Betal med:",
+        "credit_card_start_year": "Startår"
       },
       "note": {
         "length_exceeds_maximum": "Reduser størrelsen på notatet til 5000 eller færre tegn."
@@ -1879,7 +1912,8 @@
           "default": "Prime delivery er ikke tilgjengelig for bestillingen din. Fraktalternativene dine er oppdatert."
         },
         "shipping_address_rollup_accessibility_label": "Alternativer for leveringsadresse",
-        "split_shipping_first_shipment_notice": "Din første bestilling vil ankomme i %{quantity_shipments}"
+        "split_shipping_first_shipment_notice": "Din første bestilling vil ankomme i %{quantity_shipments}",
+        "pre_order_ships_now": "Sendes nå"
       },
       "contact": {
         "emirate_label": "Emiratet",
@@ -1928,7 +1962,13 @@
         "optional_company_attention_label": "Selskap/Oppmerksomhet (valgfritt)",
         "optional_address2_label": "Leilighet, suite osv. (valgfritt)",
         "email_rollup_accessibility_label": "E-postalternativer",
-        "phone_rollup_accessibility_label": "Telefonalternativer"
+        "phone_rollup_accessibility_label": "Telefonalternativer",
+        "first_name_label": "Fornavn",
+        "last_name_label": "Etternavn",
+        "province_label": "Provins",
+        "province_placeholder": "Provins",
+        "prefecture_label": "Prefektur",
+        "prefecture_placeholder": "Prefektur"
       },
       "delivery_options": {
         "free_total_label": "Gratis",
@@ -1986,7 +2026,9 @@
         "no_tip_label": "Ingen",
         "presets_description": "Velg en tipsprosent",
         "preset_label": "%{tips_percent}%",
-        "message": "Takk, vi setter pris på det."
+        "message": "Takk, vi setter pris på det.",
+        "custom_label": "Tilpasset tips",
+        "update_tip": "Oppdater tips"
       },
       "subscriptions": {
         "recurring_total_intervals": {
@@ -2027,6 +2069,11 @@
         "time_to_checkout_title": "Tid for å gå til kassen – {{shopName}}",
         "estimated_wait_time": {
           "calculating": "Beregning av estimert ventetid"
+        },
+        "cart_summary_heading": "Handlekurven din",
+        "merchandise": {
+          "available": "Tilgjengelig",
+          "sold_out": "Utsolgt"
         }
       },
       "localized_fields": {
@@ -3011,7 +3058,8 @@
         "table_view": "Vis tabellvisning",
         "show_order_actions_accessibility_label": "Vis bestillingshandlinger for bestilling {{name}}",
         "column_headers": {
-          "order": "Bestille"
+          "order": "Bestille",
+          "products_accessibility_label": "Produkter"
         },
         "delivered": "Levert {{date}}",
         "empty_state_title_for_pending_orders": "Ingen ventende bestillinger",
@@ -3726,13 +3774,16 @@
         "cancel_accessibility_label": "Avbryt redigering av profil",
         "errors": {
           "invalid_email_format": "Skriv inn en gyldig e-postadresse"
-        }
+        },
+        "first_name": "Fornavn",
+        "last_name": "Etternavn"
       },
       "add_button": "Legge til",
       "profile_update_confirmation_message": "Profilen er oppdatert",
       "people": {
         "pagination": {
-          "load_more_accessibility_label": "Last inn flere personer"
+          "load_more_accessibility_label": "Last inn flere personer",
+          "load_more": "Last inn mer"
         }
       },
       "loading_accessibility_message": "Laster inn kontoinformasjon",
@@ -3768,13 +3819,26 @@
       "mapClusterTitle": {
         "one": "Klynge av {{number}} markør",
         "other": "Klynge med {{number}} markører"
-      }
+      },
+      "expandNotification": "Se mer",
+      "february": "februar",
+      "september": "september",
+      "november": "november",
+      "december": "desember",
+      "wednesday": "onsdag",
+      "thursday": "torsdag",
+      "saturday": "lørdag",
+      "inRange": "Innenfor rekkevidde",
+      "rangeEnd": "Slutt på rekkevidden",
+      "removeTag": "Fjern taggen",
+      "addFile": "Legg til fil"
     },
     "shop_ads": {
       "next_button": "Neste",
       "button": "Utforsk i butikken",
       "title": "Eksklusive tilbud fra Shop",
-      "subtitle": "Tilgjengelig i en begrenset periode"
+      "subtitle": "Tilgjengelig i en begrenset periode",
+      "previous_button": "Tidligere"
     },
     "subscriptions": {
       "update_payment_instrument": {
@@ -3785,7 +3849,8 @@
     },
     "sign_in": {
       "step_one": {
-        "or": "eller"
+        "or": "eller",
+        "button": "Fortsette"
       }
     },
     "date": {
@@ -3796,7 +3861,8 @@
         },
         "yesterday": "I går klokken {{time}}",
         "tomorrow": "I morgen klokken {{time}}",
-        "today": "I dag {{time}}"
+        "today": "I dag {{time}}",
+        "lessThanOneMinuteAgo": "Akkurat nå"
       }
     },
     "navigation_and_structure": {
@@ -3819,7 +3885,8 @@
       "company_location": "Bedriftens beliggenhet",
       "skip_to_content": "Hopp til innhold",
       "navigation_accessibility_message": "Du navigerte til {{sectionName}}",
-      "country_switcher_toast_message": "Land byttet til {{countryName}}"
+      "country_switcher_toast_message": "Land byttet til {{countryName}}",
+      "settings_link": "Innstillinger"
     },
     "privacy_banner": {
       "cookie_preferences_link": "Informasjonskapsler"
@@ -3829,7 +3896,9 @@
       "navigate_to_admin": "Naviger til administrator",
       "viewing": "Du ser på:",
       "saved_at": "Lagret {{date}} kl {{time}}",
-      "not_available": "Profildata er ikke tilgjengelig"
+      "not_available": "Profildata er ikke tilgjengelig",
+      "customize_button": "Tilpass",
+      "hide_bar": "Skjul linjen"
     },
     "active_inspector": {
       "extension": {
@@ -3840,7 +3909,8 @@
       }
     },
     "settings": {
-      "loading_accessibility_message": "Laster innstillingssiden"
+      "loading_accessibility_message": "Laster innstillingssiden",
+      "title": "Innstillinger"
     }
   },
   "general": {
@@ -3868,7 +3938,8 @@
     "password_page": {
       "login_password_button": "Gå inn med passord",
       "login_form_error": "Feil passord!",
-      "login_form_heading": "Gå inn i butikken med passord:"
+      "login_form_heading": "Gå inn i butikken med passord:",
+      "login_form_password_label": "Passord"
     },
     "social": {
       "alt_text": {
@@ -3878,7 +3949,8 @@
     },
     "continue_shopping": "Fortsett å handle",
     "pagination": {
-      "page": "Side {{ number }}"
+      "page": "Side {{ number }}",
+      "next": "Neste side"
     }
   },
   "newsletter": {
@@ -3946,23 +4018,35 @@
       "login": {
         "title": "Har du en konto?"
       },
-      "note": "Bestill spesielle instruksjoner"
+      "note": "Bestill spesielle instruksjoner",
+      "title": "Handlekurven din",
+      "caption": "Varer i handlekurven",
+      "checkout": "Sjekk ut",
+      "headings": {
+        "product": "Produkt",
+        "quantity": "Mengde"
+      }
     },
     "announcements": {
       "previous_announcement": "Forrige kunngjøring",
       "next_announcement": "Neste kunngjøring",
-      "announcement_bar": "Kunngjøringslinje"
+      "announcement_bar": "Kunngjøringslinje",
+      "carousel": "Karusell"
     },
     "footer": {
       "payment": "Betalingsmetoder"
     },
     "collection_template": {
-      "empty": "Ingen produkter funnet"
+      "empty": "Ingen produkter funnet",
+      "title": "Samling"
     },
     "slideshow": {
       "previous_slideshow": "Forrige lysbilde",
       "pause_slideshow": "Pause lysbildevisning",
-      "play_slideshow": "Spill av lysbildefremvisning"
+      "play_slideshow": "Spill av lysbildefremvisning",
+      "load_slide": "Last inn lysbilde",
+      "next_slideshow": "Neste lysbilde",
+      "carousel": "Karusell"
     },
     "quick_order_list": {
       "product_total": "Produktets delsum",
@@ -3977,10 +4061,25 @@
       },
       "remove_all_single_item_confirmation": "Fjerne 1 vare fra handlekurven?",
       "min_error": "Denne varen har minimum {{ min }}",
-      "max_error": "Denne varen har maksimalt {{ max }}"
+      "max_error": "Denne varen har maksimalt {{ max }}",
+      "view_cart": "Se handlekurven",
+      "product": "Produkt"
     },
     "video": {
       "load_video": "Last inn video: {{ description }}"
+    },
+    "featured_blog": {
+      "view_all": "Se alle",
+      "onboarding_title": "Blogginnlegg"
+    },
+    "featured_collection": {
+      "view_all": "Se alle"
+    },
+    "collection_list": {
+      "view_all": "Se alle"
+    },
+    "page": {
+      "title": "Sidetittel"
     }
   }
 }
