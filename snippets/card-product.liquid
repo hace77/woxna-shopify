@@ -52,6 +52,9 @@
     .custom-label + .stock-label {
       top: 45px;
     }
+    .view-product-button {
+      padding: 0 !important;
+    }
   </style>
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
@@ -253,7 +256,7 @@
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             
             {%- if show_view_product_button -%}
-              <a href="{{ card_product.url }}" class="button button--full-width{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
+              <a href="{{ card_product.url }}" class="button button--full-width view-product-button{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
                 {{ 'products.product.view_product' | t }}
               </a>
             {%- endif -%}
