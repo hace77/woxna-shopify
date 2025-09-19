@@ -228,7 +228,7 @@
         "image_fA3Dgi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
+            "image": "shopify://shop_images/Woxna_Start_Page_21.jpg",
             "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "show_text_overlay": true,
             "heading": "Hälsing 180",
@@ -501,6 +501,7 @@
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 20,
@@ -756,6 +757,7 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
