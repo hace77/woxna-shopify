@@ -22,7 +22,7 @@
         "buttons_KGYaGF": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Read more",
             "button_link_1": "shopify://collections/foldable-saws",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -37,7 +37,7 @@
       ],
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
-        "@media (min-width: 749px) {.banner__content {align-items: end ; }}"
+        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "name": "Image banner DT",
       "settings": {
