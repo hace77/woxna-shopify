@@ -191,7 +191,8 @@
       "upsell": {
         "add_to_cart": "In den Warenkorb legen",
         "view_options": "Optionen anzeigen"
-      }
+      },
+      "view_product": "Produkt ansehen"
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -571,6 +572,33 @@
       "discount_bundle": {
         "label": "Rabattpaket-Prozentsatz",
         "description": "Prozentualer Rabatt, der auf das Upsell-Produkt angewendet wird (z.B. 50 für 50% Rabatt)"
+      }
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "email_rollup_accessibility_label": "E-Mail-Optionen",
+        "phone_rollup_accessibility_label": "Telefonoptionen"
+      },
+      "customer_account": {
+        "rollup_accessibility_label": "Kontooptionen"
+      },
+      "payment": {
+        "usdc_cashback_title": "1% Cashback",
+        "usdc_cashback_additional_info": "Erhalten Sie 1 % in USDC direkt in Ihr Wallet zurück.",
+        "usdc_cashback_terms": "Es gelten die Bedingungen",
+        "markets_pro_disclaimer_label_express_checkout": "Mit dem Kauf stimmen Sie den %{markets_pro_terms} und %{privacy_policy} von Global-e, unserem internationalen Dienstleister, zu",
+        "markets_pro_disclaimer_express_terms_and_conditions": "Bedingungen",
+        "markets_pro_disclaimer_express_privacy_policy": "Datenschutzrichtlinie"
+      },
+      "billing": {
+        "billing_address_rollup_accessibility_label": "Rechnungsoptionen"
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "Die Kasse enthält nur Remote-Waren. Um den Checkout abzuschließen, ist eine Weiterleitung zum Remote-Shop erforderlich."
+        }
       }
     }
   }
