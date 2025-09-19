@@ -2720,7 +2720,13 @@
       "vendor": "Selger",
       "value_unavailable": "{{ option_value }} – Ikke tilgjengelig",
       "variant_sold_out_or_unavailable": "Variant utsolgt eller utilgjengelig",
-      "video_exit_message": "{{ title }} åpner fullskjermvideo i samme vindu."
+      "video_exit_message": "{{ title }} åpner fullskjermvideo i samme vindu.",
+      "view_product": "Vis produkt",
+      "low_stock": "Bare noen få igjen",
+      "upsell": {
+        "add_to_cart": "Legg i handlekurven",
+        "view_options": "Vis alternativer"
+      }
     },
     "modal": {
       "label": "Mediegalleri"
@@ -4027,13 +4033,35 @@
       "update_payment_instrument": {
         "save": "Spare",
         "title": "Erstatt betalingsmåte",
-        "success": "Betalingsmåte oppdatert"
+        "success": "Betalingsmåte oppdatert",
+        "loading": "Laster inn betalingsmåter",
+        "no_payment_methods_available": "Ingen tilgjengelige betalingsmåter",
+        "select_new_payment_method": "Velg en ny betalingsmåte",
+        "current_method": "Nåværende",
+        "use_new_payment_method": "+ Bruk ny betalingsmåte"
       }
     },
     "sign_in": {
       "step_one": {
         "or": "eller",
-        "button": "Fortsette"
+        "button": "Fortsette",
+        "page_title": "Logg inn – %{shop_name}",
+        "subheading": "Skriv inn e-postadressen din, så sender vi deg en bekreftelseskode",
+        "subheading_with_sign_in_options": "Velg hvordan du vil logge på"
+      },
+      "brand_logo_alt_text": "%{shop_name}-logo",
+      "step_two": {
+        "page_title": "Skriv inn koden - %{shop_name}",
+        "heading": "Skriv inn koden",
+        "subheading": "Sendt til %{email}",
+        "restart_link": "Logg inn med en annen e-postadresse",
+        "input_field_label": "6-sifret kode"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "Skriv inn en gyldig e-postadresse",
+          "invalid_code": "Skriv inn riktig 6-sifret kode"
+        }
       }
     },
     "date": {
@@ -4101,7 +4129,10 @@
       "loading_accessibility_message": "Laster innstillingssiden",
       "title": "Innstillinger",
       "log_out_everywhere": {
-        "description": "Hvis du har mistet en enhet eller har sikkerhetsbekymringer, bør du logge ut overalt for å sikre kontoens sikkerhet."
+        "description": "Hvis du har mistet en enhet eller har sikkerhetsbekymringer, bør du logge ut overalt for å sikre kontoens sikkerhet.",
+        "title": "Logg ut overalt",
+        "button": "Logg ut overalt",
+        "warning_message": "Du blir også logget av på denne enheten."
       }
     },
     "knowledge_base": {
@@ -4211,7 +4242,9 @@
     },
     "cart": {
       "upsell": {
-        "add_to_cart": "Legge til"
+        "add_to_cart": "Legge til",
+        "title": "Du liker kanskje også",
+        "view_options": "Vis alternativer"
       },
       "remove_title": "Fjern {{ title }}",
       "new_estimated_total": "Ny estimert totalsum",
@@ -4273,7 +4306,8 @@
       "max_error": "Denne varen har maksimalt {{ max }}",
       "view_cart": "Se handlekurven",
       "product": "Produkt",
-      "remove_all_items_confirmation": "Fjern alle {{ quantity }} varer fra handlekurven?"
+      "remove_all_items_confirmation": "Fjern alle {{ quantity }} varer fra handlekurven?",
+      "each": "{{ money }} hver"
     },
     "video": {
       "load_video": "Last inn video: {{ description }}"
@@ -4291,6 +4325,36 @@
     },
     "page": {
       "title": "Sidetittel"
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Mersalgsprodukt",
+            "info": "Produkt som skal foreslås som mersalg når dette produktet er i handlekurven"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Produktside Mersalgsprodukt",
+        "description": "Produkt som skal foreslås som mersalg på denne produktsiden"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Tekst på mersalgsknapp for produktsiden",
+        "description": "Tilpasset tekst for mersalgsknappen (f.eks. «Legg til beskyttelsesplan», «Skaff deg omsorgssett»)"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Produktside Mersalg Tilbudstekst",
+        "description": "Tekst som forklarer tilbudet over mersalgsknappen (f.eks. «Spar 50 % når du legger dette til i bestillingen din!»)"
+      },
+      "discount_bundle": {
+        "label": "Rabattpakkeprosent",
+        "description": "Prosentvis rabatt som skal brukes på mersalgsproduktet (f.eks. 50 for 50 % rabatt)"
+      }
     }
   }
 }
