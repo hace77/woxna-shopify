@@ -347,7 +347,7 @@
     "multicolumn_rRCJfb": {
       "type": "multicolumn",
       "blocks": {
-        "column_d3gHaq": {
+        "column_b7gcBb": {
           "type": "column",
           "repeater": "{{ page.metafields.custom.linkblock_internal.value }}",
           "settings": {
@@ -359,7 +359,7 @@
         }
       },
       "block_order": [
-        "column_d3gHaq"
+        "column_b7gcBb"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
