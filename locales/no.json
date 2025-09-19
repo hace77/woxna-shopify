@@ -241,12 +241,19 @@
             "february": "februar",
             "september": "september",
             "november": "november",
-            "december": "desember"
+            "december": "desember",
+            "january": "januar",
+            "august": "august",
+            "october": "oktober"
           },
           "weekdays": {
             "wednesday": "onsdag",
             "thursday": "torsdag",
-            "saturday": "lørdag"
+            "saturday": "lørdag",
+            "monday": "mandag",
+            "tuesday": "tirsdag",
+            "friday": "fredag",
+            "sunday": "søndag"
           }
         },
         "title": "Kasse - {{shopName}}",
@@ -285,7 +292,12 @@
         "google_map_title": "Google Kart",
         "remove_tag": "Fjern taggen",
         "full_title": "{{pageTitle}} – {{shopName}} – Kasse",
-        "submit_for_review_notice_label": "Betalingen forfaller ikke før bestillingen din er gjennomgått"
+        "submit_for_review_notice_label": "Betalingen forfaller ikke før bestillingen din er gjennomgått",
+        "back_button_label": "Retur",
+        "submit": "Send inn",
+        "sheet": {
+          "expand": "Utvide"
+        }
       },
       "stock": {
         "unshippable_product": {
@@ -591,7 +603,10 @@
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> kunne ikke brukes med dine eksisterende rabatter.",
         "maximum_discount_code_limit_reached": "Du har nådd det maksimale antallet rabattkoder. Fjern en eksisterende kode for å bruke <strong style=\"text-transform:uppercase\">%{code}</strong> .",
         "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> fungerer ikke akkurat nå. Kontakt oss for hjelp.",
-        "error_duties_tooltip": "Denne bestillingen sendes fra et annet land, så det kan påløpe toll og avgifter ved levering."
+        "error_duties_tooltip": "Denne bestillingen sendes fra et annet land, så det kan påløpe toll og avgifter ved levering.",
+        "deposit_label": "Innskudd",
+        "product_change_label": "Endre",
+        "duties_label": "Plikter"
       },
       "payment_errors": {
         "development_store_with_order_limit": "For å legge inn en testbestilling må du bruke en testbetalingsgateway. Finn ut mer om %{development_store_order_testing_docs_link}.",
@@ -954,7 +969,8 @@
         "verify_shop_account_cta": "Bekreft kontoen din",
         "verify_shop_account_confirmation": "Betalingsdetaljer lagret",
         "announcement": {
-          "close": "Lukke"
+          "close": "Lukke",
+          "expand": "Utvide"
         },
         "payment_information_title": "Betalingsinformasjon",
         "shipping_information_title": "Fraktinformasjon",
@@ -1063,7 +1079,10 @@
         "no_business_hours": "Ingen åpningstider tilgjengelig",
         "open_twenty_four_hours": "Åpent døgnet rundt",
         "no_pickup_points_near_you": "Ingen hentepunkter funnet i nærheten av den valgte adressen",
-        "no_pickup_points_near_location": "Ingen hentepunkter funnet i nærheten av posisjonen din"
+        "no_pickup_points_near_location": "Ingen hentepunkter funnet i nærheten av posisjonen din",
+        "location_is_currently_closed": "Lukket",
+        "search_button": "Søk",
+        "address_label": "Adresse"
       },
       "error_page": {
         "terminal": {
@@ -1544,7 +1563,8 @@
           "error": {
             "close": "lukke",
             "sandbox_error": "Noe gikk galt",
-            "web_component_error": "Det oppsto et problem med å laste inn denne siden"
+            "web_component_error": "Det oppsto et problem med å laste inn denne siden",
+            "refresh": "Forfriske"
           }
         },
         "billing_address_rollup_accessibility_label": "Alternativer for faktureringsadresse",
@@ -1579,7 +1599,11 @@
         "credit_card_vaulting_sign_in_banner_info": "Logg inn eller opprett en konto for å lagre kredittkortet ditt for fremtidige kjøp.",
         "card_security_vault_notice": "Vi trenger opplysningene dine for fremtidige betalinger. Alle transaksjoner er sikre og krypterte.",
         "card_information_notice": "Alle transaksjoner er sikre og krypterte. Kredittkortinformasjon lagres aldri.",
-        "delete_customer_mandate_modal_body": "Hvis du fjerner dette kortet, må du legge det til på nytt før du kan bruke det til betalinger."
+        "delete_customer_mandate_modal_body": "Hvis du fjerner dette kortet, må du legge det til på nytt før du kan bruke det til betalinger.",
+        "title": "Betaling",
+        "credit_card_vaulting_sign_in_banner_button_label": "Logg inn",
+        "card_expired": "Utløpt",
+        "delete_customer_mandate_modal_cancel": "Kansellere"
       },
       "note": {
         "length_exceeds_maximum": "Reduser størrelsen på notatet til 5000 eller færre tegn."
@@ -2006,13 +2030,15 @@
         "edit": "Redigere",
         "address_form": {
           "save": "Spare",
-          "one_time_address_subtitle": "Bruk en engangsadresse for denne bestillingen"
+          "one_time_address_subtitle": "Bruk en engangsadresse for denne bestillingen",
+          "cancel": "Kansellere"
         },
         "loading_progressive_rates": "Søker etter flere priser…",
         "duties_and_taxes_options": {
           "ddu_caption": "Ytterligere gebyrer kan påløpe",
           "ddu_title": "Betal ved levering",
-          "ddp_caption": "Ingen ekstra gebyrer ved levering"
+          "ddp_caption": "Ingen ekstra gebyrer ved levering",
+          "ddp_title": "Betal nå"
         },
         "shipping_method_combinations": {
           "with_separator": "%{rest}, %{gjeldende},",
@@ -2048,7 +2074,12 @@
         "pre_order_ships_now": "Sendes nå",
         "split_shipping_shipment_notice": "Bestillingen din vil ankomme i %{quantity_shipments}",
         "split_shipping_multiple_shipment_notice": "Bestillingen din vil ankomme i flere forsendelser",
-        "split_shipping_multiple_shipment_notice_one_time_purchase": "Bestillingen din vil ankomme i %{quantity} forsendelser"
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Bestillingen din vil ankomme i %{quantity} forsendelser",
+        "shipping_address_title": "Send til",
+        "delete": "Slett",
+        "split_shipping_shipping_label": "Metode",
+        "split_shipping_option_fastest": "Raskest",
+        "split_shipping_option_custom": "Skikk"
       },
       "contact": {
         "emirate_label": "Emiratet",
@@ -2103,7 +2134,13 @@
         "province_label": "Provins",
         "province_placeholder": "Provins",
         "prefecture_label": "Prefektur",
-        "prefecture_placeholder": "Prefektur"
+        "prefecture_placeholder": "Prefektur",
+        "address_title": "Adresse",
+        "contact_method_title": "Kontakt",
+        "company_label": "Bedrift",
+        "address1_label": "Adresse",
+        "county_label": "Fylke",
+        "county_placeholder": "Fylke"
       },
       "delivery_options": {
         "free_total_label": "Gratis",
@@ -2154,12 +2191,14 @@
           },
           "subtracted": "Fjernet %{count}",
           "returned": "Returnerte %{count}",
-          "return_line_item_removed": "Fjernet %{count} fra returen"
+          "return_line_item_removed": "Fjernet %{count} fra returen",
+          "removed": "Fjernet"
         },
         "custom_line_item_description": "Beløp å betale for bestilling %{order_name}",
         "additional_payment_requested": "Betaling av %{total_outstanding} er nødvendig",
         "order_updated_on": "Bestillingen din ble oppdatert %{last_edited_at}.",
-        "checkout_review_and_pay": "Bestillingen din %{order_name} ble oppdatert. Se gjennom disse endringene, og betal deretter for å bekrefte bestillingen."
+        "checkout_review_and_pay": "Bestillingen din %{order_name} ble oppdatert. Se gjennom disse endringene, og betal deretter for å bekrefte bestillingen.",
+        "pay_now": "Betal nå"
       },
       "tips": {
         "no_tip_label": "Ingen",
@@ -2168,7 +2207,9 @@
         "message": "Takk, vi setter pris på det.",
         "custom_label": "Tilpasset tips",
         "update_tip": "Oppdater tips",
-        "description": "Vis din støtte for laget på %{shop_name}"
+        "description": "Vis din støtte for laget på %{shop_name}",
+        "title": "Legg til tips",
+        "add_tip": "Legg til tips"
       },
       "subscriptions": {
         "recurring_total_intervals": {
@@ -2497,7 +2538,8 @@
     },
     "checkpoint": {
       "message": "Løs Captcha for å fortsette",
-      "error": "Captcha-validering mislyktes"
+      "error": "Captcha-validering mislyktes",
+      "submit_button_text": "Send inn"
     },
     "pagination": {
       "previous": "Tidligere",
@@ -3241,7 +3283,8 @@
         "show_order_actions_accessibility_label": "Vis bestillingshandlinger for bestilling {{name}}",
         "column_headers": {
           "order": "Bestille",
-          "products_accessibility_label": "Produkter"
+          "products_accessibility_label": "Produkter",
+          "actions_accessibility_label": "Handlinger"
         },
         "delivered": "Levert {{date}}",
         "empty_state_title_for_pending_orders": "Ingen ventende bestillinger",
@@ -3257,7 +3300,9 @@
       "group_title_label": "Del av: {{groupTitle}}",
       "list_title_confirmed_orders_accessibility_label": "Bestillinger: bekreftet",
       "list_title_pending_orders_accessibility_label": "Bestillinger: venter",
-      "switch_order_type_pending_orders_accessibility_label": "Bytt ordretype, viser for øyeblikket ventende ordrer"
+      "switch_order_type_pending_orders_accessibility_label": "Bytt ordretype, viser for øyeblikket ventende ordrer",
+      "list_title": "Bestillinger",
+      "list_title_with_pending_orders": "Bestillinger:"
     },
     "order_details": {
       "shipment_timeline": {
@@ -3442,7 +3487,10 @@
       "view_controls": {
         "list": "Liste"
       },
-      "due_on_fulfillment": "Forfaller ved oppfyllelse"
+      "due_on_fulfillment": "Forfaller ved oppfyllelse",
+      "login_card": {
+        "log_in": "Logg inn"
+      }
     },
     "addresses": {
       "add_button": "Legg til adresse",
@@ -3844,7 +3892,8 @@
           "missing_billing_address_error_message": "Vennligst oppgi en faktureringsadresse",
           "default_checkbox": "Angi som standard betalingsmåte"
         },
-        "choose_from_list": "Velg fra listen"
+        "choose_from_list": "Velg fra listen",
+        "add_new_button": "Legg til ny"
       },
       "three_d_secure": {
         "title": "3D-sikkerhet"
@@ -3964,7 +4013,9 @@
           "invalid_email_format": "Skriv inn en gyldig e-postadresse"
         },
         "first_name": "Fornavn",
-        "last_name": "Etternavn"
+        "last_name": "Etternavn",
+        "cancel": "Kansellere",
+        "title": "Profil"
       },
       "add_button": "Legge til",
       "profile_update_confirmation_message": "Profilen er oppdatert",
@@ -3975,7 +4026,11 @@
         }
       },
       "loading_accessibility_message": "Laster inn kontoinformasjon",
-      "loading_finished_accessibility_message": "Kontoinformasjonen er lastet inn"
+      "loading_finished_accessibility_message": "Kontoinformasjonen er lastet inn",
+      "verify_new_email_modal": {
+        "cancel_button": "Kansellere"
+      },
+      "title": "Profil"
     },
     "ui_components": {
       "clear": "Klar",
@@ -4020,7 +4075,22 @@
       "rangeEnd": "Slutt på rekkevidden",
       "removeTag": "Fjern taggen",
       "addFile": "Legg til fil",
-      "showPreviousMonth": "Vis forrige måned, {{month}} {{year}}"
+      "showPreviousMonth": "Vis forrige måned, {{month}} {{year}}",
+      "clipboardCopied": "Kopiert",
+      "submit": "Send inn",
+      "january": "januar",
+      "august": "august",
+      "october": "oktober",
+      "monday": "mandag",
+      "tuesday": "tirsdag",
+      "friday": "fredag",
+      "sunday": "søndag",
+      "month": {
+        "one": "måned",
+        "other": "måneder"
+      },
+      "expandSheet": "Utvide",
+      "qrCode": "QR-kode"
     },
     "shop_ads": {
       "next_button": "Neste",
@@ -4038,7 +4108,8 @@
         "no_payment_methods_available": "Ingen tilgjengelige betalingsmåter",
         "select_new_payment_method": "Velg en ny betalingsmåte",
         "current_method": "Nåværende",
-        "use_new_payment_method": "+ Bruk ny betalingsmåte"
+        "use_new_payment_method": "+ Bruk ny betalingsmåte",
+        "cancel": "Kansellere"
       }
     },
     "sign_in": {
@@ -4047,7 +4118,9 @@
         "button": "Fortsette",
         "page_title": "Logg inn – %{shop_name}",
         "subheading": "Skriv inn e-postadressen din, så sender vi deg en bekreftelseskode",
-        "subheading_with_sign_in_options": "Velg hvordan du vil logge på"
+        "subheading_with_sign_in_options": "Velg hvordan du vil logge på",
+        "heading": "Logg inn",
+        "input_field_label": "E-post"
       },
       "brand_logo_alt_text": "%{shop_name}-logo",
       "step_two": {
@@ -4055,7 +4128,8 @@
         "heading": "Skriv inn koden",
         "subheading": "Sendt til %{email}",
         "restart_link": "Logg inn med en annen e-postadresse",
-        "input_field_label": "6-sifret kode"
+        "input_field_label": "6-sifret kode",
+        "button": "Send inn"
       },
       "error": {
         "invalid": {
@@ -4083,7 +4157,8 @@
         "close_menu_accessibility_label": "Lukk kontonavigasjon",
         "hide_accessibility_label": "Skjul konto-menyen",
         "show_accessibility_label": "Vis kontomeny",
-        "loading_message": "Laster inn kontonavigasjon"
+        "loading_message": "Laster inn kontonavigasjon",
+        "label": "Konto"
       },
       "close_menu_accessibility_label": "Lukk hovednavigasjonen",
       "contact_link": "Kontaktinformasjon",
@@ -4100,7 +4175,15 @@
       "settings_link": "Innstillinger",
       "contact_email_subject": "Kontakt fra nettbutikken {{shopName}}",
       "document_title": "{{sectionName}} - {{shopName}} - Konto",
-      "location_switcher_toast_message": "Sted byttet til {{locationName}}"
+      "location_switcher_toast_message": "Sted byttet til {{locationName}}",
+      "delete_confirmation": {
+        "cancel": "Kansellere",
+        "delete": "Slett"
+      },
+      "dismiss_toast": "Avskjedige",
+      "loading_message": "Laster",
+      "orders_link_label": "Bestillinger",
+      "search": "Søk"
     },
     "privacy_banner": {
       "cookie_preferences_link": "Informasjonskapsler"
@@ -4112,7 +4195,8 @@
       "saved_at": "Lagret {{date}} kl {{time}}",
       "not_available": "Profildata er ikke tilgjengelig",
       "customize_button": "Tilpass",
-      "hide_bar": "Skjul linjen"
+      "hide_bar": "Skjul linjen",
+      "actions_button": "Handlinger"
     },
     "active_inspector": {
       "extension": {
@@ -4122,7 +4206,8 @@
         "move_up_tooltip": "Flytt til forrige posisjon",
         "select": "Velg utvidelsen med navnet {{extensionName}}",
         "unselect": "Fjern merkingen for utvidelsen med navnet {{extensionName}}",
-        "move_up": "Flytt utvidelsen til forrige posisjon"
+        "move_up": "Flytt utvidelsen til forrige posisjon",
+        "remove_tooltip": "Fjerne"
       }
     },
     "settings": {
@@ -4172,7 +4257,8 @@
       "login_form_heading": "Gå inn i butikken med passord:",
       "login_form_password_label": "Passord",
       "powered_by_shopify_html": "Denne butikken drives av {{ shopify }}",
-      "admin_link_html": "Er du butikkeieren? <a href=\"/admin\" class=\"link underlined-link\">Logg inn her</a>"
+      "admin_link_html": "Er du butikkeieren? <a href=\"/admin\" class=\"link underlined-link\">Logg inn her</a>",
+      "login_form_submit": "Gå"
     },
     "social": {
       "alt_text": {
@@ -4260,13 +4346,15 @@
       "checkout": "Sjekk ut",
       "headings": {
         "product": "Produkt",
-        "quantity": "Mengde"
+        "quantity": "Mengde",
+        "price": "Pris"
       },
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Avgifter og skatter er inkludert. Rabatter og <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">frakt</a> beregnes ved betaling.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Avgifter og skatter er inkludert. Rabatter og frakt beregnes ved betaling.",
       "taxes_included_shipping_at_checkout_with_policy_html": "Avgifter inkludert. Rabatter og <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">frakt</a> beregnes ved betaling.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Avgifter inkludert. Avgifter, rabatter og <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">frakt</a> beregnes ved betaling.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Avgifter, rabatter og <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">frakt</a> beregnes ved betaling."
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Avgifter, rabatter og <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">frakt</a> beregnes ved betaling.",
+      "update": "Oppdatering"
     },
     "announcements": {
       "previous_announcement": "Forrige kunngjøring",
@@ -4288,7 +4376,8 @@
       "play_slideshow": "Spill av lysbildefremvisning",
       "load_slide": "Last inn lysbilde",
       "next_slideshow": "Neste lysbilde",
-      "carousel": "Karusell"
+      "carousel": "Karusell",
+      "slide": "Skyv"
     },
     "quick_order_list": {
       "product_total": "Produktets delsum",
@@ -4307,7 +4396,8 @@
       "view_cart": "Se handlekurven",
       "product": "Produkt",
       "remove_all_items_confirmation": "Fjern alle {{ quantity }} varer fra handlekurven?",
-      "each": "{{ money }} hver"
+      "each": "{{ money }} hver",
+      "cancel": "Kansellere"
     },
     "video": {
       "load_video": "Last inn video: {{ description }}"
