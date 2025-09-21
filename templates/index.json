@@ -803,6 +803,7 @@
       "blocks": {
         "caption_KNARhM": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Our Story",
             "text_style": "caption-with-letter-spacing",
