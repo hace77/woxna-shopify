@@ -51,10 +51,18 @@
             "heading": "{{ collection.title }}",
             "heading_size": "h0"
           }
+        },
+        "text_gCf9kK": {
+          "type": "text",
+          "settings": {
+            "text": "Buy one now and get a Gnarp at half price",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "heading_rbbNjT"
+        "heading_rbbNjT",
+        "text_gCf9kK"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
