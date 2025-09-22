@@ -115,6 +115,7 @@
               section_id: section.id,
               quick_add: section.settings.quick_add,
               show_view_product_button: section.settings.show_view_product_button,
+              grey_overlay: section.settings.grey_overlay,
               color_scheme: section.settings.color_scheme
             %}
           </li>
@@ -142,7 +143,8 @@
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
-                placeholder_image: placeholder_image
+                placeholder_image: placeholder_image,
+                grey_overlay: section.settings.grey_overlay
               %}
             </li>
           {%- endfor -%}
@@ -411,6 +413,13 @@
       "id": "show_secondary_image",
       "default": false,
       "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "grey_overlay",
+      "default": false,
+      "label": "Apply grey overlay to product images",
+      "info": "Adds a subtle grey overlay to make white backgrounds appear darker"
     },
     {
       "type": "checkbox",

@@ -177,6 +177,7 @@
                     quick_add: section.settings.quick_add,
                     section_id: section.id,
                     show_view_product_button: section.settings.show_view_product_button,
+                    grey_overlay: section.settings.grey_overlay,
                     color_scheme: section.settings.color_scheme
                   %}
                 </li>
@@ -297,6 +298,13 @@
       "id": "show_secondary_image",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "grey_overlay",
+      "default": false,
+      "label": "Apply grey overlay to product images",
+      "info": "Adds a subtle grey overlay to make white backgrounds appear darker"
     },
     {
       "type": "checkbox",

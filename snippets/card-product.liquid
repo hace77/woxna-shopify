@@ -18,6 +18,7 @@
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
   - show_view_product_button: {Boolean} Show a "View Product" button. Default: false (optional)
   - color_scheme: {String} Color scheme to apply to the button. Default: null (optional)
+  - grey_overlay: {Boolean} Apply grey overlay to product images. Default: false (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -55,6 +56,29 @@
     .view-product-button {
       padding: 0 !important;
     }
+    
+    /* Grey overlay effect for product images */
+    .product-image-overlay {
+      position: relative;
+    }
+    
+    .product-image-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    .product-image-overlay img {
+      position: relative;
+      z-index: 0;
+    }
   </style>
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
@@ -88,7 +112,7 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
+            <div class="media media--transparent media--hover-effect{% if grey_overlay %} product-image-overlay{% endif %}">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
@@ -539,7 +563,7 @@
                           <div
                             class="quick-add__product-media"
                           >
-                            <div class="quick-add__product-container global-media-settings">
+                            <div class="quick-add__product-container global-media-settings{% if grey_overlay %} product-image-overlay{% endif %}">
                               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                               <img
                                 srcset="
