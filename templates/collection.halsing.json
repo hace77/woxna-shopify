@@ -18,10 +18,18 @@
             "heading": "{{ collection.title }}",
             "heading_size": "hxl"
           }
+        },
+        "text_ypHW3g": {
+          "type": "text",
+          "settings": {
+            "text": "Buy one now and get a Gnarp at half price",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "heading_4QmWJi"
+        "heading_4QmWJi",
+        "text_ypHW3g"
       ],
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
