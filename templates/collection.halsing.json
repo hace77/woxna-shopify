@@ -35,6 +35,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-08ad3a87-d3dd-479a-8dc1-f17564796785",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -67,6 +68,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-08ad3a87-d3dd-479a-8dc1-f17564796785",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -168,18 +170,21 @@
         ".button:before {box-shadow: unset !important;}",
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        ".badge {display: none;}"
+        ".badge {display: none;}",
+        ".card--card {border: 0 !important;}"
       ],
       "settings": {
         "products_per_page": 8,
         "columns_desktop": 2,
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
+        "grey_overlay": true,
         "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
@@ -233,6 +238,7 @@
       "blocks": {
         "klaviyo_reviews_average_rating_NMtjyP": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
           "settings": {
             "product": "halsing-foldable-saw-250-mm-oak-hcs"
           }
@@ -297,9 +303,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
