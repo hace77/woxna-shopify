@@ -78,7 +78,7 @@
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/hero_mobile.jpg",
+        "image": "shopify://shop_images/Woxna_Start_Page_21.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
