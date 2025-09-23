@@ -154,7 +154,8 @@
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
         ".badge {display: none;}",
-        "@media (width <= 749px) {.card__heading {font-size: 1.4rem !important; line-height: 1.4; font-weight: 200; font-family: inter; } .card--card {border: 0 !important; }}"
+        "@media (width <= 749px) {.card__heading {font-size: 1.4rem !important; line-height: 1.4; font-weight: 200; font-family: inter; }}",
+        " .card--card {border: 0 !important; }"
       ],
       "settings": {
         "products_per_page": 8,
