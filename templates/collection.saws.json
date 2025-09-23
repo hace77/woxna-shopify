@@ -155,11 +155,11 @@
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
         ".badge {display: none;}",
         "@media (width <= 749px) {.card__heading {font-size: 1.4rem !important; line-height: 1.4; font-weight: 200; font-family: inter; }}",
-        " .card--card {border: 0 !important; }"
+        ".card--card {border: 0 !important;}"
       ],
       "settings": {
         "products_per_page": 8,
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_ratio": "adapt",
         "image_shape": "default",
