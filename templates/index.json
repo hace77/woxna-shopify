@@ -215,7 +215,7 @@
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
-            "mobile_text_alignment": "left",
+            "mobile_text_alignment": "right",
             "heading_size": "hxl",
             "mobile_heading_size": "h1",
             "description": "Finally back in stock!",
