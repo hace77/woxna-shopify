@@ -249,7 +249,7 @@
   
   /* Mobile: Set minimum height, allow expansion */
   .hero-block {
-    min-height: 30vh; /* Minimum height for mobile */
+    min-height: 40vh; /* Minimum height for mobile */
     height: auto; /* Allow expansion for content */
   }
   
@@ -336,7 +336,7 @@
   
   /* Mobile: Set minimum height, allow expansion */
   .hero-block {
-    min-height: 30vh; /* Minimum height for mobile */
+    min-height: 40vh; /* Minimum height for mobile */
     height: auto; /* Allow expansion for content */
   }
   
