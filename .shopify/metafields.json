@@ -922,6 +922,26 @@
         "name": "rich_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "is_hero_product",
+      "namespace": "custom",
+      "name": "is_hero_product",
+      "description": "determines if the product is a hero or not",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "hero_background_image",
+      "namespace": "custom",
+      "name": "hero_background_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
