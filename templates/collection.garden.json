@@ -89,11 +89,12 @@
         "show_hero_block_1": false,
         "hero_block_1_position_desktop": "3",
         "hero_block_1_position_mobile": "4",
-        "hero_block_1_size": "large",
-        "hero_block_1_heading": "Hero Block",
-        "hero_block_1_text": "",
-        "hero_block_1_button_text": "Shop Now",
-        "hero_block_1_button_url": "",
+        "hero_block_1_size": "medium",
+        "hero_block_1_image": "shopify://shop_images/rosendals_garden.jpg",
+        "hero_block_1_heading": "Vi finns hos",
+        "hero_block_1_text": "<p>Skulle du vilja känna på sågen så finns vi också hos Rosendals och Zetas</p>",
+        "hero_block_1_button_text": "Hitta Återförsäljare",
+        "hero_block_1_button_url": "shopify://pages/find-retailers",
         "hero_block_1_color_scheme": "",
         "hero_block_1_vertical_position": "center",
         "hero_block_1_mobile_vertical_position": "center",
@@ -177,6 +178,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "175906176250bcfb06": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_GFm9pn": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_GFm9pn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -184,6 +202,7 @@
     "banner",
     "product-grid",
     "rich_text_q4bA3M",
-    "featured_collection_8FQKwR"
+    "featured_collection_8FQKwR",
+    "175906176250bcfb06"
   ]
 }
