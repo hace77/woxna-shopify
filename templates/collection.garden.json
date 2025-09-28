@@ -15,14 +15,14 @@
         "heading_dipqiz": {
           "type": "heading",
           "settings": {
-            "heading": "Gardening",
+            "heading": "{{ collection.title }}",
             "heading_size": "h1"
           }
         },
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "<p>Your garden deserves tools that last as long as your love for it. Our Ljusnan model is crafted in stainless steel that won’t rust and requires minimal maintenance – always ready when you are. With its 7 TPI, the blade is perfectly designed for cutting fresh wood, whether pruning a fruit tree or shaping a hedge. It’s the tool that turns garden work into a pleasure, season after season.</p>"
+            "text": "{{ collection.description }}"
           }
         },
         "button_d4cWYV": {
@@ -42,6 +42,7 @@
         "text_FkKbKK",
         "button_d4cWYV"
       ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -91,7 +92,7 @@
         "hero_block_1_position_mobile": "2",
         "hero_block_1_size": "medium",
         "hero_block_1_image": "shopify://shop_images/rosendals_garden.jpg",
-        "hero_block_1_heading": "Vi finns hos",
+        "hero_block_1_heading": "Köp i butik",
         "hero_block_1_text": "<p><strong>Skulle du vilja känna på sågen så finns vi också hos Rosendals och Zetas</strong></p>",
         "hero_block_1_button_text": "Hitta Återförsäljare",
         "hero_block_1_button_url": "shopify://pages/find-retailers",
