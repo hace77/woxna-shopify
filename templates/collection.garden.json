@@ -86,7 +86,7 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
-        "show_hero_block_1": false,
+        "show_hero_block_1": true,
         "hero_block_1_position_desktop": "3",
         "hero_block_1_position_mobile": "4",
         "hero_block_1_size": "medium",
