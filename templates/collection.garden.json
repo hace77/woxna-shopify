@@ -70,7 +70,8 @@
         ".button:after {box-shadow: unset !important;}",
         ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
         ".badge {display: none;}",
-        ".card {border: none;}"
+        ".card {border: none;}",
+        ".hero-block__content--mobile-text-left {padding-right: 30px;}"
       ],
       "settings": {
         "products_per_page": 12,
