@@ -186,7 +186,7 @@
         "hero_block_1_vertical_position": "top",
         "hero_block_1_mobile_vertical_position": "bottom",
         "hero_block_1_text_alignment": "left",
-        "hero_block_1_mobile_text_alignment": "left",
+        "hero_block_1_mobile_text_alignment": "right",
         "hero_block_1_heading_size": "h1",
         "hero_block_1_mobile_heading_size": "h1",
         "columns_mobile": "2",
