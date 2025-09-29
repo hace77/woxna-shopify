@@ -109,6 +109,14 @@
   z-index: 1;
 }
 
+/* Mobile: Adjust background to account for grid item padding */
+@media (max-width: 749px) {
+  .hero-block__background {
+    left: var(--grid-mobile-horizontal-spacing);
+    right: var(--grid-mobile-horizontal-spacing);
+  }
+}
+
 .hero-block__background img {
   width: 100%;
   height: 100%;
@@ -254,7 +262,7 @@
   }
   
   .hero-block__content {
-    padding: 1rem; /* Reduce padding on mobile */
+    padding: 30px; /* Standard padding for better text spacing */
   }
   
   /* Mobile vertical positioning */
@@ -341,7 +349,7 @@
   }
   
   .hero-block__content {
-    padding: 1rem; /* Reduce padding on mobile */
+    padding: 30px; /* Standard padding for better text spacing */
   }
   
       /* Mobile vertical positioning */
