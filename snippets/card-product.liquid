@@ -19,6 +19,7 @@
   - show_view_product_button: {Boolean} Show a "View Product" button. Default: false (optional)
   - color_scheme: {String} Color scheme to apply to the button. Default: null (optional)
   - grey_overlay: {Boolean} Apply grey overlay to product images. Default: false (optional)
+  - show_usp_text: {Boolean} Show the product USP text. Default: true (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -55,6 +56,11 @@
     }
     .view-product-button {
       padding: 0 !important;
+    }
+    
+    /* Position view product button in correct grid row */
+    .card__content .quick-add {
+      grid-row-start: 4;
     }
     
     /* Grey overlay effect for product images */
@@ -235,7 +241,7 @@
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
-            {%- if card_product.metafields.custom.usp_collection_page != blank -%}
+            {%- if show_usp_text != false and card_product.metafields.custom.usp_collection_page != blank -%}
               <div class="card__usp">
                 {{ card_product.metafields.custom.usp_collection_page | metafield_tag }}
               </div>
@@ -278,12 +284,6 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            
-            {%- if show_view_product_button -%}
-              <a href="{{ card_product.url }}" class="button button--full-width view-product-button{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
-                {{ 'products.product.view_product' | t }}
-              </a>
-            {%- endif -%}
             
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
@@ -641,6 +641,13 @@
             </div>
           {% endif %}
         {% endif %}
+        {%- if show_view_product_button -%}
+          <div class="quick-add no-js-hidden">
+            <a href="{{ card_product.url }}" class="quick-add__submit button button--full-width button--secondary{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
+              {{ 'products.product.view_product' | t }}
+            </a>
+          </div>
+        {%- endif -%}
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span

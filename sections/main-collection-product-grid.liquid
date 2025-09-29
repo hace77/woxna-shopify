@@ -179,7 +179,8 @@
                     section_id: section.id,
                     show_view_product_button: section.settings.show_view_product_button,
                     grey_overlay: section.settings.grey_overlay,
-                    color_scheme: section.settings.color_scheme
+                    color_scheme: section.settings.color_scheme,
+                    show_usp_text: section.settings.show_usp_text
                   %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
@@ -394,6 +395,13 @@
       "default": false,
       "label": "Show view product button",
       "info": "Display a button that links to the full product page"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_usp_text",
+      "default": true,
+      "label": "Show USP text",
+      "info": "Display the product USP text on collection pages"
     },
     {
       "type": "header",
