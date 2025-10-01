@@ -201,33 +201,39 @@
                 {%- if show_hero_desktop or show_hero_mobile -%}
                   {%- if section.settings.show_hero_block_1 -%}
                   <li class="grid__item hero-block-item hero-block--{{ section.settings.hero_block_1_size }}{% if show_hero_desktop %} hero-block--desktop{% endif %}{% if show_hero_mobile %} hero-block--mobile{% endif %}">
-                    <div class="hero-block color-{{ section.settings.hero_block_1_color_scheme }} gradient">
-                      {%- if section.settings.hero_block_1_image -%}
-                        <div class="hero-block__background">
-                          <img 
-                            src="{{ section.settings.hero_block_1_image | image_url: width: 1200 }}" 
-                            alt="{{ section.settings.hero_block_1_heading | escape }}"
-                            loading="lazy"
-                          >
+                    {%- if section.settings.hero_block_1_button_url != blank -%}
+                      <a href="{{ section.settings.hero_block_1_button_url }}" class="hero-block-link">
+                    {%- endif -%}
+                      <div class="hero-block color-{{ section.settings.hero_block_1_color_scheme }} gradient">
+                        {%- if section.settings.hero_block_1_image -%}
+                          <div class="hero-block__background">
+                            <img 
+                              src="{{ section.settings.hero_block_1_image | image_url: width: 1200 }}" 
+                              alt="{{ section.settings.hero_block_1_heading | escape }}"
+                              loading="lazy"
+                            >
+                          </div>
+                        {%- endif -%}
+                        
+                        <div class="hero-block__content hero-block__content--{{ section.settings.hero_block_1_vertical_position }} hero-block__content--mobile-{{ section.settings.hero_block_1_mobile_vertical_position }} hero-block__content--text-{{ section.settings.hero_block_1_text_alignment }} hero-block__content--mobile-text-{{ section.settings.hero_block_1_mobile_text_alignment }}">
+                          {%- if section.settings.hero_block_1_heading != blank -%}
+                            <h2 class="hero-block__heading {{ section.settings.hero_block_1_heading_size }} mobile-{{ section.settings.hero_block_1_mobile_heading_size }}">{{ section.settings.hero_block_1_heading }}</h2>
+                          {%- endif -%}
+                          
+                          {%- if section.settings.hero_block_1_text != blank -%}
+                            <div class="hero-block__text rte">{{ section.settings.hero_block_1_text }}</div>
+                          {%- endif -%}
+                          
+                          {%- if section.settings.hero_block_1_button_text != blank and section.settings.hero_block_1_button_url != blank -%}
+                            <span class="hero-block__button button button--primary">
+                              {{ section.settings.hero_block_1_button_text }}
+                            </span>
+                          {%- endif -%}
                         </div>
-                      {%- endif -%}
-                      
-                      <div class="hero-block__content hero-block__content--{{ section.settings.hero_block_1_vertical_position }} hero-block__content--mobile-{{ section.settings.hero_block_1_mobile_vertical_position }} hero-block__content--text-{{ section.settings.hero_block_1_text_alignment }} hero-block__content--mobile-text-{{ section.settings.hero_block_1_mobile_text_alignment }}">
-                        {%- if section.settings.hero_block_1_heading != blank -%}
-                          <h2 class="hero-block__heading {{ section.settings.hero_block_1_heading_size }} mobile-{{ section.settings.hero_block_1_mobile_heading_size }}">{{ section.settings.hero_block_1_heading }}</h2>
-                        {%- endif -%}
-                        
-                        {%- if section.settings.hero_block_1_text != blank -%}
-                          <div class="hero-block__text rte">{{ section.settings.hero_block_1_text }}</div>
-                        {%- endif -%}
-                        
-                        {%- if section.settings.hero_block_1_button_text != blank and section.settings.hero_block_1_button_url != blank -%}
-                          <a href="{{ section.settings.hero_block_1_button_url }}" class="hero-block__button button button--primary">
-                            {{ section.settings.hero_block_1_button_text }}
-                          </a>
-                        {%- endif -%}
                       </div>
-                    </div>
+                    {%- if section.settings.hero_block_1_button_url != blank -%}
+                      </a>
+                    {%- endif -%}
                   </li>
                   {%- endif -%}
                 {%- endif -%}
