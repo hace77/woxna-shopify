@@ -168,6 +168,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -796,6 +797,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -890,6 +892,7 @@
         "text_Kqm3hA",
         "button_cXrCX8"
       ],
+      "disabled": true,
       "name": "contact and support",
       "settings": {
         "desktop_content_position": "center",
@@ -967,6 +970,7 @@
         "text_TdaeQM",
         "button_qxwfAc"
       ],
+      "disabled": true,
       "name": "Sustainability",
       "settings": {
         "desktop_content_position": "center",
@@ -1008,6 +1012,7 @@
         "text_gMpi8E",
         "button_tCkADX"
       ],
+      "disabled": true,
       "name": "quality and tradition",
       "settings": {
         "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
@@ -1027,6 +1032,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
