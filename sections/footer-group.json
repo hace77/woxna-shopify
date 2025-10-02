@@ -33,7 +33,7 @@
       ],
       "custom_css": [
         "#shopify-block-ARHFnUFZiWFdoMHVze__klaviyo_email_marketing_sms_form_embed_block_i6tbbU {background-color: #f4f0e3;}",
-        ".klaviyo-form-RAeQNK {background-color: #f4f0e3;}"
+        ".klaviyo-form-RAeQNK, klaviyo-form-R5ekNb {background-color: #f4f0e3;}"
       ],
       "settings": {
         "include_margins": false
