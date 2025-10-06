@@ -26,6 +26,17 @@
             "product": "{{product}}"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -43,28 +54,17 @@
         "description": {
           "type": "description",
           "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown",
-            "swatch_shape": "square"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
         }
       },
       "block_order": [
         "title",
         "price",
         "klaviyo_reviews_average_rating_iTB8FR",
+        "variant_picker",
+        "quantity_selector",
         "buy_buttons",
         "custom_liquid_MCVtxa",
-        "description",
-        "variant_picker",
-        "quantity_selector"
+        "description"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
@@ -118,6 +118,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
