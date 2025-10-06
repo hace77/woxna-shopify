@@ -1,0 +1,259 @@
+{%- comment -%}
+  Retailers Locations Section
+  Uses retailers metaobject and groups by country
+{%- endcomment -%}
+
+{%- assign retailers = page.metafields.custom.retailer_list.value -%}
+{%- assign countries = '' | split: ',' -%}
+{%- for retailer in retailers -%}
+  {%- unless countries contains retailer.country -%}
+    {%- assign countries = countries | concat: retailer.country -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+{%- comment -%} Debug: Show retailers count {%- endcomment -%}
+<!-- DEBUG: Found {{ retailers.size }} retailers -->
+<!-- DEBUG: Countries: {{ countries | join: ', ' }} -->
+
+<div class="retailers-locations page-width">
+  <div class="retailers-locations__header">
+    <h2 class="retailers-locations__title">{{ section.settings.title | default: 'Our Retail Partners' }}</h2>
+    <p class="retailers-locations__subtitle">{{ section.settings.subtitle | default: 'Find a retailer near you' }}</p>
+  </div>
+
+  <div class="retailers-locations__countries">
+    {%- for country in countries -%}
+      {%- if country != blank -%}
+        <div class="retailers-country">
+          <button class="retailers-country__toggle" data-country="{{ country | handle }}">
+            <span class="retailers-country__name">{{ country }}</span>
+            <span class="retailers-country__count">({{ retailers | where: 'country', country | size }})</span>
+            <span class="retailers-country__arrow">▼</span>
+          </button>
+          
+          <div class="retailers-country__content" id="country-{{ country | handle }}">
+            <div class="retailers-grid">
+              {%- for retailer in retailers -%}
+                {%- if retailer.country == country -%}
+                  <div class="retailer-card">
+                    {%- if retailer.logo != blank -%}
+                      <div class="retailer-card__logo">
+                        <img src="{{ retailer.logo | image_url: width: 200 }}" alt="{{ retailer.name }} logo" width="200" height="60" loading="lazy">
+                      </div>
+                    {%- endif -%}
+                    
+                    <div class="retailer-card__info">
+                      <h3 class="retailer-card__name">{{ retailer.name }}</h3>
+                      
+                      <p class="retailer-card__location">{{ retailer.country }}</p>
+                      
+                      {%- if retailer.store_url != blank -%}
+                        <a href="{{ retailer.store_url }}" class="retailer-card__link button button--secondary" target="_blank" rel="noopener">
+                          {%- if retailer.link_label != blank -%}
+                            {{ retailer.link_label }}
+                          {%- else -%}
+                            Visit Store
+                          {%- endif -%}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<style>
+  .retailers-locations {
+    padding: 4rem 0;
+  }
+  
+  .retailers-locations__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .retailers-locations__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-locations__subtitle {
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+  
+  .retailers-country {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(var(--color-foreground), 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .retailers-country__toggle {
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(var(--color-foreground), 0.05);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retailers-country__toggle:hover {
+    background: rgba(var(--color-foreground), 0.1);
+  }
+  
+  .retailers-country__name {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .retailers-country__count {
+    color: rgba(var(--color-foreground), 0.6);
+    margin: 0 1rem;
+  }
+  
+  .retailers-country__arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .retailers-country__toggle[aria-expanded="true"] .retailers-country__arrow {
+    transform: rotate(180deg);
+  }
+  
+  .retailers-country__content {
+    display: none;
+    padding: 2rem;
+    background: rgb(var(--color-background));
+  }
+  
+  .retailers-country__content.active {
+    display: block;
+  }
+  
+  .retailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .retailer-card {
+    border: 1px solid rgba(var(--color-foreground), 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: rgb(var(--color-background));
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .retailer-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .retailer-card__logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .retailer-card__logo img {
+    max-height: 60px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  
+  .retailer-card__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .retailer-card__location {
+    color: rgba(var(--color-foreground), 0.7);
+    margin-bottom: 0.5rem;
+  }
+  
+  .retailer-card__description {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .retailer-card__link {
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: 749px) {
+    .retailers-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .retailers-country__toggle {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    
+    .retailer-card {
+      padding: 1rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.retailers-country__toggle');
+    
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const countryName = this.getAttribute('data-country');
+        const content = document.getElementById('country-' + countryName);
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        
+        // Toggle the content
+        if (isExpanded) {
+          content.classList.remove('active');
+          this.setAttribute('aria-expanded', 'false');
+        } else {
+          content.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Retailers Locations",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Retail Partners"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Find a retailer near you"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Retailers Locations"
+    }
+  ]
+}
+{% endschema %}
