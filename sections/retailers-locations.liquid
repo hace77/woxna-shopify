@@ -6,8 +6,8 @@
 {%- assign retailers = page.metafields.custom.retailer_list.value -%}
 {%- assign countries = '' | split: ',' -%}
 {%- for retailer in retailers -%}
-  {%- unless countries contains retailer.country -%}
-    {%- assign countries = countries | concat: retailer.country -%}
+  {%- unless countries contains retailer.country.value -%}
+    {%- assign countries = countries | concat: retailer.country.value -%}
   {%- endunless -%}
 {%- endfor -%}
 
@@ -27,30 +27,30 @@
         <div class="retailers-country">
           <button class="retailers-country__toggle" data-country="{{ country | handle }}">
             <span class="retailers-country__name">{{ country }}</span>
-            <span class="retailers-country__count">({{ retailers | where: 'country', country | size }})</span>
+            <span class="retailers-country__count">({{ retailers | where: 'country.value', country | size }})</span>
             <span class="retailers-country__arrow">▼</span>
           </button>
           
           <div class="retailers-country__content" id="country-{{ country | handle }}">
             <div class="retailers-grid">
               {%- for retailer in retailers -%}
-                {%- if retailer.country == country -%}
+                {%- if retailer.country.value == country -%}
                   <div class="retailer-card">
-                    {%- if retailer.logo != blank -%}
+                    {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
                       <div class="retailer-card__logo">
-                        <img src="{{ retailer.logo | image_url: width: 200 }}" alt="{{ retailer.name }} logo" width="200" height="60" loading="lazy">
+                        <img src="{{ retailer.logo.value | image_url: width: 200 }}" alt="{{ retailer.name.value }} logo" width="200" height="60" loading="lazy">
                       </div>
                     {%- endif -%}
                     
                     <div class="retailer-card__info">
-                      <h3 class="retailer-card__name">{{ retailer.name }}</h3>
+                      <h3 class="retailer-card__name">{{ retailer.name.value }}</h3>
                       
-                      <p class="retailer-card__location">{{ retailer.country }}</p>
+                      <p class="retailer-card__location">{{ retailer.country.value }}</p>
                       
-                      {%- if retailer.store_url != blank -%}
-                        <a href="{{ retailer.store_url }}" class="retailer-card__link button button--secondary" target="_blank" rel="noopener">
-                          {%- if retailer.link_label != blank -%}
-                            {{ retailer.link_label }}
+                      {%- if retailer.store_url.value != blank and retailer.store_url.value != null -%}
+                        <a href="{{ retailer.store_url.value }}" class="retailer-card__link button button--secondary" target="_blank" rel="noopener">
+                          {%- if retailer.link_label.value != blank and retailer.link_label.value != null -%}
+                            {{ retailer.link_label.value }}
                           {%- else -%}
                             Visit Store
                           {%- endif -%}
