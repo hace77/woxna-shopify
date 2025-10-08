@@ -42,7 +42,7 @@
       <strong>DEBUG:</strong> Total retailers: {{ retailer_count }}<br>
       <strong>Current locale:</strong> {{ request.locale.iso_code }}<br>
       <strong>Countries:</strong> {{ countries | join: ', ' }}<br>
-      <strong>Sweden count in main loop:</strong>
+      <strong>Sweden count:</strong>
       {%- assign sweden_count = 0 -%}
       {%- for retailer in retailers -%}
         {%- assign retailer_country = retailer.country.value | strip -%}
@@ -50,7 +50,16 @@
           {%- assign sweden_count = sweden_count | plus: 1 -%}
         {%- endif -%}
       {%- endfor -%}
-      {{ sweden_count }}
+      {{ sweden_count }}<br>
+      <strong>Sverige count:</strong>
+      {%- assign sverige_count = 0 -%}
+      {%- for retailer in retailers -%}
+        {%- assign retailer_country = retailer.country.value | strip -%}
+        {%- if retailer_country == 'Sverige' -%}
+          {%- assign sverige_count = sverige_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {{ sverige_count }}
     </div>
   </div>
 
