@@ -695,5 +695,12 @@
         "description": "Percentage discount to apply to the upsell product (e.g., 50 for 50% off)"
       }
     }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Physical",
+      "physical": "Physical Store",
+      "online": "Online Store"
+    }
   }
 }

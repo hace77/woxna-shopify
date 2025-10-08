@@ -3,44 +3,63 @@
   Uses retailers metaobject and groups by country
 {%- endcomment -%}
 
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
 {%- assign retailers = page.metafields.custom.retailer_list.value -%}
-{%- assign countries = '' | split: ',' -%}
+{%- assign countries = '' -%}
+{%- assign retailer_count = 0 -%}
 {%- for retailer in retailers -%}
-  {%- unless countries contains retailer.country.value -%}
-    {%- assign countries = countries | concat: retailer.country.value -%}
+  {%- assign retailer_count = retailer_count | plus: 1 -%}
+  {%- assign country = retailer.country.value | strip -%}
+  {%- unless countries contains country -%}
+    {%- if countries == blank -%}
+      {%- assign countries = country -%}
+    {%- else -%}
+      {%- assign countries = countries | append: ',' | append: country -%}
+    {%- endif -%}
   {%- endunless -%}
 {%- endfor -%}
+{%- assign countries = countries | split: ',' -%}
 
-{%- comment -%} Debug: Show retailers count {%- endcomment -%}
-<!-- DEBUG: Found {{ retailers.size }} retailers -->
-<!-- DEBUG: Countries: {{ countries | join: ', ' }} -->
-{%- if retailers.size == 0 -%}
-  <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; margin: 20px 0; border-radius: 5px;">
-    <strong>Debug Info:</strong> No retailers found in page.metafields.custom.retailer_list.value
-    <br>Make sure you've added retailers to the "Retailer list" metafield on this page.
-  </div>
-{%- endif -%}
-
-<div class="retailers-locations page-width">
+<div class="retailers-locations page-width section-{{ section.id }}-padding">
   <div class="retailers-locations__header">
     <h2 class="retailers-locations__title">{{ section.settings.title | default: 'Our Retail Partners' }}</h2>
     <p class="retailers-locations__subtitle">{{ section.settings.subtitle | default: 'Find a retailer near you' }}</p>
+    
   </div>
 
   <div class="retailers-locations__countries">
     {%- for country in countries -%}
       {%- if country != blank -%}
         <div class="retailers-country">
-          <button class="retailers-country__toggle" data-country="{{ country | handle }}">
+          <input type="checkbox" id="country-toggle-{{ country | handle }}" class="retailers-country__toggle-input" hidden />
+          <label for="country-toggle-{{ country | handle }}" class="retailers-country__toggle">
             <span class="retailers-country__name">{{ country }}</span>
-            <span class="retailers-country__count">({{ retailers | where: 'country.value', country | size }})</span>
-            <span class="retailers-country__arrow">▼</span>
-          </button>
+            <span class="retailers-country__count">(0)</span>
+            <i class="retailers-country__arrow fas fa-chevron-down"></i>
+          </label>
           
-          <div class="retailers-country__content" id="country-{{ country | handle }}">
+          <div class="retailers-country__content">
             <div class="retailers-grid">
+              {%- assign country_count = 0 -%}
+              <!-- DEBUG: Looking for country "{{ country }}" -->
               {%- for retailer in retailers -%}
-                {%- if retailer.country.value == country -%}
+                <!-- DEBUG: Retailer country is "{{ retailer.country.value }}" -->
+                {%- assign retailer_country = retailer.country.value | strip -%}
+                {%- if retailer_country == country -%}
+                  {%- assign country_count = country_count | plus: 1 -%}
                   <div class="retailer-card">
                     {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
                       <div class="retailer-card__logo">
@@ -51,10 +70,31 @@
                     <div class="retailer-card__info">
                       <h3 class="retailer-card__name">{{ retailer.name.value }}</h3>
                       
-                      <p class="retailer-card__location">{{ retailer.country.value }}</p>
+                      {%- if retailer.store_type.value != blank and retailer.store_type.value != null -%}
+                        <p class="retailer-card__store-type">
+                          {%- assign store_type = retailer.store_type.value | first | strip -%}
+                          {%- if store_type == 'Both' -%}
+                            {{ 'retailers.store_type.both' | t }}
+                          {%- elsif store_type == 'Physical Store' -%}
+                            {{ 'retailers.store_type.physical' | t }}
+                          {%- elsif store_type == 'Online Store' -%}
+                            {{ 'retailers.store_type.online' | t }}
+                          {%- else -%}
+                            {{ store_type }}
+                          {%- endif -%}
+                        </p>
+                      {%- endif -%}
+                      
+                      {%- if retailer.address.value != blank and retailer.address.value != null -%}
+                        <p class="retailer-card__address">{{ retailer.address.value }}</p>
+                      {%- endif -%}
+                      
+                      {%- if retailer.city.value != blank and retailer.city.value != null -%}
+                        <p class="retailer-card__city">{{ retailer.city.value }}</p>
+                      {%- endif -%}
                       
                       {%- if retailer.store_url.value != blank and retailer.store_url.value != null -%}
-                        <a href="{{ retailer.store_url.value }}" class="retailer-card__link button button--secondary" target="_blank" rel="noopener">
+                        <a href="{{ retailer.store_url.value }}" class="retailer-card__link" target="_blank" rel="noopener">
                           {%- if retailer.link_label.value != blank and retailer.link_label.value != null -%}
                             {{ retailer.link_label.value }}
                           {%- else -%}
@@ -66,6 +106,14 @@
                   </div>
                 {%- endif -%}
               {%- endfor -%}
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const countElement = document.getElementById('country-toggle-{{ country | handle }}').nextElementSibling.querySelector('.retailers-country__count');
+                  if (countElement) {
+                    countElement.textContent = '({{ country_count }})';
+                  }
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -76,7 +124,6 @@
 
 <style>
   .retailers-locations {
-    padding: 4rem 0;
   }
   
   .retailers-locations__header {
@@ -95,28 +142,42 @@
   }
   
   .retailers-country {
-    margin-bottom: 1rem;
-    border: 1px solid rgba(var(--color-foreground), 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-bottom: 1rem;
+  }
+  
+  .retailers-country__toggle-input {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
   
   .retailers-country__toggle {
-    width: 100%;
-    padding: 1.5rem;
-    background: rgba(var(--color-foreground), 0.05);
-    border: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    color: currentColor;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
   }
   
-  .retailers-country__toggle:hover {
-    background: rgba(var(--color-foreground), 0.1);
+  .retailers-country__arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
   }
   
   .retailers-country__name {
@@ -129,22 +190,17 @@
     margin: 0 1rem;
   }
   
-  .retailers-country__arrow {
-    transition: transform 0.3s ease;
-  }
-  
-  .retailers-country__toggle[aria-expanded="true"] .retailers-country__arrow {
-    transform: rotate(180deg);
-  }
-  
   .retailers-country__content {
     display: none;
-    padding: 2rem;
-    background: rgb(var(--color-background));
+    transition: all 0.3s ease;
   }
   
-  .retailers-country__content.active {
+  .retailers-country__toggle-input:checked ~ .retailers-country__content {
     display: block;
+  }
+  
+  .retailers-country__toggle-input:checked ~ .retailers-country__toggle .retailers-country__arrow {
+    transform: rotate(180deg);
   }
   
   .retailers-grid {
@@ -154,15 +210,8 @@
   }
   
   .retailer-card {
-    border: 1px solid rgba(var(--color-foreground), 0.1);
-    border-radius: 8px;
     padding: 1.5rem;
-    background: rgb(var(--color-background));
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .retailer-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #F2E4C4;
   }
   
   .retailer-card__logo {
@@ -177,24 +226,46 @@
   }
   
   .retailer-card__name {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #5A493A;
+  }
+  
+  .retailer-card__store-type {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(var(--color-foreground), 0.6);
+    font-style: italic;
+  }
+  
+  .retailer-card__address {
+    margin: 0;
+    margin-bottom: 0.3rem;
     font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: black;
   }
   
-  .retailer-card__location {
-    color: rgba(var(--color-foreground), 0.7);
+  .retailer-card__city {
+    margin: 0;
     margin-bottom: 0.5rem;
-  }
-  
-  .retailer-card__description {
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    color: black;
   }
   
   .retailer-card__link {
-    width: 100%;
-    text-align: center;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .retailer-card__link:hover {
+    text-decoration: none;
+    color: black;
   }
   
   @media (max-width: 749px) {
@@ -204,8 +275,7 @@
     }
     
     .retailers-country__toggle {
-      padding: 1rem;
-      font-size: 1rem;
+      font-size: calc(var(--font-heading-scale) * 1.6rem);
     }
     
     .retailer-card {
@@ -214,28 +284,6 @@
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggles = document.querySelectorAll('.retailers-country__toggle');
-    
-    toggles.forEach(toggle => {
-      toggle.addEventListener('click', function() {
-        const countryName = this.getAttribute('data-country');
-        const content = document.getElementById('country-' + countryName);
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        
-        // Toggle the content
-        if (isExpanded) {
-          content.classList.remove('active');
-          this.setAttribute('aria-expanded', 'false');
-        } else {
-          content.classList.add('active');
-          this.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  });
-</script>
 
 {% schema %}
 {
@@ -254,6 +302,30 @@
       "id": "subtitle",
       "label": "Subtitle",
       "default": "Find a retailer near you"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "presets": [

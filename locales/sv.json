@@ -586,5 +586,12 @@
         "description": "Procentuell rabatt att tillämpa på upsell-produkten (t.ex. 50 för 50% rabatt)"
       }
     }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Fysisk",
+      "physical": "Fysisk butik",
+      "online": "Online butik"
+    }
   }
 }
