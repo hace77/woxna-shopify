@@ -79,7 +79,39 @@
               {%- assign country_count = 0 -%}
               {%- for retailer in retailers -%}
                 {%- assign retailer_country = retailer.country.value | strip -%}
+                {%- assign matches_country = false -%}
                 {%- if retailer_country == country -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Sweden' and country == 'Sverige' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Sverige' and country == 'Sweden' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'The Netherlands' and country == 'Nederländerna' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Nederländerna' and country == 'The Netherlands' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'UK' and country == 'Storbritanien' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Storbritanien' and country == 'UK' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Germany' and country == 'Tyskland' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Tyskland' and country == 'Germany' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Norway' and country == 'Norge' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Norge' and country == 'Norway' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Türkiye' and country == 'Turkiet' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Turkiet' and country == 'Türkiye' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Canada' and country == 'Kanada' -%}
+                  {%- assign matches_country = true -%}
+                {%- elsif retailer_country == 'Kanada' and country == 'Canada' -%}
+                  {%- assign matches_country = true -%}
+                {%- endif -%}
+                {%- if matches_country -%}
                   {%- assign country_count = country_count | plus: 1 -%}
                   <div class="retailer-card">
                     {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
