@@ -19,10 +19,8 @@
     "retailers_locations": {
       "type": "retailers-locations",
       "settings": {
-        "title": "",
-        "subtitle": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Find Our Retailers",
+        "subtitle": "Discover where you can buy our products near you"
       }
     }
   },
