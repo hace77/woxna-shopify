@@ -36,6 +36,11 @@
 {%- assign countries = countries | split: ',' -%}
 
 <div class="retailers-locations page-width section-{{ section.id }}-padding">
+  <div class="retailers-locations__header">
+    <h2 class="retailers-locations__title">{{ section.settings.title | default: 'Our Retail Partners' }}</h2>
+    <p class="retailers-locations__subtitle">{{ section.settings.subtitle | default: 'Find a retailer near you' }}</p>
+  </div>
+
   <div class="retailers-locations__countries">
     {%- for country in countries -%}
       {%- if country != blank -%}
