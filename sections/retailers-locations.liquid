@@ -33,7 +33,23 @@
     {%- endif -%}
   {%- endunless -%}
 {%- endfor -%}
-{%- assign countries = countries | split: ',' -%}
+{%- assign countries = countries | split: ',' | sort -%}
+
+{%- comment -%} Move Sweden to the front if it exists {%- endcomment -%}
+{%- assign sorted_countries = '' -%}
+{%- if countries contains 'Sweden' -%}
+  {%- assign sorted_countries = 'Sweden' -%}
+{%- endif -%}
+{%- for country in countries -%}
+  {%- unless country == 'Sweden' -%}
+    {%- if sorted_countries == blank -%}
+      {%- assign sorted_countries = country -%}
+    {%- else -%}
+      {%- assign sorted_countries = sorted_countries | append: ',' | append: country -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign countries = sorted_countries | split: ',' -%}
 
 <div class="retailers-locations page-width section-{{ section.id }}-padding">
   <div class="retailers-locations__countries">
