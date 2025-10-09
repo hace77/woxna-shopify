@@ -60,9 +60,9 @@
         "enable_language_selector": true,
         "enable_customer_avatar": true,
         "mobile_logo_position": "center",
-        "margin_bottom": 0,
+        "margin_bottom": 36,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 0
       }
     }
   },
