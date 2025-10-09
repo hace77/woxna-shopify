@@ -21,33 +21,15 @@
 {%- assign countries = '' -%}
 {%- assign retailer_count = 0 -%}
 
-{%- comment -%} 
-  IMPORTANT: Shopify auto-translates country names based on locale.
-  We normalize all country names to English to prevent duplicates.
-  When adding a new country, add its translated name to the case statement below.
-{%- endcomment -%}
+{%- comment -%} Collect all unique country values {%- endcomment -%}
 {%- for retailer in retailers -%}
   {%- assign retailer_count = retailer_count | plus: 1 -%}
   {%- assign country = retailer.country.value | strip -%}
-  
-  {%- comment -%} Normalize to English to avoid locale-based duplicates {%- endcomment -%}
-  {%- assign normalized_country = country -%}
-  {%- case country -%}
-    {%- when 'Sverige' -%}{%- assign normalized_country = 'Sweden' -%}
-    {%- when 'Nederländerna' -%}{%- assign normalized_country = 'The Netherlands' -%}
-    {%- when 'Storbritanien' or 'Storbritannien' -%}{%- assign normalized_country = 'UK' -%}
-    {%- when 'Tyskland' -%}{%- assign normalized_country = 'Germany' -%}
-    {%- when 'Norge' -%}{%- assign normalized_country = 'Norway' -%}
-    {%- when 'Turkiet' or 'Turkiye' -%}{%- assign normalized_country = 'Türkiye' -%}
-    {%- when 'Kanada' -%}{%- assign normalized_country = 'Canada' -%}
-    {%- when 'Förenta staterna' or 'Förenta Staterna' -%}{%- assign normalized_country = 'USA' -%}
-  {%- endcase -%}
-  
-  {%- unless countries contains normalized_country -%}
+  {%- unless countries contains country -%}
     {%- if countries == blank -%}
-      {%- assign countries = normalized_country -%}
+      {%- assign countries = country -%}
     {%- else -%}
-      {%- assign countries = countries | append: ',' | append: normalized_country -%}
+      {%- assign countries = countries | append: ',' | append: country -%}
     {%- endif -%}
   {%- endunless -%}
 {%- endfor -%}
