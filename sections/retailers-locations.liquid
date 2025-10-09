@@ -20,6 +20,8 @@
 {%- assign retailers = page.metafields.custom.retailer_list.value -%}
 {%- assign countries = '' -%}
 {%- assign retailer_count = 0 -%}
+
+{%- comment -%} First pass: collect all unique country values {%- endcomment -%}
 {%- for retailer in retailers -%}
   {%- assign retailer_count = retailer_count | plus: 1 -%}
   {%- assign country = retailer.country.value | strip -%}
@@ -41,25 +43,11 @@
     <div style="background: #ffffcc; padding: 10px; margin: 20px 0; border-radius: 5px; font-size: 12px;">
       <strong>DEBUG:</strong> Total retailers: {{ retailer_count }}<br>
       <strong>Current locale:</strong> {{ request.locale.iso_code }}<br>
-      <strong>Countries:</strong> {{ countries | join: ', ' }}<br>
-      <strong>Sweden count:</strong>
-      {%- assign sweden_count = 0 -%}
+      <strong>Countries detected:</strong> {{ countries | join: ', ' }}<br>
+      <strong>All raw country values:</strong>
       {%- for retailer in retailers -%}
-        {%- assign retailer_country = retailer.country.value | strip -%}
-        {%- if retailer_country == 'Sweden' -%}
-          {%- assign sweden_count = sweden_count | plus: 1 -%}
-        {%- endif -%}
+        "{{ retailer.country.value }}",
       {%- endfor -%}
-      {{ sweden_count }}<br>
-      <strong>Sverige count:</strong>
-      {%- assign sverige_count = 0 -%}
-      {%- for retailer in retailers -%}
-        {%- assign retailer_country = retailer.country.value | strip -%}
-        {%- if retailer_country == 'Sverige' -%}
-          {%- assign sverige_count = sverige_count | plus: 1 -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {{ sverige_count }}
     </div>
   </div>
 
@@ -70,7 +58,6 @@
           <input type="checkbox" id="country-toggle-{{ country | handle }}" class="retailers-country__toggle-input" hidden />
           <label for="country-toggle-{{ country | handle }}" class="retailers-country__toggle">
             <span class="retailers-country__name">{{ country }}</span>
-            <span class="retailers-country__count">(0)</span>
             <i class="retailers-country__arrow fas fa-chevron-down"></i>
           </label>
           
