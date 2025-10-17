@@ -176,6 +176,7 @@ if (!customElements.get('product-info')) {
           }
 
           this.updateMedia(html, variant?.featured_media?.id);
+          this.updateVariantMetafields(html);
 
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -308,6 +309,68 @@ if (!customElements.get('product-info')) {
         const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
         const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
         if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+      }
+
+      updateVariantMetafields(html) {
+        // Update all variant metafield blocks within product-info
+        const currentBlocks = this.querySelectorAll('[data-variant-metafield]');
+        
+        currentBlocks.forEach((currentBlock) => {
+          // Extract the unique ID from current block
+          const blockId = currentBlock.id;
+          
+          if (!blockId) {
+            console.warn('Variant metafield block missing ID', currentBlock);
+            return;
+          }
+          
+          // Find the corresponding block in the new HTML by ID
+          const newBlock = html.querySelector(`#${blockId}`);
+          
+          if (!newBlock) {
+            console.warn('Could not find new block for', blockId);
+            return;
+          }
+          
+          // Get the content wrappers
+          const currentWrapper = currentBlock.querySelector('.variant-metafield__wrapper');
+          const newWrapper = newBlock.querySelector('.variant-metafield__wrapper');
+          
+          // Handle case where metafield might be empty/hidden
+          if (!newWrapper && currentWrapper) {
+            // New variant doesn't have this metafield, hide the block
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            setTimeout(() => {
+              currentBlock.innerHTML = '';
+              currentBlock.style.opacity = '1';
+            }, 200);
+            return;
+          }
+          
+          if (newWrapper && currentWrapper && currentWrapper.innerHTML !== newWrapper.innerHTML) {
+            // Update with smooth transition
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            
+            setTimeout(() => {
+              currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.style.opacity = '1';
+            }, 200);
+          } else if (newWrapper && !currentWrapper) {
+            // Current variant didn't have this metafield, but new one does
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            
+            setTimeout(() => {
+              currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.style.opacity = '1';
+            }, 200);
+          }
+        });
+        
+        // Note: Standalone variant metafield sections (outside product-info) 
+        // are handled by their own custom element (variant-metafield-section.js)
       }
 
       setQuantityBoundries() {

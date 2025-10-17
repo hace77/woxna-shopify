@@ -16,6 +16,7 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
+  {{ 'component-variant-metafield.css' | asset_url | stylesheet_tag }}
   {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
 
@@ -102,6 +103,8 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+  {%- assign product_form_id = 'product-form-' | append: section.id -%}
+  
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
@@ -126,8 +129,6 @@
           id="ProductInfo-{{ section.id }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
-          {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
@@ -763,6 +764,60 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'variant_metafield' -%}
+                <div 
+                  class="product__variant-metafield" 
+                  id="VariantMetafield-{{ block.id }}-{{ section.id }}"
+                  data-variant-metafield 
+                  {{ block.shopify_attributes }}
+                >
+                  {%- liquid
+                    assign namespace = 'custom'
+                    assign key = block.settings.metafield_key
+                    assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
+                  -%}
+                  
+                  {%- if variant_metafield != blank -%}
+                    <div class="variant-metafield__wrapper">
+                      {%- if block.settings.show_heading and block.settings.heading != blank -%}
+                        <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
+                      {%- endif -%}
+                      
+                      <div class="variant-metafield__content">
+                        {%- liquid
+                          assign metafield_type = variant_metafield.type
+                          
+                          # Handle image/file metafields
+                          if metafield_type == 'file_reference'
+                            assign image_url = variant_metafield.value | image_url: width: 800
+                            echo '<img src="' | append: image_url | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="800" height="auto">'
+                          # Handle rich text metafields
+                          elsif metafield_type == 'rich_text_field'
+                            echo variant_metafield | metafield_tag
+                          # Handle plain text, URLs, and other metafields
+                          else
+                            # Check if it's an image URL
+                            if variant_metafield.value contains '.jpg' or variant_metafield.value contains '.png' or variant_metafield.value contains '.gif' or variant_metafield.value contains '.webp' or variant_metafield.value contains 'cdn.shopify.com'
+                              echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%; height: auto;">'
+                            # Plain text or other content
+                            else
+                              echo variant_metafield.value
+                            endif
+                          endif
+                        -%}
+                      </div>
+                    </div>
+                  {%- elsif block.settings.show_fallback and block.settings.fallback_content != blank -%}
+                    <div class="variant-metafield__wrapper">
+                      {%- if block.settings.show_heading and block.settings.heading != blank -%}
+                        <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
+                      {%- endif -%}
+                      <div class="variant-metafield__content">
+                        {{ block.settings.fallback_content }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2175,6 +2230,44 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "variant_metafield",
+      "name": "Variant Metafield",
+      "settings": [
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Metafield Key",
+          "info": "Enter the metafield key (e.g., size_image, care_instructions, material_details)",
+          "placeholder": "size_image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_heading",
+          "label": "Show Heading",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "info": "Optional heading to display above the metafield content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_fallback",
+          "label": "Show Fallback Content",
+          "default": false,
+          "info": "Display fallback content if variant doesn't have this metafield"
+        },
+        {
+          "type": "richtext",
+          "id": "fallback_content",
+          "label": "Fallback Content",
+          "info": "Content to display if the variant metafield is empty"
         }
       ]
     }
