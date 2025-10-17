@@ -52,6 +52,31 @@
 {%- assign countries = sorted_countries | split: ',' -%}
 
 <div class="retailers-locations page-width section-{{ section.id }}-padding">
+  {%- comment -%} Search Field {%- endcomment -%}
+  <div class="retailers-search">
+    <label class="retailers-search__label" for="city-search-{{ section.id }}">
+      {{ 'retailers.search.label' | t | default: 'Search retailers by city' }}
+    </label>
+    <div class="field">
+      <input 
+        type="text" 
+        id="city-search-{{ section.id }}" 
+        class="field__input"
+        placeholder="{{ 'retailers.search.city_placeholder' | t | default: 'City name' }}"
+        autocomplete="off"
+      />
+    </div>
+    <button type="button" class="retailers-search__clear button button--tertiary" id="clear-search-{{ section.id }}" style="display: none;">
+      <svg aria-hidden="true" focusable="false" class="icon icon-close" viewBox="0 0 18 17">
+        <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor"/>
+      </svg>
+      {{ 'retailers.search.clear' | t | default: 'Clear' }}
+    </button>
+    <div class="retailers-search__no-results" id="no-results-{{ section.id }}" style="display: none;">
+      <p>{{ 'retailers.search.no_results' | t | default: 'No retailers found in that city. Try a different search.' }}</p>
+    </div>
+  </div>
+
   <div class="retailers-locations__countries">
     {%- for country in countries -%}
       {%- if country != blank -%}
@@ -69,7 +94,10 @@
                 {%- assign retailer_country = retailer.country.value | strip -%}
                 {%- if retailer_country == country -%}
                   {%- assign country_count = country_count | plus: 1 -%}
-                  <div class="retailer-card">
+                  <div class="retailer-card" 
+                       data-city="{{ retailer.city.value | strip | downcase }}"
+                       data-country="{{ country | downcase }}"
+                       data-name="{{ retailer.name.value | strip | downcase }}">
                     {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
                       <div class="retailer-card__logo">
                         <img src="{{ retailer.logo.value | image_url: width: 200 }}" alt="{{ retailer.name.value }} logo" width="200" height="60" loading="lazy">
@@ -131,8 +159,176 @@
   </div>
 </div>
 
+<script>
+(function() {
+  const sectionId = '{{ section.id }}';
+  const searchInput = document.getElementById('city-search-' + sectionId);
+  const clearButton = document.getElementById('clear-search-' + sectionId);
+  const noResultsMsg = document.getElementById('no-results-' + sectionId);
+  const retailerCards = document.querySelectorAll('.retailers-locations.section-' + sectionId + '-padding .retailer-card');
+  const countryContainers = document.querySelectorAll('.retailers-locations.section-' + sectionId + '-padding .retailers-country');
+
+  if (!searchInput) return;
+
+  // Debounce function for better performance
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Filter retailers based on search input
+  function filterRetailers() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    // Show/hide clear button
+    if (searchTerm.length > 0) {
+      clearButton.style.display = 'inline-flex';
+    } else {
+      clearButton.style.display = 'none';
+    }
+
+    // Filter retailer cards
+    retailerCards.forEach(function(card) {
+      const city = card.getAttribute('data-city') || '';
+      const name = card.getAttribute('data-name') || '';
+      
+      if (searchTerm === '' || city.includes(searchTerm) || name.includes(searchTerm)) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show/hide country sections based on visible retailers
+    countryContainers.forEach(function(country) {
+      const cardsInCountry = country.querySelectorAll('.retailer-card');
+      const visibleCardsInCountry = Array.from(cardsInCountry).filter(function(card) {
+        return card.style.display !== 'none';
+      });
+
+      if (visibleCardsInCountry.length === 0 && searchTerm !== '') {
+        country.style.display = 'none';
+      } else {
+        country.style.display = '';
+        
+        // Auto-expand countries with results when searching
+        if (searchTerm !== '' && visibleCardsInCountry.length > 0) {
+          const toggle = country.querySelector('.retailers-country__toggle-input');
+          if (toggle) {
+            toggle.checked = true;
+          }
+        }
+      }
+    });
+
+    // Show/hide no results message
+    if (visibleCount === 0 && searchTerm !== '') {
+      noResultsMsg.style.display = 'block';
+    } else {
+      noResultsMsg.style.display = 'none';
+    }
+  }
+
+  // Clear search
+  function clearSearch() {
+    searchInput.value = '';
+    filterRetailers();
+    searchInput.focus();
+  }
+
+  // Event listeners
+  searchInput.addEventListener('input', debounce(filterRetailers, 300));
+  searchInput.addEventListener('keyup', function(e) {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  });
+  
+  clearButton.addEventListener('click', clearSearch);
+
+  // Initialize
+  filterRetailers();
+})();
+</script>
+
 <style>
   .retailers-locations {
+  }
+  
+  /* Search Field Styles */
+  .retailers-search {
+    margin-bottom: 3rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .retailers-search__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(var(--color-foreground));
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-search .field {
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-search .field__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    border-radius: 0;
+  }
+  
+  .retailers-search .field__input:focus {
+    outline: none;
+    border-color: rgb(var(--color-foreground));
+  }
+  
+  .retailers-search .field__input::placeholder {
+    color: rgba(var(--color-foreground), 0.7);
+    opacity: 1;
+  }
+  
+  .retailers-search__clear {
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .retailers-search__clear .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+  .retailers-search__no-results {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(var(--color-foreground), 0.04);
+    border: 1px solid rgba(var(--color-foreground), 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .retailers-search__no-results p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgba(var(--color-foreground), 0.75);
   }
   
   .retailers-locations__header {
@@ -278,6 +474,23 @@
   }
   
   @media (max-width: 749px) {
+    .retailers-search {
+      margin-bottom: 2rem;
+    }
+    
+    .retailers-search .field__input {
+      font-size: 1.4rem;
+      padding: 0.8rem;
+    }
+    
+    .retailers-search__label {
+      font-size: 1.2rem;
+    }
+    
+    .retailers-search__clear {
+      font-size: 1.4rem;
+    }
+    
     .retailers-grid {
       grid-template-columns: 1fr;
       gap: 1rem;

@@ -701,6 +701,13 @@
       "both": "Online/Physical",
       "physical": "Physical Store",
       "online": "Online Store"
+    },
+    "search": {
+      "placeholder": "Search by city...",
+      "city_placeholder": "City name",
+      "label": "Search retailers by city",
+      "clear": "Clear",
+      "no_results": "No retailers found in that city. Try a different search."
     }
   }
 }
