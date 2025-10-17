@@ -837,52 +837,20 @@
         "padding_bottom": 52
       }
     },
-    "image_banner_8zaQaf": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_paPnxR": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_XLRz8T": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_dRLaYe": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_paPnxR",
-        "text_XLRz8T",
-        "buttons_dRLaYe"
-      ],
+    "variant_metafield_display_d9dxTi": {
+      "type": "variant-metafield-display",
+      "name": "Variant Metafield Display",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "metafield_key": "size_image",
+        "show_heading": false,
+        "heading": "Product Details",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collapsible_content_gEpGHP": {
@@ -1046,54 +1014,6 @@
         "padding_bottom": 76
       }
     },
-    "image_with_text_j83Eef": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zwyMCT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Produced with Quality and Tradition",
-            "heading_size": "h1"
-          }
-        },
-        "text_gMpi8E": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_tCkADX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our production",
-            "button_link": "shopify://pages/made-in-sweden",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_zwyMCT",
-        "text_gMpi8E",
-        "button_tCkADX"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -1133,12 +1053,11 @@
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
     "rich_text_zL8t7g",
-    "image_banner_8zaQaf",
+    "variant_metafield_display_d9dxTi",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
     "1730798421bc6bee16",
     "rich_text_QkwfpV",
-    "image_with_text_j83Eef",
     "related-products"
   ]
 }
