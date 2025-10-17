@@ -544,10 +544,10 @@
           "type": "button",
           "settings": {
             "button_label": "Söderfors - Damascus Saw 180 mm",
-            "button_link": "shopify://products/damascus-saw-250-mm",
+            "button_link": "shopify://products/damascus-saw",
             "button_style_secondary": false,
             "button_label_2": "Söderfors - Damascus Saw 250 mm",
-            "button_link_2": "shopify://products/damascus-saw-250-mm",
+            "button_link_2": "shopify://products/damascus-saw",
             "button_style_secondary_2": false
           }
         }
