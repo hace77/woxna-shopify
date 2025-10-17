@@ -52,15 +52,15 @@ if (!customElements.get('variant-metafield-section')) {
             // Parse the response
             const html = new DOMParser().parseFromString(responseText, 'text/html');
             
-            // Find the updated section content
-            const newSection = html.querySelector('.variant-metafield-section .page-width');
+            // Find the updated section content (handles both page-width and page-width--full)
+            const newContent = html.querySelector('.variant-metafield-section .page-width, .variant-metafield-section .page-width--full');
             
-            if (newSection) {
-              const currentContent = this.querySelector('.page-width');
+            if (newContent) {
+              const currentContent = this.querySelector('.page-width, .page-width--full');
               
               if (currentContent) {
                 // Update the content
-                currentContent.innerHTML = newSection.innerHTML;
+                currentContent.innerHTML = newContent.innerHTML;
               }
             }
             
