@@ -27,9 +27,11 @@
           "type": "price",
           "settings": {}
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "klaviyo_reviews_average_rating_QA39zE": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
@@ -59,7 +61,7 @@
         "title",
         "buy_buttons",
         "price",
-        "judge_me_reviews_preview_badge_VG7pPA",
+        "klaviyo_reviews_average_rating_QA39zE",
         "icon_with_text_GbTykW",
         "variant_picker",
         "description"
