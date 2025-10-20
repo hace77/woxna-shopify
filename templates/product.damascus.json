@@ -825,6 +825,7 @@
         "text_QaVm7H",
         "button_yRnixM"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,li,p {text-align: left;}"
       ],
@@ -833,6 +834,24 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "variant_text_display_WzKN3b": {
+      "type": "variant-text-display",
+      "name": "Variant Text Display",
+      "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech spec",
+        "heading_size": "h0",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "show_fallback": false,
+        "fallback_content": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -1053,6 +1072,7 @@
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
     "rich_text_zL8t7g",
+    "variant_text_display_WzKN3b",
     "variant_metafield_display_d9dxTi",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
