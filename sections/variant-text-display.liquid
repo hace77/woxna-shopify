@@ -1,0 +1,222 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'variant-text-section.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* Ensure custom element doesn't interfere with layout */
+  variant-text-section {
+    display: block;
+  }
+{%- endstyle -%}
+
+<variant-text-section
+  class="variant-text-section"
+  data-section-id="{{ section.id }}"
+>
+  <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+    <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+      <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+        <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+          {%- liquid
+            assign namespace = 'custom'
+            assign key = section.settings.metafield_key
+            assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
+          -%}
+          
+          {%- if variant_metafield != blank -%}
+            {%- if section.settings.show_heading and section.settings.heading != blank -%}
+              <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {%- endif -%}
+            
+            <div class="rich-text__text rte">
+              {{ variant_metafield | metafield_tag }}
+            </div>
+          {%- elsif section.settings.show_fallback and section.settings.fallback_content != blank -%}
+            {%- if section.settings.show_heading and section.settings.heading != blank -%}
+              <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {%- endif -%}
+            
+            <div class="rich-text__text rte">
+              {{ section.settings.fallback_content }}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</variant-text-section>
+
+{% schema %}
+{
+  "name": "Variant Text Display",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Display variant-specific text content from metafields. This section updates automatically when customers change variants. Use this for text, rich text, care instructions, or any text-based variant information."
+    },
+    {
+      "type": "text",
+      "id": "metafield_key",
+      "label": "Metafield Key",
+      "info": "Enter the metafield key (e.g., care_instructions, material_details, size_guide)",
+      "placeholder": "care_instructions"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "Show Heading",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Product Details"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra Large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra Extra Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading Size"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop Content Position",
+      "info": "Position the content block on desktop"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Text Alignment"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "Full Width Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_fallback",
+      "label": "Show Fallback Content",
+      "default": false,
+      "info": "Display fallback content if variant doesn't have this metafield"
+    },
+    {
+      "type": "richtext",
+      "id": "fallback_content",
+      "label": "Fallback Content",
+      "info": "Content to display if the variant metafield is empty"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Variant Text Display"
+    }
+  ]
+}
+{% endschema %}
+

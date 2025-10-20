@@ -1134,6 +1134,26 @@
         "name": "number_integer",
         "category": "NUMBER"
       }
+    },
+    {
+      "key": "size_image",
+      "namespace": "custom",
+      "name": "size image",
+      "description": "the size image",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tech_specs",
+      "namespace": "custom",
+      "name": "tech specs",
+      "description": "the tech specs of the saw",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "shop": []
