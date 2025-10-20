@@ -489,6 +489,21 @@
         "padding_bottom": 36
       }
     },
+    "1760978078e6c4502c": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_G7LiW9": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_G7LiW9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "slideshow_khyK4k": {
       "type": "slideshow",
       "blocks": {
@@ -1030,21 +1045,6 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "1760978078e6c4502c": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_G7LiW9": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_G7LiW9"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -1059,6 +1059,7 @@
     "multirow_bgW9yK",
     "rich_text_zGRdRF",
     "image_with_text_JLf43q",
+    "1760978078e6c4502c",
     "slideshow_khyK4k",
     "rich_text_J4ppHw",
     "image_with_text_WwtiGJ",
@@ -1071,7 +1072,6 @@
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
     "rich_text_QkwfpV",
-    "related-products",
-    "1760978078e6c4502c"
+    "related-products"
   ]
 }
