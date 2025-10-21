@@ -967,61 +967,25 @@
         "padding_bottom": 56
       }
     },
-    "rich_text_FVdRqr": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_J3fDmm": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TKf9Lk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_NcpnAk": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_J3fDmm",
-        "text_TKf9Lk",
-        "button_NcpnAk"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "1751624034c788284f": {
       "type": "apps",
       "blocks": {
         "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-TKfihV\"></div>"
+            "formId": ""
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_98mQHn": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
           }
         }
       },
       "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L"
+        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L",
+        "klaviyo_email_marketing_sms_form_embed_block_98mQHn"
       ],
       "disabled": true,
       "settings": {
@@ -1053,7 +1017,6 @@
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr",
     "1751624034c788284f"
   ]
 }
