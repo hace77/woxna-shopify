@@ -259,32 +259,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_q4bA3M": {
-      "type": "rich-text",
-      "blocks": {
-        "text_UdkziW": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_UdkziW"
-      ],
-      "custom_css": [
-        "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
-        "ul {list-style-position: outside;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "featured_collection_bn8crz": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -326,7 +300,6 @@
     "banner",
     "product-grid",
     "collapsible_content_mcq7PP",
-    "rich_text_q4bA3M",
     "featured_collection_bn8crz"
   ]
 }
