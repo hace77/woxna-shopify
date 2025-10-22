@@ -27,7 +27,40 @@
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image": "shopify://shop_images/ljusnan250_horiz.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_jTx9t6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WYyBm4": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WYyBm4"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan250mm1_1_start.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-left",
@@ -89,10 +122,8 @@
       "block_order": [
         "heading_HHjHMH"
       ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
-      ],
+      "disabled": true,
+      "custom_css": [],
       "name": "Video Banner YT",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
@@ -184,6 +215,7 @@
         "show_rating": false,
         "quick_add": "none",
         "show_view_product_button": true,
+        "show_usp_text": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
@@ -280,6 +312,7 @@
   },
   "order": [
     "image_banner_dLVAWX",
+    "image_banner_jTx9t6",
     "image_banner_PBEUQe",
     "video_banner_yt_iLi8kQ",
     "rich_text_dbVHAH",
