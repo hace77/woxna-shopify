@@ -34,14 +34,15 @@
     }
 
     .product-label {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 2;
-      padding: 5px 10px;
-      font-size: 12px;
-      font-weight: 500;
-      text-transform: uppercase;
+      position: absolute !important;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 999 !important;
+      padding: 5px 10px !important;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      text-transform: uppercase !important;
+      pointer-events: none !important;
     }
 
     .custom-label {
@@ -57,6 +58,10 @@
       top: 45px;
     }
 
+    .product {
+      position: relative;
+    }
+    
     .product__media-wrapper {
       position: relative;
     }
@@ -112,17 +117,15 @@
         {%- if product.metafields.custom.label != blank -%}
           <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
         {%- endif -%}
-        {% comment %}
         {%- assign total_inventory = 0 -%}
         {%- for variant in product.variants -%}
           {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
         {%- endfor -%}
-        {%- if total_inventory > 0 and total_inventory <= 5 -%}
+        {%- if total_inventory > 0 and total_inventory <= 10 -%}
           <div class="product-label custom-label stock-label">
             {{ 'products.product.inventory_low_stock_show_count' | t: quantity: total_inventory }}
           </div>
         {%- endif -%}
-        {% endcomment %}
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
