@@ -267,23 +267,10 @@
           "settings": {
             "text": ""
           }
-        },
-        "button_effggk": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "text_UdkziW",
-        "button_effggk"
+        "text_UdkziW"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
