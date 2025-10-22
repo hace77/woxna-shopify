@@ -154,7 +154,7 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.description }}"
+            "text": "<p>{{ collection.description }}</p>"
           }
         },
         "button_d4cWYV": {
@@ -239,13 +239,45 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_mcq7PP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_NRyTCc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Read more about the saws",
+            "icon": "none",
+            "row_content": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_NRyTCc"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_q4bA3M": {
       "type": "rich-text",
       "blocks": {
         "text_UdkziW": {
           "type": "text",
           "settings": {
-            "text": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>"
+            "text": ""
           }
         },
         "button_effggk": {
@@ -318,6 +350,7 @@
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
+    "collapsible_content_mcq7PP",
     "rich_text_q4bA3M",
     "featured_collection_bn8crz"
   ]
