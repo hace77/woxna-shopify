@@ -156,23 +156,11 @@
           "settings": {
             "text": "{{ collection.description }}"
           }
-        },
-        "button_d4cWYV": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_dipqiz",
-        "text_FkKbKK",
-        "button_d4cWYV"
+        "text_FkKbKK"
       ],
       "settings": {
         "desktop_content_position": "center",
