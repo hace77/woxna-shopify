@@ -49,6 +49,29 @@
         "show_text_below": true
       }
     },
+    "countdown_timer_cDtxRJ": {
+      "type": "countdown-timer",
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Black friday starts in",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-10-24",
+        "target_time": "00:01",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -455,33 +478,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "countdown_timer_cDtxRJ": {
-      "type": "countdown-timer",
-      "name": "Countdown Timer",
-      "settings": {
-        "heading": "Black friday starts in",
-        "heading_size": "h1",
-        "subheading": "",
-        "target_date": "2025-10-24",
-        "target_time": "00:01",
-        "timezone": "Europe/Stockholm",
-        "expired_message": "This offer has ended",
-        "show_days": true,
-        "show_hours": true,
-        "show_minutes": true,
-        "show_seconds": true,
-        "text_alignment": "center",
-        "cta_text": "",
-        "cta_url": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner_ExBjAj",
+    "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
     "featured_collection_CeWpcD",
@@ -491,7 +492,6 @@
     "video_D8khce",
     "rich_text_4t7TPi",
     "featured_product_4YGFRH",
-    "featured_product_Mai48b",
-    "countdown_timer_cDtxRJ"
+    "featured_product_Mai48b"
   ]
 }
