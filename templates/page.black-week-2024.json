@@ -42,6 +42,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -110,9 +111,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -452,6 +455,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "countdown_timer_cDtxRJ": {
+      "type": "countdown-timer",
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Black friday starts in",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-10-24",
+        "target_time": "00:01",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -465,6 +491,7 @@
     "video_D8khce",
     "rich_text_4t7TPi",
     "featured_product_4YGFRH",
-    "featured_product_Mai48b"
+    "featured_product_Mai48b",
+    "countdown_timer_cDtxRJ"
   ]
 }
