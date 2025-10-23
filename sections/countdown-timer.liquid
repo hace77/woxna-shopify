@@ -1,0 +1,279 @@
+{{ 'countdown-timer.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="countdown-timer-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="countdown-timer__wrapper countdown-timer__wrapper--{{ section.settings.text_alignment }}">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="countdown-timer__heading {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+      
+      {%- if section.settings.subheading != blank -%}
+        <p class="countdown-timer__subheading">
+          {{ section.settings.subheading }}
+        </p>
+      {%- endif -%}
+      
+      <div 
+        class="countdown-timer" 
+        id="countdown-timer-{{ section.id }}"
+        data-target-date="{{ section.settings.target_date }}"
+        data-target-time="{{ section.settings.target_time }}"
+        data-timezone="{{ section.settings.timezone }}"
+        data-expired-message="{{ section.settings.expired_message | escape }}"
+        data-show-days="{{ section.settings.show_days }}"
+        data-show-hours="{{ section.settings.show_hours }}"
+        data-show-minutes="{{ section.settings.show_minutes }}"
+        data-show-seconds="{{ section.settings.show_seconds }}"
+      >
+        <div class="countdown-timer__display">
+          <div class="countdown-timer__loading">
+            Loading countdown...
+          </div>
+        </div>
+      </div>
+      
+      {%- if section.settings.cta_text != blank and section.settings.cta_url != blank -%}
+        <div class="countdown-timer__cta">
+          <a href="{{ section.settings.cta_url }}" class="button button--primary">
+            {{ section.settings.cta_text }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'countdown-timer.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Countdown Timer",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Create urgency with a countdown timer. Perfect for flash sales, product launches, or limited-time offers."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Limited Time Offer",
+      "info": "Main heading above the countdown timer"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        },
+        {
+          "value": "hxl",
+          "label": "Extra Large"
+        },
+        {
+          "value": "hxxl",
+          "label": "Extra Extra Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading Size"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Optional text below the heading"
+    },
+    {
+      "type": "header",
+      "content": "Countdown Settings"
+    },
+    {
+      "type": "text",
+      "id": "target_date",
+      "label": "Target Date",
+      "default": "2024-12-31",
+      "info": "The date when the countdown should end (YYYY-MM-DD format)"
+    },
+    {
+      "type": "text",
+      "id": "target_time",
+      "label": "Target Time",
+      "default": "23:59",
+      "info": "Time in 24-hour format (HH:MM), e.g., 14:30 for 2:30 PM"
+    },
+    {
+      "type": "select",
+      "id": "timezone",
+      "label": "Timezone",
+      "options": [
+        {
+          "value": "UTC",
+          "label": "UTC"
+        },
+        {
+          "value": "Europe/Stockholm",
+          "label": "Stockholm (CET/CEST)"
+        },
+        {
+          "value": "Europe/London",
+          "label": "London (GMT/BST)"
+        },
+        {
+          "value": "America/New_York",
+          "label": "New York (EST/EDT)"
+        },
+        {
+          "value": "America/Los_Angeles",
+          "label": "Los Angeles (PST/PDT)"
+        },
+        {
+          "value": "Asia/Tokyo",
+          "label": "Tokyo (JST)"
+        }
+      ],
+      "default": "Europe/Stockholm",
+      "info": "Select the timezone for your target date and time"
+    },
+    {
+      "type": "text",
+      "id": "expired_message",
+      "label": "Expired Message",
+      "default": "This offer has ended",
+      "info": "Message shown when countdown reaches zero"
+    },
+    {
+      "type": "header",
+      "content": "Display Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_days",
+      "label": "Show Days",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hours",
+      "label": "Show Hours",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_minutes",
+      "label": "Show Minutes",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_seconds",
+      "label": "Show Seconds",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Call to Action"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Text",
+      "info": "Optional button below the countdown"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button Link",
+      "info": "Where the button should link to"
+    },
+    {
+      "type": "header",
+      "content": "Design"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Timer"
+    }
+  ]
+}
+{% endschema %}
+
