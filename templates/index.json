@@ -421,6 +421,13 @@
             "logo_image": "shopify://shop_images/core77.png",
             "logo_link": ""
           }
+        },
+        "logo_tbY4PF": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gearjunkie.png",
+            "logo_link": "https://gearjunkie.com/outdoor/woxna-ljusnan-10-folding-saw-review"
+          }
         }
       },
       "block_order": [
@@ -429,7 +436,8 @@
         "logo_8fYEg3",
         "logo_MXq4ka",
         "logo_KgekT3",
-        "logo_xUJFHg"
+        "logo_xUJFHg",
+        "logo_tbY4PF"
       ],
       "settings": {
         "heading": "As seen on",
