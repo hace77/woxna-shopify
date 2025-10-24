@@ -428,6 +428,13 @@
             "logo_image": "shopify://shop_images/Gearjunkie_1be2a1ed-9814-4a38-b31e-1f0f1920dcb7.png",
             "logo_link": "https://gearjunkie.com/outdoor/woxna-ljusnan-10-folding-saw-review"
           }
+        },
+        "logo_LTi9hU": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/vildmarken-logo.png",
+            "logo_link": "https://vildmarken.se/reportage/woxna-halsing-litet-format-manga-anvandningsomraden/"
+          }
         }
       },
       "block_order": [
@@ -437,7 +444,8 @@
         "logo_MXq4ka",
         "logo_KgekT3",
         "logo_xUJFHg",
-        "logo_tbY4PF"
+        "logo_tbY4PF",
+        "logo_LTi9hU"
       ],
       "settings": {
         "heading": "As seen on",
