@@ -287,12 +287,19 @@ a.product__text {
 .product__text-information-box {
   background-color: rgba(var(--color-foreground), 0.05);
   padding: 1.2rem;
+  margin-top: 0;
   margin-bottom: 1.5rem;
   border-radius: 0.4rem;
 }
 
 .product__text-information-box .product__text {
+  margin-top: 0;
   margin-bottom: 0;
+}
+
+.product__text-information-box--small .product__text {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .product__accordion .accordion__content {

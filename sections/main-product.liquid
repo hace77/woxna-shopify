@@ -138,7 +138,7 @@
                 {% render block %}
               {%- when 'text' -%}
                 {%- if block.settings.show_as_information_box -%}
-                  <div class="product__text-information-box" {{ block.shopify_attributes }}>
+                  <div class="product__text-information-box{% if block.settings.use_smaller_text %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
                     <p
                       class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                     >
@@ -933,6 +933,13 @@
           "default": false,
           "label": "Show as information box",
           "info": "Display text with a light grey background and padding"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_smaller_text",
+          "default": false,
+          "label": "Use smaller text size",
+          "info": "Make the text slightly smaller (only applies when information box is enabled)"
         }
       ]
     },
