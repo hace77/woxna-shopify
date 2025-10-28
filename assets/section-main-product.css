@@ -284,6 +284,17 @@ a.product__text {
   margin-top: 0;
 }
 
+.product__text-information-box {
+  background-color: rgba(var(--color-foreground), 0.05);
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.product__text-information-box .product__text {
+  margin-bottom: 0;
+}
+
 .product__accordion .accordion__content {
   padding: 0 1rem;
 }
