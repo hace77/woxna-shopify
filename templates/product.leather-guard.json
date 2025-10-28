@@ -65,18 +65,10 @@
             "swatch_shape": "circle"
           }
         },
-        "text_E7giDU": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body",
-            "show_as_information_box": false
-          }
-        },
         "text_YRCQgw": {
           "type": "text",
           "settings": {
-            "text": "You receive a 10% discount as this item is currently being delivered without its standard cardboard box. Your Woxna saw will be shipped in a paper packaging.",
+            "text": "You receive a 10% discount as this item is currently being delivered without its standard cardboard box. Your Woxna saw will be shipped in a paper packaging. The discount is applied automatically in the cart.",
             "text_style": "small",
             "show_as_information_box": true
           }
@@ -95,7 +87,6 @@
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",
-        "text_E7giDU",
         "text_YRCQgw",
         "description"
       ],
