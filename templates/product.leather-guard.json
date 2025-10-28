@@ -77,7 +77,7 @@
           "type": "text",
           "settings": {
             "text": "You receive a 10% discount as this item is currently being delivered without its standard cardboard box. Your Woxna saw will be shipped in a paper packaging.",
-            "text_style": "body",
+            "text_style": "small",
             "show_as_information_box": true
           }
         },
