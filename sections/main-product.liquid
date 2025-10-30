@@ -264,6 +264,9 @@
                   {{ block.shopify_attributes }}
                 >
                   <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+                  {%- if block.settings.prefix_text != blank -%}
+                    <span>{{ block.settings.prefix_text }}</span>
+                  {%- endif -%}
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
               {%- when 'custom_liquid' -%}
@@ -974,6 +977,13 @@
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.sku.settings.text_style.label"
+        },
+        {
+          "type": "text",
+          "id": "prefix_text",
+          "label": "Prefix text",
+          "info": "Optional text to display before the SKU number",
+          "default": "SKU: "
         }
       ]
     },
