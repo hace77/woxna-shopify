@@ -16,6 +16,10 @@
           "type": "title",
           "settings": {}
         },
+        "rating_9GQd4q": {
+          "type": "rating",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -52,6 +56,7 @@
       },
       "block_order": [
         "title",
+        "rating_9GQd4q",
         "description",
         "price",
         "variant_picker",
