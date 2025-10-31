@@ -16,9 +16,11 @@
           "type": "title",
           "settings": {}
         },
-        "rating_9GQd4q": {
-          "type": "rating",
-          "settings": {}
+        "klaviyo_reviews_average_rating_k7UapD": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "description": {
           "type": "description",
@@ -56,7 +58,7 @@
       },
       "block_order": [
         "title",
-        "rating_9GQd4q",
+        "klaviyo_reviews_average_rating_k7UapD",
         "description",
         "price",
         "variant_picker",
