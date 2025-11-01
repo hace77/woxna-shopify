@@ -226,6 +226,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_rWbV3H": {
+      "type": "rich-text",
+      "blocks": {
+        "text_FphyU3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>För att vara säker på att din present kommer fram i tid så rekommenderar vi att vi lägger beställningen senast tisdag 4/11 om du bor långt norrut i landet eller vet med dig att postgången tar lite extra tid för att hinna fram till dig. För de allra flesta så kommer även beställningar som läggs på onsdagen att komma fram innan helgen! </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_FphyU3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -234,6 +257,7 @@
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
-    "collapsible_content_NJXAgd"
+    "collapsible_content_NJXAgd",
+    "rich_text_rWbV3H"
   ]
 }
