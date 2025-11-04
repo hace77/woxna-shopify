@@ -17,22 +17,29 @@
   }
 {%- endstyle -%}
 
-{%- assign retailers = page.metafields.custom.retailer_list.value -%}
 {%- assign countries = '' -%}
 {%- assign retailer_count = 0 -%}
 
-{%- comment -%} Collect all unique country values {%- endcomment -%}
-{%- for retailer in retailers -%}
-  {%- assign retailer_count = retailer_count | plus: 1 -%}
-  {%- assign country = retailer.country.value | strip -%}
-  {%- unless countries contains country -%}
-    {%- if countries == blank -%}
-      {%- assign countries = country -%}
-    {%- else -%}
-      {%- assign countries = countries | append: ',' | append: country -%}
+{%- comment -%} Use paginate to bypass 50-item limit - Shopify has a default 50-item limit for metaobject lists {%- endcomment -%}
+{%- paginate page.metafields.custom.retailer_list.value by 250 -%}
+  {%- assign retailers = page.metafields.custom.retailer_list.value -%}
+  {%- for retailer in retailers -%}
+    {%- assign retailer_count = retailer_count | plus: 1 -%}
+    {%- if retailer.country.value != blank and retailer.country.value != null -%}
+      {%- assign country = retailer.country.value | strip -%}
+      {%- if country != blank -%}
+        {%- assign countries_list = countries | split: ',' -%}
+        {%- unless countries_list contains country -%}
+          {%- if countries == blank -%}
+            {%- assign countries = country -%}
+          {%- else -%}
+            {%- assign countries = countries | append: ',' | append: country -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
     {%- endif -%}
-  {%- endunless -%}
-{%- endfor -%}
+  {%- endfor -%}
+{%- endpaginate -%}
 {%- assign countries = countries | split: ',' | sort -%}
 
 {%- comment -%} Move Sweden to the front if it exists {%- endcomment -%}
@@ -92,56 +99,56 @@
               {%- assign country_count = 0 -%}
               {%- for retailer in retailers -%}
                 {%- assign retailer_country = retailer.country.value | strip -%}
-                {%- if retailer_country == country -%}
+                {%- if retailer_country == country and retailer_country != blank -%}
                   {%- assign country_count = country_count | plus: 1 -%}
-                  <div class="retailer-card" 
-                       data-city="{{ retailer.city.value | strip | downcase }}"
-                       data-country="{{ country | downcase }}"
-                       data-name="{{ retailer.name.value | strip | downcase }}">
-                    {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
-                      <div class="retailer-card__logo">
-                        <img src="{{ retailer.logo.value | image_url: width: 200 }}" alt="{{ retailer.name.value }} logo" width="200" height="60" loading="lazy">
+                    <div class="retailer-card" 
+                         data-city="{{ retailer.city.value | strip | downcase }}"
+                         data-country="{{ country | downcase }}"
+                         data-name="{{ retailer.name.value | strip | downcase }}">
+                      {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
+                        <div class="retailer-card__logo">
+                          <img src="{{ retailer.logo.value | image_url: width: 200 }}" alt="{{ retailer.name.value }} logo" width="200" height="60" loading="lazy">
+                        </div>
+                      {%- endif -%}
+                      
+                      <div class="retailer-card__info">
+                        <h3 class="retailer-card__name">{{ retailer.name.value }}</h3>
+                        
+                        {%- if retailer.store_type.value != blank and retailer.store_type.value != null -%}
+                          <p class="retailer-card__store-type">
+                            {%- assign store_type = retailer.store_type.value | first | strip -%}
+                            {%- if store_type == 'Both' -%}
+                              {{ 'retailers.store_type.both' | t }}
+                            {%- elsif store_type == 'Physical Store' -%}
+                              {{ 'retailers.store_type.physical' | t }}
+                            {%- elsif store_type == 'Online Store' -%}
+                              {{ 'retailers.store_type.online' | t }}
+                            {%- else -%}
+                              {{ store_type }}
+                            {%- endif -%}
+                          </p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.address.value != blank and retailer.address.value != null -%}
+                          <p class="retailer-card__address">{{ retailer.address.value }}</p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.city.value != blank and retailer.city.value != null -%}
+                          <p class="retailer-card__city">{{ retailer.city.value }}</p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.store_url.value != blank and retailer.store_url.value != null -%}
+                          <a href="{{ retailer.store_url.value }}" class="retailer-card__link" target="_blank" rel="noopener">
+                            {%- if retailer.link_label.value != blank and retailer.link_label.value != null -%}
+                              {{ retailer.link_label.value }}
+                            {%- else -%}
+                              Visit Store
+                            {%- endif -%}
+                          </a>
+                        {%- endif -%}
                       </div>
-                    {%- endif -%}
-                    
-                    <div class="retailer-card__info">
-                      <h3 class="retailer-card__name">{{ retailer.name.value }}</h3>
-                      
-                      {%- if retailer.store_type.value != blank and retailer.store_type.value != null -%}
-                        <p class="retailer-card__store-type">
-                          {%- assign store_type = retailer.store_type.value | first | strip -%}
-                          {%- if store_type == 'Both' -%}
-                            {{ 'retailers.store_type.both' | t }}
-                          {%- elsif store_type == 'Physical Store' -%}
-                            {{ 'retailers.store_type.physical' | t }}
-                          {%- elsif store_type == 'Online Store' -%}
-                            {{ 'retailers.store_type.online' | t }}
-                          {%- else -%}
-                            {{ store_type }}
-                          {%- endif -%}
-                        </p>
-                      {%- endif -%}
-                      
-                      {%- if retailer.address.value != blank and retailer.address.value != null -%}
-                        <p class="retailer-card__address">{{ retailer.address.value }}</p>
-                      {%- endif -%}
-                      
-                      {%- if retailer.city.value != blank and retailer.city.value != null -%}
-                        <p class="retailer-card__city">{{ retailer.city.value }}</p>
-                      {%- endif -%}
-                      
-                      {%- if retailer.store_url.value != blank and retailer.store_url.value != null -%}
-                        <a href="{{ retailer.store_url.value }}" class="retailer-card__link" target="_blank" rel="noopener">
-                          {%- if retailer.link_label.value != blank and retailer.link_label.value != null -%}
-                            {{ retailer.link_label.value }}
-                          {%- else -%}
-                            Visit Store
-                          {%- endif -%}
-                        </a>
-                      {%- endif -%}
                     </div>
-                  </div>
-                {%- endif -%}
+                  {%- endif -%}
               {%- endfor -%}
               <script>
                 document.addEventListener('DOMContentLoaded', function() {
