@@ -32,10 +32,53 @@
         "text_KW7Vgx"
       ],
       "custom_css": [
-        "h2 {text-wrap: balance;}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Black-Week-Woxna-saw-header.jpg",
+        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_DfBJ89": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mJxxAt": {
+          "type": "heading",
+          "settings": {
+            "heading": "We rethink black friday!",
+            "heading_size": "h0"
+          }
+        },
+        "text_6kVURw": {
+          "type": "text",
+          "settings": {
+            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mJxxAt",
+        "text_6kVURw"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
+      ],
+      "name": "hero mobile",
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -169,6 +212,7 @@
         "buy_buttons_FWhEMf",
         "share_gc8dem"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "",
@@ -282,48 +326,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_4QGUTU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WheCrG": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_ehab3k": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In our first production batch, we received a selection of beautiful oak handles but some of them didn’t make it into production due to some minor visual quirks. We feel it’s a real shame to discard them so now we’ve given them a second chance and produced a small batch of saws with some extra character. There can be mismatches between the colors of the two handle halves or logotypes that are too light, too dark or unevenly burned into the handles. Apart from the visual quirks these saws are just as good as our other saws and available at a reduced price, exclusively for Black Week.</p>"
-          }
-        },
-        "button_DAx7b7": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_WheCrG",
-        "text_ehab3k",
-        "button_DAx7b7"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "video_D8khce": {
       "type": "video",
       "disabled": true,
@@ -385,13 +387,13 @@
   },
   "order": [
     "image_banner_ExBjAj",
+    "image_banner_DfBJ89",
     "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
     "featured_product_fDCRqU",
     "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
-    "rich_text_4QGUTU",
     "video_D8khce",
     "rich_text_4t7TPi"
   ]
