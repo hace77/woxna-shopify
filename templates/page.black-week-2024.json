@@ -15,14 +15,14 @@
         "heading_ArRxbY": {
           "type": "heading",
           "settings": {
-            "heading": "We rethink black friday!",
+            "heading": "Black Friday Offer",
             "heading_size": "h0"
           }
         },
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
+            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount.",
             "text_style": "subtitle"
           }
         }
@@ -99,7 +99,7 @@
         "heading": "Black friday starts in",
         "heading_size": "h1",
         "subheading": "",
-        "target_date": "2025-11-28",
+        "target_date": "2025-11-24",
         "target_time": "00:01",
         "timezone": "Europe/Stockholm",
         "expired_message": "This offer has ended",
@@ -126,6 +126,23 @@
       "settings": {
         "padding_top": 56,
         "padding_bottom": 28
+      }
+    },
+    "1762344156b2165261": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_Wm8BVq": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_Wm8BVq"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "rich_text_xmcgVm": {
@@ -382,23 +399,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "1762344156b2165261": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_Wm8BVq": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_Wm8BVq"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
