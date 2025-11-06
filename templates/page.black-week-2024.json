@@ -248,14 +248,16 @@
       ],
       "custom_css": [
         ".accelerated-checkout-button {display: none !important;}",
-        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}"
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "woxna-hand-stamped-logo-t-shirt",
         "color_scheme": "",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "left",
