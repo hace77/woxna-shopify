@@ -246,6 +246,10 @@
         "buy_buttons_FWhEMf",
         "share_gc8dem"
       ],
+      "custom_css": [
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}"
+      ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "woxna-hand-stamped-logo-t-shirt",
