@@ -250,7 +250,8 @@
         ".accelerated-checkout-button {display: none !important;}",
         "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
         "#more-payment-options-link {display: none;}",
-        ".share-button__button,.share-button__fallback button {display: none;}"
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
@@ -316,7 +317,7 @@
         "slide_YBrYwM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
+            "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -328,6 +329,24 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_D4Bmxd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_3.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -352,6 +371,7 @@
       },
       "block_order": [
         "slide_YBrYwM",
+        "slide_D4Bmxd",
         "slide_ByPUnR"
       ],
       "settings": {
