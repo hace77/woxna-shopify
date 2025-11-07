@@ -205,6 +205,26 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
+        "image_3FYifX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gnarp-first-page.jpg",
+            "img_link": "shopify://collections/foldable-saws",
+            "show_text_overlay": true,
+            "heading": "Buy Any Saw, Get a Gnarp for Free!",
+            "vertical_position": "top",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "hxl",
+            "mobile_heading_size": "h1",
+            "description": "This weekend we turn one year old and we celebrate with a Anniversary Deal!",
+            "description_style": "body",
+            "button_label": "Find your saw",
+            "button_link": "shopify://collections/foldable-saws",
+            "button_style_secondary": false
+          }
+        },
         "image_UdTHzh": {
           "type": "image",
           "settings": {
@@ -216,7 +236,7 @@
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
             "mobile_text_alignment": "right",
-            "heading_size": "hxl",
+            "heading_size": "h1",
             "mobile_heading_size": "h1",
             "description": "Finally back in stock!",
             "description_style": "body",
@@ -244,32 +264,12 @@
             "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
             "button_style_secondary": false
           }
-        },
-        "image_3FYifX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Woxna_Start_Page_01.jpg",
-            "img_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
-            "show_text_overlay": true,
-            "heading": "Gnarp",
-            "vertical_position": "top",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "right",
-            "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Multi leather guard",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
+        "image_3FYifX",
         "image_UdTHzh",
-        "image_fA3Dgi",
-        "image_3FYifX"
+        "image_fA3Dgi"
       ],
       "custom_css": [
         ".restock-rocket-preorder-badge {display: none;}"
