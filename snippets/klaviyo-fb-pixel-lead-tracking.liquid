@@ -4,50 +4,86 @@
 {%- endcomment -%}
 <script>
   (function() {
+    let leadTracked = false; // Prevent duplicate tracking
+    
     // Function to track lead event
     function trackLead() {
+      if (leadTracked) {
+        console.log('Lead already tracked, skipping duplicate');
+        return;
+      }
+      
       if (typeof fbq !== 'undefined') {
         fbq('track', 'Lead');
-        console.log('Facebook Pixel Lead event fired');
+        leadTracked = true;
+        console.log('✅ Facebook Pixel Lead event fired successfully');
       } else {
-        console.warn('Facebook Pixel (fbq) is not loaded');
+        console.warn('⚠️ Facebook Pixel (fbq) is not loaded');
       }
     }
 
-    // Method 1: Listen for Klaviyo form submission events
-    document.addEventListener('klaviyoForms', function(e) {
-      if (e.detail && e.detail.type === 'submit' && e.detail.formId) {
-        trackLead();
-      }
-    });
-
-    // Method 2: Listen for Klaviyo form success events via postMessage
-    window.addEventListener('message', function(e) {
-      if (e.data && typeof e.data === 'object') {
-        // Check for Klaviyo form success messages
-        if (e.data.meta && e.data.meta.method === 'subscribe' && e.data.meta.status === 'success') {
-          trackLead();
-        }
-      }
-    });
-
-    // Method 3: Monitor for form submission success indicators
+    // Enhanced detection function
     function setupKlaviyoFormTracking() {
+      console.log('🔍 Setting up Klaviyo form tracking...');
+      
       // Find all Klaviyo form containers on this page
       const klaviyoForms = document.querySelectorAll('[class*="klaviyo-form-"]');
+      console.log('📋 Found', klaviyoForms.length, 'Klaviyo form(s)');
       
-      klaviyoForms.forEach(function(formContainer) {
-        // Listen for success messages within the form
+      if (klaviyoForms.length === 0) {
+        console.warn('⚠️ No Klaviyo forms found on page');
+        return;
+      }
+      
+      klaviyoForms.forEach(function(formContainer, index) {
+        console.log('🔧 Setting up tracking for form', index + 1);
+        
+        // Method 1: Listen for form submit button clicks
+        const submitButtons = formContainer.querySelectorAll('button[type="submit"], input[type="submit"], button:not([type])');
+        submitButtons.forEach(function(button) {
+          button.addEventListener('click', function(e) {
+            console.log('🖱️ Form submit button clicked');
+            // Wait a bit for the form to process
+            setTimeout(function() {
+              trackLead();
+            }, 1500);
+          }, { once: true });
+        });
+
+        // Method 2: Listen for form submit events
+        const form = formContainer.querySelector('form');
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            console.log('📤 Form submit event detected');
+            // Wait for form processing
+            setTimeout(function() {
+              trackLead();
+            }, 1500);
+          }, { once: true });
+        }
+
+        // Method 3: Monitor DOM for success messages
         const observer = new MutationObserver(function(mutations) {
           mutations.forEach(function(mutation) {
             mutation.addedNodes.forEach(function(node) {
               if (node.nodeType === 1) { // Element node
-                // Check for success indicators
-                if (node.classList && (
-                  node.classList.contains('success_message') ||
-                  node.classList.contains('klaviyo-success') ||
-                  node.textContent && node.textContent.toLowerCase().includes('success')
-                )) {
+                const nodeText = node.textContent ? node.textContent.toLowerCase() : '';
+                const nodeClass = node.className ? node.className.toLowerCase() : '';
+                
+                // Check for various success indicators
+                if (
+                  nodeClass.includes('success') ||
+                  nodeClass.includes('thank') ||
+                  nodeText.includes('success') ||
+                  nodeText.includes('thank you') ||
+                  nodeText.includes('subscribed') ||
+                  nodeText.includes('tack') || // Swedish "thank you"
+                  node.querySelector && (
+                    node.querySelector('[class*="success"]') ||
+                    node.querySelector('[class*="thank"]')
+                  )
+                ) {
+                  console.log('✅ Success message detected:', node);
                   trackLead();
                 }
               }
@@ -58,48 +94,64 @@
         // Observe the form container for changes
         observer.observe(formContainer, {
           childList: true,
-          subtree: true
+          subtree: true,
+          characterData: true,
+          attributes: true
         });
 
-        // Also listen for form submit events directly
-        const form = formContainer.querySelector('form');
-        if (form) {
-          form.addEventListener('submit', function(e) {
-            // Use a small delay to ensure the form submission is successful
-            setTimeout(function() {
-              // Check if success message appeared
-              const successMsg = formContainer.querySelector('.success_message, .klaviyo-success, [class*="success"]');
-              if (successMsg) {
-                trackLead();
-              }
-            }, 1000);
-          });
-        }
+        // Method 4: Check for iframe messages (Klaviyo forms sometimes use iframes)
+        window.addEventListener('message', function(e) {
+          if (e.data && typeof e.data === 'object') {
+            console.log('📨 Received message:', e.data);
+            // Check for Klaviyo success messages
+            if (
+              (e.data.meta && e.data.meta.method === 'subscribe' && e.data.meta.status === 'success') ||
+              (e.data.type === 'klaviyo' && e.data.status === 'success') ||
+              (e.data.klaviyo && e.data.klaviyo.status === 'success')
+            ) {
+              console.log('✅ Klaviyo success message received');
+              trackLead();
+            }
+          }
+        });
       });
     }
 
+    // Method 5: Listen for Klaviyo custom events
+    document.addEventListener('klaviyoForms', function(e) {
+      console.log('📬 Klaviyo form event:', e);
+      if (e.detail) {
+        console.log('Event details:', e.detail);
+        if (e.detail.type === 'submit' || e.detail.type === 'success') {
+          trackLead();
+        }
+      }
+    });
+
     // Initialize when DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', setupKlaviyoFormTracking);
-    } else {
+    function init() {
       setupKlaviyoFormTracking();
+      
+      // Also check periodically for dynamically loaded Klaviyo forms
+      let attempts = 0;
+      const checkInterval = setInterval(function() {
+        attempts++;
+        const klaviyoForms = document.querySelectorAll('[class*="klaviyo-form-"]');
+        if (klaviyoForms.length > 0) {
+          console.log('🔄 Re-checking forms, found', klaviyoForms.length);
+          setupKlaviyoFormTracking();
+        }
+        if (attempts >= 20) { // Stop after 10 seconds (20 * 500ms)
+          clearInterval(checkInterval);
+        }
+      }, 500);
     }
 
-    // Also check periodically for dynamically loaded Klaviyo forms
-    // (in case forms are loaded via AJAX after page load)
-    let checkInterval = setInterval(function() {
-      const klaviyoForms = document.querySelectorAll('[class*="klaviyo-form-"]');
-      if (klaviyoForms.length > 0) {
-        setupKlaviyoFormTracking();
-        // Clear interval after forms are found
-        clearInterval(checkInterval);
-      }
-    }, 500);
-
-    // Stop checking after 10 seconds
-    setTimeout(function() {
-      clearInterval(checkInterval);
-    }, 10000);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   })();
 </script>
 
