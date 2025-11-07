@@ -44,6 +44,11 @@
 
     {{ content_for_header }}
 
+    {%- comment -%} Facebook Pixel Lead Tracking for Klaviyo Forms on Black Friday page {%- endcomment -%}
+    {%- if template.name == 'page' and (page.handle == 'black-friday-2025' or template.suffix == 'black-week-2024') -%}
+      {% render 'klaviyo-fb-pixel-lead-tracking' %}
+    {%- endif -%}
+
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
