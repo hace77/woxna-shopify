@@ -149,7 +149,7 @@
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "name": "Klaviyo Embedded Form en",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
+            "formId": ""
           }
         }
       },
@@ -183,6 +183,7 @@
         "heading_JrQexk",
         "text_3ErEKB"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -246,6 +247,7 @@
         "buy_buttons_FWhEMf",
         "share_gc8dem"
       ],
+      "disabled": true,
       "custom_css": [
         ".accelerated-checkout-button {display: none !important;}",
         "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
@@ -302,6 +304,7 @@
         "text_GyNWxU",
         "button_GQJCdi"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -374,6 +377,7 @@
         "slide_D4Bmxd",
         "slide_ByPUnR"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -434,6 +438,53 @@
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_mR6qGN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_czgQJg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_Hw9gEi": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_Q9L9ci": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_czgQJg",
+        "text_Hw9gEi",
+        "button_Q9L9ci"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -455,6 +506,7 @@
     "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
     "video_D8khce",
-    "rich_text_4t7TPi"
+    "rich_text_4t7TPi",
+    "rich_text_mR6qGN"
   ]
 }
