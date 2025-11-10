@@ -205,26 +205,6 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
-        "image_3FYifX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/gnarp-first-page.jpg",
-            "img_link": "shopify://collections/foldable-saws",
-            "show_text_overlay": true,
-            "heading": "Buy Any Saw, Get a Gnarp for Free!",
-            "vertical_position": "top",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "center",
-            "heading_size": "hxl",
-            "mobile_heading_size": "h1",
-            "description": "This weekend we turn one year old and we celebrate with a Anniversary Deal! Just add a Gnarp to the cart and get it for free",
-            "description_style": "body",
-            "button_label": "Find your saw",
-            "button_link": "shopify://collections/foldable-saws",
-            "button_style_secondary": false
-          }
-        },
         "image_UdTHzh": {
           "type": "image",
           "settings": {
@@ -242,6 +222,26 @@
             "description_style": "body",
             "button_label": "Buy it now",
             "button_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
+            "button_style_secondary": false
+          }
+        },
+        "image_3FYifX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gnarp-first-page.jpg",
+            "img_link": "shopify://collections/foldable-saws",
+            "show_text_overlay": true,
+            "heading": "Buy Any Saw, Get a Gnarp for Free!",
+            "vertical_position": "top",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "hxl",
+            "mobile_heading_size": "h1",
+            "description": "This weekend we turn one year old and we celebrate with a Anniversary Deal! Just add a Gnarp to the cart and get it for free",
+            "description_style": "body",
+            "button_label": "Find your saw",
+            "button_link": "shopify://collections/foldable-saws",
             "button_style_secondary": false
           }
         },
@@ -267,8 +267,8 @@
         }
       },
       "block_order": [
-        "image_3FYifX",
         "image_UdTHzh",
+        "image_3FYifX",
         "image_fA3Dgi"
       ],
       "custom_css": [
