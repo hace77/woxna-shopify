@@ -228,19 +228,19 @@
         "image_3FYifX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/gnarp-first-page.jpg",
-            "img_link": "shopify://collections/foldable-saws",
+            "image": "shopify://shop_images/Woxna-T-shirt-1.jpg",
+            "img_link": "shopify://products/woxna-hand-stamped-logo-t-shirt",
             "show_text_overlay": true,
-            "heading": "Buy Any Saw, Get a Gnarp for Free!",
-            "vertical_position": "top",
+            "heading": "Get Your Woxna Style Going!",
+            "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "center",
-            "heading_size": "hxl",
+            "heading_size": "h2",
             "mobile_heading_size": "h1",
-            "description": "This weekend we turn one year old and we celebrate with a Anniversary Deal! Just add a Gnarp to the cart and get it for free",
+            "description": "Get Woxnas Hand stamped t-shirt. Made from soft organic cotton.",
             "description_style": "body",
-            "button_label": "Find your saw",
+            "button_label": "Shop T-Shirts",
             "button_link": "shopify://collections/foldable-saws",
             "button_style_secondary": false
           }
