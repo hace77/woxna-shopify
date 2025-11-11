@@ -756,6 +756,7 @@
         "heading_K7chGp",
         "text_QaVm7H"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,li,p {text-align: left;}"
       ],
@@ -803,6 +804,7 @@
         "text_XLRz8T",
         "buttons_dRLaYe"
       ],
+      "disabled": true,
       "name": "measurments",
       "settings": {
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
@@ -874,50 +876,6 @@
         "padding_bottom": 60
       }
     },
-    "rich_text_ji3RVR": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Gnc8NC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Contact and Support",
-            "heading_size": "h1"
-          }
-        },
-        "text_Kqm3hA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
-          }
-        },
-        "button_cXrCX8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Support",
-            "button_link": "shopify://pages/support",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Gnc8NC",
-        "text_Kqm3hA",
-        "button_cXrCX8"
-      ],
-      "disabled": true,
-      "name": "contact and support",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "1730798421bc6bee16": {
       "type": "apps",
       "blocks": {
@@ -939,99 +897,6 @@
         "include_margins": true
       }
     },
-    "rich_text_QkwfpV": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LTX3M7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TdaeQM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_qxwfAc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTX3M7",
-        "text_TdaeQM",
-        "button_qxwfAc"
-      ],
-      "disabled": true,
-      "name": "Sustainability",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 68,
-        "padding_bottom": 76
-      }
-    },
-    "image_with_text_j83Eef": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zwyMCT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Produced with Quality and Tradition",
-            "heading_size": "h1"
-          }
-        },
-        "text_gMpi8E": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_tCkADX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our production",
-            "button_link": "shopify://pages/made-in-sweden",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_zwyMCT",
-        "text_gMpi8E",
-        "button_tCkADX"
-      ],
-      "disabled": true,
-      "name": "quality and tradition",
-      "settings": {
-        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -1049,6 +914,24 @@
         "columns_mobile": "1",
         "padding_top": 28,
         "padding_bottom": 36
+      }
+    },
+    "variant_text_display_ak4gNc": {
+      "type": "variant-text-display",
+      "name": "Variant Text Display",
+      "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech Specs",
+        "heading_size": "h1",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -1073,10 +956,8 @@
     "rich_text_zL8t7g",
     "image_banner_8zaQaf",
     "collapsible_content_gEpGHP",
-    "rich_text_ji3RVR",
     "1730798421bc6bee16",
-    "rich_text_QkwfpV",
-    "image_with_text_j83Eef",
-    "related-products"
+    "related-products",
+    "variant_text_display_ak4gNc"
   ]
 }
