@@ -88,12 +88,17 @@
       {% endif %}
       {% if option_disabled %}
         class="disabled"
+        disabled
       {% endif %}
       {{ input_dataset }}
     >
     <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
+      {%- if option_disabled -%}
+        {{- 'products.product.value_unavailable' | t: option_value: value -}}
+      {%- else -%}
+        {{ value -}}
+        {{ label_unavailable }}
+      {%- endif -%}
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
