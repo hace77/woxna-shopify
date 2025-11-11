@@ -925,7 +925,7 @@
         "heading": "Tech Specs",
         "heading_size": "h1",
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "show_fallback": false,
