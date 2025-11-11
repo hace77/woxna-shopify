@@ -31,6 +31,7 @@
         "heading_ArRxbY",
         "text_KW7Vgx"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
         "@media (min-width: 749px) {.banner__content {align-items: end; }}"
@@ -72,6 +73,7 @@
         "heading_mJxxAt",
         "text_6kVURw"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: start; }}"
