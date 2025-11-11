@@ -337,6 +337,16 @@
             </style>
           {% endif %}
 
+        {% if template.name == 'page' and template.suffix == 'blackweek-no-header' %}
+          <style>
+            .announcement-bar,
+            .header-wrapper,
+            footer.footer {
+              display: none !important;
+            }
+          </style>
+        {% endif %}
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
