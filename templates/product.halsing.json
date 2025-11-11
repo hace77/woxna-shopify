@@ -1,0 +1,1082 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "klaviyo_reviews_average_rating_ircKrJ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_9Km4Ji": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+          }
+        },
+        "icon_with_text_GbTykW": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "box",
+            "heading_1": "Free Shipping Over 100 USD/EUR",
+            "icon_2": "star",
+            "heading_2": "Limited Lifetime Warranty",
+            "icon_3": "map_pin",
+            "heading_3": "Proudly Made in Sweden"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "klaviyo_reviews_average_rating_ircKrJ",
+        "judge_me_reviews_preview_badge_VG7pPA",
+        "price",
+        "buy_buttons",
+        "custom_liquid_9Km4Ji",
+        "icon_with_text_GbTykW",
+        "variant_picker",
+        "description"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}",
+        ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
+        ".product__title h1 {font-size: 24px;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Woxnaproduct.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_k7EFPc": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "#custom-nav {margin: auto; width: 90%;}",
+        "#custom-nav ul {display: flex; justify-content: center; gap: 5%; padding: 0;}",
+        "#custom-nav li {list-style: none; display: inline-block;}",
+        ".horizontal li a {display: inline-block; color: black; text-align: center; text-decoration: none;}",
+        ".horizontal li a:hover {text-decoration: underline;}"
+      ],
+      "name": "Custom menu",
+      "settings": {
+        "custom_liquid": "<div id=\"custom-nav\">\n<ul class=\"horizontal\">\n  <li><a href=\"#shopify-section-template--24677230215511__image_with_text_tqyCxz\">Features</a></li>\n  <li><a href=\"#shopify-section-template--24677230215511__rich_text_zL8t7g\">Tech specs</a></li>\n  <li><a href=\"#judgeme_product_reviews\">Reviews</a></li>\n</ul>\n</div>",
+        "color_scheme": "scheme-2",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "image_banner_ajHV6U": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_C7z8Le": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.preamble.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_rBXVdh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.preamble.value.single_line_ingress.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_C7z8Le",
+        "text_rBXVdh"
+      ],
+      "name": "Preamble",
+      "settings": {
+        "image": "{{ product.metafields.custom.preamble.value.image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_WDee4N": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_WDee4N"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_with_text_tqyCxz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RcAN3m": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.blade_material.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_bb84ap": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.blade_material.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_ffLMpw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our steel",
+            "button_link": "https://woxna.com/pages/steel",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RcAN3m",
+        "text_bb84ap",
+        "button_ffLMpw"
+      ],
+      "name": "No more rusty blades",
+      "settings": {
+        "image": "{{ product.metafields.custom.blade_material.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_KMfkxH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mKwPqb": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.tpi.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_4W6aek": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.tpi.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mKwPqb",
+        "text_4W6aek"
+      ],
+      "name": "TPI",
+      "settings": {
+        "image": "{{ product.metafields.custom.tpi.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_khWpzV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JYTVpp": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.grind.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_CBAyN9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.grind.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JYTVpp",
+        "text_CBAyN9"
+      ],
+      "name": "Grind",
+      "settings": {
+        "image": "{{ product.metafields.custom.grind.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_RzkRHW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yKMnwV": {
+          "type": "heading",
+          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
+          "settings": {
+            "heading": "{{ product.metafields.custom.profile_or_setting.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_rVMxjf": {
+          "type": "text",
+          "source": "{{ product.metafields.custom.profile_or_setting.value }}",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.profile_or_setting.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKMnwV",
+        "text_rVMxjf"
+      ],
+      "name": "Clean cuts",
+      "settings": {
+        "image": "{{ product.metafields.custom.profile_or_setting.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_zGRdRF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mEhdkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.review | metafield_text: field: 'quote' }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_n3W6pk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEhdkL",
+        "text_n3W6pk"
+      ],
+      "name": "Review quote",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_JLf43q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_F9zFHC": {
+          "type": "heading",
+          "source": "{{ product.metafields.custom.transport.value }}",
+          "settings": {
+            "heading": "{{ product.metafields.custom.transport.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_YcJy3D": {
+          "type": "text",
+          "source": "{{ product.metafields.custom.transport.value }}",
+          "settings": {
+            "text": "{{ product.metafields.custom.transport.value.text | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_F9zFHC",
+        "text_YcJy3D"
+      ],
+      "name": "Transport",
+      "settings": {
+        "image": "{{ product.metafields.custom.transport.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_khyK4k": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cAD7JP": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_1.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jTwAyD": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_2.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_M64mw7": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.handles.value.image_3.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cAD7JP",
+        "slide_jTwAyD",
+        "slide_M64mw7"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_J4ppHw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LFcadc": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.handles.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_4CCNhj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LFcadc",
+        "text_4CCNhj"
+      ],
+      "name": "handles",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_WwtiGJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YQyT46": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.story.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_PwPdeV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.story.value.text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_rfrV8p": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YQyT46",
+        "text_PwPdeV",
+        "button_rfrV8p"
+      ],
+      "name": "Story",
+      "settings": {
+        "image": "{{ product.metafields.custom.story.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_wm6hdw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_bGgX4h": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_REjKkX": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image_2.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_KRAgzz": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ product.metafields.custom.packaging.value.image_3.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bGgX4h",
+        "slide_REjKkX",
+        "slide_KRAgzz"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Images of our packaging"
+      }
+    },
+    "rich_text_cb6emk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KnR9NP": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.packaging.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_CBqpGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KnR9NP",
+        "text_CBqpGQ"
+      ],
+      "name": "Packaging",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_7GmfxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XzRK9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.feature.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "button_dVbPng": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_crzTjK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzRK9B",
+        "button_dVbPng",
+        "text_crzTjK"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
+      ],
+      "name": "Feauters",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_zL8t7g": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_K7chGp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tech Spec",
+            "heading_size": "h0"
+          }
+        },
+        "text_QaVm7H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Teeth per inch: {{ product.metafields.custom.grind_.value }} TPI</p><p>Grind: 3-phase grind</p><p>Hardening: {{ product.metafields.custom.hardening.value }}</p><p>Saw direction: {{ product.metafields.custom.saw_direction.value }}</p><p>Blade material: {{ product.metafields.custom.blade_material_tech_spec_.value }}</p><p>Handle material: {{ product.metafields.custom.handle_material.value }}</p><p>Blade thickness: {{ product.metafields.custom.blade_thickness.value }} mm (before concave grind)</p><p>Blade profile: {{ product.metafields.custom.blade_profile.value }}</p><p>Teeth setting: {{ product.metafields.custom.teeth_setting.value }}</p><p></p><p><strong>Measurements</strong></p><p>Blade length: {{ product.metafields.custom.blade_length_mm_ | metafield_tag }} / {{ product.metafields.custom.blade_length_inch_ | metafield_tag }}</p><p>Length, unfolded: {{ product.metafields.custom.length_mm_ | metafield_tag }} / {{ product.metafields.custom.length_inch_ | metafield_tag }}</p><p>Length, folded: {{ product.metafields.custom.length_folded_mm_ | metafield_tag }} / {{ product.metafields.custom.length_folded_inch_ | metafield_tag }}</p><p>Weight: {{ product.metafields.custom.weight_g_ | metafield_tag }} / {{ product.metafields.custom.weight_oz_ | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_K7chGp",
+        "text_QaVm7H"
+      ],
+      "custom_css": [
+        "h2,li,p {text-align: left;}"
+      ],
+      "name": "tech spec",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_8zaQaf": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_paPnxR": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_XLRz8T": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_dRLaYe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_paPnxR",
+        "text_XLRz8T",
+        "buttons_dRLaYe"
+      ],
+      "name": "measurments",
+      "settings": {
+        "image": "{{ product.metafields.custom.measurement_illustration.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "collapsible_content_gEpGHP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_JiRKKg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Choose Size",
+            "icon": "ruler",
+            "row_content": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WRMnDt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Choose Model",
+            "icon": "star",
+            "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Qh76JD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Care and Maintanance",
+            "icon": "clipboard",
+            "row_content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_JiRKKg",
+        "collapsible_row_WRMnDt",
+        "collapsible_row_Qh76JD"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
+      ],
+      "name": "Choose",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 52,
+        "padding_bottom": 60
+      }
+    },
+    "rich_text_ji3RVR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gnc8NC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact and Support",
+            "heading_size": "h1"
+          }
+        },
+        "text_Kqm3hA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
+          }
+        },
+        "button_cXrCX8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Support",
+            "button_link": "shopify://pages/support",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gnc8NC",
+        "text_Kqm3hA",
+        "button_cXrCX8"
+      ],
+      "disabled": true,
+      "name": "contact and support",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1730798421bc6bee16": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_JqyKyw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_JqyKyw"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_QkwfpV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LTX3M7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability First",
+            "heading_size": "h1"
+          }
+        },
+        "text_TdaeQM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
+          }
+        },
+        "button_qxwfAc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our green intentions",
+            "button_link": "shopify://pages/sustainablilty",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LTX3M7",
+        "text_TdaeQM",
+        "button_qxwfAc"
+      ],
+      "disabled": true,
+      "name": "Sustainability",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 76
+      }
+    },
+    "image_with_text_j83Eef": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zwyMCT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produced with Quality and Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_gMpi8E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tCkADX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our production",
+            "button_link": "shopify://pages/made-in-sweden",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zwyMCT",
+        "text_gMpi8E",
+        "button_tCkADX"
+      ],
+      "disabled": true,
+      "name": "quality and tradition",
+      "settings": {
+        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BCbL4d",
+    "custom_liquid_k7EFPc",
+    "image_banner_ajHV6U",
+    "1730797907a66336cc",
+    "image_with_text_tqyCxz",
+    "image_with_text_KMfkxH",
+    "image_with_text_khWpzV",
+    "image_with_text_RzkRHW",
+    "rich_text_zGRdRF",
+    "image_with_text_JLf43q",
+    "slideshow_khyK4k",
+    "rich_text_J4ppHw",
+    "image_with_text_WwtiGJ",
+    "slideshow_wm6hdw",
+    "rich_text_cb6emk",
+    "rich_text_7GmfxC",
+    "rich_text_zL8t7g",
+    "image_banner_8zaQaf",
+    "collapsible_content_gEpGHP",
+    "rich_text_ji3RVR",
+    "1730798421bc6bee16",
+    "rich_text_QkwfpV",
+    "image_with_text_j83Eef",
+    "related-products"
+  ]
+}
