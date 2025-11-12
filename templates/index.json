@@ -201,7 +201,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Foldable-saw-Halsing-bushcrafting.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
+            "img_link": "shopify://products/halsing-foldable-saw",
             "show_text_overlay": true,
             "heading": "Hälsing 250",
             "vertical_position": "bottom",
@@ -213,7 +213,7 @@
             "description": "Power, Tradition, Full Length",
             "description_style": "body",
             "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-250-mm-oak-hcs",
+            "button_link": "shopify://products/halsing-foldable-saw",
             "button_style_secondary": false
           }
         }
