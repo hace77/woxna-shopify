@@ -45,11 +45,11 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_9Km4Ji": {
-          "type": "custom_liquid",
-          "name": "SKU number",
+        "sku_MxgBeJ": {
+          "type": "sku",
           "settings": {
-            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+            "text_style": "body",
+            "prefix_text": "SKU:"
           }
         },
         "icon_with_text_GbTykW": {
@@ -76,7 +76,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "custom_liquid_9Km4Ji",
+        "sku_MxgBeJ",
         "icon_with_text_GbTykW",
         "description"
       ],
