@@ -26,6 +26,13 @@ if (!customElements.get('product-info')) {
         );
 
         this.initQuantityHandlers();
+        
+        // Filter media on initial load
+        setTimeout(() => {
+          this.filterMediaByVariantOptions();
+          this.filterModalMediaByVariantOptions();
+        }, 100);
+        
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
 
@@ -240,6 +247,93 @@ if (!customElements.get('product-info')) {
         document.querySelectorAll(selectors).forEach(({ classList }) => classList.add('hidden'));
       }
 
+      /**
+       * Get selected option value strings from variant picker
+       * Returns array of option values like ["250mm", "Oak"]
+       */
+      getSelectedOptionValueStrings() {
+        const variantSelects = this.variantSelectors;
+        if (!variantSelects) return [];
+
+        const selectedValues = [];
+        variantSelects.querySelectorAll('select option[selected], fieldset input:checked').forEach((input) => {
+          const value = input.value || input.textContent.trim();
+          if (value) selectedValues.push(value);
+        });
+
+        return selectedValues;
+      }
+
+      /**
+       * Filter media items based on variant option values matching alt text
+       * If no variant is selected or no images have alt text, show all images
+       */
+      filterMediaByVariantOptions() {
+        const selectedOptionValues = this.getSelectedOptionValueStrings();
+        const mediaGallery = this.querySelector('media-gallery');
+        if (!mediaGallery) return;
+
+        // If no variant options selected, show all images
+        if (selectedOptionValues.length === 0) {
+          const allItems = mediaGallery.querySelectorAll('li[data-media-id], li[data-media-alt]');
+          allItems.forEach((item) => {
+            item.style.display = '';
+          });
+          return;
+        }
+
+        // Build variant string from selected options (e.g., "250mm Oak" or "250mm-Oak")
+        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
+        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
+
+        // Get all media items (both gallery and thumbnails)
+        const galleryItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
+        const thumbnailItems = mediaGallery.querySelectorAll('ul.thumbnail-list li[data-media-alt]');
+
+        // Filter gallery items
+        galleryItems.forEach((item) => {
+          const altText = item.dataset.mediaAlt;
+          if (!altText) {
+            // If no alt text, show the image (fallback to original behavior)
+            item.style.display = '';
+            return;
+          }
+
+          const altLower = altText.toLowerCase();
+          // Show if alt text contains any of the selected variant option values
+          // This allows partial matching (e.g., "250 mm" matches when "250 mm" + "Oak" is selected)
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          // Check if all words in alt text are found in selected values
+          // This means if alt is "250 mm" and selected is "250 mm oak", it will match
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
+
+        // Filter thumbnail items
+        thumbnailItems.forEach((item) => {
+          const altText = item.dataset.mediaAlt;
+          if (!altText) {
+            item.style.display = '';
+            return;
+          }
+
+          const altLower = altText.toLowerCase();
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
+      }
+
       updateMedia(html, variantFeaturedMediaId) {
         if (!variantFeaturedMediaId) return;
 
@@ -305,10 +399,57 @@ if (!customElements.get('product-info')) {
           true
         );
 
+        // Filter media by variant options (multiple images per variant feature)
+        this.filterMediaByVariantOptions();
+
         // update media modal
         const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
         const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
-        if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+        if (modalContent && newModalContent) {
+          modalContent.innerHTML = newModalContent.innerHTML;
+          // Also filter modal images
+          this.filterModalMediaByVariantOptions();
+        }
+      }
+
+      /**
+       * Filter media modal images based on variant option values
+       */
+      filterModalMediaByVariantOptions() {
+        const selectedOptionValues = this.getSelectedOptionValueStrings();
+        const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
+        if (!modalContent) return;
+
+        // If no variant options selected, show all images
+        if (selectedOptionValues.length === 0) {
+          const allItems = modalContent.querySelectorAll('.product__media-item[data-media-alt]');
+          allItems.forEach((item) => {
+            item.style.display = '';
+          });
+          return;
+        }
+
+        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
+        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
+
+        const modalItems = modalContent.querySelectorAll('.product__media-item[data-media-alt]');
+        modalItems.forEach((item) => {
+          const altText = item.dataset.mediaAlt;
+          if (!altText) {
+            item.style.display = '';
+            return;
+          }
+
+          const altLower = altText.toLowerCase();
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
       }
 
       updateVariantMetafields(html) {
