@@ -30,7 +30,8 @@ if (!customElements.get('product-info')) {
         // Filter media on initial load
         setTimeout(() => {
           this.filterMediaByVariantOptions();
-          this.filterModalMediaByVariantOptions();
+          // Note: Modal content is NOT filtered - it shows all images regardless of variant
+          // This prevents the white screen issue on mobile when opening the lightbox
         }, 100);
         
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
@@ -273,11 +274,17 @@ if (!customElements.get('product-info')) {
         const mediaGallery = this.querySelector('media-gallery');
         if (!mediaGallery) return;
 
+        // IMPORTANT: Never filter modal content - only filter the main gallery
+        // Modal content should always show all images to prevent white screen issues
+
         // If no variant options selected, show all images
         if (selectedOptionValues.length === 0) {
-          const allItems = mediaGallery.querySelectorAll('li[data-media-id]');
+          const allItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
           allItems.forEach((item) => {
-            item.style.display = '';
+            // Only affect gallery items, not modal content
+            if (!item.closest('.product-media-modal__content')) {
+              item.style.display = '';
+            }
           });
           return;
         }
@@ -288,6 +295,7 @@ if (!customElements.get('product-info')) {
 
         // Get all media items (both gallery and thumbnails)
         // Select all items with data-media-id, not just those with data-media-alt
+        // IMPORTANT: Only select items within media-gallery, NOT modal content
         const galleryItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
         const thumbnailItems = mediaGallery.querySelectorAll('ul.thumbnail-list li[data-target]');
 
@@ -301,6 +309,11 @@ if (!customElements.get('product-info')) {
 
         // Filter gallery items - hide those that don't match
         galleryItems.forEach((item) => {
+          // IMPORTANT: Skip modal content - never filter modal items
+          if (item.closest('.product-media-modal__content')) {
+            return;
+          }
+
           // Check if item has data-media-alt attribute
           const hasAltAttribute = item.hasAttribute('data-media-alt');
           if (!hasAltAttribute) {
@@ -347,6 +360,11 @@ if (!customElements.get('product-info')) {
 
         // Filter thumbnail items - hide those that don't match
         thumbnailItems.forEach((item) => {
+          // IMPORTANT: Skip modal content - never filter modal items
+          if (item.closest('.product-media-modal__content')) {
+            return;
+          }
+
           // Check if item has data-media-alt attribute
           const hasAltAttribute = item.hasAttribute('data-media-alt');
           if (!hasAltAttribute) {
@@ -461,8 +479,8 @@ if (!customElements.get('product-info')) {
         const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
         if (modalContent && newModalContent) {
           modalContent.innerHTML = newModalContent.innerHTML;
-          // Also filter modal images
-          this.filterModalMediaByVariantOptions();
+          // Note: Modal content is NOT filtered - it shows all images regardless of variant
+          // This prevents the white screen issue on mobile when opening the lightbox
         }
       }
 
