@@ -78,14 +78,16 @@ if (!customElements.get('product-modal')) {
             const originalUrl = originalMatch[1];
             const originalWidth = parseInt(originalMatch[2]);
             
-            // Use the original URL as-is - Shopify's image_url without width returns original
-            // The URL from srcset should already be the full resolution image
-            console.log('ProductModal: Loading original image', originalUrl, 'width:', originalWidth);
+            // IMPORTANT: We want the FULL resolution image, not constrained to viewport
+            // Set sizes to the actual image width, not viewport width
+            // This tells browser: "image will be displayed at its full width" (larger than viewport = scrollable)
+            console.log('ProductModal: Loading FULL resolution image', originalUrl, 'width:', originalWidth, 'px');
             
-            // Force load the original image immediately
+            // Directly set src to original - this loads the full resolution image
+            // Set sizes to actual image width so browser knows to use the full resolution
             img.src = originalUrl;
             img.srcset = `${originalUrl} ${originalWidth}w`;
-            img.sizes = '100vw';
+            img.sizes = `${originalWidth}px`; // Use actual image width, not viewport width
             
             // Also update the currentSrc to ensure browser uses it
             if (img.complete) {
@@ -114,7 +116,7 @@ if (!customElements.get('product-modal')) {
             if (largestUrl) {
               img.src = largestUrl;
               img.srcset = `${largestUrl} ${largestWidth}w`;
-              img.sizes = '100vw';
+              img.sizes = `${largestWidth}px`; // Use actual image width, not viewport width
             }
           }
         }
@@ -122,14 +124,12 @@ if (!customElements.get('product-modal')) {
         // Add active class - CSS will handle visibility
         activeWrapper.classList.add('active');
 
-        // Scroll the wrapper into view
-        activeWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-        // Handle scrolling for horizontal layout
+        // Handle scrolling for horizontal layout (desktop)
         const container = this.querySelector('[role="document"]');
-        if (container && activeWrapper.width) {
+        if (container && activeWrapper.width && window.innerWidth >= 750) {
           container.scrollLeft = (activeWrapper.width - container.clientWidth) / 2;
         }
+        // On mobile, don't call scrollIntoView - let user scroll/pan naturally
 
         // Handle deferred media (videos/models)
         const activeMediaTemplate = activeWrapper.querySelector('template');

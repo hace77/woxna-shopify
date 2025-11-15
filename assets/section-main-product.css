@@ -883,14 +883,10 @@ a.product__text {
   .product-media-modal__content {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x pan-y;
   }
 
   .product-media-modal__content .product__media-item.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    display: block;
     width: auto;
     max-width: none;
     padding: 0;
@@ -902,9 +898,7 @@ a.product__text {
     height: auto;
     max-width: none;
     max-height: none;
-    object-fit: none;
     display: block;
-    /* Allow image to be its natural size, larger than viewport */
   }
 }
 
