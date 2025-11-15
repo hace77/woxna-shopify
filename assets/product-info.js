@@ -275,7 +275,7 @@ if (!customElements.get('product-info')) {
 
         // If no variant options selected, show all images
         if (selectedOptionValues.length === 0) {
-          const allItems = mediaGallery.querySelectorAll('li[data-media-id], li[data-media-alt]');
+          const allItems = mediaGallery.querySelectorAll('li[data-media-id]');
           allItems.forEach((item) => {
             item.style.display = '';
           });
@@ -287,22 +287,53 @@ if (!customElements.get('product-info')) {
         const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
 
         // Get all media items (both gallery and thumbnails)
+        // Select all items with data-media-id, not just those with data-media-alt
         const galleryItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
-        const thumbnailItems = mediaGallery.querySelectorAll('ul.thumbnail-list li[data-media-alt]');
+        const thumbnailItems = mediaGallery.querySelectorAll('ul.thumbnail-list li[data-target]');
 
-        // Filter gallery items
+        // First, reset all items to visible (important for items without data-media-alt attribute)
         galleryItems.forEach((item) => {
+          item.style.display = '';
+        });
+        thumbnailItems.forEach((item) => {
+          item.style.display = '';
+        });
+
+        // Filter gallery items - hide those that don't match
+        galleryItems.forEach((item) => {
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the image for all variants
+            return;
+          }
+          
           const altText = item.dataset.mediaAlt;
-          if (!altText) {
-            // If no alt text, show the image (fallback to original behavior)
-            item.style.display = '';
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the image for all variants
             return;
           }
 
-          const altLower = altText.toLowerCase();
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
           // Show if alt text contains any of the selected variant option values
           // This allows partial matching (e.g., "250 mm" matches when "250 mm" + "Oak" is selected)
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
           const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
           
           // Check if all words in alt text are found in selected values
@@ -314,16 +345,39 @@ if (!customElements.get('product-info')) {
           item.style.display = shouldShow ? '' : 'none';
         });
 
-        // Filter thumbnail items
+        // Filter thumbnail items - hide those that don't match
         thumbnailItems.forEach((item) => {
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the thumbnail for all variants
+            return;
+          }
+          
           const altText = item.dataset.mediaAlt;
-          if (!altText) {
-            item.style.display = '';
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the thumbnail for all variants
             return;
           }
 
-          const altLower = altText.toLowerCase();
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
           const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
           
           const shouldShow = altWords.length > 0 && altWords.every(word => 
@@ -422,7 +476,7 @@ if (!customElements.get('product-info')) {
 
         // If no variant options selected, show all images
         if (selectedOptionValues.length === 0) {
-          const allItems = modalContent.querySelectorAll('.product__media-item[data-media-alt]');
+          const allItems = modalContent.querySelectorAll('.product__media-item');
           allItems.forEach((item) => {
             item.style.display = '';
           });
@@ -432,16 +486,47 @@ if (!customElements.get('product-info')) {
         const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
         const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
 
-        const modalItems = modalContent.querySelectorAll('.product__media-item[data-media-alt]');
+        // Select all media items, not just those with data-media-alt
+        const modalItems = modalContent.querySelectorAll('.product__media-item');
+        
+        // First, reset all items to visible
         modalItems.forEach((item) => {
+          item.style.display = '';
+        });
+        
+        // Filter modal items - hide those that don't match
+        modalItems.forEach((item) => {
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the image for all variants
+            return;
+          }
+          
           const altText = item.dataset.mediaAlt;
-          if (!altText) {
-            item.style.display = '';
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the image for all variants
             return;
           }
 
-          const altLower = altText.toLowerCase();
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0);
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
           const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
           
           const shouldShow = altWords.length > 0 && altWords.every(word => 
