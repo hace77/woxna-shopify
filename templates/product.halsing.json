@@ -99,6 +99,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": false,
         "enable_video_looping": false,
+        "grey_overlay": true,
         "padding_top": 36,
         "padding_bottom": 40
       }
