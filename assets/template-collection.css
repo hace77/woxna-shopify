@@ -610,3 +610,11 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+/* Reduce image padding/margin on card media to maximize image size on mobile 2-column grid */
+@media screen and (max-width: 749px) {
+  .collection .grid.product-grid.grid--2-col-tablet-down .card__media {
+    margin: calc(var(--image-padding) / 4) !important;
+    width: calc(100% - var(--image-padding) / 2) !important;
+  }
+}
