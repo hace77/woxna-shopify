@@ -65,6 +65,16 @@
     .product__media-wrapper {
       position: relative;
     }
+    
+    /* Grey overlay effect for product images using mix-blend-mode */
+    .product-image-overlay {
+      position: relative;
+      background: #f5f5f5;
+    }
+    
+    .product-image-overlay img {
+      mix-blend-mode: multiply;
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -113,7 +123,7 @@
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
-        {% render 'product-media-gallery', variant_images: variant_images %}
+        {% render 'product-media-gallery', variant_images: variant_images, grey_overlay: section.settings.grey_overlay %}
         {%- if product.metafields.custom.label != blank -%}
           <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
         {%- endif -%}
@@ -844,7 +854,7 @@
       </div>
     </div>
 
-    {% render 'product-media-modal', variant_images: variant_images %}
+    {% render 'product-media-modal', variant_images: variant_images, grey_overlay: section.settings.grey_overlay %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
     {%- for block in popups -%}
@@ -2453,6 +2463,13 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "grey_overlay",
+      "default": false,
+      "label": "Apply grey overlay to product images",
+      "info": "Adds a subtle grey overlay to make white backgrounds appear darker"
     },
     {
       "type": "header",

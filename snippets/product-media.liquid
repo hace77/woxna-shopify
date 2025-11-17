@@ -15,7 +15,7 @@
 {% endcomment %}
 
 {%- if media.media_type == 'image' -%}
-  <div class="product__media-item{% if variant_image %} product__media-item--variant{% endif %}" {% if media.alt != blank %}data-media-alt="{{ media.alt | escape }}"{% endif %}>
+  <div class="product__media-item{% if variant_image %} product__media-item--variant{% endif %}{% if grey_overlay %} product-image-overlay{% endif %}" {% if media.alt != blank %}data-media-alt="{{ media.alt | escape }}"{% endif %}>
     <img
       class="global-media-settings global-media-settings--no-shadow"
       srcset="
