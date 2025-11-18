@@ -736,38 +736,38 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_zL8t7g": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_K7chGp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tech Spec",
-            "heading_size": "h0"
-          }
-        },
-        "text_QaVm7H": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Teeth per inch: {{ product.metafields.custom.grind_.value }} TPI</p><p>Grind: 3-phase grind</p><p>Hardening: {{ product.metafields.custom.hardening.value }}</p><p>Saw direction: {{ product.metafields.custom.saw_direction.value }}</p><p>Blade material: {{ product.metafields.custom.blade_material_tech_spec_.value }}</p><p>Handle material: {{ product.metafields.custom.handle_material.value }}</p><p>Blade thickness: {{ product.metafields.custom.blade_thickness.value }} mm (before concave grind)</p><p>Blade profile: {{ product.metafields.custom.blade_profile.value }}</p><p>Teeth setting: {{ product.metafields.custom.teeth_setting.value }}</p><p></p><p><strong>Measurements</strong></p><p>Blade length: {{ product.metafields.custom.blade_length_mm_ | metafield_tag }} / {{ product.metafields.custom.blade_length_inch_ | metafield_tag }}</p><p>Length, unfolded: {{ product.metafields.custom.length_mm_ | metafield_tag }} / {{ product.metafields.custom.length_inch_ | metafield_tag }}</p><p>Length, folded: {{ product.metafields.custom.length_folded_mm_ | metafield_tag }} / {{ product.metafields.custom.length_folded_inch_ | metafield_tag }}</p><p>Weight: {{ product.metafields.custom.weight_g_ | metafield_tag }} / {{ product.metafields.custom.weight_oz_ | metafield_tag }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_K7chGp",
-        "text_QaVm7H"
-      ],
-      "custom_css": [
-        "h2,li,p {text-align: left;}"
-      ],
-      "name": "tech spec",
+    "variant_text_display_MNgcx9": {
+      "type": "variant-text-display",
+      "name": "variant tech specs",
       "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech Specs",
+        "heading_size": "h1",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "show_fallback": false,
+        "fallback_content": "",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "variant_metafield_display_4dUfVR": {
+      "type": "variant-metafield-display",
+      "name": "Variant measurement",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": true,
+        "heading": "",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_banner_8zaQaf": {
@@ -804,6 +804,7 @@
         "text_XLRz8T",
         "buttons_dRLaYe"
       ],
+      "disabled": true,
       "name": "measurments",
       "settings": {
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
@@ -986,24 +987,6 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "variant_text_display_MNgcx9": {
-      "type": "variant-text-display",
-      "name": "Variant Text Display",
-      "settings": {
-        "metafield_key": "tech_specs",
-        "show_heading": true,
-        "heading": "Tech Specs",
-        "heading_size": "h1",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_fallback": false,
-        "fallback_content": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -1024,12 +1007,12 @@
     "slideshow_wm6hdw",
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
-    "rich_text_zL8t7g",
+    "variant_text_display_MNgcx9",
+    "variant_metafield_display_4dUfVR",
     "image_banner_8zaQaf",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
     "image_with_text_j83Eef",
-    "related-products",
-    "variant_text_display_MNgcx9"
+    "related-products"
   ]
 }
