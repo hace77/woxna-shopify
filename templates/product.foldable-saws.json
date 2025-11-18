@@ -99,6 +99,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 40
       }
@@ -918,71 +919,6 @@
         "padding_bottom": 52
       }
     },
-    "1730798421bc6bee16": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_JqyKyw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_JqyKyw"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "rich_text_QkwfpV": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LTX3M7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TdaeQM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_qxwfAc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTX3M7",
-        "text_TdaeQM",
-        "button_qxwfAc"
-      ],
-      "disabled": true,
-      "name": "Sustainability",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 68,
-        "padding_bottom": 76
-      }
-    },
     "image_with_text_j83Eef": {
       "type": "image-with-text",
       "blocks": {
@@ -1050,6 +986,24 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "variant_text_display_MNgcx9": {
+      "type": "variant-text-display",
+      "name": "Variant Text Display",
+      "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech Specs",
+        "heading_size": "h1",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -1074,9 +1028,8 @@
     "image_banner_8zaQaf",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
-    "1730798421bc6bee16",
-    "rich_text_QkwfpV",
     "image_with_text_j83Eef",
-    "related-products"
+    "related-products",
+    "variant_text_display_MNgcx9"
   ]
 }
