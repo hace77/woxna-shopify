@@ -119,6 +119,13 @@
             "heading_size": "h0"
           }
         },
+        "text_wTkGzN": {
+          "type": "text",
+          "settings": {
+            "text": "Premium quality folding saws made in The forest of Hälsingland Sweden",
+            "text_style": "body"
+          }
+        },
         "buttons_iWWgUB": {
           "type": "buttons",
           "settings": {
@@ -129,19 +136,12 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "text_wTkGzN": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
         "heading_eFA9R4",
-        "buttons_iWWgUB",
-        "text_wTkGzN"
+        "text_wTkGzN",
+        "buttons_iWWgUB"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
