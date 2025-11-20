@@ -69,7 +69,8 @@
         ".product__title h1 {font-size: 24px;}",
         ".price__badge-sold-out {display: none;}",
         ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
-        "input[type=\"radio\"].disabled {display: none;}"
+        "input[type=\"radio\"].disabled {display: none;}",
+        "input.disabled + label {display: none !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
