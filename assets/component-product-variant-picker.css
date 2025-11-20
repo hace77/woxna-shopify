@@ -26,6 +26,20 @@ variant-selects {
   margin-bottom: 0.2rem;
 }
 
+/* Make pill buttons equal width */
+.product-form__input--pill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.product-form__input--pill input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .product-form__input input[type='radio'] {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
@@ -61,10 +75,10 @@ variant-selects {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
   background-color: rgb(var(--color-background));
   color: rgba(var(--color-foreground));
-  border-radius: 0;
+  border-radius: var(--buttons-radius-outset);
   color: rgb(var(--color-foreground));
   display: inline-block;
-  margin: 0.7rem 0.5rem 0.2rem 0;
+  margin: 0.7rem 0 0.2rem 0;
   padding: 1rem 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
@@ -73,6 +87,8 @@ variant-selects {
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
+  flex: 1;
+  min-width: fit-content;
 }
 
 .product-form__input--pill input[type='radio'] + label:before {
@@ -83,7 +99,7 @@ variant-selects {
   bottom: calc(var(--variant-pills-border-width) * -1);
   left: calc(var(--variant-pills-border-width) * -1);
   z-index: -1;
-  border-radius: 0;
+  border-radius: var(--buttons-radius-outset);
   box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset)
     var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
 }
