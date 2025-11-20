@@ -70,7 +70,8 @@
         ".price__badge-sold-out {display: none;}",
         ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
         "input[type=\"radio\"].disabled {display: none;}",
-        "input.disabled + label {display: none !important;}"
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #ff0000; color: white;}"
       ],
       "settings": {
         "enable_sticky_info": true,
