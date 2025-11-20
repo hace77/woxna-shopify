@@ -249,7 +249,7 @@
             "description": "Get Woxnas Hand stamped t-shirt. Made from soft organic cotton.",
             "description_style": "body",
             "button_label": "Shop T-Shirts",
-            "button_link": "shopify://collections/foldable-saws",
+            "button_link": "shopify://products/woxna-hand-stamped-logo-t-shirt",
             "button_style_secondary": false
           }
         },
