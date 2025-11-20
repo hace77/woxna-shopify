@@ -83,6 +83,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
@@ -200,6 +201,22 @@
         "padding_bottom": 32
       }
     },
+    "1756739814d98fab10": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_FHPh8x": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_FHPh8x"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
     "rich_text_jdqcfV": {
       "type": "rich-text",
       "name": "t:sections.rich-text.presets.name",
@@ -245,6 +262,7 @@
         "text_rgRR8a",
         "button_Ywjfry"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -356,21 +374,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "1756739814d98fab10": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_FHPh8x": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_FHPh8x"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
