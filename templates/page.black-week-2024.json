@@ -94,6 +94,7 @@
     },
     "countdown_timer_cDtxRJ": {
       "type": "countdown-timer",
+      "disabled": true,
       "name": "Countdown Timer",
       "settings": {
         "heading": "Black friday starts in",
@@ -128,24 +129,6 @@
         "padding_bottom": 28
       }
     },
-    "1762344156b2165261": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_UP6Jjc": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "Klaviyo Embedded Form se",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_UP6Jjc"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_xmcgVm": {
       "type": "rich-text",
       "blocks": {
@@ -167,7 +150,6 @@
         "heading_JrQexk",
         "text_3ErEKB"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -231,7 +213,6 @@
         "buy_buttons_FWhEMf",
         "share_gc8dem"
       ],
-      "disabled": true,
       "custom_css": [
         ".accelerated-checkout-button {display: none !important;}",
         "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
@@ -241,7 +222,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "woxna-hand-stamped-logo-t-shirt",
+        "product": "quirked-batch",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "large",
@@ -288,7 +269,6 @@
         "text_GyNWxU",
         "button_GQJCdi"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -361,7 +341,6 @@
         "slide_D4Bmxd",
         "slide_ByPUnR"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -371,22 +350,6 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "video_D8khce": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Woxna Black Week 4-5.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_4t7TPi": {
@@ -422,7 +385,6 @@
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -484,12 +446,10 @@
     "image_banner_DfBJ89",
     "countdown_timer_cDtxRJ",
     "main",
-    "1762344156b2165261",
     "rich_text_xmcgVm",
     "featured_product_fDCRqU",
     "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
-    "video_D8khce",
     "rich_text_4t7TPi",
     "rich_text_mR6qGN"
   ]
