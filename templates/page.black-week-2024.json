@@ -219,7 +219,8 @@
         "#more-payment-options-link {display: none;}",
         ".share-button__button,.share-button__fallback button {display: none;}",
         ".product__tax {display: none;}",
-        "input.disabled + label {display: none !important;}"
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
