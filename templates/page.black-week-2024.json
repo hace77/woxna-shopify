@@ -95,13 +95,6 @@
     "featured_product_fDCRqU": {
       "type": "featured-product",
       "blocks": {
-        "text_hGWHQy": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title_Xrb78i": {
           "type": "title",
           "settings": {
@@ -138,7 +131,6 @@
         }
       },
       "block_order": [
-        "text_hGWHQy",
         "title_Xrb78i",
         "price_KRnBax",
         "variant_picker_MxwcTj",
@@ -387,6 +379,7 @@
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -432,6 +425,7 @@
         "text_Hw9gEi",
         "button_Q9L9ci"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
