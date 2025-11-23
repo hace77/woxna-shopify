@@ -230,48 +230,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_VWa4Qh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_ciFfAq": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Thoughtful Black Week Offer from Woxna",
-            "heading_size": "h1"
-          }
-        },
-        "text_GyNWxU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
-          }
-        },
-        "button_GQJCdi": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_ciFfAq",
-        "text_GyNWxU",
-        "button_GQJCdi"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "slideshow_wN9bcg": {
       "type": "slideshow",
       "blocks": {
@@ -344,6 +302,49 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_VWa4Qh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ciFfAq": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Thoughtful Black Week Offer from Woxna",
+            "heading_size": "h1"
+          }
+        },
+        "text_GyNWxU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
+          }
+        },
+        "button_GQJCdi": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ciFfAq",
+        "text_GyNWxU",
+        "button_GQJCdi"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_4t7TPi": {
@@ -444,8 +445,8 @@
     "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
-    "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
+    "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
     "rich_text_mR6qGN"
   ]
