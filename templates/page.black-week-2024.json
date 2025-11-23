@@ -92,73 +92,6 @@
         "show_text_below": true
       }
     },
-    "countdown_timer_cDtxRJ": {
-      "type": "countdown-timer",
-      "disabled": true,
-      "name": "Countdown Timer",
-      "settings": {
-        "heading": "Black friday starts in",
-        "heading_size": "h1",
-        "subheading": "",
-        "target_date": "2025-11-24",
-        "target_time": "00:01",
-        "timezone": "Europe/Stockholm",
-        "expired_message": "This offer has ended",
-        "show_days": true,
-        "show_hours": true,
-        "show_minutes": true,
-        "show_seconds": true,
-        "text_alignment": "center",
-        "cta_text": "",
-        "cta_url": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "custom_css": [
-        "h1 {display: none;}",
-        "p:first-of-type {padding-top: 30px;}",
-        "ol {list-style-position: outside;}"
-      ],
-      "settings": {
-        "padding_top": 56,
-        "padding_bottom": 28
-      }
-    },
-    "rich_text_xmcgVm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_JrQexk": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainable. Unique. Limited.",
-            "heading_size": "h1"
-          }
-        },
-        "text_3ErEKB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_JrQexk",
-        "text_3ErEKB"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "featured_product_fDCRqU": {
       "type": "featured-product",
       "blocks": {
@@ -236,6 +169,73 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "countdown_timer_cDtxRJ": {
+      "type": "countdown-timer",
+      "disabled": true,
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Black friday starts in",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-11-24",
+        "target_time": "00:01",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_xmcgVm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JrQexk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainable. Unique. Limited.",
+            "heading_size": "h1"
+          }
+        },
+        "text_3ErEKB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JrQexk",
+        "text_3ErEKB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_VWa4Qh": {
@@ -446,10 +446,10 @@
   "order": [
     "image_banner_ExBjAj",
     "image_banner_DfBJ89",
+    "featured_product_fDCRqU",
     "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
-    "featured_product_fDCRqU",
     "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
     "rich_text_4t7TPi",
