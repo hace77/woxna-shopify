@@ -236,20 +236,20 @@
         "image_3FYifX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Woxna-T-shirt-1.jpg",
-            "img_link": "shopify://products/woxna-hand-stamped-logo-t-shirt",
+            "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+            "img_link": "shopify://pages/black-friday-2025",
             "show_text_overlay": true,
-            "heading": "Get Your Woxna Style Going!",
+            "heading": "Black Friday",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "center",
             "heading_size": "h2",
             "mobile_heading_size": "h1",
-            "description": "Get Woxnas Hand stamped t-shirt. Made from soft organic cotton.",
+            "description": "Now is your chance to get saws with a quirk at the best price ever",
             "description_style": "body",
-            "button_label": "Shop T-Shirts",
-            "button_link": "shopify://products/woxna-hand-stamped-logo-t-shirt",
+            "button_label": "Get yours now",
+            "button_link": "shopify://pages/black-friday-2025",
             "button_style_secondary": false
           }
         },
