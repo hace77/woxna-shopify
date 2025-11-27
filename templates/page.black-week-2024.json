@@ -22,7 +22,7 @@
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount.",
+            "text": "For the second year in a row, our Black Friday offer features a limited number of saws with minor cosmetic quirks. This is the perfect opportunity to pick up a saw for yourself or a loved one, as this is the best deal we have ever offered on our saws.",
             "text_style": "subtitle"
           }
         }
@@ -92,6 +92,77 @@
         "show_text_below": true
       }
     },
+    "featured_product_fDCRqU": {
+      "type": "featured-product",
+      "blocks": {
+        "title_Xrb78i": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_KRnBax": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_MxwcTj": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_9KJhMx": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_FWhEMf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_gc8dem": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "title_Xrb78i",
+        "price_KRnBax",
+        "variant_picker_MxwcTj",
+        "quantity_selector_9KJhMx",
+        "buy_buttons_FWhEMf",
+        "share_gc8dem"
+      ],
+      "custom_css": [
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}",
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "quirked-batch",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "countdown_timer_cDtxRJ": {
       "type": "countdown-timer",
       "disabled": true,
@@ -149,126 +220,6 @@
       "block_order": [
         "heading_JrQexk",
         "text_3ErEKB"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "featured_product_fDCRqU": {
-      "type": "featured-product",
-      "blocks": {
-        "text_hGWHQy": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_Xrb78i": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_KRnBax": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_MxwcTj": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_9KJhMx": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_FWhEMf": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_gc8dem": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_hGWHQy",
-        "title_Xrb78i",
-        "price_KRnBax",
-        "variant_picker_MxwcTj",
-        "quantity_selector_9KJhMx",
-        "buy_buttons_FWhEMf",
-        "share_gc8dem"
-      ],
-      "custom_css": [
-        ".accelerated-checkout-button {display: none !important;}",
-        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
-        "#more-payment-options-link {display: none;}",
-        ".share-button__button,.share-button__fallback button {display: none;}",
-        ".product__tax {display: none;}",
-        "input.disabled + label {display: none !important;}"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "quirked-batch",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_VWa4Qh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_ciFfAq": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Thoughtful Black Week Offer from Woxna",
-            "heading_size": "h1"
-          }
-        },
-        "text_GyNWxU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
-          }
-        },
-        "button_GQJCdi": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_ciFfAq",
-        "text_GyNWxU",
-        "button_GQJCdi"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -353,6 +304,48 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text_VWa4Qh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ciFfAq": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Thoughtful Black Week Offer from Woxna",
+            "heading_size": "h1"
+          }
+        },
+        "text_GyNWxU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
+          }
+        },
+        "button_GQJCdi": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ciFfAq",
+        "text_GyNWxU",
+        "button_GQJCdi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_4t7TPi": {
       "type": "rich-text",
       "blocks": {
@@ -386,6 +379,7 @@
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -431,6 +425,7 @@
         "text_Hw9gEi",
         "button_Q9L9ci"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -445,12 +440,12 @@
   "order": [
     "image_banner_ExBjAj",
     "image_banner_DfBJ89",
+    "featured_product_fDCRqU",
     "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
-    "featured_product_fDCRqU",
-    "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
+    "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
     "rich_text_mR6qGN"
   ]
