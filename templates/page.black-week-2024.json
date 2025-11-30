@@ -92,6 +92,29 @@
         "show_text_below": true
       }
     },
+    "countdown_timer_3jxjBM": {
+      "type": "countdown-timer",
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Time left on black friday offer",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-11-30",
+        "target_time": "23:59",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_product_fDCRqU": {
       "type": "featured-product",
       "blocks": {
@@ -440,6 +463,7 @@
   "order": [
     "image_banner_ExBjAj",
     "image_banner_DfBJ89",
+    "countdown_timer_3jxjBM",
     "featured_product_fDCRqU",
     "countdown_timer_cDtxRJ",
     "main",
