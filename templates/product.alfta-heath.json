@@ -1,0 +1,990 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "klaviyo_reviews_average_rating_GaRrKj": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_4AQUjt": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+          }
+        },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "icon_with_text_GbTykW": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "box",
+            "heading_1": "Free Shipping",
+            "icon_2": "star",
+            "heading_2": "Limited Lifetime Warranty",
+            "icon_3": "map_pin",
+            "heading_3": "Proudly Made in Sweden"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "text_YRCQgw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "You receive a 10% discount as this item is currently being delivered without its standard cardboard box. Your Woxna saw will be shipped in a paper packaging. The discount is applied automatically in the cart.",
+            "text_style": "small",
+            "show_as_information_box": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "klaviyo_reviews_average_rating_GaRrKj",
+        "buy_buttons",
+        "custom_liquid_4AQUjt",
+        "judge_me_reviews_preview_badge_VG7pPA",
+        "icon_with_text_GbTykW",
+        "variant_picker",
+        "text_YRCQgw",
+        "description"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}",
+        ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
+        ".product__title h1 {font-size: 24px;}",
+        ".badge {display: none;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "grey_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "video_BCbL4d": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Gnarp Features Wide16-9.mp4",
+        "video_url": "https://youtu.be/dQw4w9WgXcQ?si=IYHJPsv1fK198TA2",
+        "cover_image": "shopify://shop_images/Gnarp_-_feature_thumbnail.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_ajHV6U": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_C7z8Le": {
+          "type": "heading",
+          "settings": {
+            "heading": "Protects You and Your Gear in the Wilderness",
+            "heading_size": "h2"
+          }
+        },
+        "text_rBXVdh": {
+          "type": "text",
+          "settings": {
+            "text": "This extra large leather multi guard protects you and your gear inthe outdoors. It serves as a stable, sheltered base for starting andtransferring a fire, a simple sit or knee pad, and a tray to keep tools or foodorganized, dry and clean. The included leather strap allows you to wear it as achest plate while whittling - you can also place it on your lap for addedprotection while wood carving.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_C7z8Le",
+        "text_rBXVdh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-9.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1730798421bc6bee16": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_JqyKyw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_JqyKyw"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_zC3Teq": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_zC3Teq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "slideshow_khyK4k": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_M64mw7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-fire-aid.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Fire Starting Aid – Provides a dry surface for kindling, shelters against the wind and makes it easy to start fires and transfer embers. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_cAD7JP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-7.jpg",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "Versatile Work Surface – Keep tools and gear dry, clean and organized while you work. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jTwAyD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-sit-pad.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Sit/Knee Pad – Use it as a simple sit pad or a knee pad.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_kXt9Vy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-8.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Serving Tray - for serving up snacks or sandwiches.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_FGJyqA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Whitling Guard – put it in your lap for protection while wood carving.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jwcyHa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Woxna-Gnarp-Leather-Guard-whitling-1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Wearable Chest Guard – Distributes pressure and protects your torso when whittling against your chest.  ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_M64mw7",
+        "slide_cAD7JP",
+        "slide_jTwAyD",
+        "slide_kXt9Vy",
+        "slide_FGJyqA",
+        "slide_jwcyHa"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_9EBeAU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hxzyCN": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Leather  Web4-5.mp4",
+            "title": "Super Fat Leather",
+            "text": "<p>Gnarp is made with a super fat leather that gives it an enhanced fire and water resistance.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eTEahC": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Chord Web4-5.mp4",
+            "title": "A Multifunctional Chord",
+            "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling and much more.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yddykD": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Sustainability Web4-5.mp4",
+            "title": "Proudly made in Sweden",
+            "text": "<p>Gnarp is sustainably produced in Sweden using a naturally tanned leather that will develop an honest and genuine patina. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hxzyCN",
+        "column_eTEahC",
+        "column_yddykD"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_7GmfxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XzRK9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Features",
+            "heading_size": "h1"
+          }
+        },
+        "button_dVbPng": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_crzTjK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzRK9B",
+        "button_dVbPng",
+        "text_crzTjK"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_EM8rA3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_6EAfhX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Taking Care of your Leather",
+            "icon": "leather",
+            "row_content": "<p>As with all leather, if it gets wet, let it dry slowly at room temperature. Avoid placing it on radiators or other direct heat sources.</p><p>If the leather feels stiff after being used in damp or wet conditions, you can treat it with a leather fat or conditioner. This works especially well on thicker leathers designed for tougher use and exposure to the elements. You can also apply a leather wax, which sits on the surface for added water repellency, while the fat penetrates deeper into the material.</p><p>If the leather has dried out more, it’s often best to start with a hydrating leather balm before applying fat.</p><p>Use a dry, lint-free cloth or sponge to work the balm into the leather until the surface, then let it absorb overnight. Follow up with a leather fat: apply an even layer and work it in to the leather.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_k3ejMx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Sustainability",
+            "icon": "leaf",
+            "row_content": "<p>We use a custom-made leather for our Gnarp. It’s made using hides from Swedish cattle and it’s been treated with a natural leather fat to improve its resistance to water and fire. On top of that, it’s been given an additional wax treatment on both the front and back to further enhance its water repellency.</p><p>The leather is vegetable tanned which is a slower more traditional and natural process that results in a higher-quality leather that breathes better, ages beautifully and lasts longer. It is also a far more responsible choice for both people and the environment compared to chrome tanning, which is more commonly used today.</p><p>Our leather supplier is independently reviewed every year through the HIGG Index, and their tanneries are LWG certified. This means their environmental practices meet strict standards — including responsible energy use, proper wastewater treatment, and careful chemical management and testing to ensure the leather is free from harmful substances like chrome and PFAS.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_6EAfhX",
+        "collapsible_row_k3ejMx"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "A Durable Leather",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_U9UCQY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pbJKfm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pbJKfm"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.banner {display: none; }}"
+      ],
+      "name": "measurements",
+      "settings": {
+        "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_tiH7aM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_dcBGjm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dcBGjm"
+      ],
+      "custom_css": [
+        "@media (width >= 768px) {.banner {display: none; }}"
+      ],
+      "name": "measurements mobile",
+      "settings": {
+        "image": "shopify://shop_images/Gnarp-measures-mobile.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_ji3RVR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gnc8NC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact and Support",
+            "heading_size": "h1"
+          }
+        },
+        "text_Kqm3hA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
+          }
+        },
+        "button_cXrCX8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Support",
+            "button_link": "shopify://pages/support",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gnc8NC",
+        "text_Kqm3hA",
+        "button_cXrCX8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "slideshow_cFTBLq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_KHQeTe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-slideshow-5.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_6tejKT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-slideshow-4.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_JJthAJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-slideshow-6.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_9UQMLV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NVggpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_wmzUEY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-food.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KHQeTe",
+        "slide_6tejKT",
+        "slide_JJthAJ",
+        "slide_9UQMLV",
+        "slide_NVggpn",
+        "slide_wmzUEY"
+      ],
+      "custom_css": [
+        "@media (width <= 768px) {slideshow-component {display: none; }}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "slideshow_RjE78x": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_EbetM4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-leather-guard-folded-on-backpack.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_gdxmLE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-leather-guard-sit-pad.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_iQCX4y": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-bushcrafting-leather-guard.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_6a3Bhn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Aq4bbY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_TdjLk6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gnarp-Leather-Guard-food-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EbetM4",
+        "slide_gdxmLE",
+        "slide_iQCX4y",
+        "slide_6a3Bhn",
+        "slide_Aq4bbY",
+        "slide_TdjLk6"
+      ],
+      "custom_css": [
+        "@media (width >= 768px) {slideshow-component {display: none; }}"
+      ],
+      "name": "Slideshow mobile",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_QkwfpV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LTX3M7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability First",
+            "heading_size": "h1"
+          }
+        },
+        "text_TdaeQM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
+          }
+        },
+        "button_qxwfAc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our green intentions",
+            "button_link": "shopify://pages/sustainablilty",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LTX3M7",
+        "text_TdaeQM",
+        "button_qxwfAc"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 76
+      }
+    },
+    "image_with_text_j83Eef": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zwyMCT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produced with Quality and Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_gMpi8E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tCkADX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about our production",
+            "button_link": "shopify://pages/made-in-sweden",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zwyMCT",
+        "text_gMpi8E",
+        "button_tCkADX"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BCbL4d",
+    "image_banner_ajHV6U",
+    "1730798421bc6bee16",
+    "1730797907a66336cc",
+    "slideshow_khyK4k",
+    "multicolumn_9EBeAU",
+    "rich_text_7GmfxC",
+    "collapsible_content_EM8rA3",
+    "image_banner_U9UCQY",
+    "image_banner_tiH7aM",
+    "rich_text_ji3RVR",
+    "slideshow_cFTBLq",
+    "slideshow_RjE78x",
+    "rich_text_QkwfpV",
+    "image_with_text_j83Eef",
+    "related-products"
+  ]
+}
