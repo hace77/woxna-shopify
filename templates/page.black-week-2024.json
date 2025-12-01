@@ -94,6 +94,7 @@
     },
     "countdown_timer_3jxjBM": {
       "type": "countdown-timer",
+      "disabled": true,
       "name": "Countdown Timer",
       "settings": {
         "heading": "Secure Your Saw now – this offer ends at midnight",
@@ -161,6 +162,7 @@
         "buy_buttons_FWhEMf",
         "share_gc8dem"
       ],
+      "disabled": true,
       "custom_css": [
         ".accelerated-checkout-button {display: none !important;}",
         "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
@@ -244,6 +246,7 @@
         "heading_JrQexk",
         "text_3ErEKB"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -316,6 +319,7 @@
         "slide_D4Bmxd",
         "slide_ByPUnR"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -360,6 +364,7 @@
         "text_GyNWxU",
         "button_GQJCdi"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -448,7 +453,6 @@
         "text_Hw9gEi",
         "button_Q9L9ci"
       ],
-      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
