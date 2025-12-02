@@ -16,14 +16,21 @@
           "type": "title",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "klaviyo_reviews_average_rating_GaRrKj": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "buy_buttons": {
@@ -58,13 +65,6 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
         "text_YRCQgw": {
           "type": "text",
           "disabled": true,
@@ -81,13 +81,13 @@
       },
       "block_order": [
         "title",
-        "price",
         "klaviyo_reviews_average_rating_GaRrKj",
+        "price",
+        "variant_picker",
         "buy_buttons",
         "sku_cGN6wt",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
-        "variant_picker",
         "text_YRCQgw",
         "description"
       ],
@@ -139,7 +139,7 @@
         "text_rBXVdh"
       ],
       "settings": {
-        "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-8.jpg",
+        "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -212,7 +212,7 @@
       ],
       "name": "Made to match",
       "settings": {
-        "image": "shopify://shop_images/alfta-both-colors.jpg",
+        "image": "shopify://shop_images/alfta-both-colors-forest.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
