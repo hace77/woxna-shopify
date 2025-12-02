@@ -169,54 +169,6 @@
         "include_margins": true
       }
     },
-    "rich_text_7GmfxC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_XzRK9B": {
-          "type": "heading",
-          "settings": {
-            "heading": "Features",
-            "heading_size": "h1"
-          }
-        },
-        "button_dVbPng": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "text_crzTjK": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XzRK9B",
-        "button_dVbPng",
-        "text_crzTjK"
-      ],
-      "custom_css": [
-        "ul {list-style-position: outside;}",
-        "h2,li {text-align: left;}",
-        "li:empty {list-style: none;}"
-      ],
-      "name": "Features",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -299,9 +251,10 @@
       ],
       "name": "carry it your way",
       "settings": {
+        "image": "shopify://shop_images/Alfta-Beltloopvsdangler.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -350,16 +303,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_7GmfxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XzRK9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Features",
+            "heading_size": "h1"
+          }
+        },
+        "button_dVbPng": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_crzTjK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XzRK9B",
+        "button_dVbPng",
+        "text_crzTjK"
+      ],
+      "custom_css": [
+        "ul {list-style-position: outside;}",
+        "h2,li {text-align: left;}",
+        "li:empty {list-style: none;}"
+      ],
+      "name": "Features",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "image_banner_ajHV6U",
     "1730797907a66336cc",
-    "rich_text_7GmfxC",
     "related-products",
     "image_with_text_gT36bV",
     "image_with_text_HFPrig",
-    "image_with_text_X3w9Mw"
+    "image_with_text_X3w9Mw",
+    "rich_text_7GmfxC"
   ]
 }
