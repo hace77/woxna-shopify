@@ -334,20 +334,11 @@
             "text": "<p>For better comfort, we’ve included a detachable dangler. It hangs the sheath at an easy-to-reach height a bit further down your leg. When you want to remove the sheath, just unsnap it from the dangler, quick and simple. If you instead prefer to have the sheatch by your waist remove your dangler completley  and attach it to your belt through the riveted loop.</p>",
             "text_style": "body"
           }
-        },
-        "button_kHctPt": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_m3iPrH",
-        "text_YUH7AJ",
-        "button_kHctPt"
+        "text_YUH7AJ"
       ],
       "name": "carry it your way",
       "settings": {
@@ -371,30 +362,21 @@
         "heading_MayVTU": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Built to Last",
             "heading_size": "h1"
           }
         },
         "text_GHgatw": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>The sheaths are made in Europe from thick, durable, vegetable-tanned leather.</p><p>It’s a traditional, low-impact tanning method that uses natural tannins instead of chemicals. The leather starts firm, softens with use, and builds a deep patina that reflects the miles you’ve put in.</p>",
             "text_style": "body"
-          }
-        },
-        "button_rfK4iH": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_MayVTU",
-        "text_GHgatw",
-        "button_rfK4iH"
+        "text_GHgatw"
       ],
       "name": "built to last",
       "settings": {
