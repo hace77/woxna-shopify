@@ -22,10 +22,6 @@
             "product": "{{product}}"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -37,16 +33,20 @@
             "swatch_shape": "square"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "custom_liquid_FhKrbx": {
           "type": "custom_liquid",
@@ -59,11 +59,11 @@
       "block_order": [
         "title",
         "klaviyo_reviews_average_rating_k7UapD",
-        "description",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
+        "quantity_selector",
+        "description",
         "custom_liquid_FhKrbx"
       ],
       "custom_css": [
@@ -85,6 +85,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
