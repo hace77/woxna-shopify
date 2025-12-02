@@ -290,6 +290,7 @@
       ],
       "name": "built to last",
       "settings": {
+        "image": "shopify://shop_images/Ljusnan-180-Alta-built_to_last.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
