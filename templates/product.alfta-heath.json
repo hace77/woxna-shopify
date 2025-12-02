@@ -207,6 +207,7 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}"
       ],
+      "name": "Features",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -270,50 +271,6 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_jMeibd": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_9Ly4tA": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Carry it your way</strong>",
-            "text": "<p>For better comfort, we’ve included a detachable dangler. It hangs the sheath at an easy-to-reach height a bit further down your leg. When you want to remove the sheath, just unsnap it from the dangler, quick and simple. If you instead prefer to have the sheatch by your waist remove your dangler completley  and attach it to your belt through the riveted loop.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Br4hTf": {
-          "type": "column",
-          "settings": {
-            "title": "Built to Last",
-            "text": "<p>The sheaths are made in Europe from thick, durable, vegetable-tanned leather.</p><p>It’s a traditional, low-impact tanning method that uses natural tannins instead of chemicals. The leather starts firm, softens with use, and builds a deep patina that reflects the miles you’ve put in.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_9Ly4tA",
-        "column_Br4hTf"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -402,7 +359,6 @@
     "rich_text_7GmfxC",
     "related-products",
     "image_with_text_gT36bV",
-    "multicolumn_jMeibd",
     "image_with_text_HFPrig",
     "image_with_text_X3w9Mw"
   ]
