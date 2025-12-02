@@ -164,6 +164,7 @@
       "block_order": [
         "klaviyo_reviews_product_reviews_zC3Teq"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -215,410 +216,9 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_ji3RVR": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Gnc8NC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Contact and Support",
-            "heading_size": "h1"
-          }
-        },
-        "text_Kqm3hA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
-          }
-        },
-        "button_cXrCX8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Support",
-            "button_link": "shopify://pages/support",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Gnc8NC",
-        "text_Kqm3hA",
-        "button_cXrCX8"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "slideshow_cFTBLq": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_KHQeTe": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-slideshow-5.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_6tejKT": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-slideshow-4.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_JJthAJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-slideshow-6.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_9UQMLV": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_NVggpn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_wmzUEY": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-food.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_KHQeTe",
-        "slide_6tejKT",
-        "slide_JJthAJ",
-        "slide_9UQMLV",
-        "slide_NVggpn",
-        "slide_wmzUEY"
-      ],
-      "custom_css": [
-        "@media (width <= 768px) {slideshow-component {display: none; }}"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "slideshow_RjE78x": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_EbetM4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-leather-guard-folded-on-backpack.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_gdxmLE": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-leather-guard-sit-pad.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_iQCX4y": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-bushcrafting-leather-guard.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_6a3Bhn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-camera-2.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_Aq4bbY": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-saw-blade-2.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_TdjLk6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-food-2.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_EbetM4",
-        "slide_gdxmLE",
-        "slide_iQCX4y",
-        "slide_6a3Bhn",
-        "slide_Aq4bbY",
-        "slide_TdjLk6"
-      ],
-      "custom_css": [
-        "@media (width >= 768px) {slideshow-component {display: none; }}"
-      ],
-      "name": "Slideshow mobile",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "rich_text_QkwfpV": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LTX3M7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TdaeQM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_qxwfAc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTX3M7",
-        "text_TdaeQM",
-        "button_qxwfAc"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 68,
-        "padding_bottom": 76
-      }
-    },
-    "image_with_text_j83Eef": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zwyMCT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Produced with Quality and Tradition",
-            "heading_size": "h1"
-          }
-        },
-        "text_gMpi8E": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_tCkADX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our production",
-            "button_link": "shopify://pages/made-in-sweden",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_zwyMCT",
-        "text_gMpi8E",
-        "button_tCkADX"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -717,6 +317,100 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_HFPrig": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_m3iPrH": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Carry it your way</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_YUH7AJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For better comfort, we’ve included a detachable dangler. It hangs the sheath at an easy-to-reach height a bit further down your leg. When you want to remove the sheath, just unsnap it from the dangler, quick and simple. If you instead prefer to have the sheatch by your waist remove your dangler completley  and attach it to your belt through the riveted loop.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_kHctPt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_m3iPrH",
+        "text_YUH7AJ",
+        "button_kHctPt"
+      ],
+      "name": "carry it your way",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_X3w9Mw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MayVTU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_GHgatw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_rfK4iH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MayVTU",
+        "text_GHgatw",
+        "button_rfK4iH"
+      ],
+      "name": "built to last",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -724,13 +418,10 @@
     "image_banner_ajHV6U",
     "1730797907a66336cc",
     "rich_text_7GmfxC",
-    "rich_text_ji3RVR",
-    "slideshow_cFTBLq",
-    "slideshow_RjE78x",
-    "rich_text_QkwfpV",
-    "image_with_text_j83Eef",
     "related-products",
     "image_with_text_gT36bV",
-    "multicolumn_jMeibd"
+    "multicolumn_jMeibd",
+    "image_with_text_HFPrig",
+    "image_with_text_X3w9Mw"
   ]
 }
