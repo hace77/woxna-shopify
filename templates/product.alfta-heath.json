@@ -215,47 +215,6 @@
         "padding_bottom": 52
       }
     },
-    "collapsible_content_EM8rA3": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_6EAfhX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Taking Care of your Leather",
-            "icon": "leather",
-            "row_content": "<p>As with all leather, if it gets wet, let it dry slowly at room temperature. Avoid placing it on radiators or other direct heat sources.</p><p>If the leather feels stiff after being used in damp or wet conditions, you can treat it with a leather fat or conditioner. This works especially well on thicker leathers designed for tougher use and exposure to the elements. You can also apply a leather wax, which sits on the surface for added water repellency, while the fat penetrates deeper into the material.</p><p>If the leather has dried out more, it’s often best to start with a hydrating leather balm before applying fat.</p><p>Use a dry, lint-free cloth or sponge to work the balm into the leather until the surface, then let it absorb overnight. Follow up with a leather fat: apply an even layer and work it in to the leather.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_k3ejMx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Sustainability",
-            "icon": "leaf",
-            "row_content": "<p>We use a custom-made leather for our Gnarp. It’s made using hides from Swedish cattle and it’s been treated with a natural leather fat to improve its resistance to water and fire. On top of that, it’s been given an additional wax treatment on both the front and back to further enhance its water repellency.</p><p>The leather is vegetable tanned which is a slower more traditional and natural process that results in a higher-quality leather that breathes better, ages beautifully and lasts longer. It is also a far more responsible choice for both people and the environment compared to chrome tanning, which is more commonly used today.</p><p>Our leather supplier is independently reviewed every year through the HIGG Index, and their tanneries are LWG certified. This means their environmental practices meet strict standards — including responsible energy use, proper wastewater treatment, and careful chemical management and testing to ensure the leather is free from harmful substances like chrome and PFAS.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_6EAfhX",
-        "collapsible_row_k3ejMx"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "A Durable Leather",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_ji3RVR": {
       "type": "rich-text",
       "blocks": {
@@ -675,6 +634,89 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_gT36bV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HaJrGp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Made to match your saw</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_6gPDtT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sheaths fit the Ljusnan, Hälsing, and Söderfors saw models.</p><p>Choose your size (for 180 mm or 250 mm saws) and your preferred color.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HaJrGp",
+        "text_6gPDtT"
+      ],
+      "name": "Made to match",
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan-180-Alta-1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_jMeibd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9Ly4tA": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Carry it your way</strong>",
+            "text": "<p>For better comfort, we’ve included a detachable dangler. It hangs the sheath at an easy-to-reach height a bit further down your leg. When you want to remove the sheath, just unsnap it from the dangler, quick and simple. If you instead prefer to have the sheatch by your waist remove your dangler completley  and attach it to your belt through the riveted loop.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Br4hTf": {
+          "type": "column",
+          "settings": {
+            "title": "Built to Last",
+            "text": "<p>The sheaths are made in Europe from thick, durable, vegetable-tanned leather.</p><p>It’s a traditional, low-impact tanning method that uses natural tannins instead of chemicals. The leather starts firm, softens with use, and builds a deep patina that reflects the miles you’ve put in.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9Ly4tA",
+        "column_Br4hTf"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -682,12 +724,13 @@
     "image_banner_ajHV6U",
     "1730797907a66336cc",
     "rich_text_7GmfxC",
-    "collapsible_content_EM8rA3",
     "rich_text_ji3RVR",
     "slideshow_cFTBLq",
     "slideshow_RjE78x",
     "rich_text_QkwfpV",
     "image_with_text_j83Eef",
-    "related-products"
+    "related-products",
+    "image_with_text_gT36bV",
+    "multicolumn_jMeibd"
   ]
 }
