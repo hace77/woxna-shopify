@@ -216,20 +216,20 @@
         "image_UdTHzh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ljusnan250mm1_1_start.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw",
+            "image": "shopify://shop_images/alfta_frontpage2.jpg",
+            "img_link": "shopify://products/alfta-sheath",
             "show_text_overlay": true,
-            "heading": "Ljusnan 250 mm",
+            "heading": "Alfta Leather Sheaths",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
-            "mobile_text_alignment": "right",
+            "mobile_text_alignment": "center",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
-            "description": "Finally back in stock!",
+            "description": "Finally here, the perfect complement to your woxna saw",
             "description_style": "body",
             "button_label": "Buy it now",
-            "button_link": "shopify://products/ljusnan-foldable-saw",
+            "button_link": "shopify://products/alfta-sheath",
             "button_style_secondary": false
           }
         },
