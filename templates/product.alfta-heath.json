@@ -33,11 +33,11 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_4AQUjt": {
-          "type": "custom_liquid",
-          "name": "SKU number",
+        "sku_cGN6wt": {
+          "type": "sku",
           "settings": {
-            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+            "text_style": "body",
+            "prefix_text": "SKU:"
           }
         },
         "judge_me_reviews_preview_badge_VG7pPA": {
@@ -84,7 +84,7 @@
         "price",
         "klaviyo_reviews_average_rating_GaRrKj",
         "buy_buttons",
-        "custom_liquid_4AQUjt",
+        "sku_cGN6wt",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",
@@ -139,7 +139,7 @@
         "text_rBXVdh"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-180-Alta-_113018-513018_-16.jpg",
+        "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-8.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -212,7 +212,7 @@
       ],
       "name": "Made to match",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-180-Alta-1.jpg",
+        "image": "shopify://shop_images/alfta-both-colors.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -224,7 +224,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_HFPrig": {
@@ -262,8 +262,8 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_with_text_X3w9Mw": {
@@ -301,7 +301,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
