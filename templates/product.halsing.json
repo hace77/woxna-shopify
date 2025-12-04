@@ -38,6 +38,14 @@
             "swatch_shape": "circle"
           }
         },
+        "extra_products_rLLACN": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Buy the set with the Alfta leather sheath",
+            "legend": "",
+            "none_label": "No extra product"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -75,6 +83,7 @@
         "judge_me_reviews_preview_badge_VG7pPA",
         "price",
         "variant_picker",
+        "extra_products_rLLACN",
         "buy_buttons",
         "sku_MxgBeJ",
         "icon_with_text_GbTykW",
