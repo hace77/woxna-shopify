@@ -535,6 +535,13 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              {%- when 'extra_products' -%}
+                {% render 'product-extra-products',
+                  product: product,
+                  block: block,
+                  product_form_id: product_form_id,
+                  section_id: section.id
+                %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -603,7 +610,7 @@
                 {%- endif -%}
                 
               {%- when 'rating' -%}
-                {%- if product.metafields.reviews.rating.value != blank -%}
+                {%- if product.metafields.reviews.rating.value != blank and product.metafields.reviews.rating_count > 0 -%}
                   <div class="rating-wrapper">
                     {% liquid
                       assign rating_decimal = 0
@@ -1086,6 +1093,31 @@
             }
           ],
           "default": "circle"
+        }
+      ]
+    },
+    {
+      "type": "extra_products",
+      "name": "Extra products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Complete your bundle"
+        },
+        {
+          "type": "text",
+          "id": "legend",
+          "label": "Button group label",
+          "default": "Add an extra product"
+        },
+        {
+          "type": "text",
+          "id": "none_label",
+          "label": "\"None\" option label",
+          "default": "No extra product"
         }
       ]
     },

@@ -1,0 +1,556 @@
+{%- liquid
+  # Build variant-to-extra-product mapping
+  assign variant_extra_products_json = '{'
+  assign first_variant = true
+  
+  for variant in product.variants
+    assign extra_product_metafield = variant.metafields.custom.extravariant_product1
+    if extra_product_metafield != blank
+      assign extra_product_1 = extra_product_metafield.value
+      if extra_product_1 != blank and extra_product_1 != null
+        assign extra_variant_1 = extra_product_1.selected_or_first_available_variant
+        
+        unless first_variant
+          assign variant_extra_products_json = variant_extra_products_json | append: ','
+        endunless
+        assign first_variant = false
+        
+        assign variant_extra_products_json = variant_extra_products_json | append: '"' | append: variant.id | append: '":{'
+        assign variant_extra_products_json = variant_extra_products_json | append: '"products":[{'
+        assign product_title_escaped = extra_product_1.title | json
+        
+        assign variant_extra_products_json = variant_extra_products_json | append: '"id":' | append: extra_product_1.id | append: ','
+        assign variant_extra_products_json = variant_extra_products_json | append: '"title":' | append: product_title_escaped | append: ','
+        assign variant_extra_products_json = variant_extra_products_json | append: '"variant_id":' | append: extra_variant_1.id | append: ','
+        assign variant_extra_products_json = variant_extra_products_json | append: '"price":' | append: extra_variant_1.price | append: ','
+        assign variant_extra_products_json = variant_extra_products_json | append: '"available":' | append: extra_variant_1.available | append: ''
+        assign variant_extra_products_json = variant_extra_products_json | append: '}]'
+        assign variant_extra_products_json = variant_extra_products_json | append: '}'
+      endif
+    endif
+  endfor
+  
+  assign variant_extra_products_json = variant_extra_products_json | append: '}'
+  
+  # Check if any variant has extra products
+  assign has_any_extra_products = false
+  if variant_extra_products_json != '{}'
+    assign has_any_extra_products = true
+  endif
+  
+  # Get initial variant's extra products for Liquid rendering
+  assign current_variant = product.selected_or_first_available_variant
+  assign current_extra_product_metafield = current_variant.metafields.custom.extravariant_product1
+  if current_extra_product_metafield != blank
+    assign current_extra_product_1 = current_extra_product_metafield.value
+  endif
+  
+  if current_extra_product_1 != blank and current_extra_product_1 != null
+    assign has_extra_products = true
+    assign extra_product_1 = current_extra_product_1
+    assign extra_variant_1 = extra_product_1.selected_or_first_available_variant
+    assign extra_form_id_1 = 'ExtraProductForm-' | append: section.id | append: '-1'
+  else
+    assign has_extra_products = false
+  endif
+-%}
+
+{%- if has_any_extra_products -%}
+  <div
+    class="product-extra-products"
+    data-extra-products
+    data-block-id="{{ block.id }}"
+    data-section-id="{{ section.id }}"
+  >
+    <script type="application/json" data-variant-mapping>{{ variant_extra_products_json }}</script>
+    {%- comment -%}
+      Debug info:
+      - JSON: {{ variant_extra_products_json }}
+      - Has any: {{ has_any_extra_products }}
+      - Current variant ID: {{ current_variant.id }}
+      - Current variant has extra: {{ has_extra_products }}
+    {%- endcomment -%}
+    {%- unless block.settings.heading == blank -%}
+      <div class="product-extra-products__heading rte">
+        {{ block.settings.heading }}
+      </div>
+    {%- endunless -%}
+
+    <fieldset class="product-form__input product-form__input--pill" aria-live="polite">
+      {%- unless block.settings.legend == blank -%}
+        <legend class="form__label">{{ block.settings.legend }}</legend>
+      {%- endunless -%}
+
+      {%- assign input_name = 'extra-product-' | append: section.id | append: '-' | append: block.id -%}
+
+      <div class="extra-product-options-container" data-extra-product-options-container>
+        {%- if has_extra_products -%}
+          {%- assign input_id_1 = input_name | append: '-one' -%}
+          <div class="extra-product-option" data-extra-product-option>
+            <input
+              type="radio"
+              id="{{ input_id_1 }}"
+              name="{{ input_name }}"
+              value="{{ extra_product_1.id }}"
+              data-extra-product-option-input
+              data-variant-id="{{ extra_variant_1.id }}"
+              data-product-title="{{ extra_product_1.title | escape }}"
+              data-extra-form-id="{{ extra_form_id_1 }}"
+              {% unless extra_variant_1.available %}
+                class="disabled"
+                disabled
+              {% endunless %}
+            >
+            <label for="{{ input_id_1 }}">
+              <span class="extra-product-label__title">
+                {{ extra_product_1.title }}
+              </span>
+              <span class="extra-product-label__price">
+                {{ extra_variant_1.price | money }}
+              </span>
+            </label>
+            <div class="extra-product-hidden-form" hidden aria-hidden="true">
+              <product-form class="product-form product-form--extra">
+                <div class="product-form__error-message-wrapper" role="alert" hidden>
+                  <span class="product-form__error-message"></span>
+                </div>
+                {%- form 'product', extra_product_1, id: extra_form_id_1, class: 'form', data-extra-form-id: extra_form_id_1 -%}
+                  <input type="hidden" name="id" value="{{ extra_variant_1.id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="product-form__submit button button--full-width">
+                    <span>{{ 'products.product.add_to_cart' | t }}</span>
+                    {%- render 'loading-spinner' -%}
+                  </button>
+                {%- endform -%}
+              </product-form>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <p class="extra-product-status visually-hidden" data-extra-product-status></p>
+    </fieldset>
+  </div>
+  {%- unless extra_products_script_loaded -%}
+    {%- assign extra_products_script_loaded = true -%}
+    <script>
+      (() => {
+        class ExtraProductSelector {
+          constructor(container) {
+            this.container = container;
+            this.optionsContainer = container.querySelector('[data-extra-product-options-container]');
+            this.fieldset = container.querySelector('fieldset');
+            this.status = container.querySelector('[data-extra-product-status]');
+            this.sectionId = container.dataset.sectionId;
+            this.blockId = container.dataset.blockId;
+            this.inputName = `extra-product-${this.sectionId}-${this.blockId}`;
+            this.variantMapping = {};
+            this.isProcessing = false;
+            this.currentInput = null;
+            this.currentVariantId = null;
+            this.isInitialized = false;
+
+            // Get JSON from script tag
+            const mappingScript = container.querySelector('script[data-variant-mapping]');
+            let jsonString = '{}';
+            
+            if (mappingScript) {
+              jsonString = mappingScript.textContent.trim();
+              console.log('Raw JSON string from script tag:', jsonString);
+            } else {
+              console.warn('No variant mapping script tag found');
+            }
+            
+            try {
+              this.variantMapping = JSON.parse(jsonString);
+              console.log('Extra products variant mapping loaded:', this.variantMapping);
+              console.log('Mapping keys:', Object.keys(this.variantMapping));
+            } catch (e) {
+              console.error('Error parsing variant mapping:', e);
+              console.error('JSON string was:', jsonString);
+              this.variantMapping = {};
+            }
+
+            this.handleCartUpdate = this.handleCartUpdate.bind(this);
+            this.handleCartError = this.handleCartError.bind(this);
+            this.handleVariantChange = this.handleVariantChange.bind(this);
+            this.onChange = this.onChange.bind(this);
+
+            this.cartUpdateUnsubscriber =
+              typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
+                ? subscribe(PUB_SUB_EVENTS.cartUpdate, this.handleCartUpdate)
+                : null;
+
+            this.cartErrorUnsubscriber =
+              typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
+                ? subscribe(PUB_SUB_EVENTS.cartError, this.handleCartError)
+                : null;
+
+            this.variantChangeUnsubscriber =
+              typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
+                ? subscribe(PUB_SUB_EVENTS.variantChange, this.handleVariantChange)
+                : null;
+
+            // Check if we already have Liquid-rendered content
+            const existingLiquidOptions = this.optionsContainer.querySelectorAll('[data-extra-product-option]');
+            if (existingLiquidOptions.length > 0) {
+              // Mark existing options as from Liquid so we know to preserve them
+              existingLiquidOptions.forEach(option => {
+                option.setAttribute('data-from-liquid', 'true');
+              });
+            }
+
+            // Initialize with current variant after a short delay to ensure DOM is ready
+            setTimeout(() => {
+              const variantSelects = document.querySelector('variant-selects');
+              let variantId = null;
+              
+              if (variantSelects) {
+                const selectedVariant = variantSelects.querySelector('[data-selected-variant]');
+                if (selectedVariant) {
+                  try {
+                    const variant = JSON.parse(selectedVariant.textContent);
+                    if (variant && variant.id) {
+                      variantId = variant.id;
+                    }
+                  } catch (e) {
+                    console.error('Error parsing initial variant:', e);
+                  }
+                }
+              }
+              
+              // Fallback: try to get variant from URL
+              if (!variantId) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const variantParam = urlParams.get('variant');
+                if (variantParam) {
+                  variantId = parseInt(variantParam);
+                }
+              }
+              
+              // If we have a variant ID, update for it
+              if (variantId) {
+                const variantIdStr = variantId.toString();
+                // Check if we already have Liquid-rendered content for this variant
+                const hasContent = this.optionsContainer.querySelector('[data-extra-product-option]');
+                if (hasContent) {
+                  // Check if the content matches this variant
+                  const firstInput = this.optionsContainer.querySelector('input[data-extra-product-option-input]');
+                  if (firstInput && this.variantMapping[variantIdStr]) {
+                    // Content exists and variant has mapping, just mark as initialized
+                    this.currentVariantId = variantIdStr;
+                    this.isInitialized = true;
+                    this.fieldset.style.display = '';
+                    console.log('Preserving existing Liquid content for variant:', variantIdStr);
+                    return;
+                  }
+                }
+                // Update for the variant
+                console.log('Initializing for variant:', variantId);
+                this.updateForVariant(variantId);
+              } else if (existingLiquidOptions.length > 0) {
+                // We have Liquid content but no variant ID, keep it
+                console.log('Keeping existing Liquid content, no variant ID found');
+                this.isInitialized = true;
+                this.fieldset.style.display = '';
+              } else {
+                // No variant ID and no content, try first variant in mapping
+                const firstVariantId = Object.keys(this.variantMapping)[0];
+                if (firstVariantId) {
+                  console.log('No variant found, using first in mapping:', firstVariantId);
+                  this.updateForVariant(firstVariantId);
+                } else {
+                  console.log('No variants with extra products found');
+                  this.isInitialized = true;
+                  this.fieldset.style.display = 'none';
+                }
+              }
+            }, 150);
+
+            this.container.addEventListener('change', (e) => {
+              if (e.target.matches('input[data-extra-product-option-input]')) {
+                this.onChange(e);
+              }
+            });
+          }
+
+          destroy() {
+            this.cartUpdateUnsubscriber?.();
+            this.cartErrorUnsubscriber?.();
+            this.variantChangeUnsubscriber?.();
+          }
+
+          handleVariantChange({ data: { variant, sectionId } }) {
+            if (!variant || !variant.id || sectionId !== this.sectionId) return;
+            // Use setTimeout to ensure DOM is ready
+            setTimeout(() => {
+              this.updateForVariant(variant.id);
+            }, 50);
+          }
+
+          updateForVariant(variantId) {
+            const variantIdStr = variantId.toString();
+            if (this.currentVariantId === variantIdStr) return;
+            this.currentVariantId = variantIdStr;
+
+            console.log('Updating extra products for variant:', variantIdStr, 'Mapping keys:', Object.keys(this.variantMapping));
+
+            // Try both string and number keys in the mapping
+            let variantData = this.variantMapping[variantIdStr] || this.variantMapping[variantId];
+            
+            // Also try converting variantId to number if it's a string
+            if (!variantData && !isNaN(variantId)) {
+              variantData = this.variantMapping[parseInt(variantId).toString()] || this.variantMapping[parseInt(variantId)];
+            }
+            
+            // Try all keys as strings
+            if (!variantData) {
+              const allKeys = Object.keys(this.variantMapping);
+              for (const key of allKeys) {
+                if (key.toString() === variantIdStr || parseInt(key) === parseInt(variantIdStr)) {
+                  variantData = this.variantMapping[key];
+                  break;
+                }
+              }
+            }
+            
+            console.log('Variant data found:', variantData);
+            
+            // Check if existing content matches this variant (on initial load, preserve Liquid content)
+            const existingOptions = this.optionsContainer.querySelectorAll('[data-extra-product-option]');
+            if (!this.isInitialized && existingOptions.length > 0 && variantData && variantData.products) {
+              // On first load, if we have Liquid-rendered content and variant data exists, preserve it
+              const firstInput = existingOptions[0].querySelector('input[data-extra-product-option-input]');
+              if (firstInput && firstInput.dataset.variantId) {
+                // Check if the variant ID in the input matches the variant data
+                const existingVariantId = firstInput.dataset.variantId;
+                const existingProductId = firstInput.value;
+                const matchesVariantData = variantData.products.some(p => 
+                  p.variant_id.toString() === existingVariantId && p.id.toString() === existingProductId
+                );
+                if (matchesVariantData) {
+                  // Content matches, just mark as initialized and ensure fieldset is visible
+                  this.isInitialized = true;
+                  this.fieldset.style.display = '';
+                  return;
+                }
+              }
+            }
+            
+            this.isInitialized = true;
+            
+            // Clear existing dynamically created options
+            existingOptions.forEach(option => {
+              // Only remove if it was dynamically created (has data-extra-product-option-input)
+              const input = option.querySelector('input[data-extra-product-option-input]');
+              if (input) {
+                option.remove();
+              }
+            });
+
+            if (!variantData || !variantData.products || variantData.products.length === 0) {
+              // Hide the fieldset if no extra products for this variant
+              this.fieldset.style.display = 'none';
+              this.isInitialized = true;
+              return;
+            }
+
+            // Show the fieldset
+            this.fieldset.style.display = '';
+
+            // Create options for each extra product
+            const self = this;
+            variantData.products.forEach((product, index) => {
+              const optionDiv = document.createElement('div');
+              optionDiv.className = 'extra-product-option';
+              optionDiv.setAttribute('data-extra-product-option', '');
+
+              const inputId = `${self.inputName}-${variantId}-${index}`;
+              const formId = `ExtraProductForm-${self.sectionId}-${variantId}-${index}`;
+              const formattedPrice = self.formatMoney(product.price);
+
+              optionDiv.innerHTML = `
+                <input
+                  type="radio"
+                  id="${inputId}"
+                  name="${self.inputName}"
+                  value="${product.id}"
+                  data-extra-product-option-input
+                  data-variant-id="${product.variant_id}"
+                  data-product-title="${product.title.replace(/"/g, '&quot;')}"
+                  data-extra-form-id="${formId}"
+                  ${!product.available ? 'class="disabled" disabled' : ''}
+                >
+                <label for="${inputId}">
+                  <span class="extra-product-label__title">${product.title}</span>
+                  <span class="extra-product-label__price">${formattedPrice}</span>
+                </label>
+                <div class="extra-product-hidden-form" hidden aria-hidden="true">
+                  <product-form class="product-form product-form--extra">
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      <span class="product-form__error-message"></span>
+                    </div>
+                    <form action="/cart/add" method="post" enctype="multipart/form-data" id="${formId}" class="form" data-extra-form-id="${formId}">
+                      <input type="hidden" name="id" value="${product.variant_id}">
+                      <input type="hidden" name="quantity" value="1">
+                      <button type="submit" class="product-form__submit button button--full-width">
+                        <span>Add to cart</span>
+                        <span class="loading__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </span>
+                      </button>
+                    </form>
+                  </product-form>
+                </div>
+              `;
+
+              this.optionsContainer.appendChild(optionDiv);
+
+              // Initialize the product-form custom element if it exists
+              const productForm = optionDiv.querySelector('product-form');
+              if (productForm && customElements.get('product-form')) {
+                // The form will be initialized automatically by the custom element
+              }
+            });
+          }
+
+          formatMoney(cents) {
+            if (typeof window.Shopify !== 'undefined' && window.Shopify.formatMoney) {
+              return window.Shopify.formatMoney(cents);
+            }
+            return (cents / 100).toFixed(2);
+          }
+
+          onChange(event) {
+            const input = event.target;
+            this.toggleSelectedStates();
+
+            if (!input.dataset.extraFormId) {
+              this.clearStatus();
+              return;
+            }
+
+            const targetForm = document.getElementById(input.dataset.extraFormId);
+            if (!targetForm) {
+              this.setStatus('Unable to add product. Please try again.', true);
+              this.resetSelection();
+              return;
+            }
+
+            if (this.isProcessing) return;
+
+            this.currentInput = input;
+            this.isProcessing = true;
+            this.setLoading(input, true);
+            this.setStatus('Adding to cart...');
+
+            // Find the product-form wrapper and trigger its submit
+            const productForm = targetForm.closest('product-form');
+            if (productForm && typeof productForm.querySelector === 'function') {
+              const submitButton = productForm.querySelector('button[type="submit"]');
+              if (submitButton && !submitButton.disabled) {
+                if (typeof targetForm.requestSubmit === 'function') {
+                  targetForm.requestSubmit();
+                } else {
+                  targetForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+                }
+              }
+            } else {
+              if (typeof targetForm.requestSubmit === 'function') {
+                targetForm.requestSubmit();
+              } else {
+                targetForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+              }
+            }
+          }
+
+          handleCartUpdate() {
+            if (!this.isProcessing) return;
+            this.isProcessing = false;
+            this.setStatus('Added to cart.');
+            if (this.currentInput) {
+              this.setLoading(this.currentInput, false);
+            }
+            this.resetSelection();
+          }
+
+          handleCartError() {
+            if (!this.isProcessing) return;
+            this.isProcessing = false;
+            this.setStatus('Unable to add product. Please try again.', true);
+            if (this.currentInput) {
+              this.setLoading(this.currentInput, false);
+            }
+            this.resetSelection();
+          }
+
+          toggleSelectedStates() {
+            const inputs = this.container.querySelectorAll('input[data-extra-product-option-input]');
+            inputs.forEach((radio) => {
+              const option = radio.closest('.extra-product-option');
+              if (!option) return;
+              option.classList.toggle('is-selected', Boolean(radio.checked && radio.dataset.extraFormId));
+            });
+          }
+
+          setLoading(input, isLoading) {
+            const label = this.container.querySelector(`label[for="${input.id}"]`);
+            if (label) {
+              label.classList.toggle('is-loading', isLoading);
+              label.setAttribute('aria-busy', isLoading ? 'true' : 'false');
+            }
+          }
+
+          setStatus(message, isError = false) {
+            if (!this.status) return;
+            this.status.textContent = message;
+            this.status.classList.toggle('visually-hidden', !message);
+            this.status.classList.toggle('extra-product-status--error', Boolean(isError && message));
+          }
+
+          clearStatus() {
+            if (!this.status) return;
+            this.status.textContent = '';
+            this.status.classList.add('visually-hidden');
+            this.status.classList.remove('extra-product-status--error');
+          }
+
+          resetSelection() {
+            const inputs = this.container.querySelectorAll('input[data-extra-product-option-input]');
+            inputs.forEach((input) => {
+              input.checked = false;
+            });
+            this.toggleSelectedStates();
+          }
+        }
+
+        const initExtraProductSelectors = (root = document) => {
+          const containers = root.querySelectorAll('[data-extra-products]');
+          containers.forEach((container) => {
+            if (container.dataset.extraProductsInitialized === 'true') return;
+            container.dataset.extraProductsInitialized = 'true';
+            const selector = new ExtraProductSelector(container);
+            container.addEventListener(
+              'shopify:section:unload',
+              () => {
+                selector.destroy();
+              },
+              { once: true }
+            );
+          });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+          initExtraProductSelectors(document);
+        });
+
+        document.addEventListener('shopify:section:load', (event) => {
+          initExtraProductSelectors(event.target);
+        });
+      })();
+    </script>
+  {%- endunless -%}
+{%- endif -%}
+

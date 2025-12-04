@@ -942,6 +942,26 @@
         "name": "file_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "extraproduct1",
+      "namespace": "custom",
+      "name": "extraproduct1",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extraproduct2",
+      "namespace": "custom",
+      "name": "extraproduct2",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
@@ -1153,6 +1173,16 @@
       "type": {
         "name": "rich_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "extravariant_product1",
+      "namespace": "custom",
+      "name": "extravariant product1",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
       }
     }
   ],

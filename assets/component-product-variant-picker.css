@@ -33,6 +33,15 @@ variant-selects {
   gap: 0.5rem;
 }
 
+/* Invisible flex items to prevent last button from stretching */
+.product-form__input--pill .hidden-flex-item {
+  content: "";
+  flex: 1 0 120px;
+  visibility: hidden;
+  height: 0;
+  margin: 0.7rem 0 0.2rem 0;
+}
+
 .product-form__input--pill input[type='radio'] {
   position: absolute;
   opacity: 0;
@@ -190,3 +199,47 @@ variant-selects {
   }
 }
 /* End custom styles for Swatch display type */
+
+.product-extra-products {
+  margin-top: 1.6rem;
+}
+
+.product-extra-products__heading {
+  margin-bottom: 0.4rem;
+}
+
+.extra-product-option {
+  width: 100%;
+}
+
+.extra-product-option label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.extra-product-label__title {
+  flex: 1;
+  text-align: left;
+}
+
+.extra-product-label__price {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.extra-product-status {
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  color: #445F45;
+}
+
+.extra-product-status--error {
+  color: #aa362d;
+}
+
+.extra-product-option label.is-loading {
+  opacity: 0.6;
+}
