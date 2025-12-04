@@ -444,7 +444,6 @@
             this.currentInput = input;
             this.isProcessing = true;
             this.setLoading(input, true);
-            this.setStatus('Adding to cart...');
 
             // Find the product-form wrapper and trigger its submit
             const productForm = targetForm.closest('product-form');
@@ -469,7 +468,7 @@
           handleCartUpdate() {
             if (!this.isProcessing) return;
             this.isProcessing = false;
-            this.setStatus('Added to cart.');
+            this.clearStatus();
             if (this.currentInput) {
               this.setLoading(this.currentInput, false);
             }
