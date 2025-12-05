@@ -7,6 +7,8 @@
         src="{{ section.settings.background_image | image_url: width: 1200 }}" 
         alt="{{ section.settings.heading | escape }}"
         loading="lazy"
+        width="{{ section.settings.background_image.width }}"
+        height="{{ section.settings.background_image.height }}"
       >
     </div>
   {%- endif -%}

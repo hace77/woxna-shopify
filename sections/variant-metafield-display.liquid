@@ -27,7 +27,12 @@
             # Handle image/file metafields
             if metafield_type == 'file_reference'
               assign image_url = variant_metafield.value | image_url: width: 1200
-              echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="1200" height="auto">'
+              assign image_width = variant_metafield.value.width | default: 1200
+              assign image_height = variant_metafield.value.height | default: 800
+              if variant_metafield.value.aspect_ratio
+                assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
+              endif
+              echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
             # Handle rich text metafields
             elsif metafield_type == 'rich_text_field'
               echo variant_metafield | metafield_tag
@@ -35,7 +40,7 @@
             else
               # Check if it's an image URL
               if variant_metafield.value contains '.jpg' or variant_metafield.value contains '.png' or variant_metafield.value contains '.gif' or variant_metafield.value contains '.webp' or variant_metafield.value contains 'cdn.shopify.com'
-                echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%; height: auto;">'
+                echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%;">'
               # Plain text or other content
               else
                 echo variant_metafield.value
