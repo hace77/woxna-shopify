@@ -79,7 +79,7 @@
       ],
       "name": "Image banner MOBILE",
       "settings": {
-        "image": "shopify://shop_images/alfta-both-colors-forest.jpg",
+        "image": "shopify://shop_images/Halsing_250_Alta.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
