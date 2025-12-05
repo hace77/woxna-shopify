@@ -136,6 +136,15 @@
                 assign fetch_priority = 'high'
               endif
             -%}
+            {%- if section.index == 1 and forloop.first and block.settings.image != blank -%}
+              {%- liquid
+                assign lcp_image_url = block.settings.image | image_url: width: 750
+                if block.settings.image.width >= 1100
+                  assign lcp_image_url = block.settings.image | image_url: width: 1100
+                endif
+              -%}
+              <link rel="preload" as="image" href="{{ lcp_image_url }}" fetchpriority="high">
+            {%- endif -%}
             {%- if forloop.first %}
               {{
                 block.settings.image
