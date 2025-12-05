@@ -1,8 +1,6 @@
-<link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}"></noscript>
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {%- if section.settings.enable_sticky_button -%}
-  <link rel="stylesheet" href="{{ 'sticky-banner-button.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ 'sticky-banner-button.css' | asset_url }}"></noscript>
+  {{ 'sticky-banner-button.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}

@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ 'section-hero-block.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'section-hero-block.css' | asset_url }}"></noscript>
+{{ 'section-hero-block.css' | asset_url | stylesheet_tag }}
 
 <div class="hero-block hero-block--{{ section.settings.size }}">
   {%- if section.settings.background_image -%}
