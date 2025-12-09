@@ -15,14 +15,14 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "From the deep forests of Hälsingland",
+            "heading": "Christmas Guide",
             "heading_size": "h0"
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "At Woxna, we design and manufacture saws in our own factory in Hälsingland, where forest work has always been part of daily life. Our mission is to give this essential tool the status it deserves by combining heritage and innovation to create saws that last for generations.",
+            "text": "When we started Woxna, the dream was to create a folding saw where solid craftsmanship meets timeless design. We are incredibly grateful for the warm reception we've received this year, and it makes us extra proud if you choose to give a Woxna as a gift to someone you care about.",
             "text_style": "subtitle"
           }
         }
@@ -36,12 +36,12 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-hero-916-9_darker.jpg",
+        "image": "shopify://shop_images/jul_landing_16_9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
         "enable_sticky_button": false,
         "image_behavior": "none",
@@ -107,28 +107,28 @@
     "image_banner_KCRmEW": {
       "type": "image-banner",
       "blocks": {
-        "heading_QefCCB": {
+        "heading_PeLEdW": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Ljusnan",
+            "heading": "Which saw makes the best Christmas gift?",
             "heading_size": "h1"
           }
         },
         "text_J7mGyb": {
           "type": "text",
           "settings": {
-            "text": "Ljusnan is built for bushcrafters, campers, hunters, and anyone in need of a compact yet reliable folding saw. Its stainless steel blade offers knife-grade quality, resistant to rust and low on maintenance. Paired with a beautifully crafted walnut handle, it combines rugged performance with timeless design. ",
+            "text": "We want to help you find the perfect present, whether the recipient is a passionate outdoor enthusiast, hunter, bushcrafter, or simply loves quality and function.",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_QefCCB",
+        "heading_PeLEdW",
         "text_J7mGyb"
       ],
       "name": "Discover",
       "settings": {
-        "image": "shopify://shop_images/close-up.jpg",
+        "image": "shopify://shop_images/Ljusnan-180-Alta-_113018-513018_-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -142,22 +142,63 @@
         "show_text_below": true
       }
     },
-    "image_banner_QfXYxP": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+    "multirow_wXCAtd": {
+      "type": "multirow",
+      "blocks": {
+        "row_3xNyTq": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/farsdag_web_mobile_67a70cae-f4d4-4160-9616-62a720440900.jpg",
+            "caption": "",
+            "heading": "<strong>Step 1 – Consider the intended use</strong>",
+            "text": "<p>For tougher use and forestry work: Choose <strong>Hälsing</strong> with a carbon steel blade and hardened teeth. Perfect for those who want a durable, field-adapted tool that ages beautifully.</p><p>For lighter bushcraft, camping, gardening, or as a stylish design piece: <strong>Ljusnan</strong> in stainless steel is elegant, easy to carry, and can be sharpened by the recipient themselves.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_X94PXM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/ljusnan_both.jpg",
+            "caption": "",
+            "heading": "Step 2 – Which size should you choose?",
+            "text": "<p><strong>180 mm:</strong> For those who often carry their tools on their person while hiking or in the woods and want to minimize equipment weight.</p><p><strong>250 mm:</strong> For those who will mostly use the saw in the garden or need a larger saw to handle bigger timber – it's always easier to saw with the longer version!</p><p></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_XcKthJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/hero_saws5_7.png",
+            "caption": "",
+            "heading": "Step 3 – Which style fits best?",
+            "text": "<p><strong>Hälsing:</strong> Dark, rustic oak handle and black blade, for those who appreciate Swedish craftsmanship that lasts.</p><p><strong>Ljusnan:</strong> Elegant walnut and silver-shining blade, for those who love precision and timeless design.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_3xNyTq",
+        "row_X94PXM",
+        "row_XcKthJ"
+      ],
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-180mm-50.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_tKWdJf": {
@@ -237,6 +278,7 @@
         "column_AEgkaC",
         "column_d8pzRp"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card.content-container {background-color: #445f45 !important;}"
       ],
@@ -256,55 +298,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "image_banner_KGFPBK": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ljusnan_both.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "rich_text_tqTNdT": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_aFj8Fr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Which size is right for you?",
-            "heading_size": "h1"
-          }
-        },
-        "text_FWXrFp": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If keeping your gear as light as possible is the priority, like when heading out on day trips, the shorter Ljusnan (180 mm/7in) is the best fit.<br/><br/>In most other cases, we recommend the longer Ljusnan (250 mm/10in). The extra blade length makes every stroke more efficient, so sawing feels smoother and requires less effort.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_aFj8Fr",
-        "text_FWXrFp"
-      ],
-      "name": "Choose size",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "featured_collection_hatmBM": {
@@ -335,6 +328,7 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "none",
@@ -344,6 +338,44 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_banner_yt_wWJiXi": {
+      "type": "video-bannerYT",
+      "blocks": {
+        "heading_QGTiCB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>What makes the Hälsing a great Christmas gift?</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_htH76q": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QGTiCB",
+        "text_htH76q"
+      ],
+      "name": "Video Banner YT",
+      "settings": {
+        "video": "shopify://files/videos/Christmas Hälsing 180 1-1.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image_overlay_opacity": 0,
+        "enable_video_looping": false,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -351,11 +383,10 @@
     "image_banner_ExBjAj",
     "main",
     "image_banner_KCRmEW",
-    "image_banner_QfXYxP",
+    "multirow_wXCAtd",
     "image_with_text_tKWdJf",
     "multicolumn_CdWg9z",
-    "image_banner_KGFPBK",
-    "rich_text_tqTNdT",
-    "featured_collection_hatmBM"
+    "featured_collection_hatmBM",
+    "video_banner_yt_wWJiXi"
   ]
 }
