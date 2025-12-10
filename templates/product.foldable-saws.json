@@ -67,6 +67,14 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "rich_text_metafield_Dw3Upb": {
+          "type": "rich_text_metafield",
+          "settings": {
+            "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
+            "text_style": "body",
+            "show_as_information_box": true
+          }
         }
       },
       "block_order": [
@@ -78,7 +86,8 @@
         "buy_buttons",
         "custom_liquid_9Km4Ji",
         "icon_with_text_GbTykW",
-        "description"
+        "description",
+        "rich_text_metafield_Dw3Upb"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
