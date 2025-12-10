@@ -149,10 +149,10 @@
         "row_3xNyTq": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/farsdag_web_mobile_67a70cae-f4d4-4160-9616-62a720440900.jpg",
+            "image": "shopify://shop_images/Woxna-Packaging-Halsing-250.jpg",
             "caption": "",
             "heading": "<strong>Built for the Wild</strong>",
-            "text": "<p><br/>The Hälsing features a robust carbon steel blade with hardened teeth. It’s designed for forestry work, bushcraft, and tough challenges. It’s not just a saw; it’s a workhorse that cuts through wood with impressive speed and precision.</p>",
+            "text": "<p>The Hälsing features a robust carbon steel blade with hardened teeth. It’s designed for forestry work, bushcraft, and tough challenges. It’s not just a saw; it’s a workhorse that cuts through wood with impressive speed and precision.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -163,7 +163,7 @@
             "image": "shopify://shop_images/Halsing-folding-saw-180mm-101.jpg",
             "caption": "",
             "heading": "<strong>Authentic Swedish Craftsmanship</strong>",
-            "text": "<p>With its handle made from dark, treated oak and its striking black blade, the Hälsing exudes a rustic elegance. It feels solid in the hand and carries the scent of the forest and the workshop. It is a tool with a soul.</p><p></p>",
+            "text": "<p>With its handle made from dark, treated oak and its striking black blade, the Hälsing exudes a rustic elegance. It feels solid in the hand and carries the scent of the forest and the workshop. It is a tool with a soul.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -195,11 +195,11 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_tKWdJf": {
@@ -301,6 +301,55 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_TbYgng": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_G84ChX": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Complete Package – Saw + Sheath",
+            "heading_size": "h1"
+          }
+        },
+        "text_ykzfri": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Want to make the gift truly complete? Our ready-made sets combine the <strong>Hälsing</strong> with our new <strong>Alfta leather sheath</strong> in matching black leather. The sheath is custom-tailored to protect the saw and is made from vegetable-tanned leather that only gets more beautiful with age. A gift ready for adventure right out of the box.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_G84ChX",
+        "text_ykzfri"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_8kMANC": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/alfta_frontpage3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "featured_collection_hatmBM": {
       "type": "featured-collection",
       "custom_css": [
@@ -349,6 +398,8 @@
     "multirow_wXCAtd",
     "image_with_text_tKWdJf",
     "multicolumn_CdWg9z",
+    "rich_text_TbYgng",
+    "image_banner_8kMANC",
     "featured_collection_hatmBM"
   ]
 }
