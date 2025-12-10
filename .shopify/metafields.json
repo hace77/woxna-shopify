@@ -962,6 +962,26 @@
         "name": "product_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "extra_product_information",
+      "namespace": "custom",
+      "name": "extra product information",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "extratext",
+      "namespace": "custom",
+      "name": "extratext",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
@@ -1183,6 +1203,16 @@
       "type": {
         "name": "product_reference",
         "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "variant_informaion",
+      "namespace": "custom",
+      "name": "variant informaion",
+      "description": "add extra information to the variant product information",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
       }
     }
   ],
