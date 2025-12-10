@@ -336,9 +336,9 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/alfta_frontpage3.jpg",
+        "image": "shopify://shop_images/Halsing-180-Alta-15.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -398,8 +398,8 @@
     "multirow_wXCAtd",
     "image_with_text_tKWdJf",
     "multicolumn_CdWg9z",
-    "rich_text_TbYgng",
     "image_banner_8kMANC",
+    "rich_text_TbYgng",
     "featured_collection_hatmBM"
   ]
 }
