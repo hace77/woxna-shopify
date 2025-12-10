@@ -36,10 +36,10 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/jul_landing_16_9.jpg",
+        "image": "shopify://shop_images/halsing-landningssida1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "top-left",
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
