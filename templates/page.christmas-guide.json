@@ -50,43 +50,43 @@
         "show_text_below": true
       }
     },
-    "image_banner_ExBjAj": {
-      "type": "image-banner",
+    "video_banner_yt_wWJiXi": {
+      "type": "video-bannerYT",
       "blocks": {
-        "heading_ArRxbY": {
+        "heading_QGTiCB": {
           "type": "heading",
           "settings": {
-            "heading": "From the deep forests of Hälsingland",
+            "heading": "<strong>What makes the Hälsing a great Christmas gift?</strong>",
             "heading_size": "h1"
           }
         },
-        "text_KW7Vgx": {
+        "text_htH76q": {
           "type": "text",
           "settings": {
-            "text": "At Woxna, we design and manufacture saws in our own factory in Hälsingland, where forest work has always been part of daily life. Our mission is to give this essential tool the status it deserves by combining heritage and innovation to create saws that last for generations.",
-            "text_style": "subtitle"
+            "text": "The <strong>Hälsing</strong> is designed for those who appreciate raw strength and authentic heritage. With its carbon steel blade and robust character, it’s a tool that stands out – making it a truly memorable gift for the outdoor enthusiast in your life.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_ArRxbY",
-        "text_KW7Vgx"
+        "heading_QGTiCB",
+        "text_htH76q"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end !important; } p {text-wrap-style: balance; }}"
       ],
-      "name": "Image banner mobile",
+      "name": "Video Banner YT",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-hero-9-16._darker.jpg",
+        "video": "shopify://files/videos/Christmas Hälsing 180 So9-16.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
+        "enable_video_looping": false,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-5",
-        "enable_sticky_button": true,
-        "image_behavior": "none",
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -110,12 +110,13 @@
         "heading_PeLEdW": {
           "type": "heading",
           "settings": {
-            "heading": "Which saw makes the best Christmas gift?",
+            "heading": "<strong>A Gift of Strength and Tradition</strong>",
             "heading_size": "h1"
           }
         },
         "text_J7mGyb": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "We want to help you find the perfect present, whether the recipient is a passionate outdoor enthusiast, hunter, bushcrafter, or simply loves quality and function.",
             "text_style": "body"
@@ -150,8 +151,8 @@
           "settings": {
             "image": "shopify://shop_images/farsdag_web_mobile_67a70cae-f4d4-4160-9616-62a720440900.jpg",
             "caption": "",
-            "heading": "<strong>Step 1 – Consider the intended use</strong>",
-            "text": "<p>For tougher use and forestry work: Choose <strong>Hälsing</strong> with a carbon steel blade and hardened teeth. Perfect for those who want a durable, field-adapted tool that ages beautifully.</p><p>For lighter bushcraft, camping, gardening, or as a stylish design piece: <strong>Ljusnan</strong> in stainless steel is elegant, easy to carry, and can be sharpened by the recipient themselves.</p>",
+            "heading": "<strong>Built for the Wild</strong>",
+            "text": "<p><br/>The Hälsing features a robust carbon steel blade with hardened teeth. It’s designed for forestry work, bushcraft, and tough challenges. It’s not just a saw; it’s a workhorse that cuts through wood with impressive speed and precision.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -161,8 +162,8 @@
           "settings": {
             "image": "shopify://shop_images/ljusnan_both.jpg",
             "caption": "",
-            "heading": "Step 2 – Which size should you choose?",
-            "text": "<p><strong>180 mm:</strong> For those who often carry their tools on their person while hiking or in the woods and want to minimize equipment weight.</p><p><strong>250 mm:</strong> For those who will mostly use the saw in the garden or need a larger saw to handle bigger timber – it's always easier to saw with the longer version!</p><p></p>",
+            "heading": "<strong>Authentic Swedish Craftsmanship</strong>",
+            "text": "<p>With its handle made from dark, treated oak and its striking black blade, the Hälsing exudes a rustic elegance. It feels solid in the hand and carries the scent of the forest and the workshop. It is a tool with a soul.</p><p></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -172,8 +173,8 @@
           "settings": {
             "image": "shopify://shop_images/hero_saws5_7.png",
             "caption": "",
-            "heading": "Step 3 – Which style fits best?",
-            "text": "<p><strong>Hälsing:</strong> Dark, rustic oak handle and black blade, for those who appreciate Swedish craftsmanship that lasts.</p><p><strong>Ljusnan:</strong> Elegant walnut and silver-shining blade, for those who love precision and timeless design.</p>",
+            "heading": "A Gift for Generations",
+            "text": "<p>This is a tool built to be used, loved, and eventually passed down. The materials are chosen to age with dignity, developing a unique patina over years of adventures. Giving a Hälsing is giving a companion for life.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -338,55 +339,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "video_banner_yt_wWJiXi": {
-      "type": "video-bannerYT",
-      "blocks": {
-        "heading_QGTiCB": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>What makes the Hälsing a great Christmas gift?</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_htH76q": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_QGTiCB",
-        "text_htH76q"
-      ],
-      "name": "Video Banner YT",
-      "settings": {
-        "video": "shopify://files/videos/Christmas Hälsing 180 1-1.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "image_overlay_opacity": 0,
-        "enable_video_looping": false,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
     "image_banner_hcbVmA",
-    "image_banner_ExBjAj",
+    "video_banner_yt_wWJiXi",
     "main",
     "image_banner_KCRmEW",
     "multirow_wXCAtd",
     "image_with_text_tKWdJf",
     "multicolumn_CdWg9z",
-    "featured_collection_hatmBM",
-    "video_banner_yt_wWJiXi"
+    "featured_collection_hatmBM"
   ]
 }
