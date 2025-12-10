@@ -289,6 +289,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_AxwnJV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xwww7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To ensure your gift arrives in time for the holidays, we recommend placing your order as soon as possible.</p><p>For international orders, please verify that your order is placed by <strong>December 15th</strong> at the latest and choose <strong>FedEx</strong> as your shipping method.</p><p><em>Please note: While we do our absolute best to ship your order promptly, we cannot 100% guarantee delivery before Christmas due to the high volume handled by carriers during the holiday season.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xwww7K"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -299,6 +322,7 @@
     "multirow_wXCAtd",
     "image_banner_8kMANC",
     "rich_text_TbYgng",
-    "featured_collection_hatmBM"
+    "featured_collection_hatmBM",
+    "rich_text_AxwnJV"
   ]
 }
