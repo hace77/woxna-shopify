@@ -129,7 +129,7 @@
       ],
       "name": "Discover",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-180-Alta-_113018-513018_-2.jpg",
+        "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -160,7 +160,7 @@
         "row_X94PXM": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/ljusnan_both.jpg",
+            "image": "shopify://shop_images/Halsing-folding-saw-180mm-101.jpg",
             "caption": "",
             "heading": "<strong>Authentic Swedish Craftsmanship</strong>",
             "text": "<p>With its handle made from dark, treated oak and its striking black blade, the Hälsing exudes a rustic elegance. It feels solid in the hand and carries the scent of the forest and the workshop. It is a tool with a soul.</p><p></p>",
@@ -171,7 +171,7 @@
         "row_XcKthJ": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/hero_saws5_7.png",
+            "image": "shopify://shop_images/Woxna-saw-packaging-Halsing-180-in-box.jpg",
             "caption": "",
             "heading": "A Gift for Generations",
             "text": "<p>This is a tool built to be used, loved, and eventually passed down. The materials are chosen to age with dignity, developing a unique patina over years of adventures. Giving a Hälsing is giving a companion for life.</p>",
@@ -318,7 +318,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "ljusnan-foldable-saw",
+        "collection": "halsing-plus-halsing-sets",
         "products_to_show": 4,
         "columns_desktop": 2,
         "full_width": false,
