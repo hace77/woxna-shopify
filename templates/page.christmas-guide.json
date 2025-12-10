@@ -202,105 +202,6 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_tKWdJf": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nc7TAc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Visit our kickstarter page",
-            "heading_size": "h2"
-          }
-        },
-        "button_XdRKf3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Go!",
-            "button_link": "https://www.kickstarter.com/projects/woxna/the-worlds-first-damascus-steel-saw-by-woxna?term=woxna&total_hits=3&category_id=28",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_nc7TAc",
-        "button_XdRKf3"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Damascus_19.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 60,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_CdWg9z": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_FKcgBg": {
-          "type": "column",
-          "settings": {
-            "title": "No More Rusty Blades",
-            "text": "<p>Unlike traditional steel that rusts, our blades are made of durable 10C28Mo2 stainless steel. This gives you a reliable saw that requires less maintenance and is always ready for your outdoor adventures.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_AEgkaC": {
-          "type": "column",
-          "settings": {
-            "title": "Versatility with a 7 TPI Blade",
-            "text": "<p>The 7 TPI (teeth per inch) blade is a versatile compromise for all your outdoor needs. It effortlessly handles green and dry wood, softwood and hardwood, and can even cut plastic and bone. Just remember that bone is abrasive and will wear the blade down faster than wood.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_d8pzRp": {
-          "type": "column",
-          "settings": {
-            "title": "Ease and Efficiency with a 3-phased Grind",
-            "text": "<p>Our saws feature a 3-phased grind that cuts on the pull stroke, providing greater control and less strain. The teeth are hardened to 62 HRC for long-lasting sharpness, while spacious gullets efficiently clear sawdust to reduce drag.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_FKcgBg",
-        "column_AEgkaC",
-        "column_d8pzRp"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".multicolumn-card.content-container {background-color: #445f45 !important;}"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner_8kMANC": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -396,8 +297,6 @@
     "main",
     "image_banner_KCRmEW",
     "multirow_wXCAtd",
-    "image_with_text_tKWdJf",
-    "multicolumn_CdWg9z",
     "image_banner_8kMANC",
     "rich_text_TbYgng",
     "featured_collection_hatmBM"
