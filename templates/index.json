@@ -149,7 +149,7 @@
       ],
       "name": "Image banner MOBILE",
       "settings": {
-        "image": "shopify://shop_images/start_page_new_9_16.jpg",
+        "image": "shopify://shop_images/Ljusnan_180_Jul_2.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
@@ -213,6 +213,26 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
+        "image_3FYifX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/halsing-landningssida3.jpg",
+            "img_link": "shopify://pages/chrismas-guide",
+            "show_text_overlay": true,
+            "heading": "Christmas Gift Ideas",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "h2",
+            "mobile_heading_size": "h1",
+            "description": "Why is hälsing a great gift",
+            "description_style": "body",
+            "button_label": "Learn mor",
+            "button_link": "shopify://pages/chrismas-guide",
+            "button_style_secondary": false
+          }
+        },
         "image_UdTHzh": {
           "type": "image",
           "settings": {
@@ -230,26 +250,6 @@
             "description_style": "body",
             "button_label": "Buy it now",
             "button_link": "shopify://products/alfta-sheath",
-            "button_style_secondary": false
-          }
-        },
-        "image_3FYifX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Gnarp-Leather-Guard-food.jpg",
-            "img_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
-            "show_text_overlay": true,
-            "heading": "Gnarp",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "center",
-            "heading_size": "h2",
-            "mobile_heading_size": "h1",
-            "description": "Outdoor Multi leather guard",
-            "description_style": "body",
-            "button_label": "Get yours now",
-            "button_link": "shopify://pages/black-friday-2025",
             "button_style_secondary": false
           }
         },
@@ -275,8 +275,8 @@
         }
       },
       "block_order": [
-        "image_UdTHzh",
         "image_3FYifX",
+        "image_UdTHzh",
         "image_fA3Dgi"
       ],
       "custom_css": [
