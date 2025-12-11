@@ -70,6 +70,7 @@
         },
         "rich_text_metafield_Dw3Upb": {
           "type": "rich_text_metafield",
+          "disabled": true,
           "settings": {
             "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
             "text_style": "body",
