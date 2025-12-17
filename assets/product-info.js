@@ -251,6 +251,7 @@ if (!customElements.get('product-info')) {
       /**
        * Get selected option value strings from variant picker
        * Returns array of option values like ["250mm", "Oak"]
+       * Uses original values (data-original-value) if available for image tagging compatibility
        */
       getSelectedOptionValueStrings() {
         const variantSelects = this.variantSelectors;
@@ -258,7 +259,10 @@ if (!customElements.get('product-info')) {
 
         const selectedValues = [];
         variantSelects.querySelectorAll('select option[selected], fieldset input:checked').forEach((input) => {
-          const value = input.value || input.textContent.trim();
+          // Use original value if available (for image tagging compatibility with translated variant names)
+          // Otherwise fall back to the displayed/translated value
+          const originalValue = input.dataset.originalValue;
+          const value = originalValue || input.value || input.textContent.trim();
           if (value) selectedValues.push(value);
         });
 

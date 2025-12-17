@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         syncVariantId();
       }, 50);
     }
+
   });
   
   // Also listen to variant change pub/sub events
@@ -72,4 +73,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Update on scroll
   window.addEventListener('scroll', updateStickyButton);
+}); 
 }); 
