@@ -52,6 +52,16 @@
           "disabled": true,
           "settings": {}
         },
+        "variant_metafield_fWJCMU": {
+          "type": "variant_metafield",
+          "settings": {
+            "metafield_key": "variant_informaion",
+            "show_heading": false,
+            "heading": "",
+            "show_fallback": false,
+            "fallback_content": ""
+          }
+        },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
           "disabled": true,
@@ -87,6 +97,7 @@
         "buy_buttons",
         "sku_cGN6wt",
         "judge_me_reviews_preview_badge_VG7pPA",
+        "variant_metafield_fWJCMU",
         "icon_with_text_GbTykW",
         "text_YRCQgw",
         "description"
