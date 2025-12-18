@@ -40,6 +40,16 @@
             "show_gift_card_recipient": true
           }
         },
+        "variant_metafield_pQV6yj": {
+          "type": "variant_metafield",
+          "settings": {
+            "metafield_key": "variant_informaion",
+            "show_heading": false,
+            "heading": "",
+            "show_fallback": false,
+            "fallback_content": ""
+          }
+        },
         "sku_cGN6wt": {
           "type": "sku",
           "settings": {
@@ -51,16 +61,6 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {}
-        },
-        "variant_metafield_fWJCMU": {
-          "type": "variant_metafield",
-          "settings": {
-            "metafield_key": "variant_informaion",
-            "show_heading": false,
-            "heading": "",
-            "show_fallback": false,
-            "fallback_content": ""
-          }
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
@@ -95,9 +95,9 @@
         "price",
         "variant_picker",
         "buy_buttons",
+        "variant_metafield_pQV6yj",
         "sku_cGN6wt",
         "judge_me_reviews_preview_badge_VG7pPA",
-        "variant_metafield_fWJCMU",
         "icon_with_text_GbTykW",
         "text_YRCQgw",
         "description"
