@@ -37,6 +37,14 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "rich_text_metafield_YmhmHd": {
+          "type": "rich_text_metafield",
+          "settings": {
+            "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
+            "text_style": "body",
+            "show_as_information_box": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -62,6 +70,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "rich_text_metafield_YmhmHd",
         "buy_buttons",
         "description",
         "custom_liquid_FhKrbx"
