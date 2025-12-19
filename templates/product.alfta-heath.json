@@ -109,7 +109,7 @@
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
         ".badge {display: none;}",
-        ".variant-metafield__content p {margin: 0 0 1rem; background-color: lightgrey; padding: 8px; border-radius: 10px;}"
+        ".variant-metafield__content p {margin: 0 0 1rem; background-color: lightgrey; padding: 8px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
