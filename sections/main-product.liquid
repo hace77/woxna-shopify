@@ -163,6 +163,23 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- endif -%}
+              {%- when 'rich_text_metafield' -%}
+                {%- if block.settings.show_as_information_box -%}
+                  <div class="product__text-information-box{% if block.settings.text_style == 'small' %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
+                    <div
+                      class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                    >
+                      {{ block.settings.content }}
+                    </div>
+                  </div>
+                {%- else -%}
+                  <div
+                    class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -2304,6 +2321,49 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "rich_text_metafield",
+      "name": "Rich Text Metafield",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "info": "Connect to a product metafield using Liquid syntax, e.g., {{ product.metafields.custom.extra_product_information | metafield_tag }}"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ],
+          "default": "body",
+          "label": "Text Style"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_as_information_box",
+          "default": false,
+          "label": "Show as information box",
+          "info": "Display text with a light grey background and padding"
         }
       ]
     },
