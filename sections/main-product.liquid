@@ -164,21 +164,23 @@
                   </p>
                 {%- endif -%}
               {%- when 'rich_text_metafield' -%}
-                {%- if block.settings.show_as_information_box -%}
-                  <div class="product__text-information-box{% if block.settings.text_style == 'small' %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.content != blank -%}
+                  {%- if block.settings.show_as_information_box -%}
+                    <div class="product__text-information-box{% if block.settings.text_style == 'small' %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
+                      <div
+                        class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                      >
+                        {{ block.settings.content }}
+                      </div>
+                    </div>
+                  {%- else -%}
                     <div
                       class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                      {{ block.shopify_attributes }}
                     >
                       {{ block.settings.content }}
                     </div>
-                  </div>
-                {%- else -%}
-                  <div
-                    class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
-                    {{ block.shopify_attributes }}
-                  >
-                    {{ block.settings.content }}
-                  </div>
+                  {%- endif -%}
                 {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
