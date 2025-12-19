@@ -38,6 +38,16 @@
             "swatch_shape": "circle"
           }
         },
+        "variant_metafield_AmB6Xm": {
+          "type": "variant_metafield",
+          "settings": {
+            "metafield_key": "variant_informaion",
+            "show_heading": false,
+            "heading": "",
+            "show_fallback": false,
+            "fallback_content": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -83,6 +93,7 @@
         "judge_me_reviews_preview_badge_VG7pPA",
         "price",
         "variant_picker",
+        "variant_metafield_AmB6Xm",
         "buy_buttons",
         "custom_liquid_9Km4Ji",
         "icon_with_text_GbTykW",
