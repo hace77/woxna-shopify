@@ -205,9 +205,22 @@ if (!customElements.get('product-info')) {
           this.querySelector(`#Quantity-Rules-${this.dataset.section}`)?.classList.remove('hidden');
           this.querySelector(`#Volume-Note-${this.dataset.section}`)?.classList.remove('hidden');
 
+          const submitButtonInHtml = html.getElementById(`ProductSubmitButton-${this.sectionId}`);
+          const isDisabled = submitButtonInHtml?.hasAttribute('disabled') ?? true;
+          // Extract button text from the fetched HTML (includes metafield value if present)
+          // Only use custom text if button is enabled (not sold out)
+          let customButtonText = null;
+          if (!isDisabled) {
+            const buttonTextSpan = submitButtonInHtml?.querySelector('span');
+            if (buttonTextSpan) {
+              customButtonText = buttonTextSpan.textContent.trim();
+            }
+          }
+          
           this.productForm?.toggleSubmitButton(
-            html.getElementById(`ProductSubmitButton-${this.sectionId}`)?.hasAttribute('disabled') ?? true,
-            window.variantStrings.soldOut
+            isDisabled,
+            window.variantStrings.soldOut,
+            customButtonText
           );
 
           publish(PUB_SUB_EVENTS.variantChange, {

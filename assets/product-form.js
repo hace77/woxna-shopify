@@ -128,13 +128,14 @@ if (!customElements.get('product-form')) {
         }
       }
 
-      toggleSubmitButton(disable = true, text) {
+      toggleSubmitButton(disable = true, text, customText = null) {
         if (disable) {
           this.submitButton.setAttribute('disabled', 'disabled');
           if (text) this.submitButtonText.textContent = text;
         } else {
           this.submitButton.removeAttribute('disabled');
-          this.submitButtonText.textContent = window.variantStrings.addToCart;
+          // Use custom text from metafield if available, otherwise fall back to default
+          this.submitButtonText.textContent = customText || window.variantStrings.addToCart;
         }
       }
 
