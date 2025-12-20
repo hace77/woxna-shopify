@@ -80,7 +80,8 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
-        ".product__title h1 {font-size: 24px;}"
+        ".product__title h1 {font-size: 24px;}",
+        ".stock-label {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
