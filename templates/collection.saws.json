@@ -156,7 +156,8 @@
         ".badge {display: none;}",
         "@media (width <= 749px) {.card__heading {font-size: 1.6rem !important; line-height: 1.4; font-weight: 200; font-family: inter; } .hero-block__content {padding-right: 30px; }}",
         ".card--card {border: 0 !important;}",
-        ".card__usp {font-size: 1.3rem;}"
+        ".card__usp {font-size: 1.3rem;}",
+        ".custom-label{display: none;}"
       ],
       "settings": {
         "products_per_page": 8,
