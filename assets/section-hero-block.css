@@ -1,0 +1,96 @@
+/* Hero Block Styles */
+.hero-block {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-block--small {
+  grid-column: span 1;
+}
+
+.hero-block--medium {
+  grid-column: span 2;
+}
+
+.hero-block--large {
+  grid-column: span 3;
+}
+
+.hero-block__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-block__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-block__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  margin: 1rem;
+  flex: 1;
+}
+
+.hero-block__heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.hero-block__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.hero-block__button {
+  background: #2c3e50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hero-block__button:hover {
+  background: #34495e;
+}
+
+/* Mobile responsive */
+@media (max-width: 749px) {
+  .hero-block--small,
+  .hero-block--medium,
+  .hero-block--large {
+    grid-column: span 1;
+  }
+  
+  .hero-block__content {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .hero-block__heading {
+    font-size: 1.5rem;
+  }
+}

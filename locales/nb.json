@@ -303,6 +303,11 @@
         "title": "Har du en konto?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logg på</a> for å betale raskere."
       },
+      "upsell": {
+        "title": "Du liker kanskje også",
+        "add_to_cart": "Legg til",
+        "view_options": "Vis alternativer"
+      },
       "estimated_total": "Estimert totalsum",
       "new_estimated_total": "Ny estimert totalsum",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Inkludert tollplikter og avgifter. Rabatter og <a href=\"{{ link }}\">frakt</a> beregnes i kassen.",

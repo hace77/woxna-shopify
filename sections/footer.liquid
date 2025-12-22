@@ -89,7 +89,7 @@
                     {%- if block.settings.menu != blank -%}
                       {%- if block.settings.heading != blank -%}
                         {%- if section.settings.enable_dropdown_menus -%}
-                          <input type="checkbox" id="footer-toggle-{{ block.id }}" class="footer-block__toggle-input" hidden />
+                          <input type="checkbox" id="footer-toggle-{{ block.id }}" class="footer-block__toggle-input" hidden {% if block.settings.expanded_by_default %}checked{% endif %} />
                           <label for="footer-toggle-{{ block.id }}" class="footer-block__heading footer-block__heading--toggle">
                             {{- block.settings.heading -}}<i class="footer-block__toggle-icon fas fa-chevron-down"></i>
                           </label>
@@ -356,6 +356,13 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "expanded_by_default",
+          "default": false,
+          "label": "Expanded by default",
+          "info": "When enabled, this menu will be expanded when the page loads"
         }
       ]
     },

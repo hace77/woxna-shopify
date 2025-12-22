@@ -862,6 +862,126 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "upsell_product",
+      "namespace": "custom",
+      "name": "upsell_product",
+      "description": "roduct to suggest as an upsell when this product is in cart",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_page_upsell_product",
+      "namespace": "custom",
+      "name": "Product Page Upsell Product",
+      "description": "Product to suggest as an upsell on this product page",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_page_upsell_button_text",
+      "namespace": "custom",
+      "name": "Product Page Upsell Button Text",
+      "description": " Custom text for the upsell button (e.g., \"Add Protection Plan\", \"Get Care Kit\")",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "discount_bundle",
+      "namespace": "custom",
+      "name": "discount bundle",
+      "description": "the precentage off on the product when sold in a bundle",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "product_page_upsell_offer_text",
+      "namespace": "custom",
+      "name": "Product Page Upsell Offer Text",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "usp_collection_page",
+      "namespace": "custom",
+      "name": "USP collection page",
+      "description": "a list of USP:s that are shown on the collection page to help the customer find the right product",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "is_hero_product",
+      "namespace": "custom",
+      "name": "is_hero_product",
+      "description": "determines if the product is a hero or not",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "hero_background_image",
+      "namespace": "custom",
+      "name": "hero_background_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extraproduct1",
+      "namespace": "custom",
+      "name": "extraproduct1",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extraproduct2",
+      "namespace": "custom",
+      "name": "extraproduct2",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extra_product_information",
+      "namespace": "custom",
+      "name": "extra product information",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "extratext",
+      "namespace": "custom",
+      "name": "extratext",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
@@ -1054,7 +1174,68 @@
         "name": "number_integer",
         "category": "NUMBER"
       }
+    },
+    {
+      "key": "size_image",
+      "namespace": "custom",
+      "name": "size image",
+      "description": "the size image",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tech_specs",
+      "namespace": "custom",
+      "name": "tech specs",
+      "description": "the tech specs of the saw",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "extravariant_product1",
+      "namespace": "custom",
+      "name": "extravariant product1",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "variant_informaion",
+      "namespace": "custom",
+      "name": "variant informaion",
+      "description": "add extra information to the variant product information",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
-  "shop": []
+  "shop": [
+    {
+      "key": "show_store_widget_app_embed_block",
+      "namespace": "mm_google_shopping_extension",
+      "name": "Google: Show Store Widget App Embed Block",
+      "description": "Indicates if the store widget app embed block should be shown.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "merchant_id",
+      "namespace": "mm_google_shopping_extension",
+      "name": "Google: Merchant ID",
+      "description": "Currently Linked Merchant Center ID",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ]
 }

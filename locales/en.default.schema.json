@@ -351,6 +351,10 @@
           "collection": {
             "label": "Collection",
             "info": "Visible when cart drawer is empty."
+          },
+          "upsell_product": {
+            "label": "Upsell product",
+            "info": "Product to suggest when cart drawer is open."
           }
         }
       }
@@ -1886,6 +1890,118 @@
           },
           "options__2": {
             "label": "2 columns"
+          }
+        },
+        "hero_block": {
+          "header": "Hero Block",
+          "show_hero_block_1": {
+            "label": "Show hero block"
+          },
+          "position_desktop": {
+            "label": "Position on desktop",
+            "info": "Choose where to place the hero block in the product grid on desktop",
+            "options": {
+              "after_1st": "After 1st product",
+              "after_2nd": "After 2nd product",
+              "after_3rd": "After 3rd product",
+              "after_4th": "After 4th product",
+              "after_5th": "After 5th product",
+              "after_6th": "After 6th product",
+              "after_9th": "After 9th product",
+              "after_12th": "After 12th product"
+            }
+          },
+          "position_mobile": {
+            "label": "Position on mobile",
+            "info": "Choose where to place the hero block in the product grid on mobile",
+            "options": {
+              "after_2nd": "After 2nd product",
+              "after_4th": "After 4th product",
+              "after_6th": "After 6th product",
+              "after_8th": "After 8th product",
+              "after_10th": "After 10th product",
+              "after_12th": "After 12th product"
+            }
+          },
+          "size": {
+            "label": "Size",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            }
+          },
+          "image": {
+            "label": "Image"
+          },
+          "heading": {
+            "label": "Heading",
+            "default": "Hero Block"
+          },
+          "text": {
+            "label": "Text"
+          },
+          "button_text": {
+            "label": "Button text",
+            "default": "Shop Now"
+          },
+          "button_url": {
+            "label": "Button URL"
+          },
+          "color_scheme": {
+            "label": "Color scheme"
+          },
+          "vertical_position_desktop": {
+            "label": "Vertical position on desktop",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bottom"
+            }
+          },
+          "vertical_position_mobile": {
+            "label": "Vertical position on mobile",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bottom"
+            }
+          },
+          "text_alignment_desktop": {
+            "label": "Text alignment on desktop",
+            "options": {
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
+            }
+          },
+          "text_alignment_mobile": {
+            "label": "Text alignment on mobile",
+            "options": {
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
+            }
+          },
+          "heading_size_desktop": {
+            "label": "Heading size on desktop",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "extra_large": "Extra large",
+              "extra_extra_large": "Extra extra large"
+            }
+          },
+          "heading_size_mobile": {
+            "label": "Heading size on mobile",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "extra_large": "Extra large",
+              "extra_extra_large": "Extra extra large"
+            }
           }
         }
       }

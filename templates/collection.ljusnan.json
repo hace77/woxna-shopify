@@ -27,13 +27,47 @@
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "image": "shopify://shop_images/ljusnan250_horiz.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_jTx9t6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WYyBm4": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WYyBm4"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan250mm1_1_start.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -67,6 +101,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -87,10 +122,8 @@
       "block_order": [
         "heading_HHjHMH"
       ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
-      ],
+      "disabled": true,
+      "custom_css": [],
       "name": "Video Banner YT",
       "settings": {
         "video": "shopify://files/videos/Ljusnan180_mobile.mp4",
@@ -123,31 +156,19 @@
           "settings": {
             "text": "{{ collection.description }}"
           }
-        },
-        "button_d4cWYV": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_dipqiz",
-        "text_FkKbKK",
-        "button_d4cWYV"
+        "text_FkKbKK"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "color_scheme": "scheme-84edd7c0-5771-4644-bfb9-c6facea7fa6f",
         "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 40
+        "padding_top": 16,
+        "padding_bottom": 44
       }
     },
     "banner": {
@@ -172,58 +193,69 @@
       "settings": {
         "products_per_page": 8,
         "columns_desktop": 2,
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
+        "grey_overlay": true,
         "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": true,
+        "show_usp_text": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
+        "show_hero_block_1": false,
+        "hero_block_1_position_desktop": "3",
+        "hero_block_1_position_mobile": "4",
+        "hero_block_1_size": "large",
+        "hero_block_1_heading": "Hero Block",
+        "hero_block_1_text": "",
+        "hero_block_1_button_text": "Shop Now",
+        "hero_block_1_button_url": "",
+        "hero_block_1_color_scheme": "",
+        "hero_block_1_vertical_position": "center",
+        "hero_block_1_mobile_vertical_position": "center",
+        "hero_block_1_text_alignment": "center",
+        "hero_block_1_mobile_text_alignment": "center",
+        "hero_block_1_heading_size": "h1",
+        "hero_block_1_mobile_heading_size": "h1",
         "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "rich_text_q4bA3M": {
-      "type": "rich-text",
+    "collapsible_content_mcq7PP": {
+      "type": "collapsible-content",
       "blocks": {
-        "text_UdkziW": {
-          "type": "text",
+        "collapsible_row_NRyTCc": {
+          "type": "collapsible_row",
           "settings": {
-            "text": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>"
-          }
-        },
-        "button_effggk": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Read more about the saws",
+            "icon": "none",
+            "row_content": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "text_UdkziW",
-        "button_effggk"
+        "collapsible_row_NRyTCc"
       ],
-      "custom_css": [
-        "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
-        "ul {list-style-position: outside;}"
-      ],
+      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection_bn8crz": {
@@ -246,9 +278,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -258,12 +292,13 @@
   },
   "order": [
     "image_banner_dLVAWX",
+    "image_banner_jTx9t6",
     "image_banner_PBEUQe",
     "video_banner_yt_iLi8kQ",
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
-    "rich_text_q4bA3M",
+    "collapsible_content_mcq7PP",
     "featured_collection_bn8crz"
   ]
 }

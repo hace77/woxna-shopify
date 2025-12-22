@@ -1,0 +1,157 @@
+{%- comment -%}
+  Facebook Pixel Lead Tracking for Klaviyo Forms
+  This snippet tracks form submissions and fires fbq('track', 'Lead')
+{%- endcomment -%}
+<script>
+  (function() {
+    let leadTracked = false; // Prevent duplicate tracking
+    
+    // Function to track lead event
+    function trackLead() {
+      if (leadTracked) {
+        console.log('Lead already tracked, skipping duplicate');
+        return;
+      }
+      
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+        leadTracked = true;
+        console.log('✅ Facebook Pixel Lead event fired successfully');
+      } else {
+        console.warn('⚠️ Facebook Pixel (fbq) is not loaded');
+      }
+    }
+
+    // Enhanced detection function
+    function setupKlaviyoFormTracking() {
+      console.log('🔍 Setting up Klaviyo form tracking...');
+      
+      // Find all Klaviyo form containers on this page
+      const klaviyoForms = document.querySelectorAll('[class*="klaviyo-form-"]');
+      console.log('📋 Found', klaviyoForms.length, 'Klaviyo form(s)');
+      
+      if (klaviyoForms.length === 0) {
+        console.warn('⚠️ No Klaviyo forms found on page');
+        return;
+      }
+      
+      klaviyoForms.forEach(function(formContainer, index) {
+        console.log('🔧 Setting up tracking for form', index + 1);
+        
+        // Method 1: Listen for form submit button clicks
+        const submitButtons = formContainer.querySelectorAll('button[type="submit"], input[type="submit"], button:not([type])');
+        submitButtons.forEach(function(button) {
+          button.addEventListener('click', function(e) {
+            console.log('🖱️ Form submit button clicked');
+            // Wait a bit for the form to process
+            setTimeout(function() {
+              trackLead();
+            }, 1500);
+          }, { once: true });
+        });
+
+        // Method 2: Listen for form submit events
+        const form = formContainer.querySelector('form');
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            console.log('📤 Form submit event detected');
+            // Wait for form processing
+            setTimeout(function() {
+              trackLead();
+            }, 1500);
+          }, { once: true });
+        }
+
+        // Method 3: Monitor DOM for success messages
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+              if (node.nodeType === 1) { // Element node
+                const nodeText = node.textContent ? node.textContent.toLowerCase() : '';
+                const nodeClass = node.className ? node.className.toLowerCase() : '';
+                
+                // Check for various success indicators
+                if (
+                  nodeClass.includes('success') ||
+                  nodeClass.includes('thank') ||
+                  nodeText.includes('success') ||
+                  nodeText.includes('thank you') ||
+                  nodeText.includes('subscribed') ||
+                  nodeText.includes('tack') || // Swedish "thank you"
+                  node.querySelector && (
+                    node.querySelector('[class*="success"]') ||
+                    node.querySelector('[class*="thank"]')
+                  )
+                ) {
+                  console.log('✅ Success message detected:', node);
+                  trackLead();
+                }
+              }
+            });
+          });
+        });
+
+        // Observe the form container for changes
+        observer.observe(formContainer, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+          attributes: true
+        });
+
+        // Method 4: Check for iframe messages (Klaviyo forms sometimes use iframes)
+        window.addEventListener('message', function(e) {
+          if (e.data && typeof e.data === 'object') {
+            console.log('📨 Received message:', e.data);
+            // Check for Klaviyo success messages
+            if (
+              (e.data.meta && e.data.meta.method === 'subscribe' && e.data.meta.status === 'success') ||
+              (e.data.type === 'klaviyo' && e.data.status === 'success') ||
+              (e.data.klaviyo && e.data.klaviyo.status === 'success')
+            ) {
+              console.log('✅ Klaviyo success message received');
+              trackLead();
+            }
+          }
+        });
+      });
+    }
+
+    // Method 5: Listen for Klaviyo custom events
+    document.addEventListener('klaviyoForms', function(e) {
+      console.log('📬 Klaviyo form event:', e);
+      if (e.detail) {
+        console.log('Event details:', e.detail);
+        if (e.detail.type === 'submit' || e.detail.type === 'success') {
+          trackLead();
+        }
+      }
+    });
+
+    // Initialize when DOM is ready
+    function init() {
+      setupKlaviyoFormTracking();
+      
+      // Also check periodically for dynamically loaded Klaviyo forms
+      let attempts = 0;
+      const checkInterval = setInterval(function() {
+        attempts++;
+        const klaviyoForms = document.querySelectorAll('[class*="klaviyo-form-"]');
+        if (klaviyoForms.length > 0) {
+          console.log('🔄 Re-checking forms, found', klaviyoForms.length);
+          setupKlaviyoFormTracking();
+        }
+        if (attempts >= 20) { // Stop after 10 seconds (20 * 500ms)
+          clearInterval(checkInterval);
+        }
+      }, 500);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+

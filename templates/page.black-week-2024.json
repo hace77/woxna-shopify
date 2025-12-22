@@ -15,14 +15,14 @@
         "heading_ArRxbY": {
           "type": "heading",
           "settings": {
-            "heading": "Black Week Saws with a Quirk",
+            "heading": "Black Friday Offer",
             "heading_size": "h0"
           }
         },
         "text_KW7Vgx": {
           "type": "text",
           "settings": {
-            "text": "For Black Week we offer a very small batch of saws with minor cosmetic quirks but with the same cutting power as all our other saws.",
+            "text": "This offer has ended",
             "text_style": "subtitle"
           }
         }
@@ -32,20 +32,215 @@
         "text_KW7Vgx"
       ],
       "custom_css": [
-        "h2 {text-wrap: balance;}"
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Black-Week-Woxna-saw-header.jpg",
+        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "image_banner_DfBJ89": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mJxxAt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Black Friday offer",
+            "heading_size": "h0"
+          }
+        },
+        "text_6kVURw": {
+          "type": "text",
+          "settings": {
+            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mJxxAt",
+        "text_6kVURw"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
+      ],
+      "name": "hero mobile",
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "countdown_timer_3jxjBM": {
+      "type": "countdown-timer",
+      "disabled": true,
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Secure Your Saw now – this offer ends at midnight",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-11-30",
+        "target_time": "23:59",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_fDCRqU": {
+      "type": "featured-product",
+      "blocks": {
+        "title_Xrb78i": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_KRnBax": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_MxwcTj": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_9KJhMx": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_FWhEMf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_gc8dem": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "title_Xrb78i",
+        "price_KRnBax",
+        "variant_picker_MxwcTj",
+        "quantity_selector_9KJhMx",
+        "buy_buttons_FWhEMf",
+        "share_gc8dem"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}",
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "quirked-batch",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_n9WPPF": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Look at some of our other products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "grey_overlay": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "show_view_product_button": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "countdown_timer_cDtxRJ": {
+      "type": "countdown-timer",
+      "disabled": true,
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Black friday starts in",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2025-11-24",
+        "target_time": "00:01",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -74,7 +269,7 @@
         "text_3ErEKB": {
           "type": "text",
           "settings": {
-            "text": "<p>Our saws for Black week come with a little extra character—like mismatched wooden handles halves or logotypes that didn’t burn perfectly. But you still get the same quality as with all our other saws and you help us to be more sustainable by reducing our waste.</p>"
+            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>"
           }
         }
       },
@@ -82,76 +277,7 @@
         "heading_JrQexk",
         "text_3ErEKB"
       ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "featured_collection_CeWpcD": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "black-week",
-        "products_to_show": 2,
-        "columns_desktop": 2,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_VWa4Qh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_ciFfAq": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Thoughtful Black Week Offer from Woxna",
-            "heading_size": "h1"
-          }
-        },
-        "text_GyNWxU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Woxna, we’ve thought long and hard about how to approach this Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering something truly special.</p>"
-          }
-        },
-        "button_GQJCdi": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_ciFfAq",
-        "text_GyNWxU",
-        "button_GQJCdi"
-      ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -167,7 +293,7 @@
         "slide_YBrYwM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
+            "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -180,6 +306,24 @@
             "image_overlay_opacity": 0,
             "color_scheme": "",
             "text_alignment_mobile": "center"
+          }
+        },
+        "slide_D4Bmxd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_3.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "right"
           }
         },
         "slide_ByPUnR": {
@@ -203,8 +347,10 @@
       },
       "block_order": [
         "slide_YBrYwM",
+        "slide_D4Bmxd",
         "slide_ByPUnR"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -212,27 +358,27 @@
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
-        "show_text_below": true,
+        "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_4QGUTU": {
+    "rich_text_VWa4Qh": {
       "type": "rich-text",
       "blocks": {
-        "heading_WheCrG": {
+        "heading_ciFfAq": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "A Thoughtful Black Week Offer from Woxna",
             "heading_size": "h1"
           }
         },
-        "text_ehab3k": {
+        "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p>In our first production batch, we received a selection of beautiful oak handles but some of them didn’t make it into production due to some minor visual quirks. We feel it’s a real shame to discard them so now we’ve given them a second chance and produced a small batch of saws with some extra character. There can be mismatches between the colors of the two handle halves or logotypes that are too light, too dark or unevenly burned into the handles. Apart from the visual quirks these saws are just as good as our other saws and available at a reduced price, exclusively for Black Week.</p>"
+            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
           }
         },
-        "button_DAx7b7": {
+        "button_GQJCdi": {
           "type": "button",
           "settings": {
             "button_label": "",
@@ -245,10 +391,11 @@
         }
       },
       "block_order": [
-        "heading_WheCrG",
-        "text_ehab3k",
-        "button_DAx7b7"
+        "heading_ciFfAq",
+        "text_GyNWxU",
+        "button_GQJCdi"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -256,21 +403,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "video_D8khce": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Woxna Black Week 4-5.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_4t7TPi": {
@@ -286,7 +418,7 @@
         "text_EpK4Mh": {
           "type": "text",
           "settings": {
-            "text": "<p>This offer lets us share these one-of-a-kind tools with you while doing it in a mindful way and not just boosting the excessive sales of the season. By choosing one of these saws, you’re not only saving money but also supporting our mission to reduce waste.</p>"
+            "text": "<p>This offer lets us share these one-of-a-kind tools with you while doing it in a mindful way and not just boosting the excessive sales of the season. By choosing one of these saws, you’re not only saving money but also supporting our mission to reduce waste.</p><p>We still think that you should only get products that you actually want and will take care of, and if a Woxna could be a part of that, we would be honored.</p>"
           }
         },
         "button_CwdNWY": {
@@ -306,6 +438,7 @@
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -315,156 +448,65 @@
         "padding_bottom": 52
       }
     },
-    "featured_product_4YGFRH": {
-      "type": "featured-product",
+    "rich_text_mR6qGN": {
+      "type": "rich-text",
       "blocks": {
-        "text_VntFhB": {
-          "type": "text",
+        "heading_czgQJg": {
+          "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_QpynJx": {
-          "type": "title",
-          "settings": {
+            "heading": "Talk about your brand",
             "heading_size": "h1"
           }
         },
-        "price_dMefRh": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_CgejbG": {
-          "type": "variant_picker",
+        "text_Hw9gEi": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
-        "quantity_selector_aPCtMr": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_FqaxLg": {
-          "type": "buy_buttons",
+        "button_Q9L9ci": {
+          "type": "button",
+          "disabled": true,
           "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_PBAJNp": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "text_VntFhB",
-        "title_QpynJx",
-        "price_dMefRh",
-        "variant_picker_CgejbG",
-        "quantity_selector_aPCtMr",
-        "buy_buttons_FqaxLg",
-        "share_PBAJNp"
+        "heading_czgQJg",
+        "text_Hw9gEi",
+        "button_Q9L9ci"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "product": "halsing-with-a-quirk-250-mm-black-week",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_product_Mai48b": {
-      "type": "featured-product",
-      "blocks": {
-        "text_HKVxeY": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_FURn7K": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_Kh9Ejk": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_EpcGC3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_RGeigU": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_Eqpdtx": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_LmzTFD": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_HKVxeY",
-        "title_FURn7K",
-        "price_Kh9Ejk",
-        "variant_picker_EpcGC3",
-        "quantity_selector_RGeigU",
-        "buy_buttons_Eqpdtx",
-        "share_LmzTFD"
-      ],
-      "settings": {
-        "product": "halsing-foldable-saw-180-mm-oak-high-carbon-steel-copy",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "image_banner_ExBjAj",
+    "image_banner_DfBJ89",
+    "countdown_timer_3jxjBM",
+    "featured_product_fDCRqU",
+    "featured_collection_n9WPPF",
+    "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
-    "featured_collection_CeWpcD",
-    "rich_text_VWa4Qh",
     "slideshow_wN9bcg",
-    "rich_text_4QGUTU",
-    "video_D8khce",
+    "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
-    "featured_product_4YGFRH",
-    "featured_product_Mai48b"
+    "rich_text_mR6qGN"
   ]
 }

@@ -21,6 +21,7 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
   {% unless section.settings.product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
@@ -38,6 +39,39 @@
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
+    }
+
+    .product-label {
+      position: absolute !important;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 999 !important;
+      padding: 5px 10px !important;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      text-transform: uppercase !important;
+      pointer-events: none !important;
+    }
+
+    .custom-label {
+      background-color: #445F45;
+      color: white;
+    }
+
+    .stock-label {
+      background-color: #aa362d;
+    }
+
+    .custom-label + .stock-label {
+      top: 45px;
+    }
+
+    .product {
+      position: relative;
+    }
+    
+    .product__media-wrapper {
+      position: relative;
     }
   {%- endstyle -%}
 
@@ -74,6 +108,18 @@
         <div class="grid__item product__media-wrapper">
           {%- unless placeholder -%}
             {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
+            {%- if product.metafields.custom.label != blank -%}
+              <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
+            {%- endif -%}
+            {%- assign total_inventory = 0 -%}
+            {%- for variant in product.variants -%}
+              {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
+            {%- endfor -%}
+            {%- if total_inventory > 0 and total_inventory <= 10 -%}
+              <div class="product-label custom-label stock-label">
+                {{ 'products.product.inventory_low_stock_show_count' | t: quantity: total_inventory }}
+              </div>
+            {%- endif -%}
           {%- else -%}
             <div class="product__media-item">
               <div
@@ -395,7 +441,7 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
-                  {%- if product.metafields.reviews.rating.value != blank -%}
+                  {%- if product.metafields.reviews.rating.value != blank and product.metafields.reviews.rating_count > 0 -%}
                     <div class="rating-wrapper">
                       {% liquid
                         assign rating_decimal = 0

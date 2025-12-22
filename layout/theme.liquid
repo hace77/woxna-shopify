@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-	<script src="{{ 'pandectes-rules.js' | file_url }}"></script>
+	<script src="{{ 'pandectes-rules.js' | file_url }}" defer></script>
 	
 	
     <meta charset="utf-8">
@@ -17,6 +17,8 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
     <title>
       {{ page_title }}
@@ -43,6 +45,11 @@
     {%- endif -%}
 
     {{ content_for_header }}
+
+    {%- comment -%} Facebook Pixel Lead Tracking for Klaviyo Forms on Black Friday page {%- endcomment -%}
+    {%- if template.name == 'page' and (page.handle == 'black-friday-2025' or template.suffix == 'black-week-2024') -%}
+      {% render 'klaviyo-fb-pixel-lead-tracking' %}
+    {%- endif -%}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -259,7 +266,8 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
     {%- if settings.cart_type == 'drawer' -%}
@@ -332,6 +340,16 @@
             </style>
           {% endif %}
 
+        {% if template.name == 'page' and template.suffix == 'blackweek-no-header' %}
+          <style>
+            .announcement-bar,
+            .header-wrapper,
+            footer.footer {
+              display: none !important;
+            }
+          </style>
+        {% endif %}
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -358,6 +376,9 @@
 
     <script>
       window.shopUrl = '{{ request.origin }}';
+      window.themeSettings = {
+        cart_type: '{{ settings.cart_type }}'
+      };
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',

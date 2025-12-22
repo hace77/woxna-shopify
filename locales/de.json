@@ -115,7 +115,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "In den Warenkorb legen",
+      "add_to_cart": "Hinzufügen",
       "description": "Beschreibung",
       "on_sale": "Sale",
       "quantity": {
@@ -172,7 +172,7 @@
       "inventory_in_stock": "Auf Lager",
       "inventory_in_stock_show_count": "{{ quantity }} auf Lager",
       "inventory_low_stock": "Niedriger Lagerbestand",
-      "inventory_low_stock_show_count": "Niedriger Lagerbestand: {{ quantity }} verbleibend",
+      "inventory_low_stock_show_count": "Nur noch {{ quantity }} übrig",
       "inventory_out_of_stock": "Nicht vorrätig",
       "inventory_out_of_stock_continue_selling": "Auf Lager",
       "sku": "SKU",
@@ -187,7 +187,12 @@
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
       "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
-      "low_stock": "Nur noch wenige übrig"
+      "low_stock": "Nur noch wenige übrig",
+      "upsell": {
+        "add_to_cart": "In den Warenkorb legen",
+        "view_options": "Optionen anzeigen"
+      },
+      "view_product": "Produkt ansehen"
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -303,6 +308,11 @@
       "login": {
         "title": "Hast du ein Konto?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein</a>, damit es beim Checkout schneller geht."
+      },
+      "upsell": {
+        "title": "Das könnte dir auch gefallen",
+        "add_to_cart": "Hinzufügen",
+        "view_options": "Optionen anzeigen"
       },
       "estimated_total": "Geschätzte Gesamtkosten",
       "new_estimated_total": "Neuer geschätzter Gesamtbetrag",
@@ -533,6 +543,63 @@
       "send_on_label": "Senden am (optional)",
       "expanded": "Formular für den Empfänger des Geschenkgutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Geschenkgutscheins minimiert"
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell-Produkt",
+            "info": "Produkt, das als Upsell vorgeschlagen wird, wenn dieses Produkt im Warenkorb ist"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Upsell-Produkt auf der Produktseite",
+        "description": "Produkt, das als Upsell auf dieser Produktseite vorgeschlagen wird"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Upsell-Button-Text auf der Produktseite",
+        "description": "Benutzerdefinierter Text für den Upsell-Button (z.B. \"Schutzplan hinzufügen\", \"Pflege-Kit erhalten\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Upsell-Angebotstext auf der Produktseite",
+        "description": "Text, der das Angebot über dem Upsell-Button erklärt (z.B. \"Spare 50%, wenn du dies zu deiner Bestellung hinzufügst!\")"
+      },
+      "discount_bundle": {
+        "label": "Rabattpaket-Prozentsatz",
+        "description": "Prozentualer Rabatt, der auf das Upsell-Produkt angewendet wird (z.B. 50 für 50% Rabatt)"
+      }
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "email_rollup_accessibility_label": "E-Mail-Optionen",
+        "phone_rollup_accessibility_label": "Telefonoptionen"
+      },
+      "customer_account": {
+        "rollup_accessibility_label": "Kontooptionen"
+      },
+      "payment": {
+        "usdc_cashback_title": "1% Cashback",
+        "usdc_cashback_additional_info": "Erhalten Sie 1 % in USDC direkt in Ihr Wallet zurück.",
+        "usdc_cashback_terms": "Es gelten die Bedingungen",
+        "markets_pro_disclaimer_label_express_checkout": "Mit dem Kauf stimmen Sie den %{markets_pro_terms} und %{privacy_policy} von Global-e, unserem internationalen Dienstleister, zu",
+        "markets_pro_disclaimer_express_terms_and_conditions": "Bedingungen",
+        "markets_pro_disclaimer_express_privacy_policy": "Datenschutzrichtlinie"
+      },
+      "billing": {
+        "billing_address_rollup_accessibility_label": "Rechnungsoptionen"
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "Die Kasse enthält nur Remote-Waren. Um den Checkout abzuschließen, ist eine Weiterleitung zum Remote-Shop erforderlich."
+        }
+      }
     }
   }
 }

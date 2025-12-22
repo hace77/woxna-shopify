@@ -1,0 +1,242 @@
+{{ 'component-variant-metafield.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'variant-metafield-section.js' | asset_url }}" defer="defer"></script>
+
+<variant-metafield-section 
+  class="variant-metafield-section section-{{ section.id }}-padding"
+  id="VariantMetafield-Section-{{ section.id }}"
+  data-variant-metafield
+  data-section-id="{{ section.id }}"
+>
+  <div class="{% if section.settings.full_width %}page-width--full{% else %}page-width{% endif %}">
+    {%- liquid
+      assign namespace = 'custom'
+      assign key = section.settings.metafield_key
+      assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
+    -%}
+    
+    {%- if variant_metafield != blank -%}
+      <div class="variant-metafield__wrapper">
+        {%- if section.settings.show_heading and section.settings.heading != blank -%}
+          <h2 class="variant-metafield__heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        
+        <div class="variant-metafield__content">
+          {%- liquid
+            assign metafield_type = variant_metafield.type
+            
+            # Handle image/file metafields
+            if metafield_type == 'file_reference'
+              assign image_url = variant_metafield.value | image_url: width: 1200
+              assign image_width = variant_metafield.value.width | default: 1200
+              assign image_height = variant_metafield.value.height | default: 800
+              if variant_metafield.value.aspect_ratio
+                assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
+              endif
+              echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
+            # Handle rich text metafields
+            elsif metafield_type == 'rich_text_field'
+              echo variant_metafield | metafield_tag
+            # Handle plain text, URLs, and other metafields
+            else
+              # Check if it's an image URL
+              if variant_metafield.value contains '.jpg' or variant_metafield.value contains '.png' or variant_metafield.value contains '.gif' or variant_metafield.value contains '.webp' or variant_metafield.value contains 'cdn.shopify.com'
+                echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%;">'
+              # Plain text or other content
+              else
+                echo variant_metafield.value
+              endif
+            endif
+          -%}
+        </div>
+      </div>
+    {%- elsif section.settings.show_fallback and section.settings.fallback_content != blank -%}
+      <div class="variant-metafield__wrapper">
+        {%- if section.settings.show_heading and section.settings.heading != blank -%}
+          <h2 class="variant-metafield__heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        <div class="variant-metafield__content">
+          {{ section.settings.fallback_content }}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</variant-metafield-section>
+
+<style>
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  
+  .variant-metafield-section {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .variant-metafield-section .variant-metafield__heading {
+    text-align: {{ section.settings.text_alignment }};
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .variant-metafield-section .variant-metafield__content {
+    text-align: {{ section.settings.text_alignment }};
+  }
+  
+  {% if section.settings.full_width %}
+    .page-width--full {
+      max-width: 100%;
+      padding: 0;
+    }
+    
+    .page-width--full .variant-metafield__wrapper {
+      max-width: 100%;
+    }
+    
+    .page-width--full .variant-metafield__heading {
+      padding: 0 2rem;
+    }
+  {% endif %}
+  
+  .variant-metafield-section .variant-metafield__content img {
+    max-width: 100%;
+    width: {% if section.settings.full_width %}100%{% else %}auto{% endif %};
+    height: auto;
+    display: {{ section.settings.image_display }};
+    {% if section.settings.image_display == 'block' and section.settings.full_width == false %}
+      margin-left: auto;
+      margin-right: auto;
+    {% endif %}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Variant Metafield Display",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Display variant-specific content from metafields. This section can be placed anywhere in your product template and will update automatically when customers change variants."
+    },
+    {
+      "type": "text",
+      "id": "metafield_key",
+      "label": "Metafield Key",
+      "info": "Enter the metafield key (e.g., size_image, care_instructions, material_details)",
+      "placeholder": "size_image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "Show Heading",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Product Details",
+      "info": "Optional heading to display above the metafield content"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width Image",
+      "default": false,
+      "info": "Make the image span the full width of the screen (edge to edge)"
+    },
+    {
+      "type": "select",
+      "id": "image_display",
+      "label": "Image Display",
+      "options": [
+        {
+          "value": "block",
+          "label": "Centered"
+        },
+        {
+          "value": "inline-block",
+          "label": "Inline"
+        }
+      ],
+      "default": "block",
+      "info": "Only applies when Full Width Image is disabled"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_fallback",
+      "label": "Show Fallback Content",
+      "default": false,
+      "info": "Display fallback content if variant doesn't have this metafield"
+    },
+    {
+      "type": "richtext",
+      "id": "fallback_content",
+      "label": "Fallback Content",
+      "info": "Content to display if the variant metafield is empty"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Variant Metafield Display"
+    }
+  ]
+}
+{% endschema %}
+

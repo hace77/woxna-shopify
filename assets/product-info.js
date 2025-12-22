@@ -26,6 +26,14 @@ if (!customElements.get('product-info')) {
         );
 
         this.initQuantityHandlers();
+        
+        // Filter media on initial load
+        setTimeout(() => {
+          this.filterMediaByVariantOptions();
+          // Note: Modal content is NOT filtered - it shows all images regardless of variant
+          // This prevents the white screen issue on mobile when opening the lightbox
+        }, 100);
+        
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
 
@@ -176,6 +184,7 @@ if (!customElements.get('product-info')) {
           }
 
           this.updateMedia(html, variant?.featured_media?.id);
+          this.updateVariantMetafields(html);
 
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -196,9 +205,22 @@ if (!customElements.get('product-info')) {
           this.querySelector(`#Quantity-Rules-${this.dataset.section}`)?.classList.remove('hidden');
           this.querySelector(`#Volume-Note-${this.dataset.section}`)?.classList.remove('hidden');
 
+          const submitButtonInHtml = html.getElementById(`ProductSubmitButton-${this.sectionId}`);
+          const isDisabled = submitButtonInHtml?.hasAttribute('disabled') ?? true;
+          // Extract button text from the fetched HTML (includes metafield value if present)
+          // Only use custom text if button is enabled (not sold out)
+          let customButtonText = null;
+          if (!isDisabled) {
+            const buttonTextSpan = submitButtonInHtml?.querySelector('span');
+            if (buttonTextSpan) {
+              customButtonText = buttonTextSpan.textContent.trim();
+            }
+          }
+          
           this.productForm?.toggleSubmitButton(
-            html.getElementById(`ProductSubmitButton-${this.sectionId}`)?.hasAttribute('disabled') ?? true,
-            window.variantStrings.soldOut
+            isDisabled,
+            window.variantStrings.soldOut,
+            customButtonText
           );
 
           publish(PUB_SUB_EVENTS.variantChange, {
@@ -237,6 +259,168 @@ if (!customElements.get('product-info')) {
           .map((id) => `#${id}-${this.dataset.section}`)
           .join(', ');
         document.querySelectorAll(selectors).forEach(({ classList }) => classList.add('hidden'));
+      }
+
+      /**
+       * Get selected option value strings from variant picker
+       * Returns array of option values like ["250mm", "Oak"]
+       * Uses original values (data-original-value) if available for image tagging compatibility
+       */
+      getSelectedOptionValueStrings() {
+        const variantSelects = this.variantSelectors;
+        if (!variantSelects) return [];
+
+        const selectedValues = [];
+        variantSelects.querySelectorAll('select option[selected], fieldset input:checked').forEach((input) => {
+          // Use original value if available (for image tagging compatibility with translated variant names)
+          // Otherwise fall back to the displayed/translated value
+          const originalValue = input.dataset.originalValue;
+          const value = originalValue || input.value || input.textContent.trim();
+          if (value) selectedValues.push(value);
+        });
+
+        return selectedValues;
+      }
+
+      /**
+       * Filter media items based on variant option values matching alt text
+       * If no variant is selected or no images have alt text, show all images
+       */
+      filterMediaByVariantOptions() {
+        const selectedOptionValues = this.getSelectedOptionValueStrings();
+        const mediaGallery = this.querySelector('media-gallery');
+        if (!mediaGallery) return;
+
+        // IMPORTANT: Never filter modal content - only filter the main gallery
+        // Modal content should always show all images to prevent white screen issues
+
+        // If no variant options selected, show all images
+        if (selectedOptionValues.length === 0) {
+          const allItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
+          allItems.forEach((item) => {
+            // Only affect gallery items, not modal content
+            if (!item.closest('.product-media-modal__content')) {
+              item.style.display = '';
+            }
+          });
+          return;
+        }
+
+        // Build variant string from selected options (e.g., "250mm Oak" or "250mm-Oak")
+        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
+        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
+
+        // Get all media items (both gallery and thumbnails)
+        // Select all items with data-media-id, not just those with data-media-alt
+        // IMPORTANT: Only select items within media-gallery, NOT modal content
+        const galleryItems = mediaGallery.querySelectorAll('ul li[data-media-id]');
+        const thumbnailItems = mediaGallery.querySelectorAll('ul.thumbnail-list li[data-target]');
+
+        // First, reset all items to visible (important for items without data-media-alt attribute)
+        galleryItems.forEach((item) => {
+          item.style.display = '';
+        });
+        thumbnailItems.forEach((item) => {
+          item.style.display = '';
+        });
+
+        // Filter gallery items - hide those that don't match
+        galleryItems.forEach((item) => {
+          // IMPORTANT: Skip modal content - never filter modal items
+          if (item.closest('.product-media-modal__content')) {
+            return;
+          }
+
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the image for all variants
+            return;
+          }
+          
+          const altText = item.dataset.mediaAlt;
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the image for all variants
+            return;
+          }
+
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
+          // Show if alt text contains any of the selected variant option values
+          // This allows partial matching (e.g., "250 mm" matches when "250 mm" + "Oak" is selected)
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          // Check if all words in alt text are found in selected values
+          // This means if alt is "250 mm" and selected is "250 mm oak", it will match
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
+
+        // Filter thumbnail items - hide those that don't match
+        thumbnailItems.forEach((item) => {
+          // IMPORTANT: Skip modal content - never filter modal items
+          if (item.closest('.product-media-modal__content')) {
+            return;
+          }
+
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the thumbnail for all variants
+            return;
+          }
+          
+          const altText = item.dataset.mediaAlt;
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the thumbnail for all variants
+            return;
+          }
+
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
       }
 
       updateMedia(html, variantFeaturedMediaId) {
@@ -304,10 +488,150 @@ if (!customElements.get('product-info')) {
           true
         );
 
+        // Filter media by variant options (multiple images per variant feature)
+        this.filterMediaByVariantOptions();
+
         // update media modal
         const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
         const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
-        if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+        if (modalContent && newModalContent) {
+          modalContent.innerHTML = newModalContent.innerHTML;
+          // Note: Modal content is NOT filtered - it shows all images regardless of variant
+          // This prevents the white screen issue on mobile when opening the lightbox
+        }
+      }
+
+      /**
+       * Filter media modal images based on variant option values
+       */
+      filterModalMediaByVariantOptions() {
+        const selectedOptionValues = this.getSelectedOptionValueStrings();
+        const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
+        if (!modalContent) return;
+
+        // If no variant options selected, show all images
+        if (selectedOptionValues.length === 0) {
+          const allItems = modalContent.querySelectorAll('.product__media-item');
+          allItems.forEach((item) => {
+            item.style.display = '';
+          });
+          return;
+        }
+
+        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
+        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
+
+        // Select all media items, not just those with data-media-alt
+        const modalItems = modalContent.querySelectorAll('.product__media-item');
+        
+        // First, reset all items to visible
+        modalItems.forEach((item) => {
+          item.style.display = '';
+        });
+        
+        // Filter modal items - hide those that don't match
+        modalItems.forEach((item) => {
+          // Check if item has data-media-alt attribute
+          const hasAltAttribute = item.hasAttribute('data-media-alt');
+          if (!hasAltAttribute) {
+            // If no data-media-alt attribute, show the image for all variants
+            return;
+          }
+          
+          const altText = item.dataset.mediaAlt;
+          if (!altText || altText.trim() === '') {
+            // If alt text is empty, show the image for all variants
+            return;
+          }
+
+          const altLower = altText.toLowerCase().trim();
+          
+          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
+          // Check for exact match or word boundaries (space, start, end, or hyphen)
+          const isAllTag = altLower === 'all' || 
+                          altLower.startsWith('all ') || 
+                          altLower.endsWith(' all') || 
+                          altLower.includes(' all ') ||
+                          altLower === 'shared' ||
+                          altLower.startsWith('shared ') ||
+                          altLower.endsWith(' shared') ||
+                          altLower.includes(' shared ');
+          
+          if (isAllTag) {
+            return; // Show for all variants
+          }
+
+          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
+          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
+          
+          const shouldShow = altWords.length > 0 && altWords.every(word => 
+            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
+          );
+          
+          item.style.display = shouldShow ? '' : 'none';
+        });
+      }
+
+      updateVariantMetafields(html) {
+        // Update all variant metafield blocks within product-info
+        const currentBlocks = this.querySelectorAll('[data-variant-metafield]');
+        
+        currentBlocks.forEach((currentBlock) => {
+          // Extract the unique ID from current block
+          const blockId = currentBlock.id;
+          
+          if (!blockId) {
+            console.warn('Variant metafield block missing ID', currentBlock);
+            return;
+          }
+          
+          // Find the corresponding block in the new HTML by ID
+          const newBlock = html.querySelector(`#${blockId}`);
+          
+          if (!newBlock) {
+            console.warn('Could not find new block for', blockId);
+            return;
+          }
+          
+          // Get the content wrappers
+          const currentWrapper = currentBlock.querySelector('.variant-metafield__wrapper');
+          const newWrapper = newBlock.querySelector('.variant-metafield__wrapper');
+          
+          // Handle case where metafield might be empty/hidden
+          if (!newWrapper && currentWrapper) {
+            // New variant doesn't have this metafield, hide the block
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            setTimeout(() => {
+              currentBlock.innerHTML = '';
+              currentBlock.style.opacity = '1';
+            }, 200);
+            return;
+          }
+          
+          if (newWrapper && currentWrapper && currentWrapper.innerHTML !== newWrapper.innerHTML) {
+            // Update with smooth transition
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            
+            setTimeout(() => {
+              currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.style.opacity = '1';
+            }, 200);
+          } else if (newWrapper && !currentWrapper) {
+            // Current variant didn't have this metafield, but new one does
+            currentBlock.style.transition = 'opacity 0.2s ease';
+            currentBlock.style.opacity = '0';
+            
+            setTimeout(() => {
+              currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.style.opacity = '1';
+            }, 200);
+          }
+        });
+        
+        // Note: Standalone variant metafield sections (outside product-info) 
+        // are handled by their own custom element (variant-metafield-section.js)
       }
 
       setQuantityBoundries() {

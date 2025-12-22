@@ -113,7 +113,10 @@
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles,
               section_id: section.id,
-              quick_add: section.settings.quick_add
+              quick_add: section.settings.quick_add,
+              show_view_product_button: section.settings.show_view_product_button,
+              grey_overlay: section.settings.grey_overlay,
+              color_scheme: section.settings.color_scheme
             %}
           </li>
           {%- assign skip_card_product_styles = true -%}
@@ -140,7 +143,8 @@
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
-                placeholder_image: placeholder_image
+                placeholder_image: placeholder_image,
+                grey_overlay: section.settings.grey_overlay
               %}
             </li>
           {%- endfor -%}
@@ -412,6 +416,13 @@
     },
     {
       "type": "checkbox",
+      "id": "grey_overlay",
+      "default": false,
+      "label": "Apply grey overlay to product images",
+      "info": "Adds a subtle grey overlay to make white backgrounds appear darker"
+    },
+    {
+      "type": "checkbox",
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.featured-collection.settings.show_vendor.label"
@@ -443,6 +454,13 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_product_button",
+      "default": false,
+      "label": "Show view product button",
+      "info": "Display a button that links to the full product page"
     },
     {
       "type": "header",

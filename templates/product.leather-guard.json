@@ -16,20 +16,8 @@
           "type": "title",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
         "price": {
           "type": "price",
-          "settings": {}
-        },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
           "settings": {}
         },
         "klaviyo_reviews_average_rating_GaRrKj": {
@@ -37,6 +25,25 @@
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_4AQUjt": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+          }
+        },
+        "judge_me_reviews_preview_badge_VG7pPA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
@@ -58,6 +65,15 @@
             "swatch_shape": "circle"
           }
         },
+        "text_YRCQgw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "You receive a 10% discount as this item is currently being delivered without its standard cardboard box. Your Woxna saw will be shipped in a paper packaging. The discount is applied automatically in the cart.",
+            "text_style": "small",
+            "show_as_information_box": true
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -65,12 +81,14 @@
       },
       "block_order": [
         "title",
-        "buy_buttons",
         "price",
-        "judge_me_reviews_preview_badge_VG7pPA",
         "klaviyo_reviews_average_rating_GaRrKj",
+        "buy_buttons",
+        "custom_liquid_4AQUjt",
+        "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",
+        "text_YRCQgw",
         "description"
       ],
       "custom_css": [
@@ -93,6 +111,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 0
       }
@@ -143,6 +162,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -154,7 +174,12 @@
       "blocks": {
         "judge_me_reviews_review_widget_JqyKyw": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
@@ -482,6 +507,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -514,6 +540,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,

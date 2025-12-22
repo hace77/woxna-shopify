@@ -27,9 +27,11 @@
           "type": "price",
           "settings": {}
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "klaviyo_reviews_average_rating_QA39zE": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
@@ -50,6 +52,12 @@
             "swatch_shape": "circle"
           }
         },
+        "sku_Web4Qi": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -59,9 +67,10 @@
         "title",
         "buy_buttons",
         "price",
-        "judge_me_reviews_preview_badge_VG7pPA",
+        "klaviyo_reviews_average_rating_QA39zE",
         "icon_with_text_GbTykW",
         "variant_picker",
+        "sku_Web4Qi",
         "description"
       ],
       "custom_css": [
@@ -70,8 +79,7 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
-        ".badge {display: none;}",
-        ".product__text {margin-bottom: 0; background: lightgrey; padding: 20px;}"
+        ".badge {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -135,6 +143,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -824,6 +833,7 @@
         "text_QaVm7H",
         "button_yRnixM"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,li,p {text-align: left;}"
       ],
@@ -836,52 +846,54 @@
         "padding_bottom": 52
       }
     },
-    "image_banner_8zaQaf": {
-      "type": "image-banner",
+    "variant_text_display_WzKN3b": {
+      "type": "variant-text-display",
+      "name": "Variant Text Display",
+      "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech spec",
+        "heading_size": "h0",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "variant_metafield_display_d9dxTi": {
+      "type": "variant-metafield-display",
+      "name": "Variant Metafield Display",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": false,
+        "heading": "Product Details",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1760978078e6c4502c": {
+      "type": "apps",
       "blocks": {
-        "heading_paPnxR": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_XLRz8T": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_dRLaYe": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+        "klaviyo_reviews_product_reviews_G7LiW9": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
         }
       },
       "block_order": [
-        "heading_paPnxR",
-        "text_XLRz8T",
-        "buttons_dRLaYe"
+        "klaviyo_reviews_product_reviews_G7LiW9"
       ],
+      "name": "reviews",
       "settings": {
-        "image": "{{ product.metafields.custom.measurement_illustration.value }}",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "include_margins": true
       }
     },
     "collapsible_content_gEpGHP": {
@@ -898,6 +910,7 @@
         },
         "collapsible_row_WRMnDt": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Choose Model",
             "icon": "star",
@@ -980,21 +993,6 @@
         "padding_bottom": 52
       }
     },
-    "1730798421bc6bee16": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_JqyKyw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_JqyKyw"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_QkwfpV": {
       "type": "rich-text",
       "blocks": {
@@ -1028,6 +1026,7 @@
         "text_TdaeQM",
         "button_qxwfAc"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -1037,55 +1036,9 @@
         "padding_bottom": 76
       }
     },
-    "image_with_text_j83Eef": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zwyMCT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Produced with Quality and Tradition",
-            "heading_size": "h1"
-          }
-        },
-        "text_gMpi8E": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud to produce our saws in Hälsingland Sweden. Here you’ll find a long tradition of tool making and we have a great factory - one of the few that are still standing strong in the region. <br/><br/>We have chosen Sweden not just because it’s our home but because we know that here, we can produce high quality goods, and do it with the greatest care for both people and the environment.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_tCkADX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our production",
-            "button_link": "shopify://pages/made-in-sweden",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_zwyMCT",
-        "text_gMpi8E",
-        "button_tCkADX"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -1122,12 +1075,12 @@
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
     "rich_text_zL8t7g",
-    "image_banner_8zaQaf",
+    "variant_text_display_WzKN3b",
+    "variant_metafield_display_d9dxTi",
+    "1760978078e6c4502c",
     "collapsible_content_gEpGHP",
     "rich_text_ji3RVR",
-    "1730798421bc6bee16",
     "rich_text_QkwfpV",
-    "image_with_text_j83Eef",
     "related-products"
   ]
 }

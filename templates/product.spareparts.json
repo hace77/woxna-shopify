@@ -16,23 +16,25 @@
           "type": "title",
           "settings": {}
         },
-        "description": {
-          "type": "description",
+        "price": {
+          "type": "price",
           "settings": {}
+        },
+        "klaviyo_reviews_average_rating_iTB8FR": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_shape": "square"
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
           "settings": {}
         },
         "buy_buttons": {
@@ -41,15 +43,28 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "custom_liquid_MCVtxa": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
-        "description",
+        "price",
+        "klaviyo_reviews_average_rating_iTB8FR",
         "variant_picker",
         "quantity_selector",
-        "price",
-        "buy_buttons"
+        "buy_buttons",
+        "custom_liquid_MCVtxa",
+        "description"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
@@ -66,10 +81,11 @@
         "media_fit": "contain",
         "gallery_layout": "stacked",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
@@ -103,6 +119,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,

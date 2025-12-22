@@ -186,7 +186,8 @@
       "product_variants": "Produktvarianter",
       "taxes_included": "Skatter ingår.",
       "duties_included": "Tullavgifter ingår.",
-      "duties_and_taxes_included": "Tullavgifter och skatter ingår."
+      "duties_and_taxes_included": "Tullavgifter och skatter ingår.",
+      "view_product": "Visa produkt"
     },
     "modal": {
       "label": "Mediagalleri"
@@ -302,6 +303,11 @@
       "login": {
         "title": "Har du ett konto?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logga in</a> för att gå till kassan snabbare."
+      },
+      "upsell": {
+        "title": "Du kanske också gillar",
+        "add_to_cart": "Lägg till",
+        "view_options": "Visa alternativ"
       },
       "estimated_total": "Beräknad totalsumma",
       "new_estimated_total": "Nytt beräknat totalbelopp",
@@ -549,6 +555,43 @@
       "payment": {
         "kcp_creditcard_label": "KCP kreditkort"
       }
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell-produkt",
+            "info": "Produkt att föreslå som upsell när denna produkt finns i varukorgen"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Upsell-produkt på produktsidan",
+        "description": "Produkt att föreslå som upsell på denna produktsida"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Upsell-knapptext på produktsidan",
+        "description": "Anpassad text för upsell-knappen (t.ex. \"Lägg till skyddsplan\", \"Få vårdkit\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Upsell-erbjudandetext på produktsidan",
+        "description": "Text som förklarar erbjudandet ovanför upsell-knappen (t.ex. \"Spara 50% när du lägger till detta i din beställning!\")"
+      },
+      "discount_bundle": {
+        "label": "Rabattpaket procent",
+        "description": "Procentuell rabatt att tillämpa på upsell-produkten (t.ex. 50 för 50% rabatt)"
+      }
+    }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Fysisk",
+      "physical": "Fysisk butik",
+      "online": "Online butik"
     }
   }
 }

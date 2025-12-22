@@ -1,0 +1,566 @@
+{%- comment -%}
+  Retailers Locations Section
+  Uses retailers metaobject and groups by country
+{%- endcomment -%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- assign countries = '' -%}
+{%- assign retailer_count = 0 -%}
+
+{%- comment -%} Use paginate to bypass 50-item limit - Shopify has a default 50-item limit for metaobject lists {%- endcomment -%}
+{%- paginate page.metafields.custom.retailer_list.value by 250 -%}
+  {%- assign retailers = page.metafields.custom.retailer_list.value -%}
+  {%- for retailer in retailers -%}
+    {%- assign retailer_count = retailer_count | plus: 1 -%}
+    {%- if retailer.country.value != blank and retailer.country.value != null -%}
+      {%- assign country = retailer.country.value | strip -%}
+      {%- if country != blank -%}
+        {%- assign countries_list = countries | split: ',' -%}
+        {%- unless countries_list contains country -%}
+          {%- if countries == blank -%}
+            {%- assign countries = country -%}
+          {%- else -%}
+            {%- assign countries = countries | append: ',' | append: country -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endpaginate -%}
+{%- assign countries = countries | split: ',' | sort -%}
+
+{%- comment -%} Move Sweden to the front if it exists {%- endcomment -%}
+{%- assign sorted_countries = '' -%}
+{%- if countries contains 'Sweden' -%}
+  {%- assign sorted_countries = 'Sweden' -%}
+{%- endif -%}
+{%- for country in countries -%}
+  {%- unless country == 'Sweden' -%}
+    {%- if sorted_countries == blank -%}
+      {%- assign sorted_countries = country -%}
+    {%- else -%}
+      {%- assign sorted_countries = sorted_countries | append: ',' | append: country -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign countries = sorted_countries | split: ',' -%}
+
+<div class="retailers-locations page-width section-{{ section.id }}-padding">
+  {%- comment -%} Search Field {%- endcomment -%}
+  <div class="retailers-search">
+    <label class="retailers-search__label" for="city-search-{{ section.id }}">
+      {{ 'retailers.search.label' | t | default: 'Search retailers by city' }}
+    </label>
+    <div class="field">
+      <input 
+        type="text" 
+        id="city-search-{{ section.id }}" 
+        class="field__input"
+        placeholder="{{ 'retailers.search.city_placeholder' | t | default: 'City name' }}"
+        autocomplete="off"
+      />
+    </div>
+    <button type="button" class="retailers-search__clear button button--tertiary" id="clear-search-{{ section.id }}" style="display: none;">
+      <svg aria-hidden="true" focusable="false" class="icon icon-close" viewBox="0 0 18 17">
+        <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor"/>
+      </svg>
+      {{ 'retailers.search.clear' | t | default: 'Clear' }}
+    </button>
+    <div class="retailers-search__no-results" id="no-results-{{ section.id }}" style="display: none;">
+      <p>{{ 'retailers.search.no_results' | t | default: 'No retailers found in that city. Try a different search.' }}</p>
+    </div>
+  </div>
+
+  <div class="retailers-locations__countries">
+    {%- for country in countries -%}
+      {%- if country != blank -%}
+        <div class="retailers-country">
+          <input type="checkbox" id="country-toggle-{{ country | handle }}" class="retailers-country__toggle-input" hidden />
+          <label for="country-toggle-{{ country | handle }}" class="retailers-country__toggle">
+            <span class="retailers-country__name">{{ country }}</span>
+            <i class="retailers-country__arrow fas fa-chevron-down"></i>
+          </label>
+          
+          <div class="retailers-country__content">
+            <div class="retailers-grid">
+              {%- assign country_count = 0 -%}
+              {%- for retailer in retailers -%}
+                {%- assign retailer_country = retailer.country.value | strip -%}
+                {%- if retailer_country == country and retailer_country != blank -%}
+                  {%- assign country_count = country_count | plus: 1 -%}
+                    <div class="retailer-card" 
+                         data-city="{{ retailer.city.value | strip | downcase }}"
+                         data-country="{{ country | downcase }}"
+                         data-name="{{ retailer.name.value | strip | downcase }}">
+                      {%- if retailer.logo.value != blank and retailer.logo.value != null -%}
+                        <div class="retailer-card__logo">
+                          <img src="{{ retailer.logo.value | image_url: width: 200 }}" alt="{{ retailer.name.value }} logo" width="200" height="60" loading="lazy">
+                        </div>
+                      {%- endif -%}
+                      
+                      <div class="retailer-card__info">
+                        <h3 class="retailer-card__name">{{ retailer.name.value }}</h3>
+                        
+                        {%- if retailer.store_type.value != blank and retailer.store_type.value != null -%}
+                          <p class="retailer-card__store-type">
+                            {%- assign store_type = retailer.store_type.value | first | strip -%}
+                            {%- if store_type == 'Both' -%}
+                              {{ 'retailers.store_type.both' | t }}
+                            {%- elsif store_type == 'Physical Store' -%}
+                              {{ 'retailers.store_type.physical' | t }}
+                            {%- elsif store_type == 'Online Store' -%}
+                              {{ 'retailers.store_type.online' | t }}
+                            {%- else -%}
+                              {{ store_type }}
+                            {%- endif -%}
+                          </p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.address.value != blank and retailer.address.value != null -%}
+                          <p class="retailer-card__address">{{ retailer.address.value }}</p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.city.value != blank and retailer.city.value != null -%}
+                          <p class="retailer-card__city">{{ retailer.city.value }}</p>
+                        {%- endif -%}
+                        
+                        {%- if retailer.store_url.value != blank and retailer.store_url.value != null -%}
+                          <a href="{{ retailer.store_url.value }}" class="retailer-card__link" target="_blank" rel="noopener">
+                            {%- if retailer.link_label.value != blank and retailer.link_label.value != null -%}
+                              {{ retailer.link_label.value }}
+                            {%- else -%}
+                              Visit Store
+                            {%- endif -%}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+              {%- endfor -%}
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const countElement = document.getElementById('country-toggle-{{ country | handle }}').nextElementSibling.querySelector('.retailers-country__count');
+                  if (countElement) {
+                    countElement.textContent = '({{ country_count }})';
+                  }
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+(function() {
+  const sectionId = '{{ section.id }}';
+  const searchInput = document.getElementById('city-search-' + sectionId);
+  const clearButton = document.getElementById('clear-search-' + sectionId);
+  const noResultsMsg = document.getElementById('no-results-' + sectionId);
+  const retailerCards = document.querySelectorAll('.retailers-locations.section-' + sectionId + '-padding .retailer-card');
+  const countryContainers = document.querySelectorAll('.retailers-locations.section-' + sectionId + '-padding .retailers-country');
+
+  if (!searchInput) return;
+
+  // Debounce function for better performance
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Filter retailers based on search input
+  function filterRetailers() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    // Show/hide clear button
+    if (searchTerm.length > 0) {
+      clearButton.style.display = 'inline-flex';
+    } else {
+      clearButton.style.display = 'none';
+    }
+
+    // Filter retailer cards
+    retailerCards.forEach(function(card) {
+      const city = card.getAttribute('data-city') || '';
+      const name = card.getAttribute('data-name') || '';
+      
+      if (searchTerm === '' || city.includes(searchTerm) || name.includes(searchTerm)) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show/hide country sections based on visible retailers
+    countryContainers.forEach(function(country) {
+      const cardsInCountry = country.querySelectorAll('.retailer-card');
+      const visibleCardsInCountry = Array.from(cardsInCountry).filter(function(card) {
+        return card.style.display !== 'none';
+      });
+
+      if (visibleCardsInCountry.length === 0 && searchTerm !== '') {
+        country.style.display = 'none';
+      } else {
+        country.style.display = '';
+        
+        // Auto-expand countries with results when searching
+        if (searchTerm !== '' && visibleCardsInCountry.length > 0) {
+          const toggle = country.querySelector('.retailers-country__toggle-input');
+          if (toggle) {
+            toggle.checked = true;
+          }
+        }
+      }
+    });
+
+    // Show/hide no results message
+    if (visibleCount === 0 && searchTerm !== '') {
+      noResultsMsg.style.display = 'block';
+    } else {
+      noResultsMsg.style.display = 'none';
+    }
+  }
+
+  // Clear search
+  function clearSearch() {
+    searchInput.value = '';
+    filterRetailers();
+    searchInput.focus();
+  }
+
+  // Event listeners
+  searchInput.addEventListener('input', debounce(filterRetailers, 300));
+  searchInput.addEventListener('keyup', function(e) {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  });
+  
+  clearButton.addEventListener('click', clearSearch);
+
+  // Initialize
+  filterRetailers();
+})();
+</script>
+
+<style>
+  .retailers-locations {
+  }
+  
+  /* Search Field Styles */
+  .retailers-search {
+    margin-bottom: 3rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .retailers-search__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(var(--color-foreground));
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-search .field {
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-search .field__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    border-radius: 0;
+  }
+  
+  .retailers-search .field__input:focus {
+    outline: none;
+    border-color: rgb(var(--color-foreground));
+  }
+  
+  .retailers-search .field__input::placeholder {
+    color: rgba(var(--color-foreground), 0.7);
+    opacity: 1;
+  }
+  
+  .retailers-search__clear {
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .retailers-search__clear .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+  .retailers-search__no-results {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(var(--color-foreground), 0.04);
+    border: 1px solid rgba(var(--color-foreground), 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .retailers-search__no-results p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+  
+  .retailers-locations__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .retailers-locations__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .retailers-locations__subtitle {
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+  
+  .retailers-country {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-bottom: 1rem;
+  }
+  
+  .retailers-country__toggle-input {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+  
+  .retailers-country__toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    color: currentColor;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .retailers-country__arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .retailers-country__name {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .retailers-country__count {
+    color: rgba(var(--color-foreground), 0.6);
+    margin: 0 1rem;
+  }
+  
+  .retailers-country__content {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  
+  .retailers-country__toggle-input:checked ~ .retailers-country__content {
+    display: block;
+  }
+  
+  .retailers-country__toggle-input:checked ~ .retailers-country__toggle .retailers-country__arrow {
+    transform: rotate(180deg);
+  }
+  
+  .retailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .retailer-card {
+    padding: 1.5rem;
+    background: #f4f0e3;
+  }
+  
+  .retailer-card__logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .retailer-card__logo img {
+    max-height: 60px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  
+  .retailer-card__name {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #5A493A;
+  }
+  
+  .retailer-card__store-type {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(var(--color-foreground), 0.6);
+    font-style: italic;
+  }
+  
+  .retailer-card__address {
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .retailer-card__city {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .retailer-card__link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .retailer-card__link:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media (max-width: 749px) {
+    .retailers-search {
+      margin-bottom: 2rem;
+    }
+    
+    .retailers-search .field__input {
+      font-size: 1.4rem;
+      padding: 0.8rem;
+    }
+    
+    .retailers-search__label {
+      font-size: 1.2rem;
+    }
+    
+    .retailers-search__clear {
+      font-size: 1.4rem;
+    }
+    
+    .retailers-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .retailers-country__toggle {
+      font-size: calc(var(--font-heading-scale) * 1.6rem);
+    }
+    
+    .retailer-card {
+      padding: 1rem;
+    }
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Retailers Locations",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Retail Partners"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Find a retailer near you"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Retailers Locations"
+    }
+  ]
+}
+{% endschema %}

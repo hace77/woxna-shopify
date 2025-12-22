@@ -15,6 +15,8 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
+  {{ 'component-variant-metafield.css' | asset_url | stylesheet_tag }}
   {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
 
@@ -32,14 +34,15 @@
     }
 
     .product-label {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 2;
-      padding: 5px 10px;
-      font-size: 12px;
-      font-weight: 500;
-      text-transform: uppercase;
+      position: absolute !important;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 999 !important;
+      padding: 5px 10px !important;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      text-transform: uppercase !important;
+      pointer-events: none !important;
     }
 
     .custom-label {
@@ -55,8 +58,22 @@
       top: 45px;
     }
 
+    .product {
+      position: relative;
+    }
+    
     .product__media-wrapper {
       position: relative;
+    }
+    
+    /* Grey overlay effect for product images using mix-blend-mode */
+    .product-image-overlay {
+      position: relative;
+      background: #f5f5f5;
+    }
+    
+    .product-image-overlay img {
+      mix-blend-mode: multiply;
     }
   {%- endstyle -%}
 
@@ -101,10 +118,12 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+  {%- assign product_form_id = 'product-form-' | append: section.id -%}
+  
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
-        {% render 'product-media-gallery', variant_images: variant_images %}
+        {% render 'product-media-gallery', variant_images: variant_images, grey_overlay: section.settings.grey_overlay %}
         {%- if product.metafields.custom.label != blank -%}
           <div class="product-label custom-label">{{ product.metafields.custom.label }}</div>
         {%- endif -%}
@@ -112,7 +131,7 @@
         {%- for variant in product.variants -%}
           {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
         {%- endfor -%}
-        {%- if total_inventory > 0 and total_inventory <= 5 -%}
+        {%- if total_inventory > 0 and total_inventory <= 10 -%}
           <div class="product-label custom-label stock-label">
             {{ 'products.product.inventory_low_stock_show_count' | t: quantity: total_inventory }}
           </div>
@@ -123,19 +142,46 @@
           id="ProductInfo-{{ section.id }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
-          {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{- block.settings.text -}}
-                </p>
+                {%- if block.settings.show_as_information_box -%}
+                  <div class="product__text-information-box{% if block.settings.text_style == 'small' %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
+                    <p
+                      class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                    >
+                      {{- block.settings.text -}}
+                    </p>
+                  </div>
+                {%- else -%}
+                  <p
+                    class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- block.settings.text -}}
+                  </p>
+                {%- endif -%}
+              {%- when 'rich_text_metafield' -%}
+                {%- if block.settings.content != blank -%}
+                  {%- if block.settings.show_as_information_box -%}
+                    <div class="product__text-information-box{% if block.settings.text_style == 'small' %} product__text-information-box--small{% endif %}" {{ block.shopify_attributes }}>
+                      <div
+                        class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                      >
+                        {{ block.settings.content }}
+                      </div>
+                    </div>
+                  {%- else -%}
+                    <div
+                      class="product__text rte{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--small{% endif %}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.content }}
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -180,6 +226,7 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+              {% comment %}
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -231,6 +278,7 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+              {% endcomment %}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -245,6 +293,9 @@
                   {{ block.shopify_attributes }}
                 >
                   <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+                  {%- if block.settings.prefix_text != blank -%}
+                    <span>{{ block.settings.prefix_text }}</span>
+                  {%- endif -%}
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
               {%- when 'custom_liquid' -%}
@@ -503,6 +554,13 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              {%- when 'extra_products' -%}
+                {% render 'product-extra-products',
+                  product: product,
+                  block: block,
+                  product_form_id: product_form_id,
+                  section_id: section.id
+                %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -511,8 +569,67 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+                
+                <!-- Product Page Upsell Section -->
+                
+                {%- if product.metafields.custom.product_page_upsell_product != blank and product.metafields.custom.discount_bundle != blank -%}
+                  {%- assign upsell_product = product.metafields.custom.product_page_upsell_product.value -%}
+                  {%- if upsell_product != blank and upsell_product.available -%}
+                    {%- assign discount_percentage = product.metafields.custom.discount_bundle.value -%}
+                    {%- assign original_price = upsell_product.price -%}
+                    {%- assign discount_multiplier = 100 | minus: discount_percentage | times: 0.01 -%}
+                    {%- assign discounted_price = original_price | times: discount_multiplier -%}
+                    <div class="product-page__upsell" {{ block.shopify_attributes }}>
+                      <div class="product-page__upsell-product">
+                        <div class="product-page__upsell-info">
+                          <h4 class="product-page__upsell-title">
+                            <a href="{{ upsell_product.url }}" class="product-page__upsell-title-link">{{ upsell_product.title }}</a>
+                          </h4>
+                          <div class="product-page__upsell-price">
+                            <span class="product-page__upsell-price--compare">{{ original_price | money }}</span>
+                            <span class="product-page__upsell-price--sale">{{ discounted_price | money }}</span>
+                          </div>
+                          
+                          {%- if product.metafields.custom.product_page_upsell_offer_text != blank -%}
+                            <p class="product-page__upsell-offer">{{ product.metafields.custom.product_page_upsell_offer_text }}</p>
+                          {%- endif -%}
+                          
+                          {%- if upsell_product.variants.size == 1 -%}
+                            <form 
+                              action="{{ routes.cart_add_url }}" 
+                              method="post" 
+                              class="product-page__upsell-form"
+                              data-product-page-upsell-form
+                            >
+                              <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                              <input type="hidden" name="quantity" value="1">
+                                                              <button
+                                  type="submit"
+                                  name="add"
+                                  class="product-page__upsell-button button"
+                                  {% if upsell_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                                  data-product-page-upsell-button
+                                >
+                                {%- if product.metafields.custom.product_page_upsell_button_text != blank -%}
+                                  {{ product.metafields.custom.product_page_upsell_button_text }}
+                                {%- else -%}
+                                  {{ 'products.product.upsell.add_to_cart' | t }}
+                                {%- endif -%}
+                              </button>
+                            </form>
+                          {%- else -%}
+                            <a href="{{ upsell_product.url }}" class="product-page__upsell-button button">
+                              {{ 'products.product.upsell.view_options' | t }}
+                            </a>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+                
               {%- when 'rating' -%}
-                {%- if product.metafields.reviews.rating.value != blank -%}
+                {%- if product.metafields.reviews.rating.value != blank and product.metafields.reviews.rating_count > 0 -%}
                   <div class="rating-wrapper">
                     {% liquid
                       assign rating_decimal = 0
@@ -699,6 +816,65 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'variant_metafield' -%}
+                <div 
+                  class="product__variant-metafield" 
+                  id="VariantMetafield-{{ block.id }}-{{ section.id }}"
+                  data-variant-metafield 
+                  {{ block.shopify_attributes }}
+                >
+                  {%- liquid
+                    assign namespace = 'custom'
+                    assign key = block.settings.metafield_key
+                    assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
+                  -%}
+                  
+                  {%- if variant_metafield != blank -%}
+                    <div class="variant-metafield__wrapper">
+                      {%- if block.settings.show_heading and block.settings.heading != blank -%}
+                        <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
+                      {%- endif -%}
+                      
+                      <div class="variant-metafield__content">
+                        {%- liquid
+                          assign metafield_type = variant_metafield.type
+                          
+                          # Handle image/file metafields
+                          if metafield_type == 'file_reference'
+                            assign image_url = variant_metafield.value | image_url: width: 800
+                            assign image_width = variant_metafield.value.width | default: 800
+                            assign image_height = variant_metafield.value.height | default: 600
+                            if variant_metafield.value.aspect_ratio
+                              assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
+                            endif
+                            echo '<img src="' | append: image_url | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
+                          # Handle rich text metafields
+                          elsif metafield_type == 'rich_text_field'
+                            echo variant_metafield | metafield_tag
+                          # Handle plain text, URLs, and other metafields
+                          else
+                            # Check if it's an image URL
+                            if variant_metafield.value contains '.jpg' or variant_metafield.value contains '.png' or variant_metafield.value contains '.gif' or variant_metafield.value contains '.webp' or variant_metafield.value contains 'cdn.shopify.com'
+                              echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%;">'
+                            # Plain text or other content
+                            else
+                              echo variant_metafield.value
+                            endif
+                          endif
+                        -%}
+                      </div>
+                    </div>
+                  {%- elsif block.settings.show_fallback and block.settings.fallback_content != blank -%}
+                    <div class="variant-metafield__wrapper">
+                      {%- if block.settings.show_heading and block.settings.heading != blank -%}
+                        <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
+                      {%- endif -%}
+                      <div class="variant-metafield__content">
+                        {{ block.settings.fallback_content }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -709,7 +885,7 @@
       </div>
     </div>
 
-    {% render 'product-media-modal', variant_images: variant_images %}
+    {% render 'product-media-modal', variant_images: variant_images, grey_overlay: section.settings.grey_overlay %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
     {%- for block in popups -%}
@@ -749,13 +925,6 @@
       <script src="{{ 'product-model.js' | asset_url }}" defer></script>
     {%- endif -%}
 
-    {%- liquid
-      if product.selected_or_first_available_variant.featured_media
-        assign seo_media = product.selected_or_first_available_variant.featured_media
-      else
-        assign seo_media = product.featured_media
-      endif
-    -%}
 
     <script type="application/ld+json">
       {{ product | structured_data }}
@@ -797,10 +966,21 @@
             {
               "value": "uppercase",
               "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            },
+            {
+              "value": "small",
+              "label": "Small"
             }
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_as_information_box",
+          "default": false,
+          "label": "Show as information box",
+          "info": "Display text with a light grey background and padding"
         }
       ]
     },
@@ -838,6 +1018,13 @@
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.sku.settings.text_style.label"
+        },
+        {
+          "type": "text",
+          "id": "prefix_text",
+          "label": "Prefix text",
+          "info": "Optional text to display before the SKU number",
+          "default": "SKU: "
         }
       ]
     },
@@ -930,6 +1117,31 @@
             }
           ],
           "default": "circle"
+        }
+      ]
+    },
+    {
+      "type": "extra_products",
+      "name": "Extra products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Complete your bundle"
+        },
+        {
+          "type": "text",
+          "id": "legend",
+          "label": "Button group label",
+          "default": "Add an extra product"
+        },
+        {
+          "type": "text",
+          "id": "none_label",
+          "label": "\"None\" option label",
+          "default": "No extra product"
         }
       ]
     },
@@ -2113,6 +2325,87 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "type": "rich_text_metafield",
+      "name": "Rich Text Metafield",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "info": "Connect to a product metafield using Liquid syntax, e.g., {{ product.metafields.custom.extra_product_information | metafield_tag }}"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ],
+          "default": "body",
+          "label": "Text Style"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_as_information_box",
+          "default": false,
+          "label": "Show as information box",
+          "info": "Display text with a light grey background and padding"
+        }
+      ]
+    },
+    {
+      "type": "variant_metafield",
+      "name": "Variant Metafield",
+      "settings": [
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Metafield Key",
+          "info": "Enter the metafield key (e.g., size_image, care_instructions, material_details)",
+          "placeholder": "size_image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_heading",
+          "label": "Show Heading",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "info": "Optional heading to display above the metafield content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_fallback",
+          "label": "Show Fallback Content",
+          "default": false,
+          "info": "Display fallback content if variant doesn't have this metafield"
+        },
+        {
+          "type": "richtext",
+          "id": "fallback_content",
+          "label": "Fallback Content",
+          "info": "Content to display if the variant metafield is empty"
+        }
+      ]
     }
   ],
   "settings": [
@@ -2269,6 +2562,13 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "grey_overlay",
+      "default": false,
+      "label": "Apply grey overlay to product images",
+      "info": "Adds a subtle grey overlay to make white backgrounds appear darker"
     },
     {
       "type": "header",

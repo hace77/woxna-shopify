@@ -28,13 +28,14 @@
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/ljusnan_bast-i-test.jpg",
+        "image": "shopify://shop_images/start_page_new_16_9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -68,42 +69,8 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "video_banner_yt_iLi8kQ": {
-      "type": "video-bannerYT",
-      "blocks": {
-        "heading_HHjHMH": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "{{ collection.title }}",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_HHjHMH"
-      ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; text-wrap: balance; }}"
-      ],
-      "name": "Video Banner YT",
-      "settings": {
-        "video": "shopify://files/videos/Ljusnan-bastitest.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "image_overlay_opacity": 0,
-        "enable_video_looping": false,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -123,25 +90,13 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.description }}</p>"
-          }
-        },
-        "button_d4cWYV": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "{{ collection.description }}"
           }
         }
       },
       "block_order": [
         "heading_dipqiz",
-        "text_FkKbKK",
-        "button_d4cWYV"
+        "text_FkKbKK"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -159,7 +114,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna-Ljusnan-foldable-saw_mobile.jpg",
-            "heading": "Inga fler rostiga sågblad",
+            "heading": "No More Rusty Blades",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
@@ -177,7 +132,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Ljusnan-saw-teeth-3phase-grind.png",
-            "heading": "Mångsidighet med ett 7 TPI-blad",
+            "heading": "Versatility with a 7 TPI Blade",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
@@ -195,7 +150,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna_Ljusnan-2.png",
-            "heading": "Tidlös stil med valnötsträ",
+            "heading": "Timeless Style with American Walnut",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
@@ -257,9 +212,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
+        "show_view_product_button": false,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
@@ -312,7 +269,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Urforska vårt övriga sortiment",
+        "title": "Explore our other saws",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -328,9 +285,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -420,7 +379,6 @@
   "order": [
     "image_banner_dLVAWX",
     "image_banner_PBEUQe",
-    "video_banner_yt_iLi8kQ",
     "rich_text_dbVHAH",
     "slideshow_qnwtLy",
     "banner",

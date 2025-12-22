@@ -115,9 +115,9 @@
   },
   "products": {
     "product": {
-    
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
+      "view_product": "View Product",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
       "inventory_in_stock": "In stock",
@@ -174,7 +174,7 @@
         "unit_price": "Unit price"
       },
       "share": "Share this product",
-      "sold_out": "Coming soon",
+      "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
@@ -183,11 +183,15 @@
       "view_full_details": "View full details",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
-      "taxes_included": "Taxes included",
+      "taxes_included": "All taxes and duties included to US/UK/Canada",
       "duties_included": "Duties included",
       "duties_and_taxes_included": "Duties and taxes included",
       "shipping_policy_html": "See our <a href=\"{{ link }}\">shipping policy</a>",
-      "low_stock": "Only a few left"
+      "low_stock": "Only a few left",
+      "upsell": {
+        "add_to_cart": "Add to Cart",
+        "view_options": "View Options"
+      }
     },
     "modal": {
       "label": "Media gallery"
@@ -275,6 +279,122 @@
     }
   },
   "sections": {
+    "main-collection-product-grid": {
+      "settings": {
+        "hero_block": {
+          "header": "Hero Block",
+          "show_hero_block_1": {
+            "label": "Show hero block"
+          },
+          "position_desktop": {
+            "label": "Position on desktop",
+            "info": "Choose where to place the hero block in the product grid on desktop",
+            "options": {
+              "after_1st": "After 1st product",
+              "after_2nd": "After 2nd product",
+              "after_3rd": "After 3rd product",
+              "after_4th": "After 4th product",
+              "after_5th": "After 5th product",
+              "after_6th": "After 6th product",
+              "after_9th": "After 9th product",
+              "after_12th": "After 12th product"
+            }
+          },
+          "position_mobile": {
+            "label": "Position on mobile",
+            "info": "Choose where to place the hero block in the product grid on mobile",
+            "options": {
+              "after_2nd": "After 2nd product",
+              "after_4th": "After 4th product",
+              "after_6th": "After 6th product",
+              "after_8th": "After 8th product",
+              "after_10th": "After 10th product",
+              "after_12th": "After 12th product"
+            }
+          },
+          "size": {
+            "label": "Size",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            }
+          },
+          "image": {
+            "label": "Image"
+          },
+          "heading": {
+            "label": "Heading",
+            "default": "Hero Block"
+          },
+          "text": {
+            "label": "Text"
+          },
+          "button_text": {
+            "label": "Button text",
+            "default": "Shop Now"
+          },
+          "button_url": {
+            "label": "Button URL"
+          },
+          "color_scheme": {
+            "label": "Color scheme"
+          },
+          "vertical_position_desktop": {
+            "label": "Vertical position on desktop",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bottom"
+            }
+          },
+          "vertical_position_mobile": {
+            "label": "Vertical position on mobile",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bottom"
+            }
+          },
+          "text_alignment_desktop": {
+            "label": "Text alignment on desktop",
+            "options": {
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
+            }
+          },
+          "text_alignment_mobile": {
+            "label": "Text alignment on mobile",
+            "options": {
+              "left": "Left",
+              "center": "Center",
+              "right": "Right"
+            }
+          },
+          "heading_size_desktop": {
+            "label": "Heading size on desktop",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "extra_large": "Extra large",
+              "extra_extra_large": "Extra extra large"
+            }
+          },
+          "heading_size_mobile": {
+            "label": "Heading size on mobile",
+            "options": {
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "extra_large": "Extra large",
+              "extra_extra_large": "Extra extra large"
+            }
+          }
+        }
+      }
+    },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
@@ -320,6 +440,11 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
+      },
+      "upsell": {
+        "title": "You might also like",
+        "add_to_cart": "Add",
+        "view_options": "View options"
       }
     },
     "footer": {
@@ -538,6 +663,50 @@
   "shopify": {
     "links": {
       "powered_by_shopify": " "
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell product",
+            "info": "Product to suggest as an upsell when this product is in cart"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Product Page Upsell Product",
+        "description": "Product to suggest as an upsell on this product page"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Product Page Upsell Button Text",
+        "description": "Custom text for the upsell button (e.g., \"Add Protection Plan\", \"Get Care Kit\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Product Page Upsell Offer Text",
+        "description": "Text to explain the offer above the upsell button (e.g., \"Save 50% when you add this to your order!\")"
+      },
+      "discount_bundle": {
+        "label": "Discount Bundle Percentage",
+        "description": "Percentage discount to apply to the upsell product (e.g., 50 for 50% off)"
+      }
+    }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Physical",
+      "physical": "Physical Store",
+      "online": "Online Store"
+    },
+    "search": {
+      "placeholder": "Search by city...",
+      "city_placeholder": "City name",
+      "label": "Search retailers by city",
+      "clear": "Clear",
+      "no_results": "No retailers found in that city. Try a different search."
     }
   }
 }

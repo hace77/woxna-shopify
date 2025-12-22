@@ -9,22 +9,68 @@
  */
 {
   "sections": {
+    "image_banner_p697Nx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cENpQt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our award-winning saws",
+            "heading_size": "h0"
+          }
+        },
+        "text_7ggBir": {
+          "type": "text",
+          "settings": {
+            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
+            "text_style": "body"
+          }
+        },
+        "buttons_KGYaGF": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Read more",
+            "button_link_1": "shopify://collections/foldable-saws",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cENpQt",
+        "text_7ggBir",
+        "buttons_KGYaGF"
+      ],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner DT",
+      "settings": {
+        "image": "shopify://shop_images/start_page_new_16_9.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "desktop_content_position": "top-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "video_banner_yt_yWG9Ex": {
       "type": "video-bannerYT",
       "blocks": {
         "heading_NUNcr4": {
           "type": "heading",
           "settings": {
-            "heading": "Explore our collection of Saws",
+            "heading": "Explore our award-winning saws",
             "heading_size": "h0"
-          }
-        },
-        "text_FrJi3W": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Explore our collection of Saws",
-            "text_style": "body"
           }
         },
         "buttons_76y76T": {
@@ -41,9 +87,9 @@
       },
       "block_order": [
         "heading_NUNcr4",
-        "text_FrJi3W",
         "buttons_76y76T"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
         "@media (min-width: 749px) {.banner__content {align-items: start; }}"
@@ -54,10 +100,64 @@
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
         "image_height": "adapt",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_z8RLaV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_eFA9R4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Explore our award-winning saws</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_wTkGzN": {
+          "type": "text",
+          "settings": {
+            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
+            "text_style": "body"
+          }
+        },
+        "buttons_iWWgUB": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Read more",
+            "button_link_1": "shopify://collections/foldable-saws",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eFA9R4",
+        "text_wTkGzN",
+        "buttons_iWWgUB"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner MOBILE",
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan_180_Jul_2.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -68,17 +168,9 @@
       "blocks": {
         "heading_dtUCPi": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Ljusnan 180",
+            "heading": "<strong>Explore our award-winning saws</strong>",
             "heading_size": "h0"
-          }
-        },
-        "text_47ty4L": {
-          "type": "text",
-          "settings": {
-            "text": "Explore our collection of Saws",
-            "text_style": "body"
           }
         },
         "buttons_gzXFeC": {
@@ -95,21 +187,21 @@
       },
       "block_order": [
         "heading_dtUCPi",
-        "text_47ty4L",
         "buttons_gzXFeC"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
       ],
       "name": "Video Banner YT mobile",
       "settings": {
-        "video": "shopify://files/videos/ljusnan180_mobil_start.mp4",
+        "video": "shopify://files/videos/startpage-film-mobile_compressed.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "right",
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
@@ -121,70 +213,70 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
-        "image_UdTHzh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ljusnan_bast_1_1.jpg",
-            "img_link": "shopify://products/ljusnan-foldable-saw-250-mm-walnut-stainless-steel",
-            "show_text_overlay": true,
-            "heading": "Ljusnan",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "left",
-            "mobile_text_alignment": "left",
-            "heading_size": "h0",
-            "mobile_heading_size": "h1",
-            "description": "Best in test",
-            "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://collections/ljusnan-bast-i-test",
-            "button_style_secondary": false
-          }
-        },
         "image_3FYifX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-7.jpg",
-            "img_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
+            "image": "shopify://shop_images/halsing-landningssida3.jpg",
+            "img_link": "shopify://pages/chrismas-guide",
             "show_text_overlay": true,
-            "heading": "Gnarp",
-            "vertical_position": "top",
+            "heading": "Christmas Gift Ideas",
+            "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "heading_size": "h2",
+            "mobile_heading_size": "h1",
+            "description": "Why is hälsing a great gift",
+            "description_style": "body",
+            "button_label": "Learn more",
+            "button_link": "shopify://pages/chrismas-guide",
+            "button_style_secondary": false
+          }
+        },
+        "image_UdTHzh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/alfta_frontpage4.jpg",
+            "img_link": "shopify://products/alfta-sheath",
+            "show_text_overlay": true,
+            "heading": "Alfta Leather Sheaths",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "right",
             "mobile_text_alignment": "right",
             "heading_size": "h1",
-            "mobile_heading_size": "h1",
-            "description": "Multi leather guard",
+            "mobile_heading_size": "h2",
+            "description": "Finally here, the perfect complement to your woxna saw",
             "description_style": "body",
-            "button_label": "Discover",
-            "button_link": "shopify://products/gnarp-outdoor-leather-multi-guard",
+            "button_label": "Buy it now",
+            "button_link": "shopify://products/alfta-sheath",
             "button_style_secondary": false
           }
         },
         "image_fA3Dgi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Folding-saw-halsing-in-hand.jpg",
-            "img_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "image": "shopify://shop_images/Ljusnan-folding-saw-250mm-102.jpg",
+            "img_link": "shopify://products/ljusnan-foldable-saw",
             "show_text_overlay": true,
-            "heading": "Hälsing 180",
+            "heading": "Ljusnan 250",
             "vertical_position": "top",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
-            "mobile_text_alignment": "center",
+            "mobile_text_alignment": "left",
             "heading_size": "h1",
             "mobile_heading_size": "medium",
-            "description": "Grit in Oak and Carbon Steel.",
+            "description": "No More Rusty Blades",
             "description_style": "body",
             "button_label": "Discover",
-            "button_link": "shopify://products/halsing-foldable-saw-180-mm-oak-hcs",
+            "button_link": "shopify://products/ljusnan-foldable-saw",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "image_UdTHzh",
         "image_3FYifX",
+        "image_UdTHzh",
         "image_fA3Dgi"
       ],
       "custom_css": [
@@ -228,7 +320,7 @@
         "heading_jzkrgK": {
           "type": "heading",
           "settings": {
-            "heading": "What our customers say",
+            "heading": "Hear why our customers love their Woxna saws",
             "heading_size": "h1"
           }
         }
@@ -243,7 +335,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "1750255072dfdc72a2": {
@@ -283,6 +375,7 @@
         "heading_MNknGf",
         "text_Ma9AMz"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -316,6 +409,13 @@
             "logo_link": ""
           }
         },
+        "logo_MXq4ka": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Survival-magazin.png",
+            "logo_link": ""
+          }
+        },
         "logo_KgekT3": {
           "type": "logo",
           "settings": {
@@ -329,14 +429,31 @@
             "logo_image": "shopify://shop_images/core77.png",
             "logo_link": ""
           }
+        },
+        "logo_tbY4PF": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/Gearjunkie_1be2a1ed-9814-4a38-b31e-1f0f1920dcb7.png",
+            "logo_link": "https://gearjunkie.com/outdoor/woxna-ljusnan-10-folding-saw-review"
+          }
+        },
+        "logo_LTi9hU": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/vildmarken-logo.png",
+            "logo_link": "https://vildmarken.se/reportage/woxna-halsing-litet-format-manga-anvandningsomraden/"
+          }
         }
       },
       "block_order": [
         "logo_8aBA6h",
         "logo_7M93R9",
         "logo_8fYEg3",
+        "logo_MXq4ka",
         "logo_KgekT3",
-        "logo_xUJFHg"
+        "logo_xUJFHg",
+        "logo_tbY4PF",
+        "logo_LTi9hU"
       ],
       "settings": {
         "heading": "As seen on",
@@ -378,6 +495,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
         ".button {border: none;}",
@@ -404,9 +522,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": true,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 20,
@@ -448,10 +568,10 @@
           "type": "button",
           "settings": {
             "button_label": "Söderfors - Damascus Saw 180 mm",
-            "button_link": "shopify://products/damascus-saw-250-mm",
+            "button_link": "shopify://products/damascus-saw",
             "button_style_secondary": false,
             "button_label_2": "Söderfors - Damascus Saw 250 mm",
-            "button_link_2": "shopify://products/damascus-saw-250-mm",
+            "button_link_2": "shopify://products/damascus-saw",
             "button_style_secondary_2": false
           }
         }
@@ -571,6 +691,7 @@
         "text_cVN7XX",
         "button_NMrzW6"
       ],
+      "disabled": true,
       "name": "No more rusty",
       "settings": {
         "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
@@ -609,7 +730,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Explore our black week deals",
-            "button_link_1": "shopify://pages/black-week-2024",
+            "button_link_1": "shopify://pages/black-friday-2025",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -631,6 +752,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -657,9 +779,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -705,6 +829,7 @@
       "blocks": {
         "caption_KNARhM": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Our Story",
             "text_style": "caption-with-letter-spacing",
@@ -768,6 +893,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
+        "enable_sticky_button": false,
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -812,7 +938,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "full_width": true,
-        "padding_top": 64,
+        "padding_top": 56,
         "padding_bottom": 80
       }
     },
@@ -847,6 +973,7 @@
         "text_ry3ayq",
         "button_xqqVKL"
       ],
+      "disabled": true,
       "name": "sustain",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-with-kettle-and-lamp.jpg",
@@ -860,51 +987,8 @@
         "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 32,
         "padding_bottom": 56
-      }
-    },
-    "rich_text_FVdRqr": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_J3fDmm": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability First",
-            "heading_size": "h1"
-          }
-        },
-        "text_TKf9Lk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
-          }
-        },
-        "button_NcpnAk": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more about our green intentions",
-            "button_link": "shopify://pages/sustainablilty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_J3fDmm",
-        "text_TKf9Lk",
-        "button_NcpnAk"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "1751624034c788284f": {
@@ -913,66 +997,30 @@
         "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-TKfihV\"></div>"
+            "formId": ""
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_98mQHn": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
           }
         }
       },
       "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L"
+        "klaviyo_email_marketing_sms_form_embed_block_Vk7h9L",
+        "klaviyo_email_marketing_sms_form_embed_block_98mQHn"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
-      }
-    },
-    "rich_text_wKwa4B": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_wnbtNM": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_BkhQxd": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_PhaGPf": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_wnbtNM",
-        "text_BkhQxd",
-        "button_PhaGPf"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
   "order": [
+    "image_banner_p697Nx",
     "video_banner_yt_yWG9Ex",
+    "image_banner_z8RLaV",
     "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
@@ -993,8 +1041,6 @@
     "image_banner_CPbRdx",
     "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
-    "rich_text_FVdRqr",
-    "1751624034c788284f",
-    "rich_text_wKwa4B"
+    "1751624034c788284f"
   ]
 }

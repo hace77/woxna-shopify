@@ -11,6 +11,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "17593301448b063bc4": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_i6tbbU": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-RAeQNK\"></div>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_pAWxGm": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_xy8kUr": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-XXkzcJ\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_i6tbbU",
+        "klaviyo_email_marketing_sms_form_embed_block_pAWxGm",
+        "klaviyo_email_marketing_sms_form_embed_block_xy8kUr"
+      ],
+      "custom_css": [
+        ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ {background-color: #f4f0e3;}"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -26,21 +60,24 @@
           "type": "link_list",
           "settings": {
             "heading": "About",
-            "menu": "about"
+            "menu": "about",
+            "expanded_by_default": false
           }
         },
         "link_list_ppCkmq": {
           "type": "link_list",
           "settings": {
             "heading": "Support",
-            "menu": "support"
+            "menu": "support",
+            "expanded_by_default": false
           }
         },
         "link_list_3NGMt3": {
           "type": "link_list",
           "settings": {
             "heading": "Retailers",
-            "menu": "retailers"
+            "menu": "retailers",
+            "expanded_by_default": true
           }
         }
       },
@@ -63,11 +100,12 @@
         "enable_dropdown_menus": true,
         "margin_top": 0,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 28
       }
     }
   },
   "order": [
+    "17593301448b063bc4",
     "footer"
   ]
 }

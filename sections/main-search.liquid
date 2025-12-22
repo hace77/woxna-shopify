@@ -280,7 +280,9 @@
                           show_vendor: section.settings.show_vendor,
                           show_rating: section.settings.show_rating,
                           lazy_load: lazy_load,
-                          skip_styles: skip_card_product_styles
+                          skip_styles: skip_card_product_styles,
+                          show_view_product_button: section.settings.show_view_product_button,
+                          color_scheme: section.settings.color_scheme
                         %}
                         {%- assign skip_card_product_styles = true -%}
                       {%- when 'article' -%}
@@ -431,6 +433,13 @@
       "default": false,
       "label": "t:sections.main-search.settings.show_rating.label",
       "info": "t:sections.main-search.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_product_button",
+      "default": false,
+      "label": "Show view product button",
+      "info": "Display a button that links to the full product page"
     },
     {
       "type": "header",

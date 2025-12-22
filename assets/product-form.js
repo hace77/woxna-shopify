@@ -8,7 +8,10 @@ if (!customElements.get('product-form')) {
         this.form = this.querySelector('form');
         this.variantIdInput.disabled = false;
         this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
-        this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+        
+        // Initialize cart component asynchronously
+        this.initializeCart();
+        
         this.submitButton = this.querySelector('[type="submit"]');
         this.submitButtonText = this.submitButton.querySelector('span');
 
@@ -17,9 +20,19 @@ if (!customElements.get('product-form')) {
         this.hideErrors = this.dataset.hideErrors === 'true';
       }
 
-      onSubmitHandler(evt) {
+      async initializeCart() {
+        this.cart = await this.findCartComponent();
+        console.log('Cart component initialized:', this.cart);
+      }
+
+      async onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+
+        // Wait for cart to be initialized
+        if (!this.cart) {
+          await this.initializeCart();
+        }
 
         this.handleErrorMessage();
 
@@ -115,19 +128,117 @@ if (!customElements.get('product-form')) {
         }
       }
 
-      toggleSubmitButton(disable = true, text) {
+      toggleSubmitButton(disable = true, text, customText = null) {
         if (disable) {
           this.submitButton.setAttribute('disabled', 'disabled');
           if (text) this.submitButtonText.textContent = text;
         } else {
           this.submitButton.removeAttribute('disabled');
-          this.submitButtonText.textContent = window.variantStrings.addToCart;
+          // Use custom text from metafield if available, otherwise fall back to default
+          this.submitButtonText.textContent = customText || window.variantStrings.addToCart;
         }
       }
 
       get variantIdInput() {
         return this.form.querySelector('[name=id]');
       }
+
+      findCartComponent() {
+        // First try to find cart drawer
+        let cart = document.querySelector('cart-drawer');
+        
+        // If cart drawer is not found, wait a bit and try again
+        if (!cart) {
+          // Check if we should be using cart drawer based on theme settings
+          const cartType = window.themeSettings?.cart_type || 'drawer';
+          if (cartType === 'drawer') {
+            // Wait for cart drawer to be available
+            return new Promise((resolve) => {
+              const checkForCartDrawer = () => {
+                cart = document.querySelector('cart-drawer');
+                if (cart) {
+                  resolve(cart);
+                } else {
+                  setTimeout(checkForCartDrawer, 100);
+                }
+              };
+              checkForCartDrawer();
+            });
+          }
+        }
+        
+        // Fallback to cart notification if cart drawer is not available
+        return cart || document.querySelector('cart-notification');
+      }
     }
   );
+}
+
+// Product Page Upsell Form Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const upsellForms = document.querySelectorAll('[data-product-page-upsell-form]');
+  
+  upsellForms.forEach(form => {
+    form.addEventListener('submit', handleProductPageUpsellSubmit);
+  });
+});
+
+async function handleProductPageUpsellSubmit(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const button = form.querySelector('[data-product-page-upsell-button]');
+  const originalText = button.textContent;
+
+  // Disable button and show loading state
+  button.disabled = true;
+  button.textContent = 'Adding...';
+
+  try {
+    const variantId = form.querySelector('input[name="id"]').value;
+    const quantity = form.querySelector('input[name="quantity"]').value;
+    
+    // Same approach as your existing cart system
+    const formData = new FormData();
+    formData.append('id', variantId);
+    formData.append('quantity', quantity);
+    formData.append('sections', 'cart-drawer,cart-icon-bubble');
+    formData.append('sections_url', window.location.pathname);
+    
+    const response = await fetch(window.routes.cart_add_url, {
+      method: 'POST',
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'Accept': 'application/json'
+      },
+      body: formData
+    });
+    
+    const result = await response.json();
+    
+    if (result.status) {
+      throw new Error(result.description || 'Failed to add to cart');
+    }
+    
+    // Update cart components (same as your existing system)
+    const cart = document.querySelector('cart-drawer') || document.querySelector('cart-notification');
+    if (cart && cart.renderContents) {
+      cart.renderContents(result);
+    }
+    
+    // Show success message
+    button.textContent = 'Added!';
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+    }, 1000);
+    
+  } catch (error) {
+    console.error('Product page upsell error:', error);
+    button.textContent = 'Error - Try Again';
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+    }, 2000);
+  }
 }

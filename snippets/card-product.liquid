@@ -16,6 +16,10 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+  - show_view_product_button: {Boolean} Show a "View Product" button. Default: false (optional)
+  - color_scheme: {String} Color scheme to apply to the button. Default: null (optional)
+  - grey_overlay: {Boolean} Apply grey overlay to product images. Default: false (optional)
+  - show_usp_text: {Boolean} Show the product USP text. Default: true (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -50,6 +54,24 @@
     .custom-label + .stock-label {
       top: 45px;
     }
+    .view-product-button {
+      padding: 0 !important;
+    }
+    
+    /* Position view product button in correct grid row */
+    .card__content .quick-add {
+      grid-row-start: 4;
+    }
+    
+    /* Grey overlay effect for product images using mix-blend-mode */
+    .product-image-overlay {
+      position: relative;
+      background: #f5f5f5;
+    }
+    
+    .product-image-overlay img {
+      mix-blend-mode: multiply;
+    }
   </style>
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
@@ -83,7 +105,7 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
+            <div class="media media--transparent media--hover-effect{% if grey_overlay %} product-image-overlay{% endif %}">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
@@ -136,7 +158,7 @@
           {%- for variant in card_product.variants -%}
             {%- assign total_inventory = total_inventory | plus: variant.inventory_quantity -%}
           {%- endfor -%}
-          {%- if total_inventory > 0 and total_inventory <= 5 -%}
+          {%- if total_inventory > 0 and total_inventory <= 10 -%}
             <div class="product-label custom-label stock-label">
               {{ 'products.product.inventory_low_stock_show_count' | t: quantity: total_inventory }}
             </div>
@@ -204,7 +226,13 @@
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
-            {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
+            {%- if show_usp_text != false and card_product.metafields.custom.usp_collection_page != blank -%}
+              <div class="card__usp">
+                {{ card_product.metafields.custom.usp_collection_page | metafield_tag }}
+              </div>
+            {%- endif -%}
+
+            {%- if show_rating and card_product.metafields.reviews.rating.value != blank and card_product.metafields.reviews.rating_count > 0 -%}
               {% liquid
                 assign rating_decimal = 0
                 assign decimal = card_product.metafields.reviews.rating.value.rating | modulo: 1
@@ -241,6 +269,7 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
                 {% liquid
@@ -519,7 +548,7 @@
                           <div
                             class="quick-add__product-media"
                           >
-                            <div class="quick-add__product-container global-media-settings">
+                            <div class="quick-add__product-container global-media-settings{% if grey_overlay %} product-image-overlay{% endif %}">
                               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                               <img
                                 srcset="
@@ -597,6 +626,13 @@
             </div>
           {% endif %}
         {% endif %}
+        {%- if show_view_product_button -%}
+          <div class="quick-add no-js-hidden">
+            <a href="{{ card_product.url }}" class="quick-add__submit button button--full-width button--secondary{% if color_scheme %} color-{{ color_scheme }}{% endif %}">
+              {{ 'products.product.view_product' | t }}
+            </a>
+          </div>
+        {%- endif -%}
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span

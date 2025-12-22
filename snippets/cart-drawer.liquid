@@ -15,6 +15,79 @@
   .drawer {
     visibility: hidden;
   }
+  
+  /* Cart Drawer Upsell Styles */
+  .cart-drawer__upsell {
+    padding: 20px;
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+    background: rgba(var(--color-foreground), 0.02);
+  }
+  
+  .cart-drawer__upsell-header {
+    margin-bottom: 15px;
+  }
+  
+  .cart-drawer__upsell-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: rgba(var(--color-foreground), 0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .cart-drawer__upsell-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cart-drawer__upsell-image {
+    flex-shrink: 0;
+  }
+  
+  .cart-drawer__upsell-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .cart-drawer__upsell-info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .cart-drawer__upsell-product-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    line-height: 1.3;
+  }
+  
+  .cart-drawer__upsell-price {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: rgb(var(--color-foreground));
+  }
+  
+  .cart-drawer__upsell-button {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 13px;
+    min-height: auto;
+    transition: all 0.2s ease;
+  }
+  
+  .cart-drawer__upsell-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .cart-drawer__upsell-button:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -454,6 +527,101 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+      
+      <!-- Cart Drawer Upsell Section -->
+      {%- if cart != empty -%}
+        {%- comment -%} Find the best upsell product based on cart contents {%- endcomment -%}
+        {%- assign upsell_product = blank -%}
+        {%- assign upsell_source = blank -%}
+        
+        {%- comment -%} First, check for product-specific upsells via metafields {%- endcomment -%}
+        {%- for item in cart.items -%}
+          {%- if item.product.metafields.custom.upsell_product != blank -%}
+            {%- assign potential_upsell = item.product.metafields.custom.upsell_product.value -%}
+            {%- if potential_upsell != blank and potential_upsell.available -%}
+              {%- assign upsell_product = potential_upsell -%}
+              {%- assign upsell_source = item.product -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        
+        {%- comment -%} If no product-specific upsell found, use default {%- endcomment -%}
+        {%- if upsell_product == blank and settings.cart_drawer_upsell_product != blank -%}
+          {%- assign upsell_product = all_products[settings.cart_drawer_upsell_product] -%}
+          {%- assign upsell_source = 'default' -%}
+        {%- endif -%}
+        
+        {%- comment -%} Check if upsell product is available and not already in cart {%- endcomment -%}
+        {%- if upsell_product != blank -%}
+          {%- assign upsell_already_in_cart = false -%}
+          {%- for item in cart.items -%}
+            {%- if item.product.id == upsell_product.id -%}
+              {%- assign upsell_already_in_cart = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          
+          {%- if upsell_already_in_cart or upsell_product.available == false -%}
+            {%- assign upsell_product = blank -%}
+          {%- endif -%}
+        {%- endif -%}
+        
+        {%- if upsell_product != blank -%}
+          <div class="cart-drawer__upsell">
+            <div class="cart-drawer__upsell-header">
+              <h3 class="cart-drawer__upsell-title">{{ 'sections.cart.upsell.title' | t }}</h3>
+              {%- if upsell_source != 'default' and upsell_source != blank -%}
+                <small class="cart-drawer__upsell-source">(Based on {{ upsell_source.title }})</small>
+              {%- endif -%}
+            </div>
+            <div class="cart-drawer__upsell-product">
+              <div class="cart-drawer__upsell-image">
+                <img
+                  src="{{ upsell_product.featured_media | image_url: width: 120 }}"
+                  alt="{{ upsell_product.featured_media.alt | escape }}"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                >
+              </div>
+              <div class="cart-drawer__upsell-info">
+                <h4 class="cart-drawer__upsell-product-title">{{ upsell_product.title }}</h4>
+                <p class="cart-drawer__upsell-price">{{ upsell_product.price | money }}</p>
+                {%- if upsell_product.variants.size == 1 -%}
+                  <form 
+                    action="{{ routes.cart_add_url }}" 
+                    method="post" 
+                    class="cart-drawer__upsell-form"
+                    data-upsell-form
+                  >
+                    <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button
+                      type="submit"
+                      name="add"
+                      class="cart-drawer__upsell-button button button--small"
+                      {% if upsell_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      data-upsell-button
+                    >
+                      {%- if upsell_product.selected_or_first_available_variant.available -%}
+                        {{ 'sections.cart.upsell.add_to_cart' | t }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </button>
+                  </form>
+                {%- else -%}
+                  <a href="{{ upsell_product.url }}" class="cart-drawer__upsell-button button button--small">
+                    {{ 'sections.cart.upsell.view_options' | t }}
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+      
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">

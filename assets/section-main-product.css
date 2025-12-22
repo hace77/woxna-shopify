@@ -284,6 +284,25 @@ a.product__text {
   margin-top: 0;
 }
 
+.product__text-information-box {
+  background-color: rgba(var(--color-foreground), 0.05);
+  padding: 1.2rem;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.product__text-information-box .product__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product__text--small,
+.product__text-information-box--small .product__text {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
 .product__accordion .accordion__content {
   padding: 0 1rem;
 }
@@ -857,6 +876,29 @@ a.product__text {
   .product-media-modal__dialog .global-media-settings img {
     border: none;
     border-radius: 0;
+  }
+
+  /* Ensure modal images display at full size and are scrollable on mobile */
+  /* Only apply these styles to active items - non-active items are hidden by line 673-676 */
+  .product-media-modal__content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .product-media-modal__content .product__media-item.active {
+    display: block;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .product-media-modal__content .product__media-item.active img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    display: block;
   }
 }
 
