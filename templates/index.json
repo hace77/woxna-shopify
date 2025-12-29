@@ -256,7 +256,7 @@
         "image_3FYifX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/halsing-landningssida3.jpg",
+            "image": "shopify://shop_images/Halsing-folding-saw-250mm-102.jpg",
             "img_link": "shopify://products/halsing-foldable-saw",
             "show_text_overlay": true,
             "heading": "Hälsing",
@@ -266,7 +266,7 @@
             "mobile_text_alignment": "center",
             "heading_size": "h2",
             "mobile_heading_size": "h1",
-            "description": "A great gift",
+            "description": "Oak handle and high-carbon steel blade",
             "description_style": "body",
             "button_label": "Learn more",
             "button_link": "shopify://products/halsing-foldable-saw",
