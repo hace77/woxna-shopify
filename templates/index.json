@@ -257,7 +257,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/halsing-landningssida3.jpg",
-            "img_link": "shopify://pages/chrismas-guide",
+            "img_link": "shopify://products/halsing-foldable-saw",
             "show_text_overlay": true,
             "heading": "Hälsing",
             "vertical_position": "bottom",
@@ -266,7 +266,7 @@
             "mobile_text_alignment": "center",
             "heading_size": "h2",
             "mobile_heading_size": "h1",
-            "description": "Why is hälsing a great gift",
+            "description": "A great gift",
             "description_style": "body",
             "button_label": "Learn more",
             "button_link": "shopify://pages/chrismas-guide",
