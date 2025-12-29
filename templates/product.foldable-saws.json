@@ -38,16 +38,6 @@
             "swatch_shape": "circle"
           }
         },
-        "variant_metafield_AmB6Xm": {
-          "type": "variant_metafield",
-          "settings": {
-            "metafield_key": "variant_informaion",
-            "show_heading": false,
-            "heading": "",
-            "show_fallback": false,
-            "fallback_content": ""
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -93,7 +83,6 @@
         "judge_me_reviews_preview_badge_VG7pPA",
         "price",
         "variant_picker",
-        "variant_metafield_AmB6Xm",
         "buy_buttons",
         "custom_liquid_9Km4Ji",
         "icon_with_text_GbTykW",
@@ -106,7 +95,7 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
-        ".variant-metafield__content p {margin: 0 0 1rem; background-color: rgba(var(--color-foreground), .05); padding: 1.2rem;}"
+        ".variant-metafield__content p {margin: 0 0 1rem; background-color: rgba(var(--color-foreground), 0.05); padding: 1.2rem;}"
       ],
       "settings": {
         "enable_sticky_info": true,
