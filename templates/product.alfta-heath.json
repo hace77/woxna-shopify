@@ -33,13 +33,6 @@
             "swatch_shape": "circle"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
         "variant_metafield_pQV6yj": {
           "type": "variant_metafield",
           "settings": {
@@ -48,6 +41,13 @@
             "heading": "",
             "show_fallback": false,
             "fallback_content": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
           }
         },
         "sku_cGN6wt": {
@@ -94,8 +94,8 @@
         "klaviyo_reviews_average_rating_GaRrKj",
         "price",
         "variant_picker",
-        "buy_buttons",
         "variant_metafield_pQV6yj",
+        "buy_buttons",
         "sku_cGN6wt",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
