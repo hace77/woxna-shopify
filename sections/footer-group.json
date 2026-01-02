@@ -46,7 +46,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_qtrf4b"
       ],
       "custom_css": [
-        ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ .klaviyo-form-UuTV7Q {background-color: #f4f0e3;}"
+        ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ, .klaviyo-form-UuTV7Q {background-color: #f4f0e3;}"
       ],
       "settings": {
         "include_margins": false
