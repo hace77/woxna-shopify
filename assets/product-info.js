@@ -206,22 +206,25 @@ if (!customElements.get('product-info')) {
           this.querySelector(`#Volume-Note-${this.dataset.section}`)?.classList.remove('hidden');
 
           const submitButtonInHtml = html.getElementById(`ProductSubmitButton-${this.sectionId}`);
+          const submitButton = this.querySelector(`#ProductSubmitButton-${this.dataset.section}`);
           const isDisabled = submitButtonInHtml?.hasAttribute('disabled') ?? true;
-          // Extract button text from the fetched HTML (includes metafield value if present)
-          // Only use custom text if button is enabled (not sold out)
-          let customButtonText = null;
-          if (!isDisabled) {
-            const buttonTextSpan = submitButtonInHtml?.querySelector('span');
-            if (buttonTextSpan) {
-              customButtonText = buttonTextSpan.textContent.trim();
+          
+          // Update button text directly from fetched HTML (includes variant button text if available)
+          if (submitButtonInHtml && submitButton) {
+            const buttonTextSpanInHtml = submitButtonInHtml.querySelector('span');
+            const buttonTextSpan = submitButton.querySelector('span');
+            if (buttonTextSpanInHtml && buttonTextSpan) {
+              // Update the button text span directly from the fetched HTML
+              buttonTextSpan.textContent = buttonTextSpanInHtml.textContent.trim();
+            }
+            
+            // Update disabled state
+            if (isDisabled) {
+              submitButton.setAttribute('disabled', 'disabled');
+            } else {
+              submitButton.removeAttribute('disabled');
             }
           }
-          
-          this.productForm?.toggleSubmitButton(
-            isDisabled,
-            window.variantStrings.soldOut,
-            customButtonText
-          );
 
           publish(PUB_SUB_EVENTS.variantChange, {
             data: {
