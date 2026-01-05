@@ -74,4 +74,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // Update on scroll
   window.addEventListener('scroll', updateStickyButton);
 }); 
-}); 
