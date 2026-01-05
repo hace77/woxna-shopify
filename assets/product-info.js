@@ -89,7 +89,10 @@ if (!customElements.get('product-info')) {
 
       resetProductFormState() {
         const productForm = this.productForm;
-        productForm?.toggleSubmitButton(true);
+        // Only disable the button, don't change text (it will be updated from fetched HTML)
+        if (productForm?.submitButton) {
+          productForm.submitButton.setAttribute('disabled', 'disabled');
+        }
         productForm?.handleErrorMessage();
       }
 
@@ -214,8 +217,18 @@ if (!customElements.get('product-info')) {
             const buttonTextSpanInHtml = submitButtonInHtml.querySelector('span');
             const buttonTextSpan = submitButton.querySelector('span');
             if (buttonTextSpanInHtml && buttonTextSpan) {
-              // Update the button text span directly from the fetched HTML
-              buttonTextSpan.textContent = buttonTextSpanInHtml.textContent.trim();
+              // Only update text if the fetched HTML doesn't show "sold out" when variant is actually available
+              // This prevents the flash of "sold out" text during variant transitions
+              const fetchedText = buttonTextSpanInHtml.textContent.trim();
+              const soldOutText = window.variantStrings?.soldOut || 'Sold out';
+              
+              // If variant is available but HTML shows "sold out", preserve current text
+              if (variant && variant.available && fetchedText === soldOutText) {
+                // Don't update - keep current text to avoid flash
+              } else {
+                // Update the button text span directly from the fetched HTML
+                buttonTextSpan.textContent = fetchedText;
+              }
             }
             
             // Update disabled state
