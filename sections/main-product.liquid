@@ -17,7 +17,7 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
   {{ 'component-variant-metafield.css' | asset_url | stylesheet_tag }}
-  {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
+  {%- comment -%} {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }} {%- endcomment -%}
   {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
@@ -79,17 +79,19 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'sticky-add-to-cart.js' | asset_url }}" defer="defer"></script>
+  {%- comment -%} <script src="{{ 'sticky-add-to-cart.js' | asset_url }}" defer="defer"></script> {%- endcomment -%}
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
+  {%- comment -%}
   {%- render 'sticky-add-to-cart-button',
     product: product,
     section: section,
     sticky_button_alt_text: product.metafields.custom.sticky_button_alt_text
   -%}
+  {%- endcomment -%}
 
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
