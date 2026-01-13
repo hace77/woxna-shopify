@@ -39,6 +39,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -125,14 +126,15 @@
         "heading_9NMN8R": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Gnarp Leather Guard - Studio and Outdoor/Lifestyle</strong>",
+            "heading": "<strong>Alfta Leather sheath</strong>",
             "heading_size": "h1"
           }
         },
         "image_yQmjff": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Gnarp-images-web-download.jpg"
+            "image_select": "shopify://shop_images/alfta-images-web-download.jpg",
+            "image_link": ""
           }
         },
         "text_qEB7Hf": {
@@ -142,6 +144,57 @@
           }
         },
         "button_H6KxpT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download studio images",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Alfta-studio-medium.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download outoor images",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/alfta-outdoor.zip",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9NMN8R",
+        "image_yQmjff",
+        "text_qEB7Hf",
+        "button_H6KxpT"
+      ],
+      "name": "Gnarp",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_3Bg64Q": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_mjxfPq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Gnarp Leather Guard - Studio and Outdoor/Lifestyle</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "image_QPUeYg": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/Gnarp-images-web-download.jpg",
+            "image_link": ""
+          }
+        },
+        "text_daUNGJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This image collection contains both clean studio images and outdoor images of our Gnarp Leather Guard.</p>"
+          }
+        },
+        "button_LMbCrP": {
           "type": "button",
           "settings": {
             "button_label": "Download all Gnarp Images - Large",
@@ -154,10 +207,10 @@
         }
       },
       "block_order": [
-        "heading_9NMN8R",
-        "image_yQmjff",
-        "text_qEB7Hf",
-        "button_H6KxpT"
+        "heading_mjxfPq",
+        "image_QPUeYg",
+        "text_daUNGJ",
+        "button_LMbCrP"
       ],
       "name": "Gnarp",
       "settings": {
@@ -182,7 +235,8 @@
         "image_LYKzPg": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages.jpg",
+            "image_link": ""
           }
         },
         "text_QiNJkE": {
@@ -245,7 +299,8 @@
         "image_44kcV7": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages3.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages3.jpg",
+            "image_link": ""
           }
         },
         "text_KHPCHd": {
@@ -307,7 +362,8 @@
         "image_ncpkHy": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages4.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages4.jpg",
+            "image_link": ""
           }
         },
         "text_jdzqx4": {
@@ -357,7 +413,8 @@
         "image_cCAbJD": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/Download-image-packages2.jpg"
+            "image_select": "shopify://shop_images/Download-image-packages2.jpg",
+            "image_link": ""
           }
         },
         "text_GQPmqe": {
@@ -413,9 +470,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -473,6 +532,7 @@
     "rich_text_yHJEzK",
     "collapsible_content_UPUCyz",
     "richtext_with_image_9kDaP9",
+    "richtext_with_image_3Bg64Q",
     "richtext_with_image_mKh7Vp",
     "richtext_with_image_F7pH9D",
     "richtext_with_image_mheWbJ",
