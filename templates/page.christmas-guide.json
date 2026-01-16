@@ -56,14 +56,14 @@
         "heading_QGTiCB": {
           "type": "heading",
           "settings": {
-            "heading": "What makes the Hälsing a great Christmas gift?",
+            "heading": "Which saw should i choose",
             "heading_size": "h1"
           }
         },
         "text_htH76q": {
           "type": "text",
           "settings": {
-            "text": "The <strong>Hälsing</strong> is designed for those who appreciate raw strength and authentic heritage. With its carbon steel blade and robust character, it’s a tool that stands out – making it a truly memorable gift for the outdoor enthusiast in your life.",
+            "text": "Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials.",
             "text_style": "body"
           }
         }
@@ -72,6 +72,7 @@
         "heading_QGTiCB",
         "text_htH76q"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end !important; } p {text-wrap-style: balance; }}"
@@ -104,6 +105,48 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_Kp9FDi": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_k3bdFc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Which saw should i choose",
+            "heading_size": "h1"
+          }
+        },
+        "text_cQdUVb": {
+          "type": "text",
+          "settings": {
+            "text": "Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_k3bdFc",
+        "text_cQdUVb"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end !important; } p {text-wrap-style: balance; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Ljusnan-Halsing-compare.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "image_banner_KCRmEW": {
       "type": "image-banner",
       "blocks": {
@@ -127,6 +170,7 @@
         "heading_PeLEdW",
         "text_J7mGyb"
       ],
+      "disabled": true,
       "name": "Discover",
       "settings": {
         "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-2.jpg",
@@ -149,12 +193,12 @@
         "row_3xNyTq": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Packaging-Halsing-250.jpg",
+            "image": "shopify://shop_images/Ljusnan-folding-saw-250mm-101.jpg",
             "caption": "",
-            "heading": "<strong>Built for the Wild</strong>",
-            "text": "<p>The Hälsing features a robust carbon steel blade with hardened teeth. It’s designed for forestry work, bushcraft, and tough challenges. It’s not just a saw; it’s a workhorse that cuts through wood with impressive speed and precision.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "Ljusnan",
+            "text": "<p>Ljusnan has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p>",
+            "button_label": "Buy Ljusnan",
+            "button_link": "shopify://products/ljusnan-foldable-saw"
           }
         },
         "row_X94PXM": {
@@ -162,19 +206,19 @@
           "settings": {
             "image": "shopify://shop_images/Halsing-folding-saw-180mm-101.jpg",
             "caption": "",
-            "heading": "<strong>Authentic Swedish Craftsmanship</strong>",
-            "text": "<p>With its handle made from robust oak and its striking black blade, the Hälsing exudes a rustic elegance. It feels solid in the hand and carries the scent of the forest and the workshop. It is a tool with a soul.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "<strong>Hälsing</strong>",
+            "text": "<p>Hälsing has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
+            "button_label": "Buy Hälsing",
+            "button_link": "shopify://products/halsing-foldable-saw"
           }
         },
         "row_XcKthJ": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Woxna-saw-packaging-Halsing-180-in-box.jpg",
+            "image": "shopify://shop_images/allmodels.jpg",
             "caption": "",
-            "heading": "A Gift for Generations",
-            "text": "<p>This is a tool built to be used, loved, and eventually passed down. The materials are chosen to age with dignity, developing a unique patina over years of adventures. Giving a Hälsing is giving a companion for life.</p>",
+            "heading": "Choose your size",
+            "text": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -191,7 +235,7 @@
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
-        "button_style": "secondary",
+        "button_style": "primary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
@@ -318,6 +362,7 @@
     "image_banner_hcbVmA",
     "video_banner_yt_wWJiXi",
     "main",
+    "image_banner_Kp9FDi",
     "image_banner_KCRmEW",
     "multirow_wXCAtd",
     "image_banner_8kMANC",
