@@ -157,7 +157,7 @@
         "@media (width <= 749px) {.card__heading {font-size: 1.6rem !important; line-height: 1.4; font-weight: 200; font-family: inter; } .hero-block__content {padding-right: 30px; }}",
         ".card--card {border: 0 !important;}",
         ".card__usp {font-size: 1.3rem;}",
-        ".custom-label{display: none;}"
+        ".custom-label {display: none;}"
       ],
       "settings": {
         "products_per_page": 8,
@@ -180,9 +180,9 @@
         "hero_block_1_position_mobile": "4",
         "hero_block_1_size": "medium",
         "hero_block_1_image": "shopify://shop_images/ljusnan250_horiz.jpg",
-        "hero_block_1_heading": "Ljusnan 250",
-        "hero_block_1_text": "<p>Outdoor saw for pruning trees and clearing trails.</p>",
-        "hero_block_1_button_text": "Shop Now",
+        "hero_block_1_heading": "Which model should you choose?",
+        "hero_block_1_text": "<p>Which of our saws fits your needs the best?</p>",
+        "hero_block_1_button_text": "Read more here",
         "hero_block_1_button_url": "shopify://products/ljusnan-foldable-saw",
         "hero_block_1_color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "hero_block_1_vertical_position": "top",
