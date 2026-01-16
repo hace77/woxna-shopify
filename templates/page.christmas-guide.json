@@ -15,14 +15,14 @@
         "heading_fAAGM8": {
           "type": "heading",
           "settings": {
-            "heading": "What makes the Hälsing a great Christmas gift?",
+            "heading": "Which saw should i choose",
             "heading_size": "h0"
           }
         },
         "text_RRhx3f": {
           "type": "text",
           "settings": {
-            "text": "The Hälsing is designed for those who appreciate raw strength and authentic heritage. With its carbon steel blade and robust character, it’s a tool that stands out – making it a truly memorable gift for the outdoor enthusiast in your life.",
+            "text": "Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials.",
             "text_style": "subtitle"
           }
         }
@@ -36,7 +36,7 @@
       ],
       "name": "Image banner Desktip",
       "settings": {
-        "image": "shopify://shop_images/halsing-landningssida2.jpg",
+        "image": "shopify://shop_images/allmodels.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
