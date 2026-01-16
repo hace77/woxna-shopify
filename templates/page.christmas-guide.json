@@ -248,6 +248,7 @@
     },
     "image_banner_8kMANC": {
       "type": "image-banner",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Halsing-180-Alta-15.jpg",
@@ -285,6 +286,7 @@
         "heading_G84ChX",
         "text_ykzfri"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
