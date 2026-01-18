@@ -190,6 +190,7 @@
     },
     "featured_collection_n9WPPF": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Look at some of our other products",
