@@ -9,56 +9,6 @@
  */
 {
   "sections": {
-    "image_banner_6JEz4n": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_G3geB8": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_bKyaYH": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_4YWYr6": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_G3geB8",
-        "text_bKyaYH",
-        "buttons_4YWYr6"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/leatherprod_hero_dt.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "image_banner_DfBJ89": {
       "type": "image-banner",
       "blocks": {
@@ -81,13 +31,11 @@
         "heading_mJxxAt",
         "text_6kVURw"
       ],
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
-      ],
+      "custom_css": [],
       "name": "hero mobile",
       "settings": {
         "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+        "image_2": "shopify://shop_images/Ljusnan-Halsing-compare.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -408,45 +356,45 @@
         "padding_bottom": 52
       }
     },
-    "featured_product_jFC8UY": {
+    "featured_product_CUh9Wb": {
       "type": "featured-product",
       "blocks": {
-        "text_yf8ppJ": {
+        "text_wJxkgh": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "title_j4fWCp": {
+        "title_wn8mQa": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
         },
-        "price_7BqeRh": {
+        "price_Wqt7Hn": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker_UTQXFF": {
+        "variant_picker_wKPrb8": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector_NaRbh3": {
+        "quantity_selector_Pdq8VG": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons_FAk9TK": {
+        "buy_buttons_T37yW3": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
-        "share_FrLxU3": {
+        "share_pV3hTx": {
           "type": "share",
           "settings": {
             "share_label": "Share"
@@ -454,17 +402,17 @@
         }
       },
       "block_order": [
-        "text_yf8ppJ",
-        "title_j4fWCp",
-        "price_7BqeRh",
-        "variant_picker_UTQXFF",
-        "quantity_selector_NaRbh3",
-        "buy_buttons_FAk9TK",
-        "share_FrLxU3"
+        "text_wJxkgh",
+        "title_wn8mQa",
+        "price_Wqt7Hn",
+        "variant_picker_wKPrb8",
+        "quantity_selector_Pdq8VG",
+        "buy_buttons_T37yW3",
+        "share_pV3hTx"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "",
+        "product": "halsing-foldable-saw",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -480,7 +428,6 @@
     }
   },
   "order": [
-    "image_banner_6JEz4n",
     "image_banner_DfBJ89",
     "featured_collection_n9WPPF",
     "countdown_timer_cDtxRJ",
@@ -490,6 +437,6 @@
     "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
     "rich_text_mR6qGN",
-    "featured_product_jFC8UY"
+    "featured_product_CUh9Wb"
   ]
 }
