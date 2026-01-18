@@ -9,40 +9,49 @@
  */
 {
   "sections": {
-    "image_banner_ExBjAj": {
+    "image_banner_6JEz4n": {
       "type": "image-banner",
       "blocks": {
-        "heading_ArRxbY": {
+        "heading_G3geB8": {
           "type": "heading",
           "settings": {
-            "heading": "Black Friday Offer",
-            "heading_size": "h0"
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         },
-        "text_KW7Vgx": {
+        "text_bKyaYH": {
           "type": "text",
           "settings": {
-            "text": "This offer has ended",
-            "text_style": "subtitle"
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_4YWYr6": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_ArRxbY",
-        "text_KW7Vgx"
+        "heading_G3geB8",
+        "text_bKyaYH",
+        "buttons_4YWYr6"
       ],
-      "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
-        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
-      ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+        "image": "shopify://shop_images/leatherprod_hero_dt.png",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": false,
+        "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
         "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -90,101 +99,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "countdown_timer_3jxjBM": {
-      "type": "countdown-timer",
-      "disabled": true,
-      "name": "Countdown Timer",
-      "settings": {
-        "heading": "Secure Your Saw now – this offer ends at midnight",
-        "heading_size": "h1",
-        "subheading": "",
-        "target_date": "2025-11-30",
-        "target_time": "23:59",
-        "timezone": "Europe/Stockholm",
-        "expired_message": "This offer has ended",
-        "show_days": true,
-        "show_hours": true,
-        "show_minutes": true,
-        "show_seconds": true,
-        "text_alignment": "center",
-        "cta_text": "",
-        "cta_url": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_product_fDCRqU": {
-      "type": "featured-product",
-      "blocks": {
-        "title_Xrb78i": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_KRnBax": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_MxwcTj": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_9KJhMx": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_FWhEMf": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_gc8dem": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "title_Xrb78i",
-        "price_KRnBax",
-        "variant_picker_MxwcTj",
-        "quantity_selector_9KJhMx",
-        "buy_buttons_FWhEMf",
-        "share_gc8dem"
-      ],
-      "custom_css": [
-        ".accelerated-checkout-button {display: none !important;}",
-        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
-        "#more-payment-options-link {display: none;}",
-        ".share-button__button,.share-button__fallback button {display: none;}",
-        ".product__tax {display: none;}",
-        "input.disabled + label {display: none !important;}",
-        ".custom-label {background-color: #dc143c; color: white;}"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "quirked-batch",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "featured_collection_n9WPPF": {
@@ -493,13 +407,81 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "featured_product_jFC8UY": {
+      "type": "featured-product",
+      "blocks": {
+        "text_yf8ppJ": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_j4fWCp": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_7BqeRh": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_UTQXFF": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_NaRbh3": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_FAk9TK": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_FrLxU3": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_yf8ppJ",
+        "title_j4fWCp",
+        "price_7BqeRh",
+        "variant_picker_UTQXFF",
+        "quantity_selector_NaRbh3",
+        "buy_buttons_FAk9TK",
+        "share_FrLxU3"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "image_banner_ExBjAj",
+    "image_banner_6JEz4n",
     "image_banner_DfBJ89",
-    "countdown_timer_3jxjBM",
-    "featured_product_fDCRqU",
     "featured_collection_n9WPPF",
     "countdown_timer_cDtxRJ",
     "main",
@@ -507,6 +489,7 @@
     "slideshow_wN9bcg",
     "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
-    "rich_text_mR6qGN"
+    "rich_text_mR6qGN",
+    "featured_product_jFC8UY"
   ]
 }
