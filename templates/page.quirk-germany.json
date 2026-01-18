@@ -9,105 +9,8 @@
  */
 {
   "sections": {
-    "image_banner_DfBJ89": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_mJxxAt": {
-          "type": "heading",
-          "settings": {
-            "heading": "Black Friday offer",
-            "heading_size": "h0"
-          }
-        },
-        "text_6kVURw": {
-          "type": "text",
-          "settings": {
-            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mJxxAt",
-        "text_6kVURw"
-      ],
-      "custom_css": [],
-      "name": "hero mobile",
-      "settings": {
-        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
-        "image_2": "shopify://shop_images/Ljusnan-Halsing-compare.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "featured_collection_n9WPPF": {
-      "type": "featured-collection",
-      "disabled": true,
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "title": "Look at some of our other products",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "grey_overlay": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "show_view_product_button": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "countdown_timer_cDtxRJ": {
-      "type": "countdown-timer",
-      "disabled": true,
-      "name": "Countdown Timer",
-      "settings": {
-        "heading": "Black friday starts in",
-        "heading_size": "h1",
-        "subheading": "",
-        "target_date": "2025-11-24",
-        "target_time": "00:01",
-        "timezone": "Europe/Stockholm",
-        "expired_message": "This offer has ended",
-        "show_days": true,
-        "show_hours": true,
-        "show_minutes": true,
-        "show_seconds": true,
-        "text_alignment": "center",
-        "cta_text": "",
-        "cta_url": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p:first-of-type {padding-top: 30px;}",
@@ -257,7 +160,6 @@
         "text_GyNWxU",
         "button_GQJCdi"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -425,18 +327,66 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_Np9Gxc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_XQnQHg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_qBNpnz": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_Uhexrt": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XQnQHg",
+        "text_qBNpnz",
+        "buttons_Uhexrt"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/leatherprod_hero_dt.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "image_banner_DfBJ89",
-    "featured_collection_n9WPPF",
-    "countdown_timer_cDtxRJ",
     "main",
     "rich_text_xmcgVm",
     "slideshow_wN9bcg",
     "rich_text_VWa4Qh",
     "rich_text_4t7TPi",
     "rich_text_mR6qGN",
-    "featured_product_CUh9Wb"
+    "featured_product_CUh9Wb",
+    "image_banner_Np9Gxc"
   ]
 }
