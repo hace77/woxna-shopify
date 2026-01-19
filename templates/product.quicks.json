@@ -71,7 +71,7 @@
         ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
         "input[type=\"radio\"].disabled {display: none;}",
         "input.disabled + label {display: none !important;}",
-        ".custom-label {background-color: #DC143C; color: white;}"
+        ".custom-label {background-color: #dc143c; color: white;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -145,6 +145,7 @@
         "heading_CQAxVb",
         "text_Lb83EG"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Sustainable",
       "settings": {
@@ -193,6 +194,7 @@
         "heading_LFcadc",
         "text_4CCNhj"
       ],
+      "disabled": true,
       "name": "Handles",
       "settings": {
         "desktop_content_position": "center",
