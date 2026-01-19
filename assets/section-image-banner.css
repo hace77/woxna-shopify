@@ -2,7 +2,17 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  z-index: auto;
+  z-index: 2;
+  isolation: isolate;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+/* Ensure banner section wrapper maintains proper stacking when followed by sections with isolate/z-index */
+.shopify-section:has(> .banner),
+section:has(.banner) {
+  position: relative;
+  z-index: 2;
   isolation: isolate;
 }
 
@@ -86,15 +96,15 @@
   }
 
   .banner--small:not(.banner--adapt) {
-    min-height: 42rem;
+    min-height: 42rem !important;
   }
 
   .banner--medium:not(.banner--adapt) {
-    min-height: 56rem;
+    min-height: 56rem !important;
   }
 
   .banner--large:not(.banner--adapt) {
-    min-height: 72rem;
+    min-height: 72rem !important;
   }
 
   .banner__content.banner__content--top-left {
@@ -158,12 +168,50 @@
   }
 }
 
+/* Ensure banner maintains height when media is absolutely positioned and followed by other sections */
+.banner:not(.banner--adapt):not(.banner--mobile-bottom) {
+  /* Height is maintained by banner__content min-height */
+}
+
+/* Ensure banner content always pushes height even when followed by sections with isolate */
+.banner:not(.banner--adapt):not(.banner--mobile-bottom) .banner__content {
+  flex-shrink: 0;
+  min-height: inherit;
+}
+
+/* Force banner to maintain height based on content min-height when followed by isolate sections */
+@media screen and (max-width: 749px) {
+  .banner--small:not(.banner--mobile-bottom):not(.banner--adapt) {
+    min-height: 28rem;
+  }
+  
+  .banner--medium:not(.banner--mobile-bottom):not(.banner--adapt) {
+    min-height: 34rem;
+  }
+  
+  .banner--large:not(.banner--mobile-bottom):not(.banner--adapt) {
+    min-height: 39rem;
+  }
+}
+
 .banner__media {
   height: 100%;
-  position: absolute;
+  position: absolute !important;
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Override .media class position:relative for banner media */
+.banner__media.media {
+  position: absolute !important;
+}
+
+.banner__media img,
+.banner__media svg {
+  pointer-events: auto;
 }
 
 .banner__media-half {
@@ -274,6 +322,7 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 750px) {

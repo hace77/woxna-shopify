@@ -1214,6 +1214,16 @@
         "name": "rich_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "variant_button_text",
+      "namespace": "custom",
+      "name": "variant button text",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "shop": [
