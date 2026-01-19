@@ -148,6 +148,15 @@
         "buy_buttons_T37yW3",
         "share_pV3hTx"
       ],
+      "custom_css": [
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}",
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}"
+      ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "quirked-batch",
