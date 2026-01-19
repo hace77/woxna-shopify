@@ -9,8 +9,47 @@
  */
 {
   "sections": {
+    "image_banner_Np9Gxc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_XQnQHg": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>100 % Funktionalität. Nur kleine Kratzer.</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_qBNpnz": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XQnQHg",
+        "text_qBNpnz"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/leatherprod_hero_dt.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "p:first-of-type {padding-top: 30px;}",
@@ -19,56 +58,6 @@
       "settings": {
         "padding_top": 56,
         "padding_bottom": 28
-      }
-    },
-    "image_banner_Np9Gxc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_XQnQHg": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_qBNpnz": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_Uhexrt": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_XQnQHg",
-        "text_qBNpnz",
-        "buttons_Uhexrt"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/leatherprod_hero_dt.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "rich_text_xmcgVm": {
@@ -180,17 +169,10 @@
     "rich_text_VWa4Qh": {
       "type": "rich-text",
       "blocks": {
-        "heading_ciFfAq": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Thoughtful Black Week Offer from Woxna",
-            "heading_size": "h1"
-          }
-        },
         "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
+            "text": "<p>Bei Woxna haben wir extrem hohe Standards für das Finish unserer Klingen. Manchmal entstehen jedoch während der Produktion kleine, oberflächliche Kratzer auf dem Stahl.<br/><br/>Da wir keine Kompromisse eingehen, verkaufen wir diese Exemplare nicht zum vollen Preis – obwohl sie technisch absolut makellos sind. Der Griff aus Eiche ist makellos, und die impulsgehärteten Zähne bieten denselben bissigen Schnitt wie immer.<br/><br/>Anstatt diese voll funktionsfähigen Werkzeuge auszusortieren, bieten wir sie Ihnen in unserer Sustainability Collection an.<br/><br/>Die perfekte Wahl für alle, die ihr Werkzeug hart rannehmen und wissen, dass der erste Kratzer im Wald ohnehin dazugehört.</p>"
           }
         },
         "button_GQJCdi": {
@@ -206,7 +188,6 @@
         }
       },
       "block_order": [
-        "heading_ciFfAq",
         "text_GyNWxU",
         "button_GQJCdi"
       ],
