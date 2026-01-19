@@ -128,8 +128,8 @@
         "buy_buttons_T37yW3": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
         "share_pV3hTx": {
@@ -149,6 +149,7 @@
         "share_pV3hTx"
       ],
       "custom_css": [
+        "#shopify-accelerated-checkout {display: none !important;}",
         ".accelerated-checkout-button {display: none !important;}",
         "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
         "#more-payment-options-link {display: none;}",
