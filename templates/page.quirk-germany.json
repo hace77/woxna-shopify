@@ -99,6 +99,7 @@
       "blocks": {
         "text_wJxkgh": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
