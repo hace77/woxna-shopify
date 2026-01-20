@@ -32,14 +32,14 @@
         "text_qBNpnz"
       ],
       "custom_css": [
-        ".banner__content {align-items: end; }"
+        "@media (width <= 450px) {.banner__content {align-items: end; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/halsing_quirk_germany.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
