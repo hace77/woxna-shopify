@@ -69,7 +69,7 @@
         "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p>Bei Woxna haben wir extrem hohe Standards für das Finish unserer Klingen. Manchmal entstehen jedoch während der Produktion kleine, oberflächliche Kratzer auf dem Stahl.<br/><br/>Da wir keine Kompromisse eingehen, verkaufen wir diese Exemplare nicht zum vollen Preis – obwohl sie technisch absolut makellos sind. Der Griff aus Eiche ist makellos, und die impulsgehärteten Zähne bieten denselben bissigen Schnitt wie immer.<br/><br/>Anstatt diese voll funktionsfähigen Werkzeuge auszusortieren, bieten wir sie Ihnen in unserer Sustainability Collection an.<br/><br/>Die perfekte Wahl für alle, die ihr Werkzeug hart rannehmen und wissen, dass der erste Kratzer im Wald ohnehin dazugehört.</p>"
+            "text": "<p><br/>Bei Woxna haben wir extrem hohe Standards für das Finish unserer Klingen. Manchmal entstehen jedoch während der Produktion kleine, oberflächliche Kratzer auf dem Stahl.</p><p>Da wir keine Kompromisse eingehen, verkaufen wir diese Exemplare nicht zum vollen Preis – obwohl sie technisch absolut makellos sind. Der Griff aus Eiche ist makellos, und die impulsgehärteten Zähne bieten denselben bissigen Schnitt wie immer.</p><p>Anstatt diese voll funktionsfähigen Werkzeuge auszusortieren, bieten wir sie Ihnen in unserer Sustainability Collection an.</p><p>Die perfekte Wahl für alle, die ihr Werkzeug hart rannehmen und wissen, dass diese Art von Kratzern nach ein paar Einsätzen ohnehin entstehen würde.</p>"
           }
         },
         "button_GQJCdi": {
@@ -177,12 +177,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collage_jECtCT": {
+      "type": "collage",
+      "blocks": {
+        "image_i7Wmfx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch1.jpg"
+          }
+        },
+        "image_VApkeJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch3.jpg"
+          }
+        },
+        "image_Rg7JCy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_i7Wmfx",
+        "image_VApkeJ",
+        "image_Rg7JCy"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "<strong>So können die Kratzer aussehen</strong>",
+        "heading_size": "h2",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_Np9Gxc",
     "main",
     "rich_text_VWa4Qh",
-    "featured_product_CUh9Wb"
+    "featured_product_CUh9Wb",
+    "collage_jECtCT"
   ]
 }
