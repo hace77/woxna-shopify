@@ -64,7 +64,7 @@
         "text_gCf9kK": {
           "type": "text",
           "settings": {
-            "text": "Buy one now and get a Gnarp at half price",
+            "text": "",
             "text_style": "body"
           }
         }
@@ -84,7 +84,7 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-08ad3a87-d3dd-479a-8dc1-f17564796785",
+        "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
         "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -127,49 +127,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_dbVHAH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_dipqiz": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Meet our Foldable Saws",
-            "heading_size": "h1"
-          }
-        },
-        "text_FkKbKK": {
-          "type": "text",
-          "settings": {
-            "text": "{{ collection.description }}"
-          }
-        },
-        "button_d4cWYV": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_dipqiz",
-        "text_FkKbKK",
-        "button_d4cWYV"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 40
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -202,9 +159,25 @@
         "show_rating": true,
         "quick_add": "none",
         "show_view_product_button": true,
+        "show_usp_text": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
+        "show_hero_block_1": false,
+        "hero_block_1_position_desktop": "3",
+        "hero_block_1_position_mobile": "4",
+        "hero_block_1_size": "large",
+        "hero_block_1_heading": "Hero Block",
+        "hero_block_1_text": "",
+        "hero_block_1_button_text": "Shop Now",
+        "hero_block_1_button_url": "",
+        "hero_block_1_color_scheme": "",
+        "hero_block_1_vertical_position": "center",
+        "hero_block_1_mobile_vertical_position": "center",
+        "hero_block_1_text_alignment": "center",
+        "hero_block_1_mobile_text_alignment": "center",
+        "hero_block_1_heading_size": "h1",
+        "hero_block_1_mobile_heading_size": "h1",
         "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -268,43 +241,11 @@
         "include_margins": true
       }
     },
-    "collapsible_content_XUdUVV": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_wWGpkA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Read more about the saws",
-            "icon": "none",
-            "row_content": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_wWGpkA"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_collection_bn8crz": {
+    "featured_collection_UQP4tJ": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Other products you might be interested in",
+        "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -316,10 +257,10 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
@@ -336,12 +277,10 @@
     "image_banner_dLVAWX",
     "image_banner_PBEUQe",
     "video_banner_yt_iLi8kQ",
-    "rich_text_dbVHAH",
     "banner",
     "product-grid",
     "rich_text_q4bA3M",
     "1752140363542f64d8",
-    "collapsible_content_XUdUVV",
-    "featured_collection_bn8crz"
+    "featured_collection_UQP4tJ"
   ]
 }
