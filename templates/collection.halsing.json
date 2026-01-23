@@ -22,7 +22,7 @@
         "text_ypHW3g": {
           "type": "text",
           "settings": {
-            "text": "Buy one now and get a Gnarp at half price",
+            "text": "Tillverkad i Hälsinglands djupa skogar",
             "text_style": "body"
           }
         }
@@ -37,7 +37,6 @@
       "name": "Image banner DT",
       "settings": {
         "image": "shopify://shop_images/Woxna_Start_Page_21.jpg",
-        "image_2": "shopify://shop_images/Woxna_Start_Page_01.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
