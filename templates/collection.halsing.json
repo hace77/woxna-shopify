@@ -22,7 +22,7 @@
         "text_ypHW3g": {
           "type": "text",
           "settings": {
-            "text": "Tillverkad i Hälsinglands djupa skogar",
+            "text": "From the deep forest of Hälsingland",
             "text_style": "body"
           }
         }
@@ -83,7 +83,7 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
+        "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "enable_sticky_button": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
