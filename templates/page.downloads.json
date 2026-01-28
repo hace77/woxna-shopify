@@ -315,16 +315,16 @@
             "button_label": "Download Hälsing and Ljusnan - Large Size",
             "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20and%20Ljusnan%20-%20Large.zip",
             "button_style_secondary": false,
-            "button_label_2": "Download Ljusnan  - Large Size",
-            "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Ljusnan%20-%20Large.zip",
+            "button_label_2": "Download Ljusnan",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Ljusnan.zip",
             "button_style_secondary_2": false
           }
         },
         "button_7Lie7A": {
           "type": "button",
           "settings": {
-            "button_label": "Download Hälsing - Large Size",
-            "button_link": "https://WoxnaCDN.b-cdn.net/Outdoor%20-%20Halsing%20-%20Large.zip",
+            "button_label": "Download Hälsing",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Halsing.zip",
             "button_style_secondary": false,
             "button_label_2": "Download outdoor Lifestyle - Medium Size",
             "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20Lifestyle-Medium.zip",
