@@ -315,8 +315,8 @@
             "button_label": "Download Hälsing",
             "button_link": "https://WoxnaCDN.b-cdn.net/Halsing.zip",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Download Ljusnan",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Ljusnan.zip",
             "button_style_secondary_2": false
           }
         },
