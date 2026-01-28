@@ -323,6 +323,30 @@ cart-drawer-items {
 
 .cart-drawer .cart__checkout-button {
   max-width: none;
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 1.8rem 3rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  min-height: 5.6rem !important;
+}
+
+.cart-drawer .cart__checkout-button:hover:not([disabled]) {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.cart-drawer .cart__checkout-button[disabled] {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 749px) {
+  .cart-drawer .cart__checkout-button {
+    padding: 1.6rem 2.5rem !important;
+    font-size: 1.5rem !important;
+    min-height: 5.2rem !important;
+  }
 }
 
 .drawer__footer .cart__dynamic-checkout-buttons {

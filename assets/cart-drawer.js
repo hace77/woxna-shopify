@@ -149,11 +149,9 @@ class CartDrawer extends HTMLElement {
     
     const form = event.target;
     const button = form.querySelector('[data-upsell-button]');
-    const originalText = button.textContent;
 
-    // Disable button and show loading state
+    // Disable button
     button.disabled = true;
-    button.textContent = 'Adding...';
 
     try {
       // Use the exact same approach as the working product-form.js
@@ -194,22 +192,15 @@ class CartDrawer extends HTMLElement {
         this.renderContents(result);
       }
       
-      // Show success message and update button
-      button.textContent = 'Added!';
-      setTimeout(() => {
-        button.textContent = originalText;
-        button.disabled = false;
-        // The cart drawer should now show the updated contents
-        // and the upsell section should be hidden since the product is now in cart
-      }, 1000);
+      // Re-enable button (cart drawer will update automatically)
+      button.disabled = false;
+      // The cart drawer should now show the updated contents
+      // and the upsell section should be hidden since the product is now in cart
       
     } catch (error) {
       console.error('Upsell form submission error:', error);
-      button.textContent = 'Error - Try Again';
-      setTimeout(() => {
-        button.textContent = originalText;
-        button.disabled = false;
-      }, 2000);
+      // Re-enable button on error
+      button.disabled = false;
     }
   }
 }
