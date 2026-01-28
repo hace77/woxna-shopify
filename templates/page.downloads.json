@@ -309,6 +309,17 @@
             "text": "<p>These image sets contains images of our saws in use out in nature. The first file \"Hälsing and Ljusnan\" feature both models in the same images, the next two contains images with just one saw model in each image. And the last one contain medium size images of all models.</p>"
           }
         },
+        "button_7Lie7A": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Hälsing",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Halsing.zip",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
         "button_a9gAGL": {
           "type": "button",
           "settings": {
@@ -319,25 +330,14 @@
             "button_link_2": "https://WoxnaCDN.b-cdn.net/Ljusnan.zip",
             "button_style_secondary_2": false
           }
-        },
-        "button_7Lie7A": {
-          "type": "button",
-          "settings": {
-            "button_label": "Download Hälsing",
-            "button_link": "https://WoxnaCDN.b-cdn.net/Halsing.zip",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "https://WoxnaCDN.b-cdn.net/Outdoor%20Lifestyle-Medium.zip",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_TwrcwR",
         "image_44kcV7",
         "text_KHPCHd",
-        "button_a9gAGL",
-        "button_7Lie7A"
+        "button_7Lie7A",
+        "button_a9gAGL"
       ],
       "name": "outdoor images",
       "settings": {
