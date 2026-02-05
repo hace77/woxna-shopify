@@ -395,6 +395,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "variant_metafield_display_7kQmk8": {
+      "type": "variant-metafield-display",
+      "name": "Variant Metafield Display",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": false,
+        "heading": "Product Details",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -406,6 +422,7 @@
     "image_with_text_HFPrig",
     "image_with_text_X3w9Mw",
     "rich_text_7GmfxC",
-    "featured_collection_hd3wCN"
+    "featured_collection_hd3wCN",
+    "variant_metafield_display_7kQmk8"
   ]
 }
