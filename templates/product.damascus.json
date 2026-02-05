@@ -16,21 +16,28 @@
           "type": "title",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "klaviyo_reviews_average_rating_QA39zE": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
+            "product": "{{product}}"
           }
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "klaviyo_reviews_average_rating_QA39zE": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+        "variant_picker": {
+          "type": "variant_picker",
           "settings": {
-            "product": "{{product}}"
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
           }
         },
         "icon_with_text_GbTykW": {
@@ -45,17 +52,11 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
         "sku_Web4Qi": {
           "type": "sku",
           "settings": {
-            "text_style": "body"
+            "text_style": "body",
+            "prefix_text": "SKU:"
           }
         },
         "description": {
@@ -65,11 +66,11 @@
       },
       "block_order": [
         "title",
-        "buy_buttons",
-        "price",
         "klaviyo_reviews_average_rating_QA39zE",
-        "icon_with_text_GbTykW",
+        "price",
         "variant_picker",
+        "buy_buttons",
+        "icon_with_text_GbTykW",
         "sku_Web4Qi",
         "description"
       ],
@@ -93,6 +94,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
+        "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
