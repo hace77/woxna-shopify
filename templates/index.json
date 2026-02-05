@@ -143,6 +143,7 @@
         "text_wTkGzN",
         "buttons_iWWgUB"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
@@ -173,6 +174,13 @@
             "heading_size": "h0"
           }
         },
+        "text_ecWc8r": {
+          "type": "text",
+          "settings": {
+            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
+            "text_style": "body"
+          }
+        },
         "buttons_gzXFeC": {
           "type": "buttons",
           "settings": {
@@ -187,16 +195,16 @@
       },
       "block_order": [
         "heading_dtUCPi",
+        "text_ecWc8r",
         "buttons_gzXFeC"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "name": "Video Banner YT mobile",
       "settings": {
-        "video": "shopify://files/videos/startpage-film-mobile_compressed.mp4",
+        "video": "shopify://files/videos/startpage.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
