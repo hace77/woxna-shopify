@@ -21,6 +21,7 @@
         
         assign variant_extra_products_json = variant_extra_products_json | append: '"id":' | append: extra_product_1.id | append: ','
         assign variant_extra_products_json = variant_extra_products_json | append: '"title":' | append: product_title_escaped | append: ','
+        assign variant_extra_products_json = variant_extra_products_json | append: '"url":"' | append: extra_product_1.url | append: '",'
         assign variant_extra_products_json = variant_extra_products_json | append: '"variant_id":' | append: extra_variant_1.id | append: ','
         assign variant_extra_products_json = variant_extra_products_json | append: '"price":' | append: extra_variant_1.price | append: ','
         assign variant_extra_products_json = variant_extra_products_json | append: '"available":' | append: extra_variant_1.available | append: ''
@@ -93,9 +94,8 @@
               name="{{ input_name }}"
               value="{{ extra_product_1.id }}"
               data-extra-product-option-input
-              data-variant-id="{{ extra_variant_1.id }}"
+              data-product-url="{{ extra_product_1.url }}"
               data-product-title="{{ extra_product_1.title | escape }}"
-              data-extra-form-id="{{ extra_form_id_1 }}"
               {% unless extra_variant_1.available %}
                 class="disabled"
                 disabled
@@ -109,21 +109,6 @@
                 {{ extra_variant_1.price | money }}
               </span>
             </label>
-            <div class="extra-product-hidden-form" hidden aria-hidden="true">
-              <product-form class="product-form product-form--extra">
-                <div class="product-form__error-message-wrapper" role="alert" hidden>
-                  <span class="product-form__error-message"></span>
-                </div>
-                {%- form 'product', extra_product_1, id: extra_form_id_1, class: 'form', data-extra-form-id: extra_form_id_1 -%}
-                  <input type="hidden" name="id" value="{{ extra_variant_1.id }}">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="product-form__submit button button--full-width">
-                    <span>{{ 'products.product.add_to_cart' | t }}</span>
-                    {%- render 'loading-spinner' -%}
-                  </button>
-                {%- endform -%}
-              </product-form>
-            </div>
           </div>
         {%- endif -%}
       </div>
@@ -145,8 +130,6 @@
             this.blockId = container.dataset.blockId;
             this.inputName = `extra-product-${this.sectionId}-${this.blockId}`;
             this.variantMapping = {};
-            this.isProcessing = false;
-            this.currentInput = null;
             this.currentVariantId = null;
             this.isInitialized = false;
 
@@ -171,20 +154,8 @@
               this.variantMapping = {};
             }
 
-            this.handleCartUpdate = this.handleCartUpdate.bind(this);
-            this.handleCartError = this.handleCartError.bind(this);
             this.handleVariantChange = this.handleVariantChange.bind(this);
             this.onChange = this.onChange.bind(this);
-
-            this.cartUpdateUnsubscriber =
-              typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
-                ? subscribe(PUB_SUB_EVENTS.cartUpdate, this.handleCartUpdate)
-                : null;
-
-            this.cartErrorUnsubscriber =
-              typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
-                ? subscribe(PUB_SUB_EVENTS.cartError, this.handleCartError)
-                : null;
 
             this.variantChangeUnsubscriber =
               typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined'
@@ -275,8 +246,6 @@
           }
 
           destroy() {
-            this.cartUpdateUnsubscriber?.();
-            this.cartErrorUnsubscriber?.();
             this.variantChangeUnsubscriber?.();
           }
 
@@ -321,12 +290,11 @@
             if (!this.isInitialized && existingOptions.length > 0 && variantData && variantData.products) {
               // On first load, if we have Liquid-rendered content and variant data exists, preserve it
               const firstInput = existingOptions[0].querySelector('input[data-extra-product-option-input]');
-              if (firstInput && firstInput.dataset.variantId) {
-                // Check if the variant ID in the input matches the variant data
-                const existingVariantId = firstInput.dataset.variantId;
+              if (firstInput && firstInput.dataset.productUrl) {
+                // Check if the product ID in the input matches the variant data
                 const existingProductId = firstInput.value;
                 const matchesVariantData = variantData.products.some(p => 
-                  p.variant_id.toString() === existingVariantId && p.id.toString() === existingProductId
+                  p.id.toString() === existingProductId
                 );
                 if (matchesVariantData) {
                   // Content matches, just mark as initialized and ensure fieldset is visible
@@ -366,8 +334,8 @@
               optionDiv.setAttribute('data-extra-product-option', '');
 
               const inputId = `${self.inputName}-${variantId}-${index}`;
-              const formId = `ExtraProductForm-${self.sectionId}-${variantId}-${index}`;
               const formattedPrice = self.formatMoney(product.price);
+              const productUrl = product.url || `/products/${product.handle || product.id}`;
 
               optionDiv.innerHTML = `
                 <input
@@ -376,43 +344,17 @@
                   name="${self.inputName}"
                   value="${product.id}"
                   data-extra-product-option-input
-                  data-variant-id="${product.variant_id}"
+                  data-product-url="${productUrl}"
                   data-product-title="${product.title.replace(/"/g, '&quot;')}"
-                  data-extra-form-id="${formId}"
                   ${!product.available ? 'class="disabled" disabled' : ''}
                 >
                 <label for="${inputId}">
                   <span class="extra-product-label__title">${product.title}</span>
                   <span class="extra-product-label__price">${formattedPrice}</span>
                 </label>
-                <div class="extra-product-hidden-form" hidden aria-hidden="true">
-                  <product-form class="product-form product-form--extra">
-                    <div class="product-form__error-message-wrapper" role="alert" hidden>
-                      <span class="product-form__error-message"></span>
-                    </div>
-                    <form action="/cart/add" method="post" enctype="multipart/form-data" id="${formId}" class="form" data-extra-form-id="${formId}">
-                      <input type="hidden" name="id" value="${product.variant_id}">
-                      <input type="hidden" name="quantity" value="1">
-                      <button type="submit" class="product-form__submit button button--full-width">
-                        <span>Add to cart</span>
-                        <span class="loading__spinner hidden">
-                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                          </svg>
-                        </span>
-                      </button>
-                    </form>
-                  </product-form>
-                </div>
               `;
 
               this.optionsContainer.appendChild(optionDiv);
-
-              // Initialize the product-form custom element if it exists
-              const productForm = optionDiv.querySelector('product-form');
-              if (productForm && customElements.get('product-form')) {
-                // The form will be initialized automatically by the custom element
-              }
             });
           }
 
@@ -427,79 +369,26 @@
             const input = event.target;
             this.toggleSelectedStates();
 
-            if (!input.dataset.extraFormId) {
+            if (!input.dataset.productUrl) {
               this.clearStatus();
               return;
             }
 
-            const targetForm = document.getElementById(input.dataset.extraFormId);
-            if (!targetForm) {
-              this.setStatus('Unable to add product. Please try again.', true);
-              this.resetSelection();
-              return;
-            }
-
-            if (this.isProcessing) return;
-
-            this.currentInput = input;
-            this.isProcessing = true;
-            this.setLoading(input, true);
-
-            // Find the product-form wrapper and trigger its submit
-            const productForm = targetForm.closest('product-form');
-            if (productForm && typeof productForm.querySelector === 'function') {
-              const submitButton = productForm.querySelector('button[type="submit"]');
-              if (submitButton && !submitButton.disabled) {
-                if (typeof targetForm.requestSubmit === 'function') {
-                  targetForm.requestSubmit();
-                } else {
-                  targetForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
-                }
-              }
-            } else {
-              if (typeof targetForm.requestSubmit === 'function') {
-                targetForm.requestSubmit();
-              } else {
-                targetForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
-              }
+            // Navigate to product page instead of adding to cart
+            const productUrl = input.dataset.productUrl;
+            if (productUrl) {
+              window.location.href = productUrl;
             }
           }
 
-          handleCartUpdate() {
-            if (!this.isProcessing) return;
-            this.isProcessing = false;
-            this.clearStatus();
-            if (this.currentInput) {
-              this.setLoading(this.currentInput, false);
-            }
-            this.resetSelection();
-          }
-
-          handleCartError() {
-            if (!this.isProcessing) return;
-            this.isProcessing = false;
-            this.setStatus('Unable to add product. Please try again.', true);
-            if (this.currentInput) {
-              this.setLoading(this.currentInput, false);
-            }
-            this.resetSelection();
-          }
 
           toggleSelectedStates() {
             const inputs = this.container.querySelectorAll('input[data-extra-product-option-input]');
             inputs.forEach((radio) => {
               const option = radio.closest('.extra-product-option');
               if (!option) return;
-              option.classList.toggle('is-selected', Boolean(radio.checked && radio.dataset.extraFormId));
+              option.classList.toggle('is-selected', Boolean(radio.checked && radio.dataset.productUrl));
             });
-          }
-
-          setLoading(input, isLoading) {
-            const label = this.container.querySelector(`label[for="${input.id}"]`);
-            if (label) {
-              label.classList.toggle('is-loading', isLoading);
-              label.setAttribute('aria-busy', isLoading ? 'true' : 'false');
-            }
           }
 
           setStatus(message, isError = false) {
