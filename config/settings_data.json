@@ -128,6 +128,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_drawer_upsell_product": "gnarp-outdoor-leather-multi-guard",
+    "cart_drawer_benefit_1": "Free Worldwide Shipping Over 200 USD / 100 EUR",
+    "cart_drawer_benefit_2": "Limited Lifetime Warranty",
     "cart_color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
     "sections": {
       "main-password-header": {
