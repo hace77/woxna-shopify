@@ -1465,6 +1465,28 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.upsell_product.info"
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.cart.settings.cart_drawer.benefits.header"
+      },
+      {
+        "type": "text",
+        "id": "cart_drawer_benefit_1",
+        "label": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_1.label",
+        "info": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_1.info"
+      },
+      {
+        "type": "text",
+        "id": "cart_drawer_benefit_2",
+        "label": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_2.label",
+        "info": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_2.info"
+      },
+      {
+        "type": "text",
+        "id": "cart_drawer_benefit_3",
+        "label": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_3.label",
+        "info": "t:settings_schema.cart.settings.cart_drawer.benefits.benefit_3.info"
+      },
+      {
         "type": "color_scheme",
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",

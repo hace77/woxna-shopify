@@ -414,6 +414,11 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
+      "benefits": {
+        "benefit_1": "Free shipping",
+        "benefit_2": "Lifetime warranty",
+        "benefit_3": "Fast delivery"
+      },
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",

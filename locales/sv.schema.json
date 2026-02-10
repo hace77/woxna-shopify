@@ -275,6 +275,25 @@
           "collection": {
             "label": "Produktserie",
             "info": "Synlig när varukorgspanelen är tom."
+          },
+          "upsell_product": {
+            "label": "Upsell-produkt",
+            "info": "Produkt som föreslås när varukorgspanelen är öppen."
+          },
+          "benefits": {
+            "header": "Texter under kassaknappen",
+            "benefit_1": {
+              "label": "Fördelstext 1",
+              "info": "Visas under kassaknappen. Lämna tom för att dölja. Översätt under Inställningar → Språk → Översätt tema."
+            },
+            "benefit_2": {
+              "label": "Fördelstext 2",
+              "info": "Lämna tom för att dölja. Översätt under Inställningar → Språk → Översätt tema."
+            },
+            "benefit_3": {
+              "label": "Fördelstext 3",
+              "info": "Lämna tom för att dölja. Översätt under Inställningar → Språk → Översätt tema."
+            }
           }
         }
       }

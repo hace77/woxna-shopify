@@ -355,6 +355,21 @@
           "upsell_product": {
             "label": "Upsell product",
             "info": "Product to suggest when cart drawer is open."
+          },
+          "benefits": {
+            "header": "Texts under checkout button",
+            "benefit_1": {
+              "label": "Benefit text 1",
+              "info": "Shown under checkout button. Leave blank to hide. Translate in Settings → Languages → Translate theme."
+            },
+            "benefit_2": {
+              "label": "Benefit text 2",
+              "info": "Leave blank to hide. Translate in Settings → Languages → Translate theme."
+            },
+            "benefit_3": {
+              "label": "Benefit text 3",
+              "info": "Leave blank to hide. Translate in Settings → Languages → Translate theme."
+            }
           }
         }
       }

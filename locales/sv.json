@@ -309,6 +309,11 @@
         "add_to_cart": "Lägg till",
         "view_options": "Visa alternativ"
       },
+      "benefits": {
+        "benefit_1": "Fri frakt",
+        "benefit_2": "Livstidsgaranti",
+        "benefit_3": "Snabb leverans"
+      },
       "estimated_total": "Beräknad totalsumma",
       "new_estimated_total": "Nytt beräknat totalbelopp",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Tullavgifter och skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",

@@ -161,6 +161,35 @@
   .cart-drawer__upsell-plus-button {
     display: flex !important;
   }
+
+  /* Cart drawer benefits (texts under checkout button) - inline */
+  .cart-drawer__benefits {
+    margin: 1.2rem 0 0;
+    padding: 0;
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    align-items: center;
+  }
+  .cart-drawer__benefit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: rgba(var(--color-foreground), 0.8);
+    white-space: nowrap;
+  }
+  .cart-drawer__benefit-icon {
+    flex-shrink: 0;
+    color: #445f45;
+    font-weight: 700;
+  }
+  .cart-drawer__benefit-text {
+    flex: 0 1 auto;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -792,6 +821,29 @@
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+
+        {%- if settings.cart_drawer_benefit_1 != blank or settings.cart_drawer_benefit_2 != blank or settings.cart_drawer_benefit_3 != blank -%}
+          <ul class="cart-drawer__benefits list-unstyled" role="list">
+            {%- if settings.cart_drawer_benefit_1 != blank -%}
+              <li class="cart-drawer__benefit">
+                <span class="cart-drawer__benefit-icon" aria-hidden="true">✓</span>
+                <span class="cart-drawer__benefit-text">{{ settings.cart_drawer_benefit_1 }}</span>
+              </li>
+            {%- endif -%}
+            {%- if settings.cart_drawer_benefit_2 != blank -%}
+              <li class="cart-drawer__benefit">
+                <span class="cart-drawer__benefit-icon" aria-hidden="true">✓</span>
+                <span class="cart-drawer__benefit-text">{{ settings.cart_drawer_benefit_2 }}</span>
+              </li>
+            {%- endif -%}
+            {%- if settings.cart_drawer_benefit_3 != blank -%}
+              <li class="cart-drawer__benefit">
+                <span class="cart-drawer__benefit-icon" aria-hidden="true">✓</span>
+                <span class="cart-drawer__benefit-text">{{ settings.cart_drawer_benefit_3 }}</span>
+              </li>
+            {%- endif -%}
+          </ul>
+        {%- endif -%}
       </div>
     </div>
   </div>
