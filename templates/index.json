@@ -264,20 +264,20 @@
         "image_3FYifX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Halsing-folding-saw-250mm-102.jpg",
+            "image": "shopify://shop_images/alfta_frontpage2.png",
             "img_link": "shopify://products/halsing-foldable-saw",
             "show_text_overlay": true,
-            "heading": "Hälsing",
+            "heading": "Alfta Sheat sets",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "left",
             "mobile_text_alignment": "right",
             "heading_size": "h2",
             "mobile_heading_size": "h1",
-            "description": "Oak handle and high-carbon \nsteel blade",
+            "description": "Leather sheaths for Woxna foldable saws: Ljusnan, Hälsing and Söderfors",
             "description_style": "body",
             "button_label": "Learn more",
-            "button_link": "shopify://products/halsing-foldable-saw",
+            "button_link": "shopify://collections/sheats",
             "button_style_secondary": false
           }
         }
