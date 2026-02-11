@@ -224,20 +224,20 @@
         "image_UdTHzh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alfta_frontpage4.jpg",
+            "image": "shopify://shop_images/halsing_quirk_germany.png",
             "img_link": "shopify://products/alfta-sheath",
             "show_text_overlay": true,
-            "heading": "Alfta Leather Sheaths",
+            "heading": "Hälsing: Now 15% off.",
             "vertical_position": "bottom",
             "mobile_vertical_position": "bottom",
             "text_alignment": "right",
             "mobile_text_alignment": "right",
             "heading_size": "h1",
             "mobile_heading_size": "h2",
-            "description": "Finally here, the perfect complement to your woxna saw",
+            "description": "Get a Hälsing from our Sustainability Collection – technically 100%, with minor scratches on the blade.",
             "description_style": "body",
             "button_label": "Buy it now",
-            "button_link": "shopify://products/alfta-sheath",
+            "button_link": "shopify://pages/quirk-germany",
             "button_style_secondary": false
           }
         },
