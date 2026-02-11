@@ -15,7 +15,7 @@
         "heading_XQnQHg": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>100 % Funktionalität. Nur kleine Kratzer.</strong>",
+            "heading": "100% functionality. Only minor scratches.",
             "heading_size": "h1"
           }
         },
@@ -69,7 +69,7 @@
         "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>Bei Woxna haben wir extrem hohe Standards für das Finish unserer Klingen. Manchmal entstehen jedoch während der Produktion kleine, oberflächliche Kratzer auf dem Stahl.</p><p>Da wir keine Kompromisse eingehen, verkaufen wir diese Exemplare nicht zum vollen Preis – obwohl sie technisch absolut makellos sind. Der Griff aus Eiche ist makellos, und die impulsgehärteten Zähne bieten denselben bissigen Schnitt wie immer.</p><p>Anstatt diese voll funktionsfähigen Werkzeuge auszusortieren, bieten wir sie Ihnen in unserer Sustainability Collection an.</p><p>Die perfekte Wahl für alle, die ihr Werkzeug hart rannehmen und wissen, dass diese Art von Kratzern nach ein paar Einsätzen ohnehin entstehen würde.</p>"
+            "text": "<p>At Woxna, we have extremely high standards for the finish of our blades. However, sometimes small, superficial scratches occur on the steel during production.<br/>Since we do not compromise, we do not sell these examples at full price – even though they are technically absolutely flawless. The oak handle is flawless, and the impulse-hardened teeth offer the same biting cut as always.<br/>Instead of discarding these fully functional tools, we offer them to you in our Sustainability Collection.<br/>The perfect choice for anyone who uses their tools hard and knows that this type of scratch would happen after a few uses anyway.</p>"
           }
         },
         "button_GQJCdi": {
@@ -207,7 +207,7 @@
       ],
       "name": "t:sections.collage.presets.name",
       "settings": {
-        "heading": "<strong>So können die Kratzer aussehen</strong>",
+        "heading": "This is what the scratches can look like",
         "heading_size": "h2",
         "desktop_layout": "right",
         "mobile_layout": "column",
