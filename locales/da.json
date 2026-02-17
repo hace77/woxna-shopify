@@ -175,6 +175,7 @@
       "inventory_low_stock_show_count": "Lav lagerbeholdning: {{ quantity }} tilbage",
       "inventory_out_of_stock": "Ikke på lager",
       "inventory_out_of_stock_continue_selling": "På lager",
+      "low_stock": "Kun få tilbage",
       "sku": "SKU",
       "volume_pricing": {
         "title": "Mængderabat",
@@ -186,7 +187,12 @@
       "product_variants": "Produktvarianter",
       "taxes_included": "Inklusive skatter.",
       "duties_included": "Inklusive told.",
-      "duties_and_taxes_included": "Inklusive told og skatter."
+      "duties_and_taxes_included": "Inklusive told og skatter.",
+      "view_product": "Se produkt",
+      "upsell": {
+        "add_to_cart": "Tilføj til kurv",
+        "view_options": "Se muligheder"
+      }
     },
     "modal": {
       "label": "Mediegalleri"
@@ -274,6 +280,122 @@
     }
   },
   "sections": {
+    "main-collection-product-grid": {
+      "settings": {
+        "hero_block": {
+          "header": "Hero Blok",
+          "show_hero_block_1": {
+            "label": "Vis hero blok"
+          },
+          "position_desktop": {
+            "label": "Position på desktop",
+            "info": "Vælg hvor hero blokken skal placeres i produktgitteret på desktop",
+            "options": {
+              "after_1st": "Efter 1. produkt",
+              "after_2nd": "Efter 2. produkt",
+              "after_3rd": "Efter 3. produkt",
+              "after_4th": "Efter 4. produkt",
+              "after_5th": "Efter 5. produkt",
+              "after_6th": "Efter 6. produkt",
+              "after_9th": "Efter 9. produkt",
+              "after_12th": "Efter 12. produkt"
+            }
+          },
+          "position_mobile": {
+            "label": "Position på mobil",
+            "info": "Vælg hvor hero blokken skal placeres i produktgitteret på mobil",
+            "options": {
+              "after_2nd": "Efter 2. produkt",
+              "after_4th": "Efter 4. produkt",
+              "after_6th": "Efter 6. produkt",
+              "after_8th": "Efter 8. produkt",
+              "after_10th": "Efter 10. produkt",
+              "after_12th": "Efter 12. produkt"
+            }
+          },
+          "size": {
+            "label": "Størrelse",
+            "options": {
+              "small": "Lille",
+              "medium": "Medium",
+              "large": "Stor"
+            }
+          },
+          "image": {
+            "label": "Billede"
+          },
+          "heading": {
+            "label": "Overskrift",
+            "default": "Hero Blok"
+          },
+          "text": {
+            "label": "Tekst"
+          },
+          "button_text": {
+            "label": "Knaptekst",
+            "default": "Shop Nu"
+          },
+          "button_url": {
+            "label": "Knap URL"
+          },
+          "color_scheme": {
+            "label": "Farveskema"
+          },
+          "vertical_position_desktop": {
+            "label": "Vertikal position på desktop",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bund"
+            }
+          },
+          "vertical_position_mobile": {
+            "label": "Vertikal position på mobil",
+            "options": {
+              "top": "Top",
+              "center": "Center",
+              "bottom": "Bund"
+            }
+          },
+          "text_alignment_desktop": {
+            "label": "Tekstjustering på desktop",
+            "options": {
+              "left": "Venstre",
+              "center": "Center",
+              "right": "Højre"
+            }
+          },
+          "text_alignment_mobile": {
+            "label": "Tekstjustering på mobil",
+            "options": {
+              "left": "Venstre",
+              "center": "Center",
+              "right": "Højre"
+            }
+          },
+          "heading_size_desktop": {
+            "label": "Overskriftstørrelse på desktop",
+            "options": {
+              "small": "Lille",
+              "medium": "Medium",
+              "large": "Stor",
+              "extra_large": "Ekstra stor",
+              "extra_extra_large": "Ekstra ekstra stor"
+            }
+          },
+          "heading_size_mobile": {
+            "label": "Overskriftstørrelse på mobil",
+            "options": {
+              "small": "Lille",
+              "medium": "Medium",
+              "large": "Stor",
+              "extra_large": "Ekstra stor",
+              "extra_extra_large": "Ekstra ekstra stor"
+            }
+          }
+        }
+      }
+    },
     "header": {
       "announcement": "Meddelelse",
       "menu": "Menu",
@@ -302,6 +424,16 @@
       "login": {
         "title": "Har du en konto?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log ind</a> for at betale hurtigere."
+      },
+      "upsell": {
+        "title": "Du vil måske også synes om",
+        "add_to_cart": "Tilføj",
+        "view_options": "Se muligheder"
+      },
+      "benefits": {
+        "benefit_1": "Gratis forsendelse",
+        "benefit_2": "Livstidsgaranti",
+        "benefit_3": "Hurtig levering"
       },
       "estimated_total": "Estimeret totalbeløb",
       "new_estimated_total": "Ny estimeret totalbeløb",
@@ -532,6 +664,82 @@
       "send_on_label": "Send (valgfrit)",
       "expanded": "Formularen til modtager af gavekort er vist",
       "collapsed": "Formularen til modtager af gavekort er skjult"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "number_items": {
+          "one": "%{count} objekt",
+          "other": "%{count} objekter"
+        },
+        "view_all_items": {
+          "one": "Vis %{count} objekt",
+          "other": "Vis alle %{count} objekter"
+        }
+      },
+      "payment": {
+        "kcp_creditcard_label": "KCP kreditkort"
+      }
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell-produkt",
+            "info": "Produkt at foreslå som upsell, når denne produkt er i indkøbskurven"
+          },
+          "benefits": {
+            "header": "Tekster under betalingsknappen",
+            "benefit_1": {
+              "label": "Fordelstekst 1",
+              "info": "Vises under betalingsknappen. Efterlad tom for at skjule. Oversæt under Indstillinger → Sprog → Oversæt tema."
+            },
+            "benefit_2": {
+              "label": "Fordelstekst 2",
+              "info": "Efterlad tom for at skjule. Oversæt under Indstillinger → Sprog → Oversæt tema."
+            },
+            "benefit_3": {
+              "label": "Fordelstekst 3",
+              "info": "Efterlad tom for at skjule. Oversæt under Indstillinger → Sprog → Oversæt tema."
+            }
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Upsell-produkt på produktsiden",
+        "description": "Produkt at foreslå som upsell på denne produktside"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Upsell-knaptekst på produktsiden",
+        "description": "Tilpasset tekst til upsell-knappen (f.eks. \"Tilføj beskyttelsesplan\", \"Få plejekit\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Upsell-tilbudstekst på produktsiden",
+        "description": "Tekst, der forklarer tilbuddet over upsell-knappen (f.eks. \"Spar 50%, når du tilføjer dette til din ordre!\")"
+      },
+      "discount_bundle": {
+        "label": "Rabatpakke procent",
+        "description": "Procentvis rabat at anvende på upsell-produktet (f.eks. 50 for 50% rabat)"
+      }
+    }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Fysisk",
+      "physical": "Fysisk butik",
+      "online": "Online butik"
+    },
+    "search": {
+      "placeholder": "Søg efter by...",
+      "city_placeholder": "Bynavn",
+      "label": "Søg efter forhandlere efter by",
+      "clear": "Ryd",
+      "no_results": "Ingen forhandlere fundet i den by. Prøv en anden søgning."
     }
   }
 }

@@ -982,6 +982,16 @@
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "suitable-for-material-type",
+      "namespace": "shopify",
+      "name": "Suitable for material type",
+      "description": "Identifies the material a product is suitable for, typically for tools; e.g. ceramic, stone",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
