@@ -94,7 +94,7 @@
         "h2,li {text-align: left;}",
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
-        ".product__title h1 {font-size: 24px;}",
+        ".product__title h1 {font-size: 24px; text-transform: uppercase;}",
         ".variant-metafield__content p {margin: 0 0 1rem; background-color: rgba(var(--color-foreground), 0.05); padding: 1.2rem;}"
       ],
       "settings": {
@@ -106,7 +106,7 @@
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "show",
+        "mobile_thumbnails": "hide",
         "hide_variants": false,
         "enable_video_looping": false,
         "grey_overlay": false,
