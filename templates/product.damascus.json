@@ -90,7 +90,7 @@
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
         ".badge {display: none;}",
-        ".product-label.stock-label {display: none; }"
+        ".product-label.stock-label {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -933,7 +933,7 @@
         "collapsible_row_Qh76JD": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Care and Maintanance",
+            "heading": "{{ product.metafields.custom.product_care.value.title.value }}",
             "icon": "clipboard",
             "row_content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
             "page": ""
