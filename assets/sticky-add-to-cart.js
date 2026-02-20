@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if main button is disabled (check both attribute and property)
     const isMainButtonDisabled = originalButton.hasAttribute('disabled') || originalButton.disabled;
     
-    // Mirror disabled state
+    // Mirror disabled state - ensure it's explicitly set
     if (isMainButtonDisabled) {
       stickyButtonElement.setAttribute('disabled', 'disabled');
       stickyButtonElement.disabled = true;
@@ -37,10 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
       stickyButtonElement.disabled = false;
     }
     
-    // Mirror button text
+    // Mirror button text - copy from main button
     const mainButtonTextSpan = originalButton.querySelector('span');
     if (mainButtonTextSpan) {
-      stickyButtonTextSpan.textContent = mainButtonTextSpan.textContent.trim();
+      const mainButtonText = mainButtonTextSpan.textContent.trim();
+      // Always update text to ensure it stays in sync
+      // The check for difference is removed to ensure updates happen even if text appears the same
+      stickyButtonTextSpan.textContent = mainButtonText;
     }
   }
 
@@ -83,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const isAvailable = variant.available !== false;
         
         // Update disabled state based on variant availability
+        // Ensure it's explicitly disabled for sold out variants
+        // This is the most important part - the button must be disabled for sold out variants
         if (isAvailable) {
           stickyButtonElement.removeAttribute('disabled');
           stickyButtonElement.disabled = false;
@@ -90,19 +95,50 @@ document.addEventListener('DOMContentLoaded', function() {
           stickyButtonElement.setAttribute('disabled', 'disabled');
           stickyButtonElement.disabled = true;
         }
+        
+        // Try to get button text directly from the fetched HTML in the event
+        // This is more reliable than copying from the main button which might not be updated yet
+        if (event.data.html) {
+          const sectionId = event.data.sectionId || document.querySelector('product-info')?.dataset?.section;
+          if (sectionId) {
+            const submitButtonInHtml = event.data.html.getElementById(`ProductSubmitButton-${sectionId}`);
+            if (submitButtonInHtml) {
+              const buttonTextSpanInHtml = submitButtonInHtml.querySelector('span');
+              if (buttonTextSpanInHtml) {
+                const fetchedText = buttonTextSpanInHtml.textContent.trim();
+                const soldOutText = window.variantStrings?.soldOut || 'Sold out';
+                
+                // Only update if variant is available OR if HTML shows sold out (to handle sold out variants)
+                // This matches the logic in product-info.js
+                if (variant && variant.available && fetchedText === soldOutText) {
+                  // Don't update - keep current text to avoid flash (same logic as product-info.js)
+                } else {
+                  // Update text from fetched HTML
+                  stickyButtonTextSpan.textContent = fetchedText;
+                }
+              }
+            }
+          }
+        }
       }
       
-      // Mirror the main button's state and text to the sticky button
+      // Also mirror from main button as backup (in case HTML method didn't work)
+      mirrorButtonState();
+      
+      // Always mirror the main button's state and text to the sticky button
       // Use multiple attempts with increasing delays to ensure main button has been updated
       setTimeout(() => {
         mirrorButtonState();
-      }, 50);
-      setTimeout(() => {
-        mirrorButtonState();
-      }, 150);
+      }, 100);
       setTimeout(() => {
         mirrorButtonState();
       }, 300);
+      setTimeout(() => {
+        mirrorButtonState();
+      }, 600);
+      setTimeout(() => {
+        mirrorButtonState();
+      }, 1000);
     });
   }
 
@@ -133,6 +169,9 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     mirrorButtonState();
   }, 100);
+  setTimeout(() => {
+    mirrorButtonState();
+  }, 500);
 
   // Initial check
   updateStickyButton();

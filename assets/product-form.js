@@ -28,6 +28,14 @@ if (!customElements.get('product-form')) {
       async onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+        
+        // Prevent submission if a disabled variant is selected
+        const selectedVariantInput = this.form.querySelector('input[name="id"]');
+        const selectedRadio = this.form.querySelector('input[type="radio"]:checked.js-disabled-variant');
+        if (selectedRadio && selectedRadio.classList.contains('js-disabled-variant')) {
+          // Don't submit form if disabled variant is selected
+          return;
+        }
 
         // Wait for cart to be initialized
         if (!this.cart) {

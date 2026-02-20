@@ -135,8 +135,9 @@ variant-selects {
   border-color: rgba(var(--color-foreground), 0.1);
   color: rgba(var(--color-foreground), 0.6);
   text-decoration: line-through;
-  cursor: not-allowed;
+  cursor: pointer !important;
   opacity: 0.7;
+  pointer-events: auto !important;
 }
 
 .product-form__input--pill input[type='radio'].disabled:checked + label,

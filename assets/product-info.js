@@ -27,6 +27,12 @@ if (!customElements.get('product-info')) {
 
         this.initQuantityHandlers();
         
+        // Handle clicks on disabled variant labels to show variant information
+        // Use setTimeout to ensure DOM is fully ready
+        setTimeout(() => {
+          this.initDisabledVariantClickHandlers();
+        }, 200);
+        
         // Filter media on initial load
         setTimeout(() => {
           this.filterMediaByVariantOptions();
@@ -35,6 +41,134 @@ if (!customElements.get('product-info')) {
         }, 100);
         
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
+      }
+
+      initDisabledVariantClickHandlers() {
+        // First, clean up any existing wrapper divs that might break CSS styling
+        const existingWrappers = this.querySelectorAll('.disabled-variant-wrapper');
+        existingWrappers.forEach((wrapper) => {
+          const label = wrapper.querySelector('label');
+          if (label && wrapper.parentNode) {
+            wrapper.parentNode.insertBefore(label, wrapper);
+            wrapper.remove();
+          }
+        });
+        
+        // Find all radio inputs with disabled class or attribute
+        const allVariantInputs = this.querySelectorAll('input[type="radio"]');
+        
+        allVariantInputs.forEach((input) => {
+          // Skip if already processed
+          if (input.dataset.disabledClickHandler === 'true') return;
+          
+          // Check if this input represents a disabled/sold out variant
+          const isDisabled = input.disabled || input.hasAttribute('disabled') || input.classList.contains('disabled');
+          if (!isDisabled) return;
+          
+          const label = document.querySelector(`label[for="${input.id}"]`);
+          if (!label) return;
+          
+          // Mark that we've added handler
+          input.dataset.disabledClickHandler = 'true';
+          input.dataset.wasDisabled = 'true';
+          
+          // Remove disabled attribute but keep visual styling via class
+          // This allows the label to be clickable while maintaining disabled appearance
+          input.removeAttribute('disabled');
+          input.disabled = false;
+          input.classList.add('disabled');
+          input.classList.add('js-disabled-variant');
+          
+          // Handler function for disabled variant clicks
+          const handleDisabledVariantClick = (e) => {
+            // Only handle if this is a disabled variant
+            if (!input.classList.contains('js-disabled-variant')) {
+              return;
+            }
+            
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            
+            // Visually mark this disabled variant as selected
+            // Uncheck other options in the same group first
+            const optionGroup = input.closest('fieldset') || input.closest('.product-form__input');
+            if (optionGroup) {
+              // Use a more robust method to find inputs with the same name
+              // Get all radio inputs in the group and filter by name property
+              const allRadioInputs = optionGroup.querySelectorAll('input[type="radio"]');
+              allRadioInputs.forEach((otherInput) => {
+                if (otherInput !== input && otherInput.name === input.name) {
+                  otherInput.removeAttribute('checked');
+                  otherInput.checked = false;
+                }
+              });
+            }
+            
+            // Mark this input as checked
+            input.setAttribute('checked', 'checked');
+            input.checked = true;
+            
+            // Get current selected option values from variant-selects
+            const variantSelects = this.querySelector('variant-selects');
+            let selectedOptionValues = [];
+            
+            if (variantSelects) {
+              // Get all currently selected inputs (including the one we just checked)
+              const allSelected = variantSelects.querySelectorAll('select option[selected], fieldset input:checked');
+              selectedOptionValues = Array.from(allSelected).map((el) => {
+                return el.dataset.optionValueId || el.value;
+              });
+            } else {
+              // Fallback: build from all checked inputs
+              const allChecked = this.querySelectorAll('input[type="radio"]:checked');
+              selectedOptionValues = Array.from(allChecked).map((el) => {
+                return el.dataset.optionValueId || el.value;
+              });
+            }
+            
+            // Create a synthetic event to trigger variant change
+            const syntheticEvent = {
+              target: input,
+              currentTarget: input,
+              preventDefault: () => {},
+              stopPropagation: () => {}
+            };
+            
+            publish(PUB_SUB_EVENTS.optionValueSelectionChange, {
+              data: {
+                event: syntheticEvent,
+                target: input,
+                selectedOptionValues: selectedOptionValues
+              }
+            });
+          };
+          
+          // Add handler directly to label - now that input is not disabled, this should work
+          // Use capture phase to ensure our handler runs first
+          label.addEventListener('click', handleDisabledVariantClick, true);
+          label.addEventListener('mousedown', handleDisabledVariantClick, true);
+          
+          // Make label appear clickable (but don't override CSS styling)
+          label.style.cursor = 'pointer';
+          label.style.pointerEvents = 'auto';
+        });
+      }
+
+      getSelectedOptionValues() {
+        // Get selected option values from variant-selects component if available
+        const variantSelects = this.querySelector('variant-selects');
+        if (variantSelects && variantSelects.selectedOptionValues) {
+          return variantSelects.selectedOptionValues;
+        }
+        
+        // Fallback: build from checked radio inputs
+        const selectedValues = [];
+        const radioInputs = this.querySelectorAll('input[type="radio"]:checked');
+        radioInputs.forEach((input) => {
+          selectedValues.push(input.value);
+        });
+        return selectedValues;
       }
 
       addPreProcessCallback(callback) {
@@ -180,6 +314,11 @@ if (!customElements.get('product-info')) {
           this.updateOptionValues(html);
           this.updateURL(productUrl, variant?.id);
           this.updateVariantInputs(variant?.id);
+          
+          // Re-initialize disabled variant click handlers after HTML update
+          setTimeout(() => {
+            this.initDisabledVariantClickHandlers();
+          }, 200);
 
           if (!variant) {
             this.setUnavailable();
@@ -210,7 +349,12 @@ if (!customElements.get('product-info')) {
 
           const submitButtonInHtml = html.getElementById(`ProductSubmitButton-${this.sectionId}`);
           const submitButton = this.querySelector(`#ProductSubmitButton-${this.dataset.section}`);
-          const isDisabled = submitButtonInHtml?.hasAttribute('disabled') ?? true;
+          
+          // Determine if button should be disabled based on variant availability
+          // Check both the HTML button state and the variant object
+          const isDisabledFromHtml = submitButtonInHtml?.hasAttribute('disabled') ?? true;
+          const isDisabledFromVariant = !variant || variant.available === false;
+          const isDisabled = isDisabledFromHtml || isDisabledFromVariant;
           
           // Update button text directly from fetched HTML (includes variant button text if available)
           if (submitButtonInHtml && submitButton) {
@@ -231,11 +375,13 @@ if (!customElements.get('product-info')) {
               }
             }
             
-            // Update disabled state
+            // Update disabled state - ensure it stays disabled for sold out variants
             if (isDisabled) {
               submitButton.setAttribute('disabled', 'disabled');
+              submitButton.disabled = true;
             } else {
               submitButton.removeAttribute('disabled');
+              submitButton.disabled = false;
             }
           }
 

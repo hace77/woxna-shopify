@@ -12,7 +12,7 @@
     "video_banner_ah8YRc": {
       "type": "video-bannerYT",
       "settings": {
-        "video": "shopify://files/videos/Ljusnan180_new.mp4",
+        "video": null,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "image_overlay_opacity": 0,
         "enable_video_looping": false,
@@ -396,7 +396,7 @@
         "row_MqGddL": {
           "type": "row",
           "settings": {
-            "video": "shopify://files/videos/Söderfors-Damascus-Saw-Demo.mp4",
+            "video": null,
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
