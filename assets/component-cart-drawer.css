@@ -439,7 +439,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 /* Product Page Upsell Styles */
 .product-page__upsell {
-  margin-top: 20px;
+  margin-top: 10px 20px;
   padding: 20px;
   border: 1px solid rgba(var(--color-foreground), 0.08);
   border-radius: 8px;

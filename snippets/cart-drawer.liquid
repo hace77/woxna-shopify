@@ -673,9 +673,6 @@
           <div class="cart-drawer__upsell">
             <div class="cart-drawer__upsell-header">
               <h3 class="cart-drawer__upsell-title">{{ 'sections.cart.upsell.title' | t }}</h3>
-              {%- if upsell_source != 'default' and upsell_source != blank -%}
-                <small class="cart-drawer__upsell-source">(Based on {{ upsell_source.title }})</small>
-              {%- endif -%}
             </div>
             <div class="cart-drawer__upsell-product">
               <a href="{{ upsell_product.url }}" class="cart-drawer__upsell-link">
