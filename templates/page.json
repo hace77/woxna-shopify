@@ -11,9 +11,12 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        ".page-width--narrow {padding-bottom: 50px; padding-top: 50px;}"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 60,
+        "padding_bottom": 68
       }
     }
   },
