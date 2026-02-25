@@ -43,7 +43,8 @@
         "content"
       ],
       "custom_css": [
-        ".button {border: none; background-color: #445f45;}"
+        ".button {border: none; background-color: #445f45;}",
+        "#comments {display: none !important;}"
       ],
       "settings": {}
     },
@@ -66,9 +67,11 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "grey_overlay": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_view_product_button": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
