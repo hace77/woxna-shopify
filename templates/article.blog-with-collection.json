@@ -44,7 +44,7 @@
       ],
       "custom_css": [
         ".button {border: none; background-color: #445f45;}",
-        "#comments {display: none !important;}"
+        ".article-template__comment-wrapper {display: none !important; }"
       ],
       "settings": {}
     },
