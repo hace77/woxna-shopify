@@ -597,10 +597,10 @@
     "slideshow_wm6hdw": {
       "type": "slideshow",
       "blocks": {
-        "slide_REjKkX": {
+        "slide_bGgX4h": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Woxna-Packaging-Halsing-250_8fa996fc-0262-44f7-8e22-880567342198.jpg",
+            "image": "{{ product.metafields.custom.packaging.value.image.value }}",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -615,10 +615,10 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_bGgX4h": {
+        "slide_REjKkX": {
           "type": "slide",
           "settings": {
-            "image": "{{ product.metafields.custom.packaging.value.image.value }}",
+            "image": "{{ product.metafields.custom.packaging.value.image_2.value }}",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -653,8 +653,8 @@
         }
       },
       "block_order": [
-        "slide_REjKkX",
         "slide_bGgX4h",
+        "slide_REjKkX",
         "slide_KRAgzz"
       ],
       "settings": {
