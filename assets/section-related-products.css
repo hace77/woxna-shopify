@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-/* Hide all buttons in related products mode */
+/* Hide all buttons in related products mode (including the plus quick-add button) */
 .related-products .card__content .quick-add:not(.related-products-quick-add),
 .related-products .quick-add:not(.related-products-quick-add) {
   display: none !important;
@@ -38,8 +38,9 @@
   display: none !important;
 }
 
+/* Hide the plus-icon quick-add in related products - should not appear here */
 .related-products .related-products-quick-add {
-  display: block !important;
+  display: none !important;
 }
 
 /* Related products quick add button (plus icon) */
