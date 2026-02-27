@@ -16,24 +16,18 @@
         "padding_bottom": 28
       }
     },
-    "172776860318f192c2": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "172776862163f547ca": {
       "type": "apps",
       "blocks": {
-        "pandectes_gdpr_compliance_declaration_Jh9wFR": {
-          "type": "shopify://apps/pandectes-gdpr-compliance/blocks/declaration/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
+        "pandectes_gdpr_declaration_MdPrwY": {
+          "type": "shopify://apps/pandectes-gdpr/blocks/declaration/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
           "settings": {
             "container_classes": "page-width page-width--narrow"
           }
         }
       },
       "block_order": [
-        "pandectes_gdpr_compliance_declaration_Jh9wFR"
+        "pandectes_gdpr_declaration_MdPrwY"
       ],
       "settings": {
         "include_margins": true
@@ -42,7 +36,6 @@
   },
   "order": [
     "main",
-    "172776860318f192c2",
     "172776862163f547ca"
   ]
 }
