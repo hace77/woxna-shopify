@@ -12,7 +12,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
+        "padding_top": 48,
         "padding_bottom": 28
       }
     },
@@ -20,11 +20,26 @@
       "type": "retailers-locations",
       "settings": {
         "title": "Find Our Retailers",
-        "subtitle": "Discover where you can buy our products near you"
+        "subtitle": "Discover where you can buy our products near you",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_AAMCp4": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
+    "rich_text_AAMCp4",
     "main",
     "retailers_locations"
   ]
