@@ -582,7 +582,6 @@
       ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
       "@media only screen and (min-width: 750px) {h2, .h2 {font-size: calc(var(--font-heading-scale) * 4rem); }}",
       "h2 {font-size: calc(var(--font-heading-scale) * 3rem);}",
-      "html {scroll-behavior: smooth;}",
       ".footer__content-bottom {display: none;}",
       ".restock-rocket-preorder-badge {font-size: 12px; line-height: 1; text-transform: uppercase; padding: 10px 13px 10px !important; border-radius: 0px !important; height: auto; border: none; width: auto; z-index: 2; margin: 0; background: 0 0;}",
       ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",

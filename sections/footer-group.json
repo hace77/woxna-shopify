@@ -25,7 +25,7 @@
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "name": "english",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-RAeQNK\"></div>"
+            "formId": ""
           }
         },
         "klaviyo_email_marketing_sms_form_embed_block_pAWxGm": {
@@ -58,7 +58,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_qtrf4b"
       ],
       "custom_css": [
-        ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ,.klaviyo-form-UuTV7Q {background-color: #f4f0e3;}"
+        ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ,.klaviyo-form-UuTV7Q,.klaviyo-form-UwxEeQ {background-color: #f4f0e3;}"
       ],
       "settings": {
         "include_margins": false
