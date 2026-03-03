@@ -16,9 +16,37 @@
 }
 
 @media screen and (max-width: 749px) {
+  /* Marginal höger och vänster på mobil – padding på hela section-innehållet */
+  .page-width:has(.collage) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .collage {
     grid-column-gap: var(--grid-mobile-horizontal-spacing);
     grid-row-gap: var(--grid-mobile-vertical-spacing);
+  }
+
+  /* Samma border radius som knappar på mobil */
+  .collage .collage-card,
+  .collage .collage__item .card-wrapper {
+    border-radius: var(--buttons-radius-outset) !important;
+    overflow: hidden;
+  }
+
+  .collage .collage-card.product-card-wrapper {
+    --border-radius: var(--buttons-radius-outset);
+  }
+
+  .collage .collage-card .media,
+  .collage .collage-card .deferred-media,
+  .collage .collage__item .card-wrapper .card__media .media {
+    border-radius: var(--buttons-radius-outset) !important;
+  }
+
+  .collage .collage__item .card-wrapper .card__inner {
+    border-radius: var(--buttons-radius-outset) !important;
+    overflow: hidden;
   }
 
   .collage--mobile {

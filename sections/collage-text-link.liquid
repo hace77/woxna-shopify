@@ -37,6 +37,28 @@
       padding-top: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
       padding-bottom: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
       grid-row-gap: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
+      margin-left: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
+      margin-right: {{ settings.spacing_grid_horizontal | round: 0 }}px !important;
+    }
+
+    /* Samma border radius som knappar på mobil */
+    #shopify-section-{{ section.id }} .collage .collage-card,
+    #shopify-section-{{ section.id }} .collage .collage__item .card-wrapper {
+      border-radius: var(--buttons-radius-outset) !important;
+      overflow: hidden;
+    }
+    #shopify-section-{{ section.id }} .collage .collage-card.product-card-wrapper {
+      --border-radius: var(--buttons-radius-outset);
+    }
+    #shopify-section-{{ section.id }} .collage .collage-card .media,
+    #shopify-section-{{ section.id }} .collage .collage-card .media-wrapper,
+    #shopify-section-{{ section.id }} .collage .collage-card .clickable_image_link img,
+    #shopify-section-{{ section.id }} .collage .collage__item .card-wrapper .card__media .media {
+      border-radius: var(--buttons-radius-outset) !important;
+    }
+    #shopify-section-{{ section.id }} .collage .collage__item .card-wrapper .card__inner {
+      border-radius: var(--buttons-radius-outset) !important;
+      overflow: hidden;
     }
   }
   
