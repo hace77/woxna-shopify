@@ -225,7 +225,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/alfta_frontpage2.png",
-            "img_link": "shopify://products/halsing-foldable-saw",
+            "img_link": "shopify://collections/sheats",
             "show_text_overlay": true,
             "heading": "Alfta Sheat sets",
             "vertical_position": "bottom",
