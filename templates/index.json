@@ -841,6 +841,7 @@
         "text_fnwHBb",
         "button_xQEffw"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
