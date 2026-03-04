@@ -164,7 +164,6 @@
   }
 
   .menu-drawer__navigation .menu-drawer__menu {
-    text-align: right;
     margin-left: 6rem;
   }
 
@@ -173,7 +172,6 @@
   }
 
   .menu-drawer__navigation .menu-drawer__menu .menu-drawer__menu-item {
-    text-align: right;
     padding-right: 1.5rem;
   }
 
@@ -216,7 +214,6 @@
 .menu-drawer__navigation .menu-drawer__menu:not(.secondary-menu) .menu-drawer__menu-item {
   font-size: 3rem !important;
   font-weight: bold !important;
-  text-align: right !important;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
@@ -224,7 +221,6 @@
 .menu-drawer__navigation .menu-drawer__menu.secondary-menu .menu-drawer__menu-item {
   font-size: 1.4rem !important;
   background-color: transparent !important;
-  text-align: right !important;
 }
 
 .menu-drawer__utility-links {
