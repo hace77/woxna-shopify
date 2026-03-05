@@ -63,6 +63,60 @@
         "show_text_below": false
       }
     },
+    "image_banner_KKmmKB": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6Pyc7m": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Explore our award-winning saws</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_TDJbMg": {
+          "type": "text",
+          "settings": {
+            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
+            "text_style": "body"
+          }
+        },
+        "buttons_eP6wAQ": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/foldable-saws",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Pyc7m",
+        "text_TDJbMg",
+        "buttons_eP6wAQ"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner mobile",
+      "settings": {
+        "image": "shopify://shop_images/alfta-landingpage_5c546505-6e8c-47d8-b7c3-1dd2a64c5281.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "video_banner_yt_fgFqCR": {
       "type": "video-bannerYT",
       "blocks": {
@@ -928,6 +982,7 @@
   },
   "order": [
     "image_banner_p697Nx",
+    "image_banner_KKmmKB",
     "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
     "1730798874462ed86d",
