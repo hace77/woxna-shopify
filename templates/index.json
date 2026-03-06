@@ -117,61 +117,6 @@
         "show_text_below": false
       }
     },
-    "video_banner_yt_fgFqCR": {
-      "type": "video-bannerYT",
-      "blocks": {
-        "heading_dtUCPi": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Explore our award-winning saws</strong>",
-            "heading_size": "h0"
-          }
-        },
-        "text_ecWc8r": {
-          "type": "text",
-          "settings": {
-            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
-            "text_style": "body"
-          }
-        },
-        "buttons_gzXFeC": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "shopify://collections/foldable-saws",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_dtUCPi",
-        "text_ecWc8r",
-        "buttons_gzXFeC"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
-      ],
-      "name": "Video Banner YT mobile",
-      "settings": {
-        "video": "shopify://files/videos/startpage.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "image_overlay_opacity": 0,
-        "enable_video_looping": false,
-        "image_height": "adapt",
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "right",
-        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
@@ -255,27 +200,6 @@
         "padding_bottom": 36
       }
     },
-    "1730798874462ed86d": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_ge8YUn": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_ge8YUn"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".preorder-badge-collection {display: none;}"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_34jE7b": {
       "type": "rich-text",
       "blocks": {
@@ -314,37 +238,6 @@
       "name": "Reviews",
       "settings": {
         "include_margins": true
-      }
-    },
-    "rich_text_h1_Lere7N": {
-      "type": "rich-text-h1",
-      "blocks": {
-        "heading_MNknGf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Best Folding Saw for Bushcraft, Camping & Garden Use? We have models that got you covered!",
-            "heading_size": "h1"
-          }
-        },
-        "text_Ma9AMz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_MNknGf",
-        "text_Ma9AMz"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "logo_slider_6UYhzg": {
@@ -425,93 +318,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_fbgFhP": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_VrX83K": {
-          "type": "heading",
-          "settings": {
-            "heading": "Best Folding Saw for Bushcraft, Camping & Garden Use? We have models that got you covered!",
-            "heading_size": "h1"
-          }
-        },
-        "text_wYYamC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Woxna makes premium foldable saws designed for serious use outdoors and at home.</p><p><strong>Hälsing</strong>: Robust carbon steel for bushcraft and heavy cutting <br/><strong>Ljusnan</strong>: High quality stainless steel in for camping, hiking, and garden work </p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_VrX83K",
-        "text_wYYamC"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "custom_css": [
-        ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
-        ".button {border: none;}",
-        ".button:before {box-shadow: unset !important;}",
-        ".button:after {box-shadow: unset !important;}",
-        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
-        ".card__heading {font-size: 1.9rem !important; line-height: 1.4;}",
-        ".badge {display: none;}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "subtitle",
-        "collection": "all",
-        "products_to_show": 5,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-2",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "grey_overlay": false,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "none",
-        "show_view_product_button": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 44
-      }
-    },
-    "video_ygLEnU": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Damascus Kickstarter 16-9.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_banner_wzg6KR": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -571,236 +377,6 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_KxgYb7": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_R9jtBC": {
-          "type": "caption",
-          "settings": {
-            "caption": "COMING SOON",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_pJNzmd": {
-          "type": "heading",
-          "settings": {
-            "heading": "The First Saw Ever Made with Damasteel",
-            "heading_size": "h1"
-          }
-        },
-        "text_ViBBqG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>",
-            "text_style": "body"
-          }
-        },
-        "button_3e6N7G": {
-          "type": "button",
-          "settings": {
-            "button_label": "More information About Our Kickstarter",
-            "button_link": "shopify://pages/kickstarter-preorder",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_R9jtBC",
-        "heading_pJNzmd",
-        "text_ViBBqG",
-        "button_3e6N7G"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Damascus_4_6510ba46-4474-422c-82ac-893705886430.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 16,
-        "padding_bottom": 12
-      }
-    },
-    "image_with_text_7betFC": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_EWYaLV": {
-          "type": "caption",
-          "settings": {
-            "caption": "Introducing Ljusnan",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_FFFJQd": {
-          "type": "heading",
-          "settings": {
-            "heading": "No More Rusty Blades",
-            "heading_size": "h1"
-          }
-        },
-        "text_cVN7XX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We started Woxna with a vision: to create the best folding saw, a saw that not only works flawlessly in the field but also captured the timeless look and feel of Scandinavian tool traditions. Now it’s finally here, we hope you love it as much as we do.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_NMrzW6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read more on our blog",
-            "button_link": "shopify://blogs/the-woxna-journal/the-best-folding-saw-and-the-first-saw-of-its-kind-with-a-stainless-steel-blade",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_EWYaLV",
-        "heading_FFFJQd",
-        "text_cVN7XX",
-        "button_NMrzW6"
-      ],
-      "disabled": true,
-      "name": "No more rusty",
-      "settings": {
-        "image": "shopify://shop_images/Woxna_Ljusnan-2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 20,
-        "padding_bottom": 0
-      }
-    },
-    "image_banner_iTfWWc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_EG7mK3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Black Week Saws",
-            "heading_size": "h1"
-          }
-        },
-        "text_mPAetM": {
-          "type": "text",
-          "settings": {
-            "text": "For Black week, we’re offering a very limited batch of Hälsing Saws with minor quirks—like mismatched wooden handles halves or logotypes that didn’t burn perfectly. You still get the same quality as with all our other saws and you help us to be more sustainable by reducing our waste.",
-            "text_style": "body"
-          }
-        },
-        "buttons_UJawnD": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Explore our black week deals",
-            "button_link_1": "shopify://pages/black-friday-2025",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_EG7mK3",
-        "text_mPAetM",
-        "buttons_UJawnD"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Black-Week-Woxna-saw-header.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "featured_collection_mnYkfA": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Black Week Saws",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "black-week",
-        "products_to_show": 2,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-4",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "grey_overlay": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "show_view_product_button": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "newsletter_H4rQNJ": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_j9JrMi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% of on Your First Order",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_BwKYAV": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Join our newsletter and be the first to hear about new products, exclusive launches, and updates. Plus, enjoy 10% off your first purchase as a welcome gift.</p>"
-          }
-        },
-        "email_form_CQ69PJ": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_j9JrMi",
-        "paragraph_BwKYAV",
-        "email_form_CQ69PJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -882,49 +458,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_DQHCeD": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_9BzK4m": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made in Sweden with Quality and Tradition",
-            "heading_size": "h2"
-          }
-        },
-        "text_fnwHBb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are proud to produce our saws in Hälsingland, Sweden. This rural region has a long-standing tradition of toolmaking, and we are fortunate to work with a factory that’s been in our co-founder’s family for generations. Here we can craft high-quality goods with the utmost care for both people and the environment.</p>"
-          }
-        },
-        "button_xQEffw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Proudly Made in Sweden",
-            "button_link": "shopify://pages/made-in-sweden",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_9BzK4m",
-        "text_fnwHBb",
-        "button_xQEffw"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 80
-      }
-    },
     "image_with_text_DpDWFK": {
       "type": "image-with-text",
       "blocks": {
@@ -1003,26 +536,14 @@
   "order": [
     "image_banner_p697Nx",
     "image_banner_KKmmKB",
-    "video_banner_yt_fgFqCR",
     "collage_text_link_xVfca9",
-    "1730798874462ed86d",
     "rich_text_34jE7b",
     "1750255072dfdc72a2",
-    "rich_text_h1_Lere7N",
     "logo_slider_6UYhzg",
-    "rich_text_fbgFhP",
-    "featured_collection",
-    "video_ygLEnU",
     "image_banner_wzg6KR",
     "rich_text_xGhP7z",
-    "image_with_text_KxgYb7",
-    "image_with_text_7betFC",
-    "image_banner_iTfWWc",
-    "featured_collection_mnYkfA",
-    "newsletter_H4rQNJ",
     "image_with_text_83f7j8",
     "image_banner_CPbRdx",
-    "rich_text_DQHCeD",
     "image_with_text_DpDWFK",
     "1751624034c788284f"
   ]
