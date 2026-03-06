@@ -498,6 +498,7 @@
     },
     "video_ygLEnU": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -509,6 +510,24 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "image_banner_wzg6KR": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Woxna-Damascus-landing_page.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text_xGhP7z": {
@@ -994,6 +1013,7 @@
     "rich_text_fbgFhP",
     "featured_collection",
     "video_ygLEnU",
+    "image_banner_wzg6KR",
     "rich_text_xGhP7z",
     "image_with_text_KxgYb7",
     "image_with_text_7betFC",
