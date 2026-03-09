@@ -51,6 +51,10 @@
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "variant_metafield_z7cPYj": {
           "type": "variant_metafield",
           "settings": {
@@ -60,18 +64,6 @@
             "show_fallback": false,
             "fallback_content": ""
           }
-        },
-        "rich_text_metafield_cirWjn": {
-          "type": "rich_text_metafield",
-          "settings": {
-            "content": "",
-            "text_style": "body",
-            "show_as_information_box": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         }
       },
       "block_order": [
@@ -82,9 +74,8 @@
         "quantity_selector",
         "buy_buttons",
         "custom_liquid_MCVtxa",
-        "variant_metafield_z7cPYj",
-        "rich_text_metafield_cirWjn",
-        "description"
+        "description",
+        "variant_metafield_z7cPYj"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
