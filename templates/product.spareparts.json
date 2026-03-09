@@ -54,7 +54,7 @@
         "variant_metafield_z7cPYj": {
           "type": "variant_metafield",
           "settings": {
-            "metafield_key": "",
+            "metafield_key": "variant_informaion",
             "show_heading": false,
             "heading": "",
             "show_fallback": false,
