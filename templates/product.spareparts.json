@@ -64,6 +64,14 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "collapsible_tab_RjT77h": {
+          "type": "collapsible_tab",
+          "source": "{{ product.metafields.custom.product_care.value }}",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_care.value.title.value }}",
+            "content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}"
+          }
         }
       },
       "block_order": [
@@ -75,7 +83,8 @@
         "buy_buttons",
         "sku_4fq8JC",
         "variant_metafield_z7cPYj",
-        "description"
+        "description",
+        "collapsible_tab_RjT77h"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
