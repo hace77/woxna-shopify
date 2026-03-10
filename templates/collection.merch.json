@@ -33,6 +33,7 @@
         "heading_ARea4V",
         "text_9PfYVd"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: start; }}",
         "@media (min-width: 749px) {.banner__content {align-items: start; }}"
