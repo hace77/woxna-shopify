@@ -36,7 +36,7 @@
       "custom_css": [],
       "settings": {
         "image": "{{ collection.image }}",
-        "image_mobile": "shopify://shop_images/care-repair-hero-4-5.jpg",
+        "image_mobile": "{{ collection.metafields.custom.mobile_hero.value }}",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "image_height_mobile": "adapt",
