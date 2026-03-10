@@ -41,7 +41,7 @@
         "image": "{{ collection.image }}",
         "image_mobile": "{{ collection.metafields.custom.mobile_hero.value }}",
         "image_overlay_opacity": 10,
-        "image_height": "adapt",
+        "image_height": "large",
         "image_height_mobile": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
