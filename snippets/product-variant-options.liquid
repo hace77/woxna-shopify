@@ -37,6 +37,10 @@
     if value.available
       assign option_disabled = false
     endif
+
+    # Store a stable variant key for JS image filtering.
+    # For now this uses the rendered option value; JS will prefer this over any translated label.
+    assign original_value = value.name
   -%}
 
   {%- capture input_id -%}

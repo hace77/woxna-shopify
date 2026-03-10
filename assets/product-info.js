@@ -528,9 +528,9 @@ if (!customElements.get('product-info')) {
           const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
           const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
           
-          // Check if all words in alt text are found in selected values
-          // This means if alt is "250 mm" and selected is "250 mm oak", it will match
-          const shouldShow = altWords.length > 0 && altWords.every(word => 
+          // Show if at least one word in alt text matches the selected variant values
+          // This allows multi-language alt texts where only one of the words matches the current language
+          const shouldShow = altWords.length > 0 && altWords.some(word =>
             selectedWords.some(selected => selected.includes(word) || word.includes(selected))
           );
           
@@ -577,7 +577,7 @@ if (!customElements.get('product-info')) {
           const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
           const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
           
-          const shouldShow = altWords.length > 0 && altWords.every(word => 
+          const shouldShow = altWords.length > 0 && altWords.some(word =>
             selectedWords.some(selected => selected.includes(word) || word.includes(selected))
           );
           
