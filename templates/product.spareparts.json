@@ -95,8 +95,7 @@
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
         ".icon-check-mark {display: none;}",
-        ".accordion__title {text-transform: uppercase;}",
-        ".svg-wrapper {width: 0px;}"
+        ".accordion__title {text-transform: uppercase;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -122,6 +121,7 @@
         "image": "{{ product.metafields.custom.story.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
