@@ -262,11 +262,11 @@
         "button_73pmHn": {
           "type": "button",
           "settings": {
-            "button_label": "Download Söderfors - medium size",
+            "button_label": "Download Söderfors - Medium size",
             "button_link": "https://WoxnaCDN.b-cdn.net/Damascus%20studio.zip",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Download Söderfors - Large size",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Damaskus%20studio%20large.zip",
             "button_style_secondary_2": false
           }
         }
