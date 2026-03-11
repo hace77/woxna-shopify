@@ -16,6 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "{{ page.metafields.custom.hero.value.header.value }}",
+            "use_collection_title": false,
             "heading_size": "h0"
           }
         },
@@ -23,6 +24,7 @@
           "type": "text",
           "settings": {
             "text": "{{ page.metafields.custom.hero.value.herotext.value }}",
+            "use_collection_description": false,
             "text_style": "subtitle"
           }
         }
@@ -35,6 +37,7 @@
         "image": "{{ page.metafields.custom.hero.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -326,8 +329,8 @@
             "button_label": "Download Hälsing and Ljusnan",
             "button_link": "https://WoxnaCDN.b-cdn.net/Halsing%20and%20Ljusnan.zip",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Download Söderfors",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/damascus%20outdoor.zip",
             "button_style_secondary_2": false
           }
         }
