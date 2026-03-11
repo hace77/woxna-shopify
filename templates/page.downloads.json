@@ -261,10 +261,9 @@
         },
         "button_73pmHn": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Download Outdoor images - Medium Size",
-            "button_link": "",
+            "button_label": "Download Söderfors - medium size",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Damascus%20studio.zip",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
