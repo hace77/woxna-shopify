@@ -117,7 +117,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
@@ -135,6 +135,7 @@
           "type": "heading",
           "settings": {
             "heading": "Protect your gear and your saw",
+            "use_collection_title": false,
             "heading_size": "h2"
           }
         },
@@ -142,6 +143,7 @@
           "type": "text",
           "settings": {
             "text": "These durable sheaths keeps your saw protected during transport, and protects the rest of your equipment when the saw rides in your pack. Attach the sheath to your belt using the loop on the back or the included dangler and your saw is always where you need it, ready for work.",
+            "use_collection_description": false,
             "text_style": "body"
           }
         }
@@ -154,6 +156,7 @@
         "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -317,6 +320,21 @@
         "padding_bottom": 36
       }
     },
+    "1770281663f46d5126": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_qb4AkU": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_qb4AkU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "rich_text_7GmfxC": {
       "type": "rich-text",
       "blocks": {
@@ -410,21 +428,6 @@
         "fallback_content": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "1770281663f46d5126": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_qb4AkU": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_qb4AkU"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
