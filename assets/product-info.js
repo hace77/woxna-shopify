@@ -444,6 +444,95 @@ if (!customElements.get('product-info')) {
         return selectedValues;
       }
 
+      normalizeVariantAliasString(value) {
+        if (!value) return '';
+
+        return value
+          .toString()
+          .trim()
+          .toLowerCase()
+          .replace(/\s*[\/,-]\s*/g, ' ')
+          .replace(/\s+/g, ' ');
+      }
+
+      getSelectedVariantAliases(selectedOptionValues) {
+        const aliases = new Set();
+        const joinedValues = [
+          selectedOptionValues.join(' '),
+          selectedOptionValues.join(' / '),
+          selectedOptionValues.join(' - '),
+          selectedOptionValues.join(', '),
+        ];
+
+        selectedOptionValues.forEach((value) => {
+          const normalizedValue = this.normalizeVariantAliasString(value);
+          if (normalizedValue) aliases.add(normalizedValue);
+        });
+
+        joinedValues.forEach((value) => {
+          const normalizedValue = this.normalizeVariantAliasString(value);
+          if (normalizedValue) aliases.add(normalizedValue);
+        });
+
+        return aliases;
+      }
+
+      isSharedMediaAlt(altText) {
+        const altLower = altText.toLowerCase().trim();
+
+        return (
+          altLower === 'all' ||
+          altLower.startsWith('all ') ||
+          altLower.endsWith(' all') ||
+          altLower.includes(' all ') ||
+          altLower === 'shared' ||
+          altLower.startsWith('shared ') ||
+          altLower.endsWith(' shared') ||
+          altLower.includes(' shared ')
+        );
+      }
+
+      mediaAltMatchesSelectedOptions(altText, selectedOptionValues) {
+        if (!altText || altText.trim() === '') return true;
+
+        if (this.isSharedMediaAlt(altText)) {
+          return true;
+        }
+
+        const normalizedSelectedAliases = this.getSelectedVariantAliases(selectedOptionValues);
+
+        // New format: full translated aliases separated with "|"
+        // Example: "Linseed oil | Linolja | Leinol | Linolie | Linolje"
+        if (altText.includes('|')) {
+          const altAliases = altText
+            .split('|')
+            .map((alias) => this.normalizeVariantAliasString(alias))
+            .filter(Boolean);
+
+          return altAliases.some((alias) => normalizedSelectedAliases.has(alias));
+        }
+
+        // Backwards compatibility for existing products using word-based alt matching
+        const altWords = altText
+          .toLowerCase()
+          .trim()
+          .split(/[\s-]+/)
+          .filter((word) => word.length > 0 && word !== 'all' && word !== 'shared');
+        const selectedWords = selectedOptionValues
+          .join(' ')
+          .trim()
+          .toLowerCase()
+          .split(/[\s-]+/)
+          .filter((word) => word.length > 0);
+
+        return (
+          altWords.length > 0 &&
+          altWords.every((word) =>
+            selectedWords.some((selected) => selected.includes(word) || word.includes(selected))
+          )
+        );
+      }
+
       /**
        * Filter media items based on variant option values matching alt text
        * If no variant is selected or no images have alt text, show all images
@@ -467,10 +556,6 @@ if (!customElements.get('product-info')) {
           });
           return;
         }
-
-        // Build variant string from selected options (e.g., "250mm Oak" or "250mm-Oak")
-        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
-        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
 
         // Get all media items (both gallery and thumbnails)
         // Select all items with data-media-id, not just those with data-media-alt
@@ -506,33 +591,7 @@ if (!customElements.get('product-info')) {
             return;
           }
 
-          const altLower = altText.toLowerCase().trim();
-          
-          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
-          // Check for exact match or word boundaries (space, start, end, or hyphen)
-          const isAllTag = altLower === 'all' || 
-                          altLower.startsWith('all ') || 
-                          altLower.endsWith(' all') || 
-                          altLower.includes(' all ') ||
-                          altLower === 'shared' ||
-                          altLower.startsWith('shared ') ||
-                          altLower.endsWith(' shared') ||
-                          altLower.includes(' shared ');
-          
-          if (isAllTag) {
-            return; // Show for all variants
-          }
-
-          // Show if alt text contains any of the selected variant option values
-          // This allows partial matching (e.g., "250 mm" matches when "250 mm" + "Oak" is selected)
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
-          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
-          
-          // Check if all words in alt text are found in selected values
-          // This means if alt is "250 mm" and selected is "250 mm oak", it will match
-          const shouldShow = altWords.length > 0 && altWords.every(word => 
-            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
-          );
+          const shouldShow = this.mediaAltMatchesSelectedOptions(altText, selectedOptionValues);
           
           item.style.display = shouldShow ? '' : 'none';
         });
@@ -557,29 +616,7 @@ if (!customElements.get('product-info')) {
             return;
           }
 
-          const altLower = altText.toLowerCase().trim();
-          
-          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
-          // Check for exact match or word boundaries (space, start, end, or hyphen)
-          const isAllTag = altLower === 'all' || 
-                          altLower.startsWith('all ') || 
-                          altLower.endsWith(' all') || 
-                          altLower.includes(' all ') ||
-                          altLower === 'shared' ||
-                          altLower.startsWith('shared ') ||
-                          altLower.endsWith(' shared') ||
-                          altLower.includes(' shared ');
-          
-          if (isAllTag) {
-            return; // Show for all variants
-          }
-
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
-          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
-          
-          const shouldShow = altWords.length > 0 && altWords.every(word => 
-            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
-          );
+          const shouldShow = this.mediaAltMatchesSelectedOptions(altText, selectedOptionValues);
           
           item.style.display = shouldShow ? '' : 'none';
         });
@@ -680,9 +717,6 @@ if (!customElements.get('product-info')) {
           return;
         }
 
-        const variantString = selectedOptionValues.join(' ').trim().toLowerCase();
-        const variantStringAlt = selectedOptionValues.join('-').trim().toLowerCase();
-
         // Select all media items, not just those with data-media-alt
         const modalItems = modalContent.querySelectorAll('.product__media-item');
         
@@ -706,29 +740,7 @@ if (!customElements.get('product-info')) {
             return;
           }
 
-          const altLower = altText.toLowerCase().trim();
-          
-          // Special tag: if alt text is exactly "all" or "shared", or contains them as words, show for all variants
-          // Check for exact match or word boundaries (space, start, end, or hyphen)
-          const isAllTag = altLower === 'all' || 
-                          altLower.startsWith('all ') || 
-                          altLower.endsWith(' all') || 
-                          altLower.includes(' all ') ||
-                          altLower === 'shared' ||
-                          altLower.startsWith('shared ') ||
-                          altLower.endsWith(' shared') ||
-                          altLower.includes(' shared ');
-          
-          if (isAllTag) {
-            return; // Show for all variants
-          }
-
-          const altWords = altLower.split(/[\s-]+/).filter(w => w.length > 0 && w !== 'all' && w !== 'shared');
-          const selectedWords = variantString.split(/[\s-]+/).filter(w => w.length > 0);
-          
-          const shouldShow = altWords.length > 0 && altWords.every(word => 
-            selectedWords.some(selected => selected.includes(word) || word.includes(selected))
-          );
+          const shouldShow = this.mediaAltMatchesSelectedOptions(altText, selectedOptionValues);
           
           item.style.display = shouldShow ? '' : 'none';
         });

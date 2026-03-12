@@ -131,14 +131,20 @@ Sammanfattning av olika spår vi diskuterat för att koppla produktbilder till v
 
 ---
 
-### 6. Vad som är implementerat just nu (2026‑02‑06)
+### 6. Vad som är implementerat just nu
 
-- Koden som är i drift nu (efter senaste justeringarna):
-  - **Alt‑baserad matchning** med stöd för flera språk i samma alt:
-    - Filtreringen i `product-info.js` kräver numera att **minst ett ord i alt‑texten** matchar någon del av den valda variantsträngen.
-  - Detta gör att alt‑texter som innehåller alla språk för ett variantnamn fungerar, t.ex.:
-    - `Linseed oil / Linolja / Leinöl / Linolie / Linolje`.
-- Inga av de mer avancerade nyckel‑/ID‑lösningarna är ännu implementerade – de finns endast dokumenterade här som underlag för en framtida, mer hållbar lösning.
+- Koden som är i drift nu:
+  - **Ny alt‑baserad aliasmatchning** med tydlig separator:
+    - Om en bilds alt‑text innehåller `|` behandlas den som en lista med fulla alias/översättningar.
+    - Exempel:
+      - `Linseed oil | Linolja | Leinöl | Linolie | Linolje`
+      - `180 mm / Cognac | 180 mm / Konjak`
+    - `product-info.js` normaliserar aliasen och jämför dem mot den **fulla valda variantsträngen**, inte mot enskilda ord.
+    - Det gör att delade ord som `oil`, `mm`, `black` osv inte längre gör att fel bilder visas.
+  - **Bakåtkompatibilitet för äldre produkter**:
+    - Om alt‑texten **inte** innehåller `|` används den äldre, strikta ordmatchningen (`alla ord i alt måste matcha`).
+    - Det gör att befintliga produkter som redan fungerar med gamla format inte bryts direkt.
+- Inga av de mer avancerade nyckel‑/ID‑lösningarna är ännu implementerade – de finns fortfarande dokumenterade här som underlag för en framtida, ännu mer hållbar lösning.
 
 ---
 
