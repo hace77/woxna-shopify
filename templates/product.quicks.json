@@ -22,16 +22,16 @@
             "product": "{{product}}"
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
           }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -55,8 +55,8 @@
       "block_order": [
         "title",
         "klaviyo_reviews_average_rating_EkJjBx",
-        "variant_picker",
         "price",
+        "variant_picker",
         "buy_buttons",
         "custom_liquid_jJDHYK",
         "description"
@@ -130,6 +130,7 @@
           "type": "heading",
           "settings": {
             "heading": "Sustainable. Unique. Limited.",
+            "use_collection_title": false,
             "heading_size": "h1"
           }
         },
@@ -137,6 +138,7 @@
           "type": "text",
           "settings": {
             "text": "Our quirky batch of saws have some extra character, like mismatched wooden handles halves or logotypes that didn’t burn perfectly.",
+            "use_collection_description": false,
             "text_style": "body"
           }
         }
@@ -152,6 +154,7 @@
         "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
