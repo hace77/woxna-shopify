@@ -155,6 +155,7 @@
           "type": "heading",
           "settings": {
             "heading": "{{ product.metafields.custom.preamble.value.title.value }}",
+            "use_collection_title": false,
             "heading_size": "h1"
           }
         },
@@ -162,6 +163,7 @@
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.preamble.value.single_line_ingress.value }}",
+            "use_collection_description": false,
             "text_style": "body"
           }
         }
@@ -175,6 +177,7 @@
         "image": "{{ product.metafields.custom.preamble.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -787,6 +790,7 @@
           "type": "heading",
           "settings": {
             "heading": "",
+            "use_collection_title": false,
             "heading_size": "h1"
           }
         },
@@ -794,6 +798,7 @@
           "type": "text",
           "settings": {
             "text": "",
+            "use_collection_description": false,
             "text_style": "body"
           }
         },
@@ -820,6 +825,7 @@
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
