@@ -186,7 +186,8 @@
       "product_variants": "Productvarianten",
       "taxes_included": "Belastingen inbegrepen.",
       "duties_included": "Douanerechten inbegrepen.",
-      "duties_and_taxes_included": "Douanerechten en belastingen inbegrepen."
+      "duties_and_taxes_included": "Douanerechten en belastingen inbegrepen.",
+      "view_product": "Bekijk product"
     },
     "modal": {
       "label": "Mediagalerij"
