@@ -172,7 +172,7 @@
       "inventory_in_stock": "Op voorraad",
       "inventory_in_stock_show_count": "{{ quantity }} op voorraad",
       "inventory_low_stock": "Voorraad laag",
-      "inventory_low_stock_show_count": "Lage voorraad: nog maar {{ quantity }}",
+      "inventory_low_stock_show_count": "Nog maar {{ count }} op voorraad",
       "inventory_out_of_stock": "Niet op voorraad",
       "sku": "SKU",
       "inventory_out_of_stock_continue_selling": "Op voorraad",
