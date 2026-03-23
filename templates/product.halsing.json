@@ -22,11 +22,6 @@
             "product": "{{product}}"
           }
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -80,7 +75,6 @@
       "block_order": [
         "title",
         "klaviyo_reviews_average_rating_ircKrJ",
-        "judge_me_reviews_preview_badge_VG7pPA",
         "price",
         "variant_picker",
         "extra_products_rLLACN",
@@ -867,7 +861,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "show_fallback": false,
+        "show_fallback": true,
         "fallback_content": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -930,20 +924,6 @@
     },
     "1730798421bc6bee16": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_JqyKyw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_JqyKyw"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
