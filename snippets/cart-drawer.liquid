@@ -635,25 +635,90 @@
         {%- comment -%} Find the best upsell product based on cart contents {%- endcomment -%}
         {%- assign upsell_product = blank -%}
         {%- assign upsell_source = blank -%}
+        {%- assign upsell_variant_override = blank -%}
+        {%- assign has_product_specific_upsell_setting = false -%}
         
         {%- comment -%} First, check for product-specific upsells via metafields {%- endcomment -%}
         {%- for item in cart.items -%}
-          {%- if item.product.metafields.custom.upsell_product != blank -%}
+          {%- if item.product.metafields.custom.upsell_product != nil -%}
+            {%- assign has_product_specific_upsell_setting = true -%}
             {%- assign potential_upsell = item.product.metafields.custom.upsell_product.value -%}
             {%- if potential_upsell != blank and potential_upsell.available -%}
               {%- assign upsell_product = potential_upsell -%}
               {%- assign upsell_source = item.product -%}
+              {%- if item.product.metafields.custom.upsell_variant != blank -%}
+                {%- assign upsell_variant_override = item.product.metafields.custom.upsell_variant.value | default: item.product.metafields.custom.upsell_variant -%}
+              {%- endif -%}
               {%- break -%}
+            {%- endif -%}
+          {%- elsif item.product.metafields.custom.upsell_variant != blank -%}
+            {%- comment -%}
+              Variant-only upsell: derive parent product from variant reference so we do not fall back to global cart_drawer_upsell_product.
+            {%- endcomment -%}
+            {%- assign has_product_specific_upsell_setting = true -%}
+            {%- assign upsell_variant_override = item.product.metafields.custom.upsell_variant.value | default: item.product.metafields.custom.upsell_variant -%}
+            {%- if upsell_variant_override.id -%}
+              {%- assign upsell_product = upsell_variant_override.product -%}
+              {%- if upsell_product != blank and upsell_product.available -%}
+                {%- assign upsell_source = item.product -%}
+                {%- break -%}
+              {%- else -%}
+                {%- assign upsell_product = blank -%}
+                {%- assign upsell_variant_override = blank -%}
+              {%- endif -%}
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
         
-        {%- comment -%} If no product-specific upsell found, use default {%- endcomment -%}
-        {%- if upsell_product == blank and settings.cart_drawer_upsell_product != blank -%}
+        {%- comment -%}
+          If no product-specific upsell setting exists on cart items, use global default.
+          If a product-specific setting exists but is empty, we intentionally show no upsell.
+        {%- endcomment -%}
+        {%- if upsell_product == blank and has_product_specific_upsell_setting == false and settings.cart_drawer_upsell_product != blank -%}
           {%- assign upsell_product = all_products[settings.cart_drawer_upsell_product] -%}
           {%- assign upsell_source = 'default' -%}
         {%- endif -%}
         
+        {%- assign upsell_variant = blank -%}
+        {%- assign has_explicit_upsell_variant = false -%}
+
+        {%- if upsell_product != blank -%}
+          {%- comment -%}
+            Optional variant override from product metafield custom.upsell_variant.
+            Supports:
+            - variant reference metafield (preferred)
+            - full product URL with ?variant=...
+            - only numeric variant ID
+          {%- endcomment -%}
+          {%- if upsell_variant_override != blank -%}
+            {%- if upsell_variant_override.id -%}
+              {%- assign upsell_variant = upsell_variant_override -%}
+              {%- assign has_explicit_upsell_variant = true -%}
+              {%- comment -%} Variant reference wins over upsell_product metafield: show the variant's product (title, image, URL). {%- endcomment -%}
+              {%- assign upsell_product = upsell_variant.product -%}
+            {%- else -%}
+              {%- assign upsell_variant_input = upsell_variant_override | strip -%}
+              {%- assign upsell_variant_id = upsell_variant_input -%}
+              {%- if upsell_variant_input contains 'variant=' -%}
+                {%- assign upsell_variant_id = upsell_variant_input | split: 'variant=' | last | split: '&' | first -%}
+              {%- endif -%}
+              {%- assign upsell_variant_id_number = upsell_variant_id | plus: 0 -%}
+
+              {%- for variant in upsell_product.variants -%}
+                {%- if variant.id == upsell_variant_id_number -%}
+                  {%- assign upsell_variant = variant -%}
+                  {%- assign has_explicit_upsell_variant = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- if upsell_variant == blank -%}
+            {%- assign upsell_variant = upsell_product.selected_or_first_available_variant -%}
+          {%- endif -%}
+        {%- endif -%}
+
         {%- comment -%} Check if upsell product is available and not already in cart {%- endcomment -%}
         {%- if upsell_product != blank -%}
           {%- assign upsell_already_in_cart = false -%}
@@ -664,7 +729,7 @@
             {%- endif -%}
           {%- endfor -%}
           
-          {%- if upsell_already_in_cart or upsell_product.available == false -%}
+          {%- if upsell_already_in_cart or upsell_product.available == false or upsell_variant == blank -%}
             {%- assign upsell_product = blank -%}
           {%- endif -%}
         {%- endif -%}
@@ -675,7 +740,7 @@
               <h3 class="cart-drawer__upsell-title">{{ 'sections.cart.upsell.title' | t }}</h3>
             </div>
             <div class="cart-drawer__upsell-product">
-              <a href="{{ upsell_product.url }}" class="cart-drawer__upsell-link">
+              <a href="{{ upsell_product.url }}{% if has_explicit_upsell_variant and upsell_variant != blank %}?variant={{ upsell_variant.id }}{% endif %}" class="cart-drawer__upsell-link">
                 <div class="cart-drawer__upsell-image">
                   <img
                     src="{{ upsell_product.featured_media | image_url: width: 120 }}"
@@ -687,18 +752,18 @@
                 </div>
                 <div class="cart-drawer__upsell-info">
                   <h4 class="cart-drawer__upsell-product-title">{{ upsell_product.title }}</h4>
-                  <p class="cart-drawer__upsell-price">{{ upsell_product.price | money }}</p>
+                  <p class="cart-drawer__upsell-price">{{ upsell_variant.price | money }}</p>
                 </div>
               </a>
-              {%- if upsell_product.variants.size == 1 -%}
-                {%- if upsell_product.selected_or_first_available_variant.available -%}
+              {%- if has_explicit_upsell_variant or upsell_product.variants.size == 1 -%}
+                {%- if upsell_variant.available -%}
                   <form 
                     action="{{ routes.cart_add_url }}" 
                     method="post" 
                     class="cart-drawer__upsell-form"
                     data-upsell-form
                   >
-                    <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="id" value="{{ upsell_variant.id }}">
                     <input type="hidden" name="quantity" value="1">
                     <button
                       type="submit"
