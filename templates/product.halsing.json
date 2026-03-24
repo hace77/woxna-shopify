@@ -859,7 +859,7 @@
         "heading_size": "h1",
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "show_fallback": false,
         "fallback_content": "<p>test test</p>",
