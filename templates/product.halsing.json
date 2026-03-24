@@ -861,8 +861,8 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "show_fallback": false,
-        "fallback_content": "",
+        "show_fallback": true,
+        "fallback_content": "<p>test test</p>",
         "padding_top": 40,
         "padding_bottom": 52
       }
