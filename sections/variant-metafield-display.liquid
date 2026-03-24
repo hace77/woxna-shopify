@@ -16,7 +16,8 @@
     {%- capture variant_metafield_richtext_html -%}
       {{- variant_metafield | metafield_tag -}}
     {%- endcapture -%}
-    {%- assign variant_metafield_richtext_stripped = variant_metafield_richtext_html | strip -%}
+    {%- comment -%} strip_html: real text check for rich text (not just HTML wrappers / whitespace) {%- endcomment -%}
+    {%- assign variant_metafield_richtext_stripped = variant_metafield_richtext_html | strip_html | strip -%}
     {%- liquid
       assign variant_metafield_has_content = false
       if variant_metafield != blank

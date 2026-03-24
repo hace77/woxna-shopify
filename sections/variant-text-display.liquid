@@ -36,7 +36,8 @@
           {%- capture variant_metafield_html -%}
             {{- variant_metafield | metafield_tag -}}
           {%- endcapture -%}
-          {%- assign variant_metafield_html_stripped = variant_metafield_html | strip -%}
+          {%- comment -%} strip_html avoids treating wrapper-only or whitespace-only rich text as content {%- endcomment -%}
+          {%- assign variant_metafield_html_stripped = variant_metafield_html | strip_html | strip -%}
           
           {%- if variant_metafield != blank and variant_metafield_html_stripped != blank -%}
             {%- if section.settings.show_heading and section.settings.heading != blank -%}
