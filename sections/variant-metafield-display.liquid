@@ -19,11 +19,17 @@
     {%- comment -%} strip_html: real text check for rich text (not just HTML wrappers / whitespace) {%- endcomment -%}
     {%- assign variant_metafield_richtext_stripped = variant_metafield_richtext_html | strip_html | strip -%}
     {%- liquid
+      assign variant_metafield_plain = ''
+      if variant_metafield != blank and variant_metafield.type == 'rich_text_field'
+        assign variant_metafield_plain = variant_metafield | metafield_text | strip
+      endif
       assign variant_metafield_has_content = false
       if variant_metafield != blank
         assign metafield_type_check = variant_metafield.type
         if metafield_type_check == 'rich_text_field'
           if variant_metafield_richtext_stripped != blank
+            assign variant_metafield_has_content = true
+          elsif variant_metafield_plain != blank
             assign variant_metafield_has_content = true
           endif
         else
@@ -53,7 +59,14 @@
               echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
             # Handle rich text metafields
             elsif metafield_type == 'rich_text_field'
-              echo variant_metafield_richtext_html
+              if variant_metafield_richtext_stripped != blank
+                echo variant_metafield_richtext_html
+              elsif variant_metafield_plain != blank
+                assign mf_plain_out = variant_metafield | metafield_text
+                echo '<div class="rte rte--metafield-plain-fallback">'
+                echo mf_plain_out
+                echo '</div>'
+              endif
             # Handle plain text, URLs, and other metafields
             else
               # Check if it's an image URL

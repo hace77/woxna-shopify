@@ -38,6 +38,12 @@
           {%- endcapture -%}
           {%- comment -%} strip_html avoids treating wrapper-only or whitespace-only rich text as content {%- endcomment -%}
           {%- assign variant_metafield_html_stripped = variant_metafield_html | strip_html | strip -%}
+          {%- liquid
+            assign variant_metafield_plain = ''
+            if variant_metafield != blank and variant_metafield.type == 'rich_text_field'
+              assign variant_metafield_plain = variant_metafield | metafield_text | strip
+            endif
+          -%}
           
           {%- if variant_metafield != blank and variant_metafield_html_stripped != blank -%}
             {%- if section.settings.show_heading and section.settings.heading != blank -%}
@@ -48,6 +54,16 @@
             
             <div class="rich-text__text rte">
               {{ variant_metafield_html }}
+            </div>
+          {%- elsif variant_metafield != blank and variant_metafield.type == 'rich_text_field' and variant_metafield_plain != blank -%}
+            {%- comment -%} When Translate & Adapt leaves metafield_tag empty, metafield_text often still returns default-language copy {%- endcomment -%}
+            {%- if section.settings.show_heading and section.settings.heading != blank -%}
+              <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {%- endif -%}
+            <div class="rich-text__text rte rte--metafield-plain-fallback">
+              {{ variant_metafield | metafield_text }}
             </div>
           {%- elsif section.settings.show_fallback and section.settings.fallback_content != blank -%}
             {%- if section.settings.show_heading and section.settings.heading != blank -%}
