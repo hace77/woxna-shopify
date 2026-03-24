@@ -13,50 +13,6 @@
   "sections": {
     "17593301448b063bc4": {
       "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_tb7DdW": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "Dansk",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-UwxEeQ\"></div>"
-          }
-        },
-        "klaviyo_email_marketing_sms_form_embed_block_i6tbbU": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "english",
-          "settings": {
-            "formId": ""
-          }
-        },
-        "klaviyo_email_marketing_sms_form_embed_block_pAWxGm": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "Swedish",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
-          }
-        },
-        "klaviyo_email_marketing_sms_form_embed_block_xy8kUr": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "Norsk",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-UuTV7Q\"></div>"
-          }
-        },
-        "klaviyo_email_marketing_sms_form_embed_block_qtrf4b": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "name": "German",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-XXkzcJ\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_tb7DdW",
-        "klaviyo_email_marketing_sms_form_embed_block_i6tbbU",
-        "klaviyo_email_marketing_sms_form_embed_block_pAWxGm",
-        "klaviyo_email_marketing_sms_form_embed_block_xy8kUr",
-        "klaviyo_email_marketing_sms_form_embed_block_qtrf4b"
-      ],
       "custom_css": [
         ".klaviyo-form-RAeQNK,.klaviyo-form-R5ekNb,.klaviyo-form-XXkzcJ,.klaviyo-form-UuTV7Q,.klaviyo-form-UwxEeQ {background-color: #f4f0e3;}"
       ],
