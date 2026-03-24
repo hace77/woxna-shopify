@@ -23,6 +23,7 @@
 <variant-text-section
   class="variant-text-section"
   data-section-id="{{ section.id }}"
+  data-vts-rev="2"
 >
   <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
     <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
@@ -75,6 +76,9 @@
             <div class="rich-text__text rte">
               {{ section.settings.fallback_content }}
             </div>
+          {%- else -%}
+            {%- comment -%} Visible in View Source — confirms this section file is deployed and why the block is empty {%- endcomment -%}
+            <!-- variant-text-display: empty locale={{ request.locale.iso_code }} key={{ key }} variant_id={{ product.selected_or_first_available_variant.id }}{% if variant_metafield == blank %} reason=no_metafield{% else %} reason=no_tag_no_plain_no_fallback mf_type={{ variant_metafield.type }}{% endif %} -->
           {%- endif -%}
         </div>
       </div>

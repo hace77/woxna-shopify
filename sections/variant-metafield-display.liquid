@@ -6,6 +6,7 @@
   id="VariantMetafield-Section-{{ section.id }}"
   data-variant-metafield
   data-section-id="{{ section.id }}"
+  data-vmd-rev="2"
 >
   <div class="{% if section.settings.full_width %}page-width--full{% else %}page-width{% endif %}">
     {%- liquid
@@ -32,6 +33,11 @@
           elsif variant_metafield_plain != blank
             assign variant_metafield_has_content = true
           endif
+        elsif metafield_type_check == 'file_reference'
+          # File metafields can be translated in T&A; empty locale row => .value blank
+          if variant_metafield.value != blank
+            assign variant_metafield_has_content = true
+          endif
         else
           assign variant_metafield_has_content = true
         endif
@@ -50,13 +56,15 @@
             
             # Handle image/file metafields
             if metafield_type == 'file_reference'
-              assign image_url = variant_metafield.value | image_url: width: 1200
-              assign image_width = variant_metafield.value.width | default: 1200
-              assign image_height = variant_metafield.value.height | default: 800
-              if variant_metafield.value.aspect_ratio
-                assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
+              if variant_metafield.value != blank
+                assign image_url = variant_metafield.value | image_url: width: 1200
+                assign image_width = variant_metafield.value.width | default: 1200
+                assign image_height = variant_metafield.value.height | default: 800
+                if variant_metafield.value.aspect_ratio
+                  assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
+                endif
+                echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
               endif
-              echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
             # Handle rich text metafields
             elsif metafield_type == 'rich_text_field'
               if variant_metafield_richtext_stripped != blank
@@ -89,6 +97,9 @@
           {{ section.settings.fallback_content }}
         </div>
       </div>
+    {%- else -%}
+      {%- comment -%} View Source: why this block is empty (file locale value often blank in T&A) {%- endcomment -%}
+      <!-- variant-metafield-display: empty locale={{ request.locale.iso_code }} key={{ key }} variant_id={{ product.selected_or_first_available_variant.id }}{% if variant_metafield == blank %} reason=no_metafield{% elsif variant_metafield.type == 'file_reference' and variant_metafield.value == blank %} reason=file_reference_value_blank_for_locale{% elsif variant_metafield.type == 'rich_text_field' %} reason=rich_text_no_tag_no_plain{% else %} reason=no_renderable_output{% endif %} -->
     {%- endif -%}
   </div>
 </variant-metafield-section>
@@ -160,6 +171,10 @@
     {
       "type": "paragraph",
       "content": "Display variant-specific content from metafields. This section can be placed anywhere in your product template and will update automatically when customers change variants."
+    },
+    {
+      "type": "paragraph",
+      "content": "File (image) metafields can appear in Translate & Adapt. If a language has an empty file row for that variant, the image will not show for that locale—remove the translation or attach the same file so it inherits from the default."
     },
     {
       "type": "text",

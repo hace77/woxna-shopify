@@ -1,0 +1,96 @@
+/*
+ * Minimal product template to isolate variant metafield sections (image + tech_specs).
+ * Assign in admin: Product → Theme template → "variant-metafields-test"
+ * Remove or stop using when done debugging.
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "variant_metafield_test": {
+      "type": "variant-metafield-display",
+      "name": "Variant Metafield Display (test)",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": false,
+        "heading": "",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "variant_text_test": {
+      "type": "variant-text-display",
+      "name": "Variant Text Display (test)",
+      "settings": {
+        "metafield_key": "tech_specs",
+        "show_heading": true,
+        "heading": "Tech Specs",
+        "heading_size": "h1",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "variant_metafield_test",
+    "variant_text_test"
+  ]
+}
