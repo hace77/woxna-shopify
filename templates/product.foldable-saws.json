@@ -755,8 +755,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "show_fallback": true,
-        "fallback_content": "<p>Teeth per inch: 7 TPI</p><p>Grind: 3-phase grind</p><p>Hardening: Blade 54-56 HRC</p><p>Saw direction: Pull</p><p>Blade material: Stainless steel 10C28Mo2</p><p>Handle material: Walnut with steel core and linseed oil finish.</p><p>Blade thickness: 1.5 mm (before concave grind)</p><p>Blade profile: Concave</p><p>Teeth setting: No setting (concave grind instead)</p><p><strong>Measurements</strong></p><p>Blade length: 250 mm / 9.75 in</p><p>Length, unfolded: 545 mm / 21.5 in</p><p>Length, folded: 300 mm / 11.75 in</p><p>Weight: 315 g / 11.11 oz</p>",
+        "show_fallback": false,
+        "fallback_content": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
