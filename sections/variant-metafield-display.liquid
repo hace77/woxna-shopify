@@ -10,11 +10,28 @@
   <div class="{% if section.settings.full_width %}page-width--full{% else %}page-width{% endif %}">
     {%- liquid
       assign namespace = 'custom'
-      assign key = section.settings.metafield_key
+      assign key = section.settings.metafield_key | strip
       assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
     -%}
+    {%- capture variant_metafield_richtext_html -%}
+      {{- variant_metafield | metafield_tag -}}
+    {%- endcapture -%}
+    {%- assign variant_metafield_richtext_stripped = variant_metafield_richtext_html | strip -%}
+    {%- liquid
+      assign variant_metafield_has_content = false
+      if variant_metafield != blank
+        assign metafield_type_check = variant_metafield.type
+        if metafield_type_check == 'rich_text_field'
+          if variant_metafield_richtext_stripped != blank
+            assign variant_metafield_has_content = true
+          endif
+        else
+          assign variant_metafield_has_content = true
+        endif
+      endif
+    -%}
     
-    {%- if variant_metafield != blank -%}
+    {%- if variant_metafield_has_content -%}
       <div class="variant-metafield__wrapper">
         {%- if section.settings.show_heading and section.settings.heading != blank -%}
           <h2 class="variant-metafield__heading">{{ section.settings.heading }}</h2>
@@ -35,7 +52,7 @@
               echo '<img src="' | append: image_url | append: '" alt="' | append: section.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
             # Handle rich text metafields
             elsif metafield_type == 'rich_text_field'
-              echo variant_metafield | metafield_tag
+              echo variant_metafield_richtext_html
             # Handle plain text, URLs, and other metafields
             else
               # Check if it's an image URL

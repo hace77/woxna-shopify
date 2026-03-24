@@ -30,11 +30,15 @@
         <div class="rich-text__blocks {{ section.settings.content_alignment }}">
           {%- liquid
             assign namespace = 'custom'
-            assign key = section.settings.metafield_key
+            assign key = section.settings.metafield_key | strip
             assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
           -%}
+          {%- capture variant_metafield_html -%}
+            {{- variant_metafield | metafield_tag -}}
+          {%- endcapture -%}
+          {%- assign variant_metafield_html_stripped = variant_metafield_html | strip -%}
           
-          {%- if variant_metafield != blank -%}
+          {%- if variant_metafield != blank and variant_metafield_html_stripped != blank -%}
             {%- if section.settings.show_heading and section.settings.heading != blank -%}
               <h2 class="rich-text__heading rte inline-richtext {{ section.settings.heading_size }}">
                 {{ section.settings.heading }}
@@ -42,7 +46,7 @@
             {%- endif -%}
             
             <div class="rich-text__text rte">
-              {{ variant_metafield | metafield_tag }}
+              {{ variant_metafield_html }}
             </div>
           {%- elsif section.settings.show_fallback and section.settings.fallback_content != blank -%}
             {%- if section.settings.show_heading and section.settings.heading != blank -%}

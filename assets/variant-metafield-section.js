@@ -39,8 +39,10 @@ if (!customElements.get('variant-metafield-section')) {
         this.abortController?.abort();
         this.abortController = new AbortController();
 
-        // Build the URL to fetch just this section with the new variant
-        const url = `${window.location.pathname}?variant=${variantId}&section_id=${this.sectionId}`;
+        const urlObj = new URL(window.location.href);
+        urlObj.searchParams.set('variant', String(variantId));
+        urlObj.searchParams.set('section_id', this.sectionId);
+        const url = urlObj.toString();
 
         // Fade out
         this.style.transition = 'opacity 0.2s ease';

@@ -39,8 +39,11 @@ if (!customElements.get('variant-text-section')) {
         this.abortController?.abort();
         this.abortController = new AbortController();
 
-        // Build the URL to fetch just this section with the new variant
-        const url = `${window.location.pathname}?variant=${variantId}&section_id=${this.sectionId}`;
+        // Preserve path, existing query params, and locale so Section Rendering matches storefront language
+        const urlObj = new URL(window.location.href);
+        urlObj.searchParams.set('variant', String(variantId));
+        urlObj.searchParams.set('section_id', this.sectionId);
+        const url = urlObj.toString();
 
         // Get the content container
         const contentContainer = this.querySelector('.rich-text__blocks');
