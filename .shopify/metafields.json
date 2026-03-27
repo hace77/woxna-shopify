@@ -1002,6 +1002,16 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "upsell_variant",
+      "namespace": "custom",
+      "name": "upsell variant",
+      "description": "",
+      "type": {
+        "name": "variant_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

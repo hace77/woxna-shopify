@@ -1,10 +1,26 @@
 # Cart drawer upsell
 
-When a customer opens the cart drawer, the theme can show **one** suggested product (image, title, price, link, and sometimes an add button). You choose what to suggest—not in the cart itself, but on each **product** in the Shopify admin: “when someone has *this* product in the cart, suggest *that* product or variant.”
+When a customer opens the cart drawer, the theme can show **one** suggested product (image, title, price, link, and sometimes an add button). You choose what to suggest from the **line item in the cart**: either per **variant** (most specific) or per **parent product**, or a store-wide default.
 
 ---
 
-## Add an upsell from the product page (recommended)
+## Add an upsell per variant (most specific)
+
+Use this when the **same product** has several variants, but only some should trigger a given upsell (for example size or bundle logic).
+
+1. In Shopify admin, open the **product** whose variants should trigger suggestions.
+2. In the **Variants** section, open a variant (or use bulk editing, depending on your workflow).
+3. In that variant’s **Metafields**, set as needed:
+   - **Cart upsell product** — product reference to suggest when **this variant** is the line item in the cart.
+   - **Cart upsell variant** — optional variant reference; when set together with the product reference, that variant is pre-selected for title, price, URL, and add-to-cart. You can also set **only** the variant reference; the theme resolves the parent product.
+
+Keys in code: namespace `custom`, keys `cart_upsell_product` and `cart_upselll_variant` (three `l` characters in `upselll` — must match your definition handle in Shopify exactly).
+
+4. Click **Save**.
+
+---
+
+## Add an upsell from the product page (all variants)
 
 1. In Shopify admin, go to **Products** and open the product that should **trigger** the suggestion—the one the customer has already added to the cart (for example the main product, not the accessory).
 2. Scroll to **Metafields** (usually at the bottom of the product page).
@@ -42,13 +58,21 @@ If you want **one** product suggested whenever no trigger product has its own up
 
 ## Before you start (setup)
 
-The **Upsell product** and **Upsell variant** fields must exist on products. Check **Settings → Custom data → Products** for definitions named like **Upsell product** and **Upsell variant** (this theme uses namespace `custom`). If they are missing, a developer needs to add the metafield definitions first.
+- **Variant-level (optional):** **Settings → Custom data → Variants** — definitions for `cart_upsell_product` (product reference) and `cart_upselll_variant` (variant reference), namespace `custom`, with handles matching the keys above.
+- **Product-level:** **Settings → Custom data → Products** — **Upsell product** and **Upsell variant** (`upsell_product`, `upsell_variant`). If they are missing, a developer needs to add the metafield definitions first.
 
 ---
 
 ## Technical reference (theme & metafields)
 
 The store default uses theme setting `cart_drawer_upsell_product` (**Theme settings → Cart → Cart drawer → Upsell product**). It applies only when no line item in the cart has its own upsell metafields set.
+
+### Variant metafields (`custom`, on each variant)
+
+| Metafield               | Type / notes                                                                 |
+|-------------------------|-------------------------------------------------------------------------------|
+| `cart_upsell_product`   | **Product reference** — suggest this product when **this variant** is in the cart. |
+| `cart_upselll_variant`  | Optional **variant reference** — same role as product-level `upsell_variant`; can be used alone (parent product inferred) or with `cart_upsell_product`. |
 
 ### Product metafields (`custom`)
 
@@ -57,14 +81,20 @@ The store default uses theme setting `cart_drawer_upsell_product` (**Theme setti
 | `upsell_product`     | **Product reference** — product to suggest when this product is in the cart. |
 | `upsell_variant`     | Optional. Picks **which variant** to show, price, and add to cart.          |
 
-### Priority
+### Priority (per line item, first matching line wins)
 
-1. The theme walks **cart line items** in order. The **first** line item that defines an upsell wins.
-2. If `upsell_product` is set on that product and the referenced product is available → that product is the upsell. If `upsell_variant` is also set, it selects the variant (and the displayed product follows the variant when the variant is a **reference**).
-3. If `upsell_product` is **not** set but `upsell_variant` is set as a **variant reference** → the upsell is that variant’s **parent product**, with that variant pre-selected.
-4. If no line item has these metafields, the theme uses the **theme setting** upsell product.
+For each cart line, the theme checks **the variant on that line** first, then **the product** of that line:
 
-If a product has the `upsell_product` metafield **defined in the admin** but left empty, the theme treats that as “this product has cart-drawer upsell configured” and **does not** fall back to the global theme upsell for that scenario.
+1. `cart_upsell_product` / `cart_upselll_variant` on **`item.variant`** — same pairing rules as below (product + optional variant, or variant-only).
+2. Else `upsell_product` / `upsell_variant` on **`item.product`**.
+3. If no line item configured an upsell, the theme uses the **theme setting** upsell product.
+
+Within a single line item, pairing rules mirror the product-level case:
+
+- If the **product** reference is set and available → that product is the upsell; optional **variant** reference selects the variant.
+- If only a **variant** reference is set → the upsell is that variant’s **parent product**, with that variant pre-selected.
+
+If a metafield is **defined** in the admin but the chosen reference is empty or the product is unavailable, the theme may treat that line as “upsell configured” and skip falling through in the same way as for product-level fields (see empty-state behaviour in your theme version).
 
 ### `upsell_variant` formats
 

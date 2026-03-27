@@ -638,9 +638,39 @@
         {%- assign upsell_variant_override = blank -%}
         {%- assign has_product_specific_upsell_setting = false -%}
         
-        {%- comment -%} First, check for product-specific upsells via metafields {%- endcomment -%}
+        {%- comment -%}
+          Line-item upsell: variant metafields custom.cart_upsell_product / custom.cart_upselll_variant first, then product upsell_*.
+        {%- endcomment -%}
         {%- for item in cart.items -%}
-          {%- if item.product.metafields.custom.upsell_product != nil -%}
+          {%- liquid
+            assign vs_cart_product = item.variant.metafields.custom.cart_upsell_product
+            assign vs_cart_variant = item.variant.metafields.custom.cart_upselll_variant
+          -%}
+          {%- if vs_cart_product != nil -%}
+            {%- assign has_product_specific_upsell_setting = true -%}
+            {%- assign potential_upsell = vs_cart_product.value -%}
+            {%- if potential_upsell != blank and potential_upsell.available -%}
+              {%- assign upsell_product = potential_upsell -%}
+              {%- assign upsell_source = item.variant -%}
+              {%- if vs_cart_variant != blank -%}
+                {%- assign upsell_variant_override = vs_cart_variant.value | default: vs_cart_variant -%}
+              {%- endif -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- elsif vs_cart_variant != blank -%}
+            {%- assign has_product_specific_upsell_setting = true -%}
+            {%- assign upsell_variant_override = vs_cart_variant.value | default: vs_cart_variant -%}
+            {%- if upsell_variant_override.id -%}
+              {%- assign upsell_product = upsell_variant_override.product -%}
+              {%- if upsell_product != blank and upsell_product.available -%}
+                {%- assign upsell_source = item.variant -%}
+                {%- break -%}
+              {%- else -%}
+                {%- assign upsell_product = blank -%}
+                {%- assign upsell_variant_override = blank -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- elsif item.product.metafields.custom.upsell_product != nil -%}
             {%- assign has_product_specific_upsell_setting = true -%}
             {%- assign potential_upsell = item.product.metafields.custom.upsell_product.value -%}
             {%- if potential_upsell != blank and potential_upsell.available -%}
@@ -653,7 +683,7 @@
             {%- endif -%}
           {%- elsif item.product.metafields.custom.upsell_variant != blank -%}
             {%- comment -%}
-              Variant-only upsell: derive parent product from variant reference so we do not fall back to global cart_drawer_upsell_product.
+              Product-level variant-only upsell: derive parent product from variant reference.
             {%- endcomment -%}
             {%- assign has_product_specific_upsell_setting = true -%}
             {%- assign upsell_variant_override = item.product.metafields.custom.upsell_variant.value | default: item.product.metafields.custom.upsell_variant -%}
