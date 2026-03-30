@@ -129,14 +129,14 @@
         "heading_9NMN8R": {
           "type": "heading",
           "settings": {
-            "heading": "Alfta Leather sheath",
+            "heading": "Woxna Linseed oil",
             "heading_size": "h1"
           }
         },
         "image_yQmjff": {
           "type": "image",
           "settings": {
-            "image_select": "shopify://shop_images/alfta-images-web-download.jpg",
+            "image_select": "shopify://shop_images/Download-imageoil.jpg",
             "image_link": ""
           }
         },
@@ -150,10 +150,10 @@
           "type": "button",
           "settings": {
             "button_label": "Download studio images",
-            "button_link": "https://WoxnaCDN.b-cdn.net/Alfta-studio-medium.zip",
+            "button_link": "https://WoxnaCDN.b-cdn.net/studio-oil.zip",
             "button_style_secondary": false,
             "button_label_2": "Download outoor images",
-            "button_link_2": "https://WoxnaCDN.b-cdn.net/alfta-outdoor.zip",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/Lifestyle-oil.zip",
             "button_style_secondary_2": false
           }
         }
@@ -165,6 +165,57 @@
         "button_H6KxpT"
       ],
       "name": "Gnarp",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "richtext_with_image_CynKmf": {
+      "type": "richtext_with_image",
+      "blocks": {
+        "heading_ay74YC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alfta Leather sheath",
+            "heading_size": "h1"
+          }
+        },
+        "image_MV6GRz": {
+          "type": "image",
+          "settings": {
+            "image_select": "shopify://shop_images/alfta-images-web-download.jpg",
+            "image_link": ""
+          }
+        },
+        "text_aKLDdF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This image collection contains both clean studio images and outdoor images of our Alfta Leather Sheaths</p>"
+          }
+        },
+        "button_Bg87Yr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download studio images",
+            "button_link": "https://WoxnaCDN.b-cdn.net/Alfta-studio-medium.zip",
+            "button_style_secondary": false,
+            "button_label_2": "Download outoor images",
+            "button_link_2": "https://WoxnaCDN.b-cdn.net/alfta-outdoor.zip",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ay74YC",
+        "image_MV6GRz",
+        "text_aKLDdF",
+        "button_Bg87Yr"
+      ],
+      "name": "Oil",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -534,6 +585,7 @@
     "rich_text_yHJEzK",
     "collapsible_content_UPUCyz",
     "richtext_with_image_9kDaP9",
+    "richtext_with_image_CynKmf",
     "richtext_with_image_3Bg64Q",
     "richtext_with_image_mKh7Vp",
     "richtext_with_image_F7pH9D",
