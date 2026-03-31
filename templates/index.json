@@ -46,15 +46,15 @@
         "buttons_KGYaGF"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner {display: none !important; } .banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
-        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: start; }}"
       ],
       "name": "Image banner DT",
       "settings": {
         "image": "shopify://shop_images/start_page_new_16_9.jpg",
+        "image_mobile": "shopify://shop_images/woxna-crud-16-9.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
-        "image_height_mobile": "medium",
+        "image_height_mobile": "adapt",
         "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
@@ -102,6 +102,7 @@
         "text_TDJbMg",
         "buttons_eP6wAQ"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 768px) {.banner {display: none; }}",
         "@media (max-width: 749px) {.banner__content {align-items: end; }}"
