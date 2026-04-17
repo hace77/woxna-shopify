@@ -451,6 +451,7 @@
     },
     "image_banner_CPbRdx": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
         "image_overlay_opacity": 0,
