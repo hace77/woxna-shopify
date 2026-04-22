@@ -127,26 +127,6 @@
     "collage_text_link_xVfca9": {
       "type": "collage-text-link",
       "blocks": {
-        "image_UdTHzh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ljusnan-180mm-3.jpg",
-            "img_link": "shopify://pages/compare-saws",
-            "show_text_overlay": true,
-            "heading": "Which saw should i choose",
-            "vertical_position": "bottom",
-            "mobile_vertical_position": "bottom",
-            "text_alignment": "right",
-            "mobile_text_alignment": "right",
-            "heading_size": "h1",
-            "mobile_heading_size": "h2",
-            "description": "Not sure which of our models that fits you? Let us help!",
-            "description_style": "body",
-            "button_label": "Read our guide",
-            "button_link": "shopify://pages/compare-saws",
-            "button_style_secondary": false
-          }
-        },
         "image_fA3Dgi": {
           "type": "image",
           "settings": {
@@ -164,6 +144,26 @@
             "description_style": "body",
             "button_label": "Discover",
             "button_link": "shopify://products/ljusnan-foldable-saw",
+            "button_style_secondary": false
+          }
+        },
+        "image_UdTHzh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan-180mm-3.jpg",
+            "img_link": "shopify://pages/compare-saws",
+            "show_text_overlay": true,
+            "heading": "Which saw should i choose",
+            "vertical_position": "bottom",
+            "mobile_vertical_position": "bottom",
+            "text_alignment": "right",
+            "mobile_text_alignment": "right",
+            "heading_size": "h1",
+            "mobile_heading_size": "h2",
+            "description": "Not sure which of our models that fits you? Let us help!",
+            "description_style": "body",
+            "button_label": "Read our guide",
+            "button_link": "shopify://pages/compare-saws",
             "button_style_secondary": false
           }
         },
@@ -189,8 +189,8 @@
         }
       },
       "block_order": [
-        "image_UdTHzh",
         "image_fA3Dgi",
+        "image_UdTHzh",
         "image_3FYifX"
       ],
       "custom_css": [
