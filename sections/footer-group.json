@@ -14,6 +14,19 @@
     "17593301448b063bc4": {
       "type": "apps",
       "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_qCcPPz": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "name": "Swe",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_aMb64x": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R5ekNb\"></div>"
+          }
+        },
         "klaviyo_email_marketing_sms_form_embed_block_UxcBwT": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
@@ -28,6 +41,8 @@
         }
       },
       "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_qCcPPz",
+        "klaviyo_email_marketing_sms_form_embed_block_aMb64x",
         "klaviyo_email_marketing_sms_form_embed_block_UxcBwT",
         "klaviyo_email_marketing_sms_form_embed_block_bUi776"
       ],
