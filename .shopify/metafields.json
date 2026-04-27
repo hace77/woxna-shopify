@@ -1012,6 +1012,56 @@
         "name": "variant_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "primary_use",
+      "namespace": "custom",
+      "name": "Primary use",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "best_for",
+      "namespace": "custom",
+      "name": "Best for",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "maintenance_level",
+      "namespace": "custom",
+      "name": "Maintenance level ",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "country_of_origin",
+      "namespace": "custom",
+      "name": "Country of origin",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "cut_direction",
+      "namespace": "custom",
+      "name": "Cut direction",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
@@ -1253,6 +1303,26 @@
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "cart_upselll_variant",
+      "namespace": "custom",
+      "name": "cart upselll variant",
+      "description": "",
+      "type": {
+        "name": "variant_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cart_upsell_product",
+      "namespace": "custom",
+      "name": "cart upsell product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
       }
     }
   ],

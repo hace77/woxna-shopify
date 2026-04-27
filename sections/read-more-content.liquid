@@ -1,0 +1,430 @@
+{%- style -%}
+  .read-more-content__inner {
+    max-width: var(--read-more-content-max-width);
+    margin: 0 auto;
+  }
+
+  .read-more-content__heading {
+    margin: 0 0 2.2rem;
+    text-align: {{ section.settings.text_align }};
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .read-more-content__body-wrap {
+    position: relative;
+  }
+
+  .read-more-content__body {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: rgba(var(--color-foreground), 0.9);
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: {{ section.settings.text_align }};
+  }
+
+  .read-more-content__body p {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .read-more-content__body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .read-more-content.is-collapsed.has-overflow.show-fade .read-more-content__body {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 calc(100% - var(--read-more-fade-height)),
+      rgba(0, 0, 0, 0.88) calc(100% - (var(--read-more-fade-height) * 0.55)),
+      rgba(0, 0, 0, 0.6) calc(100% - (var(--read-more-fade-height) * 0.3)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 calc(100% - var(--read-more-fade-height)),
+      rgba(0, 0, 0, 0.88) calc(100% - (var(--read-more-fade-height) * 0.55)),
+      rgba(0, 0, 0, 0.6) calc(100% - (var(--read-more-fade-height) * 0.3)),
+      transparent 100%
+    );
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .read-more-content__toggle {
+    margin-top: 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: {{ section.settings.text_align }};
+    text-underline-offset: 0.35rem;
+  }
+
+  .read-more-content__toggle-wrap {
+    display: flex;
+    justify-content: {% if section.settings.text_align == 'center' %}center{% elsif section.settings.text_align == 'right' %}flex-end{% else %}flex-start{% endif %};
+  }
+
+  .read-more-content__toggle[hidden] {
+    display: none;
+  }
+
+  .read-more-content.is-expanded .read-more-content__body {
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .read-more-content__heading {
+      margin-bottom: 2.4rem;
+    }
+  }
+{%- endstyle -%}
+
+<section
+  class="read-more-content color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+  data-read-more-content
+  data-read-more-label="{{ section.settings.read_more_label | escape }}"
+  data-read-less-label="{{ section.settings.read_less_label | escape }}"
+  data-collapsed-height-mobile="{{ section.settings.collapsed_height_mobile }}"
+  data-collapsed-height-desktop="{{ section.settings.collapsed_height_desktop }}"
+  data-hide-toggle-if-short="{{ section.settings.hide_toggle_if_short }}"
+  data-start-expanded="{{ section.settings.start_expanded }}"
+  data-show-fade="{{ section.settings.show_fade }}"
+  style="--read-more-content-max-width: {{ section.settings.content_max_width }}px; --read-more-fade-height: {{ section.settings.fade_height }}px;"
+>
+  <div class="page-width">
+    <div class="read-more-content__inner">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="read-more-content__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+
+      <div class="read-more-content__body-wrap">
+        <div
+          id="ReadMoreContent-{{ section.id }}"
+          class="read-more-content__body rte"
+          data-read-more-body
+        >
+          {{ section.settings.content }}
+        </div>
+      </div>
+
+      <div class="read-more-content__toggle-wrap">
+        <button
+          type="button"
+          class="read-more-content__toggle link underlined-link"
+          data-read-more-toggle
+          aria-expanded="false"
+          aria-controls="ReadMoreContent-{{ section.id }}"
+        >
+          {{ section.settings.read_more_label }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (() => {
+    if (window.ReadMoreContentInitialized) return;
+    window.ReadMoreContentInitialized = true;
+
+    class ReadMoreContent {
+      constructor(container) {
+        this.container = container;
+        this.body = container.querySelector('[data-read-more-body]');
+        this.toggle = container.querySelector('[data-read-more-toggle]');
+        this.state = {
+          expanded: false,
+        };
+
+        if (!this.body || !this.toggle) return;
+
+        this.readMoreLabel = container.dataset.readMoreLabel || 'Read more';
+        this.readLessLabel = container.dataset.readLessLabel || 'Read less';
+        this.hideToggleIfShort = container.dataset.hideToggleIfShort === 'true';
+        this.startExpanded = container.dataset.startExpanded === 'true';
+        this.showFade = container.dataset.showFade === 'true';
+
+        this.onToggleClick = this.onToggleClick.bind(this);
+        this.onResize = this.onResize.bind(this);
+        this.handleResize = this.debounce(this.onResize, 150);
+
+        this.toggle.addEventListener('click', this.onToggleClick);
+        window.addEventListener('resize', this.handleResize);
+
+        this.initialize();
+      }
+
+      getCollapsedHeight() {
+        const isDesktop = window.matchMedia('(min-width: 750px)').matches;
+        const mobile = Number.parseInt(this.container.dataset.collapsedHeightMobile || '180', 10);
+        const desktop = Number.parseInt(this.container.dataset.collapsedHeightDesktop || '120', 10);
+        return isDesktop ? desktop : mobile;
+      }
+
+      hasOverflow(collapsedHeight) {
+        this.body.style.maxHeight = 'none';
+        const scrollHeight = this.body.scrollHeight;
+        return scrollHeight > collapsedHeight + 1;
+      }
+
+      initialize() {
+        const collapsedHeight = this.getCollapsedHeight();
+        const contentOverflows = this.hasOverflow(collapsedHeight);
+        this.container.classList.toggle('show-fade', this.showFade);
+        this.container.classList.toggle('has-overflow', contentOverflows);
+
+        if (!contentOverflows && this.hideToggleIfShort) {
+          this.toggle.hidden = true;
+          this.body.style.maxHeight = 'none';
+          this.body.style.overflow = 'visible';
+          this.setExpandedState(true);
+          return;
+        }
+
+        this.toggle.hidden = false;
+        this.applyState(this.startExpanded, true);
+      }
+
+      setExpandedState(isExpanded) {
+        this.state.expanded = isExpanded;
+        this.container.classList.toggle('is-expanded', isExpanded);
+        this.container.classList.toggle('is-collapsed', !isExpanded);
+        this.toggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        this.toggle.textContent = isExpanded ? this.readLessLabel : this.readMoreLabel;
+      }
+
+      applyState(isExpanded, skipTransition = false) {
+        const collapsedHeight = this.getCollapsedHeight();
+        const previousTransition = this.body.style.transition;
+
+        if (skipTransition) {
+          this.body.style.transition = 'none';
+        }
+
+        if (isExpanded) {
+          this.body.style.maxHeight = `${this.body.scrollHeight}px`;
+        } else {
+          this.body.style.maxHeight = `${collapsedHeight}px`;
+        }
+
+        this.body.style.overflow = 'hidden';
+        this.setExpandedState(isExpanded);
+
+        if (skipTransition) {
+          requestAnimationFrame(() => {
+            this.body.style.transition = previousTransition;
+          });
+        }
+      }
+
+      onToggleClick() {
+        this.applyState(!this.state.expanded);
+      }
+
+      onResize() {
+        if (this.toggle.hidden) return;
+        const collapsedHeight = this.getCollapsedHeight();
+        const contentOverflows = this.hasOverflow(collapsedHeight);
+        this.container.classList.toggle('has-overflow', contentOverflows);
+        this.applyState(this.state.expanded, true);
+      }
+
+      debounce(callback, wait) {
+        let timeoutId;
+        return (...args) => {
+          clearTimeout(timeoutId);
+          timeoutId = setTimeout(() => callback(...args), wait);
+        };
+      }
+    }
+
+    const initReadMoreSections = (root = document) => {
+      root.querySelectorAll('[data-read-more-content]').forEach((container) => {
+        if (container.dataset.readMoreInitialized === 'true') return;
+        container.dataset.readMoreInitialized = 'true';
+        new ReadMoreContent(container);
+      });
+    };
+
+    document.addEventListener('DOMContentLoaded', () => initReadMoreSections());
+    document.addEventListener('shopify:section:load', (event) => {
+      initReadMoreSections(event.target);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Read more content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Finska friluftsknivar: handgjord styrka och precision från Finland",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "default": "<p>I nästan 50 år har Rosellis finska friluftsknivar varit betrodda av äventyrare, vandrare och bushcraftutövare. Varje blad formas för att leverera maximal skärpa, bra balans och trygg kontroll i fält.</p><p>Välj mellan premiumstål utvecklade för nordiska förhållanden och upptäck ett knivhantverk som håller över tid.</p>",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "read_more_label",
+      "default": "LÄS MER",
+      "label": "Read more label"
+    },
+    {
+      "type": "text",
+      "id": "read_less_label",
+      "default": "LÄS MINDRE",
+      "label": "Read less label"
+    },
+    {
+      "type": "range",
+      "id": "collapsed_height_mobile",
+      "min": 80,
+      "max": 420,
+      "step": 10,
+      "unit": "px",
+      "label": "Collapsed height (mobile)",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "collapsed_height_desktop",
+      "min": 80,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Collapsed height (desktop)",
+      "default": 120
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_toggle_if_short",
+      "default": true,
+      "label": "Hide toggle if content is short"
+    },
+    {
+      "type": "checkbox",
+      "id": "start_expanded",
+      "default": false,
+      "label": "Start expanded"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "min": 500,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 980
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left",
+      "label": "Text alignment"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_fade",
+      "default": true,
+      "label": "Show fade in collapsed state"
+    },
+    {
+      "type": "range",
+      "id": "fade_height",
+      "min": 20,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Fade height",
+      "default": 62
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Read more content"
+    }
+  ]
+}
+{% endschema %}
