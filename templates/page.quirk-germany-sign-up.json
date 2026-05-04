@@ -60,7 +60,7 @@
         "heading_mJxxAt": {
           "type": "heading",
           "settings": {
-            "heading": "Black Friday offer",
+            "heading": "Woxna Frühlings-Outlet",
             "use_collection_title": false,
             "heading_size": "h0"
           }
@@ -78,7 +78,9 @@
         "heading_mJxxAt",
         "text_6kVURw"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".banner__content {align-items: end;}"
+      ],
       "name": "hero mobile",
       "settings": {
         "image": "shopify://shop_images/landingpage-16-9.jpg",
@@ -397,17 +399,10 @@
     "rich_text_4t7TPi": {
       "type": "rich-text",
       "blocks": {
-        "heading_Y9iwyF": {
-          "type": "heading",
-          "settings": {
-            "heading": "Thank You for Helping Us to Be More Sustainable",
-            "heading_size": "h1"
-          }
-        },
         "text_EpK4Mh": {
           "type": "text",
           "settings": {
-            "text": "<p>This offer lets us share these one-of-a-kind tools with you while doing it in a mindful way and not just boosting the excessive sales of the season. By choosing one of these saws, you’re not only saving money but also supporting our mission to reduce waste.</p><p>We still think that you should only get products that you actually want and will take care of, and if a Woxna could be a part of that, we would be honored.</p>"
+            "text": "<p>Im Rahmen unseres Nachhaltigkeitsversprechens bieten wir im Mai unser meistverkauftes Modell, die Ljusnan 250 mm, mit unterschiedlich gefärbten Holzhälften zu einem reduzierten Preis an – voll funktionsfähig und mechanisch identisch mit unserem Standardmodell. Da wir dies tun, um Griffe vor der Entsorgung zu bewahren, ist die Anzahl sehr begrenzt. Trag dich hier ein und erhalte als Erster eine Benachrichtigung, wenn Woxnas Frühlingsangebot startet.</p>"
           }
         },
         "button_CwdNWY": {
@@ -423,11 +418,9 @@
         }
       },
       "block_order": [
-        "heading_Y9iwyF",
         "text_EpK4Mh",
         "button_CwdNWY"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
