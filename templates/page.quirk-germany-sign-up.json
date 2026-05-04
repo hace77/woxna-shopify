@@ -68,7 +68,7 @@
         "text_6kVURw": {
           "type": "text",
           "settings": {
-            "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
+            "text": "",
             "use_collection_description": false,
             "text_style": "subtitle"
           }
@@ -78,18 +78,15 @@
         "heading_mJxxAt",
         "text_6kVURw"
       ],
-      "disabled": true,
-      "custom_css": [
-        "@media (min-width: 768px) {.banner {display: none; }}",
-        "@media (max-width: 749px) {.banner__content {align-items: start; }}"
-      ],
+      "custom_css": [],
       "name": "hero mobile",
       "settings": {
-        "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
+        "image": "shopify://shop_images/landingpage-16-9.jpg",
+        "image_mobile": "shopify://shop_images/landinngpage-mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "image_height_mobile": "medium",
-        "desktop_content_position": "middle-center",
+        "image_height_mobile": "adapt",
+        "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
@@ -97,7 +94,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "countdown_timer_cDtxRJ": {
