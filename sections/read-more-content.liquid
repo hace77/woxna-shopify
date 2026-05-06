@@ -62,7 +62,7 @@
     align-items: center;
     justify-content: flex-start;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: {{ section.settings.text_align }};
@@ -71,7 +71,7 @@
 
   .read-more-content__toggle-wrap {
     display: flex;
-    justify-content: {% if section.settings.text_align == 'center' %}center{% elsif section.settings.text_align == 'right' %}flex-end{% else %}flex-start{% endif %};
+    justify-content: center;
   }
 
   .read-more-content__toggle[hidden] {
@@ -324,9 +324,9 @@
     {
       "type": "range",
       "id": "collapsed_height_mobile",
-      "min": 80,
+      "min": 60,
       "max": 420,
-      "step": 10,
+      "step": 5,
       "unit": "px",
       "label": "Collapsed height (mobile)",
       "default": 180
@@ -334,7 +334,7 @@
     {
       "type": "range",
       "id": "collapsed_height_desktop",
-      "min": 80,
+      "min": 60,
       "max": 600,
       "step": 10,
       "unit": "px",
