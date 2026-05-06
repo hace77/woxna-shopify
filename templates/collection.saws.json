@@ -69,7 +69,7 @@
         "hide_toggle_if_short": false,
         "start_expanded": false,
         "content_max_width": 980,
-        "text_align": "left",
+        "text_align": "center",
         "show_fade": true,
         "fade_height": 96,
         "color_scheme": "",
