@@ -40,7 +40,7 @@
       "name": "Image banner DT",
       "settings": {
         "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
-        "image_mobile": "shopify://shop_images/Ljusnan-saw-collection-14-5.jpg",
+        "image_mobile": "shopify://shop_images/hero_saws5_7.png",
         "image_overlay_opacity": 10,
         "image_height": "small",
         "image_height_mobile": "adapt",
@@ -61,7 +61,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "content": "<p>{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}</p>",
+        "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
         "read_more_label": "Read more",
         "read_less_label": "Read less",
         "collapsed_height_mobile": 60,
