@@ -64,7 +64,7 @@
         "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
         "read_more_label": "Read more",
         "read_less_label": "Read less",
-        "collapsed_height_mobile": 60,
+        "collapsed_height_mobile": 105,
         "collapsed_height_desktop": 70,
         "hide_toggle_if_short": false,
         "start_expanded": false,
