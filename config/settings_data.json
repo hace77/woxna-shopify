@@ -152,11 +152,6 @@
         "disabled": false,
         "settings": {}
       },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
@@ -188,6 +183,11 @@
       },
       "3138269044488530766": {
         "type": "shopify://apps/uppromote-affiliate/blocks/core-script/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
