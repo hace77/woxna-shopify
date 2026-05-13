@@ -26,6 +26,16 @@
           "type": "price",
           "settings": {}
         },
+        "variant_metafield_XnEFkV": {
+          "type": "variant_metafield",
+          "settings": {
+            "metafield_key": "tech_specs",
+            "show_heading": false,
+            "heading": "test",
+            "show_fallback": true,
+            "fallback_content": ""
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -56,6 +66,7 @@
         "title",
         "klaviyo_reviews_average_rating_EkJjBx",
         "price",
+        "variant_metafield_XnEFkV",
         "variant_picker",
         "buy_buttons",
         "custom_liquid_jJDHYK",
