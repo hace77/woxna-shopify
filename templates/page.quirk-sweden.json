@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_Np9Gxc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_XQnQHg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perfect Performance with only Minor Cosmetic Flaws.",
+            "heading_size": "h1"
+          }
+        },
+        "text_qBNpnz": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XQnQHg",
+        "text_qBNpnz"
+      ],
+      "custom_css": [
+        "@media (width <= 450px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/halsing_quirk_germany.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_VWa4Qh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GyNWxU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Woxna, we have extremely high standards for the finish of our blades. However, sometimes small, superficial scratches occur on the steel during production.<br/>Since we do not compromise, we do not sell these examples at full price – even though they are technically absolutely flawless. The oak handle is flawless, and the impulse-hardened teeth offer the same biting cut as always.<br/>Instead of discarding these fully functional tools, we offer them to you in our Sustainability Collection.<br/>The perfect choice for anyone who uses their tools hard and knows that this type of scratch would happen after a few uses anyway.</p>"
+          }
+        },
+        "button_GQJCdi": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_GyNWxU",
+        "button_GQJCdi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_CUh9Wb": {
+      "type": "featured-product",
+      "blocks": {
+        "text_wJxkgh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_wn8mQa": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_Wqt7Hn": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_wKPrb8": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_Pdq8VG": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_T37yW3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "share_pV3hTx": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_wJxkgh",
+        "title_wn8mQa",
+        "price_Wqt7Hn",
+        "variant_picker_wKPrb8",
+        "quantity_selector_Pdq8VG",
+        "buy_buttons_T37yW3",
+        "share_pV3hTx"
+      ],
+      "custom_css": [
+        "#shopify-accelerated-checkout {display: none !important;}",
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}",
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "quirked-batch",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_jECtCT": {
+      "type": "collage",
+      "blocks": {
+        "image_i7Wmfx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch1.jpg"
+          }
+        },
+        "image_VApkeJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch3.jpg"
+          }
+        },
+        "image_Rg7JCy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/scratch2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_i7Wmfx",
+        "image_VApkeJ",
+        "image_Rg7JCy"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "This is what the scratches can look like",
+        "heading_size": "h2",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_Np9Gxc",
+    "main",
+    "rich_text_VWa4Qh",
+    "featured_product_CUh9Wb",
+    "collage_jECtCT"
+  ]
+}
