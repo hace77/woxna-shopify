@@ -22,10 +22,6 @@
             "product": "{{product}}"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_metafield_XnEFkV": {
           "type": "variant_metafield",
           "settings": {
@@ -33,8 +29,13 @@
             "show_heading": false,
             "heading": "test",
             "show_fallback": true,
-            "fallback_content": ""
+            "fallback_content": "",
+            "enable_strikethrough": true
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -65,8 +66,8 @@
       "block_order": [
         "title",
         "klaviyo_reviews_average_rating_EkJjBx",
-        "price",
         "variant_metafield_XnEFkV",
+        "price",
         "variant_picker",
         "buy_buttons",
         "custom_liquid_jJDHYK",
