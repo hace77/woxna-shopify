@@ -128,7 +128,8 @@
             "show_heading": false,
             "heading": "",
             "show_fallback": false,
-            "fallback_content": ""
+            "fallback_content": "",
+            "enable_strikethrough": true
           }
         },
         "variant_picker_wKPrb8": {
