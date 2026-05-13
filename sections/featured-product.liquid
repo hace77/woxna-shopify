@@ -500,7 +500,7 @@
                           <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
                         {%- endif -%}
 
-                        <div class="variant-metafield__content">
+                        <div class="variant-metafield__content{% if block.settings.enable_strikethrough %} variant-metafield__content--strikethrough{% endif %}">
                           {%- liquid
                             assign metafield_type = variant_metafield.type
 
@@ -534,7 +534,7 @@
                         {%- if block.settings.show_heading and block.settings.heading != blank -%}
                           <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
                         {%- endif -%}
-                        <div class="variant-metafield__content">
+                        <div class="variant-metafield__content{% if block.settings.enable_strikethrough %} variant-metafield__content--strikethrough{% endif %}">
                           {{ block.settings.fallback_content }}
                         </div>
                       </div>
@@ -1468,6 +1468,13 @@
           "id": "fallback_content",
           "label": "Fallback Content",
           "info": "Content to display if the variant metafield is empty"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_strikethrough",
+          "label": "Strikethrough text",
+          "default": false,
+          "info": "Display the metafield text with a line through it"
         }
       ]
     }

@@ -112,3 +112,11 @@
   pointer-events: none;
 }
 
+/* Strikethrough modifier */
+.variant-metafield__content--strikethrough,
+.variant-metafield__content--strikethrough p,
+.variant-metafield__content--strikethrough li,
+.variant-metafield__content--strikethrough span {
+  text-decoration: line-through;
+}
+
