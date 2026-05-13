@@ -215,7 +215,7 @@
         "hero_block_1_button_url": "shopify://pages/compare-saws",
         "hero_block_1_color_scheme": "scheme-4d0b0ba2-2dbe-4e70-9640-fa986c553f2a",
         "hero_block_1_vertical_position": "top",
-        "hero_block_1_mobile_vertical_position": "bottom",
+        "hero_block_1_mobile_vertical_position": "center",
         "hero_block_1_text_alignment": "left",
         "hero_block_1_mobile_text_alignment": "center",
         "hero_block_1_heading_size": "h1",
