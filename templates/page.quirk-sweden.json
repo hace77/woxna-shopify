@@ -121,6 +121,16 @@
           "type": "price",
           "settings": {}
         },
+        "variant_metafield_D3ALVj": {
+          "type": "variant_metafield",
+          "settings": {
+            "metafield_key": "tech_specs",
+            "show_heading": false,
+            "heading": "",
+            "show_fallback": false,
+            "fallback_content": ""
+          }
+        },
         "variant_picker_wKPrb8": {
           "type": "variant_picker",
           "settings": {
@@ -150,6 +160,7 @@
         "text_wJxkgh",
         "title_wn8mQa",
         "price_Wqt7Hn",
+        "variant_metafield_D3ALVj",
         "variant_picker_wKPrb8",
         "quantity_selector_Pdq8VG",
         "buy_buttons_T37yW3",
