@@ -167,6 +167,7 @@
       "settings": {
         "hide_when_empty": true,
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
+        "image_mobile": "{{ product.metafields.custom.measurement_mobile.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_height_mobile": "adapt",
