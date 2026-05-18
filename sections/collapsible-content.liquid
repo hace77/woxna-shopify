@@ -69,14 +69,37 @@
             </div>
           {% endif %}
           <div class="grid__item">
+            {%- assign first_visible_row_opened = false -%}
             {%- for block in section.blocks -%}
+              {%- liquid
+                assign show_collapsible_row = true
+                if block.settings.hide_when_empty
+                  capture collapsible_row_body
+                    echo block.settings.row_content
+                    if block.settings.page != blank
+                      echo block.settings.page.content
+                    endif
+                  endcapture
+                  assign collapsible_row_body_stripped = collapsible_row_body | strip_html | strip
+                  if collapsible_row_body_stripped == blank
+                    assign show_collapsible_row = false
+                  endif
+                endif
+
+                assign open_collapsible_row = false
+                if section.settings.open_first_collapsible_row and first_visible_row_opened == false and show_collapsible_row
+                  assign open_collapsible_row = true
+                  assign first_visible_row_opened = true
+                endif
+              -%}
+              {%- if show_collapsible_row -%}
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 <details
                   id="Details-{{ block.id }}-{{ section.id }}"
-                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                  {% if open_collapsible_row %}
                     open
                   {% endif %}
                 >
@@ -98,6 +121,7 @@
                   </div>
                 </details>
               </div>
+              {%- endif -%}
             {%- endfor -%}
           </div>
         </div>
@@ -289,6 +313,13 @@
       "type": "collapsible_row",
       "name": "t:sections.collapsible_content.blocks.collapsible_row.name",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "hide_when_empty",
+          "default": false,
+          "label": "Hide row when content is empty",
+          "info": "Hides this row when row content and page are empty (including empty metafield output)."
+        },
         {
           "type": "text",
           "id": "heading",
