@@ -78,6 +78,7 @@
         },
         "collapsible_tab_RjT77h": {
           "type": "collapsible_tab",
+          "disabled": true,
           "source": "{{ product.metafields.custom.product_care.value }}",
           "settings": {
             "heading": "{{ product.metafields.custom.product_care.value.title.value }}",
@@ -149,6 +150,7 @@
         "heading_WyC3kD",
         "text_kfYDch"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
