@@ -1,7 +1,20 @@
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{%- if section.settings.enable_sticky_button -%}
-  {{ 'sticky-banner-button.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
+{%- liquid
+  assign banner_has_media = false
+  if section.settings.image != blank or section.settings.image_2 != blank or section.settings.image_mobile != blank
+    assign banner_has_media = true
+  endif
+
+  assign show_banner = true
+  if section.settings.hide_when_empty and banner_has_media == false
+    assign show_banner = false
+  endif
+-%}
+
+{%- if show_banner -%}
+  {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+  {%- if section.settings.enable_sticky_button -%}
+    {{ 'sticky-banner-button.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
 
 {%- liquid
   assign desktop_adapt_style = false
@@ -106,7 +119,7 @@
           fetchpriority: fetch_priority
       }}
     </div>
-  {%- elsif section.settings.image_2 == blank -%}
+  {%- elsif section.settings.image_2 == blank and section.settings.hide_when_empty == false -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
@@ -258,8 +271,9 @@
   </div>
 {%- endif -%}
 
-{%- if section.settings.enable_sticky_button -%}
-  <script src="{{ 'sticky-banner-button.js' | asset_url }}" defer="defer"></script>
+  {%- if section.settings.enable_sticky_button -%}
+    <script src="{{ 'sticky-banner-button.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
 {%- endif -%}
 
 {% schema %}
@@ -271,6 +285,13 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_when_empty",
+      "default": false,
+      "label": "Hide section when no image",
+      "info": "Hides this banner when no image is set (including via product metafield). Placeholder images are never shown."
+    },
     {
       "type": "image_picker",
       "id": "image",
