@@ -26,6 +26,10 @@
             "product": "{{product}}"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -62,9 +66,14 @@
             "enable_strikethrough": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
+        "collapsible_tab_khpBYz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product description",
+            "icon": "check_mark",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": ""
+          }
         },
         "collapsible_tab_RjT77h": {
           "type": "collapsible_tab",
@@ -81,12 +90,13 @@
         "title",
         "price",
         "klaviyo_reviews_average_rating_iTB8FR",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "sku_4fq8JC",
         "variant_metafield_z7cPYj",
-        "description",
+        "collapsible_tab_khpBYz",
         "collapsible_tab_RjT77h"
       ],
       "custom_css": [
