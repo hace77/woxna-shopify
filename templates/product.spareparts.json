@@ -156,7 +156,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "image_banner_LF6Vdb": {
@@ -165,9 +165,10 @@
       "settings": {
         "hide_when_empty": true,
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
+        "image_mobile": "shopify://shop_images/howto-tooth-1-1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "image_height_mobile": "medium",
+        "image_height_mobile": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -181,9 +182,12 @@
     },
     "image_banner_rEAWDe": {
       "type": "image-banner",
+      "custom_css": [
+        ".banner {margin-top: 2rem;}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "hide_when_empty": false,
+        "hide_when_empty": true,
         "image": "{{ product.metafields.custom.story.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "large",
