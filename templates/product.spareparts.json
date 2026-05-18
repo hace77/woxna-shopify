@@ -58,7 +58,8 @@
             "show_heading": false,
             "heading": "",
             "show_fallback": false,
-            "fallback_content": ""
+            "fallback_content": "",
+            "enable_strikethrough": false
           }
         },
         "description": {
@@ -119,6 +120,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "hide_when_empty": false,
         "image": "{{ product.metafields.custom.story.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -151,11 +153,66 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "image_banner_LF6Vdb": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ddY6cW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "use_collection_title": false,
+            "heading_size": "h1"
+          }
+        },
+        "text_g6WiLb": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "use_collection_description": false,
+            "text_style": "body"
+          }
+        },
+        "buttons_hPREDK": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ddY6cW",
+        "text_g6WiLb",
+        "buttons_hPREDK"
+      ],
+      "name": "measuremnet image",
+      "settings": {
+        "hide_when_empty": true,
+        "image": "{{ product.metafields.custom.measurement_illustration.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
     "image_banner_rEAWDe",
-    "related-products"
+    "related-products",
+    "image_banner_LF6Vdb"
   ]
 }
