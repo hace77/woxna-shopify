@@ -9,16 +9,25 @@
  */
 {
   "sections": {
-    "rich_text_AAMCp4": {
-      "type": "rich-text",
-      "name": "t:sections.rich-text.presets.name",
+    "image_banner_PkaUr8": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "hide_when_empty": false,
+        "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
+        "image_mobile": "shopify://shop_images/Woxna-Ljusnan-04-250.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "main": {
@@ -43,7 +52,7 @@
     }
   },
   "order": [
-    "rich_text_AAMCp4",
+    "image_banner_PkaUr8",
     "main",
     "retailers_locations"
   ]
