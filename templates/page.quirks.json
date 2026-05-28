@@ -1,0 +1,192 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_Np9Gxc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_XQnQHg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perfect Performance with only Minor Cosmetic Flaws.",
+            "use_collection_title": false,
+            "heading_size": "h1"
+          }
+        },
+        "text_qBNpnz": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "use_collection_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XQnQHg",
+        "text_qBNpnz"
+      ],
+      "custom_css": [
+        "@media (width <= 450px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/halsing_quirk_germany.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-b299d52c-4614-4c8b-995f-5e845dc10336",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        "p:first-of-type {padding-top: 30px;}",
+        "ol {list-style-position: outside;}"
+      ],
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_VWa4Qh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GyNWxU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Woxna, we maintain rigorous standards for the finish of our blades and handles. Every saw undergoes a final quality inspection before it leaves our hands. Occasionally, a tool does not meet our strict visual criteria, even though its performance is perfect.</p><p>These items might feature minor surface scratches on the steel or natural color variations and nuances in the wooden handles. Because we never compromise on our visual standards, we do not sell these examples at full price – despite them being technically flawless in every way.</p>"
+          }
+        },
+        "button_GQJCdi": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_GyNWxU",
+        "button_GQJCdi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_CUh9Wb": {
+      "type": "featured-product",
+      "blocks": {
+        "text_wJxkgh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_wn8mQa": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_Wqt7Hn": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_wKPrb8": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_Pdq8VG": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_T37yW3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "share_pV3hTx": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_wJxkgh",
+        "title_wn8mQa",
+        "price_Wqt7Hn",
+        "variant_picker_wKPrb8",
+        "quantity_selector_Pdq8VG",
+        "buy_buttons_T37yW3",
+        "share_pV3hTx"
+      ],
+      "custom_css": [
+        "#shopify-accelerated-checkout {display: none !important;}",
+        ".accelerated-checkout-button {display: none !important;}",
+        "#product-form-template--24677230182743__featured_product_fDCRqU > div > div > shopify-accelerated-checkout > shop-pay-wallet-button {display: none;}",
+        "#more-payment-options-link {display: none;}",
+        ".share-button__button,.share-button__fallback button {display: none;}",
+        ".product__tax {display: none;}",
+        "input.disabled + label {display: none !important;}",
+        ".custom-label {background-color: #dc143c; color: white;}",
+        " .badge{display: none; }"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "quirked-batch",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_Np9Gxc",
+    "main",
+    "rich_text_VWa4Qh",
+    "featured_product_CUh9Wb"
+  ]
+}
