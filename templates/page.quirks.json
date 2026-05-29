@@ -67,6 +67,28 @@
         "padding_bottom": 28
       }
     },
+    "read_more_content_EhMFyy": {
+      "type": "read-more-content",
+      "name": "Read more content",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "content": "<p>At Woxna, we maintain rigorous standards for the finish of our blades and handles. Every saw undergoes a final quality inspection before it leaves our hands. Occasionally, a tool does not meet our strict visual criteria, even though its performance is perfect.</p><p>These items might feature minor surface scratches on the steel or natural color variations and nuances in the wooden handles. Because we never compromise on our visual standards, we do not sell these examples at full price – despite them being technically flawless in every way.</p><p>Regarding the Ljusnan 250 mm, the cosmetic variation concerns the two handle halves, which show a noticeable difference in color tone. In every other way – the steel, the teeth, the balance – it is the same saw you would find in our standard range.</p>",
+        "read_more_label": "LÄS MER",
+        "read_less_label": "LÄS MINDRE",
+        "collapsed_height_mobile": 180,
+        "collapsed_height_desktop": 120,
+        "hide_toggle_if_short": true,
+        "start_expanded": false,
+        "content_max_width": 980,
+        "text_align": "left",
+        "show_fade": true,
+        "fade_height": 62,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_VWa4Qh": {
       "type": "rich-text",
       "blocks": {
@@ -92,6 +114,7 @@
         "text_GyNWxU",
         "button_GQJCdi"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -187,6 +210,7 @@
   "order": [
     "image_banner_Np9Gxc",
     "main",
+    "read_more_content_EhMFyy",
     "rich_text_VWa4Qh",
     "featured_product_CUh9Wb"
   ]
