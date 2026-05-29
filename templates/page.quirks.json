@@ -205,6 +205,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_e7EtKU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4tCNEM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
+            "title": "Ljusnan",
+            "text": "<p>Ljusnan is ideal for bush crafters, campers, hunters and anyone else who needs a compact and reliable folding saw. It features a a high-carbon, stainless steel blade with knife-grade quality, so you won't have to worry about rust or tedious maintenance. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Ljusnan will be dependable companion on your adventures into the great outdoors.</p>",
+            "link_label": "Ljusnan",
+            "link": "shopify://products/ljusnan-foldable-saw"
+          }
+        },
+        "column_gYQEaB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Halsing-folding-saw-250mm-103.jpg",
+            "title": "Hälsing",
+            "text": "<p>Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.</p>",
+            "link_label": "Hälsing",
+            "link": "shopify://products/halsing-foldable-saw"
+          }
+        }
+      },
+      "block_order": [
+        "column_4tCNEM",
+        "column_gYQEaB"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -212,6 +258,7 @@
     "main",
     "read_more_content_EhMFyy",
     "rich_text_VWa4Qh",
-    "featured_product_CUh9Wb"
+    "featured_product_CUh9Wb",
+    "multicolumn_e7EtKU"
   ]
 }
