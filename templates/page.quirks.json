@@ -188,7 +188,7 @@
         "input.disabled + label {display: none !important;}",
         ".custom-label {background-color: #dc143c; color: white;}",
         ".badge {display: none;}",
-        ".product-form__submit {padding: 1.6rem 3.2rem; font-size: 1.7rem; min-height: 5.4rem; background-color: #C8102E !important;}"
+        ".product-form__submit {padding: 2rem 3.2rem; font-size: 1.7rem; min-height: 5.4rem; background-color: #c8102e !important; border-radius: 20px;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
