@@ -39,8 +39,8 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "hide_when_empty": false,
-        "image": "shopify://shop_images/halsing_quirk_germany.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/Woxna-Ljusnan-16-250.jpg",
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
