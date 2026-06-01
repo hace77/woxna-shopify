@@ -39,6 +39,7 @@
       ],
       "name": "Image banner DT",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
         "image_mobile": "shopify://shop_images/Ljusnan-180mm-2.jpg",
         "image_overlay_opacity": 10,
@@ -108,6 +109,7 @@
       ],
       "name": "Image banner MOBILE",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/hero_saws5_7.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
@@ -189,7 +191,7 @@
         ".card__usp {font-size: 1.3rem;}"
       ],
       "settings": {
-        "products_per_page": 8,
+        "products_per_page": 12,
         "columns_desktop": 3,
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_ratio": "adapt",
