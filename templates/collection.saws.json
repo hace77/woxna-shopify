@@ -205,7 +205,7 @@
         "show_usp_text": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": false,
+        "enable_sorting": true,
         "show_hero_block_1": true,
         "hero_block_1_position_desktop": "1",
         "hero_block_1_position_mobile": "2",
