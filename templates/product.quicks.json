@@ -80,10 +80,10 @@
         ".product-form__submit {background-color: #000000 !important; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
         ".price__badge-sold-out {display: none;}",
-        ".js.product-form__input.product-form__input--pill input.disabled + label {display: none;}",
         "input[type=\"radio\"].disabled {display: none;}",
         "input.disabled + label {display: none !important;}",
-        ".custom-label {background-color: #dc143c; color: white;}"
+        ".custom-label {background-color: #dc143c; color: white;}",
+        ".product-form__submit {background-color: #c8102e !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -163,6 +163,7 @@
       "custom_css": [],
       "name": "Sustainable",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Woxna-Black-Week-saw-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -292,6 +293,52 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_ABtGcW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yLYqBV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
+            "title": "Ljusnan",
+            "text": "<p>Ljusnan is ideal for bush crafters, campers, hunters and anyone else who needs a compact and reliable folding saw. It features a a high-carbon, stainless steel blade with knife-grade quality, so you won't have to worry about rust or tedious maintenance. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Ljusnan will be dependable companion on your adventures into the great outdoors.</p>",
+            "link_label": "Ljusnan",
+            "link": "shopify://products/ljusnan-foldable-saw"
+          }
+        },
+        "column_fYC4Ed": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Halsing-folding-saw-250mm-103.jpg",
+            "title": "Hälsing",
+            "text": "<p>Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.</p>",
+            "link_label": "Hälsing",
+            "link": "shopify://products/halsing-foldable-saw"
+          }
+        }
+      },
+      "block_order": [
+        "column_yLYqBV",
+        "column_fYC4Ed"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_j83Eef": {
       "type": "image-with-text",
       "blocks": {
@@ -406,6 +453,7 @@
     "1756739814d98fab10",
     "rich_text_jdqcfV",
     "rich_text_7BYa3A",
+    "multicolumn_ABtGcW",
     "image_with_text_j83Eef",
     "related-products",
     "1730797907a66336cc",
