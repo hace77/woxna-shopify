@@ -124,7 +124,7 @@
         "heading_JaqtQ4": {
           "type": "heading",
           "settings": {
-            "heading": "How to use",
+            "heading": "{{ product.metafields.custom.extra_text_header.value }}",
             "use_collection_title": false,
             "heading_size": "h1"
           }
@@ -132,7 +132,7 @@
         "text_KJnHHU": {
           "type": "text",
           "settings": {
-            "text": "Simply place a fire starter beneath your firewood or charcoal, light it, and allow the flame to build naturally. The extended burn time helps larger pieces of wood ignite without requiring excessive kindling.Like all Woxna products (such as our folding saws Hälsing and Ljusnan), these fire starters are created with an appreciation for craftsmanship, functionality, and the Scandinavian outdoors.",
+            "text": "",
             "use_collection_description": false,
             "text_style": "body"
           }
