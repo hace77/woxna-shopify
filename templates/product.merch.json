@@ -143,7 +143,7 @@
         "text_KJnHHU"
       ],
       "custom_css": [
-        ".banner__box{background: rgba(255,255,255,.45) !important;}"
+        ".banner__box {background: rgba(255, 255, 255, 0.45) !important;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -152,7 +152,7 @@
         "image_mobile": "{{ product.metafields.custom.extra_image_mobilde.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "image_height_mobile": "medium",
+        "image_height_mobile": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
