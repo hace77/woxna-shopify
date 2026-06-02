@@ -152,20 +152,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": true,
-        "settings": {
-          "button_color": "#445f45",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#5a493a",
-          "button_icon": "chat_bubble",
-          "button_text": "no_text",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "Hi! \nMessage us with any question you might have, we are a small team but either Elma or Daniel will try to answer you as quickly as possible!"
-        }
-      },
       "83409832482615070000": {
         "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
         "disabled": false,
@@ -190,6 +176,20 @@
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#445f45",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#5a493a",
+          "button_icon": "chat_bubble",
+          "button_text": "no_text",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "Hi! Message any question you might have, this is not a ai-chat, we are a small team but either Elma or Christian will try to answer you as quickly as possible or reply with an e-mail."
+        }
       }
     },
     "color_schemes": {
