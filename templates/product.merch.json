@@ -61,7 +61,8 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": true,
-            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
+            "heading_size": "h3",
             "page": ""
           }
         },
