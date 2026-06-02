@@ -67,6 +67,17 @@
             "page": ""
           }
         },
+        "collapsible_tab_Y9kK9d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Contents",
+            "icon": "none",
+            "hide_when_empty": true,
+            "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
+            "heading_size": "h3",
+            "page": ""
+          }
+        },
         "rich_text_metafield_YmhmHd": {
           "type": "rich_text_metafield",
           "settings": {
@@ -86,6 +97,7 @@
         "buy_buttons",
         "custom_liquid_FhKrbx",
         "collapsible_tab_DTBqHk",
+        "collapsible_tab_Y9kK9d",
         "rich_text_metafield_YmhmHd"
       ],
       "custom_css": [
