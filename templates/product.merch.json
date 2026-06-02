@@ -16,6 +16,10 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "klaviyo_reviews_average_rating_k7UapD": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
@@ -37,14 +41,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "rich_text_metafield_YmhmHd": {
-          "type": "rich_text_metafield",
-          "settings": {
-            "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
-            "text_style": "body",
-            "show_as_information_box": true
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -52,28 +48,43 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "custom_liquid_FhKrbx": {
           "type": "custom_liquid",
           "name": "SKU number",
           "settings": {
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
+        },
+        "collapsible_tab_DTBqHk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product description",
+            "icon": "none",
+            "hide_when_empty": true,
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "rich_text_metafield_YmhmHd": {
+          "type": "rich_text_metafield",
+          "settings": {
+            "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
+            "text_style": "small",
+            "show_as_information_box": false
+          }
         }
       },
       "block_order": [
         "title",
+        "description",
         "klaviyo_reviews_average_rating_k7UapD",
         "price",
         "variant_picker",
         "quantity_selector",
-        "rich_text_metafield_YmhmHd",
         "buy_buttons",
-        "description",
-        "custom_liquid_FhKrbx"
+        "custom_liquid_FhKrbx",
+        "collapsible_tab_DTBqHk",
+        "rich_text_metafield_YmhmHd"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
