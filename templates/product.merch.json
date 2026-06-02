@@ -142,15 +142,14 @@
         "heading_JaqtQ4",
         "text_KJnHHU"
       ],
-      "disabled": true,
       "custom_css": [
         ".banner__box {background: rgba(0, 0, 0, 0.7) !important;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "hide_when_empty": true,
-        "image": "shopify://shop_images/brinnande_kotte16_9.jpg",
-        "image_mobile": "shopify://shop_images/brinnande_kotte.jpg",
+        "image": "{{ product.metafields.custom.extra_image_dt.value }}",
+        "image_mobile": "{{ product.metafields.custom.extra_image_mobilde.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_height_mobile": "medium",
