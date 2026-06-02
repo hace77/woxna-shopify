@@ -117,10 +117,32 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "image_banner_JJmacE": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_when_empty": true,
+        "image": "shopify://shop_images/brinnande_kotte.jpg",
+        "image_2": "shopify://shop_images/kotten-brastandare-present.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "image_banner_JJmacE"
   ]
 }
