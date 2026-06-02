@@ -168,7 +168,7 @@
         "text_KJnHHU"
       ],
       "custom_css": [
-        ".banner__box {background: rgba(255, 255, 255, 0.45) !important;}"
+        ".banner__box {background: rgba(255, 255, 255, 0.7) !important;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
