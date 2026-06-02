@@ -124,7 +124,7 @@
         "heading_JaqtQ4": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.extra_text_header.value }}",
+            "heading": "{{ product.metafields.custom.preamble.value.title.value }}",
             "use_collection_title": false,
             "heading_size": "h1"
           }
@@ -132,7 +132,7 @@
         "text_KJnHHU": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "{{ product.metafields.custom.preamble.value.single_line_ingress.value }}",
             "use_collection_description": false,
             "text_style": "body"
           }
