@@ -102,6 +102,27 @@
         "padding_bottom": 12
       }
     },
+    "image_banner_MYpCAU": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_when_empty": false,
+        "image": "shopify://shop_images/Ljusnan-quirk1.jpg",
+        "image_2": "shopify://shop_images/Ljusnan-quirk2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "video_BCbL4d": {
       "type": "video",
       "disabled": true,
@@ -239,6 +260,17 @@
     },
     "rich_text_jdqcfV": {
       "type": "rich-text",
+      "blocks": {
+        "text_TrkAQi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Regarding Ljusnan 250 mm in this batch, the cosmetic variation concerns the two handle halves, which show a noticeable difference in color tone. In every other way – the steel, the teeth, the balance – it is the same saw you would find in our standard range.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TrkAQi"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -445,6 +477,7 @@
   },
   "order": [
     "main",
+    "image_banner_MYpCAU",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "image_banner_hBMLMA",
