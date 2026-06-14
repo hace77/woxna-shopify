@@ -74,6 +74,7 @@
             "icon": "check_mark",
             "hide_when_empty": true,
             "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "heading_size": "h4",
             "page": ""
           }
         },
@@ -85,6 +86,7 @@
             "icon": "check_mark",
             "hide_when_empty": false,
             "content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
+            "heading_size": "h4",
             "page": ""
           }
         }
@@ -154,7 +156,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
