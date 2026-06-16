@@ -144,7 +144,8 @@
         "text_kfYDch": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}{{ product.metafields.custom.feature.value.text | metafield_tag }}"
+            "text": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}{{ product.metafields.custom.feature.value.text | metafield_tag }}",
+            "hide_when_empty": false
           }
         }
       },
@@ -158,6 +159,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-6b155c4f-170e-4d13-a609-2b9fb2c51732",
         "full_width": true,
+        "hide_when_empty": true,
         "padding_top": 40,
         "padding_bottom": 0
       }
