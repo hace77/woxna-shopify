@@ -14,12 +14,46 @@
   }
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
-  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="rich-text__blocks {{ section.settings.content_alignment }}">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
+{%- liquid
+  assign rich_text_has_visible_content = false
+  for block in section.blocks
+    case block.type
+      when 'heading'
+        assign heading_text = block.settings.heading | strip
+        if heading_text != blank
+          assign rich_text_has_visible_content = true
+          break
+        endif
+      when 'caption'
+        assign caption_text = block.settings.caption | strip
+        if caption_text != blank
+          assign rich_text_has_visible_content = true
+          break
+        endif
+      when 'text'
+        assign text_content = block.settings.text | strip_html | strip
+        if text_content != blank
+          assign rich_text_has_visible_content = true
+          break
+        endif
+      when 'button'
+        assign button_label_1 = block.settings.button_label | strip
+        assign button_label_2 = block.settings.button_label_2 | strip
+        if button_label_1 != blank or button_label_2 != blank
+          assign rich_text_has_visible_content = true
+          break
+        endif
+    endcase
+  endfor
+-%}
+
+{%- if section.settings.hide_when_empty == false or rich_text_has_visible_content -%}
+  <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+    <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+      <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+        <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
             {%- when 'heading' -%}
               <h1
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -43,16 +77,25 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
-              <div
-                class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {{ block.shopify_attributes }}
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
-              >
-                {{ block.settings.text }}
-              </div>
+              {%- liquid
+                assign show_rich_text_block = true
+                assign rich_text_block_content = block.settings.text | strip_html | strip
+                if block.settings.hide_when_empty and rich_text_block_content == blank
+                  assign show_rich_text_block = false
+                endif
+              -%}
+              {%- if show_rich_text_block -%}
+                <div
+                  class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  {{ block.settings.text }}
+                </div>
+              {%- endif -%}
             {%- when 'button' -%}
               <div
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -87,12 +130,13 @@
                   </a>
                 {%- endif -%}
               </div>
-          {%- endcase -%}
-        {%- endfor -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
-</div>
+{%- endif -%}
 
 {% schema %}
 {
@@ -155,6 +199,13 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_when_empty",
+      "default": false,
+      "label": "Hide section when empty",
+      "info": "Hides the entire section when all text, caption, heading, and button content is empty."
     },
     {
       "type": "header",
@@ -282,6 +333,12 @@
           "id": "text",
           "default": "t:sections.rich-text.blocks.text.settings.text.default",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_when_empty",
+          "default": false,
+          "label": "Hide block when empty"
         }
       ]
     },

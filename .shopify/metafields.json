@@ -1082,6 +1082,36 @@
         "name": "file_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "extra_image_dt",
+      "namespace": "custom",
+      "name": "extra image DT",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extra_image_mobilde",
+      "namespace": "custom",
+      "name": "Extra image Mobile",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "extra_text_header",
+      "namespace": "custom",
+      "name": "Extra text header",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
