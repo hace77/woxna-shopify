@@ -81,7 +81,6 @@
         ".product__title h1 {font-size: 24px;}",
         ".price__badge-sold-out {display: none;}",
         "input[type=\"radio\"].disabled {display: none;}",
-        "input.disabled + label {display: none !important;}",
         ".custom-label {background-color: #dc143c; color: white;}",
         ".product-form__submit {background-color: #c8102e !important;}"
       ],
@@ -223,7 +222,8 @@
         "text_4CCNhj": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>",
+            "hide_when_empty": false
           }
         }
       },
@@ -238,6 +238,7 @@
         "content_alignment": "left",
         "color_scheme": "scheme-4",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 32
       }
@@ -264,7 +265,8 @@
         "text_TrkAQi": {
           "type": "text",
           "settings": {
-            "text": "<p>Regarding Ljusnan 250 mm in this batch, the cosmetic variation concerns the two handle halves, which show a noticeable difference in color tone. In every other way – the steel, the teeth, the balance – it is the same saw you would find in our standard range.</p>"
+            "text": "<p>Regarding Ljusnan 250 mm in this batch, the cosmetic variation concerns the two handle halves, which show a noticeable difference in color tone. In every other way – the steel, the teeth, the balance – it is the same saw you would find in our standard range.</p>",
+            "hide_when_empty": false
           }
         }
       },
@@ -277,6 +279,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 0,
         "padding_bottom": 16
       }
@@ -294,7 +297,8 @@
         "text_rgRR8a": {
           "type": "text",
           "settings": {
-            "text": "<p>Right now we are pretty sold out as we are changing supplier of our wooden handles - to better meet our volume and quality needs.</p><p>There are a few saws still available but if you want one that is sold out we offer <br/><strong>20% on all pre-orders right now.</strong></p>"
+            "text": "<p>Right now we are pretty sold out as we are changing supplier of our wooden handles - to better meet our volume and quality needs.</p><p>There are a few saws still available but if you want one that is sold out we offer <br/><strong>20% on all pre-orders right now.</strong></p>",
+            "hide_when_empty": false
           }
         },
         "button_Ywjfry": {
@@ -321,6 +325,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 28,
         "padding_bottom": 52
       }
