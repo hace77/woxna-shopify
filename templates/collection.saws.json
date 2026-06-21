@@ -138,7 +138,8 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.description }}"
+            "text": "{{ collection.description }}",
+            "hide_when_empty": false
           }
         },
         "button_d4cWYV": {
@@ -164,6 +165,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 16,
         "padding_bottom": 28
       }
@@ -206,7 +208,7 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "show_hero_block_1": true,
+        "show_hero_block_1": false,
         "hero_block_1_position_desktop": "1",
         "hero_block_1_position_mobile": "2",
         "hero_block_1_size": "medium",
