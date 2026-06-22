@@ -32,9 +32,32 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 72,
         "padding_bottom": 28
+      }
+    },
+    "read_more_content_FKVy47": {
+      "type": "read-more-content",
+      "name": "Read more content",
+      "settings": {
+        "heading": "Hitta din Naturkompaniet",
+        "heading_size": "h1",
+        "content": "<p>Fällbara sågar tillverkade i Hälsingland i en butik nära dig</p><p>Varje såg kombinerar skandinaviskt hantverk med noggrant utvalda material och en kompakt, fällbar design som enkelt får plats i ryggsäcken, jaktryggsäcken, verktygsrullen eller överlevnadskitet. Byggda för bushcraft, camping, jakt, stigröjning och vedhantering – skapade för att prestera i krävande utomhusmiljöer år efter år.</p><p>Modellen <a href=\"https://woxna.com/sv/products/ljusnan-foldable-saw\">Ljusnan</a> har ett blad i rostfritt stål av svenskt 10C28Mo2-stål för utmärkt korrosionsbeständighet och lågt underhåll i fuktiga miljöer.<a href=\"https://woxna.com/sv/products/halsing-foldable-saw\"> Hälsing </a>använder ett kolstål med hög kolhalt och spetshärdade tänder, vilket erbjuder en mer traditionell känsla och en aggressiv skärförmåga som uppskattas av många erfarna friluftsmänniskor.</p>",
+        "read_more_label": "LÄS MER",
+        "read_less_label": "LÄS MINDRE",
+        "collapsed_height_mobile": 180,
+        "collapsed_height_desktop": 120,
+        "hide_toggle_if_short": true,
+        "start_expanded": false,
+        "content_max_width": 980,
+        "text_align": "left",
+        "show_fade": true,
+        "fade_height": 62,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "retailers_locations": {
@@ -54,6 +77,7 @@
   "order": [
     "image_banner_PkaUr8",
     "main",
+    "read_more_content_FKVy47",
     "retailers_locations"
   ]
 }
