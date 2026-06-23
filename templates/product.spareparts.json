@@ -144,7 +144,7 @@
         "text_kfYDch": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}{{ product.metafields.custom.feature.value.text | metafield_tag }}",
+            "text": "{{ product.metafields.custom.feature.value.text | metafield_tag }}",
             "hide_when_empty": false
           }
         }
