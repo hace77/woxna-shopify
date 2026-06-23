@@ -50,8 +50,9 @@
       ],
       "name": "Image banner DT",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/index-hero-damascus.jpg",
-        "image_mobile": "shopify://shop_images/damascus-landing-mobile.jpg",
+        "image_mobile": "shopify://shop_images/XT306849.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "image_height_mobile": "adapt",
@@ -109,6 +110,7 @@
       ],
       "name": "Image banner mobile",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/alfta-landingpage_5c546505-6e8c-47d8-b7c3-1dd2a64c5281.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -227,6 +229,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -329,6 +332,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Woxna-Damascus-landing_page.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -357,7 +361,8 @@
         "text_L4Y9np": {
           "type": "text",
           "settings": {
-            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>"
+            "text": "<p>We made this saw for those who see tools as art. Every blade tells its own story, in layered steel, in wavy patterns shaped by fire, pressure, and time. We designed it to be just as functional in the forest as it is beautiful on your workbench. This is the ultimate folding saw - and we’re proud to finally share it with you!</p>",
+            "hide_when_empty": false
           }
         },
         "button_Tw8Kpa": {
@@ -386,6 +391,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -453,6 +459,7 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Proudly-made-in-Sweden-forest.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
