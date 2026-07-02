@@ -40,6 +40,14 @@
             "show_gift_card_recipient": true
           }
         },
+        "extra_products_wNARCN": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Buy the set with the Alfta leather sheath",
+            "legend": "",
+            "none_label": "No extra product"
+          }
+        },
         "sku_6qRbkp": {
           "type": "sku",
           "settings": {
@@ -78,6 +86,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
+        "extra_products_wNARCN",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
         "description",
@@ -168,6 +177,7 @@
       ],
       "name": "Preamble",
       "settings": {
+        "hide_when_empty": false,
         "image": "{{ product.metafields.custom.preamble.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -378,7 +388,8 @@
         "text_n3W6pk": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>"
+            "text": "<p>{{ product.metafields.custom.review | metafield_text: field: 'who_said_it' }}</p>",
+            "hide_when_empty": false
           }
         }
       },
@@ -392,6 +403,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -524,7 +536,8 @@
         "text_4CCNhj": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>"
+            "text": "<p>{{ product.metafields.custom.handles.value.text | metafield_tag }}</p>",
+            "hide_when_empty": false
           }
         }
       },
@@ -538,6 +551,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -677,7 +691,8 @@
         "text_CBqpGQ": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>"
+            "text": "<p>{{ product.metafields.custom.packaging.value.text | metafield_tag }}</p>",
+            "hide_when_empty": false
           }
         }
       },
@@ -691,6 +706,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -719,7 +735,8 @@
         "text_crzTjK": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>",
+            "hide_when_empty": false
           }
         }
       },
@@ -739,6 +756,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -816,6 +834,7 @@
       "disabled": true,
       "name": "measurments",
       "settings": {
+        "hide_when_empty": false,
         "image": "{{ product.metafields.custom.measurement_illustration.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -837,6 +856,7 @@
         "collapsible_row_JiRKKg": {
           "type": "collapsible_row",
           "settings": {
+            "hide_when_empty": false,
             "heading": "Choose Size",
             "icon": "ruler",
             "row_content": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
@@ -846,6 +866,7 @@
         "collapsible_row_WRMnDt": {
           "type": "collapsible_row",
           "settings": {
+            "hide_when_empty": false,
             "heading": "Choose Model",
             "icon": "star",
             "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
@@ -855,6 +876,7 @@
         "collapsible_row_Qh76JD": {
           "type": "collapsible_row",
           "settings": {
+            "hide_when_empty": false,
             "heading": "Care and Maintanance",
             "icon": "clipboard",
             "row_content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
@@ -899,7 +921,8 @@
         "text_Kqm3hA": {
           "type": "text",
           "settings": {
-            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
+            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>",
+            "hide_when_empty": false
           }
         },
         "button_cXrCX8": {
@@ -926,6 +949,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
