@@ -16,18 +16,14 @@
           "type": "title",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "klaviyo_reviews_average_rating_iTB8FR": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
           }
         },
-        "description": {
-          "type": "description",
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "variant_picker": {
@@ -43,6 +39,10 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -93,11 +93,11 @@
       },
       "block_order": [
         "title",
-        "price",
         "klaviyo_reviews_average_rating_iTB8FR",
-        "description",
+        "price",
         "variant_picker",
         "buy_buttons",
+        "description",
         "quantity_selector",
         "sku_4fq8JC",
         "variant_metafield_z7cPYj",
