@@ -106,7 +106,7 @@
                 {{ extra_product_1.title }}
               </span>
               <span class="extra-product-label__price">
-                {{ extra_variant_1.price | money }}
+                {{ extra_variant_1.price | money_without_trailing_zeros }}
               </span>
             </label>
           </div>
@@ -120,6 +120,8 @@
     {%- assign extra_products_script_loaded = true -%}
     <script>
       (() => {
+        const MONEY_WITH_CURRENCY_FORMAT = {{ shop.money_with_currency_format | json }};
+
         class ExtraProductSelector {
           constructor(container) {
             this.container = container;
@@ -359,10 +361,13 @@
           }
 
           formatMoney(cents) {
+            // Keep localized formatting from Shopify but remove trailing .00/,00.
             if (typeof window.Shopify !== 'undefined' && window.Shopify.formatMoney) {
-              return window.Shopify.formatMoney(cents);
+              return window.Shopify
+                .formatMoney(cents, MONEY_WITH_CURRENCY_FORMAT)
+                .replace(/([.,]00)(?=\s*[^\d]*$)/, '');
             }
-            return (cents / 100).toFixed(2);
+            return `${Number(cents / 100).toFixed(0)} {{ cart.currency.iso_code }}`;
           }
 
           onChange(event) {

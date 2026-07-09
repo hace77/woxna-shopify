@@ -1374,6 +1374,76 @@
         "name": "product_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "shipping_text",
+      "namespace": "restockrocket_production",
+      "name": "Shipping Text",
+      "description": "Custom shipping text for the variant",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "preorder_max_count",
+      "namespace": "restockrocket_production",
+      "name": "Preorder Max Count",
+      "description": "Maximum preorder count allowed for the variant",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "preorder_count",
+      "namespace": "restockrocket_production",
+      "name": "Preorder Count",
+      "description": "Current preorder count for the variant",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "market_shipping_text",
+      "namespace": "restockrocket_production",
+      "name": "Market Shipping Text",
+      "description": "Market-specific shipping text for the variant",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "market_preorder_max_count",
+      "namespace": "restockrocket_production",
+      "name": "Market Preorder Max Count",
+      "description": "Market-specific preorder max counts for the variant",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "market_preorder_count",
+      "namespace": "restockrocket_production",
+      "name": "Market Preorder Count",
+      "description": "Market-specific preorder counts for the variant",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "selling_plan_ids",
+      "namespace": "restockrocket_production",
+      "name": "Selling Plan IDs",
+      "description": "Selling plan IDs the variant belongs to",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
     }
   ],
   "shop": [
@@ -1392,6 +1462,106 @@
       "namespace": "mm_google_shopping_extension",
       "name": "Google: Merchant ID",
       "description": "Currently Linked Merchant Center ID",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "settings",
+      "namespace": "restockrocket_production",
+      "name": "Settings",
+      "description": "Settings for the app",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "selling_plans",
+      "namespace": "restockrocket_production",
+      "name": "Selling Plans",
+      "description": "Settings and variant IDs for preorder offers",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "preorder_variant_ids",
+      "namespace": "restockrocket_production",
+      "name": "Preorder Variant IDs",
+      "description": "List of variant IDs that are available for preorder",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "in_stock_variant_ids",
+      "namespace": "restockrocket_production",
+      "name": "In Stock Variant IDs",
+      "description": "List of variant IDs that are currently in stock",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "out_of_stock_variant_ids",
+      "namespace": "restockrocket_production",
+      "name": "Out of Stock Variant IDs",
+      "description": "List of variant IDs that are currently out of stock",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "enabled_notify_me_variant_ids",
+      "namespace": "restockrocket_production",
+      "name": "Enabled Notify Me Variant IDs",
+      "description": "List of variant IDs with notify me explicitly enabled",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "back_in_stock_templates",
+      "namespace": "restockrocket_production",
+      "name": "Back in Stock Templates",
+      "description": "Back in stock template configuration for the storefront widget",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "variant_shipping_texts",
+      "namespace": "restockrocket_production",
+      "name": "Variant Shipping Texts",
+      "description": "Shipping texts for preorder variants",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "variant_preorder_limits",
+      "namespace": "restockrocket_production",
+      "name": "Variant Preorder Limits",
+      "description": "Preorder limits for preorder variants",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "storefront_access_token",
+      "namespace": "restockrocket_production",
+      "name": "Storefront Access Token",
+      "description": "Storefront API access token used by the theme app extension",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"

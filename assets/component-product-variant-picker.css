@@ -173,6 +173,18 @@ variant-selects {
   outline-offset: 2px;
 }
 
+@media (max-width: 749px) {
+  .product-form__input--pill input[type='radio'] + label {
+    min-width: 0;
+    flex: 1 1 0;
+    width: calc(50% - 0.25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* Custom styles for Swatch display type */
 .product-form__input--swatch {
   display: flex;

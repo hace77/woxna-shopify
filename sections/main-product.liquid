@@ -335,6 +335,48 @@
                   </details>
                 </div>
                 {%- endif -%}
+              {%- when 'feature_accordion' -%}
+                {%- liquid
+                  assign show_feature_accordion = true
+                  if block.settings.hide_when_empty
+                    capture feature_accordion_body
+                      echo block.settings.content
+                      if block.settings.page != blank
+                        echo block.settings.page.content
+                      endif
+                    endcapture
+                    assign feature_accordion_body_stripped = feature_accordion_body | strip_html | strip
+                    if feature_accordion_body_stripped == blank
+                      assign show_feature_accordion = false
+                    endif
+                  endif
+                -%}
+                {%- if show_feature_accordion -%}
+                  <div class="product__accordion accordion product__accordion--feature quick-add-hidden" {{ block.shopify_attributes }}>
+                    <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
+                      <summary>
+                        <div class="summary__title">
+                          {%- if block.settings.symbol != blank -%}
+                            <span class="product__accordion-feature__symbol">{{ block.settings.symbol | escape }}</span>
+                          {%- endif -%}
+                          <div class="product__accordion-feature__title-wrap">
+                            <h2 class="{{ block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
+                              {{ block.settings.heading | default: block.settings.page.title | escape }}
+                            </h2>
+                            {%- if block.settings.subtitle != blank -%}
+                              <p class="product__accordion-feature__subtitle">{{ block.settings.subtitle | escape }}</p>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                        <span class="product__accordion-feature__toggle" aria-hidden="true"></span>
+                      </summary>
+                      <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      </div>
+                    </details>
+                  </div>
+                {%- endif -%}
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -1473,6 +1515,75 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "feature_accordion",
+      "name": "Feature accordion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Product features",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "text",
+          "id": "symbol",
+          "label": "Symbol"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h2",
+              "label": "X-large"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "default": false,
+          "label": "Open by default"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_when_empty",
+          "default": false,
+          "label": "Hide row when content is empty",
+          "info": "Hides this row when content and page are empty."
         }
       ]
     },
