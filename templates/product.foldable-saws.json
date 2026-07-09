@@ -59,11 +59,11 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "vertical",
-            "icon_1": "box",
+            "icon_1": "none",
             "heading_1": "Free Shipping Over 200 USD / 100 EUR",
-            "icon_2": "star",
+            "icon_2": "none",
             "heading_2": "Limited Lifetime Warranty",
-            "icon_3": "map_pin",
+            "icon_3": "none",
             "heading_3": "Proudly Made in Sweden"
           }
         },
