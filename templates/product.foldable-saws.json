@@ -98,7 +98,8 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px; text-transform: uppercase;}",
-        ".variant-metafield__content p {margin: 0 0 1rem; background-color: rgba(var(--color-foreground), 0.05); padding: 1.2rem;}"
+        ".variant-metafield__content p {margin: 0 0 1rem; background-color: rgba(var(--color-foreground), 0.05); padding: 1.2rem;}",
+        ".icon-with-text__item .h4 {font-family: var(--font-body-family) !important; font-size: 1.4rem !important; }"
       ],
       "settings": {
         "enable_sticky_info": true,
