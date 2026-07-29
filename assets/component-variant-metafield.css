@@ -6,6 +6,12 @@
   transition: opacity 0.2s ease;
 }
 
+.product__variant-metafield--empty,
+.product__variant-metafield:not(:has(.variant-metafield__wrapper)) {
+  display: none;
+  margin: 0;
+}
+
 .variant-metafield__wrapper {
   width: 100%;
 }

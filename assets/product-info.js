@@ -778,6 +778,7 @@ if (!customElements.get('product-info')) {
             currentBlock.style.opacity = '0';
             setTimeout(() => {
               currentBlock.innerHTML = '';
+              currentBlock.classList.add('product__variant-metafield--empty');
               currentBlock.style.opacity = '1';
             }, 200);
             return;
@@ -790,6 +791,10 @@ if (!customElements.get('product-info')) {
             
             setTimeout(() => {
               currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.classList.toggle(
+                'product__variant-metafield--empty',
+                newBlock.classList.contains('product__variant-metafield--empty')
+              );
               currentBlock.style.opacity = '1';
             }, 200);
           } else if (newWrapper && !currentWrapper) {
@@ -799,8 +804,11 @@ if (!customElements.get('product-info')) {
             
             setTimeout(() => {
               currentBlock.innerHTML = newBlock.innerHTML;
+              currentBlock.classList.remove('product__variant-metafield--empty');
               currentBlock.style.opacity = '1';
             }, 200);
+          } else if (!newWrapper && !currentWrapper) {
+            currentBlock.classList.add('product__variant-metafield--empty');
           }
         });
         

@@ -482,19 +482,52 @@
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
                 {%- when 'variant_metafield' -%}
+                  {%- liquid
+                    assign namespace = 'custom'
+                    assign key = block.settings.metafield_key
+                    assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
+                  -%}
+                  {%- capture variant_metafield_richtext_html -%}
+                    {{- variant_metafield | metafield_tag -}}
+                  {%- endcapture -%}
+                  {%- assign variant_metafield_richtext_stripped = variant_metafield_richtext_html | strip_html | strip -%}
+                  {%- liquid
+                    assign variant_metafield_plain = ''
+                    if variant_metafield != blank and variant_metafield.type == 'rich_text_field'
+                      assign variant_metafield_plain = variant_metafield | metafield_text | strip
+                    endif
+                    assign variant_metafield_has_content = false
+                    if variant_metafield != blank
+                      assign metafield_type_check = variant_metafield.type
+                      if metafield_type_check == 'rich_text_field'
+                        if variant_metafield_richtext_stripped != blank
+                          assign variant_metafield_has_content = true
+                        elsif variant_metafield_plain != blank
+                          assign variant_metafield_has_content = true
+                        endif
+                      elsif metafield_type_check == 'file_reference'
+                        if variant_metafield.value != blank
+                          assign variant_metafield_has_content = true
+                        endif
+                      else
+                        assign variant_metafield_value_stripped = variant_metafield.value | strip_html | strip
+                        if variant_metafield_value_stripped != blank
+                          assign variant_metafield_has_content = true
+                        endif
+                      endif
+                    endif
+                    assign show_variant_metafield_fallback = false
+                    if variant_metafield_has_content == false and block.settings.show_fallback and block.settings.fallback_content != blank
+                      assign show_variant_metafield_fallback = true
+                    endif
+                  -%}
                   <div
-                    class="product__variant-metafield"
+                    class="product__variant-metafield{% unless variant_metafield_has_content or show_variant_metafield_fallback %} product__variant-metafield--empty{% endunless %}"
                     id="VariantMetafield-{{ block.id }}-{{ section.id }}"
                     data-variant-metafield
                     {{ block.shopify_attributes }}
                   >
-                    {%- liquid
-                      assign namespace = 'custom'
-                      assign key = block.settings.metafield_key
-                      assign variant_metafield = product.selected_or_first_available_variant.metafields[namespace][key]
-                    -%}
-
-                    {%- if variant_metafield != blank -%}
+                    {%- if variant_metafield_has_content -%}
                       <div class="variant-metafield__wrapper">
                         {%- if block.settings.show_heading and block.settings.heading != blank -%}
                           <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
@@ -504,7 +537,6 @@
                           {%- liquid
                             assign metafield_type = variant_metafield.type
 
-                            # Handle image/file metafields
                             if metafield_type == 'file_reference'
                               assign image_url = variant_metafield.value | image_url: width: 800
                               assign image_width = variant_metafield.value.width | default: 800
@@ -513,15 +545,15 @@
                                 assign image_height = image_width | divided_by: variant_metafield.value.aspect_ratio | round
                               endif
                               echo '<img src="' | append: image_url | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" width="' | append: image_width | append: '" height="' | append: image_height | append: '">'
-                            # Handle rich text metafields
                             elsif metafield_type == 'rich_text_field'
-                              echo variant_metafield | metafield_tag
-                            # Handle plain text, URLs, and other metafields
+                              if variant_metafield_richtext_stripped != blank
+                                echo variant_metafield_richtext_html
+                              elsif variant_metafield_plain != blank
+                                echo variant_metafield | metafield_text
+                              endif
                             else
-                              # Check if it's an image URL
                               if variant_metafield.value contains '.jpg' or variant_metafield.value contains '.png' or variant_metafield.value contains '.gif' or variant_metafield.value contains '.webp' or variant_metafield.value contains 'cdn.shopify.com'
                                 echo '<img src="' | append: variant_metafield.value | append: '" alt="' | append: block.settings.heading | default: product.selected_or_first_available_variant.title | append: '" loading="lazy" style="max-width: 100%;">'
-                              # Plain text or other content
                               else
                                 echo variant_metafield.value
                               endif
@@ -529,7 +561,7 @@
                           -%}
                         </div>
                       </div>
-                    {%- elsif block.settings.show_fallback and block.settings.fallback_content != blank -%}
+                    {%- elsif show_variant_metafield_fallback -%}
                       <div class="variant-metafield__wrapper">
                         {%- if block.settings.show_heading and block.settings.heading != blank -%}
                           <h3 class="variant-metafield__heading">{{ block.settings.heading }}</h3>
