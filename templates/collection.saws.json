@@ -232,6 +232,9 @@
     },
     "featured_collection_VdnQyT": {
       "type": "featured-collection",
+      "custom_css": [
+        ".card--card {border: 0 !important;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
@@ -263,6 +266,9 @@
     },
     "featured_collection_DHw74c": {
       "type": "featured-collection",
+      "custom_css": [
+        ".card--card {border: 0 !important;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Foldable saws",
@@ -294,6 +300,9 @@
     },
     "featured_collection_yUWtYn": {
       "type": "featured-collection",
+      "custom_css": [
+        ".card--card {border: 0 !important; }"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Gift card",
