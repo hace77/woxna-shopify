@@ -234,8 +234,8 @@
       "type": "featured-collection",
       "custom_css": [
         ".card--card {border: 0 !important;}",
-        ".collection__title .title {font-size: 2rem;}",
-        "@media (min-width: 750px) {.collection__title .title {font-size: 2rem; }}",
+        ".collection__title .title {font-size: 1.6rem;}",
+        "@media (min-width: 750px) {.collection__title .title {font-size: 1.6rem; }}",
         ".collection__title .title {font-family: var(--font-body-family);}"
       ],
       "name": "t:sections.featured-collection.presets.name",
