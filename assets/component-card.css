@@ -597,3 +597,14 @@
 .card__usp {
   font-size: 1.2rem; /* 12px */
 }
+
+@media screen and (max-width: 749px) {
+  .product-card-wrapper {
+    --text-alignment: center;
+  }
+
+  .product-card-wrapper .card__information,
+  .product-card-wrapper .card-information {
+    text-align: center;
+  }
+}
