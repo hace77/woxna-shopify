@@ -593,3 +593,7 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.card__usp {
+  font-size: 1.2rem; /* 12px */
+}

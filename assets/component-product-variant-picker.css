@@ -174,14 +174,25 @@ variant-selects {
 }
 
 @media (max-width: 749px) {
+  .product-form__input--pill .form__label {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
   .product-form__input--pill input[type='radio'] + label {
+    box-sizing: border-box;
     min-width: 0;
-    flex: 1 1 0;
-    width: calc(50% - 0.25rem);
+    flex: 0 0 calc((100% - 0.5rem) / 2);
+    max-width: calc((100% - 0.5rem) / 2);
+    width: calc((100% - 0.5rem) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .product-form__input--pill .hidden-flex-item {
+    display: none;
   }
 }
 
