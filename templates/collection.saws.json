@@ -247,7 +247,7 @@
       "settings": {
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h2",
-        "description": "{{ section.settings.collection.description }}",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "folding-saws-with-sheath",
