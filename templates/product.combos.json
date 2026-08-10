@@ -16,6 +16,15 @@
           "type": "title",
           "settings": {}
         },
+        "text_69RFqi": {
+          "type": "text",
+          "name": "length",
+          "settings": {
+            "text": "Length 250 mm",
+            "text_style": "body",
+            "show_as_information_box": false
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -29,7 +38,7 @@
         "text_wB7jWr": {
           "type": "text",
           "settings": {
-            "text": "Our most duarble saw Hälsing in carbon steele delivered with a  leather holster",
+            "text": "Our most duarble saw Hälsing with carbon steel, delivered with a  leather holster",
             "text_style": "body",
             "show_as_information_box": false
           }
@@ -107,6 +116,7 @@
       },
       "block_order": [
         "title",
+        "text_69RFqi",
         "price",
         "klaviyo_reviews_average_rating_k7UapD",
         "text_wB7jWr",
