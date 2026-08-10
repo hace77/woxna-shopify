@@ -83,7 +83,7 @@
             "heading": "Technical specifications",
             "icon": "none",
             "hide_when_empty": false,
-            "content": "<p><strong>Teeth per inch:</strong> 7 TPI</p><p><strong>Hardening:</strong> Teeth hardening 62 HRC</p><p><strong>Blade material:</strong> High carbon steel</p><p><strong>Blade thickness: </strong>1.5 mm (before concave grind)</p><p><strong>Measurements</strong></p><p><strong>Blade length: </strong>250 mm / 9.75 in</p><p><strong>Length, unfolded:</strong> 545 mm / 21.5 in</p><p><strong>Length, folded: </strong>300 mm / 11.75 in</p><p><strong>Weight:</strong> 330 g / 11.6 oz</p>",
+            "content": "<p><strong>Teeth per inch:</strong> 7 TPI<br/><strong>Hardening:</strong> Teeth hardening 62 HRC<br/><strong>Blade material:</strong> High carbon steel<br/><strong>Blade thickness: </strong>1.5 mm (before concave grind)</p><p><strong>Measurements</strong></p><p><strong>Blade length: </strong>250 mm / 9.75 in<br/><strong>Length, unfolded:</strong> 545 mm / 21.5 in<br/><strong>Length, folded: </strong>300 mm / 11.75 in<br/><strong>Weight:</strong> 330 g / 11.6 oz</p>",
             "heading_size": "h2",
             "page": ""
           }
