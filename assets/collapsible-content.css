@@ -66,6 +66,42 @@
   }
 }
 
+@media screen and (max-width: 749px) {
+  .collapsible-content__heading.mobile-h2,
+  .collapsible-content .accordion__title.mobile-h2 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .collapsible-content__heading.mobile-h1,
+  .collapsible-content .accordion__title.mobile-h1 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+  }
+
+  .collapsible-content__heading.mobile-h0 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
+
+  .collapsible-content__heading.mobile-hxl {
+    font-size: calc(var(--font-heading-scale) * 5rem);
+  }
+
+  .collapsible-content__heading.mobile-hxxl {
+    font-size: calc(var(--font-heading-scale) * 5.6rem);
+  }
+
+  .collapsible-content .accordion__title.mobile-h5 {
+    font-size: calc(var(--font-heading-scale) * 1.2rem);
+  }
+
+  .collapsible-content .accordion__title.mobile-h4 {
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+
+  .collapsible-content .accordion__title.mobile-h3 {
+    font-size: calc(var(--font-heading-scale) * 1.7rem);
+  }
+}
+
 .collapsible-none-layout .accordion + .accordion {
   border-top: 0;
 }

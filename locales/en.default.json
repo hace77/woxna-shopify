@@ -188,6 +188,17 @@
       "duties_and_taxes_included": "Duties and taxes included",
       "shipping_policy_html": "See our <a href=\"{{ link }}\">shipping policy</a>",
       "low_stock": "Only a few left",
+      "specs": {
+        "teeth_per_inch": "Teeth per inch",
+        "hardening": "Hardening",
+        "blade_material": "Blade material",
+        "blade_thickness": "Blade thickness",
+        "measurements": "Measurements",
+        "blade_length": "Blade length",
+        "length_unfolded": "Length, unfolded",
+        "length_folded": "Length, folded",
+        "weight": "Weight"
+      },
       "upsell": {
         "add_to_cart": "Add to Cart",
         "view_options": "View Options"

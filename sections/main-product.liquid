@@ -19,6 +19,7 @@
   {{ 'component-variant-metafield.css' | asset_url | stylesheet_tag }}
   {{ 'sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-specs.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -322,7 +323,7 @@
                     <summary>
                       <div class="summary__title">
                         {% render 'icon-accordion', icon: block.settings.icon %}
-                        <h2 class="{{ block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
+                        <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h2>
                       </div>
@@ -360,7 +361,7 @@
                             <span class="product__accordion-feature__symbol">{{ block.settings.symbol | escape }}</span>
                           {%- endif -%}
                           <div class="product__accordion-feature__title-wrap">
-                            <h2 class="{{ block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
+                            <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
                               {{ block.settings.heading | default: block.settings.page.title | escape }}
                             </h2>
                             {%- if block.settings.subtitle != blank -%}
@@ -373,6 +374,54 @@
                       <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                         {{ block.settings.content }}
                         {{ block.settings.page.content }}
+                      </div>
+                    </details>
+                  </div>
+                {%- endif -%}
+              {%- when 'product_specs' -%}
+                {%- liquid
+                  assign specs_object = block.settings.specs
+                  if specs_object == blank
+                    assign specs_object = product.metafields.custom.prod_spec.value
+                  endif
+                  if specs_object == blank
+                    assign specs_object = product.metafields.custom.saw_specs.value
+                  endif
+                  if specs_object == blank
+                    assign specs_object = product.metafields.custom.tech_specs.value
+                  endif
+
+                  assign show_product_specs = true
+                  if block.settings.hide_when_empty
+                    assign show_product_specs = false
+                    if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank
+                      assign show_product_specs = true
+                    endif
+                    if specs_object != blank
+                      if specs_object.teeth_per_inch != blank or specs_object.hardening != blank or specs_object.blade_material != blank or specs_object.blade_thickness != blank or specs_object.blade_length != blank or specs_object.length_unfolded != blank or specs_object.length_folded != blank or specs_object.weight != blank
+                        assign show_product_specs = true
+                      endif
+                    endif
+                  endif
+                -%}
+                {%- if show_product_specs -%}
+                  <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                    <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
+                      <summary>
+                        <div class="summary__title">
+                          {% render 'icon-accordion', icon: block.settings.icon %}
+                          <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext">
+                            {{ block.settings.heading | escape }}
+                          </h2>
+                        </div>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div class="accordion__content" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                        {% render 'product-specs',
+                          product: product,
+                          specs: specs_object,
+                          show_sku: block.settings.show_sku
+                        %}
                       </div>
                     </details>
                   </div>
@@ -1505,7 +1554,31 @@
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "Heading size (Desktop)",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h2",
+              "label": "X-large"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "select",
+          "id": "mobile_heading_size",
+          "label": "Heading size (Mobile)",
           "options": [
             {
               "value": "h5",
@@ -1583,7 +1656,31 @@
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "Heading size (Desktop)",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h2",
+              "label": "X-large"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "select",
+          "id": "mobile_heading_size",
+          "label": "Heading size (Mobile)",
           "options": [
             {
               "value": "h5",
@@ -1616,6 +1713,119 @@
           "default": false,
           "label": "Hide row when content is empty",
           "info": "Hides this row when content and page are empty."
+        }
+      ]
+    },
+    {
+      "type": "product_specs",
+      "name": "Product specs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Details",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Heading size (Desktop)",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h2",
+              "label": "X-large"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "select",
+          "id": "mobile_heading_size",
+          "label": "Heading size (Mobile)",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h2",
+              "label": "X-large"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "check_mark",
+              "label": "Check mark"
+            },
+            {
+              "value": "ruler",
+              "label": "Ruler"
+            },
+            {
+              "value": "clipboard",
+              "label": "Clipboard"
+            },
+            {
+              "value": "leather",
+              "label": "Leather"
+            }
+          ],
+          "default": "none",
+          "label": "Icon"
+        },
+        {
+          "type": "metaobject",
+          "id": "specs",
+          "label": "Specs",
+          "metaobject_type": "prod_spec",
+          "info": "Select a specs entry, or use the dynamic source icon to connect the product metafield. Leave empty to auto-read custom.prod_spec from the product."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sku",
+          "default": true,
+          "label": "Show SKU"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "default": false,
+          "label": "Open by default"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_when_empty",
+          "default": true,
+          "label": "Hide when empty"
         }
       ]
     },

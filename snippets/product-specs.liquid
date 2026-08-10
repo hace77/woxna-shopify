@@ -1,0 +1,108 @@
+{% comment %}
+  Renders product specs from a metaobject.
+  Labels come from theme locales; values from the metaobject.
+
+  Accepts:
+  - product: {Object} product
+  - specs: {Object} metaobject drop
+  - show_sku: {Boolean}
+{% endcomment %}
+
+{%- liquid
+  assign show_sku = show_sku | default: false
+  assign sku_value = product.selected_or_first_available_variant.sku
+
+  assign has_details = false
+  if specs != blank
+    if specs.teeth_per_inch != blank or specs.hardening != blank or specs.blade_material != blank or specs.blade_thickness != blank
+      assign has_details = true
+    endif
+  endif
+
+  assign has_measurements = false
+  if specs != blank
+    if specs.blade_length != blank or specs.length_unfolded != blank or specs.length_folded != blank or specs.weight != blank
+      assign has_measurements = true
+    endif
+  endif
+
+  assign has_sku_row = false
+  if show_sku and sku_value != blank
+    assign has_sku_row = true
+  endif
+-%}
+
+{%- if has_sku_row or has_details or has_measurements -%}
+  <dl class="product-specs">
+    {%- if has_sku_row -%}
+      <div class="product-specs__row">
+        <dt class="product-specs__label">{{ 'products.product.sku' | t }}</dt>
+        <dd class="product-specs__value">{{ sku_value }}</dd>
+      </div>
+    {%- endif -%}
+
+    {%- if specs != blank -%}
+      {%- if specs.teeth_per_inch != blank -%}
+        <div class="product-specs__row">
+          <dt class="product-specs__label">{{ 'products.product.specs.teeth_per_inch' | t }}</dt>
+          <dd class="product-specs__value">{{ specs.teeth_per_inch.value | default: specs.teeth_per_inch }}</dd>
+        </div>
+      {%- endif -%}
+
+      {%- if specs.hardening != blank -%}
+        <div class="product-specs__row">
+          <dt class="product-specs__label">{{ 'products.product.specs.hardening' | t }}</dt>
+          <dd class="product-specs__value">{{ specs.hardening.value | default: specs.hardening }}</dd>
+        </div>
+      {%- endif -%}
+
+      {%- if specs.blade_material != blank -%}
+        <div class="product-specs__row">
+          <dt class="product-specs__label">{{ 'products.product.specs.blade_material' | t }}</dt>
+          <dd class="product-specs__value">{{ specs.blade_material.value | default: specs.blade_material }}</dd>
+        </div>
+      {%- endif -%}
+
+      {%- if specs.blade_thickness != blank -%}
+        <div class="product-specs__row">
+          <dt class="product-specs__label">{{ 'products.product.specs.blade_thickness' | t }}</dt>
+          <dd class="product-specs__value">{{ specs.blade_thickness.value | default: specs.blade_thickness }}</dd>
+        </div>
+      {%- endif -%}
+
+      {%- if has_measurements -%}
+        <div class="product-specs__group-heading">
+          {{ 'products.product.specs.measurements' | t }}
+        </div>
+
+        {%- if specs.blade_length != blank -%}
+          <div class="product-specs__row">
+            <dt class="product-specs__label">{{ 'products.product.specs.blade_length' | t }}</dt>
+            <dd class="product-specs__value">{{ specs.blade_length.value | default: specs.blade_length }}</dd>
+          </div>
+        {%- endif -%}
+
+        {%- if specs.length_unfolded != blank -%}
+          <div class="product-specs__row">
+            <dt class="product-specs__label">{{ 'products.product.specs.length_unfolded' | t }}</dt>
+            <dd class="product-specs__value">{{ specs.length_unfolded.value | default: specs.length_unfolded }}</dd>
+          </div>
+        {%- endif -%}
+
+        {%- if specs.length_folded != blank -%}
+          <div class="product-specs__row">
+            <dt class="product-specs__label">{{ 'products.product.specs.length_folded' | t }}</dt>
+            <dd class="product-specs__value">{{ specs.length_folded.value | default: specs.length_folded }}</dd>
+          </div>
+        {%- endif -%}
+
+        {%- if specs.weight != blank -%}
+          <div class="product-specs__row">
+            <dt class="product-specs__label">{{ 'products.product.specs.weight' | t }}</dt>
+            <dd class="product-specs__value">{{ specs.weight.value | default: specs.weight }}</dd>
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  </dl>
+{%- endif -%}

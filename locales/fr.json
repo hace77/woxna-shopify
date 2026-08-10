@@ -187,7 +187,18 @@
       },
       "taxes_included": "Taxes incluses.",
       "duties_included": "Frais de douane inclus.",
-      "duties_and_taxes_included": "Frais de douane et taxes inclus."
+      "duties_and_taxes_included": "Frais de douane et taxes inclus.",
+      "specs": {
+        "teeth_per_inch": "Dents par pouce",
+        "hardening": "Trempe",
+        "blade_material": "Matériau de la lame",
+        "blade_thickness": "Épaisseur de la lame",
+        "measurements": "Mesures",
+        "blade_length": "Longueur de lame",
+        "length_unfolded": "Longueur, dépliée",
+        "length_folded": "Longueur, pliée",
+        "weight": "Poids"
+      }
     },
     "modal": {
       "label": "Galerie de supports multimédias"

@@ -187,7 +187,18 @@
       "taxes_included": "Skatter ingår.",
       "duties_included": "Tullavgifter ingår.",
       "duties_and_taxes_included": "Tullavgifter och skatter ingår.",
-      "view_product": "Visa produkt"
+      "view_product": "Visa produkt",
+      "specs": {
+        "teeth_per_inch": "Tänder per tum",
+        "hardening": "Härdning",
+        "blade_material": "Bladmaterial",
+        "blade_thickness": "Bladtjocklek",
+        "measurements": "Mått",
+        "blade_length": "Bladlängd",
+        "length_unfolded": "Längd, utfälld",
+        "length_folded": "Längd, ihopfälld",
+        "weight": "Vikt"
+      }
     },
     "modal": {
       "label": "Mediagalleri"
