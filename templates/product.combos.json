@@ -72,7 +72,7 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
-            "content": "<p>This package contains the Hälsing Foldable saw, it features a high carbon steel blade and a oak handle, made for the rough woods.</p><p>It matches perfectly with our Alfta sheath in black thich vegetable garved leather that ages with beuty</p>",
+            "content": "<p>Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. </p><p>Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.</p><p>Deleviered with a durable black leather sheath that matches perfectly.</p>",
             "heading_size": "h2",
             "page": ""
           }
@@ -149,7 +149,7 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Oil_saw.mov",
@@ -215,8 +215,8 @@
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 2,
+        "columns_desktop": 2,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
