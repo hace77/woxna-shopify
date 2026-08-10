@@ -16,15 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "text_69RFqi": {
-          "type": "text",
-          "name": "length",
-          "settings": {
-            "text": "Length 250 mm",
-            "text_style": "body",
-            "show_as_information_box": false
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -112,7 +103,6 @@
       },
       "block_order": [
         "title",
-        "text_69RFqi",
         "price",
         "klaviyo_reviews_average_rating_k7UapD",
         "text_wB7jWr",
@@ -156,8 +146,8 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Oil_saw.mov",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/halsing-sheath.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
