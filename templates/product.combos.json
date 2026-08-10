@@ -253,6 +253,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "custom_css": [
         ".card--card {border: 0 !important;}"
       ],
