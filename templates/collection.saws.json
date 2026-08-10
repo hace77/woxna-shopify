@@ -59,7 +59,8 @@
     "read_more_content_NCFzYt": {
       "type": "read-more-content",
       "custom_css": [
-        "p {font-size: 1.3rem;}"
+        "p {font-size: 1.3rem;}",
+        "h2 {font-size: calc(var(--font-heading-scale) * 2rem);}"
       ],
       "name": "Read more content",
       "settings": {
