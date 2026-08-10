@@ -65,6 +65,18 @@
             "show_gift_card_recipient": true
           }
         },
+        "icon_with_text_Feea6R": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "heading_1": "Free Shipping Over 200 USD / 100 EUR",
+            "icon_2": "none",
+            "heading_2": "Limited Lifetime Warranty",
+            "icon_3": "none",
+            "heading_3": "Proudly Made in Sweden"
+          }
+        },
         "collapsible_tab_DTBqHk": {
           "type": "collapsible_tab",
           "settings": {
@@ -112,6 +124,7 @@
         "quantity_selector",
         "rich_text_metafield_jbhcCW",
         "buy_buttons",
+        "icon_with_text_Feea6R",
         "collapsible_tab_DTBqHk",
         "product_specs_adPTgW",
         "rich_text_metafield_YmhmHd"
