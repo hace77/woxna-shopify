@@ -389,6 +389,14 @@ a.product__text {
   width: 100%;
 }
 
+@media screen and (max-width: 749px) {
+  .product-extra-products .extra-product-option:only-child input[type='radio'] + label {
+    flex: 0 0 100%;
+    max-width: none;
+    width: 100%;
+  }
+}
+
 .product--no-media .share-button {
   max-width: 100%;
 }
