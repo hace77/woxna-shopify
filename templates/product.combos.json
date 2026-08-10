@@ -71,7 +71,7 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
-            "content": "<p>Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. </p><p>Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.</p><p>Deleviered with a durable black leather sheath that matches perfectly.</p>",
+            "content": "<p>Hälsing is a durable, folding hand saw with a traditional high-carbon steel blade, designed for frequent and heavy use. It's ideal for those who require a sturdy yet compact tool for bushcraft, camping, and hunting. </p><p>Whether you're building a shelter, preparing firewood, crafting, clearing paths, or maintaining woodlands Hälsing will do the job. With proper care, this saw will be a trusted companion, wherever your path leads you throughout the seasons.</p><p>Delivered with a durable black leather sheath that matches perfectly.</p>",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "page": ""
@@ -84,7 +84,7 @@
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "icon": "none",
-            "specs": "halsing-250",
+            "specs": "{{ product.metafields.custom.product_specification.value }}",
             "show_sku": true,
             "open_by_default": false,
             "hide_when_empty": true
