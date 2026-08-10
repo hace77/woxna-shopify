@@ -75,6 +75,7 @@
             "body_size": "small",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
+            "open_by_default": true,
             "page": ""
           }
         },
