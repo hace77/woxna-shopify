@@ -29,14 +29,13 @@
         "text_wB7jWr": {
           "type": "text",
           "settings": {
-            "text": "Our most duarble saw Hälsing with carbon steel, delivered with a  leather holster",
+            "text": "",
             "text_style": "body",
             "show_as_information_box": false
           }
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
