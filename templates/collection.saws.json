@@ -58,6 +58,9 @@
     },
     "read_more_content_NCFzYt": {
       "type": "read-more-content",
+      "custom_css": [
+        "p {font-size: 1.3rem;}"
+      ],
       "name": "Read more content",
       "settings": {
         "heading": "",
@@ -65,11 +68,11 @@
         "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
         "read_more_label": "Read more",
         "read_less_label": "Read less",
-        "collapsed_height_mobile": 105,
-        "collapsed_height_desktop": 70,
+        "collapsed_height_mobile": 160,
+        "collapsed_height_desktop": 180,
         "hide_toggle_if_short": false,
         "start_expanded": false,
-        "content_max_width": 980,
+        "content_max_width": 880,
         "text_align": "center",
         "show_fade": true,
         "fade_height": 96,
