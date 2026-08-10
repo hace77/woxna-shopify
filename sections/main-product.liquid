@@ -329,7 +329,7 @@
                       </div>
                       {{- 'icon-caret.svg' | inline_asset_content -}}
                     </summary>
-                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                    <div class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
                     </div>
@@ -371,7 +371,7 @@
                         </div>
                         <span class="product__accordion-feature__toggle" aria-hidden="true"></span>
                       </summary>
-                      <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                      <div class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                         {{ block.settings.content }}
                         {{ block.settings.page.content }}
                       </div>
@@ -1553,6 +1553,30 @@
         },
         {
           "type": "select",
+          "id": "body_size",
+          "label": "Body text size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            },
+            {
+              "value": "x-large",
+              "label": "X-large"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "select",
           "id": "heading_size",
           "label": "Heading size (Desktop)",
           "options": [
@@ -1647,6 +1671,30 @@
           "type": "richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "select",
+          "id": "body_size",
+          "label": "Body text size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            },
+            {
+              "value": "x-large",
+              "label": "X-large"
+            }
+          ],
+          "default": "medium"
         },
         {
           "type": "page",
