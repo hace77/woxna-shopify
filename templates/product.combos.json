@@ -26,8 +26,17 @@
             "product": "{{product}}"
           }
         },
+        "text_wB7jWr": {
+          "type": "text",
+          "settings": {
+            "text": "This is a combo of the Hälsing 180 mm High carbon steele blade and the Alfta leather sheath in black",
+            "text_style": "body",
+            "show_as_information_box": false
+          }
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
@@ -57,33 +66,33 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_FhKrbx": {
-          "type": "custom_liquid",
-          "name": "SKU number",
-          "settings": {
-            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
-          }
-        },
         "collapsible_tab_DTBqHk": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product description",
             "icon": "none",
-            "hide_when_empty": true,
-            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
-            "heading_size": "h3",
+            "hide_when_empty": false,
+            "content": "<p>This package contains the Hälsing Foldable saw, it features a high carbon steel blade and a oak handle, made for the rough woods.</p><p></p><p>It matches perfectly with our Alfta sheath in black thich vegetable garved leather that ages with beuty</p>",
+            "heading_size": "h2",
             "page": ""
           }
         },
         "collapsible_tab_Y9kK9d": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Contents",
+            "heading": "Features",
             "icon": "none",
-            "hide_when_empty": true,
-            "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
-            "heading_size": "h3",
+            "hide_when_empty": false,
+            "content": "<p><strong>Hälsing</strong></p><ul><li>Outdoor saw for bush-crafters, campers and tool enthusiasts. </li><li>High performance, high carbon steel sawblade available in two lengths</li><li>Handle made from oak with a protective linseed oil finish.</li><li>7 TPI, 3 phase grind - designed to handle a wide range of applications</li></ul><p><strong>Alfta</strong></p><ul><li>Leather sheaths for Woxna foldable saws: Ljusnan, Hälsing and Söderfors</li><li>Has a belt loop as well as a dangler with press button for easy removal and a ergonomic carry</li><li>Made in Spain from durable, vegetable-tanned leather</li><li>Please note, this product is only the leather sheath and does not include a saw. If you are looking for a combo of sheath and saw, please choose a set instead</li><li>The Woxna Alfta Sheaths are also compatible with Silky Outback Saws  </li></ul>",
+            "heading_size": "h2",
             "page": ""
+          }
+        },
+        "custom_liquid_FhKrbx": {
+          "type": "custom_liquid",
+          "name": "SKU number",
+          "settings": {
+            "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
         "rich_text_metafield_YmhmHd": {
@@ -100,14 +109,15 @@
         "title",
         "price",
         "klaviyo_reviews_average_rating_k7UapD",
+        "text_wB7jWr",
         "description",
         "variant_picker",
         "quantity_selector",
         "rich_text_metafield_jbhcCW",
         "buy_buttons",
-        "custom_liquid_FhKrbx",
         "collapsible_tab_DTBqHk",
         "collapsible_tab_Y9kK9d",
+        "custom_liquid_FhKrbx",
         "rich_text_metafield_YmhmHd"
       ],
       "custom_css": [
@@ -121,13 +131,13 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "medium",
+        "media_size": "large",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "hover",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "grey_overlay": false,
@@ -183,6 +193,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".card--card {border: 0 !important; }"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -198,11 +211,28 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "video_TEFy9A": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Oil_saw.mov",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_JJmacE",
-    "related-products"
+    "related-products",
+    "video_TEFy9A"
   ]
 }
