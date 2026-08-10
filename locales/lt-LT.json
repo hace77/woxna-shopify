@@ -177,7 +177,7 @@
       "inventory_low_stock_show_count": "Atsargos senka: liko {{ quantity }} vnt.",
       "inventory_out_of_stock": "Neturime",
       "inventory_out_of_stock_continue_selling": "Yra sandėlyje",
-      "sku": "SKU kodas",
+      "sku": "SKU",
       "volume_pricing": {
         "title": "Kiekybinė kainodara",
         "note": "Galima kiekybinė kainodara",
@@ -470,7 +470,7 @@
       "shipping": "Siuntimas",
       "tax": "Mokesčiai",
       "product": "Gaminys",
-      "sku": "SKU kodas",
+      "sku": "SKU",
       "price": "Kaina",
       "quantity": "Kiekis",
       "total": "Visa suma",

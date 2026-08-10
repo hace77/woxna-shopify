@@ -174,7 +174,7 @@
       "inventory_low_stock": "Varasto vähissä",
       "inventory_low_stock_show_count": "Varasto vähissä: {{ quantity }} jäljellä",
       "inventory_out_of_stock": "Loppunut varastosta",
-      "sku": "SKU-koodi",
+      "sku": "SKU",
       "inventory_out_of_stock_continue_selling": "Varastossa",
       "volume_pricing": {
         "title": "Volyymihinnoittelu",
@@ -488,7 +488,7 @@
       "shipping": "Toimitus",
       "tax": "Vero",
       "product": "Tuote",
-      "sku": "SKU-koodi",
+      "sku": "SKU",
       "price": "Hinta",
       "quantity": "Määrä",
       "total": "Yhteensä",

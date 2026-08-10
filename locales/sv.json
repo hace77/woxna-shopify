@@ -175,7 +175,7 @@
       "inventory_low_stock_show_count": "Bara {{ quantity }} kvar i lager",
       "inventory_out_of_stock": "Slut i lager",
       "inventory_out_of_stock_continue_selling": "I lager",
-      "sku": "Lagerhållningsenhet",
+      "sku": "SKU",
       "volume_pricing": {
         "title": "Volymprissättning",
         "note": "Volymprissättning är tillgängligt",

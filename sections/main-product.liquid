@@ -319,7 +319,7 @@
                 -%}
                 {%- if show_collapsible_tab -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
                     <summary>
                       <div class="summary__title">
                         {% render 'icon-accordion', icon: block.settings.icon %}
@@ -1622,6 +1622,12 @@
             }
           ],
           "default": "h4"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "default": false,
+          "label": "Open by default"
         },
         {
           "type": "page",

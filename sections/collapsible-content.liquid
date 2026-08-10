@@ -87,7 +87,9 @@
                 endif
 
                 assign open_collapsible_row = false
-                if section.settings.open_first_collapsible_row and first_visible_row_opened == false and show_collapsible_row
+                if block.settings.open_by_default
+                  assign open_collapsible_row = true
+                elsif section.settings.open_first_collapsible_row and first_visible_row_opened == false and show_collapsible_row
                   assign open_collapsible_row = true
                   assign first_visible_row_opened = true
                 endif
@@ -354,6 +356,12 @@
           "default": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.default",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "default": false,
+          "label": "Open by default"
         },
         {
           "type": "select",

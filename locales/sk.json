@@ -178,7 +178,7 @@
       "inventory_low_stock_show_count": "Nízky stav zásob: zostáva {{ quantity }}",
       "inventory_out_of_stock": "Vypredané",
       "inventory_out_of_stock_continue_selling": "Skladom",
-      "sku": "Jednotka SKU",
+      "sku": "SKU",
       "volume_pricing": {
         "title": "Objemové ceny",
         "note": "Dostupné objemové ceny",
@@ -512,7 +512,7 @@
       "shipping": "Doprava",
       "tax": "Daň",
       "product": "Produkt",
-      "sku": "Jednotka SKU",
+      "sku": "SKU",
       "price": "Cena",
       "quantity": "Množstvo",
       "total": "Celkove",

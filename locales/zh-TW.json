@@ -176,7 +176,7 @@
       "inventory_low_stock_show_count": "庫存不足：剩餘 {{ quantity }} 件",
       "inventory_out_of_stock": "無庫存",
       "inventory_out_of_stock_continue_selling": "有庫存",
-      "sku": "存貨單位 (SKU)",
+      "sku": "SKU",
       "volume_pricing": {
         "title": "批發價",
         "note": "提供批發價",
@@ -488,7 +488,7 @@
       "shipping": "運送",
       "tax": "稅金",
       "product": "產品",
-      "sku": "存貨單位 (SKU)",
+      "sku": "SKU",
       "price": "價格",
       "quantity": "數量",
       "total": "總計",
