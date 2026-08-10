@@ -69,6 +69,9 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "vertical",
+            "fa_icon_1": "fa-solid fa-truck",
+            "fa_icon_2": "fa-solid fa-shield-halved",
+            "fa_icon_3": "fa-solid fa-flag",
             "icon_1": "none",
             "heading_1": "Free Shipping Over 200 USD / 100 EUR",
             "icon_2": "none",
