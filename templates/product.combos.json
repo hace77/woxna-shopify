@@ -72,6 +72,7 @@
             "icon": "none",
             "hide_when_empty": false,
             "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
+            "body_size": "small",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "page": ""
