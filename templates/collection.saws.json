@@ -56,32 +56,6 @@
         "show_text_below": false
       }
     },
-    "read_more_content_NCFzYt": {
-      "type": "read-more-content",
-      "custom_css": [
-        "h2 {font-size: calc(var(--font-heading-scale) * 2rem);}",
-        ".read-more-content__body {font-size: 1.3rem;}"
-      ],
-      "name": "Read more content",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
-        "read_more_label": "Read more",
-        "read_less_label": "Read less",
-        "collapsed_height_mobile": 135,
-        "collapsed_height_desktop": 130,
-        "hide_toggle_if_short": false,
-        "start_expanded": false,
-        "content_max_width": 880,
-        "text_align": "center",
-        "show_fade": true,
-        "fade_height": 96,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner_xCeRbe": {
       "type": "image-banner",
       "blocks": {
@@ -352,17 +326,43 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "read_more_content_NCFzYt": {
+      "type": "read-more-content",
+      "custom_css": [
+        "h2 {font-size: calc(var(--font-heading-scale) * 2rem);}",
+        ".read-more-content__body {font-size: 1.3rem;}"
+      ],
+      "name": "Read more content",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
+        "read_more_label": "Read more",
+        "read_less_label": "Read less",
+        "collapsed_height_mobile": 135,
+        "collapsed_height_desktop": 130,
+        "hide_toggle_if_short": false,
+        "start_expanded": false,
+        "content_max_width": 880,
+        "text_align": "center",
+        "show_fade": true,
+        "fade_height": 96,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_6dhQUz",
-    "read_more_content_NCFzYt",
     "image_banner_xCeRbe",
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
     "featured_collection_VdnQyT",
     "featured_collection_DHw74c",
-    "featured_collection_yUWtYn"
+    "featured_collection_yUWtYn",
+    "read_more_content_NCFzYt"
   ]
 }
