@@ -40,7 +40,8 @@
             "show_heading": false,
             "heading": "",
             "show_fallback": false,
-            "fallback_content": ""
+            "fallback_content": "",
+            "enable_strikethrough": false
           }
         },
         "buy_buttons": {
@@ -57,16 +58,14 @@
             "prefix_text": "SKU:"
           }
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
-        },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
           "disabled": true,
           "settings": {
             "layout": "vertical",
+            "fa_icon_1": "",
+            "fa_icon_2": "",
+            "fa_icon_3": "",
             "icon_1": "box",
             "heading_1": "Free Shipping",
             "icon_2": "star",
@@ -97,7 +96,6 @@
         "variant_metafield_pQV6yj",
         "buy_buttons",
         "sku_cGN6wt",
-        "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "text_YRCQgw",
         "description"
@@ -116,10 +114,10 @@
         "color_scheme": "scheme-b8ac748e-84d2-4c6e-b262-b087b08e4231",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "hover",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
@@ -153,6 +151,7 @@
         "text_rBXVdh"
       ],
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Halsing-180-Alta-_112018-512018_-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -359,7 +358,8 @@
         "text_crzTjK": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>",
+            "hide_when_empty": false
           }
         }
       },
@@ -379,6 +379,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
