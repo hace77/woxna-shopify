@@ -51,7 +51,7 @@
       "name": "Image banner DT",
       "settings": {
         "hide_when_empty": false,
-        "image": "shopify://shop_images/New_landing_dt-halsing.jpg",
+        "image": "shopify://shop_images/ljusnan250_horiz.png",
         "image_mobile": "shopify://shop_images/XT306849.jpg",
         "image_overlay_opacity": 20,
         "image_height": "adapt",
