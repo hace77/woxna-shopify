@@ -114,13 +114,14 @@
         "extra_products_wNARCN": {
           "type": "extra_products",
           "settings": {
-            "heading": "Buy the set with the Alfta leather sheath",
+            "heading": "<strong>Sheath not included.</strong> Buy as a combo with  a leather sheath:",
             "legend": "",
             "none_label": "No extra product"
           }
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "rich_text_metafield_Dw3Upb": {
