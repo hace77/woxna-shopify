@@ -89,6 +89,8 @@
             "heading_size": "h4",
             "mobile_heading_size": "h4",
             "icon": "none",
+            "specs_source": "variant",
+            "metafield_key": "prod_spec",
             "specs": "{{ product.metafields.custom.product_specification.value }}",
             "show_sku": true,
             "open_by_default": false,
