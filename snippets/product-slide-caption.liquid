@@ -1,0 +1,29 @@
+{% comment %}
+  Caption under a product gallery slide.
+
+  Accepts:
+  - media_position: {Number} 1-based gallery position
+
+  Usage:
+  {% render 'product-slide-caption', media_position: media_position %}
+{% endcomment %}
+{%- liquid
+  assign caption_block = nil
+  assign current_position = media_position | plus: 0
+
+  for block in section.blocks
+    if block.type == 'slide_caption'
+      assign target_position = block.settings.slide_position | plus: 0
+      if target_position == current_position and block.settings.caption != blank
+        assign caption_block = block
+        break
+      endif
+    endif
+  endfor
+-%}
+
+{%- if caption_block != nil -%}
+  <div class="product-slide-caption inline-richtext" {{ caption_block.shopify_attributes }}>
+    {{ caption_block.settings.caption }}
+  </div>
+{%- endif -%}

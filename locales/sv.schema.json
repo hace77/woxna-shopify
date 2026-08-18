@@ -2035,6 +2035,18 @@
             }
           }
         },
+        "slide_caption": {
+          "name": "Bildtext",
+          "settings": {
+            "slide_position": {
+              "label": "Slide-nummer",
+              "info": "1 är första produktbilden. Texten visas bara under slides där du fyller i bildtext."
+            },
+            "caption": {
+              "label": "Bildtext"
+            }
+          }
+        },
         "sku": {
           "name": "Lagerhållningsenhet",
           "settings": {

@@ -1,3 +1,7 @@
+.product-specs-block--empty {
+  display: none;
+}
+
 .product-specs {
   margin: 0;
 }

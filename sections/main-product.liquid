@@ -380,7 +380,27 @@
                 {%- endif -%}
               {%- when 'product_specs' -%}
                 {%- liquid
-                  assign specs_object = block.settings.specs
+                  assign specs_variant = product.selected_or_first_available_variant
+                  assign specs_source = block.settings.specs_source | default: 'product'
+                  assign specs_namespace = 'custom'
+                  assign specs_key = block.settings.metafield_key | default: 'prod_spec' | strip
+
+                  if specs_source == 'variant'
+                    assign specs_object = specs_variant.metafields[specs_namespace][specs_key].value
+                    if specs_object == blank
+                      assign specs_object = specs_variant.metafields.custom.prod_spec.value
+                    endif
+                    if specs_object == blank
+                      assign specs_object = specs_variant.metafields.custom.saw_specs.value
+                    endif
+                    if specs_object == blank
+                      assign specs_object = specs_variant.metafields.custom.tech_specs.value
+                    endif
+                  endif
+
+                  if specs_object == blank
+                    assign specs_object = block.settings.specs
+                  endif
                   if specs_object == blank
                     assign specs_object = product.metafields.custom.prod_spec.value
                   endif
@@ -394,7 +414,7 @@
                   assign show_product_specs = true
                   if block.settings.hide_when_empty
                     assign show_product_specs = false
-                    if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank
+                    if block.settings.show_sku and specs_variant.sku != blank
                       assign show_product_specs = true
                     endif
                     if specs_object != blank
@@ -404,8 +424,13 @@
                     endif
                   endif
                 -%}
-                {%- if show_product_specs -%}
-                  <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                <div
+                  class="product__accordion accordion quick-add-hidden product-specs-block{% unless show_product_specs %} product-specs-block--empty{% endunless %}"
+                  id="ProductSpecs-{{ block.id }}-{{ section.id }}"
+                  data-product-specs
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if show_product_specs -%}
                     <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
                       <summary>
                         <div class="summary__title">
@@ -424,8 +449,8 @@
                         %}
                       </div>
                     </details>
-                  </div>
-                {%- endif -%}
+                  {%- endif -%}
+                </div>
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -924,6 +949,8 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'slide_caption' -%}
+                {%- comment -%}Rendered under matching product gallery slides{%- endcomment -%}
               {%- when 'variant_metafield' -%}
                 {%- liquid
                   assign namespace = 'custom'
@@ -1857,11 +1884,35 @@
           "label": "Icon"
         },
         {
+          "type": "select",
+          "id": "specs_source",
+          "label": "Specs source",
+          "info": "Product = same as today (connect prod_spec on the product). Variant = read prod_spec from the selected variant and update on change.",
+          "options": [
+            {
+              "value": "product",
+              "label": "Product"
+            },
+            {
+              "value": "variant",
+              "label": "Selected variant"
+            }
+          ],
+          "default": "product"
+        },
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Variant metafield key",
+          "default": "prod_spec",
+          "info": "Only used when source is Selected variant. Reads custom.[key] on the variant."
+        },
+        {
           "type": "metaobject",
           "id": "specs",
           "label": "Specs",
           "metaobject_type": "prod_spec",
-          "info": "Select a specs entry, or use the dynamic source icon to connect the product metafield. Leave empty to auto-read custom.prod_spec from the product."
+          "info": "Connect a product prod_spec, or pick an entry. If source is Selected variant, this is only used when that variant has no specs."
         },
         {
           "type": "checkbox",
@@ -2801,6 +2852,24 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "slide_caption",
+      "name": "t:sections.main-product.blocks.slide_caption.name",
+      "settings": [
+        {
+          "type": "number",
+          "id": "slide_position",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.slide_position.label",
+          "info": "t:sections.main-product.blocks.slide_caption.settings.slide_position.info",
+          "default": 1
+        },
+        {
+          "type": "inline_richtext",
+          "id": "caption",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.caption.label"
         }
       ]
     },

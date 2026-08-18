@@ -2506,6 +2506,18 @@
               "default": "Heading"
             }
           }
+        },
+        "slide_caption": {
+          "name": "Image caption",
+          "settings": {
+            "slide_position": {
+              "label": "Slide number",
+              "info": "1 is the first product image. Only slides with a caption will show text underneath."
+            },
+            "caption": {
+              "label": "Caption"
+            }
+          }
         }
       },
       "settings": {

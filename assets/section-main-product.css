@@ -1610,3 +1610,24 @@ a.product__text {
     border: none;
   }
 }
+
+.product-slide-caption {
+  color: rgba(var(--color-foreground), 0.75);
+  flex: 1 0 100%;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 0.8rem 0 0;
+  padding: 0 0.4rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .product__media-item:has(.product-slide-caption) {
+    flex-wrap: wrap;
+  }
+
+  .product-slide-caption {
+    margin-bottom: 0.4rem;
+  }
+}

@@ -327,6 +327,7 @@ if (!customElements.get('product-info')) {
 
           this.updateMedia(html, variant?.featured_media?.id);
           this.updateVariantMetafields(html);
+          this.updateProductSpecs(html);
 
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {
             const source = html.getElementById(`${id}-${this.sectionId}`);
@@ -814,6 +815,43 @@ if (!customElements.get('product-info')) {
         
         // Note: Standalone variant metafield sections (outside product-info) 
         // are handled by their own custom element (variant-metafield-section.js)
+      }
+
+      updateProductSpecs(html) {
+        const currentBlocks = this.querySelectorAll('[data-product-specs]');
+
+        currentBlocks.forEach((currentBlock) => {
+          const blockId = currentBlock.id;
+          if (!blockId) return;
+
+          const newBlock = html.querySelector(`#${blockId}`);
+          if (!newBlock) return;
+          if (currentBlock.innerHTML === newBlock.innerHTML) {
+            currentBlock.classList.toggle(
+              'product-specs-block--empty',
+              newBlock.classList.contains('product-specs-block--empty')
+            );
+            return;
+          }
+
+          const wasOpen = currentBlock.querySelector('details')?.open;
+
+          currentBlock.style.transition = 'opacity 0.2s ease';
+          currentBlock.style.opacity = '0';
+
+          setTimeout(() => {
+            currentBlock.innerHTML = newBlock.innerHTML;
+            currentBlock.classList.toggle(
+              'product-specs-block--empty',
+              newBlock.classList.contains('product-specs-block--empty')
+            );
+            if (wasOpen) {
+              const details = currentBlock.querySelector('details');
+              if (details) details.open = true;
+            }
+            currentBlock.style.opacity = '1';
+          }, 200);
+        });
       }
 
       setQuantityBoundries() {

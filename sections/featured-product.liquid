@@ -479,6 +479,8 @@
                       </p>
                     </div>
                   {%- endif -%}
+                {%- when 'slide_caption' -%}
+                  {%- comment -%}Rendered under matching product gallery slides{%- endcomment -%}
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
                 {%- when 'variant_metafield' -%}
@@ -1485,6 +1487,24 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "slide_caption",
+      "name": "t:sections.main-product.blocks.slide_caption.name",
+      "settings": [
+        {
+          "type": "number",
+          "id": "slide_position",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.slide_position.label",
+          "info": "t:sections.main-product.blocks.slide_caption.settings.slide_position.info",
+          "default": 1
+        },
+        {
+          "type": "inline_richtext",
+          "id": "caption",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.caption.label"
         }
       ]
     },
