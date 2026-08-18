@@ -82,12 +82,26 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
+        "collapsible_tab_qpJykh": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product description",
+            "icon": "none",
+            "hide_when_empty": false,
+            "content": "<p>{{ metaobjects.preamble[\"ljusnan-250-mm\"].single_line_ingress.value }}</p>",
+            "body_size": "medium",
+            "heading_size": "h4",
+            "mobile_heading_size": "h2",
+            "open_by_default": true,
+            "page": ""
+          }
+        },
         "product_specs_TxXjda": {
           "type": "product_specs",
           "settings": {
             "heading": "Technical specifications",
             "heading_size": "h4",
-            "mobile_heading_size": "h4",
+            "mobile_heading_size": "h2",
             "icon": "none",
             "specs_source": "variant",
             "metafield_key": "prod_spec",
@@ -120,6 +134,7 @@
         "extra_products_wNARCN",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
+        "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
         "description",
         "rich_text_metafield_Dw3Upb"
