@@ -61,6 +61,7 @@
         },
         "sku_6qRbkp": {
           "type": "sku",
+          "disabled": true,
           "settings": {
             "text_style": "body",
             "prefix_text": "SKU:"
@@ -70,12 +71,28 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "vertical",
+            "fa_icon_1": "",
+            "fa_icon_2": "",
+            "fa_icon_3": "",
             "icon_1": "none",
             "heading_1": "Free Shipping Over 200 USD / 100 EUR",
             "icon_2": "none",
             "heading_2": "Limited Lifetime Warranty",
             "icon_3": "none",
             "heading_3": "Proudly Made in Sweden"
+          }
+        },
+        "product_specs_TxXjda": {
+          "type": "product_specs",
+          "settings": {
+            "heading": "Technical specifications",
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
+            "icon": "none",
+            "specs": "{{ product.metafields.custom.product_specification.value }}",
+            "show_sku": true,
+            "open_by_default": false,
+            "hide_when_empty": true
           }
         },
         "description": {
@@ -101,6 +118,7 @@
         "extra_products_wNARCN",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
+        "product_specs_TxXjda",
         "description",
         "rich_text_metafield_Dw3Upb"
       ],
@@ -871,8 +889,12 @@
           "settings": {
             "hide_when_empty": false,
             "heading": "Choose Size",
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
             "icon": "ruler",
             "row_content": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.</p><p>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>",
+            "body_size": "medium",
             "page": ""
           }
         },
@@ -881,8 +903,12 @@
           "settings": {
             "hide_when_empty": false,
             "heading": "Choose Model",
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
             "icon": "star",
             "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
+            "body_size": "medium",
             "page": ""
           }
         },
@@ -891,8 +917,12 @@
           "settings": {
             "hide_when_empty": false,
             "heading": "Care and Maintanance",
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
             "icon": "clipboard",
             "row_content": "{{ product.metafields.custom.product_care.value.text | metafield_tag }}",
+            "body_size": "medium",
             "page": ""
           }
         }
@@ -910,6 +940,7 @@
         "caption": "",
         "heading": "",
         "heading_size": "h1",
+        "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "",
