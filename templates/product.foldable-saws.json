@@ -90,7 +90,7 @@
             "hide_when_empty": false,
             "content": "<p>{{ metaobjects.preamble[\"ljusnan-250-mm\"].single_line_ingress.value }}</p>",
             "body_size": "medium",
-            "heading_size": "h4",
+            "heading_size": "h3",
             "mobile_heading_size": "h2",
             "open_by_default": true,
             "page": ""
@@ -100,7 +100,7 @@
           "type": "product_specs",
           "settings": {
             "heading": "Technical specifications",
-            "heading_size": "h4",
+            "heading_size": "h3",
             "mobile_heading_size": "h2",
             "icon": "none",
             "specs_source": "variant",
