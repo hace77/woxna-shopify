@@ -16,6 +16,14 @@
           "type": "title",
           "settings": {}
         },
+        "text_TPWqTH": {
+          "type": "text",
+          "settings": {
+            "text": "Outdoor saw for pruning trees and clearing trails",
+            "text_style": "body",
+            "show_as_information_box": false
+          }
+        },
         "klaviyo_reviews_average_rating_ircKrJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
@@ -49,14 +57,6 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "extra_products_wNARCN": {
-          "type": "extra_products",
-          "settings": {
-            "heading": "Buy the set with the Alfta leather sheath",
-            "legend": "",
-            "none_label": "No extra product"
           }
         },
         "sku_6qRbkp": {
@@ -111,6 +111,14 @@
             "hide_when_empty": true
           }
         },
+        "extra_products_wNARCN": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Buy the set with the Alfta leather sheath",
+            "legend": "",
+            "none_label": "No extra product"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -126,16 +134,17 @@
       },
       "block_order": [
         "title",
+        "text_TPWqTH",
         "klaviyo_reviews_average_rating_ircKrJ",
         "price",
         "variant_metafield_7fHFHQ",
         "variant_picker",
         "buy_buttons",
-        "extra_products_wNARCN",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
         "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
+        "extra_products_wNARCN",
         "description",
         "rich_text_metafield_Dw3Upb"
       ],
@@ -162,7 +171,7 @@
         "enable_video_looping": false,
         "grey_overlay": false,
         "padding_top": 36,
-        "padding_bottom": 40
+        "padding_bottom": 0
       }
     },
     "video_BCbL4d": {
@@ -223,6 +232,7 @@
         "heading_C7z8Le",
         "text_rBXVdh"
       ],
+      "disabled": true,
       "name": "Preamble",
       "settings": {
         "hide_when_empty": false,
