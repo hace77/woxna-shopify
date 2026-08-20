@@ -2868,8 +2868,59 @@
         },
         {
           "type": "inline_richtext",
-          "id": "caption",
-          "label": "t:sections.main-product.blocks.slide_caption.settings.caption.label"
+          "id": "heading",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.heading_size.label",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__3.label"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.description.label"
+        },
+        {
+          "type": "select",
+          "id": "description_size",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.description_size.label",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__3.label"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_background",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.show_background.label",
+          "default": false
         }
       ]
     },

@@ -14,16 +14,39 @@
   for block in section.blocks
     if block.type == 'slide_caption'
       assign target_position = block.settings.slide_position | plus: 0
-      if target_position == current_position and block.settings.caption != blank
-        assign caption_block = block
-        break
+      if target_position == current_position
+        if block.settings.heading != blank or block.settings.description != blank or block.settings.caption != blank
+          assign caption_block = block
+          break
+        endif
       endif
     endif
   endfor
 -%}
 
 {%- if caption_block != nil -%}
-  <div class="product-slide-caption inline-richtext" {{ caption_block.shopify_attributes }}>
-    {{ caption_block.settings.caption }}
+  {%- liquid
+    assign caption_heading = caption_block.settings.heading
+    assign caption_description = caption_block.settings.description
+    if caption_description == blank
+      assign caption_description = caption_block.settings.caption
+    endif
+    assign heading_size = caption_block.settings.heading_size | default: 'medium'
+    assign description_size = caption_block.settings.description_size | default: 'medium'
+  -%}
+  <div
+    class="product-slide-caption{% if caption_block.settings.show_background %} product-slide-caption--boxed{% endif %}"
+    {{ caption_block.shopify_attributes }}
+  >
+    {%- if caption_heading != blank -%}
+      <div class="product-slide-caption__heading inline-richtext product-slide-caption__heading--{{ heading_size }}">
+        {{ caption_heading }}
+      </div>
+    {%- endif -%}
+    {%- if caption_description != blank -%}
+      <div class="product-slide-caption__text rte product-slide-caption__text--{{ description_size }}">
+        {{ caption_description }}
+      </div>
+    {%- endif -%}
   </div>
 {%- endif -%}

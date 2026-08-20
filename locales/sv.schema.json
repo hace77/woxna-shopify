@@ -2044,6 +2044,32 @@
             },
             "caption": {
               "label": "Bildtext"
+            },
+            "heading": {
+              "label": "Rubrik"
+            },
+            "heading_size": {
+              "label": "Rubrikstorlek"
+            },
+            "description": {
+              "label": "Beskrivning"
+            },
+            "description_size": {
+              "label": "Beskrivningsstorlek"
+            },
+            "size": {
+              "options__1": {
+                "label": "Liten"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Stor"
+              }
+            },
+            "show_background": {
+              "label": "Grå bakgrund"
             }
           }
         },

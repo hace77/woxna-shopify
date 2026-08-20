@@ -2516,6 +2516,32 @@
             },
             "caption": {
               "label": "Caption"
+            },
+            "heading": {
+              "label": "Heading"
+            },
+            "heading_size": {
+              "label": "Heading size"
+            },
+            "description": {
+              "label": "Description"
+            },
+            "description_size": {
+              "label": "Description size"
+            },
+            "size": {
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Large"
+              }
+            },
+            "show_background": {
+              "label": "Gray background"
             }
           }
         }

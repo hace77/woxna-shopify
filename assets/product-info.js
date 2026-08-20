@@ -555,6 +555,7 @@ if (!customElements.get('product-info')) {
               item.style.display = '';
             }
           });
+          this.refreshGallerySliderPages(mediaGallery);
           return;
         }
 
@@ -620,6 +621,40 @@ if (!customElements.get('product-info')) {
           const shouldShow = this.mediaAltMatchesSelectedOptions(altText, selectedOptionValues);
           
           item.style.display = shouldShow ? '' : 'none';
+        });
+
+        this.refreshGallerySliderPages(mediaGallery);
+      }
+
+      refreshGallerySliderPages(mediaGallery) {
+        const gallery = mediaGallery || this.querySelector('media-gallery');
+        if (!gallery) return;
+
+        // Recalculate mobile slider pages/counter after display:none filtering
+        requestAnimationFrame(() => {
+          const viewer = gallery.querySelector('[id^="GalleryViewer"]');
+          if (typeof viewer?.resetPages === 'function') {
+            viewer.resetPages();
+          }
+
+          // Dawn's initPages returns early when < 2 visible slides and leaves the old total.
+          if (viewer) {
+            const visibleSlides = Array.from(viewer.querySelectorAll('.product__media-list > [id^="Slide-"]')).filter(
+              (slide) => slide.style.display !== 'none' && slide.clientWidth > 0
+            );
+
+            if (visibleSlides.length < 2) {
+              const totalElement = viewer.querySelector('.slider-counter--total');
+              const currentElement = viewer.querySelector('.slider-counter--current');
+              if (totalElement) totalElement.textContent = String(Math.max(visibleSlides.length, 1));
+              if (currentElement) currentElement.textContent = '1';
+            }
+          }
+
+          const thumbnails = gallery.querySelector('[id^="GalleryThumbnails"]');
+          if (typeof thumbnails?.resetPages === 'function') {
+            thumbnails.resetPages();
+          }
         });
       }
 
