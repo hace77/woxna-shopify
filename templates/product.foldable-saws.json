@@ -19,8 +19,8 @@
         "text_TPWqTH": {
           "type": "text",
           "settings": {
-            "text": "Outdoor saw for pruning trees and clearing trails",
-            "text_style": "body",
+            "text": "Precision-engineered in Sweden from premium stainless steel, Ljusnan brings exceptional cutting performance to the outdoors, for those who believe a good tool should be a pleasure to own, use and keep.",
+            "text_style": "small",
             "show_as_information_box": false
           }
         },
@@ -92,7 +92,7 @@
             "body_size": "medium",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
-            "open_by_default": true,
+            "open_by_default": false,
             "page": ""
           }
         },
@@ -136,10 +136,10 @@
           "type": "slide_caption",
           "settings": {
             "slide_position": 1,
-            "heading": "Stainless steel blade",
+            "heading": "",
             "heading_size": "medium",
-            "description": "<p>knife grade quality</p>",
-            "description_size": "medium",
+            "description": "<p>{{ product.metafields.custom.feature_1 | metafield_tag }}</p>",
+            "description_size": "small",
             "show_background": false
           }
         }
@@ -221,6 +221,64 @@
         "padding_bottom": 12
       }
     },
+    "collapsible_content_gEpGHP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_WRMnDt": {
+          "type": "collapsible_row",
+          "settings": {
+            "hide_when_empty": false,
+            "heading": "Choose Model",
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
+            "icon": "star",
+            "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
+            "body_size": "medium",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_WRMnDt"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
+      ],
+      "name": "Choose model",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "mobile_heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 52,
+        "padding_bottom": 60
+      }
+    },
+    "variant_metafield_display_4dUfVR": {
+      "type": "variant-metafield-display",
+      "name": "Variant measurement",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": true,
+        "heading": "",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_ajHV6U": {
       "type": "image-banner",
       "blocks": {
@@ -262,21 +320,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "1730797907a66336cc": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_WDee4N": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_WDee4N"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "image_with_text_tqyCxz": {
@@ -477,6 +520,21 @@
         "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "1730797907a66336cc": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_WDee4N": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_WDee4N"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "image_with_text_JLf43q": {
@@ -855,22 +913,6 @@
         "padding_bottom": 52
       }
     },
-    "variant_metafield_display_4dUfVR": {
-      "type": "variant-metafield-display",
-      "name": "Variant measurement",
-      "settings": {
-        "metafield_key": "size_image",
-        "show_heading": true,
-        "heading": "",
-        "text_alignment": "center",
-        "full_width": true,
-        "image_display": "block",
-        "show_fallback": false,
-        "fallback_content": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner_8zaQaf": {
       "type": "image-banner",
       "blocks": {
@@ -926,10 +968,10 @@
         "show_text_below": false
       }
     },
-    "collapsible_content_gEpGHP": {
+    "collapsible_content_4g87GQ": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_JiRKKg": {
+        "collapsible_row_md8hht": {
           "type": "collapsible_row",
           "settings": {
             "hide_when_empty": false,
@@ -943,21 +985,7 @@
             "page": ""
           }
         },
-        "collapsible_row_WRMnDt": {
-          "type": "collapsible_row",
-          "settings": {
-            "hide_when_empty": false,
-            "heading": "Choose Model",
-            "open_by_default": false,
-            "heading_size": "h4",
-            "mobile_heading_size": "h4",
-            "icon": "star",
-            "row_content": "<p>Our two foldable saws Ljusnan and Hälsing are all based on the same design, the big differences between them are in the choice of materials. </p><p><strong>Ljusnan</strong> has a stainless steel blade and a dark walnut handle. The stainless steel has great anti corrosion properties and is ideal for tough environments and for those who rather spend their time in the woods instead of on gear maintenance.</p><p><strong>Hälsing</strong> has a traditional high carbon steel blade with an anti-corrosion coating and a robust oak handle. The carbon steel has great sharpness, edge retention properties and ductility, making them a great choice for more frequent and heavy usage.</p>",
-            "body_size": "medium",
-            "page": ""
-          }
-        },
-        "collapsible_row_Qh76JD": {
+        "collapsible_row_H6UXTN": {
           "type": "collapsible_row",
           "settings": {
             "hide_when_empty": false,
@@ -973,9 +1001,8 @@
         }
       },
       "block_order": [
-        "collapsible_row_JiRKKg",
-        "collapsible_row_WRMnDt",
-        "collapsible_row_Qh76JD"
+        "collapsible_row_md8hht",
+        "collapsible_row_H6UXTN"
       ],
       "custom_css": [
         "@media only screen and (min-width: 750px) {h3 {font-size: 40px; }}"
@@ -1116,13 +1143,15 @@
     "main",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
+    "collapsible_content_gEpGHP",
+    "variant_metafield_display_4dUfVR",
     "image_banner_ajHV6U",
-    "1730797907a66336cc",
     "image_with_text_tqyCxz",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
     "image_with_text_RzkRHW",
     "rich_text_zGRdRF",
+    "1730797907a66336cc",
     "image_with_text_JLf43q",
     "slideshow_khyK4k",
     "rich_text_J4ppHw",
@@ -1131,9 +1160,8 @@
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
     "variant_text_display_MNgcx9",
-    "variant_metafield_display_4dUfVR",
     "image_banner_8zaQaf",
-    "collapsible_content_gEpGHP",
+    "collapsible_content_4g87GQ",
     "rich_text_ji3RVR",
     "image_with_text_j83Eef",
     "related-products"
