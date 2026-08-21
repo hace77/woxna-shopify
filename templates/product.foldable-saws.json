@@ -196,7 +196,7 @@
       "block_order": [
         "klaviyo_reviews_product_reviews_mMjMJa"
       ],
-      "name": "t:sections.collapsible_content.presets.name",
+      "name": "reviews",
       "settings": {
         "caption": "",
         "heading": "",
@@ -580,6 +580,7 @@
       "block_order": [
         "klaviyo_reviews_product_reviews_WDee4N"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
