@@ -131,6 +131,17 @@
             "text_style": "body",
             "show_as_information_box": true
           }
+        },
+        "slide_caption_rmp96H": {
+          "type": "slide_caption",
+          "settings": {
+            "slide_position": 1,
+            "heading": "Stainless steel blade",
+            "heading_size": "medium",
+            "description": "<p>knife grade quality</p>",
+            "description_size": "medium",
+            "show_background": false
+          }
         }
       },
       "block_order": [
@@ -147,7 +158,8 @@
         "product_specs_TxXjda",
         "extra_products_wNARCN",
         "description",
-        "rich_text_metafield_Dw3Upb"
+        "rich_text_metafield_Dw3Upb",
+        "slide_caption_rmp96H"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
@@ -728,6 +740,7 @@
         "slide_REjKkX",
         "slide_KRAgzz"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -761,6 +774,7 @@
         "heading_KnR9NP",
         "text_CBqpGQ"
       ],
+      "disabled": true,
       "name": "Packaging",
       "settings": {
         "desktop_content_position": "center",
