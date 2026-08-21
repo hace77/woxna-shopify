@@ -19,24 +19,26 @@
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       <div class="{% if section.settings.image != blank or section.settings.content_width == 'page' %}page-width{% else %}collapsible-content-wrapper-narrow{% endif %}">
-        <div
-          class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          style="text-align: {{ section.settings.heading_alignment }};"
-        >
-          {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing">
-              {{ section.settings.caption | escape }}
-            </p>
-          {% endif %}
-          {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }} mobile-{{ section.settings.mobile_heading_size | default: section.settings.heading_size }}">
-              {{ section.settings.heading }}
-            </h2>
-          {%- else -%}
-            <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
-          {% endif %}
-        </div>
-        <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {%- if section.settings.caption != blank or section.settings.heading != blank -%}
+          <div
+            class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            style="text-align: {{ section.settings.heading_alignment }};"
+          >
+            {%- if section.settings.caption != blank -%}
+              <p class="caption-with-letter-spacing">
+                {{ section.settings.caption | escape }}
+              </p>
+            {% endif %}
+            {%- if section.settings.heading != blank -%}
+              <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }} mobile-{{ section.settings.mobile_heading_size | default: section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {% endif %}
+          </div>
+        {%- else -%}
+          <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+        {%- endif -%}
+        <div class="grid grid--1-col{% if section.settings.image != blank %} grid--2-col-tablet{% endif %} collapsible-content__grid{% if section.settings.image != blank and section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {%- if section.settings.image != blank -%}
             <div class="grid__item collapsible-content__grid-item">
               <div
@@ -132,7 +134,7 @@
                     >
                       <summary id="Summary-{{ block.id }}-{{ section.id }}">
                         {% render 'icon-accordion', icon: section.settings.klaviyo_reviews_icon %}
-                        <h3 class="accordion__title accordion__title--with-klaviyo inline-richtext {{ section.settings.klaviyo_reviews_heading_size | default: 'h4' }} mobile-{{ section.settings.klaviyo_reviews_mobile_heading_size | default: section.settings.klaviyo_reviews_heading_size | default: 'h4' }}">
+                        <h3 class="accordion__title accordion__title--with-klaviyo inline-richtext {{ section.settings.klaviyo_reviews_heading_size | default: 'h4' }} mobile-{{ section.settings.klaviyo_reviews_mobile_heading_size | default: section.settings.klaviyo_reviews_heading_size | default: 'h4' }}{% if section.settings.accordion_heading_uppercase %} accordion__title--uppercase{% endif %}">
                           <span class="accordion__title-text">
                             {{ section.settings.klaviyo_reviews_heading | default: 'Reviews' | escape }}
                           </span>
@@ -174,7 +176,7 @@
                     >
                       <summary id="Summary-{{ block.id }}-{{ section.id }}">
                         {% render 'icon-accordion', icon: block.settings.icon %}
-                        <h3 class="accordion__title inline-richtext {{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }}">
+                        <h3 class="accordion__title inline-richtext {{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }}{% if block.settings.heading_uppercase or section.settings.accordion_heading_uppercase %} accordion__title--uppercase{% endif %}">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h3>
                         {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -332,6 +334,13 @@
       ],
       "default": "narrow",
       "info": "t:sections.collapsible_content.settings.content_width.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "accordion_heading_uppercase",
+      "default": false,
+      "label": "t:sections.collapsible_content.settings.accordion_heading_uppercase.label",
+      "info": "t:sections.collapsible_content.settings.accordion_heading_uppercase.info"
     },
     {
       "type": "color_scheme",
@@ -551,6 +560,12 @@
           "default": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.default",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_uppercase",
+          "default": false,
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading_uppercase.label"
         },
         {
           "type": "checkbox",

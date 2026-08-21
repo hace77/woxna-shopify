@@ -34,6 +34,14 @@
   word-break: break-word;
 }
 
+.accordion__title--uppercase {
+  text-transform: uppercase;
+}
+
+.accordion__title--uppercase .klaviyo-star-rating-widget {
+  text-transform: none;
+}
+
 .accordion .svg-wrapper {
   align-self: center;
   fill: rgb(var(--color-foreground));

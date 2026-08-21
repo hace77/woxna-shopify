@@ -1772,6 +1772,9 @@
             "open_by_default_mobile": {
               "label": "Öppen som standard (mobil)"
             },
+            "heading_uppercase": {
+              "label": "Versaler på rubrik"
+            },
             "icon": {
               "label": "Ikon",
               "options__1": {
@@ -3083,6 +3086,10 @@
           },
           "info": "Gäller när ingen bild är satt. Med bild används alltid sidbredd."
         },
+        "accordion_heading_uppercase": {
+          "label": "Versaler på accordion-rubriker",
+          "info": "Gäller alla collapsible-rader i sektionen, inklusive Klaviyo-recensioner."
+        },
         "open_first_collapsible_row": {
           "label": "Öppna den första raden som kan döljas"
         },
@@ -3153,6 +3160,9 @@
               "info": "Inkludera en rubrik som beskriver innehållet.",
               "label": "Rubrik",
               "default": "Rad som kan döljas"
+            },
+            "heading_uppercase": {
+              "label": "Versaler på rubrik"
             },
             "row_content": {
               "label": "Radinnehåll"

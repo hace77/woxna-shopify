@@ -2260,6 +2260,9 @@
             "open_by_default_mobile": {
               "label": "Open by default (mobile)"
             },
+            "heading_uppercase": {
+              "label": "Uppercase heading"
+            },
             "icon": {
               "label": "Icon",
               "options__1": {
@@ -3433,6 +3436,10 @@
           },
           "info": "Applies when no image is set. With an image, content always uses page width."
         },
+        "accordion_heading_uppercase": {
+          "label": "Uppercase accordion headings",
+          "info": "Applies to all collapsible row headings in this section, including Klaviyo reviews."
+        },
         "container_color_scheme": {
           "label": "Container color scheme",
           "info": "Visible when Layout is set to Row or Section container."
@@ -3503,6 +3510,9 @@
               "default": "Collapsible row",
               "info": "Include a heading that explains the content.",
               "label": "Heading"
+            },
+            "heading_uppercase": {
+              "label": "Uppercase heading"
             },
             "row_content": {
               "label": "Row content"
