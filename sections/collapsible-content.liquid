@@ -134,7 +134,7 @@
                     >
                       <summary id="Summary-{{ block.id }}-{{ section.id }}">
                         {% render 'icon-accordion', icon: section.settings.klaviyo_reviews_icon %}
-                        <h3 class="accordion__title accordion__title--with-klaviyo inline-richtext {{ section.settings.klaviyo_reviews_heading_size | default: 'h4' }} mobile-{{ section.settings.klaviyo_reviews_mobile_heading_size | default: section.settings.klaviyo_reviews_heading_size | default: 'h4' }}{% if section.settings.accordion_heading_uppercase %} accordion__title--uppercase{% endif %}">
+                        <h3 class="accordion__title accordion__title--with-klaviyo inline-richtext {{ section.settings.klaviyo_reviews_heading_size | default: 'h4' }} mobile-{{ section.settings.klaviyo_reviews_mobile_heading_size | default: section.settings.klaviyo_reviews_heading_size | default: 'h4' }}{% if section.settings.klaviyo_reviews_heading_uppercase or section.settings.accordion_heading_uppercase %} accordion__title--uppercase{% endif %}">
                           <span class="accordion__title-text">
                             {{ section.settings.klaviyo_reviews_heading | default: 'Reviews' | escape }}
                           </span>
@@ -420,6 +420,12 @@
       "id": "klaviyo_reviews_heading",
       "default": "Reviews",
       "label": "t:sections.collapsible_content.settings.klaviyo_reviews_heading.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "klaviyo_reviews_heading_uppercase",
+      "default": false,
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_heading_uppercase.label"
     },
     {
       "type": "checkbox",

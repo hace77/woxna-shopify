@@ -3484,6 +3484,9 @@
         "klaviyo_reviews_heading": {
           "label": "Reviews accordion heading"
         },
+        "klaviyo_reviews_heading_uppercase": {
+          "label": "Uppercase reviews heading"
+        },
         "klaviyo_reviews_show_star_rating": {
           "label": "Show star rating in accordion heading",
           "info": "Uses the same Klaviyo star rating widget as on the product info (stars + review count)."

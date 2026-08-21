@@ -3134,6 +3134,9 @@
         "klaviyo_reviews_heading": {
           "label": "Rubrik för reviews-accordion"
         },
+        "klaviyo_reviews_heading_uppercase": {
+          "label": "Versaler på reviews-rubrik"
+        },
         "klaviyo_reviews_show_star_rating": {
           "label": "Visa stjärnbetyg i accordion-rubriken",
           "info": "Samma Klaviyo star rating-widget som på produktsidan (stjärnor + antal recensioner)."
