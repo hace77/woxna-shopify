@@ -16,18 +16,18 @@
           "type": "title",
           "settings": {}
         },
-        "text_TPWqTH": {
-          "type": "text",
-          "settings": {
-            "text": "Precision-engineered in Sweden from premium stainless steel, Ljusnan brings exceptional cutting performance to the outdoors, for those who believe a good tool should be a pleasure to own, use and keep.",
-            "text_style": "small",
-            "show_as_information_box": false
-          }
-        },
         "klaviyo_reviews_average_rating_ircKrJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
+          }
+        },
+        "rich_text_metafield_gB3NW9": {
+          "type": "rich_text_metafield",
+          "settings": {
+            "content": "{{ product.description }}",
+            "text_style": "small",
+            "show_as_information_box": false
           }
         },
         "price": {
@@ -93,6 +93,7 @@
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "open_by_default": false,
+            "open_by_default_mobile": false,
             "page": ""
           }
         },
@@ -119,11 +120,6 @@
             "none_label": "No extra product"
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
-        },
         "rich_text_metafield_Dw3Upb": {
           "type": "rich_text_metafield",
           "settings": {
@@ -140,14 +136,15 @@
             "heading_size": "medium",
             "description": "<p>{{ product.metafields.custom.feature_1 | metafield_tag }}</p>",
             "description_size": "small",
+            "text_alignment": "center",
             "show_background": false
           }
         }
       },
       "block_order": [
         "title",
-        "text_TPWqTH",
         "klaviyo_reviews_average_rating_ircKrJ",
+        "rich_text_metafield_gB3NW9",
         "price",
         "variant_metafield_7fHFHQ",
         "variant_picker",
@@ -157,7 +154,6 @@
         "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
         "extra_products_wNARCN",
-        "description",
         "rich_text_metafield_Dw3Upb",
         "slide_caption_rmp96H"
       ],
@@ -254,11 +250,19 @@
         "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
+        "content_width": "narrow",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "star",
         "padding_top": 52,
         "padding_bottom": 60
       }
@@ -1015,11 +1019,19 @@
         "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
+        "content_width": "narrow",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "star",
         "padding_top": 52,
         "padding_bottom": 60
       }
