@@ -82,6 +82,14 @@
             "heading_3": "Proudly Made in Sweden"
           }
         },
+        "extra_products_wNARCN": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Want a sheath for your saw too? Check out our combo",
+            "legend": "",
+            "none_label": "No extra product"
+          }
+        },
         "collapsible_tab_qpJykh": {
           "type": "collapsible_tab",
           "settings": {
@@ -112,14 +120,6 @@
             "show_sku": true,
             "open_by_default": false,
             "hide_when_empty": true
-          }
-        },
-        "extra_products_wNARCN": {
-          "type": "extra_products",
-          "settings": {
-            "heading": "Want a sheath for your saw too? Check out our combo",
-            "legend": "",
-            "none_label": "No extra product"
           }
         },
         "rich_text_metafield_Dw3Upb": {
@@ -153,9 +153,9 @@
         "buy_buttons",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
+        "extra_products_wNARCN",
         "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
-        "extra_products_wNARCN",
         "rich_text_metafield_Dw3Upb",
         "slide_caption_rmp96H"
       ],
