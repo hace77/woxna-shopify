@@ -16,18 +16,18 @@
           "type": "title",
           "settings": {}
         },
-        "text_TPWqTH": {
-          "type": "text",
-          "settings": {
-            "text": "Precision-engineered in Sweden from premium stainless steel, Ljusnan brings exceptional cutting performance to the outdoors, for those who believe a good tool should be a pleasure to own, use and keep.",
-            "text_style": "small",
-            "show_as_information_box": false
-          }
-        },
         "klaviyo_reviews_average_rating_ircKrJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
+          }
+        },
+        "rich_text_metafield_gB3NW9": {
+          "type": "rich_text_metafield",
+          "settings": {
+            "content": "{{ product.description }}",
+            "text_style": "small",
+            "show_as_information_box": false
           }
         },
         "price": {
@@ -93,6 +93,7 @@
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "open_by_default": false,
+            "open_by_default_mobile": false,
             "page": ""
           }
         },
@@ -119,11 +120,6 @@
             "none_label": "No extra product"
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
-        },
         "rich_text_metafield_Dw3Upb": {
           "type": "rich_text_metafield",
           "settings": {
@@ -140,14 +136,15 @@
             "heading_size": "medium",
             "description": "<p>{{ product.metafields.custom.feature_1 | metafield_tag }}</p>",
             "description_size": "small",
+            "text_alignment": "center",
             "show_background": false
           }
         }
       },
       "block_order": [
         "title",
-        "text_TPWqTH",
         "klaviyo_reviews_average_rating_ircKrJ",
+        "rich_text_metafield_gB3NW9",
         "price",
         "variant_metafield_7fHFHQ",
         "variant_picker",
@@ -157,7 +154,6 @@
         "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
         "extra_products_wNARCN",
-        "description",
         "rich_text_metafield_Dw3Upb",
         "slide_caption_rmp96H"
       ],
@@ -185,6 +181,42 @@
         "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "collapsible_content_Mipk9h": {
+      "type": "collapsible-content",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_mMjMJa": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_mMjMJa"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "mobile_heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "content_width": "page",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h3",
+        "klaviyo_reviews_mobile_heading_size": "h2",
+        "klaviyo_reviews_icon": "none",
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "video_BCbL4d": {
@@ -254,11 +286,19 @@
         "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
+        "content_width": "narrow",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "star",
         "padding_top": 52,
         "padding_bottom": 60
       }
@@ -894,80 +934,6 @@
         "padding_bottom": 52
       }
     },
-    "variant_text_display_MNgcx9": {
-      "type": "variant-text-display",
-      "disabled": true,
-      "name": "variant tech specs",
-      "settings": {
-        "metafield_key": "tech_specs",
-        "show_heading": true,
-        "heading": "Tech Specs",
-        "heading_size": "h1",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_fallback": false,
-        "fallback_content": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_banner_8zaQaf": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_paPnxR": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "use_collection_title": false,
-            "heading_size": "h1"
-          }
-        },
-        "text_XLRz8T": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "use_collection_description": false,
-            "text_style": "body"
-          }
-        },
-        "buttons_dRLaYe": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_paPnxR",
-        "text_XLRz8T",
-        "buttons_dRLaYe"
-      ],
-      "disabled": true,
-      "name": "measurments",
-      "settings": {
-        "hide_when_empty": false,
-        "image": "{{ product.metafields.custom.measurement_illustration.value }}",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_height_mobile": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "collapsible_content_4g87GQ": {
       "type": "collapsible-content",
       "blocks": {
@@ -1015,59 +981,21 @@
         "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
+        "content_width": "narrow",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "star",
         "padding_top": 52,
         "padding_bottom": 60
-      }
-    },
-    "rich_text_ji3RVR": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Gnc8NC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Contact and Support",
-            "heading_size": "h1"
-          }
-        },
-        "text_Kqm3hA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>",
-            "hide_when_empty": false
-          }
-        },
-        "button_cXrCX8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Support",
-            "button_link": "shopify://pages/support",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Gnc8NC",
-        "text_Kqm3hA",
-        "button_cXrCX8"
-      ],
-      "disabled": true,
-      "name": "contact and support",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "hide_when_empty": false,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "image_with_text_j83Eef": {
@@ -1141,6 +1069,7 @@
   },
   "order": [
     "main",
+    "collapsible_content_Mipk9h",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "collapsible_content_gEpGHP",
@@ -1159,10 +1088,7 @@
     "slideshow_wm6hdw",
     "rich_text_cb6emk",
     "rich_text_7GmfxC",
-    "variant_text_display_MNgcx9",
-    "image_banner_8zaQaf",
     "collapsible_content_4g87GQ",
-    "rich_text_ji3RVR",
     "image_with_text_j83Eef",
     "related-products"
   ]
