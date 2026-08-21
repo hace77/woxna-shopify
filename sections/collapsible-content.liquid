@@ -18,7 +18,7 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
-      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %}">
+      <div class="{% if section.settings.image != blank or section.settings.content_width == 'page' %}page-width{% else %}collapsible-content-wrapper-narrow{% endif %}">
         <div
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
@@ -73,7 +73,29 @@
             {%- for block in section.blocks -%}
               {%- liquid
                 assign show_collapsible_row = true
-                if block.settings.hide_when_empty
+                assign is_klaviyo_product_reviews_app = false
+                assign app_probe = block.type | append: '-' | append: block.id
+
+                if block.type == 'klaviyo_reviews'
+                  # Legacy empty embed block — hide. Use Apps → Product reviews instead.
+                  assign show_collapsible_row = false
+                elsif block.type == '@app' or app_probe contains 'shopify://apps/'
+                  # App blocks in this section are wrapped as the reviews accordion.
+                  # Skip star-rating / average-rating / carousel widgets (those belong elsewhere).
+                  unless app_probe contains 'average-rating' or app_probe contains 'average_rating' or app_probe contains 'featured-reviews' or app_probe contains 'featured_reviews' or app_probe contains 'star-rating-badge'
+                    assign is_klaviyo_product_reviews_app = true
+                  endunless
+
+                  if is_klaviyo_product_reviews_app
+                    if product == blank
+                      assign show_collapsible_row = false
+                    elsif section.settings.klaviyo_reviews_hide_when_no_reviews
+                      if product.metafields.reviews.rating_count == blank or product.metafields.reviews.rating_count == 0
+                        assign show_collapsible_row = false
+                      endif
+                    endif
+                  endif
+                elsif block.settings.hide_when_empty
                   capture collapsible_row_body
                     echo block.settings.row_content
                     if block.settings.page != blank
@@ -87,7 +109,9 @@
                 endif
 
                 assign open_collapsible_row = false
-                if block.settings.open_by_default
+                if is_klaviyo_product_reviews_app and section.settings.klaviyo_reviews_open_by_default
+                  assign open_collapsible_row = true
+                elsif block.settings.open_by_default
                   assign open_collapsible_row = true
                 elsif section.settings.open_first_collapsible_row and first_visible_row_opened == false and show_collapsible_row
                   assign open_collapsible_row = true
@@ -95,34 +119,78 @@
                 endif
               -%}
               {%- if show_collapsible_row -%}
-              <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                <details
-                  id="Details-{{ block.id }}-{{ section.id }}"
-                  {% if open_collapsible_row %}
-                    open
-                  {% endif %}
-                >
-                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title inline-richtext {{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }}">
-                      {{ block.settings.heading | default: block.settings.page.title | escape }}
-                    </h3>
-                    {{- 'icon-caret.svg' | inline_asset_content -}}
-                  </summary>
+                {%- if is_klaviyo_product_reviews_app -%}
                   <div
-                    class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}"
-                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                    role="region"
-                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                    class="accordion accordion--klaviyo-reviews{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                    {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.row_content }}
-                    {{ block.settings.page.content }}
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                      {% if open_collapsible_row %}
+                        open
+                      {% endif %}
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        {% render 'icon-accordion', icon: section.settings.klaviyo_reviews_icon %}
+                        <h3 class="accordion__title accordion__title--with-klaviyo inline-richtext {{ section.settings.klaviyo_reviews_heading_size | default: 'h4' }} mobile-{{ section.settings.klaviyo_reviews_mobile_heading_size | default: section.settings.klaviyo_reviews_heading_size | default: 'h4' }}">
+                          <span class="accordion__title-text">
+                            {{ section.settings.klaviyo_reviews_heading | default: 'Reviews' | escape }}
+                          </span>
+                          {%- if section.settings.klaviyo_reviews_show_star_rating -%}
+                            <span
+                              class="klaviyo-star-rating-widget"
+                              data-id="{{ product.id }}"
+                              data-product-title="{{ product.title | escape }}"
+                              data-product-type="{{ product.type | escape }}"
+                            ></span>
+                          {%- endif -%}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content accordion__content--klaviyo-reviews"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {% render block %}
+                      </div>
+                    </details>
                   </div>
-                </details>
-              </div>
+                {%- elsif block.type == '@app' or app_probe contains 'shopify://apps/' -%}
+                  <div {{ block.shopify_attributes }}>
+                    {% render block %}
+                  </div>
+                {%- else -%}
+                  <div
+                    class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                      {% if open_collapsible_row %}
+                        open
+                      {% endif %}
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h3 class="accordion__title inline-richtext {{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }}">
+                          {{ block.settings.heading | default: block.settings.page.title | escape }}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ block.settings.row_content }}
+                        {{ block.settings.page.content }}
+                      </div>
+                    </details>
+                  </div>
+                {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
           </div>
@@ -249,6 +317,23 @@
       "default": "none"
     },
     {
+      "type": "select",
+      "id": "content_width",
+      "label": "t:sections.collapsible_content.settings.content_width.label",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "t:sections.collapsible_content.settings.content_width.options__1.label"
+        },
+        {
+          "value": "page",
+          "label": "t:sections.collapsible_content.settings.content_width.options__2.label"
+        }
+      ],
+      "default": "narrow",
+      "info": "t:sections.collapsible_content.settings.content_width.info"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
@@ -312,6 +397,116 @@
       "default": "image_second",
       "label": "t:sections.collapsible_content.settings.desktop_layout.label",
       "info": "t:sections.collapsible_content.settings.desktop_layout.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.collapsible_content.settings.klaviyo_reviews_header.content"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.collapsible_content.settings.klaviyo_reviews_paragraph.content"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_reviews_heading",
+      "default": "Reviews",
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_heading.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "klaviyo_reviews_show_star_rating",
+      "default": true,
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_show_star_rating.label",
+      "info": "t:sections.collapsible_content.settings.klaviyo_reviews_show_star_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "klaviyo_reviews_hide_when_no_reviews",
+      "default": false,
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_hide_when_no_reviews.label",
+      "info": "t:sections.collapsible_content.settings.klaviyo_reviews_hide_when_no_reviews.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "klaviyo_reviews_open_by_default",
+      "default": false,
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_open_by_default.label"
+    },
+    {
+      "type": "select",
+      "id": "klaviyo_reviews_heading_size",
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_heading_size.label",
+      "options": [
+        {
+          "value": "h5",
+          "label": "Small"
+        },
+        {
+          "value": "h4",
+          "label": "Medium"
+        },
+        {
+          "value": "h3",
+          "label": "Large"
+        },
+        {
+          "value": "h2",
+          "label": "X-large"
+        }
+      ],
+      "default": "h4"
+    },
+    {
+      "type": "select",
+      "id": "klaviyo_reviews_mobile_heading_size",
+      "label": "t:sections.collapsible_content.settings.klaviyo_reviews_mobile_heading_size.label",
+      "options": [
+        {
+          "value": "h5",
+          "label": "Small"
+        },
+        {
+          "value": "h4",
+          "label": "Medium"
+        },
+        {
+          "value": "h3",
+          "label": "Large"
+        },
+        {
+          "value": "h2",
+          "label": "X-large"
+        }
+      ],
+      "default": "h4"
+    },
+    {
+      "type": "select",
+      "id": "klaviyo_reviews_icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__1.label"
+        },
+        {
+          "value": "star",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__41.label"
+        },
+        {
+          "value": "chat_bubble",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__7.label"
+        },
+        {
+          "value": "check_mark",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__8.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__16.label"
+        }
+      ],
+      "default": "star",
+      "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
     },
     {
       "type": "header",
@@ -628,6 +823,20 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    },
+    {
+      "type": "klaviyo_reviews",
+      "name": "t:sections.collapsible_content.blocks.klaviyo_reviews.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.collapsible_content.blocks.klaviyo_reviews.settings.paragraph.content"
         }
       ]
     }

@@ -1675,6 +1675,18 @@ a.product__text {
   width: 100%;
 }
 
+.product-slide-caption--left {
+  text-align: left;
+}
+
+.product-slide-caption--center {
+  text-align: center;
+}
+
+.product-slide-caption--right {
+  text-align: right;
+}
+
 .product-slide-caption--boxed {
   background: rgba(var(--color-foreground), 0.06);
   border-radius: 0.6rem;
@@ -1700,6 +1712,10 @@ a.product__text {
 
 .product-slide-caption__heading--large {
   font-size: 1.9rem;
+}
+
+.product-slide-caption__heading--x-large {
+  font-size: 2.4rem;
 }
 
 .product-slide-caption__text {

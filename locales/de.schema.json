@@ -3182,6 +3182,25 @@
               }
             }
           }
+        },
+        "klaviyo_reviews": {
+          "name": "Klaviyo-Bewertungen",
+          "settings": {
+            "paragraph": {
+              "content": "Zeigt die Klaviyo-Sternebewertung in der Akkordeon-Überschrift und das Product-Reviews-Widget im Inhalt. Entfernen Sie einen separaten Product-Reviews-App-Abschnitt in dieser Vorlage, um Duplikate zu vermeiden. Erfordert die Klaviyo Reviews-App."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Sternebewertung in der Überschrift anzeigen",
+              "info": "Verwendet dasselbe Klaviyo-Sternebewertungs-Widget wie auf der Produktseite (Sterne + Anzahl der Bewertungen)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Ausblenden, wenn das Produkt keine Bewertungen hat",
+              "info": "Verwendet Shopify reviews.rating_count (von Klaviyo synchronisiert). Deaktiviert lassen, wenn das Metafeld leer ist, das Widget aber trotzdem Bewertungen zeigt."
+            }
+          }
         }
       },
       "presets": {

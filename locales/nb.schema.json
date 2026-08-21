@@ -3182,6 +3182,25 @@
               }
             }
           }
+        },
+        "klaviyo_reviews": {
+          "name": "Klaviyo-anmeldelser",
+          "settings": {
+            "paragraph": {
+              "content": "Viser Klaviyo-stjernevurdering i accordion-overskriften og product reviews-widgeten inni. Fjern en separat Product reviews-appseksjon på denne mal for å unngå duplikater. Krever Klaviyo Reviews-appen."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Vis stjernevurdering i overskriften",
+              "info": "Bruker den samme Klaviyo-stjernevurderingswidgeten som på produktsiden (stjerner + antall anmeldelser)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Skjul når produktet ikke har anmeldelser",
+              "info": "Bruker Shopify reviews.rating_count (synkronisert av Klaviyo). La være av hvis metafeltet er tomt, men widgeten likevel viser anmeldelser."
+            }
+          }
         }
       },
       "presets": {

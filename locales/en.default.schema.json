@@ -2254,6 +2254,12 @@
             "page": {
               "label": "Row content from page"
             },
+            "open_by_default": {
+              "label": "Open by default (desktop)"
+            },
+            "open_by_default_mobile": {
+              "label": "Open by default (mobile)"
+            },
             "icon": {
               "label": "Icon",
               "options__1": {
@@ -2538,6 +2544,21 @@
               },
               "options__3": {
                 "label": "Large"
+              },
+              "options__4": {
+                "label": "X-large"
+              }
+            },
+            "text_alignment": {
+              "label": "Text alignment",
+              "options__1": {
+                "label": "Left"
+              },
+              "options__2": {
+                "label": "Center"
+              },
+              "options__3": {
+                "label": "Right"
               }
             },
             "show_background": {
@@ -3402,6 +3423,16 @@
             "label": "Section container"
           }
         },
+        "content_width": {
+          "label": "Content width",
+          "options__1": {
+            "label": "Narrow"
+          },
+          "options__2": {
+            "label": "Page width"
+          },
+          "info": "Applies when no image is set. With an image, content always uses page width."
+        },
         "container_color_scheme": {
           "label": "Container color scheme",
           "info": "Visible when Layout is set to Row or Section container."
@@ -3436,6 +3467,32 @@
             "label": "Image second"
           },
           "info": "Image is always first on mobile."
+        },
+        "klaviyo_reviews_header": {
+          "content": "Klaviyo Product reviews"
+        },
+        "klaviyo_reviews_paragraph": {
+          "content": "Add block → Apps → Klaviyo → Product reviews. That app block is wrapped in an accordion automatically. Remove any separate Product reviews section on this template to avoid duplicates."
+        },
+        "klaviyo_reviews_heading": {
+          "label": "Reviews accordion heading"
+        },
+        "klaviyo_reviews_show_star_rating": {
+          "label": "Show star rating in accordion heading",
+          "info": "Uses the same Klaviyo star rating widget as on the product info (stars + review count)."
+        },
+        "klaviyo_reviews_hide_when_no_reviews": {
+          "label": "Hide reviews accordion when product has no reviews",
+          "info": "Uses Shopify reviews.rating_count (synced by Klaviyo)."
+        },
+        "klaviyo_reviews_open_by_default": {
+          "label": "Open reviews accordion by default"
+        },
+        "klaviyo_reviews_heading_size": {
+          "label": "Reviews heading size (Desktop)"
+        },
+        "klaviyo_reviews_mobile_heading_size": {
+          "label": "Reviews heading size (Mobile)"
         }
       },
       "blocks": {
@@ -3587,6 +3644,25 @@
               "options__44": {
                 "label": "Washing"
               }
+            }
+          }
+        },
+        "klaviyo_reviews": {
+          "name": "Klaviyo reviews (legacy)",
+          "settings": {
+            "paragraph": {
+              "content": "This block is no longer used. Remove it, then add block → Apps → Klaviyo → Product reviews. Heading and star rating are set under the Collapsible content section settings."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Show star rating in header",
+              "info": "Uses the same Klaviyo star rating widget as on the product info (stars + review count)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Hide when product has no reviews",
+              "info": "Uses Shopify reviews.rating_count (synced by Klaviyo). Leave off if that metafield is empty but reviews still show in the widget."
             }
           }
         }

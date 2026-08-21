@@ -1112,6 +1112,26 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "product_specification",
+      "namespace": "custom",
+      "name": "product specification",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "combine_collection",
+      "namespace": "custom",
+      "name": "combine collection",
+      "description": "",
+      "type": {
+        "name": "collection_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
@@ -1443,6 +1463,16 @@
       "type": {
         "name": "json",
         "category": "JSON"
+      }
+    },
+    {
+      "key": "prod_spec",
+      "namespace": "custom",
+      "name": "prod spec",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
       }
     }
   ],

@@ -3182,6 +3182,25 @@
               }
             }
           }
+        },
+        "klaviyo_reviews": {
+          "name": "Avis Klaviyo",
+          "settings": {
+            "paragraph": {
+              "content": "Affiche la note étoilée Klaviyo dans l’en-tête de l’accordéon et le widget d’avis produit à l’intérieur. Supprimez toute section d’application Product reviews séparée sur ce modèle pour éviter les doublons. Nécessite l’application Klaviyo Reviews."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Afficher la note étoilée dans l’en-tête",
+              "info": "Utilise le même widget de note étoilée Klaviyo que sur la page produit (étoiles + nombre d’avis)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Masquer lorsque le produit n’a pas d’avis",
+              "info": "Utilise Shopify reviews.rating_count (synchronisé par Klaviyo). Laissez désactivé si le métachamp est vide mais que le widget affiche quand même des avis."
+            }
+          }
         }
       },
       "presets": {

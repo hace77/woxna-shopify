@@ -21,6 +21,27 @@
   {{ 'component-product-label.css' | asset_url | stylesheet_tag }}
   {{ 'component-product-specs.css' | asset_url | stylesheet_tag }}
 
+  <script>
+    (function () {
+      function syncProductAccordionOpen(root) {
+        var mq = window.matchMedia('(min-width: 750px)');
+        var scope = root || document;
+        scope.querySelectorAll('details[data-open-desktop][data-open-mobile]').forEach(function (details) {
+          var shouldOpen = mq.matches
+            ? details.getAttribute('data-open-desktop') === 'true'
+            : details.getAttribute('data-open-mobile') === 'true';
+          details.open = shouldOpen;
+        });
+      }
+
+      window.syncProductAccordionOpen = syncProductAccordionOpen;
+      syncProductAccordionOpen();
+      document.addEventListener('DOMContentLoaded', function () {
+        syncProductAccordionOpen();
+      });
+    })();
+  </script>
+
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -319,7 +340,11 @@
                 -%}
                 {%- if show_collapsible_tab -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                  <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
+                  <details
+                    id="Details-{{ block.id }}-{{ section.id }}"
+                    data-open-desktop="{% if block.settings.open_by_default %}true{% else %}false{% endif %}"
+                    data-open-mobile="{% if block.settings.open_by_default_mobile %}true{% else %}false{% endif %}"
+                  >
                     <summary>
                       <div class="summary__title">
                         {% render 'icon-accordion', icon: block.settings.icon %}
@@ -1654,7 +1679,13 @@
           "type": "checkbox",
           "id": "open_by_default",
           "default": false,
-          "label": "Open by default"
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.open_by_default.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default_mobile",
+          "default": false,
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.open_by_default_mobile.label"
         },
         {
           "type": "page",
@@ -2887,6 +2918,10 @@
             {
               "value": "large",
               "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__3.label"
+            },
+            {
+              "value": "x-large",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.size.options__4.label"
             }
           ],
           "default": "medium"
@@ -2915,6 +2950,26 @@
             }
           ],
           "default": "medium"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "t:sections.main-product.blocks.slide_caption.settings.text_alignment.label",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.text_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.text_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.main-product.blocks.slide_caption.settings.text_alignment.options__3.label"
+            }
+          ],
+          "default": "center"
         },
         {
           "type": "checkbox",

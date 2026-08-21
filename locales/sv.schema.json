@@ -1766,6 +1766,12 @@
             "page": {
               "label": "Radinnehåll från sida"
             },
+            "open_by_default": {
+              "label": "Öppen som standard (desktop)"
+            },
+            "open_by_default_mobile": {
+              "label": "Öppen som standard (mobil)"
+            },
             "icon": {
               "label": "Ikon",
               "options__1": {
@@ -2066,6 +2072,21 @@
               },
               "options__3": {
                 "label": "Stor"
+              },
+              "options__4": {
+                "label": "Extra stor"
+              }
+            },
+            "text_alignment": {
+              "label": "Textjustering",
+              "options__1": {
+                "label": "Vänster"
+              },
+              "options__2": {
+                "label": "Centrerad"
+              },
+              "options__3": {
+                "label": "Höger"
               }
             },
             "show_background": {
@@ -3052,6 +3073,16 @@
             "label": "Avsnittshållare"
           }
         },
+        "content_width": {
+          "label": "Innehållsbredd",
+          "options__1": {
+            "label": "Smal"
+          },
+          "options__2": {
+            "label": "Sidbredd"
+          },
+          "info": "Gäller när ingen bild är satt. Med bild används alltid sidbredd."
+        },
         "open_first_collapsible_row": {
           "label": "Öppna den första raden som kan döljas"
         },
@@ -3086,6 +3117,32 @@
         "container_color_scheme": {
           "label": "Färgschema för container",
           "info": "Synligt när layouten är inställd på rad- eller avsnittscontainer."
+        },
+        "klaviyo_reviews_header": {
+          "content": "Klaviyo Product reviews"
+        },
+        "klaviyo_reviews_paragraph": {
+          "content": "Lägg till block → Appar → Klaviyo → Product reviews. Det appblocket wrappas automatiskt i en accordion. Ta bort en separat Product reviews-sektion på mallen för att undvika dubbletter."
+        },
+        "klaviyo_reviews_heading": {
+          "label": "Rubrik för reviews-accordion"
+        },
+        "klaviyo_reviews_show_star_rating": {
+          "label": "Visa stjärnbetyg i accordion-rubriken",
+          "info": "Samma Klaviyo star rating-widget som på produktsidan (stjärnor + antal recensioner)."
+        },
+        "klaviyo_reviews_hide_when_no_reviews": {
+          "label": "Dölj reviews-accordion när produkten saknar recensioner",
+          "info": "Använder Shopify reviews.rating_count (synkas av Klaviyo)."
+        },
+        "klaviyo_reviews_open_by_default": {
+          "label": "Öppna reviews-accordion som standard"
+        },
+        "klaviyo_reviews_heading_size": {
+          "label": "Reviews-rubrikstorlek (desktop)"
+        },
+        "klaviyo_reviews_mobile_heading_size": {
+          "label": "Reviews-rubrikstorlek (mobil)"
         }
       },
       "blocks": {
@@ -3237,6 +3294,25 @@
               "options__44": {
                 "label": "Tvätt"
               }
+            }
+          }
+        },
+        "klaviyo_reviews": {
+          "name": "Klaviyo-recensioner (äldre)",
+          "settings": {
+            "paragraph": {
+              "content": "Detta block används inte längre. Ta bort det och lägg till block → Appar → Klaviyo → Product reviews. Rubrik och stjärnbetyg ställs in under Collapsible content-sektionens inställningar."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Visa stjärnbetyg i rubriken",
+              "info": "Samma Klaviyo star rating-widget som på produktsidan (stjärnor + antal recensioner)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Dölj när produkten saknar recensioner",
+              "info": "Använder Shopify reviews.rating_count (synkas av Klaviyo). Låt vara av om metafältet är tomt men widgeten ändå visar recensioner."
             }
           }
         }

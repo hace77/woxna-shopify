@@ -33,9 +33,10 @@
     endif
     assign heading_size = caption_block.settings.heading_size | default: 'medium'
     assign description_size = caption_block.settings.description_size | default: 'medium'
+    assign text_alignment = caption_block.settings.text_alignment | default: 'center'
   -%}
   <div
-    class="product-slide-caption{% if caption_block.settings.show_background %} product-slide-caption--boxed{% endif %}"
+    class="product-slide-caption product-slide-caption--{{ text_alignment }}{% if caption_block.settings.show_background %} product-slide-caption--boxed{% endif %}"
     {{ caption_block.shopify_attributes }}
   >
     {%- if caption_heading != blank -%}

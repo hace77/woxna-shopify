@@ -26,6 +26,10 @@ if (!customElements.get('product-info')) {
         );
 
         this.initQuantityHandlers();
+
+        if (typeof window.syncProductAccordionOpen === 'function') {
+          window.syncProductAccordionOpen(this);
+        }
         
         // Handle clicks on disabled variant labels to show variant information
         // Use setTimeout to ensure DOM is fully ready

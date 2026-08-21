@@ -3182,6 +3182,25 @@
               }
             }
           }
+        },
+        "klaviyo_reviews": {
+          "name": "Klaviyo-reviews",
+          "settings": {
+            "paragraph": {
+              "content": "Toont de Klaviyo-sterrenbeoordeling in de accordion-koptekst en de productreviews-widget erin. Verwijder een aparte Product reviews-appsectie op dit sjabloon om duplicaten te voorkomen. Vereist de Klaviyo Reviews-app."
+            },
+            "heading": {
+              "default": "Reviews"
+            },
+            "show_star_rating": {
+              "label": "Sterrenbeoordeling in koptekst tonen",
+              "info": "Gebruikt dezelfde Klaviyo-sterrenbeoordelingswidget als op de productpagina (sterren + aantal reviews)."
+            },
+            "hide_when_no_reviews": {
+              "label": "Verbergen wanneer het product geen reviews heeft",
+              "info": "Gebruikt Shopify reviews.rating_count (gesynchroniseerd door Klaviyo). Laat uit staan als dat metafield leeg is maar de widget toch reviews toont."
+            }
+          }
         }
       },
       "presets": {
