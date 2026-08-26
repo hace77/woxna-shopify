@@ -100,7 +100,7 @@
             "body_size": "medium",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
-            "open_by_default": false,
+            "open_by_default": true,
             "open_by_default_mobile": false,
             "heading_uppercase": true,
             "page": ""
