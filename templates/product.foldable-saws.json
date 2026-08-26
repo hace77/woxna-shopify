@@ -141,6 +141,18 @@
             "text_alignment": "center",
             "show_background": false
           }
+        },
+        "slide_caption_Qry3bc": {
+          "type": "slide_caption",
+          "settings": {
+            "slide_position": 2,
+            "heading": "",
+            "heading_size": "medium",
+            "description": "<p>{{ product.metafields.custom.feature_2 | metafield_tag }}</p>",
+            "description_size": "medium",
+            "text_alignment": "center",
+            "show_background": false
+          }
         }
       },
       "block_order": [
@@ -157,7 +169,8 @@
         "collapsible_tab_qpJykh",
         "product_specs_TxXjda",
         "rich_text_metafield_Dw3Upb",
-        "slide_caption_rmp96H"
+        "slide_caption_rmp96H",
+        "slide_caption_Qry3bc"
       ],
       "custom_css": [
         "ul {list-style-position: outside;}",
