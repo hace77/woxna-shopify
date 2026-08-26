@@ -96,7 +96,7 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
-            "content": "<p>{{ metaobjects.preamble[\"ljusnan-250-mm\"].single_line_ingress.value }}</p>",
+            "content": "<p>{{ product.metafields.custom.preamble.value.single_line_ingress.value }}</p>",
             "body_size": "medium",
             "heading_size": "h3",
             "mobile_heading_size": "h2",
