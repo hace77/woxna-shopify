@@ -132,6 +132,7 @@
         },
         "slide_caption_rmp96H": {
           "type": "slide_caption",
+          "disabled": true,
           "settings": {
             "slide_position": 1,
             "heading": "",
@@ -144,8 +145,9 @@
         },
         "slide_caption_Qry3bc": {
           "type": "slide_caption",
+          "disabled": true,
           "settings": {
-            "slide_position": 2,
+            "slide_position": 8,
             "heading": "",
             "heading_size": "medium",
             "description": "<p>{{ product.metafields.custom.feature_2 | metafield_tag }}</p>",
