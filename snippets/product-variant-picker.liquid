@@ -26,15 +26,41 @@
             assign picker_type = 'swatch'
           endif
         endif
+
+        assign option_label_text = option.name
+        assign option_label_hidden = false
+        assign option_custom_label = blank
+        assign option_hide_label = false
+
+        case forloop.index
+          when 1
+            assign option_custom_label = block.settings.option_1_label
+            assign option_hide_label = block.settings.hide_option_1_label
+          when 2
+            assign option_custom_label = block.settings.option_2_label
+            assign option_hide_label = block.settings.hide_option_2_label
+          when 3
+            assign option_custom_label = block.settings.option_3_label
+            assign option_hide_label = block.settings.hide_option_3_label
+        endcase
+
+        if option_custom_label != blank
+          assign option_label_text = option_custom_label
+        elsif option_hide_label
+          assign option_label_hidden = true
+          assign option_label_text = option.name
+        endif
       -%}
       {%- if picker_type == 'swatch' -%}
-        <fieldset class="js product-form__input product-form__input--swatch">
-          <legend class="form__label">
-            {{ option.name }}:
-            <span data-selected-value>
-              {{- option.selected_value -}}
-            </span>
-          </legend>
+        <fieldset class="js product-form__input product-form__input--swatch"{% if option_label_hidden %} aria-label="{{ option.name | escape }}"{% endif %}>
+          {%- unless option_label_hidden -%}
+            <legend class="form__label">
+              {{ option_label_text }}:
+              <span data-selected-value>
+                {{- option.selected_value -}}
+              </span>
+            </legend>
+          {%- endunless -%}
           {% render 'product-variant-options',
             product: product,
             option: option,
@@ -43,8 +69,10 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class="js product-form__input product-form__input--pill">
-          <legend class="form__label">{{ option.name }}</legend>
+        <fieldset class="js product-form__input product-form__input--pill"{% if option_label_hidden %} aria-label="{{ option.name | escape }}"{% endif %}>
+          {%- unless option_label_hidden -%}
+            <legend class="form__label">{{ option_label_text }}</legend>
+          {%- endunless -%}
           {% render 'product-variant-options',
             product: product,
             option: option,
@@ -56,9 +84,15 @@
         </fieldset>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
-          <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-            {{ option.name }}
-          </label>
+          {%- unless option_label_hidden -%}
+            <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+              {{ option_label_text }}
+            </label>
+          {%- else -%}
+            <label class="visually-hidden" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+              {{ option.name | escape }}
+            </label>
+          {%- endunless -%}
           <div class="select">
             {%- if picker_type == 'swatch_dropdown' -%}
               <span

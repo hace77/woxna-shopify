@@ -1722,6 +1722,33 @@
               "options__3": {
                 "label": "Ingen"
               }
+            },
+            "option_labels_header": {
+              "content": "Alternativrubriker"
+            },
+            "option_labels_paragraph": {
+              "content": "Dölj Shopifys optionsnamn (t.ex. Längd) och/eller visa egen text (t.ex. Välj längd). Ändrar inte optionsnamnet i varukorg eller kassa."
+            },
+            "hide_option_1_label": {
+              "label": "Dölj namn för alternativ 1"
+            },
+            "option_1_label": {
+              "label": "Egen rubrik för alternativ 1",
+              "info": "Om ifylld ersätts optionsnamnet. Exempel: Välj längd"
+            },
+            "hide_option_2_label": {
+              "label": "Dölj namn för alternativ 2"
+            },
+            "option_2_label": {
+              "label": "Egen rubrik för alternativ 2",
+              "info": "Om ifylld ersätts optionsnamnet."
+            },
+            "hide_option_3_label": {
+              "label": "Dölj namn för alternativ 3"
+            },
+            "option_3_label": {
+              "label": "Egen rubrik för alternativ 3",
+              "info": "Om ifylld ersätts optionsnamnet."
             }
           }
         },

@@ -2186,6 +2186,33 @@
               "options__3": {
                 "label": "None"
               }
+            },
+            "option_labels_header": {
+              "content": "Option labels"
+            },
+            "option_labels_paragraph": {
+              "content": "Optionally hide the Shopify option name (e.g. Length) and/or show custom text (e.g. Choose length). Does not change the option name used in cart or checkout."
+            },
+            "hide_option_1_label": {
+              "label": "Hide option 1 name"
+            },
+            "option_1_label": {
+              "label": "Custom label for option 1",
+              "info": "If filled, replaces the option name. Example: Choose length"
+            },
+            "hide_option_2_label": {
+              "label": "Hide option 2 name"
+            },
+            "option_2_label": {
+              "label": "Custom label for option 2",
+              "info": "If filled, replaces the option name."
+            },
+            "hide_option_3_label": {
+              "label": "Hide option 3 name"
+            },
+            "option_3_label": {
+              "label": "Custom label for option 3",
+              "info": "If filled, replaces the option name."
             }
           }
         },
