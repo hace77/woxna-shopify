@@ -53,7 +53,7 @@
         "hide_when_empty": false,
         "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
         "image_mobile": "shopify://shop_images/XT306849.jpg",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_height_mobile": "adapt",
         "desktop_content_position": "middle-center",
