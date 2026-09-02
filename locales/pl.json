@@ -188,7 +188,18 @@
       "product_variants": "Warianty produktów",
       "taxes_included": "Z wliczonymi podatkami.",
       "duties_included": "Z wliczonymi cłami.",
-      "duties_and_taxes_included": "Z wliczonymi cłami i podatkami."
+      "duties_and_taxes_included": "Z wliczonymi cłami i podatkami.",
+      "specs": {
+        "teeth_per_inch": "Zęby na cal",
+        "hardening": "Hartowanie",
+        "blade_material": "Materiał ostrza",
+        "blade_thickness": "Grubość ostrza",
+        "measurements": "Wymiary",
+        "blade_length": "Długość ostrza",
+        "length_unfolded": "Długość, rozłożona",
+        "length_folded": "Długość, złożona",
+        "weight": "Waga"
+      }
     },
     "modal": {
       "label": "Galeria multimediów"
