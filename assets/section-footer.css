@@ -615,4 +615,13 @@
   }
 }
 
+/* Klaviyo newsletter embeds in footer — works for all form IDs / languages */
+.shopify-section-group-footer-group [id*='klaviyo_email_marketing_sms_form_embed_block'] {
+  width: 100%;
+}
+
+.shopify-section-group-footer-group .klaviyo-form {
+  background-color: #f4f0e3;
+  width: 100%;
+}
 
