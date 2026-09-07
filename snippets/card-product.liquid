@@ -497,9 +497,11 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                       </span>
-                      <span class="sold-out-message hidden">
-                        {{ 'products.product.sold_out' | t }}
-                      </span>
+                      {%- if card_product.selected_or_first_available_variant.available == false -%}
+                        <span class="sold-out-message hidden">
+                          {{ 'products.product.sold_out' | t }}
+                        </span>
+                      {%- endif -%}
                       {%- if horizontal_quick_add -%}
                         <span class="icon-wrap">
                           {{- 'icon-plus.svg' | inline_asset_content -}}

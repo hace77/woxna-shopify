@@ -58,9 +58,11 @@
   {%- endcapture -%}
 
   {%- capture label_unavailable -%}
-    <span class="visually-hidden label-unavailable">
-      {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
-    </span>
+    {%- if option_disabled -%}
+      <span class="visually-hidden label-unavailable">
+        {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
+      </span>
+    {%- endif -%}
   {%- endcapture -%}
 
   {%- if picker_type == 'swatch' -%}
@@ -100,9 +102,9 @@
     <label for="{{ input_id }}">
       {%- if option_disabled -%}
         {{- 'products.product.value_unavailable' | t: option_value: value -}}
+        {{ label_unavailable }}
       {%- else -%}
         {{ value -}}
-        {{ label_unavailable }}
       {%- endif -%}
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
