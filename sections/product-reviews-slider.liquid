@@ -56,7 +56,7 @@
       {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
         <div class="product-reviews-slider__header">
           {%- if section.settings.heading != blank -%}
-            <h2 class="product-reviews-slider__heading {{ section.settings.heading_size }}">
+            <h2 class="product-reviews-slider__heading {{ section.settings.heading_size }}{% if section.settings.heading_uppercase %} product-reviews-slider__heading--uppercase{% endif %}">
               {{ section.settings.heading | escape }}
             </h2>
           {%- endif -%}
@@ -166,11 +166,18 @@
       "id": "heading_size",
       "label": "t:sections.product_reviews_slider.settings.heading_size.label",
       "options": [
-        { "value": "h2", "label": "t:sections.product_reviews_slider.settings.heading_size.options__1.label" },
-        { "value": "h3", "label": "t:sections.product_reviews_slider.settings.heading_size.options__2.label" },
-        { "value": "h4", "label": "t:sections.product_reviews_slider.settings.heading_size.options__3.label" }
+        { "value": "h5", "label": "t:sections.product_reviews_slider.settings.heading_size.options__1.label" },
+        { "value": "h4", "label": "t:sections.product_reviews_slider.settings.heading_size.options__2.label" },
+        { "value": "h3", "label": "t:sections.product_reviews_slider.settings.heading_size.options__3.label" },
+        { "value": "h2", "label": "t:sections.product_reviews_slider.settings.heading_size.options__4.label" }
       ],
-      "default": "h2"
+      "default": "h4"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_uppercase",
+      "label": "t:sections.product_reviews_slider.settings.heading_uppercase.label",
+      "default": false
     },
     {
       "type": "inline_richtext",

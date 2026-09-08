@@ -4,7 +4,7 @@
 }
 
 .product-reviews-slider__header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2.4rem;
 }
 
@@ -12,10 +12,13 @@
   margin: 0;
 }
 
+.product-reviews-slider__heading--uppercase {
+  text-transform: uppercase;
+}
+
 .product-reviews-slider__subheading {
   margin: 0.8rem 0 0;
   max-width: 40rem;
-  margin-inline: auto;
 }
 
 .product-reviews-slider__slider {

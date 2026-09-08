@@ -3611,9 +3611,13 @@
         },
         "heading_size": {
           "label": "Rubrikstorlek",
-          "options__1": { "label": "Stor" },
+          "options__1": { "label": "Liten" },
           "options__2": { "label": "Medium" },
-          "options__3": { "label": "Liten" }
+          "options__3": { "label": "Stor" },
+          "options__4": { "label": "Extra stor" }
+        },
+        "heading_uppercase": {
+          "label": "Versaler på rubrik"
         },
         "subheading": {
           "label": "Underrubrik"
