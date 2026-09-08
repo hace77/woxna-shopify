@@ -248,7 +248,7 @@
       "type": "product-reviews-slider",
       "name": "t:sections.product_reviews_slider.name",
       "settings": {
-        "heading": "Why customers love their Woxna saws?",
+        "heading": "Why customers love their Woxna saws",
         "heading_size": "h3",
         "heading_uppercase": true,
         "subheading": "",
