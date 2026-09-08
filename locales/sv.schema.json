@@ -3598,6 +3598,44 @@
       "presets": {
         "name": "Snabb orderlista"
       }
+    },
+    "product_reviews_slider": {
+      "name": "Produktrecensioner (slider)",
+      "settings": {
+        "paragraph": {
+          "content": "Visar utvalda recensioner från en metaobject-lista på produkten (custom.featured_reviews). Översätt varje metaobject per språk."
+        },
+        "heading": {
+          "label": "Rubrik",
+          "default": "Vad kunder säger"
+        },
+        "heading_size": {
+          "label": "Rubrikstorlek",
+          "options__1": { "label": "Stor" },
+          "options__2": { "label": "Medium" },
+          "options__3": { "label": "Liten" }
+        },
+        "subheading": {
+          "label": "Underrubrik"
+        },
+        "columns_desktop": {
+          "label": "Recensioner per rad på desktop",
+          "options__1": { "label": "2" },
+          "options__2": { "label": "3" },
+          "options__3": { "label": "4" }
+        },
+        "metafield_namespace": {
+          "label": "Metafält-namespace"
+        },
+        "metafield_key": {
+          "label": "Metafält-nyckel",
+          "info": "Produktmetafält av typen Lista med metaobjekt (review). Standard: featured_reviews"
+        },
+        "fallback_to_single_review": {
+          "label": "Använd custom.review som fallback",
+          "info": "Om listan är tom visas det enskilda review-metaobjektet som redan används på sågmallar."
+        }
+      }
     }
   }
 }

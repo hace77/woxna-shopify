@@ -1,0 +1,24 @@
+{% comment %}
+  Renders one review slide card.
+  Accepts: quote, author, rating
+{% endcomment %}
+<blockquote class="product-reviews-slider__card">
+  {%- if rating != blank -%}
+    {%- assign rating_number = rating | plus: 0 -%}
+    {%- if rating_number > 0 -%}
+      <div class="product-reviews-slider__stars" role="img" aria-label="{{ rating_number }} / 5">
+        {%- for i in (1..5) -%}
+          <span class="svg-wrapper{% if i > rating_number %} svg-wrapper--empty{% endif %}">
+            {{- 'icon-star-filled.svg' | inline_asset_content -}}
+          </span>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+
+  <p class="product-reviews-slider__quote">“{{ quote | escape }}”</p>
+
+  {%- if author != blank -%}
+    <footer class="product-reviews-slider__author">— {{ author | escape }}</footer>
+  {%- endif -%}
+</blockquote>

@@ -1,0 +1,191 @@
+.product-reviews-slider {
+  --prs-accent: rgb(var(--color-foreground));
+  --prs-card-gap: 1.6rem;
+}
+
+.product-reviews-slider__header {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.product-reviews-slider__heading {
+  margin: 0;
+}
+
+.product-reviews-slider__subheading {
+  margin: 0.8rem 0 0;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.product-reviews-slider__slider {
+  position: relative;
+  --desktop-margin-left-first-item: 0px;
+}
+
+.product-reviews-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+  column-gap: var(--prs-card-gap);
+  row-gap: var(--prs-card-gap);
+}
+
+.product-reviews-slider__slide {
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 0;
+  max-width: none;
+}
+
+.product-reviews-slider .slider--desktop,
+.product-reviews-slider .slider--tablet {
+  scroll-padding-left: 0;
+}
+
+.product-reviews-slider .slider--desktop .slider__slide:first-child,
+.product-reviews-slider .grid--peek.slider .product-reviews-slider__slide:first-of-type,
+.product-reviews-slider .slider--tablet.grid--peek .product-reviews-slider__slide:first-of-type {
+  margin-left: 0;
+  scroll-margin-left: 0;
+}
+
+.product-reviews-slider .slider--desktop:after,
+.product-reviews-slider .slider--tablet:after,
+.product-reviews-slider .grid--peek.slider:after {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.product-reviews-slider__card {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 2rem 1.6rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgb(var(--color-background));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  box-sizing: border-box;
+}
+
+.product-reviews-slider__stars {
+  display: inline-flex;
+  gap: 0.2rem;
+  /* Klaviyo Reviews default star colors */
+  --prs-star-color: #f8be00;
+  --prs-star-empty-color: #e5e5e5;
+  line-height: 1;
+}
+
+.product-reviews-slider__stars .svg-wrapper {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--prs-star-color);
+}
+
+.product-reviews-slider__stars .svg-wrapper svg,
+.product-reviews-slider__stars .svg-wrapper path {
+  fill: currentColor;
+}
+
+.product-reviews-slider__stars .svg-wrapper--empty {
+  color: var(--prs-star-empty-color);
+}
+
+.product-reviews-slider__quote {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 750px) {
+  .product-reviews-slider__quote {
+    font-size: 1.6rem;
+  }
+}
+
+.product-reviews-slider__author {
+  margin: 0;
+  margin-top: auto;
+  font-size: 1.3rem;
+  opacity: 0.75;
+}
+
+.product-reviews-slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+.product-reviews-slider .slider-button {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.product-reviews-slider .slider-button .svg-wrapper {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+}
+
+.product-reviews-slider .slider-button .icon {
+  width: 2rem;
+  height: 1.2rem;
+}
+
+/* Caret points down by default — match Dawn: rotate to left/right (do not also rotate the wrapper) */
+.product-reviews-slider .slider-button--next .icon {
+  transform: rotate(-90deg);
+}
+
+.product-reviews-slider .slider-button--prev .icon {
+  transform: rotate(90deg);
+}
+
+.product-reviews-slider .slider-button--next:not([disabled]):hover .icon {
+  transform: rotate(-90deg) scale(1.1);
+}
+
+.product-reviews-slider .slider-button--prev:not([disabled]):hover .icon {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.product-reviews-slider--single .product-reviews-slider__controls {
+  display: none;
+}
+
+/* Mobile: one card + peek of the next, inside page-width */
+@media screen and (max-width: 749px) {
+  .product-reviews-slider__list.grid--peek .product-reviews-slider__slide {
+    width: 82%;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .product-reviews-slider__list.slider--tablet .product-reviews-slider__slide {
+    width: calc((100% - var(--prs-card-gap)) / 2);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .product-reviews-slider .slider--desktop.grid--2-col-desktop .product-reviews-slider__slide {
+    width: calc((100% - var(--prs-card-gap)) / 2);
+  }
+
+  .product-reviews-slider .slider--desktop.grid--3-col-desktop .product-reviews-slider__slide {
+    width: calc((100% - var(--prs-card-gap) * 2) / 3);
+  }
+
+  .product-reviews-slider .slider--desktop.grid--4-col-desktop .product-reviews-slider__slide {
+    width: calc((100% - var(--prs-card-gap) * 3) / 4);
+  }
+}

@@ -1132,6 +1132,16 @@
         "name": "collection_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "featured_reviews",
+      "namespace": "custom",
+      "name": "featured_reviews",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

@@ -3710,6 +3710,44 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "product_reviews_slider": {
+      "name": "Product reviews slider",
+      "settings": {
+        "paragraph": {
+          "content": "Shows curated reviews from a product metaobject list (custom.featured_reviews). Translate each metaobject entry per language."
+        },
+        "heading": {
+          "label": "Heading",
+          "default": "What customers say"
+        },
+        "heading_size": {
+          "label": "Heading size",
+          "options__1": { "label": "Large" },
+          "options__2": { "label": "Medium" },
+          "options__3": { "label": "Small" }
+        },
+        "subheading": {
+          "label": "Subheading"
+        },
+        "columns_desktop": {
+          "label": "Reviews per row on desktop",
+          "options__1": { "label": "2" },
+          "options__2": { "label": "3" },
+          "options__3": { "label": "4" }
+        },
+        "metafield_namespace": {
+          "label": "Metafield namespace"
+        },
+        "metafield_key": {
+          "label": "Metafield key",
+          "info": "Product metafield of type List of metaobjects (review). Default: featured_reviews"
+        },
+        "fallback_to_single_review": {
+          "label": "Fall back to custom.review",
+          "info": "If the list is empty, show the single review metaobject already used on saw templates."
+        }
+      }
     }
   }
 }

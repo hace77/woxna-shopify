@@ -290,6 +290,9 @@
     }
   },
   "sections": {
+    "product_reviews_slider": {
+      "empty": "Add featured reviews on the product (metafield custom.featured_reviews)."
+    },
     "main-collection-product-grid": {
       "settings": {
         "hero_block": {

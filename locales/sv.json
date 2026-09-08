@@ -286,6 +286,9 @@
     }
   },
   "sections": {
+    "product_reviews_slider": {
+      "empty": "Lägg till utvalda recensioner på produkten (metafält custom.featured_reviews)."
+    },
     "header": {
       "announcement": "Meddelande",
       "menu": "Meny",
