@@ -244,6 +244,22 @@
         "padding_bottom": 16
       }
     },
+    "product_reviews_slider_xXcpDC": {
+      "type": "product-reviews-slider",
+      "name": "t:sections.product_reviews_slider.name",
+      "settings": {
+        "heading": "Why customers love their Woxna saws?",
+        "heading_size": "h3",
+        "subheading": "",
+        "columns_desktop": "3",
+        "metafield_namespace": "custom",
+        "metafield_key": "featured_reviews",
+        "fallback_to_single_review": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "video_BCbL4d": {
       "type": "video",
       "disabled": true,
@@ -1103,6 +1119,7 @@
   "order": [
     "main",
     "collapsible_content_Mipk9h",
+    "product_reviews_slider_xXcpDC",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "collapsible_content_gEpGHP",
