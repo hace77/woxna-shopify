@@ -250,6 +250,7 @@
       "settings": {
         "heading": "Why customers love their Woxna saws?",
         "heading_size": "h3",
+        "heading_uppercase": true,
         "subheading": "",
         "columns_desktop": "3",
         "metafield_namespace": "custom",
