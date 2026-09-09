@@ -42,7 +42,13 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "square"
+            "swatch_shape": "square",
+            "hide_option_1_label": false,
+            "option_1_label": "",
+            "hide_option_2_label": false,
+            "option_2_label": "",
+            "hide_option_3_label": false,
+            "option_3_label": ""
           }
         },
         "quantity_selector": {
@@ -91,6 +97,8 @@
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "open_by_default": true,
+            "open_by_default_mobile": false,
+            "heading_uppercase": false,
             "page": ""
           }
         },
@@ -98,6 +106,7 @@
           "type": "product_specs",
           "settings": {
             "heading": "Technical specifications",
+            "heading_uppercase": false,
             "heading_size": "h3",
             "mobile_heading_size": "h2",
             "icon": "none",
@@ -210,6 +219,23 @@
         "padding_bottom": 36
       }
     },
+    "product_reviews_slider_waARWB": {
+      "type": "product-reviews-slider",
+      "name": "t:sections.product_reviews_slider.name",
+      "settings": {
+        "heading": "What customers say",
+        "heading_size": "h4",
+        "heading_uppercase": false,
+        "subheading": "",
+        "columns_desktop": "3",
+        "metafield_namespace": "custom",
+        "metafield_key": "featured_reviews",
+        "fallback_to_single_review": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_JJmacE": {
       "type": "image-banner",
       "blocks": {
@@ -283,6 +309,7 @@
     "main",
     "video_TEFy9A",
     "featured_collection_MT6CeN",
+    "product_reviews_slider_waARWB",
     "image_banner_JJmacE",
     "related-products"
   ]
