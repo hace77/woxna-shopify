@@ -38,6 +38,7 @@
         "@media (min-width: 749px) {.banner__content {align-items: start; }}"
       ],
       "settings": {
+        "hide_when_empty": false,
         "image": "{{ collection.image }}",
         "image_mobile": "{{ collection.metafields.custom.mobile_hero.value }}",
         "image_overlay_opacity": 10,
@@ -67,7 +68,8 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.description }}"
+            "text": "{{ collection.description }}",
+            "hide_when_empty": false
           }
         },
         "button_d4cWYV": {
@@ -93,6 +95,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 16,
         "padding_bottom": 28
       }
@@ -119,7 +122,7 @@
       ],
       "settings": {
         "products_per_page": 8,
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -159,7 +162,8 @@
         "text_6mwJQb": {
           "type": "text",
           "settings": {
-            "text": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}"
+            "text": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
+            "hide_when_empty": false
           }
         }
       },
@@ -175,6 +179,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
