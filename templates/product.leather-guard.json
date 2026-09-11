@@ -290,6 +290,62 @@
         "include_margins": true
       }
     },
+    "multicolumn_9EBeAU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hxzyCN": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Leather  Web4-5.mp4",
+            "title": "Super Fat Leather",
+            "text": "<p>Gnarp is made with a super fat leather that gives it an enhanced fire and water resistance.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eTEahC": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Chord Web4-5.mp4",
+            "title": "A Multifunctional Chord",
+            "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling and much more.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yddykD": {
+          "type": "column",
+          "settings": {
+            "video": "shopify://files/videos/Gnarp Sustainability Web4-5.mp4",
+            "title": "Proudly made in Sweden",
+            "text": "<p>Gnarp is sustainably produced in Sweden using a naturally tanned leather that will develop an honest and genuine patina. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hxzyCN",
+        "column_eTEahC",
+        "column_yddykD"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "slideshow_khyK4k": {
       "type": "slideshow",
       "blocks": {
@@ -420,62 +476,6 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "multicolumn_9EBeAU": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_hxzyCN": {
-          "type": "column",
-          "settings": {
-            "video": "shopify://files/videos/Gnarp Leather  Web4-5.mp4",
-            "title": "Super Fat Leather",
-            "text": "<p>Gnarp is made with a super fat leather that gives it an enhanced fire and water resistance.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_eTEahC": {
-          "type": "column",
-          "settings": {
-            "video": "shopify://files/videos/Gnarp Chord Web4-5.mp4",
-            "title": "A Multifunctional Chord",
-            "text": "<p>The included leather strap allows you to wear it as a chest plate while whittling and much more.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_yddykD": {
-          "type": "column",
-          "settings": {
-            "video": "shopify://files/videos/Gnarp Sustainability Web4-5.mp4",
-            "title": "Proudly made in Sweden",
-            "text": "<p>Gnarp is sustainably produced in Sweden using a naturally tanned leather that will develop an honest and genuine patina. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_hxzyCN",
-        "column_eTEahC",
-        "column_yddykD"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_EM8rA3": {
@@ -1046,8 +1046,8 @@
     "image_banner_ajHV6U",
     "1730798421bc6bee16",
     "1730797907a66336cc",
-    "slideshow_khyK4k",
     "multicolumn_9EBeAU",
+    "slideshow_khyK4k",
     "collapsible_content_EM8rA3",
     "image_banner_U9UCQY",
     "image_banner_tiH7aM",
