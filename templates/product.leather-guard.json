@@ -94,7 +94,7 @@
           "type": "collapsible_tab",
           "name": "Description",
           "settings": {
-            "heading": "Description",
+            "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
             "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
