@@ -40,16 +40,14 @@
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
-        "judge_me_reviews_preview_badge_VG7pPA": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
-        },
         "icon_with_text_GbTykW": {
           "type": "icon-with-text",
           "disabled": true,
           "settings": {
             "layout": "vertical",
+            "fa_icon_1": "",
+            "fa_icon_2": "",
+            "fa_icon_3": "",
             "icon_1": "box",
             "heading_1": "Free Shipping",
             "icon_2": "star",
@@ -62,7 +60,13 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "hide_option_1_label": false,
+            "option_1_label": "",
+            "hide_option_2_label": false,
+            "option_2_label": "",
+            "hide_option_3_label": false,
+            "option_3_label": ""
           }
         },
         "text_YRCQgw": {
@@ -85,7 +89,6 @@
         "klaviyo_reviews_average_rating_GaRrKj",
         "buy_buttons",
         "custom_liquid_4AQUjt",
-        "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",
         "text_YRCQgw",
@@ -105,9 +108,9 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
@@ -139,6 +142,7 @@
           "type": "heading",
           "settings": {
             "heading": "Protects You and Your Gear in the Wilderness",
+            "use_collection_title": false,
             "heading_size": "h2"
           }
         },
@@ -146,6 +150,7 @@
           "type": "text",
           "settings": {
             "text": "This extra large leather multi guard protects you and your gear inthe outdoors. It serves as a stable, sheltered base for starting andtransferring a fire, a simple sit or knee pad, and a tray to keep tools or foodorganized, dry and clean. The included leather strap allows you to wear it as achest plate while whittling - you can also place it on your lap for addedprotection while wood carving.",
+            "use_collection_description": false,
             "text_style": "body"
           }
         }
@@ -155,9 +160,11 @@
         "text_rBXVdh"
       ],
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Woxna-Gnarp-Laether-Guard-9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -171,20 +178,6 @@
     },
     "1730798421bc6bee16": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_JqyKyw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_JqyKyw"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
@@ -417,7 +410,8 @@
         "text_crzTjK": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>"
+            "text": "<ul><li>{{ product.metafields.custom.feature_1 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_2 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_3 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_4 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_5 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_6 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_7 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_8 | metafield_tag }}</li><li>{{ product.metafields.custom.feature_9 | metafield_tag }}</li></ul>",
+            "hide_when_empty": false
           }
         }
       },
@@ -436,6 +430,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -446,18 +441,30 @@
         "collapsible_row_6EAfhX": {
           "type": "collapsible_row",
           "settings": {
+            "hide_when_empty": false,
             "heading": "Taking Care of your Leather",
+            "heading_uppercase": false,
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
             "icon": "leather",
             "row_content": "<p>As with all leather, if it gets wet, let it dry slowly at room temperature. Avoid placing it on radiators or other direct heat sources.</p><p>If the leather feels stiff after being used in damp or wet conditions, you can treat it with a leather fat or conditioner. This works especially well on thicker leathers designed for tougher use and exposure to the elements. You can also apply a leather wax, which sits on the surface for added water repellency, while the fat penetrates deeper into the material.</p><p>If the leather has dried out more, it’s often best to start with a hydrating leather balm before applying fat.</p><p>Use a dry, lint-free cloth or sponge to work the balm into the leather until the surface, then let it absorb overnight. Follow up with a leather fat: apply an even layer and work it in to the leather.</p>",
+            "body_size": "medium",
             "page": ""
           }
         },
         "collapsible_row_k3ejMx": {
           "type": "collapsible_row",
           "settings": {
+            "hide_when_empty": false,
             "heading": "Sustainability",
+            "heading_uppercase": false,
+            "open_by_default": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
             "icon": "leaf",
             "row_content": "<p>We use a custom-made leather for our Gnarp. It’s made using hides from Swedish cattle and it’s been treated with a natural leather fat to improve its resistance to water and fire. On top of that, it’s been given an additional wax treatment on both the front and back to further enhance its water repellency.</p><p>The leather is vegetable tanned which is a slower more traditional and natural process that results in a higher-quality leather that breathes better, ages beautifully and lasts longer. It is also a far more responsible choice for both people and the environment compared to chrome tanning, which is more commonly used today.</p><p>Our leather supplier is independently reviewed every year through the HIGG Index, and their tanneries are LWG certified. This means their environmental practices meet strict standards — including responsible energy use, proper wastewater treatment, and careful chemical management and testing to ensure the leather is free from harmful substances like chrome and PFAS.</p>",
+            "body_size": "medium",
             "page": ""
           }
         }
@@ -470,13 +477,24 @@
         "caption": "",
         "heading": "A Durable Leather",
         "heading_size": "h1",
+        "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
+        "content_width": "narrow",
+        "accordion_heading_uppercase": false,
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_heading_uppercase": false,
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "star",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -488,6 +506,7 @@
           "type": "heading",
           "settings": {
             "heading": "",
+            "use_collection_title": false,
             "heading_size": "h1"
           }
         }
@@ -500,9 +519,11 @@
       ],
       "name": "measurements",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Gnarp-Leather-Guard-measurements.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -521,6 +542,7 @@
           "type": "heading",
           "settings": {
             "heading": "",
+            "use_collection_title": false,
             "heading_size": "h1"
           }
         }
@@ -533,9 +555,11 @@
       ],
       "name": "measurements mobile",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Gnarp-measures-mobile.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -560,7 +584,8 @@
         "text_Kqm3hA": {
           "type": "text",
           "settings": {
-            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>"
+            "text": "<p>Need more info? Visit our support page for FAQ, contact information and more.</p>",
+            "hide_when_empty": false
           }
         },
         "button_cXrCX8": {
@@ -585,6 +610,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -872,7 +898,8 @@
         "text_TdaeQM": {
           "type": "text",
           "settings": {
-            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>"
+            "text": "<p>We always strive to put sustainability first, aiming to make a positive impact on both the environment and society. We will continue to improve every aspect of our business to ensure that we’re as sustainable as possible.</p>",
+            "hide_when_empty": false
           }
         },
         "button_qxwfAc": {
@@ -897,6 +924,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 68,
         "padding_bottom": 76
       }
