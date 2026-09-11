@@ -90,6 +90,39 @@
             "option_3_label": ""
           }
         },
+        "collapsible_tab_HmBk7d": {
+          "type": "collapsible_tab",
+          "name": "Description",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "hide_when_empty": false,
+            "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
+            "body_size": "medium",
+            "heading_size": "h3",
+            "mobile_heading_size": "h4",
+            "open_by_default": false,
+            "open_by_default_mobile": false,
+            "heading_uppercase": true,
+            "page": ""
+          }
+        },
+        "collapsible_tab_YEqny4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Features",
+            "icon": "none",
+            "hide_when_empty": false,
+            "content": "{{ product.metafields.custom.feature.value.text | metafield_tag }}",
+            "body_size": "medium",
+            "heading_size": "h3",
+            "mobile_heading_size": "h4",
+            "open_by_default": false,
+            "open_by_default_mobile": false,
+            "heading_uppercase": true,
+            "page": ""
+          }
+        },
         "text_YRCQgw": {
           "type": "text",
           "disabled": true,
@@ -110,6 +143,8 @@
         "product_specs_9ND7kh",
         "icon_with_text_GbTykW",
         "variant_picker",
+        "collapsible_tab_HmBk7d",
+        "collapsible_tab_YEqny4",
         "text_YRCQgw"
       ],
       "custom_css": [
@@ -168,7 +203,7 @@
         "klaviyo_reviews_show_star_rating": true,
         "klaviyo_reviews_hide_when_no_reviews": false,
         "klaviyo_reviews_open_by_default": false,
-        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_heading_size": "h3",
         "klaviyo_reviews_mobile_heading_size": "h3",
         "klaviyo_reviews_icon": "none",
         "padding_top": 36,
