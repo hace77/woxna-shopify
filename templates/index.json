@@ -51,10 +51,10 @@
       "name": "Image banner DT",
       "settings": {
         "hide_when_empty": false,
-        "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
-        "image_mobile": "shopify://shop_images/XT306849.jpg",
+        "image": "shopify://shop_images/Woxna-Ljusnan-hero-dt.jpg",
+        "image_mobile": "shopify://shop_images/Woxna-Ljusnan-hero-mobile.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_height_mobile": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
