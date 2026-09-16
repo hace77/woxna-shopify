@@ -1,0 +1,369 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_6dhQUz": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ARea4V": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "use_collection_title": false,
+            "heading_size": "h0"
+          }
+        },
+        "text_9PfYVd": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "use_collection_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ARea4V",
+        "text_9PfYVd"
+      ],
+      "custom_css": [
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}",
+        "@media (min-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner DT",
+      "settings": {
+        "hide_when_empty": false,
+        "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
+        "image_mobile": "shopify://shop_images/Ljusnan-180mm-2.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "image_height_mobile": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "image_banner_xCeRbe": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_8bVTAb": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "use_collection_title": false,
+            "heading_size": "h0"
+          }
+        },
+        "text_q89XDB": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "use_collection_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8bVTAb",
+        "text_q89XDB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 768px) {.banner {display: none; }}",
+        "@media (max-width: 749px) {.banner__content {align-items: end; }}"
+      ],
+      "name": "Image banner MOBILE",
+      "settings": {
+        "hide_when_empty": false,
+        "image": "shopify://shop_images/hero_saws5_7.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "image_height_mobile": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_dbVHAH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RaNAwG": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_FkKbKK": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "hide_when_empty": false
+          }
+        },
+        "button_d4cWYV": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RaNAwG",
+        "text_FkKbKK",
+        "button_d4cWYV"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
+        "full_width": true,
+        "hide_when_empty": false,
+        "padding_top": 16,
+        "padding_bottom": 28
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "custom_css": [
+        ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
+        ".button {border: none;}",
+        ".button:before {box-shadow: unset !important;}",
+        ".button:after {box-shadow: unset !important;}",
+        ".button:not([disabled]):hover:after {box-shadow: unset !important;}",
+        ".badge {display: none;}",
+        "@media (width <= 749px) {.card__heading {font-size: 1.6rem !important; line-height: 1.4; font-weight: 200; font-family: inter; } .hero-block__content {padding-right: 30px; }}",
+        ".card--card {border: 0 !important;}"
+      ],
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "grey_overlay": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": true,
+        "show_usp_text": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "show_hero_block_1": false,
+        "hero_block_1_position_desktop": "1",
+        "hero_block_1_position_mobile": "2",
+        "hero_block_1_size": "medium",
+        "hero_block_1_image": "shopify://shop_images/Ljusnan-Halsing-compare.jpg",
+        "hero_block_1_heading": "Which model should you choose?",
+        "hero_block_1_text": "<p>Which of our saws fits your needs the best?</p>",
+        "hero_block_1_button_text": "Read more here",
+        "hero_block_1_button_url": "shopify://pages/compare-saws",
+        "hero_block_1_color_scheme": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "hero_block_1_vertical_position": "top",
+        "hero_block_1_mobile_vertical_position": "center",
+        "hero_block_1_text_alignment": "left",
+        "hero_block_1_mobile_text_alignment": "center",
+        "hero_block_1_heading_size": "h1",
+        "hero_block_1_mobile_heading_size": "h1",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_VdnQyT": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card--card {border: 0 !important;}",
+        ".collection__title .title {font-size: 1.8rem;}",
+        "@media (min-width: 750px) {.collection__title .title {font-size: 2rem; }}",
+        ".collection__title .title {font-family: var(--font-body-family);}",
+        ".collection__description {font-size: 1.3rem;}",
+        ".collection__title .title,.collection__description {padding-left: var(--product-card-image-padding);}",
+        "@media screen and (max-width: 749px) {.collection__title .title, .collection__description {padding-left: calc(var(--product-card-image-padding) / 4); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "folding-saws-with-sheath",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "grey_overlay": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_DHw74c": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card--card {border: 0 !important;}",
+        ".collection__title .title {font-size: 2rem;}",
+        "@media (min-width: 750px) {.collection__title .title {font-size: 2rem; }}",
+        ".collection__title .title {font-family: var(--font-body-family);}",
+        ".collection__description {font-size: 1.3rem;}",
+        ".collection__title .title,.collection__description {padding-left: var(--product-card-image-padding);}",
+        "@media screen and (max-width: 749px) {.collection__title .title, .collection__description {padding-left: calc(var(--product-card-image-padding) / 4); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Saws",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "only-saws",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "grey_overlay": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_yUWtYn": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".card--card {border: 0 !important;}",
+        ".collection__title .title {font-size: 1.6rem;}",
+        "@media (min-width: 750px) {.collection__title .title {font-size: 1.6rem; }}",
+        ".collection__title .title {font-family: var(--font-body-family);}",
+        ".collection__description {font-size: 1.3rem;}",
+        ".collection__title .title,.collection__description {padding-left: var(--product-card-image-padding);}",
+        "@media screen and (max-width: 749px) {.collection__title .title, .collection__description {padding-left: calc(var(--product-card-image-padding) / 4); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Gift card",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "other",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "grey_overlay": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "show_view_product_button": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "read_more_content_NCFzYt": {
+      "type": "read-more-content",
+      "custom_css": [
+        "h2 {font-size: calc(var(--font-heading-scale) * 2rem);}",
+        ".read-more-content__body {font-size: 1.3rem;}"
+      ],
+      "name": "Read more content",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "content": "{{ collection.metafields.custom.collections_second_text.value.text | metafield_tag }}",
+        "read_more_label": "Read more",
+        "read_less_label": "Read less",
+        "collapsed_height_mobile": 135,
+        "collapsed_height_desktop": 130,
+        "hide_toggle_if_short": false,
+        "start_expanded": false,
+        "content_max_width": 880,
+        "text_align": "center",
+        "show_fade": true,
+        "fade_height": 96,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_6dhQUz",
+    "image_banner_xCeRbe",
+    "rich_text_dbVHAH",
+    "banner",
+    "product-grid",
+    "featured_collection_VdnQyT",
+    "featured_collection_DHw74c",
+    "featured_collection_yUWtYn",
+    "read_more_content_NCFzYt"
+  ]
+}
