@@ -131,19 +131,7 @@
           </span>
         {%- endif -%}
       {%- endcapture -%}
-      {%
-        render 'swatch-input',
-        id: input_id,
-        name: input_name,
-        value: option_value | escape,
-        swatch: swatch_value,
-        product_form_id: product_form_id,
-        checked: is_selected,
-        visually_disabled: option_disabled,
-        shape: block.settings.swatch_shape,
-        help_text: help_text,
-        additional_props: 'data-product-url="' | append: value_product_url | append: '" data-option-value-id="' | append: matching_variant.id | append: '"'
-      %}
+      {% render 'swatch-input', id: input_id, name: input_name, value: option_value, swatch: swatch_value, product_form_id: product_form_id, checked: is_selected, visually_disabled: option_disabled, shape: block.settings.swatch_shape, help_text: help_text, additional_props: 'data-product-url="', append: '"' %}
     {%- else -%}
       {%- comment -%} Fallback to button style if no swatch {%- endcomment -%}
       <input
@@ -173,3 +161,29 @@
   {%- endif -%}
 {%- endfor -%}
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+            render 'swatch-input',
+            id: input_id,
+            name: input_name,
+            value: option_value | escape,
+            swatch: swatch_value,
+            product_form_id: product_form_id,
+            checked: is_selected,
+            visually_disabled: option_disabled,
+            shape: block.settings.swatch_shape,
+            help_text: help_text,
+            additional_props: 'data-product-url="' | append: value_product_url | append: '" data-option-value-id="' | append: matching_variant.id | append: '"'
+          %}
+  to: '{% render ''swatch-input'', id: input_id, name: input_name, value: option_value,
+    swatch: swatch_value, product_form_id: product_form_id, checked: is_selected,
+    visually_disabled: option_disabled, shape: block.settings.swatch_shape, help_text:
+    help_text, additional_props: ''data-product-url="'', append: ''"'' %}'
+  position: 4514..4819
+{% endcomment %}

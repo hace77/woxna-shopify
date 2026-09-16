@@ -47,7 +47,7 @@
     {{ content_for_header }}
 
     {%- comment -%} Facebook Pixel Lead Tracking for Klaviyo Forms on Black Friday page {%- endcomment -%}
-    {%- if template.name == 'page' and (page.handle == 'black-friday-2025' or template.suffix == 'black-week-2024') -%}
+    {%- if template.name == 'page' and page.handle == 'black-friday-2025' or template.suffix == 'black-week-2024' -%}
       {% render 'klaviyo-fb-pixel-lead-tracking' %}
     {%- endif -%}
 
@@ -434,3 +434,15 @@
 
   
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- if template.name == 'page' and (page.handle == 'black-friday-2025' or
+    template.suffix == 'black-week-2024') -%}"
+  to: "{%- if template.name == 'page' and page.handle == 'black-friday-2025' or template.suffix
+    == 'black-week-2024' -%}"
+  position: 2112..2225
+{% endcomment %}
