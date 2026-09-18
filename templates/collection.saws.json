@@ -159,7 +159,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
         ".button {border: none;}",
@@ -209,6 +208,7 @@
     },
     "featured_collection_VdnQyT": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".card--card {border: 0 !important;}",
         ".collection__title .title {font-size: 1.8rem;}",
@@ -249,6 +249,7 @@
     },
     "featured_collection_DHw74c": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".card--card {border: 0 !important;}",
         ".collection__title .title {font-size: 2rem;}",
