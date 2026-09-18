@@ -185,7 +185,7 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "show_hero_block_1": false,
+        "show_hero_block_1": true,
         "hero_block_1_position_desktop": "1",
         "hero_block_1_position_mobile": "2",
         "hero_block_1_size": "medium",
