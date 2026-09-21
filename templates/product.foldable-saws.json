@@ -56,7 +56,9 @@
             "hide_option_2_label": false,
             "option_2_label": "",
             "hide_option_3_label": false,
-            "option_3_label": ""
+            "option_3_label": "",
+            "option_info_target": "1",
+            "option_info": "<p>Our foldable saws are available in in two lengths. The shorter can easily saw branches up to about 4” / 10 cm in diameter and can manage 5.5” / 14 cm. The long saw can easily go through about 5” / 13 cm and can manage 8” / 20 cm.<br/><br/>The larger is more efficient since you can saw with longer strokes. The shorter is of course lighter and more space efficient during transportation but both will fit well in most backpacks. Both can als be carried in a suitable pocket, but in that case the shorter is certainly to prefer.</p>"
           }
         },
         "buy_buttons": {
