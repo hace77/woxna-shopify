@@ -71,7 +71,7 @@
           "disabled": true,
           "settings": {
             "heading": "Payment options",
-            "payment_icon_types": "klarna, swish, apple_pay, visa, master, american_express"
+            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         },
         "sku_6qRbkp": {

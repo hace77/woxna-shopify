@@ -135,7 +135,7 @@
         "payment_icons": {
           "type": "payment_icons",
           "settings": {
-            "payment_icon_types": "klarna, swish, apple_pay, visa, master"
+            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         }
       },
