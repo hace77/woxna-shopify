@@ -66,6 +66,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "payment_icon_types": "apple_pay, master, visa, american"
+          }
+        },
         "sku_6qRbkp": {
           "type": "sku",
           "disabled": true,
@@ -162,13 +168,6 @@
             "text_alignment": "center",
             "show_background": false
           }
-        },
-        "payment_icons": {
-          "type": "payment_icons",
-          "disabled": false,
-          "settings": {
-            "payment_icon_types": ""
-          }
         }
       },
       "block_order": [
@@ -213,44 +212,6 @@
         "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 0
-      }
-    },
-    "collapsible_content_Mipk9h": {
-      "type": "collapsible-content",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_mMjMJa": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_mMjMJa"
-      ],
-      "name": "reviews",
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h1",
-        "mobile_heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "content_width": "page",
-        "accordion_heading_uppercase": false,
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "klaviyo_reviews_heading": "Reviews",
-        "klaviyo_reviews_heading_uppercase": true,
-        "klaviyo_reviews_show_star_rating": true,
-        "klaviyo_reviews_hide_when_no_reviews": false,
-        "klaviyo_reviews_open_by_default": false,
-        "klaviyo_reviews_heading_size": "h3",
-        "klaviyo_reviews_mobile_heading_size": "h2",
-        "klaviyo_reviews_icon": "none",
-        "padding_top": 0,
-        "padding_bottom": 16
       }
     },
     "product_reviews_slider_xXcpDC": {
@@ -524,6 +485,44 @@
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "collapsible_content_Mipk9h": {
+      "type": "collapsible-content",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_mMjMJa": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_mMjMJa"
+      ],
+      "name": "reviews",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "mobile_heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "content_width": "page",
+        "accordion_heading_uppercase": false,
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_heading_uppercase": true,
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": false,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h3",
+        "klaviyo_reviews_mobile_heading_size": "h2",
+        "klaviyo_reviews_icon": "none",
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "image_with_text_RzkRHW": {
