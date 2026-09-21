@@ -439,6 +439,8 @@
                     product_form_id: product_form_id,
                     section_id: section.id
                   -%}
+                {%- when 'payment_icons' -%}
+                  {% render 'product-payment-icons', block: block %}
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
@@ -849,6 +851,19 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+        }
+      ]
+    },
+    {
+      "type": "payment_icons",
+      "name": "t:sections.main-product.blocks.payment_icons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "payment_icon_types",
+          "label": "t:sections.main-product.blocks.payment_icons.settings.payment_icon_types.label",
+          "info": "t:sections.main-product.blocks.payment_icons.settings.payment_icon_types.info"
         }
       ]
     },
@@ -1839,6 +1854,9 @@
         },
         {
           "type": "buy_buttons"
+        },
+        {
+          "type": "payment_icons"
         },
         {
           "type": "share"

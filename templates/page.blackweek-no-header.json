@@ -222,6 +222,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -231,6 +238,7 @@
         "variant_picker_MxwcTj",
         "quantity_selector_9KJhMx",
         "buy_buttons_FWhEMf",
+        "payment_icons",
         "share_gc8dem"
       ],
       "disabled": true,

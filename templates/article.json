@@ -90,6 +90,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -99,6 +106,7 @@
         "variant_picker_3NPqiR",
         "quantity_selector_Ahjaxb",
         "buy_buttons_BWDfnw",
+        "payment_icons",
         "share_yR6NWJ"
       ],
       "disabled": true,
@@ -160,6 +168,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -169,6 +184,7 @@
         "variant_picker_TXfhNt",
         "quantity_selector_FNpr6g",
         "buy_buttons_FW79AB",
+        "payment_icons",
         "share_FC4Ggt"
       ],
       "disabled": true,

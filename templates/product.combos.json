@@ -126,6 +126,13 @@
             "text_style": "small",
             "show_as_information_box": false
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -138,6 +145,7 @@
         "quantity_selector",
         "rich_text_metafield_jbhcCW",
         "buy_buttons",
+        "payment_icons",
         "icon_with_text_Feea6R",
         "collapsible_tab_DTBqHk",
         "product_specs_adPTgW",

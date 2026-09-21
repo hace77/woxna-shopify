@@ -70,6 +70,13 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -79,6 +86,7 @@
         "variant_picker",
         "extra_products_rLLACN",
         "buy_buttons",
+        "payment_icons",
         "sku_MxgBeJ",
         "icon_with_text_GbTykW",
         "description"

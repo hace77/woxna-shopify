@@ -60,6 +60,13 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -67,6 +74,7 @@
         "price",
         "klaviyo_reviews_average_rating_ircKrJ",
         "buy_buttons",
+        "payment_icons",
         "judge_me_reviews_preview_badge_VG7pPA",
         "icon_with_text_GbTykW",
         "variant_picker",

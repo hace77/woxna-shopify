@@ -89,6 +89,13 @@
             "heading_size": "h4",
             "page": ""
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -97,6 +104,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
+        "payment_icons",
         "description",
         "quantity_selector",
         "sku_4fq8JC",

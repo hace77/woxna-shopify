@@ -1765,6 +1765,15 @@
           },
           "name": "Köpknappar"
         },
+        "payment_icons": {
+          "name": "Betallogotyper",
+          "settings": {
+            "payment_icon_types": {
+              "label": "Betalmetoder",
+              "info": "Lämna tomt för att visa alla betalmetoder i butiken. Översätt fältet per språk i Translate & Adapt. Exempel: shopify_pay, apple_pay, klarna, swish, visa, master"
+            }
+          }
+        },
         "share": {
           "settings": {
             "featured_image_info": {

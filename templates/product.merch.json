@@ -94,6 +94,13 @@
             "text_style": "small",
             "show_as_information_box": false
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -105,6 +112,7 @@
         "quantity_selector",
         "rich_text_metafield_jbhcCW",
         "buy_buttons",
+        "payment_icons",
         "custom_liquid_FhKrbx",
         "collapsible_tab_DTBqHk",
         "collapsible_tab_Y9kK9d",

@@ -162,6 +162,13 @@
             "text_alignment": "center",
             "show_background": false
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -172,6 +179,7 @@
         "variant_metafield_7fHFHQ",
         "variant_picker",
         "buy_buttons",
+        "payment_icons",
         "sku_6qRbkp",
         "icon_with_text_GbTykW",
         "extra_products_wNARCN",

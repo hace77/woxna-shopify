@@ -61,6 +61,13 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -70,6 +77,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
+        "payment_icons",
         "custom_liquid_jJDHYK",
         "description"
       ],

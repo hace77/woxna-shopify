@@ -496,6 +496,44 @@ a.product__text {
   max-width: 44rem;
 }
 
+.product-form__payment-icons {
+  width: 100%;
+  max-width: 44rem;
+  margin-top: 1.6rem;
+  margin-inline: 0 auto;
+  text-align: left;
+}
+
+.product-form__payment-icons-heading {
+  margin: 0 0 0.8rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  text-align: left;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.product-form__payment-icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-form__payment-icons-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-form__payment-icons-list .icon {
+  height: 2.4rem;
+  width: auto;
+}
+
 .product--no-media .product__info-container > modal-opener {
   display: block;
   text-align: center;

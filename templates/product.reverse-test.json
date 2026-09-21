@@ -41,6 +41,13 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -49,7 +56,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "payment_icons"
       ],
       "settings": {
         "enable_sticky_info": true,

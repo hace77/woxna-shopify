@@ -54,6 +54,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -63,6 +70,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "payment_icons",
         "description",
         "share"
       ],

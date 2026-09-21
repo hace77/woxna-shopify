@@ -1,0 +1,25 @@
+{% comment %}
+  Payment method logos as a movable product block.
+  Accepts:
+  - block: {Object} payment_icons block
+{% endcomment %}
+
+{%- liquid
+  assign payment_icons = shop.enabled_payment_types
+  if block.settings.payment_icon_types != blank
+    assign payment_icons = block.settings.payment_icon_types | replace: ' ', '' | split: ','
+  endif
+-%}
+
+{%- if payment_icons.size > 0 -%}
+  <div class="product-form__payment-icons" {{ block.shopify_attributes }}>
+    <p class="product-form__payment-icons-heading">{{ 'products.product.payment_options' | t }}</p>
+    <ul class="product-form__payment-icons-list" role="list">
+      {%- for type in payment_icons -%}
+        <li class="product-form__payment-icons-item">
+          {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}

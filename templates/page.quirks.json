@@ -168,6 +168,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -177,6 +184,7 @@
         "variant_picker_wKPrb8",
         "quantity_selector_Pdq8VG",
         "buy_buttons_T37yW3",
+        "payment_icons",
         "share_pV3hTx"
       ],
       "custom_css": [

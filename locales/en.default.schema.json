@@ -2229,6 +2229,15 @@
             }
           }
         },
+        "payment_icons": {
+          "name": "Payment icons",
+          "settings": {
+            "payment_icon_types": {
+              "label": "Payment methods",
+              "info": "Leave blank to show all store payment methods. Translate this field per language in Translate & Adapt. Example: shopify_pay, apple_pay, klarna, swish, visa, master"
+            }
+          }
+        },
         "pickup_availability": {
           "name": "Pickup availability"
         },

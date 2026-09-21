@@ -86,6 +86,13 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "disabled": false,
+          "settings": {
+            "payment_icon_types": ""
+          }
         }
       },
       "block_order": [
@@ -95,6 +102,7 @@
         "variant_picker",
         "variant_metafield_pQV6yj",
         "buy_buttons",
+        "payment_icons",
         "sku_cGN6wt",
         "icon_with_text_GbTykW",
         "text_YRCQgw",
