@@ -69,7 +69,7 @@
         "payment_icons": {
           "type": "payment_icons",
           "settings": {
-            "payment_icon_types": "apple_pay, master, visa, american"
+            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         },
         "sku_6qRbkp": {
