@@ -2232,9 +2232,13 @@
         "payment_icons": {
           "name": "Payment icons",
           "settings": {
+            "heading": {
+              "label": "Heading",
+              "default": "Payment options"
+            },
             "payment_icon_types": {
               "label": "Payment methods",
-              "info": "Leave blank to show all store payment methods. Translate this field per language in Translate & Adapt. Example: shopify_pay, apple_pay, klarna, swish, visa, master"
+              "info": "Leave blank to show all store payment methods. Translate this field per language in Translate & Adapt. Example: apple_pay, klarna, swish, visa, master"
             }
           }
         },

@@ -1768,9 +1768,13 @@
         "payment_icons": {
           "name": "Betallogotyper",
           "settings": {
+            "heading": {
+              "label": "Rubrik",
+              "default": "Betalningsalternativ"
+            },
             "payment_icon_types": {
               "label": "Betalmetoder",
-              "info": "Lämna tomt för att visa alla betalmetoder i butiken. Översätt fältet per språk i Translate & Adapt. Exempel: shopify_pay, apple_pay, klarna, swish, visa, master"
+              "info": "Lämna tomt för att visa alla betalmetoder i butiken. Översätt fältet per språk i Translate & Adapt. Exempel: apple_pay, klarna, swish, visa, master"
             }
           }
         },
