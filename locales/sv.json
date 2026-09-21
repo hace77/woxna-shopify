@@ -117,6 +117,7 @@
     "product": {
       "add_to_cart": "Lägg i varukorgen",
       "payment_options": "Betalningsalternativ",
+      "option_info": "Mer information om {{ option }}",
       "description": "Beskrivning",
       "on_sale": "Rea",
       "quantity": {

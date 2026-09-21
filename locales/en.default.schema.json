@@ -2213,6 +2213,26 @@
             "option_3_label": {
               "label": "Custom label for option 3",
               "info": "If filled, replaces the option name."
+            },
+            "option_info_header": {
+              "content": "Option info"
+            },
+            "option_info_target": {
+              "label": "Show info icon next to",
+              "info": "The icon sits beside that option heading.",
+              "options__1": {
+                "label": "Option 1"
+              },
+              "options__2": {
+                "label": "Option 2"
+              },
+              "options__3": {
+                "label": "Option 3"
+              }
+            },
+            "option_info": {
+              "label": "Info text",
+              "info": "One short text about the choice. Leave blank to hide the icon."
             }
           }
         },

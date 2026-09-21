@@ -1,0 +1,61 @@
+{% doc %}
+  Info icon beside an option heading. Shows a short note on hover for fine pointers, and on tap otherwise.
+  @param {string} modal_id - Id of the note panel
+  @param {string} label - Option label used in the accessible name
+  @param {string} content - Rich text shown in the note
+{% enddoc %}
+
+<option-info class="product-form__option-info-wrap">
+  <button
+    type="button"
+    class="product-form__option-info"
+    aria-expanded="false"
+    aria-controls="{{ modal_id }}"
+    aria-label="{{ 'products.product.option_info' | t: option: label }}"
+  >
+    {{- 'icon-option-info.svg' | inline_asset_content -}}
+  </button>
+  <div id="{{ modal_id }}" class="product-form__option-info-panel" role="note" data-option-info-panel>
+    <div class="product-form__option-info-panel-inner rte">{{ content }}</div>
+  </div>
+</option-info>
+
+{% javascript %}
+  if (!customElements.get('option-info')) {
+    class OptionInfo extends HTMLElement {
+      connectedCallback() {
+        if (this.dataset.bound === 'true') return;
+        this.dataset.bound = 'true';
+        this.button = this.querySelector('button');
+        this.onClick = (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+          const open = this.classList.toggle('is-open');
+          this.button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        };
+        this.onDocumentClick = (event) => {
+          if (this.contains(event.target)) return;
+          this.classList.remove('is-open');
+          this.button.setAttribute('aria-expanded', 'false');
+        };
+        this.onKeydown = (event) => {
+          if (event.key !== 'Escape') return;
+          this.classList.remove('is-open');
+          this.button.setAttribute('aria-expanded', 'false');
+        };
+        this.button.addEventListener('click', this.onClick);
+        this.addEventListener('keydown', this.onKeydown);
+        document.addEventListener('click', this.onDocumentClick);
+      }
+
+      disconnectedCallback() {
+        this.button?.removeEventListener('click', this.onClick);
+        this.removeEventListener('keydown', this.onKeydown);
+        document.removeEventListener('click', this.onDocumentClick);
+      }
+    }
+
+    customElements.define('option-info', OptionInfo);
+  }
+{% endjavascript %}

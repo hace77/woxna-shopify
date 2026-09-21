@@ -26,6 +26,90 @@ variant-selects {
   margin-bottom: 0.2rem;
 }
 
+.product-form__option-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.product-form__option-heading > .form__label {
+  width: auto;
+  flex: 0 1 auto;
+  margin-bottom: 0;
+}
+
+.product-form__option-info-wrap {
+  position: static;
+  display: inline-flex;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.product-form__option-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border: 0;
+  background: transparent;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+}
+
+.product-form__option-info svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.product-form__option-info-panel {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: auto;
+  max-width: 100%;
+  padding-bottom: 0.6rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+.product-form__option-info-panel-inner {
+  padding: 1.2rem 1.4rem;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.6rem 2rem rgba(var(--color-shadow), 0.12);
+  font-size: 1.4rem;
+}
+
+.product-form__option-info-panel-inner > *:first-child {
+  margin-top: 0;
+}
+
+.product-form__option-info-panel-inner > *:last-child {
+  margin-bottom: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-form__option-info-wrap:hover .product-form__option-info-panel,
+  .product-form__option-info-wrap:focus-within .product-form__option-info-panel {
+    display: block;
+  }
+}
+
+option-info.is-open .product-form__option-info-panel {
+  display: block;
+}
+
 /* Make pill buttons equal width */
 .product-form__input--pill {
   display: flex;
@@ -177,6 +261,11 @@ variant-selects {
   .product-form__input--pill .form__label {
     flex: 0 0 100%;
     width: 100%;
+  }
+
+  .product-form__option-heading > .form__label {
+    flex: 0 1 auto;
+    width: auto;
   }
 
   .product-form__input--pill input[type='radio'] + label {

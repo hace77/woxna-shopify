@@ -1749,6 +1749,26 @@
             "option_3_label": {
               "label": "Egen rubrik för alternativ 3",
               "info": "Om ifylld ersätts optionsnamnet."
+            },
+            "option_info_header": {
+              "content": "Alternativinfo"
+            },
+            "option_info_target": {
+              "label": "Visa infomärke bredvid",
+              "info": "Märket ligger bredvid den alternativrubriken.",
+              "options__1": {
+                "label": "Alternativ 1"
+              },
+              "options__2": {
+                "label": "Alternativ 2"
+              },
+              "options__3": {
+                "label": "Alternativ 3"
+              }
+            },
+            "option_info": {
+              "label": "Infotext",
+              "info": "En kort text om valet. Lämna tomt för att dölja märket."
             }
           }
         },

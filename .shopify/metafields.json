@@ -69,7 +69,18 @@
   "company_location": [],
   "location": [],
   "market": [],
-  "order": [],
+  "order": [
+    {
+      "key": "tracked",
+      "namespace": "restockrocket_production",
+      "name": "Tracked",
+      "description": "STOQ tracks this order",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
   "page": [
     {
       "key": "hero",
@@ -1142,6 +1153,26 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "tracked",
+      "namespace": "restockrocket_production",
+      "name": "Tracked",
+      "description": "STOQ tracks this product",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "preorder_batch_info",
+      "namespace": "restockrocket_production",
+      "name": "Preorder Batch Info",
+      "description": "Preorder batch state for every batch variant of the product, keyed by variant ID then selling plan ID",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
     }
   ],
   "variant": [
@@ -1484,6 +1515,26 @@
         "name": "metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "tracked",
+      "namespace": "restockrocket_production",
+      "name": "Tracked",
+      "description": "STOQ tracks this variant",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "preorder_batch_info",
+      "namespace": "restockrocket_production",
+      "name": "Preorder Batch Info",
+      "description": "Preorder batch state for the variant, keyed by selling plan ID",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
     }
   ],
   "shop": [
@@ -1605,6 +1656,26 @@
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "cachedSellingPlans",
+      "namespace": "restockrocket_production",
+      "name": "Cached Selling Plans",
+      "description": "Selling plans envelope the theme app extension runs on: plans, disabled plan IDs, offer flags and storefront-read flags",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "integrations",
+      "namespace": "restockrocket_production",
+      "name": "Integrations",
+      "description": "Enabled storefront integrations (quick buy, featured product, hijack, combined listings) and their configuration",
+      "type": {
+        "name": "json",
+        "category": "JSON"
       }
     }
   ]

@@ -14,6 +14,12 @@
     data-section="{{ section.id }}"
     {{ block.shopify_attributes }}
   >
+    {%- liquid
+      assign option_info = block.settings.option_info
+      assign option_info_text = option_info | strip_html | strip
+      assign option_info_target = block.settings.option_info_target | default: '1' | plus: 0
+      assign option_info_id = 'OptionInfo-' | append: section.id
+    -%}
     {%- for option in product.options_with_values -%}
       {%- liquid
         assign swatch_count = option.values | map: 'swatch' | compact | size
@@ -50,16 +56,31 @@
           assign option_label_hidden = true
           assign option_label_text = option.name
         endif
+
+        assign option_has_info = false
+        if option_info_text != blank and option_label_hidden == false and forloop.index == option_info_target
+          assign option_has_info = true
+        endif
       -%}
       {%- if picker_type == 'swatch' -%}
         <fieldset class="js product-form__input product-form__input--swatch"{% if option_label_hidden %} aria-label="{{ option.name | escape }}"{% endif %}>
           {%- unless option_label_hidden -%}
-            <legend class="form__label">
-              {{ option_label_text }}:
-              <span data-selected-value>
-                {{- option.selected_value -}}
+            <legend class="visually-hidden">{{ option_label_text }}</legend>
+            <div class="product-form__option-heading{% if option_has_info %} product-form__option-heading--with-info{% endif %}">
+              <span class="form__label">
+                {{ option_label_text }}:
+                <span data-selected-value>
+                  {{- option.selected_value -}}
+                </span>
               </span>
-            </legend>
+              {%- if option_has_info -%}
+                {% render 'product-option-info-button',
+                  modal_id: option_info_id,
+                  label: option_label_text,
+                  content: option_info
+                %}
+              {%- endif -%}
+            </div>
           {%- endunless -%}
           {% render 'product-variant-options',
             product: product,
@@ -71,7 +92,17 @@
       {%- elsif picker_type == 'button' -%}
         <fieldset class="js product-form__input product-form__input--pill"{% if option_label_hidden %} aria-label="{{ option.name | escape }}"{% endif %}>
           {%- unless option_label_hidden -%}
-            <legend class="form__label">{{ option_label_text }}</legend>
+            <legend class="visually-hidden">{{ option_label_text }}</legend>
+            <div class="product-form__option-heading{% if option_has_info %} product-form__option-heading--with-info{% endif %}">
+              <span class="form__label">{{ option_label_text }}</span>
+              {%- if option_has_info -%}
+                {% render 'product-option-info-button',
+                  modal_id: option_info_id,
+                  label: option_label_text,
+                  content: option_info
+                %}
+              {%- endif -%}
+            </div>
           {%- endunless -%}
           {% render 'product-variant-options',
             product: product,
@@ -85,9 +116,18 @@
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
           {%- unless option_label_hidden -%}
-            <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-              {{ option_label_text }}
-            </label>
+            <div class="product-form__option-heading{% if option_has_info %} product-form__option-heading--with-info{% endif %}">
+              <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+                {{ option_label_text }}
+              </label>
+              {%- if option_has_info -%}
+                {% render 'product-option-info-button',
+                  modal_id: option_info_id,
+                  label: option_label_text,
+                  content: option_info
+                %}
+              {%- endif -%}
+            </div>
           {%- else -%}
             <label class="visually-hidden" for="Option-{{ section.id }}-{{ forloop.index0 }}">
               {{ option.name | escape }}
