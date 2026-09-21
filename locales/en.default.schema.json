@@ -2238,7 +2238,7 @@
             },
             "payment_icon_types": {
               "label": "Payment methods",
-              "info": "Leave blank to show all store payment methods. Translate this field per language in Translate & Adapt. Example: apple_pay, klarna, swish, visa, master"
+              "info": "Comma-separated list saved in the theme editor. Leave blank to show all store payment methods. Translate the list per language in Translate & Adapt. Example: klarna, swish, apple_pay, visa, master"
             }
           }
         },

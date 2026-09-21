@@ -94,7 +94,7 @@
         "payment_icons": {
           "type": "payment_icons",
           "settings": {
-            "payment_icon_types": ""
+            "payment_icon_types": "klarna, swish, apple_pay, visa, master"
           }
         }
       },
@@ -171,7 +171,7 @@
         "payment_icons": {
           "type": "payment_icons",
           "settings": {
-            "payment_icon_types": ""
+            "payment_icon_types": "klarna, swish, apple_pay, visa, master"
           }
         }
       },

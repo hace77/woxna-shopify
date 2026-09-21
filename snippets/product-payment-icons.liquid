@@ -5,9 +5,11 @@
 {% endcomment %}
 
 {%- liquid
-  assign payment_icons = shop.enabled_payment_types
-  if block.settings.payment_icon_types != blank
-    assign payment_icons = block.settings.payment_icon_types | replace: ' ', '' | split: ','
+  assign custom_payment_types = block.settings.payment_icon_types | strip
+  if custom_payment_types != blank
+    assign payment_icons = custom_payment_types | replace: ' ', '' | split: ','
+  else
+    assign payment_icons = shop.enabled_payment_types
   endif
 -%}
 
@@ -15,32 +17,32 @@
   <div class="product-form__payment-icons" {{ block.shopify_attributes }}>
     {%- liquid
       assign payment_heading = 'products.product.payment_options' | t
-      if block.settings.heading != blank
-        assign payment_heading = block.settings.heading
+      assign custom_heading = block.settings.heading | strip
+      if custom_heading != blank
+        assign payment_heading = custom_heading
       endif
     -%}
     <p class="product-form__payment-icons-heading">{{ payment_heading | escape }}</p>
     <ul class="product-form__payment-icons-list" role="list">
       {%- for type in payment_icons -%}
         {%- assign payment_type = type | strip | downcase -%}
-        {%- if payment_type == blank -%}
-          {%- continue -%}
-        {%- endif -%}
-        {%- capture payment_icon -%}
-          {%- case payment_type -%}
-            {%- when 'swish' -%}
-              {{ 'icon-payment-swish.svg' | inline_asset_content }}
-            {%- when 'klarna' -%}
-              {{ 'icon-payment-klarna.svg' | inline_asset_content }}
-            {%- else -%}
-              {{ payment_type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-          {%- endcase -%}
-        {%- endcapture -%}
-        {%- if payment_icon != blank -%}
-          <li class="product-form__payment-icons-item">
-            {{ payment_icon }}
-          </li>
-        {%- endif -%}
+        {%- unless payment_type == blank -%}
+          {%- capture payment_icon -%}
+            {%- case payment_type -%}
+              {%- when 'swish' -%}
+                {{ 'icon-payment-swish.svg' | inline_asset_content }}
+              {%- when 'klarna' -%}
+                {{ 'icon-payment-klarna.svg' | inline_asset_content }}
+              {%- else -%}
+                {{ payment_type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+            {%- endcase -%}
+          {%- endcapture -%}
+          {%- if payment_icon != blank -%}
+            <li class="product-form__payment-icons-item">
+              {{ payment_icon }}
+            </li>
+          {%- endif -%}
+        {%- endunless -%}
       {%- endfor -%}
     </ul>
   </div>

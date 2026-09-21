@@ -1774,7 +1774,7 @@
             },
             "payment_icon_types": {
               "label": "Betalmetoder",
-              "info": "Lämna tomt för att visa alla betalmetoder i butiken. Översätt fältet per språk i Translate & Adapt. Exempel: apple_pay, klarna, swish, visa, master"
+              "info": "Kommaseparerad lista som sparas i temaredigeraren. Tomt fält visar alla betalmetoder i butiken. Översätt listan per språk i Translate & Adapt. Exempel: klarna, swish, apple_pay, visa, master"
             }
           }
         },
