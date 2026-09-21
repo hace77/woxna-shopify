@@ -24,6 +24,7 @@
         },
         "rich_text_metafield_gB3NW9": {
           "type": "rich_text_metafield",
+          "disabled": true,
           "settings": {
             "content": "{{ product.description }}",
             "text_style": "small",
@@ -229,7 +230,7 @@
         "accordion_heading_uppercase": false,
         "color_scheme": "",
         "container_color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "klaviyo_reviews_heading": "Reviews",
@@ -346,22 +347,6 @@
         "klaviyo_reviews_icon": "star",
         "padding_top": 52,
         "padding_bottom": 60
-      }
-    },
-    "variant_metafield_display_4dUfVR": {
-      "type": "variant-metafield-display",
-      "name": "Variant measurement",
-      "settings": {
-        "metafield_key": "size_image",
-        "show_heading": true,
-        "heading": "",
-        "text_alignment": "center",
-        "full_width": true,
-        "image_display": "block",
-        "show_fallback": false,
-        "fallback_content": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "image_banner_ajHV6U": {
@@ -773,6 +758,22 @@
         "padding_bottom": 52
       }
     },
+    "variant_metafield_display_4dUfVR": {
+      "type": "variant-metafield-display",
+      "name": "Variant measurement",
+      "settings": {
+        "metafield_key": "size_image",
+        "show_heading": true,
+        "heading": "",
+        "text_alignment": "center",
+        "full_width": true,
+        "image_display": "block",
+        "show_fallback": false,
+        "fallback_content": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_WwtiGJ": {
       "type": "image-with-text",
       "blocks": {
@@ -1119,22 +1120,22 @@
   },
   "order": [
     "main",
-    "collapsible_content_Mipk9h",
     "product_reviews_slider_xXcpDC",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "collapsible_content_gEpGHP",
-    "variant_metafield_display_4dUfVR",
     "image_banner_ajHV6U",
     "image_with_text_tqyCxz",
     "image_with_text_KMfkxH",
     "image_with_text_khWpzV",
+    "collapsible_content_Mipk9h",
     "image_with_text_RzkRHW",
     "rich_text_zGRdRF",
     "1730797907a66336cc",
     "image_with_text_JLf43q",
     "slideshow_khyK4k",
     "rich_text_J4ppHw",
+    "variant_metafield_display_4dUfVR",
     "image_with_text_WwtiGJ",
     "slideshow_wm6hdw",
     "rich_text_cb6emk",
