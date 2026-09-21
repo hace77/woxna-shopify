@@ -7,11 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * Minimal product template to isolate variant metafield sections (image + tech_specs).
- * Assign in admin: Product → Theme template → "variant-metafields-test"
- * Remove or stop using when done debugging.
- */
 {
   "sections": {
     "main": {
@@ -41,7 +36,6 @@
         },
         "payment_icons": {
           "type": "payment_icons",
-          "disabled": false,
           "settings": {
             "payment_icon_types": ""
           }

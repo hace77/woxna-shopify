@@ -93,7 +93,6 @@
         },
         "payment_icons": {
           "type": "payment_icons",
-          "disabled": false,
           "settings": {
             "payment_icon_types": ""
           }
@@ -171,7 +170,6 @@
         },
         "payment_icons": {
           "type": "payment_icons",
-          "disabled": false,
           "settings": {
             "payment_icon_types": ""
           }
