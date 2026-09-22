@@ -42,7 +42,7 @@ variant-selects {
 }
 
 .product-form__option-info-wrap {
-  position: static;
+  position: relative;
   display: inline-flex;
   flex: 0 0 auto;
   line-height: 0;
@@ -68,17 +68,33 @@ variant-selects {
 .product-form__option-info-panel {
   display: none;
   position: absolute;
-  z-index: 4;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  width: auto;
-  max-width: 100%;
-  padding-bottom: 0.6rem;
+  z-index: 5;
   text-align: left;
   text-transform: none;
   letter-spacing: normal;
   line-height: 1.5;
+}
+
+/* Mobile / touch: open upward so pills stay visible */
+.product-form__option-info-panel {
+  bottom: 100%;
+  left: 0;
+  width: min(28rem, calc(100vw - 4rem));
+  padding-bottom: 0.6rem;
+}
+
+@media screen and (min-width: 750px) {
+  /* Desktop: open to the side so sticky header does not cover the note */
+  .product-form__option-info-panel {
+    bottom: auto;
+    top: 50%;
+    left: 100%;
+    width: 28rem;
+    max-width: min(28rem, 36vw);
+    padding-bottom: 0;
+    padding-left: 0.8rem;
+    transform: translateY(-50%);
+  }
 }
 
 .product-form__option-info-panel-inner {
