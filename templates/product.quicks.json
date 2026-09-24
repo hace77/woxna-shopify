@@ -41,7 +41,15 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "hide_option_1_label": false,
+            "option_1_label": "",
+            "hide_option_2_label": false,
+            "option_2_label": "",
+            "hide_option_3_label": false,
+            "option_3_label": "",
+            "option_info_target": "1",
+            "option_info": ""
           }
         },
         "buy_buttons": {
@@ -49,6 +57,13 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
+          }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "heading": "Payment options",
+            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         },
         "custom_liquid_jJDHYK": {
@@ -61,12 +76,6 @@
         "description": {
           "type": "description",
           "settings": {}
-        },
-        "payment_icons": {
-          "type": "payment_icons",
-          "settings": {
-            "payment_icon_types": "apple_pay, master, visa, american_express"
-          }
         }
       },
       "block_order": [
@@ -106,27 +115,6 @@
         "grey_overlay": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "image_banner_MYpCAU": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "hide_when_empty": false,
-        "image": "shopify://shop_images/Ljusnan-quirk1.jpg",
-        "image_2": "shopify://shop_images/Ljusnan-quirk2.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_height_mobile": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "enable_sticky_button": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "video_BCbL4d": {
@@ -214,6 +202,44 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 16
+      }
+    },
+    "collapsible_content_iAMrN4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_t73Fn3": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_t73Fn3"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "mobile_heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "content_width": "narrow",
+        "accordion_heading_uppercase": true,
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "klaviyo_reviews_heading": "Reviews",
+        "klaviyo_reviews_heading_uppercase": true,
+        "klaviyo_reviews_show_star_rating": true,
+        "klaviyo_reviews_hide_when_no_reviews": true,
+        "klaviyo_reviews_open_by_default": false,
+        "klaviyo_reviews_heading_size": "h4",
+        "klaviyo_reviews_mobile_heading_size": "h4",
+        "klaviyo_reviews_icon": "none",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_J4ppHw": {
@@ -480,6 +506,20 @@
         "show_rating": false,
         "quick_add": "none",
         "show_view_product_button": false,
+        "show_hero_block_1": false,
+        "hero_block_1_position_desktop": "3",
+        "hero_block_1_position_mobile": "4",
+        "hero_block_1_size": "large",
+        "hero_block_1_heading": "Hero Block",
+        "hero_block_1_text": "",
+        "hero_block_1_button_text": "Shop Now",
+        "hero_block_1_button_url": "",
+        "hero_block_1_color_scheme": "",
+        "hero_block_1_vertical_position": "center",
+        "hero_block_1_mobile_vertical_position": "center",
+        "hero_block_1_text_alignment": "center",
+        "hero_block_1_mobile_text_alignment": "center",
+        "hero_block_1_heading_size": "h1",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -489,11 +529,11 @@
   },
   "order": [
     "main",
-    "image_banner_MYpCAU",
     "video_BCbL4d",
     "custom_liquid_k7EFPc",
     "image_banner_hBMLMA",
     "custom_liquid_teE7mq",
+    "collapsible_content_iAMrN4",
     "rich_text_J4ppHw",
     "1756739814d98fab10",
     "rich_text_jdqcfV",
