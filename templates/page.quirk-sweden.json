@@ -38,6 +38,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/halsing_quirk_germany.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -72,7 +73,8 @@
         "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p>At Woxna, we maintain rigorous standards for the finish of our blades and handles. Every saw undergoes a final quality inspection before it leaves our hands. Occasionally, a tool does not meet our strict visual criteria, even though its performance is perfect.</p><p>These items might feature minor surface scratches on the steel or natural color variations and nuances in the wooden handles. Because we never compromise on our visual standards, we do not sell these examples at full price – despite them being technically flawless in every way.</p>"
+            "text": "<p>At Woxna, we maintain rigorous standards for the finish of our blades and handles. Every saw undergoes a final quality inspection before it leaves our hands. Occasionally, a tool does not meet our strict visual criteria, even though its performance is perfect.</p><p>These items might feature minor surface scratches on the steel or natural color variations and nuances in the wooden handles. Because we never compromise on our visual standards, we do not sell these examples at full price – despite them being technically flawless in every way.</p>",
+            "hide_when_empty": false
           }
         },
         "button_GQJCdi": {
@@ -96,6 +98,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -125,11 +128,20 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "hide_option_1_label": false,
+            "option_1_label": "",
+            "hide_option_2_label": false,
+            "option_2_label": "",
+            "hide_option_3_label": false,
+            "option_3_label": "",
+            "option_info_target": "1",
+            "option_info": ""
           }
         },
         "quantity_selector_Pdq8VG": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons_T37yW3": {
@@ -139,16 +151,17 @@
             "show_gift_card_recipient": false
           }
         },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "heading": "Payment options",
+            "payment_icon_types": "apple_pay, master, visa, american_express"
+          }
+        },
         "share_pV3hTx": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "payment_icons": {
-          "type": "payment_icons",
-          "settings": {
-            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         }
       },
@@ -171,7 +184,7 @@
         ".product__tax {display: none;}",
         "input.disabled + label {display: none !important;}",
         ".custom-label {background-color: #dc143c; color: white;}",
-        " .badge{display: none; }"
+        ".badge {display: none;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
