@@ -179,6 +179,22 @@
             "open_by_default": false,
             "hide_when_empty": true
           }
+        },
+        "collapsible_tab_QBHAjn": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "hide_when_empty": false,
+            "content": "",
+            "body_size": "medium",
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
+            "open_by_default": false,
+            "open_by_default_mobile": false,
+            "heading_uppercase": false,
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -190,7 +206,8 @@
         "buy_buttons_T37yW3",
         "payment_icons",
         "share_pV3hTx",
-        "product_specs_hYBftC"
+        "product_specs_hYBftC",
+        "collapsible_tab_QBHAjn"
       ],
       "custom_css": [
         "#shopify-accelerated-checkout {display: none !important;}",
