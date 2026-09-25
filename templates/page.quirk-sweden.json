@@ -163,6 +163,22 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "product_specs_hYBftC": {
+          "type": "product_specs",
+          "settings": {
+            "heading": "Details",
+            "heading_uppercase": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
+            "icon": "none",
+            "specs_source": "product",
+            "metafield_key": "prod_spec",
+            "specs": "{{ section.settings.product.metafields.custom.product_specification.value }}",
+            "show_sku": true,
+            "open_by_default": false,
+            "hide_when_empty": true
+          }
         }
       },
       "block_order": [
@@ -173,7 +189,8 @@
         "quantity_selector_Pdq8VG",
         "buy_buttons_T37yW3",
         "payment_icons",
-        "share_pV3hTx"
+        "share_pV3hTx",
+        "product_specs_hYBftC"
       ],
       "custom_css": [
         "#shopify-accelerated-checkout {display: none !important;}",
