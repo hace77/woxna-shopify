@@ -186,6 +186,8 @@
             "heading": "Description",
             "icon": "none",
             "hide_when_empty": false,
+            "content_source": "variant_metafield",
+            "variant_metafield_key": "variant_informaion",
             "content": "",
             "body_size": "medium",
             "heading_size": "h4",
