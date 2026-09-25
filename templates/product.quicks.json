@@ -73,6 +73,22 @@
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
+        "product_specs_gCmr36": {
+          "type": "product_specs",
+          "settings": {
+            "heading": "Technical specifications",
+            "heading_uppercase": false,
+            "heading_size": "h4",
+            "mobile_heading_size": "h4",
+            "icon": "none",
+            "specs_source": "product",
+            "metafield_key": "prod_spec",
+            "specs": "",
+            "show_sku": true,
+            "open_by_default": false,
+            "hide_when_empty": true
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -87,6 +103,7 @@
         "buy_buttons",
         "payment_icons",
         "custom_liquid_jJDHYK",
+        "product_specs_gCmr36",
         "description"
       ],
       "custom_css": [
