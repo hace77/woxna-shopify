@@ -223,7 +223,7 @@
         "mobile_heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "content_width": "narrow",
+        "content_width": "page",
         "accordion_heading_uppercase": true,
         "color_scheme": "",
         "container_color_scheme": "",
