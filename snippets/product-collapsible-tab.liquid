@@ -1,0 +1,108 @@
+{% doc %}
+  Renders a product collapsible/accordion tab.
+  Supports manual content, page content, and selected-variant metafield (e.g. variant_informaion).
+  @param {object} product - Product
+  @param {object} block - collapsible_tab block
+  @param {object} section - Current section
+{% enddoc %}
+
+{%- liquid
+  assign content_source = block.settings.content_source | default: 'manual'
+  assign variant_key = block.settings.variant_metafield_key | default: 'variant_informaion' | strip
+  assign variant_metafield = blank
+  assign variant_metafield_html = ''
+  assign variant_metafield_has_content = false
+
+  if content_source == 'variant_metafield' and variant_key != blank
+    assign variant_metafield = product.selected_or_first_available_variant.metafields.custom[variant_key]
+  endif
+
+  if variant_metafield != blank
+    if variant_metafield.type == 'rich_text_field'
+      capture variant_metafield_html
+        echo variant_metafield | metafield_tag
+      endcapture
+      assign variant_metafield_stripped = variant_metafield_html | strip_html | strip
+      if variant_metafield_stripped == blank
+        assign variant_metafield_plain = variant_metafield | metafield_text | strip
+        if variant_metafield_plain != blank
+          assign variant_metafield_html = variant_metafield_plain
+          assign variant_metafield_has_content = true
+        endif
+      else
+        assign variant_metafield_has_content = true
+      endif
+    else
+      assign variant_metafield_html = variant_metafield.value
+      assign variant_metafield_stripped = variant_metafield_html | strip_html | strip
+      if variant_metafield_stripped != blank
+        assign variant_metafield_has_content = true
+      endif
+    endif
+  endif
+
+  assign show_collapsible_tab = true
+  if block.settings.hide_when_empty
+    capture collapsible_tab_body
+      if content_source == 'variant_metafield'
+        echo variant_metafield_html
+      endif
+      echo block.settings.content
+      if block.settings.page != blank
+        echo block.settings.page.content
+      endif
+    endcapture
+    assign collapsible_tab_body_stripped = collapsible_tab_body | strip_html | strip
+    if collapsible_tab_body_stripped == blank
+      if content_source == 'variant_metafield'
+        assign show_collapsible_tab = true
+      else
+        assign show_collapsible_tab = false
+      endif
+    endif
+  endif
+-%}
+
+{%- if show_collapsible_tab -%}
+  <div
+    class="product__accordion accordion quick-add-hidden{% if content_source == 'variant_metafield' and block.settings.hide_when_empty %} product__accordion--hide-empty{% endif %}{% if content_source == 'variant_metafield' and variant_metafield_has_content == false and block.settings.hide_when_empty %} product__accordion--empty{% endif %}"
+    {{ block.shopify_attributes }}
+  >
+    <details
+      id="Details-{{ block.id }}-{{ section.id }}"
+      data-open-desktop="{% if block.settings.open_by_default %}true{% else %}false{% endif %}"
+      data-open-mobile="{% if block.settings.open_by_default_mobile %}true{% else %}false{% endif %}"
+    >
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: block.settings.icon %}
+          <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext{% if block.settings.heading_uppercase %} accordion__title--uppercase{% endif %}">
+            {{ block.settings.heading | default: block.settings.page.title | escape }}
+          </h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div
+        class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}"
+        id="ProductAccordion-{{ block.id }}-{{ section.id }}"
+      >
+        {%- if content_source == 'variant_metafield' -%}
+          <div
+            id="VariantMetafield-Collapsible-{{ block.id }}-{{ section.id }}"
+            class="product__variant-metafield{% unless variant_metafield_has_content %} product__variant-metafield--empty{% endunless %}"
+            data-variant-metafield
+            data-collapsible-variant-metafield
+          >
+            {%- if variant_metafield_has_content -%}
+              <div class="variant-metafield__wrapper">
+                {{ variant_metafield_html }}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        {{ block.settings.content }}
+        {{ block.settings.page.content }}
+      </div>
+    </details>
+  </div>
+{%- endif -%}

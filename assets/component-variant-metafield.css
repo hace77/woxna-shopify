@@ -6,6 +6,10 @@
   transition: opacity 0.2s ease;
 }
 
+.accordion__content .product__variant-metafield {
+  margin: 0;
+}
+
 .product__variant-metafield--empty,
 .product__variant-metafield:not(:has(.variant-metafield__wrapper)) {
   display: none;

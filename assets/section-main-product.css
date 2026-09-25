@@ -307,6 +307,10 @@ a.product__text {
   padding: 0 1rem;
 }
 
+.product__accordion--hide-empty.product__accordion--empty {
+  display: none;
+}
+
 .product .price .badge {
   margin-bottom: 0.5rem;
 }

@@ -323,44 +323,7 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                {%- liquid
-                  assign show_collapsible_tab = true
-                  if block.settings.hide_when_empty
-                    capture collapsible_tab_body
-                      echo block.settings.content
-                      if block.settings.page != blank
-                        echo block.settings.page.content
-                      endif
-                    endcapture
-                    assign collapsible_tab_body_stripped = collapsible_tab_body | strip_html | strip
-                    if collapsible_tab_body_stripped == blank
-                      assign show_collapsible_tab = false
-                    endif
-                  endif
-                -%}
-                {%- if show_collapsible_tab -%}
-                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                  <details
-                    id="Details-{{ block.id }}-{{ section.id }}"
-                    data-open-desktop="{% if block.settings.open_by_default %}true{% else %}false{% endif %}"
-                    data-open-mobile="{% if block.settings.open_by_default_mobile %}true{% else %}false{% endif %}"
-                  >
-                    <summary>
-                      <div class="summary__title">
-                        {% render 'icon-accordion', icon: block.settings.icon %}
-                        <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext{% if block.settings.heading_uppercase %} accordion__title--uppercase{% endif %}">
-                          {{ block.settings.heading | default: block.settings.page.title | escape }}
-                        </h2>
-                      </div>
-                      {{- 'icon-caret.svg' | inline_asset_content -}}
-                    </summary>
-                    <div class="accordion__content rte accordion__content--font-{{ block.settings.body_size | default: 'medium' }}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      {{ block.settings.content }}
-                      {{ block.settings.page.content }}
-                    </div>
-                  </details>
-                </div>
-                {%- endif -%}
+                {% render 'product-collapsible-tab', product: product, block: block, section: section %}
               {%- when 'feature_accordion' -%}
                 {%- liquid
                   assign show_feature_accordion = true
@@ -1622,6 +1585,30 @@
           "default": false,
           "label": "Hide row when content is empty",
           "info": "Hides this row when content and page are empty (including empty metafield output)."
+        },
+        {
+          "type": "select",
+          "id": "content_source",
+          "label": "Content source",
+          "options": [
+            {
+              "value": "manual",
+              "label": "Manual / connected content"
+            },
+            {
+              "value": "variant_metafield",
+              "label": "Selected variant metafield"
+            }
+          ],
+          "default": "manual",
+          "info": "Use Selected variant metafield for Quirk variant informaion (updates when model changes). Variant metafields are not available as Connect dynamic source here."
+        },
+        {
+          "type": "text",
+          "id": "variant_metafield_key",
+          "label": "Variant metafield key",
+          "default": "variant_informaion",
+          "info": "Key under custom namespace. Quirk/saws use variant_informaion (note the spelling)."
         },
         {
           "type": "richtext",

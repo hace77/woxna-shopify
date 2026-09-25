@@ -819,6 +819,7 @@ if (!customElements.get('product-info')) {
             setTimeout(() => {
               currentBlock.innerHTML = '';
               currentBlock.classList.add('product__variant-metafield--empty');
+              this.syncCollapsibleVariantMetafield(currentBlock);
               currentBlock.style.opacity = '1';
             }, 200);
             return;
@@ -835,6 +836,7 @@ if (!customElements.get('product-info')) {
                 'product__variant-metafield--empty',
                 newBlock.classList.contains('product__variant-metafield--empty')
               );
+              this.syncCollapsibleVariantMetafield(currentBlock);
               currentBlock.style.opacity = '1';
             }, 200);
           } else if (newWrapper && !currentWrapper) {
@@ -845,15 +847,29 @@ if (!customElements.get('product-info')) {
             setTimeout(() => {
               currentBlock.innerHTML = newBlock.innerHTML;
               currentBlock.classList.remove('product__variant-metafield--empty');
+              this.syncCollapsibleVariantMetafield(currentBlock);
               currentBlock.style.opacity = '1';
             }, 200);
           } else if (!newWrapper && !currentWrapper) {
             currentBlock.classList.add('product__variant-metafield--empty');
+            this.syncCollapsibleVariantMetafield(currentBlock);
+          } else {
+            this.syncCollapsibleVariantMetafield(currentBlock);
           }
         });
         
         // Note: Standalone variant metafield sections (outside product-info) 
         // are handled by their own custom element (variant-metafield-section.js)
+      }
+
+      syncCollapsibleVariantMetafield(metafieldBlock) {
+        if (!metafieldBlock?.hasAttribute('data-collapsible-variant-metafield')) return;
+        const accordion = metafieldBlock.closest('.product__accordion');
+        if (!accordion) return;
+        accordion.classList.toggle(
+          'product__accordion--empty',
+          metafieldBlock.classList.contains('product__variant-metafield--empty')
+        );
       }
 
       updateProductSpecs(html) {
