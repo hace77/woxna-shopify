@@ -1,0 +1,111 @@
+{% doc %}
+  Resolves and renders the product specs accordion block.
+  @param {object} product - Product
+  @param {object} block - product_specs block
+  @param {object} section - Current section
+{% enddoc %}
+
+{%- liquid
+  assign specs_variant = product.selected_or_first_available_variant
+  assign specs_source = block.settings.specs_source | default: 'variant'
+  assign specs_key = block.settings.metafield_key | default: 'prod_spec' | strip
+  assign specs_object = blank
+
+  assign variant_specs = specs_variant.metafields.custom[specs_key].value
+  if variant_specs == blank
+    assign variant_specs = specs_variant.metafields.custom.prod_spec.value
+  endif
+  if variant_specs == blank
+    assign variant_specs = specs_variant.metafields.custom.saw_specs.value
+  endif
+  if variant_specs == blank
+    assign variant_specs = specs_variant.metafields.custom.tech_specs.value
+  endif
+
+  assign product_specs = block.settings.specs
+  if product_specs == blank
+    assign product_specs = product.metafields.custom.product_specification.value
+  endif
+  if product_specs == blank
+    assign product_specs = product.metafields.custom.prod_spec.value
+  endif
+  if product_specs == blank
+    assign product_specs = product.metafields.custom.saw_specs.value
+  endif
+  if product_specs == blank
+    assign product_specs = product.metafields.custom.tech_specs.value
+  endif
+
+  if specs_source == 'variant'
+    assign specs_object = variant_specs
+    if specs_object == blank
+      assign specs_object = product_specs
+    endif
+  else
+    assign specs_object = product_specs
+    if specs_object == blank
+      assign specs_object = variant_specs
+    endif
+  endif
+
+  assign specs_has_rows = false
+  if specs_object != blank
+    if specs_object.teeth_per_inch != blank or specs_object.hardening != blank or specs_object.blade_material != blank or specs_object.blade_thickness != blank or specs_object.blade_length != blank or specs_object.length_unfolded != blank or specs_object.length_folded != blank or specs_object.weight != blank
+      assign specs_has_rows = true
+    endif
+  endif
+
+  # Prefer the other source if the first metaobject has no usable rows
+  if specs_has_rows == false
+    if specs_source == 'variant' and product_specs != blank and product_specs != specs_object
+      if product_specs.teeth_per_inch != blank or product_specs.hardening != blank or product_specs.blade_material != blank or product_specs.blade_thickness != blank or product_specs.blade_length != blank or product_specs.length_unfolded != blank or product_specs.length_folded != blank or product_specs.weight != blank
+        assign specs_object = product_specs
+        assign specs_has_rows = true
+      endif
+    elsif specs_source != 'variant' and variant_specs != blank and variant_specs != specs_object
+      if variant_specs.teeth_per_inch != blank or variant_specs.hardening != blank or variant_specs.blade_material != blank or variant_specs.blade_thickness != blank or variant_specs.blade_length != blank or variant_specs.length_unfolded != blank or variant_specs.length_folded != blank or variant_specs.weight != blank
+        assign specs_object = variant_specs
+        assign specs_has_rows = true
+      endif
+    endif
+  endif
+
+  assign show_product_specs = true
+  if block.settings.hide_when_empty
+    assign show_product_specs = false
+    if block.settings.show_sku and specs_variant.sku != blank
+      assign show_product_specs = true
+    endif
+    if specs_has_rows
+      assign show_product_specs = true
+    endif
+  endif
+-%}
+
+<div
+  class="product__accordion accordion quick-add-hidden product-specs-block{% unless show_product_specs %} product-specs-block--empty{% endunless %}"
+  id="ProductSpecs-{{ block.id }}-{{ section.id }}"
+  data-product-specs
+  {{ block.shopify_attributes }}
+>
+  {%- if show_product_specs -%}
+    <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: block.settings.icon %}
+          <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext{% if block.settings.heading_uppercase %} accordion__title--uppercase{% endif %}">
+            {{ block.settings.heading | escape }}
+          </h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+        {% render 'product-specs',
+          product: product,
+          specs: specs_object,
+          show_sku: block.settings.show_sku
+        %}
+      </div>
+    </details>
+  {%- endif -%}
+</div>

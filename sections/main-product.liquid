@@ -404,78 +404,7 @@
                   </div>
                 {%- endif -%}
               {%- when 'product_specs' -%}
-                {%- liquid
-                  assign specs_variant = product.selected_or_first_available_variant
-                  assign specs_source = block.settings.specs_source | default: 'product'
-                  assign specs_namespace = 'custom'
-                  assign specs_key = block.settings.metafield_key | default: 'prod_spec' | strip
-
-                  if specs_source == 'variant'
-                    assign specs_object = specs_variant.metafields[specs_namespace][specs_key].value
-                    if specs_object == blank
-                      assign specs_object = specs_variant.metafields.custom.prod_spec.value
-                    endif
-                    if specs_object == blank
-                      assign specs_object = specs_variant.metafields.custom.saw_specs.value
-                    endif
-                    if specs_object == blank
-                      assign specs_object = specs_variant.metafields.custom.tech_specs.value
-                    endif
-                  endif
-
-                  if specs_object == blank
-                    assign specs_object = block.settings.specs
-                  endif
-                  if specs_object == blank
-                    assign specs_object = product.metafields.custom.prod_spec.value
-                  endif
-                  if specs_object == blank
-                    assign specs_object = product.metafields.custom.saw_specs.value
-                  endif
-                  if specs_object == blank
-                    assign specs_object = product.metafields.custom.tech_specs.value
-                  endif
-
-                  assign show_product_specs = true
-                  if block.settings.hide_when_empty
-                    assign show_product_specs = false
-                    if block.settings.show_sku and specs_variant.sku != blank
-                      assign show_product_specs = true
-                    endif
-                    if specs_object != blank
-                      if specs_object.teeth_per_inch != blank or specs_object.hardening != blank or specs_object.blade_material != blank or specs_object.blade_thickness != blank or specs_object.blade_length != blank or specs_object.length_unfolded != blank or specs_object.length_folded != blank or specs_object.weight != blank
-                        assign show_product_specs = true
-                      endif
-                    endif
-                  endif
-                -%}
-                <div
-                  class="product__accordion accordion quick-add-hidden product-specs-block{% unless show_product_specs %} product-specs-block--empty{% endunless %}"
-                  id="ProductSpecs-{{ block.id }}-{{ section.id }}"
-                  data-product-specs
-                  {{ block.shopify_attributes }}
-                >
-                  {%- if show_product_specs -%}
-                    <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open_by_default %} open{% endif %}>
-                      <summary>
-                        <div class="summary__title">
-                          {% render 'icon-accordion', icon: block.settings.icon %}
-                          <h2 class="{{ block.settings.heading_size | default: 'h4' }} mobile-{{ block.settings.mobile_heading_size | default: block.settings.heading_size | default: 'h4' }} accordion__title inline-richtext{% if block.settings.heading_uppercase %} accordion__title--uppercase{% endif %}">
-                            {{ block.settings.heading | escape }}
-                          </h2>
-                        </div>
-                        {{- 'icon-caret.svg' | inline_asset_content -}}
-                      </summary>
-                      <div class="accordion__content" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                        {% render 'product-specs',
-                          product: product,
-                          specs: specs_object,
-                          show_sku: block.settings.show_sku
-                        %}
-                      </div>
-                    </details>
-                  {%- endif -%}
-                </div>
+                {% render 'product-specs-block', product: product, block: block, section: section %}
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
