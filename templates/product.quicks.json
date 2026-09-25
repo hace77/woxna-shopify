@@ -77,7 +77,7 @@
           "type": "product_specs",
           "settings": {
             "heading": "Technical specifications",
-            "heading_uppercase": false,
+            "heading_uppercase": true,
             "heading_size": "h4",
             "mobile_heading_size": "h4",
             "icon": "none",
