@@ -168,7 +168,7 @@
           "type": "product_specs",
           "settings": {
             "heading": "Technical specifications",
-            "heading_uppercase": false,
+            "heading_uppercase": true,
             "heading_size": "h4",
             "mobile_heading_size": "h4",
             "icon": "none",
@@ -192,9 +192,9 @@
             "body_size": "medium",
             "heading_size": "h4",
             "mobile_heading_size": "h4",
-            "open_by_default": false,
+            "open_by_default": true,
             "open_by_default_mobile": false,
-            "heading_uppercase": false,
+            "heading_uppercase": true,
             "page": ""
           }
         }
