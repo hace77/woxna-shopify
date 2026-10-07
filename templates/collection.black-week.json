@@ -15,7 +15,8 @@
         "heading_4QmWJi": {
           "type": "heading",
           "settings": {
-            "heading": "Timeless tools for modern adventurers",
+            "heading": "Come Back in november!",
+            "use_collection_title": false,
             "heading_size": "hxl"
           }
         }
@@ -24,9 +25,11 @@
         "heading_4QmWJi"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ljusnan-folding-saw-two-sizes.jpg",
+        "hide_when_empty": false,
+        "image": "{{ collection.image }}",
         "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -51,7 +54,8 @@
         "text_FkKbKK": {
           "type": "text",
           "settings": {
-            "text": "<p>Woxna tools are designed for those who value high-quality outdoor equipment that blends traditional craftsmanship with modern functionality. Whether you need a folding saw for bushcraft, a durable cutting tool for hunting, or a compact tool for camping and survival, Woxna delivers reliable performance in the wild.</p>"
+            "text": "<p>Woxna tools are designed for those who value high-quality outdoor equipment that blends traditional craftsmanship with modern functionality. Whether you need a folding saw for bushcraft, a durable cutting tool for hunting, or a compact tool for camping and survival, Woxna delivers reliable performance in the wild.</p>",
+            "hide_when_empty": false
           }
         },
         "button_d4cWYV": {
@@ -77,6 +81,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-8e62c44a-ce28-4e86-b3e5-d90d5f268ded",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -92,6 +97,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
         ".button {border: none;}",
@@ -112,6 +118,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "show_view_product_button": false,
+        "show_usp_text": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
@@ -142,7 +149,8 @@
         "text_UdkziW": {
           "type": "text",
           "settings": {
-            "text": "<p>A great outdoor tool is an essential part of any bushcraft, camping, or hunting kit. Woxna tools are developed with Scandinavian craftsmanship, ensuring both strength and efficiency in the field. Our folding saws are perfect for trail maintenance, firewood preparation, and wilderness survival, offering a lightweight yet robust design that makes them easy to carry and use.</p><p>Whether you’re a hunter, camper, forester, or bushcrafter, our saws provide fast and precise cutting with ergonomic wooden handles for a comfortable grip. With rust-resistant stainless steel blades or traditional high-carbon steel options, these tools are made to last.</p><p>Key Features:</p><ul><li>Versatile cutting tools – Ideal for bushcraft, survival, and camping</li><li>Scandinavian craftsmanship – A balance of function, aesthetics, and durability</li><li>Foldable design – Compact and portable for backpacks and toolkits</li><li>Reliable grip – Wooden handle for comfortable and controlled use</li><li>Rust-resistant or high-carbon steel – Choose based on your needs and preferences</li></ul><p>From building shelters to processing firewood and maintaining trails, Woxna tools are made for those who work and thrive in the outdoors.</p>"
+            "text": "<p>Looking for the best deals on Woxna foldable saws? You are in the right place. Our official Black Week and Black Friday sale kicks off in November. Whether you need a reliable folding saw for bushcraft, camping, or hunting, this page is where you will find our exclusive deals on our popular models like <strong>Hälsing</strong> and <strong>Ljusnan</strong>.</p><p>Every Woxna saw features an ergonomic wooden handle and a blade made from high-quality Swedish precision steel, proudly assembled in Edsbyn, Sweden.</p><p><strong>Be the First to Access Our Black Week Deals</strong><br/>Our premium outdoor tools are highly sought after, and our Black Week stock goes fast. Don't miss out! Sign up for our newsletter below to get exclusive early access and be the very first to know when the sale goes live.</p>",
+            "hide_when_empty": false
           }
         },
         "button_effggk": {
@@ -171,8 +179,26 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "179137995010e5f16e": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_TeHiMV": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_TeHiMV"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -181,6 +207,7 @@
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
-    "rich_text_q4bA3M"
+    "rich_text_q4bA3M",
+    "179137995010e5f16e"
   ]
 }
