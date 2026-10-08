@@ -17,7 +17,7 @@
           "settings": {
             "heading": "Explore our award-winning saws",
             "use_collection_title": false,
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_7ggBir": {
@@ -52,7 +52,7 @@
       "settings": {
         "hide_when_empty": false,
         "image": "shopify://shop_images/Woxna-Ljusnan-hero-dt.jpg",
-        "image_mobile": "shopify://shop_images/instagram-image-7f936c09-ccc6-4afc-af78-efd680d0a1fa.jpg",
+        "image_mobile": "shopify://shop_images/Ljusnan-250mm-115.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_height_mobile": "adapt",
