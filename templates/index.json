@@ -15,7 +15,7 @@
         "heading_cENpQt": {
           "type": "heading",
           "settings": {
-            "heading": "Explore our award-winning saws",
+            "heading": "Discover our saws",
             "use_collection_title": false,
             "heading_size": "h1"
           }
@@ -23,7 +23,7 @@
         "text_7ggBir": {
           "type": "text",
           "settings": {
-            "text": "Premium quality folding saws made in the forest of Hälsingland Sweden",
+            "text": "Premium quality folding saws made in Hälsingland Sweden",
             "use_collection_description": false,
             "text_style": "body"
           }
@@ -46,13 +46,13 @@
         "buttons_KGYaGF"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: center; }}"
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
       "name": "Image banner DT",
       "settings": {
         "hide_when_empty": false,
         "image": "shopify://shop_images/Woxna-Ljusnan-hero-dt.jpg",
-        "image_mobile": "shopify://shop_images/Ljusnan-250mm-115.png",
+        "image_mobile": "shopify://shop_images/Ljusnan-250mm-115_2e51aece-906c-4bad-ad98-9bae32e1575d.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_height_mobile": "adapt",
