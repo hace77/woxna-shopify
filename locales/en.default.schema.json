@@ -396,6 +396,17 @@
           "label": "Vertical space"
         }
       }
+    },
+    "customer_accounts": {
+      "name": "Customer accounts",
+      "settings": {
+        "paragraph": {
+          "content": "[Manage visibility](/admin/settings/customer_accounts) in customer account settings."
+        },
+        "customer_account_menu": {
+          "label": "Menu"
+        }
+      }
     }
   },
   "sections": {
@@ -3756,10 +3767,18 @@
         },
         "heading_size": {
           "label": "Heading size",
-          "options__1": { "label": "Small" },
-          "options__2": { "label": "Medium" },
-          "options__3": { "label": "Large" },
-          "options__4": { "label": "Extra large" }
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          },
+          "options__4": {
+            "label": "Extra large"
+          }
         },
         "heading_uppercase": {
           "label": "Uppercase heading"
@@ -3769,9 +3788,15 @@
         },
         "columns_desktop": {
           "label": "Reviews per row on desktop",
-          "options__1": { "label": "2" },
-          "options__2": { "label": "3" },
-          "options__3": { "label": "4" }
+          "options__1": {
+            "label": "2"
+          },
+          "options__2": {
+            "label": "3"
+          },
+          "options__3": {
+            "label": "4"
+          }
         },
         "metafield_namespace": {
           "label": "Metafield namespace"
@@ -3783,6 +3808,20 @@
         "fallback_to_single_review": {
           "label": "Fall back to custom.review",
           "info": "If the list is empty, show the single review metaobject already used on saw templates."
+        }
+      }
+    },
+    "disclosures": {
+      "name": "Disclosures",
+      "settings": {
+        "paragraph": {
+          "content": "Required safety warnings and regulatory disclosures for this product."
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "open_by_default": {
+          "label": "Open by default"
         }
       }
     }
