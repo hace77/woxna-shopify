@@ -23,7 +23,7 @@
         "klaviyo_reviews_average_rating_k7UapD": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
-            "product": "{{product}}"
+            "product": "ljusnan-foldable-saw"
           }
         },
         "text_wB7jWr": {
@@ -48,7 +48,9 @@
             "hide_option_2_label": false,
             "option_2_label": "",
             "hide_option_3_label": false,
-            "option_3_label": ""
+            "option_3_label": "",
+            "option_info_target": "1",
+            "option_info": ""
           }
         },
         "quantity_selector": {
@@ -69,6 +71,13 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
+          }
+        },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "heading": "Payment options",
+            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         },
         "icon_with_text_Feea6R": {
@@ -92,6 +101,8 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
+            "content_source": "manual",
+            "variant_metafield_key": "variant_informaion",
             "content": "<p>{{ product.metafields.custom.extratext | metafield_tag }}</p>",
             "body_size": "small",
             "heading_size": "h3",
@@ -125,12 +136,6 @@
             "content": "{{ product.metafields.custom.extra_product_information | metafield_tag }}",
             "text_style": "small",
             "show_as_information_box": false
-          }
-        },
-        "payment_icons": {
-          "type": "payment_icons",
-          "settings": {
-            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         }
       },
@@ -237,6 +242,20 @@
         "show_rating": true,
         "quick_add": "none",
         "show_view_product_button": false,
+        "show_hero_block_1": false,
+        "hero_block_1_position_desktop": "3",
+        "hero_block_1_position_mobile": "4",
+        "hero_block_1_size": "large",
+        "hero_block_1_heading": "Hero Block",
+        "hero_block_1_text": "",
+        "hero_block_1_button_text": "Shop Now",
+        "hero_block_1_button_url": "",
+        "hero_block_1_color_scheme": "",
+        "hero_block_1_vertical_position": "center",
+        "hero_block_1_mobile_vertical_position": "center",
+        "hero_block_1_text_alignment": "center",
+        "hero_block_1_mobile_text_alignment": "center",
+        "hero_block_1_heading_size": "h1",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
