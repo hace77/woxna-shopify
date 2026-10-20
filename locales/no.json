@@ -2834,6 +2834,17 @@
       "video_exit_message": "{{ title }} åpner fullskjermvideo i samme vindu.",
       "view_product": "Vis produkt",
       "low_stock": "Bare noen få igjen",
+      "specs": {
+        "teeth_per_inch": "Tenner per tomme",
+        "hardening": "Herding",
+        "blade_material": "Bladmateriale",
+        "blade_thickness": "Bladtykkelse",
+        "measurements": "Mål",
+        "blade_length": "Bladlengde",
+        "length_unfolded": "Lengde, utfelt",
+        "length_folded": "Lengde, sammenfelt",
+        "weight": "Vekt"
+      },
       "upsell": {
         "add_to_cart": "Legg i handlekurven",
         "view_options": "Vis alternativer"

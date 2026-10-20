@@ -192,7 +192,18 @@
         "add_to_cart": "In den Warenkorb legen",
         "view_options": "Optionen anzeigen"
       },
-      "view_product": "Produkt ansehen"
+      "view_product": "Produkt ansehen",
+      "specs": {
+        "teeth_per_inch": "Zähne pro Zoll",
+        "hardening": "Härtung",
+        "blade_material": "Blattmaterial",
+        "blade_thickness": "Blattdicke",
+        "measurements": "Maße",
+        "blade_length": "Blattlänge",
+        "length_unfolded": "Länge, ausgeklappt",
+        "length_folded": "Länge, eingeklappt",
+        "weight": "Gewicht"
+      }
     },
     "modal": {
       "label": "Medien-Galerie"

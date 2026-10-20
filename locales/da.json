@@ -189,6 +189,17 @@
       "duties_included": "Inklusive told.",
       "duties_and_taxes_included": "Inklusive told og skatter.",
       "view_product": "Se produkt",
+      "specs": {
+        "teeth_per_inch": "Tænder pr. tomme",
+        "hardening": "Hærdning",
+        "blade_material": "Bladmateriale",
+        "blade_thickness": "Bladtykkelse",
+        "measurements": "Mål",
+        "blade_length": "Bladlængde",
+        "length_unfolded": "Længde, udfoldet",
+        "length_folded": "Længde, sammenfoldet",
+        "weight": "Vægt"
+      },
       "upsell": {
         "add_to_cart": "Tilføj til kurv",
         "view_options": "Se muligheder"

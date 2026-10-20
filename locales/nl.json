@@ -187,7 +187,18 @@
       "taxes_included": "Belastingen inbegrepen.",
       "duties_included": "Douanerechten inbegrepen.",
       "duties_and_taxes_included": "Douanerechten en belastingen inbegrepen.",
-      "view_product": "Bekijk product"
+      "view_product": "Bekijk product",
+      "specs": {
+        "teeth_per_inch": "Tanden per inch",
+        "hardening": "Harding",
+        "blade_material": "Bladmateriaal",
+        "blade_thickness": "Bladdikte",
+        "measurements": "Afmetingen",
+        "blade_length": "Bladlengte",
+        "length_unfolded": "Lengte, uitgeklapt",
+        "length_folded": "Lengte, ingeklapt",
+        "weight": "Gewicht"
+      }
     },
     "modal": {
       "label": "Mediagalerij"

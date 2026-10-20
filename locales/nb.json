@@ -186,7 +186,18 @@
       "product_variants": "Produktvarianter",
       "taxes_included": "Inkludert avgifter.",
       "duties_included": "Inkluder tollplikter.",
-      "duties_and_taxes_included": "Inkludert tollplikter og avgifter."
+      "duties_and_taxes_included": "Inkludert tollplikter og avgifter.",
+      "specs": {
+        "teeth_per_inch": "Tenner per tomme",
+        "hardening": "Herding",
+        "blade_material": "Bladmateriale",
+        "blade_thickness": "Bladtykkelse",
+        "measurements": "Mål",
+        "blade_length": "Bladlengde",
+        "length_unfolded": "Lengde, utfelt",
+        "length_folded": "Lengde, sammenfelt",
+        "weight": "Vekt"
+      }
     },
     "modal": {
       "label": "Mediegalleri"
