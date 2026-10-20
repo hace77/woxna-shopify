@@ -112,6 +112,8 @@
             "heading": "Product description",
             "icon": "none",
             "hide_when_empty": false,
+            "content_source": "manual",
+            "variant_metafield_key": "variant_informaion",
             "content": "<p>{{ product.metafields.custom.preamble.value.single_line_ingress.value }}</p>",
             "body_size": "medium",
             "heading_size": "h3",
@@ -756,7 +758,6 @@
         "heading_LFcadc",
         "text_4CCNhj"
       ],
-      "disabled": true,
       "name": "handles",
       "settings": {
         "desktop_content_position": "center",
