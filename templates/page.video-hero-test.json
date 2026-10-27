@@ -9,22 +9,6 @@
  */
 {
   "sections": {
-    "video_scroll_gVRxGg": {
-      "type": "video-scroll",
-      "name": "Video scroll",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Eco-saw.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "video_banner_ah8YRc": {
       "type": "video-bannerYT",
       "settings": {
@@ -304,6 +288,22 @@
         "padding_bottom": 36
       }
     },
+    "video_scroll_gVRxGg": {
+      "type": "video-scroll",
+      "name": "Video scroll",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Eco-saw.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_8XAnYy": {
       "type": "image-with-text",
       "blocks": {
@@ -441,7 +441,6 @@
     }
   },
   "order": [
-    "video_scroll_gVRxGg",
     "video_banner_ah8YRc",
     "main",
     "slideshow_FdkgLk",
@@ -449,6 +448,7 @@
     "image_with_text_animation_L693Ux",
     "image_with_text_animation_bTyg3e",
     "image_with_text_animation_wUydpN",
+    "video_scroll_gVRxGg",
     "image_with_text_8XAnYy",
     "multicolumn_W9wNqk",
     "multirow_c7wPNp"
