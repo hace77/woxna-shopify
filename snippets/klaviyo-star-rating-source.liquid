@@ -1,0 +1,26 @@
+{% doc %}
+  Renders a Klaviyo star-rating widget for a source product.
+  On combo/bundle pages, set custom.reviews_source_product to the saw
+  (e.g. Ljusnan or Hälsing) whose reviews should be shown.
+
+  Falls back to the current product when the metafield is empty.
+
+  @param {object} product - Product drop
+{% enddoc %}
+
+{%- liquid
+  assign rating_product = product
+  assign source_product = product.metafields.custom.reviews_source_product.value
+  if source_product != blank
+    assign rating_product = source_product
+  endif
+-%}
+
+{%- if rating_product != blank -%}
+  <div
+    class="klaviyo-star-rating-widget"
+    data-id="{{ rating_product.id }}"
+    data-product-title="{{ rating_product.title | escape }}"
+    data-product-type="{{ rating_product.type | escape }}"
+  ></div>
+{%- endif -%}
