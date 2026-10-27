@@ -139,11 +139,17 @@
                             {{ section.settings.klaviyo_reviews_heading | default: 'Reviews' | escape }}
                           </span>
                           {%- if section.settings.klaviyo_reviews_show_star_rating -%}
+                            {%- liquid
+                              assign klaviyo_rating_product = product
+                              if product.metafields.custom.rreviews_source_product.value != blank
+                                assign klaviyo_rating_product = product.metafields.custom.rreviews_source_product.value
+                              endif
+                            -%}
                             <span
                               class="klaviyo-star-rating-widget"
-                              data-id="{{ product.id }}"
-                              data-product-title="{{ product.title | escape }}"
-                              data-product-type="{{ product.type | escape }}"
+                              data-id="{{ klaviyo_rating_product.id }}"
+                              data-product-title="{{ klaviyo_rating_product.title | escape }}"
+                              data-product-type="{{ klaviyo_rating_product.type | escape }}"
                             ></span>
                           {%- endif -%}
                         </h3>

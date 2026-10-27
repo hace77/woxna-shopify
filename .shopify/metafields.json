@@ -905,7 +905,7 @@
       }
     },
     {
-      "key": "reviews_source_product",
+      "key": "rreviews_source_product",
       "namespace": "custom",
       "name": "Reviews source product",
       "description": "On combo/bundle products: the product whose Klaviyo reviews/stars should be shown (e.g. the saw).",

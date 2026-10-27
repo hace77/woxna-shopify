@@ -1,6 +1,6 @@
 {% doc %}
   Renders a Klaviyo star-rating widget for a source product.
-  On combo/bundle pages, set custom.reviews_source_product to the saw
+  On combo/bundle pages, set custom.rreviews_source_product to the saw
   (e.g. Ljusnan or Hälsing) whose reviews should be shown.
 
   Falls back to the current product when the metafield is empty.
@@ -10,7 +10,7 @@
 
 {%- liquid
   assign rating_product = product
-  assign source_product = product.metafields.custom.reviews_source_product.value
+  assign source_product = product.metafields.custom.rreviews_source_product.value
   if source_product != blank
     assign rating_product = source_product
   endif

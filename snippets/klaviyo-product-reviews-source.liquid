@@ -1,0 +1,18 @@
+{% doc %}
+  Renders Klaviyo product reviews for a source product.
+  On combo pages, set custom.rreviews_source_product to the saw.
+
+  @param {object} product - Product drop
+{% enddoc %}
+
+{%- liquid
+  assign review_product = product
+  assign source_product = product.metafields.custom.rreviews_source_product.value
+  if source_product != blank
+    assign review_product = source_product
+  endif
+-%}
+
+{%- if review_product != blank -%}
+  <div id="klaviyo-reviews-all" data-id="{{ review_product.id }}"></div>
+{%- endif -%}
