@@ -314,7 +314,12 @@
                 </p>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
+              {%- when 'klaviyo_source_rating' -%}
+                <div class="product__klaviyo-source-rating" {{ block.shopify_attributes }}>
+                  {% render 'klaviyo-star-rating-source', product: product %}
+                </div>
               {%- when 'collapsible_tab' -%}
+
                 {% render 'product-collapsible-tab', product: product, block: block, section: section %}
               {%- when 'feature_accordion' -%}
                 {%- liquid
@@ -1377,8 +1382,20 @@
       ]
     },
     {
+      "type": "klaviyo_source_rating",
+      "name": "Klaviyo stars (source product)",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Shows Klaviyo stars for the product in metafield custom.reviews_source_product (e.g. the saw on a combo). Falls back to the current product if empty."
+        }
+      ]
+    },
+    {
       "type": "collapsible_tab",
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
+
       "settings": [
         {
           "type": "text",

@@ -21,11 +21,8 @@
           "settings": {}
         },
         "klaviyo_source_stars_combos": {
-          "type": "custom_liquid",
-          "name": "Klaviyo stars (source product)",
-          "settings": {
-            "custom_liquid": "{% render 'klaviyo-star-rating-source', product: product %}"
-          }
+          "type": "klaviyo_source_rating",
+          "settings": {}
         },
         "text_wB7jWr": {
           "type": "text",
