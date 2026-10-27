@@ -26,13 +26,6 @@
           "type": "price",
           "settings": {}
         },
-        "klaviyo_source_stars_combos": {
-          "type": "custom_liquid",
-          "name": "Klaviyo stars (source product)",
-          "settings": {
-            "custom_liquid": "{% render 'klaviyo-star-rating-source', product: product %}"
-          }
-        },
         "text_wB7jWr": {
           "type": "text",
           "settings": {
@@ -150,7 +143,6 @@
         "title",
         "klaviyo_reviews_average_rating_iUtm83",
         "price",
-        "klaviyo_source_stars_combos",
         "text_wB7jWr",
         "description",
         "variant_picker",
