@@ -22,5 +22,6 @@
     data-id="{{ rating_product.id }}"
     data-product-title="{{ rating_product.title | escape }}"
     data-product-type="{{ rating_product.type | escape }}"
+    data-reviews-source="{% if source_product != blank %}metafield{% else %}current{% endif %}"
   ></div>
 {%- endif -%}
