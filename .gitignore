@@ -4,3 +4,7 @@ docs/dawn-comparison-report.txt
 docs/dawn-update-summary.md
 docs/compare-with-dawn.sh
 INSTASHOP_README.md
+
+# Local AI agent skills (not part of the Shopify theme)
+.agents/
+skills-lock.json

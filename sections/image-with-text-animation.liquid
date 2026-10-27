@@ -13,23 +13,62 @@
     }
   }
 
-  /* Animation styles */
-  #shopify-section-{{ section.id }} .animate-image {
-    opacity: 0;
-    transform: translateX({% if section.settings.animation_direction == 'left' %}-300px{% else %}300px{% endif %});
-    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
-    will-change: transform, opacity;
+  /*
+    Scroll-driven entry (Modern Web Guidance: scroll-entry-exit-effects).
+    Default state stays fully visible for unsupported browsers / reduced motion.
+  */
+  {%- liquid
+    if section.settings.animation_direction == 'left'
+      assign slide_from_mobile = '-300px'
+      assign slide_from_desktop = '-400px'
+    else
+      assign slide_from_mobile = '300px'
+      assign slide_from_desktop = '400px'
+    endif
+  -%}
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports ((animation-timeline: view()) and (animation-range: entry)) {
+      @keyframes iwt-slide-in-{{ section.id }} {
+        from {
+          opacity: 0;
+          transform: translateX({{ slide_from_mobile }});
+        }
+      }
+
+      @media screen and (min-width: 750px) {
+        @keyframes iwt-slide-in-{{ section.id }} {
+          from {
+            opacity: 0;
+            transform: translateX({{ slide_from_desktop }});
+          }
+        }
+      }
+
+      #shopify-section-{{ section.id }} .animate-image {
+        animation: iwt-slide-in-{{ section.id }} auto linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 100%;
+      }
+    }
   }
 
-  #shopify-section-{{ section.id }} .animate-image.animate {
-    opacity: 1;
-    transform: translateX(0);
+  /* IntersectionObserver fallback when scroll-driven animations are unavailable */
+  #shopify-section-{{ section.id }}.scroll-anim-fallback .animate-image {
+    opacity: 0;
+    transform: translateX({{ slide_from_mobile }});
+    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
   }
 
   @media screen and (min-width: 750px) {
-    #shopify-section-{{ section.id }} .animate-image {
-      transform: translateX({% if section.settings.animation_direction == 'left' %}-400px{% else %}400px{% endif %});
+    #shopify-section-{{ section.id }}.scroll-anim-fallback .animate-image {
+      transform: translateX({{ slide_from_desktop }});
     }
+  }
+
+  #shopify-section-{{ section.id }}.scroll-anim-fallback .animate-image.animate {
+    opacity: 1;
+    transform: translateX(0);
   }
 {%- endstyle -%}
 
@@ -525,30 +564,32 @@
 {% endschema %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) return;
+
     const section = document.querySelector('#shopify-section-{{ section.id }}');
     if (!section) return;
-    
+
     const image = section.querySelector('.animate-image');
     if (!image) return;
-    
-    // Force a reflow to ensure the initial state is applied
-    image.offsetHeight;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          image.classList.add('animate');
-        } else {
-          image.classList.remove('animate');
-        }
-      });
-    }, {
-      threshold: 0.2,
-      rootMargin: '20px'
-    });
 
-    // Start observing immediately
+    section.classList.add('scroll-anim-fallback');
+    image.offsetHeight;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            image.classList.add('animate');
+          } else {
+            image.classList.remove('animate');
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: '20px' }
+    );
+
     observer.observe(image);
   });
 </script>

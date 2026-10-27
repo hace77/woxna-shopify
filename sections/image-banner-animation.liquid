@@ -28,39 +28,85 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
-  /* Animation styles for text content */
-  #Banner-{{ section.id }} .banner__box {
+  /*
+    Scroll-driven entry (Modern Web Guidance: scroll-entry-exit-effects).
+    Default state stays fully visible for unsupported browsers / reduced motion.
+  */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports ((animation-timeline: view()) and (animation-range: entry)) {
+      @keyframes banner-slide-in-left-{{ section.id }} {
+        from {
+          opacity: 0;
+          transform: translateX(-300px);
+        }
+      }
+
+      @keyframes banner-slide-in-right-{{ section.id }} {
+        from {
+          opacity: 0;
+          transform: translateX(300px);
+        }
+      }
+
+      @media screen and (min-width: 750px) {
+        @keyframes banner-slide-in-left-{{ section.id }} {
+          from {
+            opacity: 0;
+            transform: translateX(-400px);
+          }
+        }
+
+        @keyframes banner-slide-in-right-{{ section.id }} {
+          from {
+            opacity: 0;
+            transform: translateX(400px);
+          }
+        }
+      }
+
+      #Banner-{{ section.id }} .banner__box {
+        animation: banner-slide-in-left-{{ section.id }} auto linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 100%;
+      }
+
+      #Banner-{{ section.id }} .banner__media {
+        animation: banner-slide-in-right-{{ section.id }} auto linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 100%;
+      }
+    }
+  }
+
+  /* IntersectionObserver fallback when scroll-driven animations are unavailable */
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__box,
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__media {
     opacity: 0;
+    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
+  }
+
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__box {
     transform: translateX(-300px);
-    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
-    will-change: transform, opacity;
   }
 
-  #Banner-{{ section.id }} .banner__box.animate {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  /* Animation styles for image */
-  #Banner-{{ section.id }} .banner__media {
-    opacity: 0;
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__media {
     transform: translateX(300px);
-    transition: transform 1.2s ease-out, opacity 0.6s ease-out;
-    will-change: transform, opacity;
-  }
-
-  #Banner-{{ section.id }} .banner__media.animate {
-    opacity: 1;
-    transform: translateX(0);
   }
 
   @media screen and (min-width: 750px) {
-    #Banner-{{ section.id }} .banner__box {
+    #Banner-{{ section.id }}.scroll-anim-fallback .banner__box {
       transform: translateX(-400px);
     }
-    #Banner-{{ section.id }} .banner__media {
+
+    #Banner-{{ section.id }}.scroll-anim-fallback .banner__media {
       transform: translateX(400px);
     }
+  }
+
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__box.animate,
+  #Banner-{{ section.id }}.scroll-anim-fallback .banner__media.animate {
+    opacity: 1;
+    transform: translateX(0);
   }
 {%- endstyle -%}
 
@@ -202,34 +248,36 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) return;
+
     const section = document.querySelector('#Banner-{{ section.id }}');
     if (!section) return;
-    
+
     const content = section.querySelector('.banner__box');
     const media = section.querySelector('.banner__media');
     if (!content || !media) return;
-    
-    // Force a reflow to ensure the initial state is applied
+
+    section.classList.add('scroll-anim-fallback');
     content.offsetHeight;
     media.offsetHeight;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          content.classList.add('animate');
-          media.classList.add('animate');
-        } else {
-          content.classList.remove('animate');
-          media.classList.remove('animate');
-        }
-      });
-    }, {
-      threshold: 0.2,
-      rootMargin: '20px'
-    });
 
-    // Start observing immediately
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            content.classList.add('animate');
+            media.classList.add('animate');
+          } else {
+            content.classList.remove('animate');
+            media.classList.remove('animate');
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: '20px' }
+    );
+
     observer.observe(section);
   });
 </script>
