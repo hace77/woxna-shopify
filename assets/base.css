@@ -1,6 +1,7 @@
 product-component,
 collection-component {
   display: block;
+  height: 100%;
 }
 
 :root {
