@@ -21,6 +21,7 @@
   - grey_overlay: {Boolean} Apply grey overlay to product images. Default: false (optional)
   - show_usp_text: {Boolean} Show the product USP text. Default: true (optional)
   - related_products_mode: {Boolean} Enable related products mode (clickable image, plus icon for single variant). Default: false (optional)
+  - product_view_context: {String} Context for standard product view events (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -87,7 +88,8 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <product-component view-event-payload="{{ card_product | standard_event_data: 'view', context: product_view_context | escape }}">
+    <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
         card card--{{ settings.card_style }}
@@ -699,6 +701,7 @@
       </div>
     </div>
   </div>
+  </product-component>
 {%- else -%}
   {%- liquid
     assign ratio = 1

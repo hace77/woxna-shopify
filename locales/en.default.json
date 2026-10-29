@@ -158,7 +158,8 @@
         "title": "Volume pricing",
         "note": "Buy more and save",
         "minimum": "{{ quantity }}+",
-        "price_at_each": "{{ price }} each"
+        "price_at_each": "{{ price }} each",
+        "price_at_each_html": "at {{ price }}/ea"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
