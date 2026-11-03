@@ -16,6 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Black Friday Offer",
+            "use_collection_title": false,
             "heading_size": "h0"
           }
         },
@@ -23,6 +24,7 @@
           "type": "text",
           "settings": {
             "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount.",
+            "use_collection_description": false,
             "text_style": "subtitle"
           }
         }
@@ -37,9 +39,11 @@
         "@media (min-width: 749px) {.banner__content {align-items: end; }}"
       ],
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -58,6 +62,7 @@
           "type": "heading",
           "settings": {
             "heading": "Black Friday offer",
+            "use_collection_title": false,
             "heading_size": "h0"
           }
         },
@@ -65,6 +70,7 @@
           "type": "text",
           "settings": {
             "text": "For the second year in a row, as a black friday offer we have a limited batch of saws with minor cosmetic quirks instead of a general discount. Get one now, once these are gone, they are gone!",
+            "use_collection_description": false,
             "text_style": "subtitle"
           }
         }
@@ -80,9 +86,11 @@
       ],
       "name": "hero mobile",
       "settings": {
+        "hide_when_empty": false,
         "image": "shopify://shop_images/Ljusnan180mmLight1_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_height_mobile": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -101,7 +109,7 @@
         "heading": "Black friday starts in",
         "heading_size": "h1",
         "subheading": "",
-        "target_date": "2025-11-24",
+        "target_date": "2026-11-23",
         "target_time": "00:01",
         "timezone": "Europe/Stockholm",
         "expired_message": "This offer has ended",
@@ -161,7 +169,8 @@
         "text_3ErEKB": {
           "type": "text",
           "settings": {
-            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>"
+            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>",
+            "hide_when_empty": false
           }
         }
       },
@@ -175,6 +184,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -203,7 +213,15 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "hide_option_1_label": false,
+            "option_1_label": "",
+            "hide_option_2_label": false,
+            "option_2_label": "",
+            "hide_option_3_label": false,
+            "option_3_label": "",
+            "option_info_target": "1",
+            "option_info": ""
           }
         },
         "quantity_selector_9KJhMx": {
@@ -217,16 +235,17 @@
             "show_gift_card_recipient": true
           }
         },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "heading": "Payment options",
+            "payment_icon_types": "apple_pay, master, visa, american_express"
+          }
+        },
         "share_gc8dem": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "payment_icons": {
-          "type": "payment_icons",
-          "settings": {
-            "payment_icon_types": "apple_pay, master, visa, american_express"
           }
         }
       },
@@ -277,7 +296,8 @@
         "text_GyNWxU": {
           "type": "text",
           "settings": {
-            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>"
+            "text": "<p>At Woxna, we’ve thought long and hard about how to approach Black Week without contributing to the frenzy of overconsumption. Here’s what we decided: instead of mass discounts, we’re offering products that we otherwise would have a hard time finding a suitable home for.</p><p>Our customers have high expectations on the product finishes of our products and we are very happy that we are able to meet these in most circumstance. However, it does make it extra hard for us in production. When we order our handles, they arrive as seperate lefts and rights as each one is milled one by one. At the bottom of the shelf it starts to get really hard to color match them. It is these handles, together with some other handles that did not pass our beauty standards that we have decided to offer on black friday. This way we stay true to our sustainability ambitions, while also catering to those that are looking for a bargin during this shopping week.</p>",
+            "hide_when_empty": false
           }
         },
         "button_GQJCdi": {
@@ -303,6 +323,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -314,54 +335,54 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_2.jpg",
+            "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
+            "box_align": "middle-center",
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
           }
         },
         "slide_D4Bmxd": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Ljusnan_180mm_Light_Handle_3.jpg",
+            "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
+            "box_align": "middle-center",
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "right"
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
           }
         },
         "slide_ByPUnR": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Woxna-Black-Week-saw-1.jpg",
+            "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
             "show_text_box": false,
+            "box_align": "middle-center",
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
           }
         }
       },
@@ -411,7 +432,8 @@
         "text_EpK4Mh": {
           "type": "text",
           "settings": {
-            "text": "<p>This offer lets us share these one-of-a-kind tools with you while doing it in a mindful way and not just boosting the excessive sales of the season. By choosing one of these saws, you’re not only saving money but also supporting our mission to reduce waste.</p><p>We still think that you should only get products that you actually want and will take care of, and if a Woxna could be a part of that, we would be honored.</p>"
+            "text": "<p>This offer lets us share these one-of-a-kind tools with you while doing it in a mindful way and not just boosting the excessive sales of the season. By choosing one of these saws, you’re not only saving money but also supporting our mission to reduce waste.</p><p>We still think that you should only get products that you actually want and will take care of, and if a Woxna could be a part of that, we would be honored.</p>",
+            "hide_when_empty": false
           }
         },
         "button_CwdNWY": {
@@ -437,6 +459,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -456,7 +479,8 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "hide_when_empty": false
           }
         },
         "button_Q9L9ci": {
@@ -483,6 +507,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "hide_when_empty": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
