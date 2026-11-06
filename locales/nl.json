@@ -181,7 +181,8 @@
         "note": "Volumeprijsstelling beschikbaar",
         "minimum": "Meer dan {{ quantity }}",
         "price_at_each": "{{ price }}/st.",
-        "price_range": "{{ minimum }} - {{ maximum }}"
+        "price_range": "{{ minimum }} - {{ maximum }}",
+        "price_at_each_html": "à {{ price }}/st"
       },
       "product_variants": "Productvarianten",
       "taxes_included": "Belastingen inbegrepen.",
@@ -198,6 +199,13 @@
         "length_unfolded": "Lengte, uitgeklapt",
         "length_folded": "Lengte, ingeklapt",
         "weight": "Gewicht"
+      },
+      "payment_options": "Betaalmogelijkheden",
+      "option_info": "Meer informatie over {{ option }}",
+      "low_stock": "Nog maar een paar over",
+      "upsell": {
+        "add_to_cart": "In winkelwagen",
+        "view_options": "Weergaveopties"
       }
     },
     "modal": {
@@ -324,7 +332,17 @@
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Douanerechten inbegrepen. Belastingen, kortingen en <a href=\"{{ link }}\">verzending</a> worden bij de checkout berekend.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Douanerechten inbegrepen. Belastingen, kortingen en verzending worden bij de checkout berekend.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Belastingen, kortingen en <a href=\"{{ link }}\">verzending</a> worden bij de checkout berekend.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Belastingen, kortingen en verzending worden bij de checkout berekend."
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Belastingen, kortingen en verzending worden bij de checkout berekend.",
+      "benefits": {
+        "benefit_1": "Gratis verzending",
+        "benefit_2": "Levenslange garantie",
+        "benefit_3": "Snelle levering"
+      },
+      "upsell": {
+        "title": "Misschien vind je dit ook leuk",
+        "add_to_cart": "Toevoegen",
+        "view_options": "Bekijk opties"
+      }
     },
     "footer": {
       "payment": "Betaalmethoden"
@@ -392,6 +410,125 @@
       "min_error": "Voor dit artikel geldt een minimum van {{ min }}.",
       "max_error": "Voor dit artikel geldt een maximum van {{ max }}.",
       "step_error": "Je kunt dit artikel alleen toevoegen in stappen van {{ step }}"
+    },
+    "product_reviews_slider": {
+      "empty": "Voeg uitgelichte beoordelingen toe aan het product (metafield custom.featured_reviews)."
+    },
+    "main-collection-product-grid": {
+      "settings": {
+        "hero_block": {
+          "header": "Hero-blok",
+          "show_hero_block_1": {
+            "label": "Toon hero-blok"
+          },
+          "position_desktop": {
+            "label": "Positie op het bureaublad",
+            "info": "Kies waar je de hero-blok in het productraster op desktop plaatst",
+            "options": {
+              "after_1st": "Na 1e product",
+              "after_2nd": "Na 2e product",
+              "after_3rd": "Na 3e product",
+              "after_4th": "Na het 4e product",
+              "after_5th": "Na het 5e product",
+              "after_6th": "Na het 6e product",
+              "after_9th": "Na 9e product",
+              "after_12th": "Na het 12e product"
+            }
+          },
+          "position_mobile": {
+            "label": "Positie op mobiel",
+            "info": "Kies waar je de hero-sectie in het productoverzicht op mobiel plaatst",
+            "options": {
+              "after_2nd": "Na 2e product",
+              "after_4th": "Na het 4e product",
+              "after_6th": "Na het 6e product",
+              "after_8th": "Na het 8e product",
+              "after_10th": "Na het 10e product",
+              "after_12th": "Na het 12e product"
+            }
+          },
+          "size": {
+            "label": "Maat",
+            "options": {
+              "small": "Klein",
+              "medium": "Gemiddeld",
+              "large": "Groot"
+            }
+          },
+          "image": {
+            "label": "Afbeelding"
+          },
+          "heading": {
+            "label": "Koptekst",
+            "default": "Hero-blok"
+          },
+          "text": {
+            "label": "Tekst"
+          },
+          "button_text": {
+            "label": "Knoptekst",
+            "default": "Shop nu"
+          },
+          "button_url": {
+            "label": "Knop-URL"
+          },
+          "color_scheme": {
+            "label": "Kleurenschema"
+          },
+          "vertical_position_desktop": {
+            "label": "Verticale positie op het bureaublad",
+            "options": {
+              "top": "Top",
+              "center": "Centrum",
+              "bottom": "Onderkant"
+            }
+          },
+          "vertical_position_mobile": {
+            "label": "Verticale positie op mobiel",
+            "options": {
+              "top": "Top",
+              "center": "Centrum",
+              "bottom": "Onderkant"
+            }
+          },
+          "text_alignment_desktop": {
+            "label": "Tekstuitlijning op desktop",
+            "options": {
+              "left": "Links",
+              "center": "Centrum",
+              "right": "Klopt"
+            }
+          },
+          "text_alignment_mobile": {
+            "label": "Tekstuitlijning op mobiel",
+            "options": {
+              "left": "Links",
+              "center": "Centrum",
+              "right": "Klopt"
+            }
+          },
+          "heading_size_desktop": {
+            "label": "Kopgrootte op desktop",
+            "options": {
+              "small": "Klein",
+              "medium": "Gemiddeld",
+              "large": "Groot",
+              "extra_large": "Extra groot",
+              "extra_extra_large": "Extra extra groot"
+            }
+          },
+          "heading_size_mobile": {
+            "label": "Koptekstgrootte op mobiel",
+            "options": {
+              "small": "Klein",
+              "medium": "Gemiddeld",
+              "large": "Groot",
+              "extra_large": "Extra groot",
+              "extra_extra_large": "Extra extra groot"
+            }
+          }
+        }
+      }
     }
   },
   "localization": {
@@ -544,6 +681,74 @@
       "send_on_label": "Verzenden op (optioneel)",
       "expanded": "Formulier voor ontvanger cadeaubon uitgevouwen",
       "collapsed": "Formulier voor ontvanger cadeaubon ingeklapt"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "local_pickup": {
+        "stock_details": {
+          "in_stock": "Op voorraad"
+        }
+      },
+      "split_delivery": {
+        "delivery_updated_toast": {
+          "shipping_only": "Je levering is bijgewerkt. {{shipping}}",
+          "removal_only": "Je levering is bijgewerkt. {{removal}}",
+          "shipping_and_removal": "Je levering is bijgewerkt. {{shipping}} {{removal}}",
+          "shipping": {
+            "one": "{{count}} artikel is verplaatst naar verzending.",
+            "other": "{{count}} items zijn verplaatst naar verzending."
+          },
+          "removal": {
+            "one": "{{count}} item is verwijderd.",
+            "other": "{{count}} items zijn verwijderd."
+          }
+        }
+      }
+    }
+  },
+  "settings_schema": {
+    "cart": {
+      "settings": {
+        "cart_drawer": {
+          "upsell_product": {
+            "label": "Upsell-product",
+            "info": "Product om als upsell voor te stellen wanneer dit product in het winkelmandje zit"
+          }
+        }
+      }
+    },
+    "metafields": {
+      "product_page_upsell_product": {
+        "label": "Upsellproduct op productpagina",
+        "description": "Product om als upsell voor te stellen op deze productpagina"
+      },
+      "product_page_upsell_button_text": {
+        "label": "Tekst van de upsellknop op de productpagina",
+        "description": "Aangepaste tekst voor de upsellknop (bijv. \"Voeg beschermingsplan toe\", \"Ontvang zorgpakket\")"
+      },
+      "product_page_upsell_offer_text": {
+        "label": "Upsell-aanbiedingstekst op productpagina",
+        "description": "Tekst om het aanbod uit te leggen boven de upsell-knop (bijv. \"Bespaar 50% wanneer je dit aan je bestelling toevoegt!\")"
+      },
+      "discount_bundle": {
+        "label": "Bundelkortingspercentage",
+        "description": "Percentage korting toe te passen op het upsellproduct (bijv. 50 voor 50% korting)"
+      }
+    }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Fysiek",
+      "physical": "Fysieke winkel",
+      "online": "Online Winkel"
+    },
+    "search": {
+      "placeholder": "Zoeken op stad...",
+      "city_placeholder": "Stadsnaam",
+      "label": "Zoek winkeliers per stad",
+      "clear": "Wissen",
+      "no_results": "Geen winkels gevonden in die stad. Probeer een andere zoekopdracht."
     }
   }
 }
