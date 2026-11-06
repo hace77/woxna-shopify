@@ -181,7 +181,8 @@
         "note": "Volumenabhängige Preisgestaltung verfügbar",
         "minimum": "{{ quantity }}+",
         "price_at_each": "bei {{ price }}/Stück",
-        "price_range": "{{ minimum }}–{{ maximum }}"
+        "price_range": "{{ minimum }}–{{ maximum }}",
+        "price_at_each_html": "zu {{ price }}/Stk."
       },
       "product_variants": "Produktvarianten",
       "taxes_included": "Inkl. Steuern.",
@@ -203,7 +204,9 @@
         "length_unfolded": "Länge, ausgeklappt",
         "length_folded": "Länge, eingeklappt",
         "weight": "Gewicht"
-      }
+      },
+      "payment_options": "Zahlungsmöglichkeiten",
+      "option_info": "Weitere Informationen zu {{ option }}"
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -334,7 +337,12 @@
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren. Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Inkl. Zollgebühren. Steuern, Rabatte und Versand werden beim Checkout berechnet.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet.",
+      "benefits": {
+        "benefit_1": "Kostenloser Versand",
+        "benefit_2": "Lebenslange Garantie",
+        "benefit_3": "Schnelle Lieferung"
+      }
     },
     "footer": {
       "payment": "Zahlungsmethoden"
@@ -402,6 +410,125 @@
       "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
       "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
       "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
+    },
+    "product_reviews_slider": {
+      "empty": "Fügen Sie hervorgehobene Bewertungen auf dem Produkt hinzu (Metafeld custom.featured_reviews)."
+    },
+    "main-collection-product-grid": {
+      "settings": {
+        "hero_block": {
+          "header": "Hero-Bereich",
+          "show_hero_block_1": {
+            "label": "Hero-Block anzeigen"
+          },
+          "position_desktop": {
+            "label": "Position auf dem Desktop",
+            "info": "Wählen Sie aus, wo der Hero-Block im Produktgitter auf dem Desktop platziert werden soll.",
+            "options": {
+              "after_1st": "Nach dem 1. Produkt",
+              "after_2nd": "Nach dem 2. Produkt",
+              "after_3rd": "Nach dem 3. Produkt",
+              "after_4th": "Nach dem 4. Produkt",
+              "after_5th": "Nach dem 5. Produkt",
+              "after_6th": "Nach dem 6. Produkt",
+              "after_9th": "Nach dem 9. Produkt",
+              "after_12th": "Nach dem 12. Produkt"
+            }
+          },
+          "position_mobile": {
+            "label": "Position auf Mobilgeräten",
+            "info": "Wählen Sie aus, wo der Hero-Block im Produktgitter auf Mobilgeräten platziert werden soll.",
+            "options": {
+              "after_2nd": "Nach dem 2. Produkt",
+              "after_4th": "Nach dem 4. Produkt",
+              "after_6th": "Nach dem 6. Produkt",
+              "after_8th": "Nach dem 8. Produkt",
+              "after_10th": "Nach dem 10. Produkt",
+              "after_12th": "Nach dem 12. Produkt"
+            }
+          },
+          "size": {
+            "label": "Größe",
+            "options": {
+              "small": "Klein",
+              "medium": "Mittel",
+              "large": "Groß"
+            }
+          },
+          "image": {
+            "label": "Bild"
+          },
+          "heading": {
+            "label": "Überschrift",
+            "default": "Hero-Bereich"
+          },
+          "text": {
+            "label": "Text"
+          },
+          "button_text": {
+            "label": "Schaltflächentext",
+            "default": "Jetzt kaufen"
+          },
+          "button_url": {
+            "label": "Schaltflächen-URL"
+          },
+          "color_scheme": {
+            "label": "Farbschema"
+          },
+          "vertical_position_desktop": {
+            "label": "Vertikale Position auf dem Desktop",
+            "options": {
+              "top": "Top",
+              "center": "Mitte",
+              "bottom": "Unten"
+            }
+          },
+          "vertical_position_mobile": {
+            "label": "Vertikale Position auf Mobilgeräten",
+            "options": {
+              "top": "Top",
+              "center": "Mitte",
+              "bottom": "Unten"
+            }
+          },
+          "text_alignment_desktop": {
+            "label": "Textausrichtung am Desktop",
+            "options": {
+              "left": "Links",
+              "center": "Mitte",
+              "right": "Richtig"
+            }
+          },
+          "text_alignment_mobile": {
+            "label": "Textausrichtung auf Mobilgeräten",
+            "options": {
+              "left": "Links",
+              "center": "Mitte",
+              "right": "Richtig"
+            }
+          },
+          "heading_size_desktop": {
+            "label": "Überschriftengröße auf dem Desktop",
+            "options": {
+              "small": "Klein",
+              "medium": "Mittel",
+              "large": "Groß",
+              "extra_large": "Extra groß",
+              "extra_extra_large": "Extra extra groß"
+            }
+          },
+          "heading_size_mobile": {
+            "label": "Überschriftengröße auf Mobilgeräten",
+            "options": {
+              "small": "Klein",
+              "medium": "Mittel",
+              "large": "Groß",
+              "extra_large": "Extra groß",
+              "extra_extra_large": "Extra extra groß"
+            }
+          }
+        }
+      }
     }
   },
   "localization": {
@@ -610,7 +737,41 @@
         "errors": {
           "only_remote_merchandise_lines": "Die Kasse enthält nur Remote-Waren. Um den Checkout abzuschließen, ist eine Weiterleitung zum Remote-Shop erforderlich."
         }
+      },
+      "local_pickup": {
+        "stock_details": {
+          "in_stock": "Auf Lager"
+        }
+      },
+      "split_delivery": {
+        "delivery_updated_toast": {
+          "shipping_only": "Ihre Lieferung wurde aktualisiert. {{shipping}}",
+          "removal_only": "Ihre Lieferung wurde aktualisiert. {{removal}}",
+          "shipping_and_removal": "Ihre Lieferung wurde aktualisiert. {{shipping}} {{removal}}",
+          "shipping": {
+            "one": "{{count}} Artikel wurde an den Versand übergeben.",
+            "other": "{{count}} Artikel wurden in den Versand verschoben."
+          },
+          "removal": {
+            "one": "{{count}} Element wurde entfernt.",
+            "other": "{{count}} Elemente wurden entfernt."
+          }
+        }
       }
+    }
+  },
+  "retailers": {
+    "store_type": {
+      "both": "Online/Physisch",
+      "physical": "Ladengeschäft",
+      "online": "Online-Shop"
+    },
+    "search": {
+      "placeholder": "Nach Stadt suchen...",
+      "city_placeholder": "Stadtname",
+      "label": "Händler nach Stadt suchen",
+      "clear": "Klar",
+      "no_results": "In dieser Stadt wurden keine Händler gefunden. Versuchen Sie eine andere Suche."
     }
   }
 }
