@@ -179,14 +179,14 @@
         "heading_JrQexk": {
           "type": "heading",
           "settings": {
-            "heading": "Sustainable. Unique. Limited.",
+            "heading": "Woxna Black Week 2026 – check back soon",
             "heading_size": "h1"
           }
         },
         "text_3ErEKB": {
           "type": "text",
           "settings": {
-            "text": "<p>As part of our sustainability promise, we offer a very limited number of Woxna saws with minor cosmetic quirks. These are fully functional tools, built with the same blade quality, locking precision, and ergonomic design you’d expect from any Woxna saw.</p><p>The quirks might include:</p><ul><li>Unusual color for the wood (especially light colors of walnut)<br/></li><li>Mismatched handle tones between left and right handle-half <br/></li><li>Wood grain irregularities or scrapes on the blade </li></ul>",
+            "text": "<p>Black Week is coming, and at Woxna it is all about our folding saws and accessories. Soon you’ll be able to sign up here to hear about our Black Week deals first, straight to your inbox.</p><p>We don’t run discounts very often, so when we do, we want to do it properly. During Black Week you’ll find our Ljusnan and Hälsing folding saws, Söderfors in Damasteel, and accessories such as the Alfta leather sheath, care oils and saw file. Our saws are made in Hälsingland, Sweden.</p><p>Sign-up isn’t open yet, so check back here shortly.</p>",
             "hide_when_empty": false
           }
         }
@@ -195,7 +195,6 @@
         "heading_JrQexk",
         "text_3ErEKB"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -518,6 +517,7 @@
         "text_Hw9gEi",
         "button_Q9L9ci"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
