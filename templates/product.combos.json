@@ -205,12 +205,18 @@
     "collapsible_content_frVtCt": {
       "type": "collapsible-content",
       "blocks": {
+        "klaviyo_reviews_product_reviews_MFEDdM": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "repeater": "{{ product.metafields.custom.review.value }}",
+          "settings": {}
+        },
         "klaviyo_reviews_all_reviews_f3Ua9q": {
           "type": "shopify://apps/klaviyo-reviews/blocks/all-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {}
         }
       },
       "block_order": [
+        "klaviyo_reviews_product_reviews_MFEDdM",
         "klaviyo_reviews_all_reviews_f3Ua9q"
       ],
       "name": "t:sections.collapsible_content.presets.name",
