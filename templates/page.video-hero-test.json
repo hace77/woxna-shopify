@@ -18,7 +18,7 @@
         "video": "shopify://files/videos/website eco saw.mp4",
         "pin_align": "center",
         "scrub_distance": 200,
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
