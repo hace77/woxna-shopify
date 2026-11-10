@@ -24,21 +24,6 @@
         "padding_bottom": 36
       }
     },
-    "video_scroll_C8H4B6": {
-      "type": "video-scroll",
-      "name": "Video scroll",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "video": "shopify://files/videos/Ljusnan-bastitest.mp4",
-        "pin_align": "center",
-        "scrub_distance": 200,
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -302,6 +287,21 @@
         "padding_bottom": 36
       }
     },
+    "video_scroll_C8H4B6": {
+      "type": "video-scroll",
+      "name": "Video scroll",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "video": "shopify://files/videos/Ljusnan-bastitest.mp4",
+        "pin_align": "center",
+        "scrub_distance": 200,
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_8XAnYy": {
       "type": "image-with-text",
       "blocks": {
@@ -440,13 +440,13 @@
   },
   "order": [
     "video_scroll_gVRxGg",
-    "video_scroll_C8H4B6",
     "main",
     "slideshow_FdkgLk",
     "multicolumn_9ggCDm",
     "image_with_text_animation_L693Ux",
     "image_with_text_animation_bTyg3e",
     "image_with_text_animation_wUydpN",
+    "video_scroll_C8H4B6",
     "image_with_text_8XAnYy",
     "multicolumn_W9wNqk",
     "multirow_c7wPNp"
