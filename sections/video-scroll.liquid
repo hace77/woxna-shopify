@@ -1,6 +1,11 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign scrub_vh = section.settings.scrub_distance | default: 200
+  assign pin_align = section.settings.pin_align | default: 'center'
+-%}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -13,61 +18,77 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #shopify-section-{{ section.id }} .video-scroll__track {
+    --video-scroll-scrub-vh: {{ scrub_vh }};
+    position: relative;
+    height: calc(var(--video-scroll-scrub-vh) * 1vh);
+  }
+
+  #shopify-section-{{ section.id }} .video-scroll__sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: {% if pin_align == 'top' %}flex-start{% elsif pin_align == 'bottom' %}flex-end{% else %}center{% endif %};
+    box-sizing: border-box;
+  }
+
+  #shopify-section-{{ section.id }} .video-scroll__sticky .holder {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .video-scroll__sticky .holder video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #shopify-section-{{ section.id }} .video-scroll__track {
+      height: auto;
+    }
+
+    #shopify-section-{{ section.id }} .video-scroll__sticky {
+      position: static;
+      height: auto;
+    }
+  }
 {%- endstyle -%}
-
-{%- liquid
-  assign video_id = section.settings.video.id | default: section.settings.video_url.id
-  assign video_alt = section.settings.video.alt | default: section.settings.description
-  assign alt = 'sections.video.load_video' | t: description: video_alt | escape
-  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
-
-  if section.settings.video != null
-    assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
-    if ratio_diff < 0.01 and ratio_diff > 0
-      assign fix_ratio = true
-    endif
-  endif
--%}
-
-{%- capture sizes -%}
-  {% if section.settings.full_width -%}
-    100vw
-  {%- else -%}
-    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px)
-    calc(100vw - 10rem), 100vw
-  {%- endif %}
-{%- endcapture -%}
 
 <div
   class="color-{{ section.settings.color_scheme }} gradient"
   data-video-scroll
-  data-trigger-visibility="{{ section.settings.trigger_visibility | default: 50 }}"
-  data-start-offset="{{ section.settings.start_offset | default: 50 }}"
-  data-end-offset="{{ section.settings.end_offset | default: 0 }}"
+  data-scrub-distance="{{ scrub_vh }}"
 >
-  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
-    <div
-      {% if section.settings.full_width %}
-        class="page-width"
-      {% endif %}
-    >
-      {%- unless section.settings.heading == blank -%}
-        <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
-        </div>
-      {%- endunless -%}
-    </div>
-    <div class="holder">
-      {{
-        section.settings.video
-        | video_tag:
-          autoplay: false,
-          loop: true,
-          controls: false,
-          muted: true,
-          playsinline: true,
-          style: 'width: 100%; height: 100%; object-fit: cover;'
-      }}
+  <div class="video-scroll__track">
+    <div class="video-scroll__sticky video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+      <div
+        {% if section.settings.full_width %}
+          class="page-width"
+        {% endif %}
+      >
+        {%- unless section.settings.heading == blank -%}
+          <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+          </div>
+        {%- endunless -%}
+      </div>
+      <div class="holder">
+        {{
+          section.settings.video
+          | video_tag:
+            autoplay: false,
+            loop: false,
+            controls: false,
+            muted: true,
+            playsinline: true
+        }}
+      </div>
     </div>
   </div>
 </div>
@@ -78,91 +99,68 @@
     if (!section) return;
 
     const root = section.querySelector('[data-video-scroll]');
+    const track = section.querySelector('.video-scroll__track');
     const vid = section.querySelector('video');
-    if (!root || !vid) return;
+    if (!root || !track || !vid) return;
 
-    const triggerVisibility = Math.min(100, Math.max(1, Number(root.dataset.triggerVisibility) || 50)) / 100;
-    const startOffset = Math.min(100, Math.max(0, Number(root.dataset.startOffset) || 50)) / 100;
-    const endOffset = Math.min(100, Math.max(0, Number(root.dataset.endOffset) || 0)) / 100;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    vid.currentTime = 0;
-    vid.loop = false;
     vid.muted = true;
     vid.playsInline = true;
+    vid.loop = false;
+
+    if (reduceMotion) {
+      vid.controls = true;
+      return;
+    }
 
     let ticking = false;
-    let lastPercentage = 0;
-    let hasReachedTrigger = false;
+    let lastPercentage = -1;
 
-    const getScrollPercentage = () => {
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const visibleHeight = Math.min(windowHeight, rect.bottom) - Math.max(0, rect.top);
-      const visibilityPercentage = rect.height > 0 ? visibleHeight / rect.height : 0;
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-      if (rect.bottom < -rect.height || rect.top > windowHeight) {
-        if (hasReachedTrigger) {
-          hasReachedTrigger = false;
-          vid.currentTime = 0;
-        }
-        return 0;
-      }
-
-      if (!hasReachedTrigger && visibilityPercentage >= triggerVisibility) {
-        hasReachedTrigger = true;
-      }
-
-      const startPoint = windowHeight * startOffset;
-      const endPoint = windowHeight * endOffset;
-      const range = startPoint - endPoint;
-
-      let percentage = 0;
-      if (Math.abs(range) > 0.001) {
-        percentage = (startPoint - rect.top) / range;
-      }
-
-      if (rect.bottom <= 0) {
-        percentage = 1;
-      }
-
-      return Math.max(0, Math.min(percentage, 1));
+    const getProgress = () => {
+      const rect = track.getBoundingClientRect();
+      const scrollable = track.offsetHeight - window.innerHeight;
+      if (scrollable <= 0) return 0;
+      return clamp(-rect.top / scrollable, 0, 1);
     };
 
-    const scroll = () => {
-      if (!vid.duration) return;
+    const update = () => {
+      if (!vid.duration || Number.isNaN(vid.duration)) return;
 
-      const percentage = getScrollPercentage();
+      const percentage = getProgress();
+      if (Math.abs(percentage - lastPercentage) < 0.002) return;
 
-      if (Math.abs(percentage - lastPercentage) > 0.01) {
-        if (!ticking) {
-          requestAnimationFrame(() => {
-            if (hasReachedTrigger) {
-              vid.currentTime = vid.duration * percentage;
-            }
-            lastPercentage = percentage;
-            ticking = false;
-          });
-          ticking = true;
-        }
+      const nextTime = vid.duration * percentage;
+      if (Math.abs(vid.currentTime - nextTime) > 0.033) {
+        vid.currentTime = nextTime;
       }
+      lastPercentage = percentage;
     };
 
-    let lastTime = 0;
-    const throttle = 16;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        update();
+        ticking = false;
+      });
+    };
 
-    window.addEventListener(
-      'scroll',
-      () => {
-        const now = Date.now();
-        if (now - lastTime >= throttle) {
-          lastTime = now;
-          scroll();
-        }
-      },
-      { passive: true }
-    );
+    const ready = () => {
+      vid.currentTime = 0;
+      update();
+    };
 
-    scroll();
+    if (vid.readyState >= 1) {
+      ready();
+    } else {
+      vid.addEventListener('loadedmetadata', ready, { once: true });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
   });
 </script>
 
@@ -210,83 +208,41 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
-      "type": "checkbox",
-      "id": "enable_video_looping",
-      "label": "t:sections.video.settings.enable_video_looping.label",
-      "default": false
-    },
-    {
       "type": "header",
       "content": "t:sections.video.settings.header__1.content"
     },
     {
       "type": "video",
       "id": "video",
-      "label": "t:sections.video.settings.video.label"
+      "label": "t:sections.video.settings.video.label",
+      "info": "Use a short Shopify-hosted video. Scrub length is controlled below, not by video duration alone."
     },
     {
       "type": "header",
-      "content": "t:sections.video.settings.header__2.content"
+      "content": "Scroll pin & scrub"
     },
     {
-      "type": "paragraph",
-      "content": "t:sections.video.settings.paragraph.content"
-    },
-    {
-      "type": "video_url",
-      "id": "video_url",
-      "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "label": "t:sections.video.settings.video_url.label",
-      "info": "t:sections.video.settings.video_url.info"
-    },
-    {
-      "type": "image_picker",
-      "id": "cover_image",
-      "label": "t:sections.video.settings.cover_image.label"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "t:sections.video.settings.description.label",
-      "info": "t:sections.video.settings.description.info"
-    },
-    {
-      "type": "header",
-      "content": "Scroll scrub"
+      "type": "select",
+      "id": "pin_align",
+      "label": "Pin position in viewport",
+      "info": "Where the video stays while scroll scrubs through it.",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" }
+      ],
+      "default": "center"
     },
     {
       "type": "range",
-      "id": "trigger_visibility",
-      "min": 10,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "Start after section is visible",
-      "info": "Scrubbing begins once this share of the section is in view.",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "start_offset",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "Video 0% at viewport position",
-      "info": "When the section top reaches this point from the top of the screen, the video is at the start. Higher = starts later.",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "end_offset",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "Video 100% at viewport position",
-      "info": "When the section top reaches this point from the top of the screen, the video is at the end. Keep this lower than the start value.",
-      "default": 0
+      "id": "scrub_distance",
+      "min": 100,
+      "max": 500,
+      "step": 25,
+      "unit": "vh",
+      "label": "Scroll distance while pinned",
+      "info": "How far you scroll while the video is pinned. Higher = slower scrub. At the end, the page continues normally.",
+      "default": 200
     },
     {
       "type": "header",
