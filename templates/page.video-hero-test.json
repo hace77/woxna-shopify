@@ -24,6 +24,21 @@
         "padding_bottom": 36
       }
     },
+    "video_scroll_C8H4B6": {
+      "type": "video-scroll",
+      "name": "Video scroll",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "video": "shopify://files/videos/Ljusnan-bastitest.mp4",
+        "pin_align": "center",
+        "scrub_distance": 200,
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -425,6 +440,7 @@
   },
   "order": [
     "video_scroll_gVRxGg",
+    "video_scroll_C8H4B6",
     "main",
     "slideshow_FdkgLk",
     "multicolumn_9ggCDm",
