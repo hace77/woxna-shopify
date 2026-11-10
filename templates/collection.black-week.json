@@ -143,6 +143,29 @@
         "padding_bottom": 36
       }
     },
+    "countdown_timer_VdGCqm": {
+      "type": "countdown-timer",
+      "name": "Countdown Timer",
+      "settings": {
+        "heading": "Limited Time Offer",
+        "heading_size": "h1",
+        "subheading": "",
+        "target_date": "2026-11-23",
+        "target_time": "00.01",
+        "timezone": "Europe/Stockholm",
+        "expired_message": "This offer has ended",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true,
+        "text_alignment": "center",
+        "cta_text": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_q4bA3M": {
       "type": "rich-text",
       "blocks": {
@@ -190,13 +213,14 @@
         "klaviyo_email_marketing_sms_form_embed_block_TeHiMV": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
+            "formId": ""
           }
         }
       },
       "block_order": [
         "klaviyo_email_marketing_sms_form_embed_block_TeHiMV"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -207,6 +231,7 @@
     "rich_text_dbVHAH",
     "banner",
     "product-grid",
+    "countdown_timer_VdGCqm",
     "rich_text_q4bA3M",
     "179137995010e5f16e"
   ]
