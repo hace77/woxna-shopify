@@ -92,7 +92,11 @@
                     if product == blank
                       assign show_collapsible_row = false
                     elsif section.settings.klaviyo_reviews_hide_when_no_reviews
-                      if product.metafields.reviews.rating_count == blank or product.metafields.reviews.rating_count == 0
+                      assign klaviyo_reviews_count_product = product
+                      if product.metafields.custom.rreviews_source_product.value != blank
+                        assign klaviyo_reviews_count_product = product.metafields.custom.rreviews_source_product.value
+                      endif
+                      if klaviyo_reviews_count_product.metafields.reviews.rating_count == blank or klaviyo_reviews_count_product.metafields.reviews.rating_count == 0
                         assign show_collapsible_row = false
                       endif
                     endif
@@ -161,7 +165,11 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {% render block %}
+                        {%- if product.metafields.custom.rreviews_source_product.value != blank -%}
+                          {% render 'klaviyo-product-reviews-source', product: product %}
+                        {%- else -%}
+                          {% render block %}
+                        {%- endif -%}
                       </div>
                     </details>
                   </div>
