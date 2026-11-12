@@ -40,10 +40,10 @@
       "name": "Image banner DT",
       "settings": {
         "hide_when_empty": false,
-        "image": "shopify://shop_images/Ljusnan-saw-collection-16-9.jpg",
+        "image": "shopify://shop_images/instagram-image-94a0c236-ac8e-4062-9bca-16d72cb87a80.jpg",
         "image_mobile": "shopify://shop_images/Ljusnan-180mm-2.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "small",
+        "image_height": "large",
         "image_height_mobile": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
