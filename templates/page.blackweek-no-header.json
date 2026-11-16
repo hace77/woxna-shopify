@@ -168,7 +168,6 @@
         "klaviyo_email_marketing_sms_form_embed_block_HTkkgw",
         "klaviyo_email_marketing_sms_form_embed_block_UP6Jjc"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -179,14 +178,14 @@
         "heading_JrQexk": {
           "type": "heading",
           "settings": {
-            "heading": "Woxna Black Week 2026 – check back soon",
+            "heading": "Woxna Black Week 2026&nbsp;",
             "heading_size": "h1"
           }
         },
         "text_3ErEKB": {
           "type": "text",
           "settings": {
-            "text": "<p>Black Week is coming, and at Woxna it is all about our folding saws and accessories. Soon you’ll be able to sign up here to hear about our Black Week deals first, straight to your inbox.</p><p>We don’t run discounts very often, so when we do, we want to do it properly. During Black Week you’ll find our Ljusnan and Hälsing folding saws, Söderfors in Damasteel, and accessories such as the Alfta leather sheath, care oils and saw file. Our saws are made in Hälsingland, Sweden.</p><p>Sign-up isn’t open yet, so check back here shortly.</p>",
+            "text": "<p>Black Week is coming, and we’re preparing something for it at Woxna. Sign up below and you’ll be the first to hear about our offer, straight to your inbox.</p><p>We don’t run campaigns very often, so when we do, we want to do it properly. Woxna makes folding saws and accessories in Hälsingland, Sweden, including the Ljusnan and Hälsing folding saws, Söderfors in Damasteel and the Alfta leather sheath. You’ll get the details before anyone else.</p>",
             "hide_when_empty": false
           }
         }
