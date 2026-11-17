@@ -12,6 +12,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "extra_products_9rVJAJ": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Want a sheath for your saw too? Check out our combo",
+            "legend": "Add an extra product",
+            "none_label": "No extra product"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -95,6 +103,7 @@
         }
       },
       "block_order": [
+        "extra_products_9rVJAJ",
         "title",
         "klaviyo_reviews_average_rating_EkJjBx",
         "variant_metafield_XnEFkV",
@@ -242,8 +251,8 @@
         "layout": "none",
         "content_width": "page",
         "accordion_heading_uppercase": true,
-        "color_scheme": "",
         "container_color_scheme": "",
+        "color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -415,11 +424,11 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -463,13 +472,13 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
         "padding_top": 16,
         "padding_bottom": 36
       }
@@ -503,18 +512,18 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
+        "collection": "foldable-saws",
+        "products_to_show": 4,
         "title": "You may also like",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "foldable-saws",
-        "products_to_show": 4,
         "columns_desktop": 4,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
         "image_ratio": "adapt",
         "image_shape": "default",
