@@ -59,9 +59,11 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": true,
+        "color_scheme_mobile": "scheme-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -121,6 +123,8 @@
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -180,6 +184,8 @@
         "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -402,6 +408,8 @@
         "color_scheme": "",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -529,6 +537,8 @@
         "color_scheme": "scheme-1",
         "enable_sticky_button": false,
         "image_behavior": "fixed",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
