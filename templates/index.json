@@ -67,6 +67,65 @@
         "show_text_below": false
       }
     },
+    "image_banner_faXenC": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xy4FyH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Black Week",
+            "use_collection_title": false,
+            "heading_size": "h1"
+          }
+        },
+        "text_aMLKLK": {
+          "type": "text",
+          "settings": {
+            "text": "Quirks saws at 20% lower prices",
+            "use_collection_description": false,
+            "text_style": "body"
+          }
+        },
+        "buttons_PyiU7e": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop the saws",
+            "button_link_1": "shopify://collections/black-week",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xy4FyH",
+        "text_aMLKLK",
+        "buttons_PyiU7e"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
+      ],
+      "name": "Image banner DT",
+      "settings": {
+        "hide_when_empty": false,
+        "image": "shopify://shop_images/Ljusnan180mm-black-background-dt.jpg",
+        "image_mobile": "shopify://shop_images/Ljusnan180mm-black-background-mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_height_mobile": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
+        "enable_sticky_button": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "image_banner_KKmmKB": {
       "type": "image-banner",
       "blocks": {
@@ -444,13 +503,13 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-ea53cba8-04a6-49c9-9c9d-3c1a8ca9aec9",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 36
       }
@@ -513,13 +572,13 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
         "padding_top": 32,
         "padding_bottom": 56
       }
@@ -534,6 +593,7 @@
   },
   "order": [
     "image_banner_p697Nx",
+    "image_banner_faXenC",
     "image_banner_KKmmKB",
     "collage_text_link_xVfca9",
     "rich_text_34jE7b",
