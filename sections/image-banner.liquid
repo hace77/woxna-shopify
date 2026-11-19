@@ -61,6 +61,59 @@
 {%- endstyle -%}
 
 {%- liquid
+  assign banner_scheme_desktop_id = section.settings.color_scheme.id | default: section.settings.color_scheme
+  assign banner_scheme_mobile_id = section.settings.color_scheme_mobile.id | default: section.settings.color_scheme_mobile
+  assign banner_use_mobile_scheme = false
+  if section.settings.enable_mobile_color_scheme and banner_scheme_mobile_id != blank and banner_scheme_mobile_id != banner_scheme_desktop_id
+    assign banner_use_mobile_scheme = true
+  endif
+-%}
+{%- if banner_use_mobile_scheme -%}
+  {%- for scheme in settings.color_schemes -%}
+    {%- if scheme.id == banner_scheme_mobile_id -%}
+      {%- liquid
+        assign mobile_scheme_background = scheme.settings.background
+        assign mobile_scheme_background_brightness = mobile_scheme_background | color_brightness
+        if mobile_scheme_background_brightness <= 26
+          assign mobile_scheme_background_contrast = mobile_scheme_background | color_lighten: 50
+        elsif mobile_scheme_background_brightness <= 65
+          assign mobile_scheme_background_contrast = mobile_scheme_background | color_lighten: 5
+        else
+          assign mobile_scheme_background_contrast = mobile_scheme_background | color_darken: 25
+        endif
+      -%}
+      {%- style -%}
+        @media screen and (max-width: 749px) {
+          #Banner-{{ section.id }} .banner__box.banner__box--has-mobile-scheme {
+            --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+            {% if scheme.settings.background_gradient != empty %}
+              --gradient-background: {{ scheme.settings.background_gradient }};
+            {% else %}
+              --gradient-background: {{ scheme.settings.background }};
+            {% endif %}
+            --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
+            --color-background-contrast: {{ mobile_scheme_background_contrast.red }},{{ mobile_scheme_background_contrast.green }},{{ mobile_scheme_background_contrast.blue }};
+            --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
+            --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
+            --color-button-text: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
+            --color-secondary-button: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+            --color-secondary-button-text: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
+            --color-link: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
+            --color-badge-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
+            --color-badge-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+            --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
+            --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
+            background: var(--gradient-background);
+            background-color: rgb(var(--color-background));
+            color: rgba(var(--color-foreground), 0.75);
+          }
+        }
+      {%- endstyle -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 
@@ -171,7 +224,7 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ banner_scheme_desktop_id }}{% if banner_use_mobile_scheme %} banner__box--has-mobile-scheme{% endif %} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
@@ -440,7 +493,7 @@
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
+      "label": "Color scheme (desktop)",
       "default": "scheme-1"
     },
     {
@@ -484,6 +537,19 @@
     {
       "type": "header",
       "content": "t:sections.image-banner.settings.mobile.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_color_scheme",
+      "label": "Use different color scheme on mobile",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_mobile",
+      "label": "Color scheme (mobile)",
+      "default": "scheme-1",
+      "visible_if": "{{ section.settings.enable_mobile_color_scheme == true }}"
     },
     {
       "type": "select",
