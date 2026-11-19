@@ -59,11 +59,11 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-b7be8990-ed7b-4479-8c33-778514a8ad7e",
+        "color_scheme": "scheme-8f683a4c-4261-4742-96f4-ab5fd46f38d0",
         "enable_sticky_button": false,
         "image_behavior": "none",
         "enable_mobile_color_scheme": true,
-        "color_scheme_mobile": "scheme-645fda01-e3d4-4ccc-9c94-512a74dabf52",
+        "color_scheme_mobile": "scheme-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
