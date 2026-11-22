@@ -147,6 +147,7 @@
     },
     "countdown_timer_VdGCqm": {
       "type": "countdown-timer",
+      "disabled": true,
       "name": "Countdown Timer",
       "settings": {
         "heading": "",
@@ -174,7 +175,7 @@
         "text_UdkziW": {
           "type": "text",
           "settings": {
-            "text": "<p>Black Week is on its way. Sign up below and you’ll be the first to hear about our offer, straight to your inbox.</p><p>We don’t run campaigns very often, so when we do, we want to do it properly. Woxna makes folding saws and accessories in Hälsingland, Sweden, including the Ljusnan and Hälsing folding saws, Söderfors in Damasteel and the Alfta leather sheath. You’ll get the details before anyone else.</p><p>Enter your email below and we’ll be in touch.</p>",
+            "text": "<p>Quirks saws at 20% lower prices during Black Week. They have passed our final inspection but don't quite meet our visual standard, for example because of small scratches on the steel or color variations in the handle. Performance is the same as our regular saws.</p><p>Buy a Black Week saw together with an Alfta leather sheath as a set, and the same 20% lower price applies to the whole set. As usual, the set is cheaper than buying the saw and sheath separately. Quantities are limited.</p>",
             "hide_when_empty": false
           }
         },
@@ -249,9 +250,9 @@
     "image_banner_dLVAWX",
     "rich_text_dbVHAH",
     "banner",
+    "rich_text_q4bA3M",
     "product-grid",
     "countdown_timer_VdGCqm",
-    "rich_text_q4bA3M",
     "179137995010e5f16e"
   ]
 }
