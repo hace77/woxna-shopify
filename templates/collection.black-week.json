@@ -15,7 +15,7 @@
         "heading_4QmWJi": {
           "type": "heading",
           "settings": {
-            "heading": "You are early!",
+            "heading": "Black Week",
             "use_collection_title": false,
             "heading_size": "hxl"
           }
@@ -98,6 +98,47 @@
         "color_scheme": "scheme-1"
       }
     },
+    "rich_text_q4bA3M": {
+      "type": "rich-text",
+      "blocks": {
+        "text_UdkziW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quirks saws at 20% lower prices during Black Week. They have passed our final inspection but don't quite meet our visual standard, for example because of small scratches on the steel or color variations in the handle. Performance is the same as our regular saws.</p><p>Buy a Black Week saw together with an Alfta leather sheath as a set, and the same 20% lower price applies to the whole set. As usual, the set is cheaper than buying the saw and sheath separately. Quantities are limited.</p>",
+            "hide_when_empty": false
+          }
+        },
+        "button_effggk": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_UdkziW",
+        "button_effggk"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
+        "ul {list-style-position: outside;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "hide_when_empty": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
@@ -167,47 +208,6 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_q4bA3M": {
-      "type": "rich-text",
-      "blocks": {
-        "text_UdkziW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Quirks saws at 20% lower prices during Black Week. They have passed our final inspection but don't quite meet our visual standard, for example because of small scratches on the steel or color variations in the handle. Performance is the same as our regular saws.</p><p>Buy a Black Week saw together with an Alfta leather sheath as a set, and the same 20% lower price applies to the whole set. As usual, the set is cheaper than buying the saw and sheath separately. Quantities are limited.</p>",
-            "hide_when_empty": false
-          }
-        },
-        "button_effggk": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "text_UdkziW",
-        "button_effggk"
-      ],
-      "custom_css": [
-        "@media screen and (min-width: 750px) {div {font-size: 1.4rem; }}",
-        "ul {list-style-position: outside;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "hide_when_empty": false,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "179137995010e5f16e": {
