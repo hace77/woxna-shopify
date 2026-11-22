@@ -12,14 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "extra_products_9rVJAJ": {
-          "type": "extra_products",
-          "settings": {
-            "heading": "Want a sheath for your saw too? Check out our combo",
-            "legend": "Add an extra product",
-            "none_label": "No extra product"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -81,6 +73,14 @@
             "custom_liquid": "{%- if product.selected_or_first_available_variant.sku != blank -%}\n  <p class=\"product__sku-custom\">\n    <span class=\"sku-label\">SKU:</span>\n    <span class=\"sku-value\">{{ product.selected_or_first_available_variant.sku }}</span>\n  </p>\n{%- endif -%}"
           }
         },
+        "extra_products_9rVJAJ": {
+          "type": "extra_products",
+          "settings": {
+            "heading": "Want a sheath for your saw too? Check out our combo",
+            "legend": "Add an extra product",
+            "none_label": "No extra product"
+          }
+        },
         "product_specs_gCmr36": {
           "type": "product_specs",
           "settings": {
@@ -103,7 +103,6 @@
         }
       },
       "block_order": [
-        "extra_products_9rVJAJ",
         "title",
         "klaviyo_reviews_average_rating_EkJjBx",
         "variant_metafield_XnEFkV",
@@ -112,6 +111,7 @@
         "buy_buttons",
         "payment_icons",
         "custom_liquid_jJDHYK",
+        "extra_products_9rVJAJ",
         "product_specs_gCmr36",
         "description"
       ],
@@ -215,6 +215,9 @@
         "color_scheme": "scheme-4",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
+        "mobile_scheme_solid_background": false,
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
