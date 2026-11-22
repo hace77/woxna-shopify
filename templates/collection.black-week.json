@@ -223,7 +223,7 @@
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "name": "Klaviyo Eng",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-UxuFR2\"></div>"
+            "formId": ""
           }
         },
         "klaviyo_email_marketing_sms_form_embed_block_TeHiMV": {
@@ -239,6 +239,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_W7nDyb",
         "klaviyo_email_marketing_sms_form_embed_block_TeHiMV"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
