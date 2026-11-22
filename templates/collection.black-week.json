@@ -15,7 +15,7 @@
         "heading_4QmWJi": {
           "type": "heading",
           "settings": {
-            "heading": "Come Back soon!",
+            "heading": "You are early!",
             "use_collection_title": false,
             "heading_size": "hxl"
           }
@@ -36,6 +36,9 @@
         "color_scheme": "scheme-4",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
+        "mobile_scheme_solid_background": false,
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
@@ -97,7 +100,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "custom_css": [
         ".quick-add__submit {background-color: #445f45; color: #ffffff;}",
         ".button {border: none;}",
@@ -122,7 +124,7 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
-        "show_hero_block_1": true,
+        "show_hero_block_1": false,
         "hero_block_1_position_desktop": "3",
         "hero_block_1_position_mobile": "2",
         "hero_block_1_size": "medium",
