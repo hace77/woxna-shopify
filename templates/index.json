@@ -45,6 +45,7 @@
         "text_7ggBir",
         "buttons_KGYaGF"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
@@ -106,7 +107,6 @@
         "text_aMLKLK",
         "buttons_PyiU7e"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.banner__content {padding: 0; display: flex; position: relative; width: 100%; align-items: center; justify-content: center; z-index: 2; align-items: end; }}"
       ],
