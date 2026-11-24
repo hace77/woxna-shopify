@@ -166,7 +166,8 @@
         "li:empty {list-style: none;}",
         ".product-form__submit {background-color: orange; border-radius: 25px; padding: 2rem; color: black; font-size: 2rem;}",
         ".product__title h1 {font-size: 24px;}",
-        ".stock-label {display: none;}"
+        ".stock-label {display: none;}",
+        ".price__badge-sale {display: none !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -352,6 +353,9 @@
         "color_scheme": "",
         "enable_sticky_button": false,
         "image_behavior": "none",
+        "enable_mobile_color_scheme": false,
+        "color_scheme_mobile": "",
+        "mobile_scheme_solid_background": false,
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
