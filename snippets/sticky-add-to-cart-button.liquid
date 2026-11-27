@@ -1,28 +1,51 @@
 {%- assign button_text = sticky_button_alt_text | default: 'products.product.add_to_cart' | t -%}
+{%- assign sticky_variant = product.selected_or_first_available_variant -%}
+{%- assign sticky_variant_label = '' -%}
+{%- unless product.has_only_default_variant -%}
+  {%- assign sticky_variant_label = sticky_variant.options | join: ' / ' -%}
+{%- endunless -%}
+{%- if settings.currency_code_enabled -%}
+  {%- assign sticky_price = sticky_variant.price | money_with_currency -%}
+{%- else -%}
+  {%- assign sticky_price = sticky_variant.price | money -%}
+{%- endif -%}
 
 {%- if product.available -%}
   <div class="sticky-add-to-cart">
     <div class="page-width">
-      <product-form class="product-form">
-        {%- form 'product', product, id: 'sticky-product-form', class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-          <button
-            type="submit"
-            name="add"
-            class="product-form__submit button button--full-width button--secondary"
-            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+      <div class="sticky-add-to-cart__card">
+        <div class="sticky-add-to-cart__info">
+          <p class="sticky-add-to-cart__title">{{ product.title | escape }}</p>
+          <p
+            class="sticky-add-to-cart__variant{% if sticky_variant_label == blank %} hidden{% endif %}"
+            data-sticky-variant
           >
-            <span>
-              {%- if product.selected_or_first_available_variant.available -%}
-                {{ button_text }}
-              {%- else -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- endif -%}
-            </span>
-            {%- render 'loading-spinner' -%}
-          </button>
-        {%- endform -%}
-      </product-form>
+            {{- sticky_variant_label -}}
+          </p>
+          <p class="sticky-add-to-cart__price" data-sticky-price>{{ sticky_price }}</p>
+        </div>
+
+        <product-form class="product-form sticky-add-to-cart__form">
+          {%- form 'product', product, id: 'sticky-product-form', class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+            <input type="hidden" name="id" value="{{ sticky_variant.id }}">
+            <button
+              type="submit"
+              name="add"
+              class="product-form__submit button button--secondary"
+              {% if sticky_variant.available == false %}disabled{% endif %}
+            >
+              <span>
+                {%- if sticky_variant.available -%}
+                  {{ button_text }}
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
+              </span>
+              {%- render 'loading-spinner' -%}
+            </button>
+          {%- endform -%}
+        </product-form>
+      </div>
     </div>
   </div>
-{%- endif -%} 
+{%- endif -%}
