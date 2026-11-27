@@ -27,9 +27,10 @@
       "settings": {
         "hide_when_empty": false,
         "image": "{{ collection.image }}",
+        "image_mobile": "shopify://shop_images/Ljusnan180mm-black-background-mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "image_height_mobile": "medium",
+        "image_height_mobile": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
